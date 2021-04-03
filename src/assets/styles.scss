@@ -1,0 +1,1381 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,900;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+body {
+  font-family: 'Noto Serif', serif;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #212529;
+}
+
+.flex-nowrap {
+  -webkit-flex-wrap: nowrap!important;
+  -ms-flex-wrap: nowrap!important;
+  flex-wrap: nowrap!important;
+}
+.flex-row {
+  display:flex;
+  -webkit-box-orient: horizontal!important;
+  -webkit-box-direction: normal!important;
+  -webkit-flex-direction: row!important;
+  -ms-flex-direction: row!important;
+  flex-direction: row!important;
+}
+
+p {
+  @media (max-width: 575.98px) {
+    font-size: 14px;
+  }
+}
+
+.container-encuestas {
+  width: calc(100% - 50px);
+  max-width: 1120px;
+  margin: 0 auto;
+  
+}
+
+.ultima-actualizacion {
+  color: #464646;
+  font-size: 14px;
+
+  @media (max-width: 575.98px) {
+    font-size: 13px;
+  }
+}
+
+.navbar-ojo-publico {
+  background: rgba(0,0,0,.85);
+}
+
+.tabs-encuestas {
+  ul.nav-tabs {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  
+    li {
+      min-width: 130px;
+      width: 100%;
+      max-width: 220px;
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+}
+
+.nav-tabs .nav-link {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #333;
+  padding: 10px 5px;
+  font-size: 13px;
+  border-radius: 0;
+  text-transform: uppercase;
+
+  &.active {
+    font-weight: 600;
+  }
+}
+
+.navbar-brand {
+  max-width: 220px;
+  img {
+    width: 100%;
+  }
+}
+
+.credits {
+  a {
+    color: #fa1600;
+  }
+}
+
+.creditos {
+  h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 900;
+  }
+
+  div {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.3em;
+  }
+}
+
+.subtitle {
+  h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+
+
+    @media (max-width: 575.98px) {
+      font-size: 17px;
+    }
+  }
+
+  .line {
+    display: block;
+    width: 45px;
+    height: 3px;
+    margin: 10px 0;
+    background: #fa1600;
+  }
+
+  p {
+    margin: 15px 0 25px 0;
+    font-size: 15px;
+
+    @media (max-width: 575.98px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.page-section-tag {
+  max-width: 150px;
+  margin: 15px auto;
+  padding: 5px;
+  font-size: 17px;
+  font-weight: 900;
+  background:#fa1500;
+  text-align: center;
+
+  a {
+    color: #fff;
+  }
+}
+
+.page-app-title {
+  margin: 25px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.38em;
+  line-height: 47px;
+  letter-spacing: .4px;
+
+  @media (max-width: 575.98px) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+.periodo-wrapper {
+  font-family: 'Noto Serif', serif;
+
+  .periodo-title {
+    text-align: left;
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+
+.VueCarousel-dot {
+  background-color: #cacaca !important;
+
+  &.VueCarousel-dot--active {
+    background-color: #333 !important;
+  }
+}
+
+#mesesTabs {
+  @media (max-width: 575.98px) { 
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media (max-width: 575.98px) {
+      min-width: 140px;
+      font-size: 12px;
+      padding: 10px 5px;
+      text-align: center;
+    }
+
+    &.active {
+      font-weight: 600;
+    }
+  }
+}
+
+.encuestas-control {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+
+  a {
+    color: #3e3e3ebd;
+    background: #fff;
+
+    &:hover {
+      color: #333;
+    }
+
+    &.hide {
+      visibility: hidden;
+    }
+  }
+
+  &.prev {
+    left: 0;
+  }
+
+  &.next {
+    right: 0;
+  }
+}
+
+.tooltip-data {
+  position: absolute;
+  width: 100%;
+  max-width: 320px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.932);
+  color: #000;
+  pointer-events: none;
+
+  .tooltip-content {
+    pointer-events: none;
+  }
+
+  @media (max-width: 798.98px) {
+    position: relative;
+    max-width: 400px;
+    pointer-events: none;
+  }
+}
+
+.mapa-resultados-wrapper {
+  position: relative;
+  font-family: 'Nunito Sans', sans-serif;
+
+  h2 {
+    margin: 25px 0;
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  h5 {
+    font-size: 13px;
+  }
+
+  .partido-icon {
+    width: 25px;
+  }
+
+  .candidate-results-vivo {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+
+    .img-partidos {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .candidate-percent {
+      width: 100%;
+      max-width: 90px;
+      text-align: center;
+    }
+
+    .candidate-info {
+      position: sticky;
+      left: 0;
+      display: flex;
+      padding: 5px 0;
+      background: #fff;
+    }
+
+    .candidate-percent {
+      background: #f1f1f1;
+
+      .percent {
+        margin: 3px 0;
+        font-size: 18px;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      label {
+        font-size: 12px;
+        text-align: center;
+        margin: 0;
+      }
+    }
+    h6 {
+      font-weight: bold;      
+      font-size: 18px;
+          
+    
+    }
+    .title-resultados {
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      span {
+        display: block;
+        float: right;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .mapa-resultados-container {
+    position: sticky;
+    top: 15vh;
+    width: 100%;
+    height: 720px;
+  }
+
+  svg.plan-vector-map {
+    background: #fff;
+  }
+  .distrito-path {
+    fill: #91ad8d;
+    stroke: #ffffff21;
+    stroke-width: 1px;
+  }
+
+  .circle {
+    fill: #fff;
+  }
+
+  .departamento-path {
+    fill: #eaeaea;
+    stroke: #fff;
+    stroke-width: 1px;
+    cursor: pointer;
+  }
+
+  .departamento-path:hover {
+    stroke: #000;
+    stroke-width: 1px;
+  }
+
+  .distrito-selected {
+    fill: #b55353;
+  }
+
+  .departamento-map {
+    width: 100%;
+  }
+
+  .lista-departamentos {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ffffffdb;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.candidato-wrapper {
+  font-family: 'Nunito Sans', sans-serif;
+
+  h2 {
+    margin: 25px 0;
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+
+    &.ipsos {
+      color: #79a2c1;
+    }
+
+    &.datum {
+      color: #c17979;
+    }
+
+    &.cpi {
+      color: #c1a579;
+    }
+
+    &.iep {
+      color: #79c1ae;
+    }
+  }
+
+  .candidate-results-container {
+    width: 100%;
+
+    h2 {
+      font-size: 18px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      margin: 5px 0 !important;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: left !important;
+      color: #585858;
+    }
+
+    h5 {
+      margin: 0 !important;
+      font-size: 12px !important;
+      font-weight: 400;
+      text-align: left !important;
+      color: #3e3e3e;
+    }
+
+  
+    .item-segunda {
+      background: #e6eff9;
+    }
+
+    .candidate-info.historico {
+      background: transparent;
+    }
+
+    .otros-encuesta {
+      width: 100px;
+      font-size: 14px;
+      text-transform: uppercase;
+
+      @media (max-width: 575.98px) { 
+        font-size: 11px;
+      }
+    }
+
+    .encuestadora-row {
+      border-bottom: solid 1px #e6f0f9;
+
+      .otros-porcentaje {
+        font-size: 18px;
+        color: #757575;
+
+        @media (max-width: 575.98px) { 
+          font-size: 14px;
+        }
+      }
+
+      &:hover {
+        background: #f1f1f1;
+
+        .otros-porcentaje {
+          color: #333;
+        }
+      }
+
+      &.ultimo {
+        background: #e6f0f9;
+
+        &:hover {
+          background: #f1f1f1;
+
+          .otros-porcentaje {
+            color: #333;
+          }
+        }
+
+        .otros-encuesta {
+          font-weight: 600;
+        }
+
+        .otros-porcentaje {
+          color: #333;
+        }
+      }
+    }
+
+    .column-percent {
+      min-width: 120px;
+      max-width: 150px;
+
+      @media (max-width: 575.98px) { 
+        min-width: 90px;
+        max-width: 120px;
+      }
+    }
+    
+    .otros-candidato {
+      font-size: 10px;
+      font-weight: 100;
+      line-height: 10px;
+      min-height: 20px;
+    }
+
+    .otros-mes {
+      color: #d88c54;
+      font-weight: bold;
+    }
+
+    .encuestadora-name  {
+      min-width: 100px;
+      text-align: center;
+    }
+
+    .encuestadora-results {
+      width: 720px;
+      text-align: center;
+    }
+
+    @media (max-width: 575.98px) { 
+      overflow-x: auto;
+    }
+  }
+
+  .candidate-info {
+    position: sticky;
+    left: 0;
+    display: flex;
+    width: 220px;
+    min-width: 220px;
+    padding: 5px 0;
+    background: #fff;
+
+    @media (max-width: 575.98px) { 
+      width: 135px;
+      min-width: 135px;
+      padding-right: 5px;
+    }
+
+    h4 {
+      margin: 5px 15px;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: left;
+      color: #585858;
+
+      @media (max-width: 575.98px) { 
+        margin: 0;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+
+    h5 {
+      margin: 5px 7px;
+      font-size: 13px;
+      font-weight: 400;
+      text-align: left;
+      color: #3e3e3e;
+
+      @media (max-width: 575.98px) {
+        font-size: 11px; 
+      }
+    }
+    
+    .partido-icon {
+      border-radius: 35px;
+    }
+  
+    .img-candidato {
+      width: 55px;
+      border-radius: 54px;
+      opacity: 0.9;
+
+      img {
+        height: 55px;
+      }
+
+      @media (max-width: 575.98px) { 
+        display: none;
+  
+        img {
+          height: 35px;
+        }
+      }
+    }  
+    
+  }
+
+  .img-partidos {
+    h5 {
+      display: flex;
+      font-size: 13px;
+    }
+
+    
+    img {
+      height: 20px;
+    }    
+  }
+
+  .candidate-graph {
+    display: flex;
+    align-items: flex-end;
+    overflow-x: auto;
+
+    .y-axis {
+      float: left;
+      width: 20px;    
+      margin: 0 5px;
+      font-size: 10px;
+
+      span.percent {
+        display: flex;
+        align-items: flex-end;
+        height: 33px;
+        color: #8e8e8e;
+      }
+    }
+  
+    .candidate-bar {
+      float: left;
+      width: 40px;    
+      margin: 0 5px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      .bar-label {
+        display: block;
+        margin-top: -17px;
+        font-size: 12px;
+        font-weight: 900;
+        text-align: center;
+        transition: font-size .1s ease-in-out;
+      }
+  
+      .bar-wrapper {
+        width: 100%;
+        height: 100px;
+        background: #e3e3e3;
+
+        &.ipsos {
+          background: #79a2c1;
+        }
+
+        &.datum {
+          background: #c17979;
+        }
+
+        &.cpi {
+          background: #c1a579;
+        }
+
+        &.iep {
+          background: #79c1ae;
+        }
+      }
+  
+      .bar {
+        display: block;
+        width: 100%;
+        background: #fff;
+        transition: width .25s ease-in-out 2s;
+      }
+    }
+
+    .label {
+      display: block;
+      height: 30px;
+      margin: 20px 0 10px 0;
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1em;
+      text-align: center;
+      color: #565656;
+      transform: rotate(-45deg);
+    }
+    
+    .label-partido {
+      display: block;
+      height: 30px;
+      margin: 5px 0;
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1em;
+      color: #565656;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.banner-landing {
+  position: sticky;
+  top: 15px;
+  padding: 3.5vh 15px;
+  background: #e6f0f9;
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  h3 {
+    margin: 15px 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+  }
+
+  .line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #9c6680;
+  }
+
+  .title-1 {
+    color: #3d3b3d;
+    font-weight: 300;
+  }
+
+  .title-3 {
+    color: #3d3b3d;
+    font-weight: 300;
+    font-size: 15px;
+
+    span {
+      color:#9c6680;
+      font-size: 17px;
+      font-weight: 400;
+    }
+  }
+
+  .title-2 {
+    color: #000;
+    font-weight: 400;
+  }
+
+  .btn {
+    color: #fff;
+    background: #ee2a3f;
+  }
+}
+
+.container-widget {
+  max-width: 1080px;
+  height: 460px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media (max-width: 575.98px) { 
+    display: block;
+    width: 100%;
+    height: 520px;
+    margin: 15px auto;
+  }
+  
+  h1.page-title {
+    max-width: 620px;
+    margin: 45px auto 0 auto;
+    font-family: "noto serif",serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: .4px;
+    text-align: center;
+
+    @media (max-width: 575.98px) { 
+      font-size: 21px;
+      line-height: 1.2em;
+    }
+  }
+}
+
+.encuesta-widget-container {
+
+  h3 {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #636363;
+
+    @media (max-width: 920.98px) { 
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+    }    
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: 900;
+    color: #333;
+    text-align: center;
+
+    span {
+      margin: 0 5px;
+      padding: 2px 3px;
+      font-size: 12px;
+      font-weight: 900;
+      color: #333;
+      background: #fdbd1654;
+    }
+  }
+
+  h4 {
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 100;
+    text-align: center;
+
+    .btn {
+      font-size: 13px;
+      background: transparent;
+      border-bottom: solid 1px #fb1702;
+    }
+  }
+
+  .btn-group {
+    margin: 0 5px;
+    
+    @media (max-width: 575.98px) { 
+      margin: 15px 0 0 0;
+      text-align: center;
+    }
+  }
+
+  .btn-link {
+    &:hover {
+      background: #333;
+    }
+  }
+
+  .btn {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    margin: 0 5px;
+    padding: 0px 15px;
+    transition: background .25s ease-in-out;
+
+    &:hover {
+      background: #e3e3e3;
+    }
+
+    @media (max-width: 575.98px) { 
+      font-size: 14px;
+    }
+
+    &.active {
+      color: #fff;
+      background-color: #fb1702;
+      border-radius: 0;
+    }
+  }
+}
+
+.encuestas-list-wrapper {
+  .VueCarousel-slide {
+    border-right: solid 1px #dee2e6;
+  }
+
+  .encuesta-col {
+    max-width: 360px;
+    min-width: 360px;
+    margin: 0 auto;
+
+    @media (max-width: 575.98px) { 
+      width: 100%;
+      min-width: 100%;
+      margin: 0;
+    }
+  }
+
+  .VueCarousel-inner {
+    visibility: visible !important;
+  }
+}
+
+.encuestas-list-container-vertical {
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    background: #dee2e6;
+    border: 1px solid #dee2e6;
+  }
+
+  .encuestas-wrap-vertical {
+    display: flex;
+    align-items: center;
+  }
+
+  .col-graph {
+    width: 100%;
+    min-width: 200px;
+    margin: 0 5px;
+  }
+}
+
+// Encuestas by date
+.encuesta-wrapper {
+  float: left;
+  width: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+
+  .nota-encuesta {
+    height: 18px;
+    font-size: 13px;
+  }
+
+  .encuestadora-title {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .muestra {
+    display: block;
+    float: right;
+    margin: 0 5px;
+    padding: 2px 3px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    background: #f3f3f3;
+  }
+
+  .fecha {
+    display: block;
+    float: right;
+    margin: 0 5px;
+    padding: 2px 3px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    background: #fdbd1654;
+  }
+
+  .encuesta-graph {
+    display: flex;
+    align-items: flex-end;
+    max-width: 1020px;
+    margin: 10px auto;
+    padding: 5px 0;
+    overflow-x: auto;
+    border-bottom: solid 1px #a8a7a785;
+
+    .y-axis {
+      position: relative;
+      width: 10px;
+      height: 130px;
+      margin: 0 5px;
+      font-size: 10px;
+
+      span.percent {
+        position: absolute;
+        width: 1000px;
+        line-height: 0;
+        border-top: dashed 1px #a8a7a785
+      }
+    }
+  
+    .candidate-bar {
+      float: left;
+      width: 40px;    
+      margin: 0 10px;
+
+      .bar-label {
+        display: block;
+        margin-top: -15px;
+        font-size: 12px;
+        font-weight: 900;
+        text-align: center;
+
+        img {
+          width: 35px;
+        }
+      }
+  
+      .bar-wrapper {
+        width: 100%;
+        height: 130px;
+      }
+  
+      .bar {
+        display: block;
+        width: 100%;
+        background: #fff;
+        transition: height .15s ease-in-out;
+      }
+    }
+
+    .label {
+      display: block;
+      height: 13px;
+      margin: 6px 0 0 0;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 1em;
+      text-align: center;
+      color: #565656;
+      transform: rotate(0deg);
+    }
+
+    .candidate-img {
+      display: block;
+      width: 43px;
+      height: 35px;
+      margin: 20px 0 10px 0;
+      opacity: 0.9;
+
+      img {
+        width: 100%;
+      }
+    }
+    
+    .label-partido {
+      display: block;
+      height: 20px;
+      margin: 5px 0;
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1em;
+      color: #565656;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .encuesta-vertical-graph {
+    img {
+      width: 35px;
+    }
+
+    .candidate-row {
+      display: flex;
+      align-items: center;
+      width: 135px;
+      padding: 0 5px;
+      font-size: 14px;
+
+      @media (max-width: 575.98px) {
+        width: 100px !important;
+      }
+
+      span {
+        width: 100%;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 13px;
+      }
+
+      .icon {
+        width: 35px;
+      }
+    }
+
+    .y-axis {
+      width: 180px;
+      min-width: 120px;
+      margin: 0 5px;
+      font-size: 8px !important;
+      color: #8e8e8e;
+
+      .bar-wrapper {
+        background: transparent !important;
+        width: 100%;
+      }
+
+      span.percent {
+        position: absolute;
+        display: block;
+      }
+    }
+
+    .candidate-bar {
+      display: flex;
+      align-items: center;
+      width: 100%;    
+      margin: 10px 0;
+    }
+
+    .bar-wrapper {
+      position: relative;
+      width: 180px;
+      min-width: 120px;
+      background: #f3f3f3;
+    
+      .bar-label {
+        position: absolute;
+        margin-top: -6px;
+        padding: 5px;
+        font-size: 12px;
+        font-weight: 900;
+        text-align: center;
+      }
+  
+      .bar {
+        display: block;
+        float: left;
+        width: 100%;
+        height: 15px;
+        background: #fff;
+        transition: width .35s ease-in-out;
+      }
+    }
+
+    .label {
+      display: block;
+      height: 30px;
+      margin: 10px 0;
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1em;
+      text-align: center;
+      color: #565656;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.fuentes {
+  font-size: 15px;
+  line-height: 1.5em;
+  color: #4c4c4c;
+
+  @media (max-width: 575.98px) {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+
+    @media (max-width: 575.98px) {
+      font-size: 16px;
+    }
+  }
+
+  a {
+    color: #4c4c4c;
+    border-bottom: solid 1px #4c4c4c;
+  }
+}
+
+.candidate-results {
+  font-size: 15px;
+  font-weight: 600;
+
+  .candidate-bar {
+    position: relative;
+    width: 180px;
+    margin: 5px;
+
+    .percent {
+      background-color: #b6c1bd;
+      width: 100%;
+      height: 15px;
+      padding: 5px;
+      color: #fff;
+      opacity: 0.8;
+    }
+
+    .tooltip-c {
+      display: block;
+
+      span {
+        font-size: 12px;
+        font-weight: 400;
+        color: #333;
+      }
+    }
+  }
+
+  .diferencia {
+    display: block;
+    font-size: 12px;
+    color: #63a563;
+  }
+
+  .candidate-item {
+    min-width: 95px;
+    margin: 0;
+    padding: 0 3px;
+    text-align: center;
+    color: #757575;
+
+    
+
+    &.active {
+      font-size: 18px;
+      color: #333;
+      background: #e6f0f9;
+
+      label {
+        color: #636363;
+      }
+    }
+
+    span {
+      font-size: 13px;
+      color: #ce9e8d;
+
+      &.win {
+        color: #63a563;
+      }
+
+      &.loss {
+        color: #d85454;
+      }
+    }
+
+    label {
+      font-size: 10px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #b9b9b9;
+    }
+  }
+}
+
+.candidato-historico {
+  height: 50px;
+  width:auto ;
+}
+
+
+.foot-note {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: 600;
+  color: #757575;
+}
+
+.articulos-item {
+  padding: 0 5px;
+
+  h3 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 900;
+
+    @media (max-width: 575.98px) { 
+      font-size: 14px;
+    }
+
+    a {
+      color: #333;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.bg-gray {
+  padding: 0 5px;
+  background: #e6f0f9;
+
+  .row {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}
+
+.bg-dark {
+  h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+  }
+}
+
+.VueCarousel-dot-container {
+  margin: 0 !important;
+
+  button {
+    margin: 0 !important;
+  }
+}
+
+.depa {
+  text-transform: capitalize;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+.candidato-mapa {  
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Nunito Sans', sans-serif;
+  
+}
+.partido-mapa {
+  color: #686868;
+  font-size: 11px;
+  
+
+
+}
+.cuenta-regresiva {
+  font-size: 18px;
+}
+
+.votos-validos {
+  color: #63a563;
+  
+  span {
+    display: block;
+    font-size: 12px;
+  }
+
+  h5 {
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
+
+.porcentaje-resultado {
+  font-weight: bold;
+  font-size: 29px;
+  text-align: center;
+
+  span {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  h5 {
+    font-weight: bold;
+    font-size: 17px;
+  }
+}

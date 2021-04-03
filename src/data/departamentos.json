@@ -1,0 +1,398 @@
+[
+  {
+    "departamento": "lima",
+    "ubigeo":"15",
+    "total": 10000,
+    "validos": 50,
+    "candidatos": [
+      {
+        "candidato_id": "george-forsyth",
+        "candidato": "George Forsyth",
+        "partido": "Victoria Nacional",
+        "color" : "#ff2607",
+        "votos": 50000,
+        "validos": 50,
+        "diferencia": 1200,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "ica",
+    "ubigeo":"11",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "color" : "#000000",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia":2520,
+        "porcentaje": 30
+      }
+    ]    
+  },
+  {
+    "departamento": "arequipa",
+    "ubigeo":"04",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "veronika-mendoza",
+        "candidato": "Veronika Mendoza",
+        "partido": "Juntos por el Perú",
+        "color" : "#2fc100",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia":2300,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "moquegua",
+    "ubigeo":"18",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "rafael-lopez-aliaga",
+        "candidato": "Rafael Lopez Aliaga",
+        "partido": "Renovacion Popular",
+        "color" : "#00aede",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 850,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "tacna",
+    "ubigeo":"23",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "rafael-lopez-aliaga",
+        "color" : "#00aede",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1000,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "ancash",
+    "ubigeo":"02",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "julio-guzman",
+        "candidato": "Julio Guzman",
+        "color" : "#4f1b7f",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 500,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "la libertad",
+    "ubigeo":"13",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "rafael-lopez-aliaga",
+        "color" : "#00aede",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1000,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "lambayeque",
+    "ubigeo":"14",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "keiko-fujimori",
+        "candidato": "keiko Fujimori",
+        "partido": "Fuerza Popular",
+        "color" : "#fd6600",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 600,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "piura",
+    "ubigeo":"20",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "candidato": "Yonhy Lescano",
+        "partido": "Accion Popular",
+        "color" : "#000000",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1800,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "tumbes",
+    "ubigeo":"24",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "color" : "#000000",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1590,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "amazonas",
+    "ubigeo":"20",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "color" : "#000000",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1258,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "loreto",
+    "ubigeo":"16",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "color" : "#000000",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1478,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "ucayali",
+    "ubigeo":"25",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "color" : "#000000",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1654,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "san martin",
+    "ubigeo":"22",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "color" : "#000000",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1236,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "madre de dios",
+    "ubigeo":"17",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "veronika-mendoza",
+        "color" : "#2fc100",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1598,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "puno",
+    "ubigeo":"21",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "color" : "#000000",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1234,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "ayacucho",
+    "ubigeo":"05",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "color": "#000000",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1259,
+        "porcentaje": 30
+
+      }
+    ]
+  },
+  {
+    "departamento": "junin",
+    "ubigeo":"12",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "color": "#000000",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 2002,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "cusco",
+    "ubigeo":"08",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "color": "#000000",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1252,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "huanuco",
+    "ubigeo":"10",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "color": "#000000",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1262,
+        "porcentaje": 30
+      }
+    ]
+  },
+  {
+    "departamento": "huancavelica",
+    "ubigeo":"09",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "color": "#000000",
+        "votos": 50000,
+        "validos": 4025,
+        "diferencia":2500,
+        "porcentaje": 30       
+
+      }
+    ]
+  },
+  {
+    "departamento": "apurimac",
+    "ubigeo":"03",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "color": "#000000",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1412,
+        "porcentaje": 30
+      }
+    ] 
+  },
+  { 
+    "departamento": "pasco",
+    "ubigeo":"19",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1020,
+        "porcentaje": 30
+      }
+    ] 
+
+  },
+  {
+    "departamento": "cajamarca",
+    "ubigeo":"06",
+    "total": 10000,
+    "validos": 56,
+    "candidatos": [
+      {
+        "candidato_id": "yonhy-lescano",
+        "votos": 50000,
+        "validos": 65,
+        "diferencia": 1250,
+        "porcentaje": 30
+      }
+    ] 
+  }
+]
