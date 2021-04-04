@@ -10,53 +10,81 @@
       </nav>
   <div class="container">
         <div class="row justify-content-center mb-5 mt-5">
-        <div class="col-12 text-center">
-            <h1 class="page-app-title text-center">Resultados Elecciones 2021</h1>
-        </div>            
-      </div>
-      <div class="credits col-12 text-center">
-        Por <a href="https://ojo-publico.com/autor/ojopublico" target="_blank">OjoPúblico</a>
-      </div>
-      <div class="row ">
+          <div class="col-8 text-center">
+              <h1 class="page-app-title text-center">Candidatos Lescano, Fujimori, Forsyth y Mendoza pelean 
+                pase a la segunda vuelta con estrecho margen</h1>
+          </div>
+            <div class="credits col-12 text-center">
+            Por <a href="https://ojo-publico.com/autor/ojopublico" target="_blank">OjoPúblico</a>
+          </div>
+            <div class="col-8 mt-5 text-center">
+              <p>El presidente del Bicentenario, además de enfrentar a la pandemia, deberá gobernar durante cinco años con una bancada en el Congreso que necesitará de alianzas que permitan la gobernabilidad y el equilibrio de poderes para evitar lo ocurrido durante el periodo anterior (2016-2021), que acaba con cuatro presidentes: Pedro Pablo Kuczynski, Martín Vizcarra, Manuel Merino y Francisco Sagasti.</p>
+          </div>
           <div class="col-12 text-center mt-3 mb-3">
               <SharingOptions/>
           </div>
-      </div>
-      <div class="row ">
+        </div>
+        <div class="row ">
           <div class="col-12 text-center mt-3">
               <CuentaRegresiva/>
           </div>
       </div>
       <div class="row pt3 mt-5">
-              <div class="col-12 col-md-12 mb-3 subtitle border-bottom">
-                  <h2>Revisa el conteo final de los votos a nivel nacional.</h2>
-                  <span class="line"></span>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odio eaque libero labore aperiam provident, maxime repudiandae ipsum voluptatem corporis expedita dignissimos ad facilis, ipsa magni facere itaque officiis iste.
-                  </p>
-              </div>
+        <div class="col-12 col-md-12 mb-3 subtitle border-bottom">
+            <h2>Elecciones y conteo bajo pandemia</h2>
+            <span class="line"></span>
+            <p>La Oficina Nacional de Procesos Electorales (ONPE) enfrentó un gran desafío en la ejecución de las elecciones del Bicentenario. Se espera que el proceso para tener los resultados al 100% demore más de lo normal debido a las condiciones de bioseguridad que se tomarán para evitar infecciones por la Covid-19</p>
+        </div>
 
-              <MapaElecciones />             
+        <MapaElecciones />             
+      </div> 
 
-              <div class="row pt-3 mt-5">
-                <div class="col-12 mb-3 subtitle mt-5 border-bottom">
-                  <h2>Votos de congresistas por departamento.</h2>
-                  <span class="line"></span>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odio eaque libero labore aperiam provident, maxime repudiandae ipsum voluptatem corporis expedita dignissimos ad facilis, ipsa magni facere itaque officiis iste.
-                  </p>
-                  </div>
-              </div>                         
-                    
-      </div>    
+
       <div class="row pt-3 mt-5 border-bottom">
+        <div class="col-12 mb-3 subtitle mt-5 border-bottom">
+          <h2>Congreso fragmentado (2021-2026)</h2>
+          <span class="line"></span>
+          <p>Siete partidos tendrán representantes en el Parlamento: Acción Popular, Fuerza Popular, Víctoria Nacional, Juntos por el Perú, Renovación Popular, Avanza País y el Frente Popular Agrícola FIA del Perú (Frepap). Se requerirá un acuerdo de todas las fuerzas políticas para evitar la inestabilidad de los últimos cinco años.</p>
+        </div>
+
         <div class="col-4">
           <PartidosResultados :candidatos="lista_candidatos" />
         </div>
         <div class="col-8">
           <h1 class="text-center">Lista de congresistas electos por cada region</h1>
+        </div>
+      </div>
 
+      <div class="row pt-3 mt-5 border-bottom">
+        <div class="col-12 mb-3 subtitle mt-5 border-bottom">
+          <h2>Adiós al ganador contundente en primera vuelta</h2>
+          <span class="line"></span>
+          <p>En los últimos 20 años, el ganador de la primera vuelta ha sacado amplia ventaja a su rival inmediato. En 2016, Keiko Fujimori superó por 2.8 millones de votos a Pedro Pablo Kuczynski; mientras que Ollanta Humala ganó a Fujimori con 1.1 millones de votos en 2011. En 2006, Humala superó a Alan García por 772 mil votos.</p>
         </div>
 
+        <div class="col-4">
+          <PartidosResultados :candidatos="lista_candidatos" />
+        </div>
+        <div class="col-8">
+          <h1 class="text-center">Lista de congresistas electos por cada region</h1>
+        </div>
       </div>
+
+      <div class="row pt-3 mt-5 border-bottom">
+        <div class="col-12 mb-3 subtitle mt-5 border-bottom">
+          <h2>Parlamentarios más votados en dos décadas</h2>
+          <span class="line"></span>
+          <p>Dos hijos del condenado expresidente Alberto Fujimori han sido los congresistas más votados en las últimas elecciones: Keiko en el 2006 y Kenji Fujimori en 2011 y en 2016. El exgeneral del Ejército, Daniel Urresti, tomó la posta en los comicios legislativos extraordinarios del 2020.</p>
+        </div>
+
+        <div class="col-4">
+          <PartidosResultados :candidatos="lista_candidatos" />
+        </div>
+        <div class="col-8">
+          <h1 class="text-center">Lista de congresistas electos por cada region</h1>
+        </div>
+      </div>
+
 
       <Footer/>        
   </div>        
