@@ -18,20 +18,11 @@
     </div>
     <div class="row">
       <div class="col-12 text-right">
-        <svg width="100%" height="720px" class="plan-vector-map" ref="svgmap">
+        <svg width="100%" :height="height" class="plan-vector-map" ref="svgmap">
           <g ref="base"></g>
           <g ref="departamentos"></g>
           <g ref="labels"></g>
         </svg>
-        <div class="btn btn-dark d-block d-md-none" @click="openDepartamentos()">Seleccionar departamentos</div>
-        <div class="lista-departamentos" :class="{'active': openMenu}">
-          <div><div class="btn btn-dark d-inline d-md-none" @click="openDepartamentos()">X</div></div>
-          <ul>
-            <li :key="dep.region" v-for="dep in departamentos">
-              <a @click="show_departamento(dep.region)">{{ dep.region }}</a>
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
     
@@ -137,26 +128,6 @@
         let dep = find(this.departamentos, d => d.region == id)
 
         this.updateRegionSeleccionada(dep)
-
-        let f = find(this.perugeo.features, _f => {
-          if(_f.properties.dep_id == id)
-            return _f
-        })
-
-        if(window.innerWidth < 798) {
-          let table = this.load_tooltip(dep, f)
-          this.tooltip.html(`${table}`)
-            .style("left", "0px")
-            .style("top", "0px")
-          
-          this.tooltip.transition()
-            .duration(500)	
-            .style("opacity", 0)
-          
-          this.tooltip.transition()
-            .duration(200)	
-            .style("opacity", .9)
-        }
       },
       getImageCandidate(c) {
         return require(`../assets/candidatos/${c}.png`)
@@ -214,6 +185,8 @@
           })
       },
       renderMapa() {
+
+
         let base = d3.select(this.$refs['base'])
 
         this.bounds = d3.geoBounds(this.perugeo)
@@ -223,9 +196,19 @@
         // Compute the angular distance between bound corners
         this.distance = d3.geoDistance(this.bounds[0], this.bounds[1])
 
-        this.scale = this.width / this.distance / Math.sqrt(1)
+        if(window.innerWidth < 719) {
+          this.width = 360
+          this.height = 450
+          this.center_device =  [this.width/2.2, this.height / 2]
+          this.scale = this.width * 1.4 / this.distance / Math.sqrt(1)
+        } else if(window.innerWidth > 720) {
+          this.width = 720
+          this.height = 720
+          this.center_device =  [this.width/.99, this.height / 2.2]
+          this.scale = this.width / this.distance / Math.sqrt(1)
+        }
 
-        this.center_device =  [this.width/.99, this.height / 2.2]
+        
 
         this.projection
           .translate(this.center_device)
@@ -256,20 +239,6 @@
             
             let dep = find(this.departamentos, d => d.region == f.properties.dep_id)   
 
-            if(window.innerWidth < 798) {
-              let table = this.load_tooltip(dep, f)
-              this.tooltip.html(`${table}`)
-                .style("left", "0px")
-                .style("top", "0px")
-              
-              this.tooltip.transition()
-                .duration(500)	
-                .style("opacity", 0)
-              
-              this.tooltip.transition()
-                .duration(200)	
-                .style("opacity", .9)
-            }
             if(window.innerWidth > 798) {
               this.updateRegionSeleccionada(dep)
             }
@@ -319,7 +288,7 @@
         base
           .selectAll('text.departamento-label')
           .attr('transform', d => {
-            const translate = this.path.centroid(d)
+            const translate = this.projection(d.properties.center)
             if(!isNaN(translate[0]))
               return `translate(${translate})`
           })
@@ -357,7 +326,7 @@
               </div>
             </div>`
         })
-            if (this.zoomed==false)   
+            if (this.zoomed==false) 
 
             
 
