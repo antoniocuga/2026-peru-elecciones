@@ -360,6 +360,9 @@
               </div>
             </div>`
         })
+            if (this.zoomed==false) 
+
+            
 
         table += `<div>${candidatos}</div>`
 
