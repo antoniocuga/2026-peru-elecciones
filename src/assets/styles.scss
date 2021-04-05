@@ -367,6 +367,12 @@ p {
     stroke: #fff;
     stroke-width: 1px;
     cursor: pointer;
+    opacity: 1;
+    transition: opacity .15s ease-in-out;
+
+    &.inactive {
+      opacity: 0.2;
+    }
   }
 
   .departamento-path:hover {
@@ -392,6 +398,18 @@ p {
 
     &.active {
       display: block;
+    }
+  }
+
+  // mapa
+  .departamento-label {
+    opacity: 1;
+    transition: opacity .1s ease-in-out;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px #ffffff8c;
+
+    &.inactive {
+      opacity: 0;
     }
   }
 }

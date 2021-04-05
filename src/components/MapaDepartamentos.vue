@@ -4,17 +4,7 @@
     <div class="row">
       <div class="col-12 text-right">
         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <button type="button" class="btn btn-secondary">PRESIDENTE</button>
-          <button type="button" class="btn btn-secondary">CONGRESO</button>
-          <div class="btn-group" role="group">
-            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </button>
-            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <a class="dropdown-item" href="#">Dropdown link</a>
-              <a class="dropdown-item" href="#">Dropdown link</a>
-            </div>
-          </div>
+          <button type="button" @click="resetPresidente()" class="btn active btn-secondary" v-if="zoomed==true">Volver a los resultados nacionales</button>
         </div>
       </div>
     </div>
@@ -23,6 +13,7 @@
         <svg width="100%" height="720px" class="plan-vector-map" ref="svgmap">
           <g ref="base"></g>
           <g ref="departamentos"></g>
+          <g ref="labels"></g>
         </svg>
         <div class="btn btn-dark d-block d-md-none" @click="openDepartamentos()">Seleccionar departamentos</div>
         <div class="lista-departamentos" :class="{'active': openMenu}">
@@ -53,20 +44,18 @@
     data() {
       return {
         openMenu: false,
-        width: 820,
+        width: 720,
         height: 720,
         center: [],
         scale: 1500,
         distance: 0,
         bounds: [],
-        center_device: []
+        center_device: [],
+        zoomed: false
       }
     },
     mounted() {
       this.renderMapa()
-    },
-    created () {
-      this.$store.dispatch('candidatos/getAllCandidatos')
     },
     watch: {
       candidatos() {
@@ -120,8 +109,12 @@
       ...mapActions('candidatos', [
         'updateRegionSeleccionada'
       ]),
+      resetPresidente() {
+        this.updateRegionSeleccionada({region:'NACIONAL'})
+        this.zoomed = false
+      },
       openDepartamentos() {
-        this.openMenu = !this.openMenu
+        this.openMenu = !this.openMenu        
       },
       show_departamento(id) {
         
@@ -172,17 +165,23 @@
         return require(`../assets/partidos/${c}.png`)
       },
       transitionPath() {
-
-        let center_device = [this.width / 1.2, this.height / 2.2]
         let base = d3.select(this.$refs['svgmap'])
-        let dep = find(this.perugeo.features, d => d.properties.dep_id == this.regionSeleccionada.region)
-        let center = dep.properties.center
+        let center, scale
 
-        let scale = dep.properties.scale
+        
+        if(this.regionSeleccionada.region != 'NACIONAL') {
+          let dep = find(this.perugeo.features, d => d.properties.dep_id == this.regionSeleccionada.region)
+          center = dep.properties.center
+          scale = dep.properties.scale
+        } else if(this.regionSeleccionada.region == 'NACIONAL') {
+          center = d3.geoCentroid(this.perugeo)
+          scale = this.width / this.distance / Math.sqrt(1)
+        }
+
 
         const r = d3.interpolate(this.center, center)
         const s = d3.interpolate(this.scale, scale)
-        console.log(this.scale)
+
         base.selectAll('path.departamento-path')
           .transition()
           .duration(1000)
@@ -191,16 +190,27 @@
               this.projection
                 .scale(s(Math.pow(t,2)))                    
                 .center(r(Math.pow(t,0.33)))
-                .translate(center_device)                    
+                .translate(this.center_device)                    
                 
                 this.path.projection(this.projection)
 
               return this.path(d)
             }
           })
+          .on('start', () => {
+            base
+              .selectAll('text.departamento-label')
+              .classed('inactive', true)
+          })
           .on('end', () => {
             this.scale = scale
             this.center = center
+            if(this.regionSeleccionada.region != 'NACIONAL') {
+              this.renderLabels()
+              this.zoomed = true
+            } else if(this.regionSeleccionada.region == 'NACIONAL') {
+              base.selectAll('path.departamento-path').classed('inactive', false)
+            }
           })
       },
       renderMapa() {
@@ -215,7 +225,7 @@
 
         this.scale = this.width / this.distance / Math.sqrt(1)
 
-        this.center_device =  [this.width / 1.2, this.height / 2.2]
+        this.center_device =  [this.width/.99, this.height / 2.2]
 
         this.projection
           .translate(this.center_device)
@@ -243,7 +253,12 @@
               return `fill: ${dep.winner.color}ab;`
           })
           .on("click", (event, f) => {
-            let dep = find(this.departamentos, d => d.region == f.properties.dep_id)      
+            
+            base.selectAll('path.departamento-path').classed('inactive', true)
+            d3.select(event.target).classed('inactive', false)
+
+            let dep = find(this.departamentos, d => d.region == f.properties.dep_id)   
+
             if(window.innerWidth < 798) {
               let table = this.load_tooltip(dep, f)
               this.tooltip.html(`${table}`)
@@ -261,6 +276,7 @@
             if(window.innerWidth > 798) {
               this.updateRegionSeleccionada(dep)
             }
+            
           })
           .on("mouseover", (event, f) => {
             if(window.innerWidth > 798) {
@@ -286,6 +302,31 @@
                 .style("opacity", 0)
             }
           })
+
+          let labelsGroup = d3.select(this.$refs['labels'])
+          labelsGroup
+              .selectAll('text')
+              .data(this.perugeo.features)
+              .enter()
+              .append('text')
+              .attr('class', d => {
+                return `departamento-label inactive ${d.properties.dep_id}`
+              })
+              .text(d => {
+                return d.properties.NOMBDEP
+              })
+      },
+      renderLabels() {
+        let base = d3.select(this.$refs['labels'])
+
+        base
+          .selectAll('text.departamento-label')
+          .attr('transform', d => {
+            const translate = this.path.centroid(d)
+            if(!isNaN(translate[0]))
+              return `translate(${translate})`
+          })
+          .classed('inactive', false)
       },
       load_tooltip(dep, f) {
 

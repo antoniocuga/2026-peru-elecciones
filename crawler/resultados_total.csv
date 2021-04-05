@@ -1,21 +1,21 @@
-candidato_id,candidato,partido_id,partido,color,total,porcentaje_validos,lima,callao,loreto,tumbes,piura,lambayeque,la-libertad,arequipa,moquegua,tacna,ica,ancash,amazonas,ayacucho,cusco,madre-de-dios,san-martin,ucayali,junin,puno,huanuco,pasco,cajamarca,huancavelica,apurimac
-george-forsyth,George Forsyth,victoria-nacional,Victoria Nacional,#ff2607,10000,11,10,1,8,6,8,6,40,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-keiko-fujimori,Keiko Fujimori,fuerza-popular,Fuerza Popular,#fd6600,10000,15,11,40,8,6,8,40,6,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-veronika-mendoza,Verónika Mendoza,juntos-por-el-peru,Juntos por el Perú,#2fc100,10000,12,10,1,8,6,8,6,6,40,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-julio-guzman,Julio Guzmán,partido-morado,Partido Morado,#4f1b7f,10000,2,10,1,8,6,8,6,6,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-daniel-urresti,Daniel Urresti,podemos-peru,Podemos Perú,#004da3,10000,5,10,1,8,6,8,6,6,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-yonhi-lescano,Yonhi Lescano,accion-popular,Acción Popular,#000000,10000,15,45,1,8,6,8,6,6,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-hernando-de-soto,Hernando de Soto,avanza-pais,Avanza País,#ff2c79,10000,3,10,1,8,6,8,6,6,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-daniel-salaverry,Daniel Salaverry,somos-peru,Somos Perú,#ff2600,10000,1,10,1,8,6,8,6,6,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-ollanta-humala,Ollanta Humala,partido-nacionalista,Partido Nacionalista,#f52300,10000,1,10,1,8,6,8,6,6,0,0,3,1,3,15,2,0,6,6,8,5,3,3,8,5,3,3
-cesar-acuna,César Acuña,alianza-para-el-progreso,Alianza para el Progreso,#0050a0,10000,2,10,1,8,6,8,6,6,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-alberto-beingolea,Alberto Beingolea,partido-popular-cristiano,Partido Popular Cristiano,#009a21,10000,1,10,1,8,6,8,6,6,0,0,3,1,3,3,2,90,6,6,8,5,3,3,8,5,3,3
-rafael-lopez-aliaga,Rafael López Aliaga,renovacion-popular,Renovación Popular,#00aede,10000,12,10,1,8,6,8,6,6,0,35,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-pedro-castillo,Pedro Castillo,peru-libre,Peru Libre,#f40201,10000,4,10,1,8,6,8,6,6,0,2,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-rafael-santos,Rafael Santos,peru-patria-segura,Perú Patria Segura,#0055a2,10000,1,10,1,8,6,8,6,6,0,2,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-marco-arana,Marco Arana,frente-amplio,Frente Amplio,#4e5405,10000,1,10,1,8,6,8,6,6,0,2,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-andres-alcantara,Andres Alcantara,democracia-directa,Democracia Directa,#fff000,10000,1,10,1,8,6,8,6,6,0,2,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-ciro-galvez,Ciro Galvez,renacimiento-unido,Renacimiento Unido,#1022b9,10000,1,10,1,8,6,8,6,6,0,2,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-jose-vega,José Vega Antonio,union-por-el-peru,Union Por El Peru,#ff2600,10000,1,10,1,8,6,8,6,6,0,2,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
-,Blanco/Viciado,,Blanco/Viciado,,10000,25,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12
-,Nulos,,Nulos,,10000,30,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11
+candidato_id,candidato,partido_id,partido,color,total,porcentaje_validos,lima,callao,lima-provincias,loreto,tumbes,piura,lambayeque,la-libertad,arequipa,moquegua,tacna,ica,ancash,amazonas,ayacucho,cusco,madre-de-dios,san-martin,ucayali,junin,puno,huanuco,pasco,cajamarca,huancavelica,apurimac
+george-forsyth,George Forsyth,victoria-nacional,Victoria Nacional,#ff2607,10000,11,10,1,15,8,6,8,6,40,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+keiko-fujimori,Keiko Fujimori,fuerza-popular,Fuerza Popular,#fd6600,10000,15,11,40,1,8,6,8,40,6,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+veronika-mendoza,Verónika Mendoza,juntos-por-el-peru,Juntos por el Perú,#2fc100,10000,12,10,1,1,8,6,8,6,6,40,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+julio-guzman,Julio Guzmán,partido-morado,Partido Morado,#4f1b7f,10000,2,10,1,1,8,6,8,6,6,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+daniel-urresti,Daniel Urresti,podemos-peru,Podemos Perú,#004da3,10000,5,10,1,1,8,6,8,6,6,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+yonhi-lescano,Yonhy Lescano,accion-popular,Acción Popular,#000000,10000,15,45,1,1,8,6,8,6,6,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+hernando-de-soto,Hernando de Soto,avanza-pais,Avanza País,#ff2c79,10000,3,10,1,45,8,6,8,6,6,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+daniel-salaverry,Daniel Salaverry,somos-peru,Somos Perú,#ff2600,10000,1,10,1,1,8,6,8,6,6,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+ollanta-humala,Ollanta Humala,partido-nacionalista,Partido Nacionalista,#f52300,10000,1,10,1,1,8,6,8,6,6,0,0,3,1,3,15,2,0,6,6,8,5,3,3,8,5,3,3
+cesar-acuna,César Acuña,alianza-para-el-progreso,Alianza para el Progreso,#0050a0,10000,2,10,1,1,8,6,8,6,6,0,0,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+alberto-beingolea,Alberto Beingolea,partido-popular-cristiano,Partido Popular Cristiano,#009a21,10000,1,10,1,1,8,6,8,6,6,0,0,3,1,3,3,2,90,6,6,8,5,3,3,8,5,3,3
+rafael-lopez-aliaga,Rafael López Aliaga,renovacion-popular,Renovación Popular,#00aede,10000,12,10,1,1,8,6,8,6,6,0,35,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+pedro-castillo,Pedro Castillo,peru-libre,Peru Libre,#f40201,10000,4,10,1,1,8,6,8,6,6,0,2,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+rafael-santos,Rafael Santos,peru-patria-segura,Perú Patria Segura,#0055a2,10000,1,10,1,1,8,6,8,6,6,0,2,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+marco-arana,Marco Arana,frente-amplio,Frente Amplio,#4e5405,10000,1,10,1,1,8,6,8,6,6,0,2,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+andres-alcantara,Andres Alcantara,democracia-directa,Democracia Directa,#fff000,10000,1,10,1,1,8,6,8,6,6,0,2,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+ciro-galvez,Ciro Galvez,renacimiento-unido,Renacimiento Unido,#1022b9,10000,1,10,1,1,8,6,8,6,6,0,2,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+jose-vega,José Vega Antonio,union-por-el-peru,Union Por El Peru,#ff2600,10000,1,10,1,1,8,6,8,6,6,0,2,3,1,3,3,2,0,6,6,8,5,3,3,8,5,3,3
+,Blanco/Viciado,,Blanco/Viciado,,10000,25,12,12,1,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12
+,Nulos,,Nulos,,10000,30,11,11,1,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11
