@@ -58,9 +58,9 @@
 
       <div class="row">
         <div class="col-12 mb-3 subtitle mt-5 border-bottom">
-          <h2>Congreso fragmentado (2021-2026)</h2>
+          <h2>Adiós al ganador contundente en primera vuelta</h2>
           <span class="line"></span>
-          <p>Siete partidos tendrán representantes en el Parlamento: Acción Popular, Fuerza Popular, Víctoria Nacional, Juntos por el Perú, Renovación Popular, Avanza País y el Frente Popular Agrícola FIA del Perú (Frepap). Se requerirá un acuerdo de todas las fuerzas políticas para evitar la inestabilidad de los últimos cinco años.</p>
+          <p>En los últimos 20 años, el ganador de la primera vuelta ha sacado amplia ventaja a su rival inmediato. En 2016, Keiko Fujimori superó por 2.8 millones de votos a Pedro Pablo Kuczynski; mientras que Ollanta Humala ganó a Fujimori con 1.1 millones de votos en 2011. En 2006, Humala superó a Alan García por 772 mil votos.</p>
         </div>
         <div class="col-4">
           <PartidosResultados :candidatos="lista_candidatos" />
@@ -69,9 +69,9 @@
       </div>
       <div class="row">
         <div class="col-12 mb-3 subtitle mt-5 border-bottom">
-          <h2>Congreso fragmentado (2021-2026)</h2>
+          <h2>Parlamentarios más votados en dos décadas</h2>          
           <span class="line"></span>
-          <p>Siete partidos tendrán representantes en el Parlamento: Acción Popular, Fuerza Popular, Víctoria Nacional, Juntos por el Perú, Renovación Popular, Avanza País y el Frente Popular Agrícola FIA del Perú (Frepap). Se requerirá un acuerdo de todas las fuerzas políticas para evitar la inestabilidad de los últimos cinco años.</p>
+          <p>Dos hijos del condenado expresidente Alberto Fujimori han sido los congresistas más votados en las últimas elecciones: Keiko en el 2006 y Kenji Fujimori en 2011 y en 2016. El exgeneral del Ejército, Daniel Urresti, tomó la posta en los comicios legislativos extraordinarios del 2020.</p>
         </div>
         <div class="col-4">
           <PartidosResultados :candidatos="lista_candidatos" />
