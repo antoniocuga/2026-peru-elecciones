@@ -12,7 +12,7 @@
               <h4 class="candidato-mapa m-0">{{c.partido}}</h4>               
             </div> 
             <div class="col-4 votos-validos align-self-center text-center">              
-                <span>Votos</span><h5 class="diferencia">{{ c.votos }}</h5>                              
+                <span>congresistas</span><h5 class="diferencia">{{ c.votos }}</h5>                              
             </div>
         </div>  
       </div>
