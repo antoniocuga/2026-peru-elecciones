@@ -3,9 +3,17 @@
   <div class="mapa-resultados-container">
     <div class="row">
       <div class="col-12 text-right">
+
+        <b-dropdown :text="regionSeleccionada.region" variant="outline-dark" class="m-2">
+          <b-dropdown-item :key="dep.region" v-for="dep in departamentos">
+            <a @click="show_departamento(dep.region)">{{ dep.region }}</a>
+          </b-dropdown-item>
+        </b-dropdown>
+
         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
           <button type="button" @click="resetPresidente()" class="btn active btn-secondary" v-if="zoomed==true">Volver a los resultados nacionales</button>
         </div>
+
       </div>
     </div>
     <div class="row">
@@ -61,8 +69,13 @@
       candidatos() {
         this.renderMapa()
       },
-      regionSeleccionada() {
+      regionSeleccionada(v) {
         this.transitionPath()
+
+        if(v.region !='NACIONAL') {
+          d3.selectAll('path.departamento-path').classed('inactive', true)
+          d3.select(`path.${v.region}-path`).classed('inactive', false)
+        }        
       }
     },
     computed: {
@@ -141,22 +154,6 @@
             .duration(200)	
             .style("opacity", .9)
         }
-
-        if(window.innerWidth > 798) {
-          this.tooltip 
-            .style("left", (event.pageX) + "px")
-            .style("top", (event.pageY - 28) + "px")
-        
-          this.tooltip.transition()
-            .duration(500)	
-            .style("opacity", 0)
-          
-          this.tooltip.transition()
-            .duration(200)	
-            .style("opacity", .9)
-        }
-        
-        this.openDepartamentos()
       },
       getImageCandidate(c) {
         return require(`../assets/candidatos/${c}.png`)
@@ -254,9 +251,6 @@
           })
           .on("click", (event, f) => {
             
-            base.selectAll('path.departamento-path').classed('inactive', true)
-            d3.select(event.target).classed('inactive', false)
-
             let dep = find(this.departamentos, d => d.region == f.properties.dep_id)   
 
             if(window.innerWidth < 798) {
