@@ -1,5 +1,5 @@
 <template>
-    <div class="container resultados2021">
+    <div class="col-12 resultados2021">
         <div class="row">
           <div class="col-12 mb-3 pb-3">
             <h3 class="m-0 text-center">Resultados a nivel nacional - <b>conteo ONPE al 61%</b> ultima actualización 00:00</h3>
