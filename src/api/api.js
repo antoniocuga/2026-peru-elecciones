@@ -7,7 +7,7 @@ export default {
   getAllCandidatos (cb) {
     let candidatos = []
     axios
-    .get(`/data/resultados_total.json`)
+    .get(`/resultados-2021/data/resultados_total.json`)
     .then(response => {
       
       candidatos = response.data
