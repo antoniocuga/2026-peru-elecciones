@@ -239,20 +239,6 @@
             
             let dep = find(this.departamentos, d => d.region == f.properties.dep_id)   
 
-            if(window.innerWidth < 798) {
-              let table = this.load_tooltip(dep, f)
-              this.tooltip.html(`${table}`)
-                .style("left", "0px")
-                .style("top", "0px")
-              
-              this.tooltip.transition()
-                .duration(500)	
-                .style("opacity", 0)
-              
-              this.tooltip.transition()
-                .duration(200)	
-                .style("opacity", .9)
-            }
             if(window.innerWidth > 798) {
               this.updateRegionSeleccionada(dep)
             }
