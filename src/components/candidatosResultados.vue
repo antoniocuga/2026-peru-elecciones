@@ -71,10 +71,8 @@
       })
     },
     watch: {
-      regionSeleccionada(v) {
-        if(v.region == 'NACIONAL') {
-          this.open = false
-        }
+      regionSeleccionada() {
+        this.open = false
       }
     },
     methods: {
