@@ -16,12 +16,26 @@
             </div>
         </div>  
       </div>
+      <b-collapse v-model="open" id="collapse-1" class="col-12 mt-2">
+      <div class="row  candidate-info align-self-center mt-2  pb-1 border-bottom" :key="c.candidato_id" v-for="c in candidatos.slice(0,8)">
+        <div class="col-3 pr-0 img-candidato">
+            <img width="65px" :src="getImagePartido(c.partido_id)" />
+        </div>
+        <div class="col-5 pl-0">
+            <h4 class="candidato-mapa m-0">{{c.partido}}</h4>          
+        </div> 
+        <div class="col-4 votos-validos align-self-center text-center">
+          <span>congresistas</span><h5 class="diferencia">{{ c.votos }}</h5>                         
+        </div>                  
+      </div>
+    </b-collapse>
+
       <div class="col-12">
         <b-button @click="open=!open" class="btn-dark">Mostrar todos</b-button>
       </div>
     </div>
     
-  
+
 </template>
 
 <script>
