@@ -9,26 +9,22 @@
           </div>      
       </nav>
   <div class="container">
-        <div class="row justify-content-center mb-5 mt-5">
-          <div class="col-8 text-center">
-              <h1 class="page-app-title text-center">Candidatos Lescano, Fujimori, Forsyth y Mendoza pelean 
-                pase a la segunda vuelta con estrecho margen</h1>
-          </div>
-            <div class="credits col-12 text-center">
-            Por <a href="https://ojo-publico.com/autor/ojopublico" target="_blank">OjoPúblico</a>
-          </div>
-            <div class="col-8 mt-5 text-center">
-              <p>El presidente del Bicentenario, además de enfrentar a la pandemia, deberá gobernar durante cinco años con una bancada en el Congreso que necesitará de alianzas que permitan la gobernabilidad y el equilibrio de poderes para evitar lo ocurrido durante el periodo anterior (2016-2021), que acaba con cuatro presidentes: Pedro Pablo Kuczynski, Martín Vizcarra, Manuel Merino y Francisco Sagasti.</p>
-          </div>
-          <div class="col-12 text-center mt-3 mb-3">
-              <SharingOptions/>
-          </div>
+      <div class="row justify-content-center mb-5 mt-5">
+        <div class="col-8 text-center">
+          <h1 class="page-app-title text-center">Candidatos Lescano, Fujimori, Forsyth y Mendoza pelean 
+              pase a la segunda vuelta con estrecho margen</h1>
         </div>
-        <div class="row ">
-          <div class="col-12 text-center mt-3">
-              <CuentaRegresiva/>
-          </div>
+        <div class="credits col-12 text-center">
+          Por <a href="https://ojo-publico.com/autor/ojopublico" target="_blank">OjoPúblico</a>
+        </div>
+        <div class="col-8 mt-5 text-center">
+          <p>El presidente del Bicentenario, además de enfrentar a la pandemia, deberá gobernar durante cinco años con una bancada en el Congreso que necesitará de alianzas que permitan la gobernabilidad y el equilibrio de poderes para evitar lo ocurrido durante el periodo anterior (2016-2021), que acaba con cuatro presidentes: Pedro Pablo Kuczynski, Martín Vizcarra, Manuel Merino y Francisco Sagasti.</p>
+        </div>
+        <div class="col-12 text-center mt-3 mb-3">
+          <SharingOptions/>
+        </div>
       </div>
+
       <div class="row pt3 mt-5">
         <div class="col-12 col-md-12 mb-3 subtitle border-bottom">
             <h2>Elecciones y conteo bajo pandemia</h2>
@@ -92,7 +88,6 @@
   </template>
 <script>
 
-  import CuentaRegresiva from '../components/CuentaRegresiva.vue'
   import MapaElecciones from '../components/MapaEleciones.vue'
   import SharingOptions from '../components/SharingOptions.vue'      
   import PartidosResultados from '../components/PartidosResultados.vue'
@@ -105,7 +100,6 @@
   export default {
     name: 'Home', 
     components: {
-      CuentaRegresiva,
       MapaElecciones,
       SharingOptions,
       PartidosResultados,                 

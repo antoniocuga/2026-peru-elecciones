@@ -5,8 +5,10 @@
             <h3 class="m-0 text-center">Resultados a nivel nacional - <b>conteo ONPE al 61%</b></h3>
           </div>
           <div class="col-auto mt-3" :key="c.candidato_id" v-for="(c, ix) in top_candidatos">
-            <div class="d-flex">
+            <div>
               <div class="mr-2"><img width="65px" :src="getImageCandidate(c.candidato_id)" /></div>
+            </div>
+            <div class="d-flex">
               <div class="card-resultado">              
                 <div class="candidato-mapa">{{ c.candidato }}</div>
                 <div class="partido-mapa"><img width="25px" :src="getImagePartido(c.partido_id)" /> {{ c.partido }}</div>
@@ -19,17 +21,12 @@
                 </svg> En segunda vuelta</div>
               </div>
             </div>
-            <div class="porcentaje-resultado text-right">
-              
-            </div>
           </div>
         </div>
         <div class="row mt-5 border-top pt-5">
           <div class="col-12 mapa-resultados-wrapper">
-
               <MapaDepartamentos />
               <candidatosResultados :candidatos="lista_candidatos" />
-
           </div>
           <!-- Show data in mobile -->
           <div class="tooltip tooltip-data mobile-results"></div>
@@ -110,7 +107,7 @@ export default {
             }
         }), ['porcentaje'], ['desc'])
 
-        return candidates.slice(0, 4)
+        return candidates.slice(0, 6)
       },         
 	}
 }

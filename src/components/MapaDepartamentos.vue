@@ -20,7 +20,7 @@
     </div>
     <div class="row">
       <div class="col-12 text-right">
-        <svg width="100%" height="720px" class="plan-vector-map">
+        <svg width="100%" height="720px" class="plan-vector-map" ref="svgmap">
           <g ref="base"></g>
           <g ref="departamentos"></g>
         </svg>
@@ -41,10 +41,11 @@
 
 <script>
 
+  import { geoMercator } from 'd3-geo'
   import numeral from 'numeral'
   import { mapState, mapActions } from 'vuex'
   import * as d3 from 'd3'
-  //import { feature } from 'topojson'
+  import { feature } from 'topojson'
   import { find, filter, map, maxBy, orderBy, groupBy, uniq } from 'lodash'  
 
   export default {
@@ -53,7 +54,12 @@
       return {
         openMenu: false,
         width: 820,
-        height: 720
+        height: 720,
+        center: [],
+        scale: 1500,
+        distance: 0,
+        bounds: [],
+        center_device: []
       }
     },
     mounted() {
@@ -65,6 +71,9 @@
     watch: {
       candidatos() {
         this.renderMapa()
+      },
+      regionSeleccionada() {
+        this.transitionPath()
       }
     },
     computed: {
@@ -77,7 +86,6 @@
         let filtered = filter(this.candidatos, c => c.candidato_id != "")
 
         return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
-                    
           return {
             region: region,
             departamento: uniq(map(item, 'region')).join(''),
@@ -85,19 +93,24 @@
             geodata: require(`../data/mapas/${region}.json`),
             winner: maxBy(item, 'total_departamento')
           }
-
         }), ['departamento'])
       },
       projection () {
-        return d3.geoMercator()
+        return geoMercator()
           .translate([this.width/2, this.height/2])
-          .scale(1500)
+          .scale(this.scale)
       },
       path () {
         return d3.geoPath().projection(this.projection)
       },
+      perugeo() {
+        return require(`../data/mapas/perugeo.json`)
+      },
       peru() {
-        return require(`../data/mapas/peru.json`)
+        return require(`../data/mapas/peru.topo.json`)
+      },
+      peruTopojson() {
+        return feature(this.peru, this.peru.objects.data)
       },
       tooltip() {
         return d3.select("div.tooltip")
@@ -116,7 +129,7 @@
 
         this.updateRegionSeleccionada(dep)
 
-        let f = find(this.peru.features, _f => {
+        let f = find(this.perugeo.features, _f => {
           if(_f.properties.dep_id == id)
             return _f
         })
@@ -158,32 +171,65 @@
       getImagePartido(c) {
         return require(`../assets/partidos/${c}.png`)
       },
-      renderMapa() {
+      transitionPath() {
 
+        let center_device = [this.width / 1.2, this.height / 2.2]
+        let base = d3.select(this.$refs['svgmap'])
+        let dep = find(this.perugeo.features, d => d.properties.dep_id == this.regionSeleccionada.region)
+        let center = dep.properties.center
+
+        let scale = dep.properties.scale
+
+        const r = d3.interpolate(this.center, center)
+        const s = d3.interpolate(this.scale, scale)
+        console.log(this.scale)
+        base.selectAll('path.departamento-path')
+          .transition()
+          .duration(1000)
+          .attrTween('d', (d) => {
+            return (t) => {
+              this.projection
+                .scale(s(Math.pow(t,2)))                    
+                .center(r(Math.pow(t,0.33)))
+                .translate(center_device)                    
+                
+                this.path.projection(this.projection)
+
+              return this.path(d)
+            }
+          })
+          .on('end', () => {
+            this.scale = scale
+            this.center = center
+          })
+      },
+      renderMapa() {
         let base = d3.select(this.$refs['base'])
 
-        let bounds = d3.geoBounds(this.peru),
-            center = d3.geoCentroid(this.peru)
+        this.bounds = d3.geoBounds(this.perugeo)
+        
+        this.center = d3.geoCentroid(this.perugeo)
 
         // Compute the angular distance between bound corners
-        let distance = d3.geoDistance(bounds[0], bounds[1]),
-            scale = this.width / distance / Math.sqrt(1)
+        this.distance = d3.geoDistance(this.bounds[0], this.bounds[1])
 
+        this.scale = this.width / this.distance / Math.sqrt(1)
 
-        let center_device =  this.width / 1.2
+        this.center_device =  [this.width / 1.2, this.height / 2.2]
 
         this.projection
-          .translate([center_device, this.height/2])
-          .center(center)
-          .scale(scale)
-
+          .translate(this.center_device)
+          .center(this.center)
+          .scale(this.scale)
+        
         base.selectAll('path.departamento-path').remove()
 
         base.selectAll('path.departamento-path')
-          .data(this.peru.features)
+          .data(this.perugeo.features)
           .enter()
           .append('path')
           .attr('d',this.path)
+
           .attr('class', d => {
             return `departamento-path ${d.properties.dep_id}-path`
           })
@@ -197,9 +243,7 @@
               return `fill: ${dep.winner.color}ab;`
           })
           .on("click", (event, f) => {
-
             let dep = find(this.departamentos, d => d.region == f.properties.dep_id)      
-
             if(window.innerWidth < 798) {
               let table = this.load_tooltip(dep, f)
               this.tooltip.html(`${table}`)
@@ -214,7 +258,6 @@
                 .duration(200)	
                 .style("opacity", .9)
             }
-
             if(window.innerWidth > 798) {
               this.updateRegionSeleccionada(dep)
             }

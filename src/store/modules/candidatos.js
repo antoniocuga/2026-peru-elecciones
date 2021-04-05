@@ -29,7 +29,6 @@ const mutations = {
     state.todos = candidatos
   },
   setRegionSeleccionada(state, region) {
-    console.log(region)
     state.regionSeleccionada = region
   }
 }
