@@ -49,7 +49,7 @@
           <PartidosResultados :candidatos="lista_candidatos" />
         </div>
         <div class="col-8">
-          <h1 class="text-center">Lista de congresistas electos por cada region</h1>
+          <congresoGrafico />
         </div>
       </div>
 
@@ -92,6 +92,7 @@
 
   import MapaElecciones from '../components/MapaEleciones.vue'
   import SharingOptions from '../components/SharingOptions.vue'      
+  import congresoGrafico from '../components/congresoGrafico.vue'
   import PartidosResultados from '../components/PartidosResultados.vue'
   import Footer from '../components/Footer.vue'
 
@@ -103,6 +104,7 @@
     name: 'Home', 
     components: {
       MapaElecciones,
+      congresoGrafico,
       SharingOptions,
       PartidosResultados,                 
       Footer
