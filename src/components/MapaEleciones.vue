@@ -28,8 +28,6 @@
               <MapaDepartamentos />
               <candidatosResultados :candidatos="lista_candidatos" />
           </div>
-          <!-- Show data in mobile -->
-          <div class="tooltip tooltip-data mobile-results"></div>
         </div>
     </div>    
 </template>

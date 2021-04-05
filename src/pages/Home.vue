@@ -32,7 +32,9 @@
             <p>La Oficina Nacional de Procesos Electorales (ONPE) enfrentó un gran desafío en la ejecución de las elecciones del Bicentenario. Se espera que el proceso para tener los resultados al 100% demore más de lo normal debido a las condiciones de bioseguridad que se tomarán para evitar infecciones por la Covid-19</p>
         </div>
 
-        <MapaElecciones />             
+        <MapaElecciones />
+        <!-- Show data in mobile -->
+        <div class="tooltip tooltip-data mobile-results"></div>
       </div> 
 
 
