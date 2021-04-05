@@ -401,12 +401,26 @@ p {
     }
   }
 
+  .departamento-menu {
+    .dropdown-menu.show {
+      display: block;
+      max-height: 360px;
+      overflow-y: scroll;
+    }
+  }
+
   // mapa
   .departamento-label {
-    opacity: 1;
+    opacity: 0.5;
     transition: opacity .1s ease-in-out;
-    font-size: 14px;
+    font-size: 12px;
+    text-align: center;
     text-shadow: 1px 1px 1px #ffffff8c;
+
+    &.active {
+      font-size: 15px;
+      opacity: 1;
+    }
 
     &.inactive {
       opacity: 0;

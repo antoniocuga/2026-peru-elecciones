@@ -3,8 +3,8 @@
   <div class="mapa-resultados-container">
     <div class="row">
       <div class="col-12 text-right">
-
-        <b-dropdown :text="regionSeleccionada.region" variant="outline-dark" class="m-2">
+        
+        <b-dropdown :text="regionSeleccionada.region" variant="outline-dark" class="m-2 departamento-menu">
           <b-dropdown-item :key="dep.region" v-for="dep in departamentos">
             <a @click="show_departamento(dep.region)">{{ dep.region }}</a>
           </b-dropdown-item>
@@ -75,6 +75,9 @@
         if(v.region !='NACIONAL') {
           d3.selectAll('path.departamento-path').classed('inactive', true)
           d3.select(`path.${v.region}-path`).classed('inactive', false)
+
+          d3.selectAll('text.departamento-label').classed('active', false)
+          d3.select(`text.${v.region}-label`).classed('active', true)
         }        
       }
     },
@@ -304,7 +307,7 @@
               .enter()
               .append('text')
               .attr('class', d => {
-                return `departamento-label inactive ${d.properties.dep_id}`
+                return `departamento-label inactive ${d.properties.dep_id}-label`
               })
               .text(d => {
                 return d.properties.NOMBDEP
