@@ -63,7 +63,7 @@
           <p>En los últimos 20 años, el ganador de la primera vuelta ha sacado amplia ventaja a su rival inmediato. En 2016, Keiko Fujimori superó por 2.8 millones de votos a Pedro Pablo Kuczynski; mientras que Ollanta Humala ganó a Fujimori con 1.1 millones de votos en 2011. En 2006, Humala superó a Alan García por 772 mil votos.</p>
         </div>
         <div class="col-4">
-          <PartidosResultados :candidatos="lista_candidatos" />
+          
 
         </div>
       </div>
@@ -74,7 +74,7 @@
           <p>Dos hijos del condenado expresidente Alberto Fujimori han sido los congresistas más votados en las últimas elecciones: Keiko en el 2006 y Kenji Fujimori en 2011 y en 2016. El exgeneral del Ejército, Daniel Urresti, tomó la posta en los comicios legislativos extraordinarios del 2020.</p>
         </div>
         <div class="col-4">
-          <PartidosResultados :candidatos="lista_candidatos" />
+          
 
         </div>
       </div>
