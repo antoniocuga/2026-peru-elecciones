@@ -2,7 +2,7 @@
     <div class="col-12 resultados2021">
         <div class="row">
           <div class="col-12 mb-3 pb-3">
-            <h3 class="m-0 text-center">Resultados a nivel nacional - <b>conteo ONPE al 61%</b> ultima actualización 00:00</h3>
+            <h3 class="m-0 text-center">Resultados a nivel nacional - <b>conteo ONPE al 61%</b> última actualización 00:00</h3>
           </div>
           <div class="col-auto mt-3" :key="c.candidato_id" v-for="(c, ix) in top_candidatos">
             <div>

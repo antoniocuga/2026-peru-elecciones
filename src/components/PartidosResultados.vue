@@ -20,6 +20,7 @@
         <b-button @click="open=!open" class="btn-dark">Mostrar todos</b-button>
       </div>
     </div>
+    
   
 </template>
 
