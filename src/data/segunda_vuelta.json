@@ -1,6 +1,6 @@
 [
     {
-        "candidadto": "Pedro Pablo Kuczynski",
+        "candidato": "Pedro Pablo Kuczynski",
         "candidato_id": "pedro-pablo-kuczynski",
         "partido": "Peruanos por el Kambio",
         "partido_id": "peruanos-por-el-kambio",
@@ -10,7 +10,7 @@
         "validos": "50,12"
     },
     {
-        "candidadto": "Keiko Fujimori",
+        "candidato": "Keiko Fujimori",
         "candidato_id": "keiko-fujimori",
         "partido": "Fuerza Popular",
         "partido_id": "fuerza-popular",
@@ -20,7 +20,7 @@
         "validos": "49,88"
     },
     {
-        "candidadto": "Ollanta Humala",
+        "candidato": "Ollanta Humala",
         "candidato_id": "ollanta-humala",
         "partido": "Gana Perú",
         "partido_id": "gana-peru",
@@ -31,7 +31,7 @@
         
     },
     {
-        "candidadto": "Keiko Fujimori",
+        "candidato": "Keiko Fujimori",
         "candidato_id": "keiko-fujimori",
         "partido": "Fuerza 2011",
         "partido_id": "fuerza-2011",
@@ -41,7 +41,7 @@
         "validos": "48,5"
     },
     {
-        "candidadto": "Alan García",
+        "candidato": "Alan García",
         "candidato_id": "alan-garcia",
         "partido": "APRA",
         "partido_id": "apra",
@@ -51,7 +51,7 @@
         "validos": "52,6"
     },
     {
-        "candidadto": "Ollanta Humala",
+        "candidato": "Ollanta Humala",
         "candidato_id": "ollanta-humala",
         "partido": "Unión por el Perú",
         "partido_id": "union-por-el-peru",
@@ -61,7 +61,7 @@
         "validos": "47,4"
     },
     {
-        "candidadto": "Alejandro Toledo",
+        "candidato": "Alejandro Toledo",
         "candidato_id": "alejandro-toledo",
         "partido": "Perú Posible",
         "partido_id": "peru-posible",
@@ -71,7 +71,7 @@
         "validos": "53,1"
     },
     {
-        "candidadto": "Alan García",
+        "candidato": "Alan García",
         "candidato_id": "alan-garcia",
         "partido": "APRA",
         "partido_id": "apra",
