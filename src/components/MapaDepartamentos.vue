@@ -5,7 +5,7 @@
       <div class="col-12 text-right">
         
         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <button type="button" @click="resetPresidente()" class="btn active btn-secondary" v-if="partidoSeleccionado.partido_id!='SELECCIONAR PARTIDO'">Ver todos los partidos</button>
+          <button type="button" @click="resetPartidos()" class="btn active btn-secondary" v-if="partidoSeleccionado.partido_id!='SELECCIONAR PARTIDO'">Ver todos los partidos</button>
         </div>
 
         <b-dropdown :text="partidoSeleccionado.partido_id" variant="outline-dark" class="m-2 departamento-menu">
@@ -71,9 +71,6 @@
       lista_candidatos: Array
     },
     watch: {
-      lista_candidatos(v) {
-        console.log(v)
-      },
       candidatos() {
         this.renderMapa()
       },
@@ -81,24 +78,42 @@
         console.log(v)
         let max = maxBy(this.departamentos, 'total_departamento')
         let min = minBy(this.departamentos, 'total_departamento')
-        console.log(max)
+
         let color = d3.scaleLinear().domain([min.total_departamento, max.total_departamento]).range(["#eaeaea", `${max.winner.color}ab`])
 
         let base = d3.select(this.$refs['svgmap'])
+        
+        if(v.partido_id != 'SELECCIONAR PARTIDO') {
 
-        base.selectAll('path.departamento-path')        
+
+          
+          base.selectAll('path.departamento-path')        
           .attr("style", (f) => {
             let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
             if(dep)
               return `fill: ${color(dep.winner.total_departamento)}`
           })
+
+
+        } else {
+          console.log('todos')
+          base.selectAll('path.departamento-path')
+          .attr("style", (f) => {
+            let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
+            if(dep)
+              return `fill: ${dep.winner.color}ab;`
+          })
+        }
+
       },
       regionSeleccionada(v) {
         this.transitionPath()
 
         if(v.region !='NACIONAL') {
+          this.getAllDistritos(v)
+
           d3.selectAll('path.departamento-path').classed('inactive', true)
-          d3.select(`path.${v.region}-path`).classed('inactive', false)
+          d3.select(`path.${v.region}-path`).classed('inactive', true)
 
           d3.selectAll('text.departamento-label').classed('active', false)
           d3.select(`text.${v.region}-label`).classed('active', true)
@@ -110,12 +125,26 @@
         candidatos: state => state.candidatos.todos,
         regionSeleccionada: state => state.candidatos.regionSeleccionada,
         partidoSeleccionado: state => state.candidatos.partidoSeleccionado,
+        distritos: state => state.candidatos.distritos,
       }),
       partidos() {
         return orderBy(map(groupBy(this.candidatos, 'partido_id'), (item, partido_id) => {
           return {
             partido_id: partido_id,
             departamentos: groupBy(item, 'region')
+          }
+        }), ['departamento'])
+      },
+      distritos_parse() {
+        return orderBy(map(groupBy(this.distritos, 'ubigeo'), (item, ubigeo) => {
+          return {
+            ubigeo: ubigeo,
+            distrito: uniq(map(item, 'distrito')).join(''),
+            provincia: uniq(map(item, 'provincia')).join(''),
+            departamento: uniq(map(item, 'departamento')).join(''),
+            total_departamento: sumBy(map(item, 'total_votos')),
+            candidatos: orderBy(item, ['total_votos'], ['desc']),
+            winner: maxBy(item, 'total_votos')
           }
         }), ['departamento'])
       },
@@ -156,10 +185,14 @@
       ...mapActions('candidatos', [
         'updateRegionSeleccionada',
         'updatePartidoSeleccionado',
+        'getAllDistritos'
       ]),
+      resetPartidos() {
+        console.log("reset partidos")
+        this.updatePartidoSeleccionado({partido_id: 'SELECCIONAR PARTIDO'})
+      },
       resetPresidente() {
         this.updateRegionSeleccionada({region:'NACIONAL'})
-        this.updatePartidoSeleccionado({partido_id: 'SELECCIONAR PARTIDO'})
         this.zoomed = false
       },
       openDepartamentos() {
@@ -281,13 +314,13 @@
             
             let dep = find(this.departamentos, d => d.region == f.properties.dep_id)   
 
-            if(window.innerWidth > 798) {
+            if(window.innerWidth > 798 && this.zoomed == false) {
               this.updateRegionSeleccionada(dep)
             }
             
           })
           .on("mouseover", (event, f) => {
-            if(window.innerWidth > 798) {
+            if(window.innerWidth > 798 && this.zoomed == false) {
               let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
               let table = this.load_tooltip(dep, f)
               this.tooltip.html(`${table}`)	 
@@ -338,12 +371,9 @@
       },
       render_distritos() {
 
-
         let base = d3.select(this.$refs['base'])
 
         let features_distrito = feature(this.regionSeleccionada.geodata, this.regionSeleccionada.geodata.objects[this.regionSeleccionada.region])
-
-        console.log(features_distrito)
 
         base.selectAll('path.distrito-path').remove()
 
@@ -353,9 +383,15 @@
           .append('path')
           .attr('d',this.path)
           .attr('class', 'distrito-path')
+          .attr("style", (f) => {
+            let dep = find(this.distritos_parse, d => d.ubigeo == f.properties.IDDIST)
+            if(dep)
+              return `fill: ${dep.winner.color}ab;`
+          })
           .on("mouseover", (event, f) => {
             if(window.innerWidth > 798) {
-              let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
+              console.log(f)
+              let dep = find(this.distritos, d => d.ubigeo == f.properties.ubigeo)
               let table = this.load_tooltip(dep, f)
               this.tooltip.html(`${table}`)	 
                 .style("left", (event.pageX) + "px")
@@ -380,41 +416,78 @@
       },
       load_tooltip(dep, f) {
 
-        let table = `
-        <div class="row border-bottom pb-2 mb-2">
-          <div class="col-6 depa"><b>${f.properties.NOMBDEP}</b></div>
-          <div class="col-6 text-right">Conteo al 67%</div>
-        </div>`
-
         let candidatos = ``
-        
-        let list = orderBy(dep.candidatos, ['total_departamento'],['desc'])
+        let name = f.properties.NOMBDEP
 
-        let solo_cuatro = list.slice(0, 4)
+        let table = ``
 
-        map(solo_cuatro, dp => {
-          candidatos += `
-          <div class="tooltip-content row mt-2 pb-1 border-bottom">
-              <div class="col-2">
-                <div><img width="40px" src="${this.getImageCandidate(dp.candidato_id)}" /></div>
-                
-              </div>
-              <div class="col-6 pr-0">
-                <div class="candidato-mapa"><b>${dp.candidato}</b></div>
-                <div class="partido-mapa"><img width="25px" src="${this.getImagePartido(dp.partido_id)}" />${dp.partido}</div>
-                
-              </div>
-              <div class="pl-0 col-4 text-right">
-                <div class="candidato-mapa"><b>${dp.total_departamento}%</b></div>
-                <div class="partido-mapa">+${ numeral(dp.nacional).format('0,0') }</div>
-              </div>
+        if(dep && this.zoomed==false) {
+          table = `
+            <div class="row border-bottom pb-2 mb-2">
+              <div class="col-6 depa"><b>${name}</b></div>
+              <div class="col-6 text-right">Conteo al 67%</div>
             </div>`
-        })
-            if (this.zoomed==false) 
 
-            
 
-        table += `<div>${candidatos}</div>`
+          let list = orderBy(dep.candidatos, ['total_departamento'],['desc'])
+
+          let solo_cuatro = list.slice(0, 4)
+
+          map(solo_cuatro, dp => {
+            candidatos += `
+            <div class="tooltip-content row mt-2 pb-1 border-bottom">
+                <div class="col-2">
+                  <div><img width="40px" src="${this.getImageCandidate(dp.candidato_id)}" /></div>
+                  
+                </div>
+                <div class="col-6 pr-0">
+                  <div class="candidato-mapa"><b>${dp.candidato}</b></div>
+                  <div class="partido-mapa"><img width="25px" src="${this.getImagePartido(dp.partido_id)}" />${dp.partido}</div>
+                  
+                </div>
+                <div class="pl-0 col-4 text-right">
+                  <div class="candidato-mapa"><b>${dp.total_departamento}%</b></div>
+                  <div class="partido-mapa">+${ numeral(dp.nacional).format('0,0') }</div>
+                </div>
+              </div>`
+          })
+
+          table += `<div>${candidatos}</div>`
+        } else if(this.zoomed == true) {
+          let distrito = f
+          
+          let dep = find(this.distritos_parse, d => d.ubigeo == f.properties.IDDIST)
+
+          table = `
+            <div class="row border-bottom pb-2 mb-2">
+              <div class="col-7 depa"><b>${distrito.properties.DISTRITO}</b></div>
+              <div class="col-5 text-right">Conteo al 67%</div>
+            </div>`
+          let only_four = dep.candidatos.slice(0, 4)
+
+          map(only_four, dp => {
+            if(dp.candidato_id) {
+              candidatos += `
+                <div class="tooltip-content row mt-2 pb-1 border-bottom">
+                    <div class="col-2">
+                      <div><img width="40px" src="${this.getImageCandidate(dp.candidato_id)}" /></div>
+                      
+                    </div>
+                    <div class="col-6 pr-0">
+                      <div class="candidato-mapa"><b>${dp.candidato}</b></div>
+                      <div class="partido-mapa"><img width="25px" src="${this.getImagePartido(dp.partido_id)}" />${dp.partido}</div>
+                      
+                    </div>
+                    <div class="pl-0 col-4 text-right">
+                      <div class="candidato-mapa"><b>${dp.total_departamento}%</b></div>
+                      <div class="partido-mapa">+${ numeral(dp.nacional).format('0,0') }</div>
+                    </div>
+                  </div>`
+            }
+          })
+
+          table += `<div>${candidatos}</div>`
+        }
 
         return table
       }

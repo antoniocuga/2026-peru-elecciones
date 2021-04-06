@@ -3,6 +3,7 @@ import api from '../../api/api'
 // initial state
 const state = () => ({
   todos: [],
+  distritos: [],
   regionSeleccionada: {
     region: "NACIONAL"
   },
@@ -11,6 +12,7 @@ const state = () => ({
   }
 })
 
+let all_distritos = []
 // getters
 const getters = {}
 
@@ -20,6 +22,16 @@ const actions = {
     api.getAllCandidatos(candidatos => {
       commit('setAllCandidatos', candidatos)
     })
+  },
+  getAllDistritos ({ commit }, region) {
+    if(!all_distritos[region.region]) {
+      api.getAllDistritos(distritos => {
+        all_distritos[region] = distritos
+        commit('setAllDistritos', distritos)
+      }, {dep_id: region.region})
+    } else {
+      commit('setAllDistritos', all_distritos[region.region].candidatos)
+    }
   },
   updateRegionSeleccionada ({ commit }, region) {
     commit('setRegionSeleccionada', region)
@@ -33,6 +45,9 @@ const actions = {
 const mutations = {
   setAllCandidatos(state, candidatos) {
     state.todos = candidatos
+  },
+  setAllDistritos(state, distritos) {
+    state.distritos = distritos
   },
   setRegionSeleccionada(state, region) {
     state.regionSeleccionada = region
