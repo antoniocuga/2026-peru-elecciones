@@ -3,8 +3,8 @@
         <div class="col-12">           
 
           <ul> 
-            <li :key="segunda_vuelta" v-for="segunda_vuelta">
-              {{elecion}}
+            <li :key="eleccion.validos" v-for="eleccion in segunda_vuelta">
+              {{segunda_vuelta}}
 
             </li>
           </ul>
