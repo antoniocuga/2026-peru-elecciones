@@ -16,6 +16,9 @@
   
   export default {
     name: 'SegundaVuelta.vue',
+    data() {
+        return require('../data/segunda_vuelta.json')
+      },
       
     
   }

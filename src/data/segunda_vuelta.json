@@ -1,0 +1,86 @@
+[
+    {
+        "candidadto": "Pedro Pablo Kuczynski",
+        "candidato_id": "pedro-pablo-kuczynski",
+        "partido": "Peruanos por el Kambio",
+        "partido_id": "peruanos-por-el-kambio",
+        "eleccion": "2016",
+        "puesto": "1",
+        "total_votos": "8.596.937,00",
+        "validos": "50,12"
+    },
+    {
+        "candidadto": "Keiko Fujimori",
+        "candidato_id": "keiko-fujimori",
+        "partido": "Fuerza Popular",
+        "partido_id": "fuerza-popular",
+        "eleccion": "2016",
+        "puesto": "2",
+        "total_votos": "8.555.880,00",
+        "validos": "49,88"
+    },
+    {
+        "candidadto": "Ollanta Humala",
+        "candidato_id": "ollanta-humala",
+        "partido": "Gana Perú",
+        "partido_id": "gana-peru",
+        "eleccion": "2011",
+        "puesto": "1",
+        "total_votos": "7.937.704,00",
+        "validos": "51,4"
+        
+    },
+    {
+        "candidadto": "Keiko Fujimori",
+        "candidato_id": "keiko-fujimori",
+        "partido": "Fuerza 2011",
+        "partido_id": "fuerza-2011",
+        "eleccion": "2011",
+        "puesto": "2",
+        "total_votos": "7.490.647,00",
+        "validos": "48,5"
+    },
+    {
+        "candidadto": "Alan García",
+        "candidato_id": "alan-garcia",
+        "partido": "APRA",
+        "partido_id": "apra",
+        "eleccion": "2006",
+        "puesto": "1",
+        "total_votos": "6.965.017,00",
+        "validos": "52,6"
+    },
+    {
+        "candidadto": "Ollanta Humala",
+        "candidato_id": "ollanta-humala",
+        "partido": "Unión por el Perú",
+        "partido_id": "union-por-el-peru",
+        "eleccion": "2006",
+        "puesto": "2",
+        "total_votos": "6.270.080,00",
+        "validos": "47,4"
+    },
+    {
+        "candidadto": "Alejandro Toledo",
+        "candidato_id": "alejandro-toledo",
+        "partido": "Perú Posible",
+        "partido_id": "peru-posible",
+        "eleccion": "2001",
+        "puesto": "1",
+        "total_votos": "5.548.556,00",
+        "validos": "53,1"
+    },
+    {
+        "candidadto": "Alan García",
+        "candidato_id": "alan-garcia",
+        "partido": "APRA",
+        "partido_id": "apra",
+        "eleccion": "2001",
+        "puesto": "2",
+        "total_votos": "5.548.556,00",
+        "validos": "46,9"
+    }
+
+
+
+]
