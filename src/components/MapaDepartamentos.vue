@@ -4,6 +4,10 @@
     <div class="row">
       <div class="col-12 text-right">
         
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <button type="button" @click="resetPresidente()" class="btn active btn-secondary" v-if="partidoSeleccionado.partido_id!='SELECCIONAR PARTIDO'">Ver todos los partidos</button>
+        </div>
+
         <b-dropdown :text="partidoSeleccionado.partido_id" variant="outline-dark" class="m-2 departamento-menu">
           <b-dropdown-item :key="p.partido_id" v-for="p in partidos">
             <a @click="show_partido(p.partido_id)">{{ p.partido_id }}</a>
@@ -27,6 +31,7 @@
         <svg width="100%" :height="height" class="plan-vector-map" ref="svgmap">
           <g ref="base"></g>
           <g ref="departamentos"></g>
+          <g ref="distritos"></g>
           <g ref="labels"></g>
         </svg>
       </div>
@@ -154,6 +159,7 @@
       ]),
       resetPresidente() {
         this.updateRegionSeleccionada({region:'NACIONAL'})
+        this.updatePartidoSeleccionado({partido_id: 'SELECCIONAR PARTIDO'})
         this.zoomed = false
       },
       openDepartamentos() {
@@ -208,12 +214,15 @@
             base
               .selectAll('text.departamento-label')
               .classed('inactive', true)
+
+            base.selectAll('path.distrito-path').remove()
           })
           .on('end', () => {
             this.scale = scale
             this.center = center
             if(this.regionSeleccionada.region != 'NACIONAL') {
               this.renderLabels()
+              this.render_distritos()
               this.zoomed = true
             } else if(this.regionSeleccionada.region == 'NACIONAL') {
               base.selectAll('path.departamento-path').classed('inactive', false)
@@ -243,8 +252,6 @@
           this.center_device =  [this.width/.99, this.height / 2.2]
           this.scale = this.width / this.distance / Math.sqrt(1)
         }
-
-        
 
         this.projection
           .translate(this.center_device)
@@ -328,6 +335,48 @@
               return `translate(${translate})`
           })
           .classed('inactive', false)
+      },
+      render_distritos() {
+
+
+        let base = d3.select(this.$refs['base'])
+
+        let features_distrito = feature(this.regionSeleccionada.geodata, this.regionSeleccionada.geodata.objects[this.regionSeleccionada.region])
+
+        console.log(features_distrito)
+
+        base.selectAll('path.distrito-path').remove()
+
+        base.selectAll('path.distrito-path')
+          .data(features_distrito.features)
+          .enter()
+          .append('path')
+          .attr('d',this.path)
+          .attr('class', 'distrito-path')
+          .on("mouseover", (event, f) => {
+            if(window.innerWidth > 798) {
+              let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
+              let table = this.load_tooltip(dep, f)
+              this.tooltip.html(`${table}`)	 
+                .style("left", (event.pageX) + "px")
+                .style("top", (event.pageY - 28) + "px")
+            
+              this.tooltip.transition()
+                .duration(500)	
+                .style("opacity", 0)
+              
+              this.tooltip.transition()
+                .duration(200)	
+                .style("opacity", 1)
+            }
+          })
+          .on("mouseout", () => {
+            if(window.innerWidth > 798) {
+              this.tooltip.transition()
+                .duration(500)	
+                .style("opacity", 0)
+            }
+          })
       },
       load_tooltip(dep, f) {
 
