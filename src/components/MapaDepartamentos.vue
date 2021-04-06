@@ -4,6 +4,12 @@
     <div class="row">
       <div class="col-12 text-right">
         
+        <b-dropdown :text="partidoSeleccionado.partido_id" variant="outline-dark" class="m-2 departamento-menu">
+          <b-dropdown-item :key="p.partido_id" v-for="p in partidos">
+            <a @click="show_partido(p.partido_id)">{{ p.partido_id }}</a>
+          </b-dropdown-item>
+        </b-dropdown>
+
         <b-dropdown :text="regionSeleccionada.region" variant="outline-dark" class="m-2 departamento-menu">
           <b-dropdown-item :key="dep.region" v-for="dep in departamentos">
             <a @click="show_departamento(dep.region)">{{ dep.region }}</a>
@@ -36,7 +42,7 @@
   import { mapState, mapActions } from 'vuex'
   import * as d3 from 'd3'
   import { feature } from 'topojson'
-  import { find, filter, map, maxBy, orderBy, groupBy, uniq } from 'lodash'  
+  import { find,  map, maxBy, minBy, orderBy, sumBy, groupBy, uniq } from 'lodash'  
 
   export default {
     name: "MapaDepartamentos",
@@ -56,9 +62,31 @@
     mounted() {
       this.renderMapa()
     },
+    props: {
+      lista_candidatos: Array
+    },
     watch: {
+      lista_candidatos(v) {
+        console.log(v)
+      },
       candidatos() {
         this.renderMapa()
+      },
+      partidoSeleccionado(v) {
+        console.log(v)
+        let max = maxBy(this.departamentos, 'total_departamento')
+        let min = minBy(this.departamentos, 'total_departamento')
+        console.log(max)
+        let color = d3.scaleLinear().domain([min.total_departamento, max.total_departamento]).range(["#eaeaea", `${max.winner.color}ab`])
+
+        let base = d3.select(this.$refs['svgmap'])
+
+        base.selectAll('path.departamento-path')        
+          .attr("style", (f) => {
+            let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
+            if(dep)
+              return `fill: ${color(dep.winner.total_departamento)}`
+          })
       },
       regionSeleccionada(v) {
         this.transitionPath()
@@ -76,15 +104,22 @@
       ...mapState({
         candidatos: state => state.candidatos.todos,
         regionSeleccionada: state => state.candidatos.regionSeleccionada,
+        partidoSeleccionado: state => state.candidatos.partidoSeleccionado,
       }),
+      partidos() {
+        return orderBy(map(groupBy(this.candidatos, 'partido_id'), (item, partido_id) => {
+          return {
+            partido_id: partido_id,
+            departamentos: groupBy(item, 'region')
+          }
+        }), ['departamento'])
+      },
       departamentos() {
-        
-        let filtered = filter(this.candidatos, c => c.candidato_id != "")
-
-        return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
+        return orderBy(map(groupBy(this.lista_candidatos, 'region'), (item, region) => {
           return {
             region: region,
             departamento: uniq(map(item, 'region')).join(''),
+            total_departamento: parseFloat(sumBy(map(item, 'total_departamento'))),
             candidatos: orderBy(item, ['total_departamento'], ['desc']),
             geodata: require(`../data/mapas/${region}.json`),
             winner: maxBy(item, 'total_departamento')
@@ -114,7 +149,8 @@
     },
     methods: {
       ...mapActions('candidatos', [
-        'updateRegionSeleccionada'
+        'updateRegionSeleccionada',
+        'updatePartidoSeleccionado',
       ]),
       resetPresidente() {
         this.updateRegionSeleccionada({region:'NACIONAL'})
@@ -123,10 +159,12 @@
       openDepartamentos() {
         this.openMenu = !this.openMenu        
       },
+      show_partido(partido_id) {
+        this.updateRegionSeleccionada({region: 'NACIONAL'})
+        this.updatePartidoSeleccionado({partido_id: partido_id})
+      },
       show_departamento(id) {
-        
         let dep = find(this.departamentos, d => d.region == id)
-
         this.updateRegionSeleccionada(dep)
       },
       getImageCandidate(c) {
@@ -138,7 +176,6 @@
       transitionPath() {
         let base = d3.select(this.$refs['svgmap'])
         let center, scale
-
         
         if(this.regionSeleccionada.region != 'NACIONAL') {
           let dep = find(this.perugeo.features, d => d.properties.dep_id == this.regionSeleccionada.region)
@@ -148,7 +185,6 @@
           center = d3.geoCentroid(this.perugeo)
           scale = this.width / this.distance / Math.sqrt(1)
         }
-
 
         const r = d3.interpolate(this.center, center)
         const s = d3.interpolate(this.scale, scale)
@@ -231,7 +267,6 @@
           })
           .attr("style", (f) => {
             let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
-            
             if(dep)
               return `fill: ${dep.winner.color}ab;`
           })
@@ -298,8 +333,8 @@
 
         let table = `
         <div class="row border-bottom pb-2 mb-2">
-          <div class="col-6 depa">${f.properties.NOMBDEP}</div>
-          <div class="col-6 text-right">${f.properties.NOMBDEP}</div>
+          <div class="col-6 depa"><b>${f.properties.NOMBDEP}</b></div>
+          <div class="col-6 text-right">Conteo al 67%</div>
         </div>`
 
         let candidatos = ``
@@ -316,13 +351,13 @@
                 
               </div>
               <div class="col-6 pr-0">
-                <div class="candidato-mapa">${dp.candidato}</div>
+                <div class="candidato-mapa"><b>${dp.candidato}</b></div>
                 <div class="partido-mapa"><img width="25px" src="${this.getImagePartido(dp.partido_id)}" />${dp.partido}</div>
                 
               </div>
               <div class="pl-0 col-4 text-right">
-                <div class="candidato-mapa">${dp.total_departamento}%</div>
-                <div class="partido-mapa">${ numeral(dp.nacional).format('0,0') } Votos</div>
+                <div class="candidato-mapa"><b>${dp.total_departamento}%</b></div>
+                <div class="partido-mapa">+${ numeral(dp.nacional).format('0,0') }</div>
               </div>
             </div>`
         })

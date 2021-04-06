@@ -1,6 +1,6 @@
 <template>
   <div class="candidate-results-vivo row pb-3">
-    <div class="col-12">
+    <div class="col-12 align-self-center">
         <h2 class="title-resultados">{{regionSeleccionada.region}} <span>Conteo al 98%</span></h2>
     </div>
     <div class="col-12">
@@ -14,7 +14,7 @@
         </div> 
         <div class="col-2 porcentaje-resultado align-self-center text-center">
           <div>          <span>validos</span>
-            <h5>{{c.porcentaje}}%</h5>        </div>               
+            <h5><b>{{c.porcentaje}}%</b></h5></div>               
         </div>
         <div class="col-3 votos-validos align-self-center text-center">
           <span>diferencia</span>

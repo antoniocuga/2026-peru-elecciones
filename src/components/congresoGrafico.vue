@@ -19,7 +19,7 @@
 
       d3.select('g#parliament').call(
         parliament.parliamentChart([], 600).aggregatedData([{ seats: 10, color: 'blue' }, { seats: 30, color: 'green' }, { seats: 10, color: 'black' }, { seats: 50, color: 'red' },  { seats: 5, color: 'pink' },  { seats: 10, color: 'aquamarine' },  { seats: 15, color: 'yellow' }])
-        .debug(true)
+        .debug(false)
         .sections(5)
         .sectionGap(10)
         .seatRadius(10)

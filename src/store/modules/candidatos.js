@@ -5,6 +5,9 @@ const state = () => ({
   todos: [],
   regionSeleccionada: {
     region: "NACIONAL"
+  },
+  partidoSeleccionado: {
+    partido_id: "SELECCIONAR PARTIDO"
   }
 })
 
@@ -19,7 +22,10 @@ const actions = {
     })
   },
   updateRegionSeleccionada ({ commit }, region) {
-      commit('setRegionSeleccionada', region)
+    commit('setRegionSeleccionada', region)
+  },
+  updatePartidoSeleccionado ({ commit }, partido) {
+      commit('setPartidoSeleccionado', partido)
   }
 }
 
@@ -30,6 +36,9 @@ const mutations = {
   },
   setRegionSeleccionada(state, region) {
     state.regionSeleccionada = region
+  },
+  setPartidoSeleccionado(state, partido) {
+    state.partidoSeleccionado = partido
   }
 }
 
