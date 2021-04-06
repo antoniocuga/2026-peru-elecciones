@@ -1,7 +1,14 @@
 <template>  
     <div class="row">
         <div class="col-12">           
-            <h1>Segunda Vuelta</h1>
+
+          <ul> 
+            <li v-for="">
+              
+            </li>
+          </ul>
+            
+
 
         </div>
         
