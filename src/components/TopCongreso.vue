@@ -2,19 +2,13 @@
 <template>
   <div class="candidato-wrapper">
     <div class="row">
-      <div class="col-12 mt-3 border-bottom">
-        <h3>Congresistas mas votados en las últimas elecciones.</h3>        
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12" :key="eleccion" v-for="(items, eleccion) in candidatos_congreso">
+      <div class="col-12" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso">
         
         <div class="row">
           <div class="col-12">
-            <h3>{{ eleccion }}</h3>
+            <h3>{{ eleccion.eleccion }}</h3>
           </div>
-          <div class="col-6 flex-row" :key="candidato.candidato_id" v-for="candidato in items">
+          <div class="col-6 flex-row" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
 
             <div class="candidate-info historico align-self-center">
               <div class="">
@@ -43,7 +37,7 @@
 
 <script>
 
-  import { groupBy } from 'lodash'
+  import { groupBy, map, orderBy } from 'lodash'
   
   export default {
     name: 'TopCongreso.vue',
@@ -61,7 +55,12 @@
         return require('../data/top_congresistas.json')
       },
       candidatos_congreso() {
-        return groupBy(this.votos_congreso, 'eleccion')
+        return orderBy(map(groupBy(this.votos_congreso, 'eleccion'), (items, eleccion) => {
+          return {
+            eleccion: eleccion,
+            items: items
+          }
+        }), ['eleccion'], ['desc'])
       }
     }
   }
