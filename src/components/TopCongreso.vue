@@ -3,7 +3,7 @@
   <div class="candidato-wrapper">
     <div class="row">
       <div class="col-12 mt-3 border-bottom">
-        <h3>Comgresistas mas votados en las últimas elecciones.</h3>        
+        <h3>Congresistas mas votados en las últimas elecciones.</h3>        
       </div>
     </div>
 
