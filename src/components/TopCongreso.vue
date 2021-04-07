@@ -18,7 +18,7 @@
 
             <div class="candidate-info historico align-self-center">
               <div class="">
-                <h4>{{candidato.candidato}}</h4>
+                <h4><img width="40px" :src="getImageCandidate(candidato.candidato_id)" /> {{candidato.candidato}}</h4>
                 <h5>{{candidato.partido}}</h5>
               </div>
             </div>
@@ -47,6 +47,15 @@
   
   export default {
     name: 'TopCongreso.vue',
+    methods: {
+      getImageCandidate(c) {
+        try {
+          return require(`../assets/candidatos/${c}.png`) 
+        } catch (error) {
+          return require(`../assets/candidatos/blanco-viciado.png`)
+        }
+      },
+    },
     computed: {
       votos_congreso() {
         return require('../data/top_congresistas.json')
