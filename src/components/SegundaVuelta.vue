@@ -5,8 +5,7 @@
       <div class="col-12 mt-3 border-bottom">
         <h3>Segunda Vuelta</h3>        
       </div>
-
-      
+            
         <div class="row">
           <div class="col-12 flex-row" :key="eleccion.validos" v-for="eleccion in segunda_vuelta">
             <div class="candidate-info historico align-self-center">
