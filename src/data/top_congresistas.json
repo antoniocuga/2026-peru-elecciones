@@ -1,0 +1,212 @@
+[
+    {
+        "eleccion": "2020",
+        "numero": "1",
+        "candidato": "Daniel Urresti",
+        "candidato_id": "daniel-urresti",
+        "partido": "Podemos",
+        "partido_id": "podemos",
+        "total_votos": "484.188"
+
+    },
+    {
+        "eleccion": "2020",
+        "numero": "2",
+        "candidato": "Alberto de Belaunde",
+        "candidato_id": "alberto-de-belaunde",
+        "partido": "Partido Morado",
+        "partido_id": "partido-morado",
+        "total_votos": "232.731"
+
+    },
+    {
+        "eleccion": "2020",
+        "numero": "3",
+        "candidato": "Martha Chávez",
+        "candidato_id": "martha-chavez" ,
+        "partido": "Fuerza Popular",
+        "partido_id": "fuerza-popular",
+        "total_votos": "152.485"
+
+    },
+    {
+        "eleccion": "2020",
+        "numero": "4",
+        "candidato": "Alberto Beingolea",
+        "candidato_id": "alberto-beingolea",
+        "partido": "Partido Popular Cristiano",
+        "partido_id": "partido-popular-cristiano",
+        "total_votos": "123.248"
+
+    },
+    {
+        "eleccion": "2020",
+        "numero": "5",
+        "candidato": "Enrique Fernández Chacón",
+        "candidato_id": "enrique-fernandez-chacon",
+        "partido": "Frente Amplio",
+        "partido_id": "frente-amplio",
+        "total_votos": "103.486"
+
+    },
+    {
+        "eleccion": "2016",
+        "numero": "1",
+        "candidato": "Kenji Fujimori",
+        "candidato_id": "kenji-fujimori",
+        "partido": "Fuerza Popular",
+        "partido_id": "fuerza-popular",
+        "total_votos": "526.545"
+
+    },
+    {
+        "eleccion": "2016",
+        "numero": "2",
+        "candidato": "Mercedes Aráoz",
+        "candidato_id": "mercedes-araoz",
+        "partido": "Peruanos por el Kambio",
+        "partido_id": "peruanos-por-el-kambio",
+        "total_votos": "128.414"
+
+    },
+    {
+        "eleccion": "2016",
+        "numero": "3",
+        "candidato": "Cecilia Chacón",
+        "candidato_id": "cecilia-chacon",
+        "partido": "Fuerza Popular",
+        "partido_id": "fuerza-popular",
+        "total_votos": "114.379"
+
+    },
+    {
+        "eleccion": "2016",
+        "numero": "4",
+        "candidato": "Richard Acuña",
+        "candidato_id": "richard-acuna",
+        "partido": "Alianza Para el Progreso",
+        "partido_id": "alianza-para-el-progreso",
+        "total_votos": "89.684"
+
+    },
+    {
+        "eleccion": "2016",
+        "numero": "5",
+        "candidato": "Yeny Vilcatoma",
+        "candidato_id": "yeni-vilcatoma",
+        "partido": "Fuerza Popular",
+        "partido_id": "fuerza-popular",
+        "total_votos": "86.222"
+    },
+    {
+        "eleccion": "2011",
+        "numero": "1",
+        "candidato": "Kenji Fujimori",
+        "candidato_id": "kenji-fujimori",
+        "partido": "Fuerza 2011",
+        "partido_id": "fuerza-2011",
+        "total_votos": "329.561"
+
+    },
+    {
+        "eleccion": "2011",
+        "numero": "2",
+        "candidato": "Humberto Lay Sun",
+        "candidato_id": "humberto-lay-sun",
+        "partido": "Alianza por el Gran Cambio",
+        "partido_id": "alianza-por-el-gran-cambio",
+        "total_votos": "185.069"
+
+    },
+    {
+        "eleccion": "2011",
+        "numero": "3",
+        "candidato": "Alberto Beingolea",
+        "candidato_id": "alberto-beingolea",
+        "partido": "Alianza por el Gran Cambio",
+        "partido_id": "alianza-por-el-gran-cambio",
+        "total_votos": "137.576"
+    },
+    {
+        "eleccion": "2011",
+        "numero": "4",
+        "candidato": "Carlos Bruce",
+        "candidato_id": "carlos-bruce",
+        "partido": "Perú Posible",
+        "partido_id": "peru-posible",
+        "total_votos": "112.869"
+
+    },
+    {
+        "eleccion": "2011",
+        "numero": "5",
+        "candidato": "Jaime Delgado",
+        "candidato_id": "jaime-delgado",
+        "partido": "Gana Perú",
+        "partido_id": "gana-peru",
+        "total_votos": "102.957"
+
+    },
+    {
+        "eleccion": "2006",
+        "numero": "1",
+        "candidato": "Keiko Fujimori",
+        "candidato_id": "keiko-fujimori",
+        "partido": "Alianza por el Futuro",
+        "partido_id": "alianza-por-el-futuro",
+        "total_votos": "602.869"
+
+    },
+    {
+        "eleccion": "2006",
+        "numero": "2",
+        "candidato": "Carlos Bruce",
+        "candidato_id": "carlos-bruce",
+        "partido": "Perú Posible",
+        "partido_id": "peru-posible",
+        "total_votos": "193.374"
+
+    },
+    {
+        "eleccion": "2006",
+        "numero": "3",
+        "candidato": "Mercedes Cabanillas",
+        "candidato_id": "mercedes-cabanillas",
+        "partido": "Partido Aprista",
+        "partido_id": "partido-aprista",
+        "total_votos": "182.567"
+
+    },
+    {
+        "eleccion": "2006",
+        "numero": "4",
+        "candidato": "Alberto Andrade",
+        "candidato_id": "alberto-andrade",
+        "partido": "Frente de Centro",
+        "partido_id": "frente-de-centro",
+        "total_votos": "131.178"
+
+    },
+    {
+        "eleccion": "2006",
+        "numero": "5",
+        "candidato": "Gabriela Pérez del Solar",
+        "candidato_id": "gabriela-perez-del-solar",
+        "partido": "Unidad Nacional",
+        "partido_id": "unidad-nacional",
+        "total_votos": "131.060"
+
+    },
+    {
+        "eleccion": "2001",
+        "numero": "1",
+        "candidato": "Anel Townsend",
+        "candidato_id": "anel-townsend",
+        "partido": "Perú Posible",
+        "partido_id": "peru-posible",
+        "total_votos": "329.970"
+
+    }
+
+
+]

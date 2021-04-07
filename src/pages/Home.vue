@@ -73,9 +73,8 @@
           <span class="line"></span>
           <p>Dos hijos del condenado expresidente Alberto Fujimori han sido los congresistas más votados en las últimas elecciones: Keiko en el 2006 y Kenji Fujimori en 2011 y en 2016. El exgeneral del Ejército, Daniel Urresti, tomó la posta en los comicios legislativos extraordinarios del 2020.</p>
         </div>
-        <div class="col-4">            
-            <MasVotados/>
-
+        <div class="col-12">            
+            <TopCongreso/>
         </div>
       </div>
 
@@ -91,7 +90,7 @@
   import PartidosResultados from '../components/PartidosResultados.vue'
   import Footer from '../components/Footer.vue'
   import SegundaVuelta from '../components/SegundaVuelta.vue'
-  import MasVotados from '../components/MasVotados.vue'
+  import TopCongreso from '../components/TopCongreso.vue'
   
   import { mapState } from 'vuex'
   import { filter, map, orderBy, groupBy, uniq } from 'lodash'
@@ -105,7 +104,7 @@
       SharingOptions,
       PartidosResultados,
       SegundaVuelta,
-      MasVotados,                
+      TopCongreso,                
       Footer
     },
     created () {
