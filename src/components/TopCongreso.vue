@@ -2,31 +2,36 @@
 <template>
   <div class="candidato-wrapper">
     <div class="row">
-      <div class="col-12" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso">
+      <div class="col-6 mb-5" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso">
         
         <div class="row">
           <div class="col-12">
             <h3>{{ eleccion.eleccion }}</h3>
           </div>
-          <div class="col-6 flex-row" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
+        </div>
 
+        <div class="row border-bottom" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
+          <div class="col-6 pr-0">
             <div class="candidate-info historico align-self-center">
               <div class="">
-                <h4><img width="40px" :src="getImageCandidate(candidato.candidato_id)" /> {{candidato.candidato}}</h4>
+                <img height="40px" width="40px" :src="getImageCandidate(candidato.candidato_id)" />
+              </div>
+              <div>
+                <h4>{{candidato.candidato}}</h4>
                 <h5>{{candidato.partido}}</h5>
               </div>
             </div>
-
-            <div class="candidate-results flex-row">                
+          </div>
+          <div class="col-6 pl-0">
+            <div class="candidate-results">                
               <div class="candidate-bar">
-                <div class="tooltip-c">{{candidato.total_votos}}</div>                 
-              </div>
-              <div class="tooltip-c"><span>{{candidato.validos}}</span></div>                            
+                <div class="tooltip-c">{{ numeral(candidato.total_votos).format('0,0') }} </div>
+                <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato, eleccion.items)}px;`"></div>
+              </div>                          
             </div>            
           </div>
-
-          </div>
         </div>
+      </div>
 
 
     </div>
@@ -37,11 +42,14 @@
 
 <script>
 
-  import { groupBy, map, orderBy } from 'lodash'
+  import numeral from 'numeral'
+  import * as d3 from 'd3'
+  import { groupBy, map, orderBy, maxBy } from 'lodash'
   
   export default {
     name: 'TopCongreso.vue',
     methods: {
+      numeral,
       getImageCandidate(c) {
         try {
           return require(`../assets/candidatos/${c}.png`) 
@@ -49,6 +57,16 @@
           return require(`../assets/candidatos/blanco-viciado.png`)
         }
       },
+      calcScale(candidato, items) {
+        
+        let w = 150
+        let _m = maxBy(items, 'total_votos')
+        let myScale = d3.scaleLinear()
+          .domain([0, _m])
+          .range([0, w])
+
+        return myScale(parseFloat(candidato.total_votos))
+      }
     },
     computed: {
       votos_congreso() {

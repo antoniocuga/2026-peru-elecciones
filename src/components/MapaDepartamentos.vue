@@ -4,13 +4,13 @@
     <div class="row filter-block">
       <div class="col-12 text-right">
         
-        <b-dropdown :text="partidoSeleccionado.partido_id" variant="outline-dark" class="m-2 departamento-menu">
+        <b-dropdown :text="partidoSeleccionado.partido_id" variant="dark" class="m-2 departamento-menu">
           <b-dropdown-item :key="p.partido_id" v-for="p in partidos">
             <a @click="show_partido(p.partido_id)">{{ p.partido_id }}</a>
           </b-dropdown-item>
         </b-dropdown>
 
-        <b-dropdown :text="regionSeleccionada.region" variant="outline-dark" class="m-2 departamento-menu">
+        <b-dropdown :text="regionSeleccionada.region" variant="dark" class="m-2 departamento-menu">
           <b-dropdown-item :key="dep.region" v-for="dep in departamentos">
             <a @click="show_departamento(dep.region)">{{ dep.region }}</a>
           </b-dropdown-item>
@@ -71,7 +71,7 @@
         this.renderMapa()
       },
       partidoSeleccionado(v) {
-        console.log(v)
+        
         let max = maxBy(this.departamentos, 'total_departamento')
         let min = minBy(this.departamentos, 'total_departamento')
 
@@ -83,7 +83,7 @@
 
           base.selectAll('path.departamento-path')        
           .attr("style", (f) => {
-            let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
+            let dep = find(this.departamentos_parse, d => d.region == f.properties.dep_id)
             if(dep)
               return `fill: ${color(dep.winner.total_departamento)}`
           })
@@ -140,6 +140,19 @@
             total_departamento: sumBy(map(item, 'total_votos')),
             candidatos: orderBy(item, ['total_votos'], ['desc']),
             winner: maxBy(item, 'total_votos')
+          }
+        }), ['departamento'])
+      },
+      departamentos_parse() {
+        let filtered = filter(this.lista_candidatos, c => c.candidato_id != '')
+        return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
+          return {
+            region: region,
+            departamento: uniq(map(item, 'region')).join(''),
+            total_departamento: parseFloat(sumBy(map(item, 'total_departamento'))),
+            candidatos: orderBy(item, ['total_departamento'], ['desc']),
+            geodata: require(`../data/mapas/${region}.json`),
+            winner: maxBy(item, 'total_departamento')
           }
         }), ['departamento'])
       },
