@@ -6,12 +6,12 @@
         <h3>Segunda Vuelta</h3>        
       </div>
 
-      <div class="col-12 pb-1 pt-1" >
+      
         <div class="row">
-          <div class="col-12 flex-row border-bottom" :key="eleccion.validos" v-for="eleccion in segunda_vuelta">
+          <div class="col-12 flex-row" :key="eleccion.validos" v-for="eleccion in segunda_vuelta">
             <div class="candidate-info historico align-self-center">
               <div class="">
-                <h4>{{eleccion.eleccion}}</h4><span>{{eleccion.puesto}}</span>
+                <h4>{{eleccion.eleccion}}</h4>
               </div>
               <div class="">
                 <h4>{{eleccion.candidato}}</h4>
@@ -23,12 +23,12 @@
               <div class="candidate-bar">
                 <div class="tooltip-c">{{eleccion.total_votos}}</div>                 
               </div>
-              <div class="tooltip-c"><span>{{eleccion.validos}} %</span></div>                            
+              <div class="tooltip-c"><span>{{eleccion.validos}}</span></div>                            
             </div>            
           </div>
         </div>
 
-      </div>
+      
 
     </div>
 
