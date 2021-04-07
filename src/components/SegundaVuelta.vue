@@ -8,10 +8,10 @@
     </div>
 
     <div class="row">
-      <div class="col-12 flex-row" :key="eleccion" v-for="(items, eleccion) in candidatos_segunda">
+      <div class="col-12" :key="eleccion" v-for="(items, eleccion) in candidatos_segunda">
         
         <div class="row">
-          <div class="col-6" :key="candidato.candidato_id" v-for="candidato in items">
+          <div class="col-6 flex-row" :key="candidato.candidato_id" v-for="candidato in items">
 
             <div class="candidate-info historico align-self-center">
               <div class="">
