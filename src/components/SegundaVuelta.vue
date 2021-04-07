@@ -11,12 +11,12 @@
       <div class="col-12" :key="eleccion" v-for="(items, eleccion) in candidatos_segunda">
         
         <div class="row">
+          <div class="col-12">
+            <h3>{{ eleccion }}</h3>
+          </div>
           <div class="col-6 flex-row" :key="candidato.candidato_id" v-for="candidato in items">
 
             <div class="candidate-info historico align-self-center">
-              <div class="">
-                <h4>{{candidato.eleccion}}</h4>
-              </div>
               <div class="">
                 <h4>{{candidato.candidato}}</h4>
                 <h5>{{candidato.partido}}</h5>
