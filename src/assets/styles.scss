@@ -262,6 +262,7 @@ p {
 .mapa-resultados-wrapper {
   position: relative;
   font-family: 'Nunito Sans', sans-serif;
+  overflow: hidden;
 
   h1 {
     font-size: 21px;
@@ -285,17 +286,34 @@ p {
   }
 
   .candidate-results-vivo {
-    position: sticky;
-    bottom: 0;
-    left: 0;
+    position: absolute;
+    left: -400px;
+    width: 100%;
     max-width: 400px;
-    min-height: 720px;
-    background: #e6f0f9;
+    height: 100vh;
+    max-height: 720px;
+    z-index: 999;
+    transition: left .15s ease-in-out;
+
+    .candidates-list {
+      height: 490px;
+      overflow-y: auto;
+      background: #ffffff80;
+
+      .button-more {
+        position: sticky;
+        bottom: 0;
+      }
+    }
+
+    &.active {
+      left: 0;
+    }
 
     @media (max-width: 720.98px) { 
       position: relative;
     }
-
+   
     .img-partidos {
       width: 100%;
       max-width: 400px;
@@ -352,15 +370,37 @@ p {
   }
 
   .mapa-resultados-container {
-    position: sticky;
-    top: 15vh;
     width: 100%;
-    height: 720px;
 
     @media (max-width: 720.98px) { 
       top: 0;
       position: relative;
       height: auto;
+    }
+  }
+
+  .filter-block {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    z-index: 999;
+  }
+
+  .btn-back {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    width: 110px;
+    font-size: 13px;
+    line-height: 1.2em;
+    padding: 5px;
+    text-align: left;
+
+    svg {
+      width: 50px;
     }
   }
 
@@ -433,8 +473,12 @@ p {
     text-shadow: 1px 1px 1px #ffffff8c;
 
     &.active {
-      font-size: 15px;
-      opacity: 1;
+      font-size: 30px;
+      opacity: 0.4;
+      fill: #ffffff;
+      text-shadow: 1px 1px 1px #0000008c;
+      text-anchor: middle;
+      pointer-events: none;
     }
 
     &.inactive {
@@ -853,135 +897,6 @@ p {
       font-size: 21px;
       line-height: 1.2em;
     }
-  }
-}
-
-.encuesta-widget-container {
-
-  h3 {
-    padding: 5px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #636363;
-
-    @media (max-width: 920.98px) { 
-      display: block;
-      width: 100%;
-      text-align: center;
-      font-size: 16px;
-    }    
-  }
-
-  h2 {
-    font-size: 16px;
-    font-weight: 900;
-    color: #333;
-    text-align: center;
-
-    span {
-      margin: 0 5px;
-      padding: 2px 3px;
-      font-size: 12px;
-      font-weight: 900;
-      color: #333;
-      background: #fdbd1654;
-    }
-  }
-
-  h4 {
-    padding: 5px;
-    font-size: 13px;
-    font-weight: 100;
-    text-align: center;
-
-    .btn {
-      font-size: 13px;
-      background: transparent;
-      border-bottom: solid 1px #fb1702;
-    }
-  }
-
-  .btn-group {
-    margin: 0 5px;
-    
-    @media (max-width: 575.98px) { 
-      margin: 15px 0 0 0;
-      text-align: center;
-    }
-  }
-
-  .btn-link {
-    &:hover {
-      background: #333;
-    }
-  }
-
-  .btn {
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border: none;
-    margin: 0 5px;
-    padding: 0px 15px;
-    transition: background .25s ease-in-out;
-
-    &:hover {
-      background: #e3e3e3;
-    }
-
-    @media (max-width: 575.98px) { 
-      font-size: 14px;
-    }
-
-    &.active {
-      color: #fff;
-      background-color: #fb1702;
-      border-radius: 0;
-    }
-  }
-}
-
-.encuestas-list-wrapper {
-  .VueCarousel-slide {
-    border-right: solid 1px #dee2e6;
-  }
-
-  .encuesta-col {
-    max-width: 360px;
-    min-width: 360px;
-    margin: 0 auto;
-
-    @media (max-width: 575.98px) { 
-      width: 100%;
-      min-width: 100%;
-      margin: 0;
-    }
-  }
-
-  .VueCarousel-inner {
-    visibility: visible !important;
-  }
-}
-
-.encuestas-list-container-vertical {
-  overflow-x: auto;
-
-  &::-webkit-scrollbar {
-    height: 4px;
-    width: 4px;
-    background: #dee2e6;
-    border: 1px solid #dee2e6;
-  }
-
-  .encuestas-wrap-vertical {
-    display: flex;
-    align-items: center;
-  }
-
-  .col-graph {
-    width: 100%;
-    min-width: 200px;
-    margin: 0 5px;
   }
 }
 

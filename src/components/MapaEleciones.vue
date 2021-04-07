@@ -25,8 +25,8 @@
       </div>
       <div class="row mt-5 border-top pt-5">
         <div class="col-12 mapa-resultados-wrapper">
-            <MapaDepartamentos :lista_candidatos="filteredData" />
-            <candidatosResultados :candidatos="lista_candidatos" />
+          <candidatosResultados :candidatos="lista_candidatos" />  
+          <MapaDepartamentos :lista_candidatos="filteredData" />
         </div>
       </div>
   </div>    

@@ -1,13 +1,9 @@
 <template>
 
   <div class="mapa-resultados-container">
-    <div class="row">
+    <div class="row filter-block">
       <div class="col-12 text-right">
         
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <button type="button" @click="resetPartidos()" class="btn active btn-secondary" v-if="partidoSeleccionado.partido_id!='SELECCIONAR PARTIDO'">Ver todos los partidos</button>
-        </div>
-
         <b-dropdown :text="partidoSeleccionado.partido_id" variant="outline-dark" class="m-2 departamento-menu">
           <b-dropdown-item :key="p.partido_id" v-for="p in partidos">
             <a @click="show_partido(p.partido_id)">{{ p.partido_id }}</a>
@@ -20,10 +16,6 @@
           </b-dropdown-item>
         </b-dropdown>
 
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <button type="button" @click="resetPresidente()" class="btn active btn-secondary" v-if="zoomed==true">Volver a los resultados nacionales</button>
-        </div>
-
       </div>
     </div>
     <div class="row">
@@ -34,6 +26,10 @@
           <g ref="distritos"></g>
           <g ref="labels"></g>
         </svg>
+        <button type="button" @click="resetPartidos()" class="btn-back btn active btn-secondary" v-if="partidoSeleccionado.partido_id!='SELECCIONAR PARTIDO'">Ver todos los partidos</button>
+        <button type="button" @click="resetPresidente()" class="btn-back btn active btn-secondary" v-if="zoomed==true"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+          <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>
+        </svg> Todos los resultados</button>
       </div>
     </div>
     
@@ -47,7 +43,7 @@
   import { mapState, mapActions } from 'vuex'
   import * as d3 from 'd3'
   import { feature } from 'topojson'
-  import { find,  map, maxBy, minBy, orderBy, sumBy, groupBy, uniq } from 'lodash'  
+  import { find, filter, map, maxBy, minBy, orderBy, sumBy, groupBy, uniq } from 'lodash'  
 
   export default {
     name: "MapaDepartamentos",
@@ -85,14 +81,13 @@
         
         if(v.partido_id != 'SELECCIONAR PARTIDO') {
 
-
-          
           base.selectAll('path.departamento-path')        
           .attr("style", (f) => {
             let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
             if(dep)
               return `fill: ${color(dep.winner.total_departamento)}`
           })
+          
 
 
         } else {
@@ -117,7 +112,7 @@
 
           d3.selectAll('text.departamento-label').classed('active', false)
           d3.select(`text.${v.region}-label`).classed('active', true)
-        }        
+        }
       }
     },
     computed: {
@@ -149,7 +144,8 @@
         }), ['departamento'])
       },
       departamentos() {
-        return orderBy(map(groupBy(this.lista_candidatos, 'region'), (item, region) => {
+        let filtered = filter(this.candidatos, c => c.candidato_id != '')
+        return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
           return {
             region: region,
             departamento: uniq(map(item, 'region')).join(''),
@@ -170,12 +166,6 @@
       },
       perugeo() {
         return require(`../data/mapas/perugeo.json`)
-      },
-      peru() {
-        return require(`../data/mapas/peru.topo.json`)
-      },
-      peruTopojson() {
-        return feature(this.peru, this.peru.objects.data)
       },
       tooltip() {
         return d3.select("div.tooltip")
@@ -207,10 +197,18 @@
         this.updateRegionSeleccionada(dep)
       },
       getImageCandidate(c) {
-        return require(`../assets/candidatos/${c}.png`)
+        try {
+          return require(`../assets/candidatos/${c}.png`) 
+        } catch (error) {
+          return require(`../assets/candidatos/blanco-viciado.png`)
+        }
       },
       getImagePartido(c) {
-        return require(`../assets/partidos/${c}.png`)
+        try {
+          return require(`../assets/partidos/${c}.png`)
+        } catch (error) {
+          return require(`../assets/candidatos/otros.png`)
+        }
       },
       transitionPath() {
         let base = d3.select(this.$refs['svgmap'])
@@ -249,6 +247,9 @@
               .classed('inactive', true)
 
             base.selectAll('path.distrito-path').remove()
+            
+            d3.select(".candidate-results-vivo").style("opacity", 0)
+            d3.select(".candidate-results-vivo").classed("active", false)
           })
           .on('end', () => {
             this.scale = scale
@@ -256,9 +257,13 @@
             if(this.regionSeleccionada.region != 'NACIONAL') {
               this.renderLabels()
               this.render_distritos()
+              d3.select(".candidate-results-vivo").style("opacity", 1)
+              d3.select(".candidate-results-vivo").classed("active", true)
               this.zoomed = true
             } else if(this.regionSeleccionada.region == 'NACIONAL') {
               base.selectAll('path.departamento-path').classed('inactive', false)
+              d3.select(".candidate-results-vivo").style("opacity", 1)
+              d3.select(".candidate-results-vivo").classed("active", true)
             }
           })
       },
