@@ -62,7 +62,7 @@
         let w = 150
         let _m = maxBy(items, 'total_votos')
         let myScale = d3.scaleLinear()
-          .domain([0, _m])
+          .domain([0, _m.total_votos])
           .range([0, w])
 
         return myScale(parseFloat(candidato.total_votos))
