@@ -25,7 +25,7 @@
                 <div class="candidate-results">                
                   <div class="candidate-bar">
                     <div class="tooltip-c">{{ candidato.validos+"%" }} </div>
-                    <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato)}px;`"></div>
+                    <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato, eleccion.items)}px;`"></div>
                     <div class="tooltip-c"><span>{{ numeral(candidato.total_votos).format('0,0') }} votos</span></div>
                     
                   </div>
@@ -47,7 +47,7 @@
 <script>
   import numeral from 'numeral'
   import * as d3 from 'd3'
-  import { groupBy, map, orderBy } from 'lodash'
+  import { groupBy, map, orderBy, maxBy } from 'lodash'
   
   export default {
     name: 'SegundaVuelta.vue',
@@ -67,12 +67,12 @@
           return require(`../assets/partidos/blanco-viciado.png`)
         }
       },
-      calcScale(candidato) {
+      calcScale(candidato, items) {
         
         let w = 150
-
+        let _m = maxBy(items, 'validos')
         let myScale = d3.scaleLinear()
-          .domain([0, 50])
+          .domain([0, _m.validos])
           .range([0, w])
 
         return myScale(parseFloat(candidato.validos))

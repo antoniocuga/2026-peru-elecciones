@@ -6,11 +6,11 @@
         
         <div class="row">
           <div class="col-12">
-            <h3>{{ eleccion.eleccion }}</h3>
+            <h3 class="border-bottom pb-2">{{ eleccion.eleccion }}</h3>
           </div>
         </div>
 
-        <div class="row border-bottom" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
+        <div class="row" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
           <div class="col-6">
             <div class="candidate-info historico align-self-center">
               <div class="">
