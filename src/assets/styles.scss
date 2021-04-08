@@ -369,6 +369,8 @@ p {
     }
     .resultado-nacional {
       background:#E6F0F9;
+      overflow-y: scroll;
+      
 
       h2 {
         font-size: 14px;
@@ -380,7 +382,7 @@ p {
         font-family: 'Nunito Sans', sans-serif;
         font-size: 13px;
         
-      }
+      }      
 
       } 
   }
