@@ -6,31 +6,32 @@
         
         <div class="row">
           <div class="col-12">
-            <h3>{{ eleccion.eleccion }}</h3>
+            <h3 class="border-bottom">{{ eleccion.eleccion }}</h3>
           </div>
-          <div class="row border-bottom" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
-            <div class="col-6 pr-0">
-              <div class="candidate-info historico align-self-center">
-                <div class="">
-                  <img height="40px" width="40px" :src="getImageCandidate(candidato.candidato_id)" />
-                </div>
-                <div>
-                  <h4>{{candidato.candidato}}</h4>
-                  <h5><img width="25px" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h5>
+          <div class="col-12">
+            <div class="row" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
+              <div class="col-6 pr-0">
+                <div class="candidate-info historico align-self-center">
+                  <div class="">
+                    <img height="40px" width="40px" :src="getImageCandidate(candidato.candidato_id)" />
+                  </div>
+                  <div>
+                    <h4>{{candidato.candidato}}</h4>
+                    <h5><img width="25px" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h5>
+                  </div>
                 </div>
               </div>
+              <div class="col-6 pl-0">
+                <div class="candidate-results">                
+                  <div class="candidate-bar">
+                    <div class="tooltip-c">{{ candidato.validos+"%" }} <span>({{ numeral(candidato.total_votos).format('0,0') }} votos)</span></div>
+                    <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato)}px;`"></div>
+                  </div>                          
+                </div>            
+              </div>
             </div>
-            <div class="col-6 pl-0">
-              <div class="candidate-results">                
-                <div class="candidate-bar">
-                  <div class="tooltip-c">{{ candidato.validos+"%" }} <span>({{ numeral(candidato.total_votos).format('0,0') }} votos)</span></div>
-                  <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato)}px;`"></div>
-                </div>                          
-              </div>            
-            </div>
+            
           </div>
-          
-
           </div>
         </div>
 
