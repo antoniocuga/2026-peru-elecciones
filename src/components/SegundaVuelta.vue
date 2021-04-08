@@ -26,7 +26,7 @@
                   <div class="candidate-bar">
                     <div class="tooltip-c">{{ candidato.validos+"%" }} </div>
                     <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato)}px;`"></div>
-                    <div class="tooltip-c"><span>({{ numeral(candidato.total_votos).format('0,0') }} votos)</span></div>
+                    <div class="tooltip-c"><span>{{ numeral(candidato.total_votos).format('0,0') }} votos</span></div>
                     
                   </div>
                 </div>            
