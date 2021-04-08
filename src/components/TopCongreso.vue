@@ -11,7 +11,7 @@
         </div>
 
         <div class="row border-bottom" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
-          <div class="col-auto pr-0">
+          <div class="col-6">
             <div class="candidate-info historico align-self-center">
               <div class="">
                 <img height="40px" width="40px" :src="getImageCandidate(candidato.candidato_id)" />
@@ -22,7 +22,7 @@
               </div>
             </div>
           </div>
-          <div class="col-auto pl-0">
+          <div class="col-6">
             <div class="candidate-results">                
               <div class="candidate-bar">
                 <div class="tooltip-c">{{ numeral(candidato.total_votos).format('0,0') }} </div>

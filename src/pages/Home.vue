@@ -56,34 +56,54 @@
         </div>
       </div>    
 
-      <div class="row">
-        <div class="col-12 mb-3 subtitle mt-5 border-bottom">
-          <h2>Adiós al ganador contundente en primera vuelta</h2>
-          <span class="line"></span>
-          <p>En los últimos 20 años, el ganador de la primera vuelta ha sacado amplia ventaja a su rival inmediato. En 2016, Keiko Fujimori superó por 2.8 millones de votos a Pedro Pablo Kuczynski; mientras que Ollanta Humala ganó a Fujimori con 1.1 millones de votos en 2011. En 2006, Humala superó a Alan García por 772 mil votos.</p>
-        </div>
-        <div class="col-12">
-          <SegundaVuelta/>
 
-        </div>
-      </div>
       <div class="row">
-        <div class="col-12 mb-3 subtitle mt-5 border-bottom">
-          <h2>Parlamentarios más votados en dos décadas</h2>          
-          <span class="line"></span>
-          <p>Dos hijos del condenado expresidente Alberto Fujimori han sido los congresistas más votados en las últimas elecciones: Keiko en el 2006 y Kenji Fujimori en 2011 y en 2016. El exgeneral del Ejército, Daniel Urresti, tomó la posta en los comicios legislativos extraordinarios del 2020.</p>
+        <div class="col-12 mt-3 col-md-9">
+          <div class="row">
+            <div class="col-12 mb-3 subtitle mt-5 border-bottom">
+              <h2>Adiós al ganador contundente en primera vuelta</h2>
+              <span class="line"></span>
+              <p>En los últimos 20 años, el ganador de la primera vuelta ha sacado amplia ventaja a su rival inmediato. En 2016, Keiko Fujimori superó por 2.8 millones de votos a Pedro Pablo Kuczynski; mientras que Ollanta Humala ganó a Fujimori con 1.1 millones de votos en 2011. En 2006, Humala superó a Alan García por 772 mil votos.</p>
+            </div>
+            <div class="col-12">
+              <SegundaVuelta/>
+    
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mb-3 subtitle mt-5 border-bottom">
+              <h2>Parlamentarios más votados en dos décadas</h2>          
+              <span class="line"></span>
+              <p>Dos hijos del condenado expresidente Alberto Fujimori han sido los congresistas más votados en las últimas elecciones: Keiko en el 2006 y Kenji Fujimori en 2011 y en 2016. El exgeneral del Ejército, Daniel Urresti, tomó la posta en los comicios legislativos extraordinarios del 2020.</p>
+            </div>
+            <div class="col-12">            
+                <TopCongreso/>
+            </div>
+          </div>
         </div>
-        <div class="col-12">            
-            <TopCongreso/>
-        </div>
-      </div>
-
-      <div class="container-fluid bg-gray mt-5 pt-3 pb-3">
+        <div class="col-12 mt-3 col-md-3">
+          <BannerSidebar />
+        </div>  
+      </div>    
+    </div>
+    
+    <div class="container-fluid bg-gray mt-5 pt-3 pb-3">
       <Articulos />
-      </div>
+    </div>  
 
-      <Footer/>        
-  </div>        
+    <div class="container pt-5 pb-5 bg-footer">
+      <div class="row justify-content-center mt-3">
+        <div class="col-12 fuentes text-center mb-5">
+          <h4>Créditos:</h4>
+          <div>Dirección: Óscar Castilla.</div>
+          <div>Equipo investigativo: Ralph Zapata, Ernesto Cabral, Elizabeth Salazar y Magali Estrada, Geraldine Santos, Alicia Tovar, Clarys Cárdenas, Alba Rivas, Gustavo Callapiña, Karín Chacón de la Red Investigativa Regional. </div>
+          <div>Colaboración: Esthefany Molina. Desarrollo web: Antonio Cucho.</div>
+        </div>        
+      </div>  
+
+      <Footer />
+    </div>  
+
   </div>
   </template>
 <script>
@@ -95,6 +115,8 @@
   import Footer from '../components/Footer.vue'
   import SegundaVuelta from '../components/SegundaVuelta.vue'
   import TopCongreso from '../components/TopCongreso.vue'
+  import BannerSidebar from '../components/BannerSidebar.vue'
+  import Articulos from '../components/Articulos.vue'
   
   import { mapState } from 'vuex'
   import { filter, map, orderBy, groupBy, uniq } from 'lodash'
@@ -103,13 +125,15 @@
   export default {
     name: 'Home', 
     components: {
+      Articulos,
       MapaElecciones,
       congresoGrafico,
       SharingOptions,
       PartidosResultados,
       SegundaVuelta,
       TopCongreso,                
-      Footer
+      Footer,
+      BannerSidebar
     },
     created () {
       this.$store.dispatch('candidatos/getAllCandidatos')
