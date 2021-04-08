@@ -78,6 +78,10 @@
         </div>
       </div>
 
+      <div class="container-fluid bg-gray mt-5 pt-3 pb-3">
+      <Articulos />
+      </div>
+
       <Footer/>        
   </div>        
   </div>
