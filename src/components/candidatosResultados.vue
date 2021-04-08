@@ -57,53 +57,93 @@
         <div class="col-12 titulo">Elecciones 2016</div>
         <div class="col-12">RESULTADOS NACIONALES</div>
       
-        <b-tabs class="col-12 ">
+        <b-tabs class="col-12">
           <b-tab class="" title="primera vuelta">
             <div class="row">
               <div class="col-6 text-left">
-                <div>Partido</div>
-                <div>Partido</div>
-                
+                <div>Electores habiles</div>
+                <div>ciudadanos que no votaron</div>
+                <div>voto en blanco/nulo</div>
+                <div>votos emitidos</div>               
                             
               </div>
               <div class="col-6 text-right">
-                <div>159159</div>               
-                
+                <div>22901954</div>               
+                <div>895785</div>
+                <div>12354</div>
+                <div>123654</div>
+                <div>7485962</div>
+                <div>1259845</div>
 
               </div>
+              <div class="row">
+          
+                <div class="col-6 text-left">                  
+                  <h2>PARTIDOS</h2>
+                 
+                  <div>Partido Morado</div>
+                  <div>Juntos por el Perú</div>
+                  <div>fuerza popular</div>
+                  <div>renovacion popular</div>
+                  
+
+                </div>
+              <div class="col-6 text-right">
+                <h3>VOTOS A NIVEL NACIONAL</h3>
+                <div>12589632</div>
+                <div>1025985</div>
+                <div>12589544</div>
+                <div>2598555</div>
+              </div>
+
+        </div>
             </div>
           </b-tab>
           <b-tab title="segunda vuelta">
             <div class="row">
               <div class="col-6 text-left">
-                <div>Partido</div>
-                <div>Partido</div>
+                <div>Electores habiles</div>
+                <div>ciudadanos que no votaron</div>
+                <div>voto en blanco/nulo</div>
+                <div>votos emitidos</div>
               
                 
                 
               </div>
               <div class="col-6 text-right">
-                <span>1593578</span>
-                
+                <div>22901954</div>               
+                <div>895785</div>
+                <div>12354</div>
+                <div>123654</div>
+                <div>7485962</div>
+                <div>1259845</div>                
               </div>
+
+              <div class="row">
+          
+                <div class="col-6 text-left">                  
+                  <h2>PARTIDOS</h2>
+                 
+                  <div>Partido Morado</div>
+                  <div>Juntos por el Perú</div>
+                  <div>fuerza popular</div>
+                  <div>renovacion popular</div>
+                  
+
+                </div>
+                  <div class="col-6 text-right">
+                    <h3>VOTOS A NIVEL NACIONAL</h3>
+                    <div>12589632</div>
+                    <div>1025985</div>
+                    <div>12589544</div>
+                    <div>2598555</div>
+                  </div>
+
+              </div>
+              
             </div>
           </b-tab>
         </b-tabs>
-        <div class="row">
-          
-        <div class="col-6">
-          <h2>PARTIDOS</h2>
-          <div>partido</div>
-        </div>
-        <div class="col-6">
-          <h3>VOTOS A NIVEL NACIONAL</h3>
-          <div>votos</div>
-          <div>votos</div>
-          <div>votos</div>
-          <div>votos</div>
-        </div>
-
-        </div>
       </div>
     </div>
   </div>
