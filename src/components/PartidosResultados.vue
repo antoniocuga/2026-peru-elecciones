@@ -3,9 +3,9 @@
     <div class="row pb-3">
       <div class="col-12"><h2 class="title-resultados"><span>Conteo al 91%</span></h2>
       </div>            
-      <div class="col-12  ">
+      <div class="col-12">
         <div class="row candidate-info align-self-center mt-2 pb-1 border-bottom" :key="c.candidato_id" v-for="c in candidatos.slice(8, candidatos.length)">
-            <div class="col-3 pr-0 img-candidato">
+            <div class="col-12 col-md-3 pr-0 img-candidato">
               <img width="65px" :src="getImagePartido(c.partido_id)" />              
             </div>
             <div class="col-5 pl-0">              
