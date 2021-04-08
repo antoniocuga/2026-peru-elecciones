@@ -16,7 +16,7 @@
                 </div>
                 <div>
                   <h4>{{candidato.candidato}}</h4>
-                  <h5>{{candidato.partido}}</h5>
+                  <h5><img width="25px" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h5>
                 </div>
               </div>
             </div>
@@ -55,6 +55,13 @@
           return require(`../assets/candidatos/${c}.png`) 
         } catch (error) {
           return require(`../assets/candidatos/blanco-viciado.png`)
+        }
+      },
+      getImagePartido(c) {
+        try {
+          return require(`../assets/partidos/${c}.png`) 
+        } catch (error) {
+          return require(`../assets/partidos/blanco-viciado.png`)
         }
       },
       calcScale(candidato) {
