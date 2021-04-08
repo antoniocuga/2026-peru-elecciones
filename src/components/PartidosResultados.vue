@@ -1,6 +1,6 @@
 <template>
   
-    <div class="row candidate-results-vivo active pb-3">
+    <div class="row pb-3">
       <div class="col-12"><h2 class="title-resultados"><span>Conteo al 91%</span></h2>
       </div>            
       <div class="col-12  ">
