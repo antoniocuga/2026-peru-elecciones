@@ -10,14 +10,14 @@
       </nav>
   <div class="container">
       <div class="row justify-content-center mb-5 mt-5">
-        <div class="col-8 text-center">
+        <div class="col-12 col-md-8 text-center">
           <h1 class="page-app-title text-center">Candidatos Lescano, Fujimori, Forsyth y Mendoza pelean 
               pase a la segunda vuelta con estrecho margen</h1>
         </div>
         <div class="credits col-12 text-center">
           Por <a href="https://ojo-publico.com/autor/ojopublico" target="_blank">OjoPúblico</a>
         </div>
-        <div class="col-8 mt-5 text-center">
+        <div class="col-12 col-md-8 mt-5 text-center">
           <p>El presidente del Bicentenario, además de enfrentar a la pandemia, deberá gobernar durante cinco años con una bancada en el Congreso que necesitará de alianzas que permitan la gobernabilidad y el equilibrio de poderes para evitar lo ocurrido durante el periodo anterior (2016-2021), que acaba con cuatro presidentes: Pedro Pablo Kuczynski, Martín Vizcarra, Manuel Merino y Francisco Sagasti.</p>
         </div>
         <div class="col-12 text-center mt-3 mb-3">
