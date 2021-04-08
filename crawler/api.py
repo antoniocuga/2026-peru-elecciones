@@ -49,7 +49,7 @@ def distritos_list(candidatos):
 		for d in distritos:
 			for c in candidatos:
 				candidato = {}
-				candidato['region'] = d['desc_dep_inei']
+				candidato['region'] = (d['desc_dep_inei']).lower().replace(" ","-")
 				candidato['candidato_id'] = c['candidato_id']
 				candidato['candidato'] = c['candidato']
 				candidato['color'] = c['color']

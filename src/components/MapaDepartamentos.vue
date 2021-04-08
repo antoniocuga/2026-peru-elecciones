@@ -71,10 +71,9 @@
         this.renderMapa()
       },
       partidoSeleccionado(v) {
-        
-        let max = maxBy(this.departamentos, 'total_departamento')
-        let min = minBy(this.departamentos, 'total_departamento')
-
+        this.zoomed == false
+        let max = maxBy(this.departamentos_parse, 'total_departamento')
+        let min = minBy(this.departamentos_parse, 'total_departamento')
         let color = d3.scaleLinear().domain([min.total_departamento, max.total_departamento]).range(["#eaeaea", `${max.winner.color}ab`])
 
         let base = d3.select(this.$refs['svgmap'])
@@ -82,16 +81,15 @@
         if(v.partido_id != 'SELECCIONAR PARTIDO') {
 
           base.selectAll('path.departamento-path')        
-          .attr("style", (f) => {
+          .attr("style", (f) => {            
             let dep = find(this.departamentos_parse, d => d.region == f.properties.dep_id)
-            if(dep)
+            if(dep) {
               return `fill: ${color(dep.winner.total_departamento)}`
+            }
           })
           
-
-
         } else {
-          console.log('todos')
+
           base.selectAll('path.departamento-path')
           .attr("style", (f) => {
             let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
@@ -131,13 +129,19 @@
         }), ['departamento'])
       },
       distritos_parse() {
-        return orderBy(map(groupBy(this.distritos, 'ubigeo'), (item, ubigeo) => {
+        let filtered = this.distritos
+        if(this.partidoSeleccionado.partido_id != 'SELECCIONAR PARTIDO') {
+          filtered = filter(this.distritos, ['partido_id', this.partidoSeleccionado.partido_id])
+        }
+
+        return orderBy(map(groupBy(filtered, 'ubigeo'), (item, ubigeo) => {
           return {
             ubigeo: ubigeo,
+            region: uniq(map(item, 'region')).join(''),
             distrito: uniq(map(item, 'distrito')).join(''),
             provincia: uniq(map(item, 'provincia')).join(''),
             departamento: uniq(map(item, 'departamento')).join(''),
-            total_departamento: sumBy(map(item, 'total_votos')),
+            total_distrito: sumBy(map(item, 'validos')),
             candidatos: orderBy(item, ['total_votos'], ['desc']),
             winner: maxBy(item, 'total_votos')
           }
@@ -152,7 +156,7 @@
             total_departamento: parseFloat(sumBy(map(item, 'total_departamento'))),
             candidatos: orderBy(item, ['total_departamento'], ['desc']),
             geodata: require(`../data/mapas/${region}.json`),
-            winner: maxBy(item, 'total_departamento')
+            winner: maxBy(item, 'validos_nacional')
           }
         }), ['departamento'])
       },
@@ -196,7 +200,6 @@
       },
       resetPresidente() {
         this.updateRegionSeleccionada({region:'NACIONAL'})
-        this.zoomed = false
       },
       openDepartamentos() {
         this.openMenu = !this.openMenu        
@@ -274,6 +277,7 @@
               d3.select(".candidate-results-vivo").classed("active", true)
               this.zoomed = true
             } else if(this.regionSeleccionada.region == 'NACIONAL') {
+              this.zoomed == false
               base.selectAll('path.departamento-path').classed('inactive', false)
               d3.select(".candidate-results-vivo").style("opacity", 1)
               d3.select(".candidate-results-vivo").classed("active", true)
@@ -390,6 +394,11 @@
       render_distritos() {
 
         let base = d3.select(this.$refs['base'])
+        let max = maxBy(this.distritos_parse, 'total_distrito')
+        let min = minBy(this.distritos_parse, 'total_distrito')
+        let color = d3.scaleLinear().domain([min.total_distrito, max.total_distrito]).range(["#eaeaea", `${max.winner.color}ab`])
+    
+        
 
         let features_distrito = feature(this.regionSeleccionada.geodata, this.regionSeleccionada.geodata.objects[this.regionSeleccionada.region])
 
@@ -403,8 +412,14 @@
           .attr('class', 'distrito-path')
           .attr("style", (f) => {
             let dep = find(this.distritos_parse, d => d.ubigeo == f.properties.IDDIST)
-            if(dep)
+
+            console.log(dep)
+
+            if(dep && this.partidoSeleccionado.partido_id != 'SELECCIONAR PARTIDO') {
+              return `fill: ${color(dep.winner.validos)};`
+            } else if(dep) {
               return `fill: ${dep.winner.color}ab;`
+            }
           })
           .on("mouseover", (event, f) => {
             if(window.innerWidth > 798) {
