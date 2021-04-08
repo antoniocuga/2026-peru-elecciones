@@ -50,13 +50,28 @@
       </div>
     </div>
 
-    <div class="col-12">
+    <div class="col-12 resultado-nacional">
       <div class="row">
-        <div class="col-12">Elecciones 2016</div>
+        <div class="ml-3"><h2>RESULTADOS NACIONALES</h2></div>
+        <div class="col-12 titulo">Elecciones 2016</div>
+            <b-tabs>
+              <b-tab title="primera vuelta">
+
+              </b-tab>
+              <b-tab title="segunda vuelta">
+
+              </b-tab>
+            </b-tabs>
+
       </div>
-      <div class="row">
-        <div class="col-12">
-          <p>1,125,588 votaron</p>
+      <div class="row  border-bottom">
+        <div class="col-6">
+          <h6>Partido</h6>
+          
+        </div>
+        <div class="col-6">
+          <h5>1593578</h5>
+
         </div>
       </div>
     </div>

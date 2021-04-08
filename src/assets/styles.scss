@@ -365,8 +365,24 @@ p {
         float: right;
         font-size: 14px;
         font-weight: 400;
-      }
+      }       
     }
+    .resultado-nacional {
+      background:#E6F0F9;
+
+      h2 {
+        font-size: 14px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: bold;
+
+      }
+      .titulo {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 13px;
+        
+      }
+
+      } 
   }
 
   .mapa-resultados-container {
@@ -1390,3 +1406,4 @@ p {
     }
   }
 }
+
