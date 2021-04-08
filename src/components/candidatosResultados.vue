@@ -61,87 +61,28 @@
           <b-tab class="" title="primera vuelta">
             <div class="row">
               <div class="col-6 text-left">
-                <div>Electores habiles</div>
-                <div>ciudadanos que no votaron</div>
-                <div>voto en blanco/nulo</div>
-                <div>votos emitidos</div>               
-                            
+                <div>Electores habiles</div>        
               </div>
               <div class="col-6 text-right">
-                <div>22901954</div>               
-                <div>895785</div>
-                <div>12354</div>
-                <div>123654</div>
-                <div>7485962</div>
-                <div>1259845</div>
-
+                <div>22901954</div>
               </div>
-              <div class="row">
-          
-                <div class="col-6 text-left">                  
-                  <h2>PARTIDOS</h2>
-                 
-                  <div>Partido Morado</div>
-                  <div>Juntos por el Perú</div>
-                  <div>fuerza popular</div>
-                  <div>renovacion popular</div>
-                  
-
-                </div>
-              <div class="col-6 text-right">
-                <h3>VOTOS A NIVEL NACIONAL</h3>
-                <div>12589632</div>
-                <div>1025985</div>
-                <div>12589544</div>
-                <div>2598555</div>
-              </div>
-
-        </div>
             </div>
+            <div class="row"><div class="col-6">ciudadanos que no votaron</div><div class="col-6">895785</div></div>
+            <div class="row"><div class="col-6">voto en blanco/nulo</div><div class="col-6">votos emitidos</div></div>
+            <div class="row"><div class="col-6"><h2>PARTIDOS</h2></div></div>
+            <div class="row"><div class="col-6">Partido Morado</div><div class="col-6">12354</div></div>
+            <div class="row"><div class="col-6">Juntos por el Perú</div><div class="col-6">12354</div></div>
+            <div class="row"><div class="col-6">fuerza popular</div><div class="col-6">123654</div></div>
+            <div class="row"><div class="col-6">renovacion popular</div><div class="col-6">12354</div></div>
           </b-tab>
           <b-tab title="segunda vuelta">
-            <div class="row">
-              <div class="col-6 text-left">
-                <div>Electores habiles</div>
-                <div>ciudadanos que no votaron</div>
-                <div>voto en blanco/nulo</div>
-                <div>votos emitidos</div>
-              
-                
-                
-              </div>
-              <div class="col-6 text-right">
-                <div>22901954</div>               
-                <div>895785</div>
-                <div>12354</div>
-                <div>123654</div>
-                <div>7485962</div>
-                <div>1259845</div>                
-              </div>
-
-              <div class="row">
-          
-                <div class="col-6 text-left">                  
-                  <h2>PARTIDOS</h2>
-                 
-                  <div>Partido Morado</div>
-                  <div>Juntos por el Perú</div>
-                  <div>fuerza popular</div>
-                  <div>renovacion popular</div>
-                  
-
-                </div>
-                  <div class="col-6 text-right">
-                    <h3>VOTOS A NIVEL NACIONAL</h3>
-                    <div>12589632</div>
-                    <div>1025985</div>
-                    <div>12589544</div>
-                    <div>2598555</div>
-                  </div>
-
-              </div>
-              
-            </div>
+            <div class="row"><div class="col-6">ciudadanos que no votaron</div><div class="col-6">895785</div></div>
+            <div class="row"><div class="col-6">voto en blanco/nulo</div><div class="col-6">votos emitidos</div></div>
+            <div class="row"><div class="col-6"><h2>PARTIDOS</h2></div></div>
+            <div class="row"><div class="col-6">Partido Morado</div><div class="col-6">12354</div></div>
+            <div class="row"><div class="col-6">Juntos por el Perú</div><div class="col-6">12354</div></div>
+            <div class="row"><div class="col-6">fuerza popular</div><div class="col-6">123654</div></div>
+            <div class="row"><div class="col-6">renovacion popular</div><div class="col-6">12354</div></div>
           </b-tab>
         </b-tabs>
       </div>
