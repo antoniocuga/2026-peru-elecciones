@@ -411,6 +411,12 @@ p {
     fill: #91ad8d;
     stroke: #ffffff21;
     stroke-width: 1px;
+    cursor: pointer;
+
+    &:hover {
+      stroke: #fff !important;
+      stroke-width: 2px;
+    }
   }
 
   .circle {

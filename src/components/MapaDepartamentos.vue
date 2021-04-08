@@ -71,7 +71,7 @@
         this.renderMapa()
       },
       partidoSeleccionado(v) {
-        this.zoomed == false
+        this.zoomed = false
         let max = maxBy(this.departamentos_parse, 'total_departamento')
         let min = minBy(this.departamentos_parse, 'total_departamento')
         let color = d3.scaleLinear().domain([min.total_departamento, max.total_departamento]).range(["#eaeaea", `${max.winner.color}ab`])
@@ -333,7 +333,6 @@
               return `fill: ${dep.winner.color}ab;`
           })
           .on("click", (event, f) => {
-            
             let dep = find(this.departamentos, d => d.region == f.properties.dep_id)   
 
             if(window.innerWidth > 798 && this.zoomed == false) {
@@ -512,8 +511,8 @@
                       
                     </div>
                     <div class="pl-0 col-4 text-right">
-                      <div class="candidato-mapa"><b>${dp.total_departamento}%</b></div>
-                      <div class="partido-mapa">+${ numeral(dp.nacional).format('0,0') }</div>
+                      <div class="candidato-mapa"><b>${dp.validos}%</b></div>
+                      <div class="partido-mapa">+${ numeral(dp.total_votos).format('0,0') }</div>
                     </div>
                   </div>`
             }
