@@ -6,6 +6,7 @@
         "candidato_id": "daniel-urresti",
         "partido": "Podemos",
         "partido_id": "podemos",
+        "color": "#004da3",
         "total_votos": 484188
     },
     {
@@ -15,6 +16,7 @@
         "candidato_id": "alberto-de-belaunde",
         "partido": "Partido Morado",
         "partido_id": "partido-morado",
+        "color": "#4f1b7f",
         "total_votos": 232731
 
     },
@@ -25,6 +27,7 @@
         "candidato_id": "martha-chavez" ,
         "partido": "Fuerza Popular",
         "partido_id": "fuerza-popular",
+        "color": "#fd6600",
         "total_votos": 152485
 
     },
@@ -35,6 +38,7 @@
         "candidato_id": "alberto-beingolea",
         "partido": "Partido Popular Cristiano",
         "partido_id": "partido-popular-cristiano",
+        "color": "#009a21",
         "total_votos": 123248
 
     },
@@ -45,6 +49,7 @@
         "candidato_id": "enrique-fernandez-chacon",
         "partido": "Frente Amplio",
         "partido_id": "frente-amplio",
+        "color": "#2fc100ba",
         "total_votos": 103486
 
     },
@@ -55,6 +60,7 @@
         "candidato_id": "kenji-fujimori",
         "partido": "Fuerza Popular",
         "partido_id": "fuerza-popular",
+        "color": "#fd6600",
         "total_votos": 526545
 
     },
@@ -65,6 +71,7 @@
         "candidato_id": "mercedes-araoz",
         "partido": "Peruanos por el Kambio",
         "partido_id": "peruanos-por-el-kambio",
+        "color": "#0055a9",
         "total_votos": 128414
 
     },
@@ -75,6 +82,7 @@
         "candidato_id": "cecilia-chacon",
         "partido": "Fuerza Popular",
         "partido_id": "fuerza-popular",
+        "color": "#fd6600",
         "total_votos": 114379
 
     },
@@ -85,6 +93,7 @@
         "candidato_id": "richard-acuna",
         "partido": "Alianza Para el Progreso",
         "partido_id": "alianza-para-el-progreso",
+        "color": "#1e5ba8",
         "total_votos": 89684
 
     },
@@ -95,6 +104,7 @@
         "candidato_id": "yeni-vilcatoma",
         "partido": "Fuerza Popular",
         "partido_id": "fuerza-popular",
+        "color": "#fd6600",
         "total_votos": 86222
     },
     {
@@ -104,6 +114,7 @@
         "candidato_id": "kenji-fujimori",
         "partido": "Fuerza 2011",
         "partido_id": "fuerza-2011",
+        "color": "#fd6600",
         "total_votos": 329561
 
     },
@@ -114,6 +125,7 @@
         "candidato_id": "humberto-lay-sun",
         "partido": "Alianza por el Gran Cambio",
         "partido_id": "alianza-por-el-gran-cambio",
+        "color": "#fdc402",
         "total_votos": 185069
 
     },
@@ -124,6 +136,7 @@
         "candidato_id": "alberto-beingolea",
         "partido": "Alianza por el Gran Cambio",
         "partido_id": "alianza-por-el-gran-cambio",
+        "color": "#0055a9",
         "total_votos": 137576
     },
     {
@@ -133,6 +146,7 @@
         "candidato_id": "carlos-bruce",
         "partido": "Perú Posible",
         "partido_id": "peru-posible",
+        "color": "#006200",
         "total_votos": 112869
 
     },
@@ -143,6 +157,7 @@
         "candidato_id": "jaime-delgado",
         "partido": "Gana Perú",
         "partido_id": "gana-peru",
+        "color": "#da251c",
         "total_votos": 102957
 
     },
@@ -153,6 +168,7 @@
         "candidato_id": "keiko-fujimori",
         "partido": "Alianza por el Futuro",
         "partido_id": "alianza-por-el-futuro",
+        "color": "#fd6600",
         "total_votos": 602869
 
     },
@@ -163,6 +179,7 @@
         "candidato_id": "carlos-bruce",
         "partido": "Perú Posible",
         "partido_id": "peru-posible",
+        "color": "#006200",
         "total_votos": 193374
 
     },
@@ -173,6 +190,7 @@
         "candidato_id": "mercedes-cabanillas",
         "partido": "Partido Aprista",
         "partido_id": "partido-aprista",
+        "color": "#ff0103\n",
         "total_votos": 182567
 
     },
@@ -183,6 +201,7 @@
         "candidato_id": "alberto-andrade",
         "partido": "Frente de Centro",
         "partido_id": "frente-de-centro",
+        "color": "#d92320",
         "total_votos": 131178
 
     },
@@ -193,6 +212,7 @@
         "candidato_id": "gabriela-perez-del-solar",
         "partido": "Unidad Nacional",
         "partido_id": "unidad-nacional",
+        "color": "#009a21",
         "total_votos": 131060
 
     },
@@ -203,6 +223,7 @@
         "candidato_id": "anel-townsend",
         "partido": "Perú Posible",
         "partido_id": "peru-posible",
+        "color": "#006200",
         "total_votos": 329970
 
     }
