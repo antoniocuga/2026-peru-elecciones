@@ -45,7 +45,7 @@
           <p>Siete partidos tendrán representantes en el Parlamento: Acción Popular, Fuerza Popular, Víctoria Nacional, Juntos por el Perú, Renovación Popular, Avanza País y el Frente Popular Agrícola FIA del Perú (Frepap). Se requerirá un acuerdo de todas las fuerzas políticas para evitar la inestabilidad de los últimos cinco años.</p>
         </div>
 
-        <div class="col-12 col-md-5 resultados2021">
+        <div class="col-12 col-md-4 resultados2021">
           
           <div class="mapa-resultados-wrapper">
               <PartidosResultados :candidatos="lista_candidatos" />

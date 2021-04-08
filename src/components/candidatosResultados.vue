@@ -51,28 +51,36 @@
     </div>
 
     <div class="col-12 resultado-nacional">
-      <div class="row">
-        <div class="ml-3"><h2>RESULTADOS NACIONALES</h2></div>
+
+      <div class="row p-3">
+
         <div class="col-12 titulo">Elecciones 2016</div>
-            <b-tabs>
-              <b-tab title="primera vuelta">
-
-              </b-tab>
-              <b-tab title="segunda vuelta">
-
-              </b-tab>
-            </b-tabs>
-
-      </div>
-      <div class="row  border-bottom">
-        <div class="col-6">
-          <h6>Partido</h6>
-          
-        </div>
-        <div class="col-6">
-          <h5>1593578</h5>
-
-        </div>
+        <div class="col-12">RESULTADOS NACIONALES</div>
+      
+        <b-tabs class="col-12 resultado-nacional">
+          <b-tab title="primera vuelta">
+            <div class="row">
+              <div class="col-6 text-left">
+                <div>Partido</div>
+                
+              </div>
+              <div class="col-6 text-right">
+                <span>1593578</span>
+              </div>
+            </div>
+          </b-tab>
+          <b-tab title="segunda vuelta">
+            <div class="row">
+              <div class="col-6 text-left">
+                <div>Partido</div>
+                
+              </div>
+              <div class="col-6 text-right">
+                <span>1593578</span>
+              </div>
+            </div>
+          </b-tab>
+        </b-tabs>
       </div>
     </div>
 
