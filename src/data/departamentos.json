@@ -19,6 +19,177 @@
     }
   },
   {
+    "departamento": "lima",
+    "ubigeo":"15",
+    "total": 10000,
+    "validos": 50,
+    "eleccion2016": {
+      "blanco-nulo": "785438",
+      "no-votaron":"908015",
+      "habiles": "6884549",
+      "emitidos": "5976534",
+      "partidos": [
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "601482"
+        }
+      ]
+    }
+  },
+  {
+    "departamento": "lima",
+    "ubigeo":"15",
+    "total": 10000,
+    "validos": 50,
+    "eleccion2016": {
+      "blanco-nulo": "785438",
+      "no-votaron":"908015",
+      "habiles": "6884549",
+      "emitidos": "5976534",
+      "partidos": [
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "1615104"
+        }
+      ]
+    }
+  },
+  {
+    "departamento": "lima",
+    "ubigeo":"15",
+    "total": 10000,
+    "validos": 50,
+    "eleccion2016": {
+      "blanco-nulo": "785438",
+      "no-votaron":"908015",
+      "habiles": "6884549",
+      "emitidos": "5976534",
+      "partidos": [
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "383768"
+        }
+      ]
+    }
+  },
+  {
+    "departamento": "lima",
+    "ubigeo":"15",
+    "total": 10000,
+    "validos": 50,
+    "eleccion2016": {
+      "blanco-nulo": "785438",
+      "no-votaron":"908015",
+      "habiles": "6884549",
+      "emitidos": "5976534",
+      "partidos": [
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "330311"
+        }
+      ]
+    }
+  },
+  {
+    "departamento": "lima",
+    "ubigeo":"15",
+    "total": 10000,
+    "validos": 50,
+    "eleccion2016": {
+      "blanco-nulo": "785438",
+      "no-votaron":"908015",
+      "habiles": "6884549",
+      "emitidos": "5976534",
+      "partidos": [
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "35762"
+        }
+      ]
+    }
+  },
+  {
+    "departamento": "lima",
+    "ubigeo":"15",
+    "total": 10000,
+    "validos": 50,
+    "eleccion2016": {
+      "blanco-nulo": "785438",
+      "no-votaron":"908015",
+      "habiles": "6884549",
+      "emitidos": "5976534",
+      "partidos": [
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "64741"
+        }
+      ]
+    }
+  },
+  {
+    "departamento": "lima",
+    "ubigeo":"15",
+    "total": 10000,
+    "validos": 50,
+    "eleccion2016": {
+      "blanco-nulo": "785438",
+      "no-votaron":"908015",
+      "habiles": "6884549",
+      "emitidos": "5976534",
+      "partidos": [
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "59320"
+        }
+      ]
+    }
+  },
+  {
+    "departamento": "lima",
+    "ubigeo":"15",
+    "total": 10000,
+    "validos": 50,
+    "eleccion2016": {
+      "blanco-nulo": "785438",
+      "no-votaron":"908015",
+      "habiles": "6884549",
+      "emitidos": "5976534",
+      "partidos": [
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "24606"
+        }
+      ]
+    }
+  },
+  {
+    "departamento": "lima",
+    "ubigeo":"15",
+    "total": 10000,
+    "validos": 50,
+    "eleccion2016": {
+      "blanco-nulo": "785438",
+      "no-votaron":"908015",
+      "habiles": "6884549",
+      "emitidos": "5976534",
+      "partidos": [
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "38241"
+        }
+      ]
+    }
+  },
+  {
     "departamento": "ica",
     "ubigeo":"11",
     "total": 10000,
