@@ -16,7 +16,7 @@
             </div>
           </div>
           <div class="row"><div class="col-6">ciudadanos que no votaron</div><div class="col-6">895785</div></div>
-          <div class="row"><div class="col-6">voto en blanco/nulo</div><div class="col-6">votos emitidos</div></div>
+          <div class="row">{{elecciones_2016}}<div class="col-6">voto en blanco/nulo</div><div class="col-6">votos emitidos</div></div>
 
         </b-tab>
         <b-tab title="Por partidos">
@@ -38,6 +38,11 @@
       return {
         openResultados: false
       }
+    },    
+    computed: {
+      elecciones_2016() {
+        return require('../data/departamentos.json')
+      },
     }
   }
 
