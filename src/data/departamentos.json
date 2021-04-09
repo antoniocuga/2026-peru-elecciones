@@ -1,12 +1,21 @@
 [
   {
+    "departamento": "NACIONAL",
+    "eleccion2016": {
+      "blanco_nulo": "785438",
+      "no_votaron":"908015",
+      "habiles": "6884549",
+      "emitidos": "5976534"
+    }
+  },
+  {
     "departamento": "lima",
     "ubigeo":"15",
     "total": 10000,
     "validos": 50,
     "eleccion2016": {
-      "blanco-nulo": "785438",
-      "no-votaron":"908015",
+      "blanco_nulo": "785438",
+      "no_votaron":"908015",
       "habiles": "6884549",
       "emitidos": "5976534",
       "partidos": [
@@ -69,8 +78,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "75722",
-      "no-votaron":"73371",
+      "blanco_nulo": "75722",
+      "no_votaron":"73371",
       "habiles": "583777",
       "emitidos": "510406",
       "partidos":[
@@ -135,8 +144,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "126681",
-      "no-votaron":"139785",
+      "blanco_nulo": "126681",
+      "no_votaron":"139785",
       "habiles": "1035654",
       "emitidos": "895869",
       "partidos":[
@@ -200,8 +209,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "16119",
-      "no-votaron":"17915",
+      "blanco_nulo": "16119",
+      "no_votaron":"17915",
       "habiles": "133777",
       "emitidos": "115862",
       "partidos":[
@@ -265,8 +274,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "28755",
-      "no-votaron":"34326",
+      "blanco_nulo": "28755",
+      "no_votaron":"34326",
       "habiles": "253524",
       "emitidos": "219198",
       "partidos":[
@@ -331,8 +340,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "149995",
-      "no-votaron":"173780",
+      "blanco_nulo": "149995",
+      "no_votaron":"173780",
       "habiles": "831235",
       "emitidos": "657455",
       "partidos":[
@@ -396,8 +405,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "191115",
-      "no-votaron":"226441",
+      "blanco_nulo": "191115",
+      "no_votaron":"226441",
       "habiles": "1292488",
       "emitidos": "1066047",
       "partidos":[
@@ -462,8 +471,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "120385",
-      "no-votaron":"148367",
+      "blanco_nulo": "120385",
+      "no_votaron":"148367",
       "habiles": "889355",
       "emitidos": "740988",
       "partidos":[
@@ -528,8 +537,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "217768",
-      "no-votaron":"218423",
+      "blanco_nulo": "217768",
+      "no_votaron":"218423",
       "habiles": "1266557",
       "emitidos": "1048134",
       "partidos":[
@@ -594,8 +603,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "21702",
-      "no-votaron":"25879",
+      "blanco_nulo": "21702",
+      "no_votaron":"25879",
       "habiles": "156120",
       "emitidos": "130241",
       "partidos":[
@@ -660,8 +669,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "50392",
-      "no-votaron":"76623",
+      "blanco_nulo": "50392",
+      "no_votaron":"76623",
       "habiles": "270175",
       "emitidos": "193552",
       "partidos":[
@@ -726,8 +735,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "111703",
-      "no-votaron":"187972",
+      "blanco_nulo": "111703",
+      "no_votaron":"187972",
       "habiles": "630498",
       "emitidos": "442526",
       "partidos":[
@@ -792,8 +801,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "59336",
-      "no-votaron":"78265",
+      "blanco_nulo": "59336",
+      "no_votaron":"78265",
       "habiles": "336888",
       "emitidos": "258623",
       "partidos":[
@@ -860,8 +869,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "103711",
-      "no-votaron":"119967",
+      "blanco_nulo": "103711",
+      "no_votaron":"119967",
       "habiles": "566666",
       "emitidos": "446699",
       "partidos":[
@@ -926,8 +935,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "17157",
-      "no-votaron":"18262",
+      "blanco_nulo": "17157",
+      "no_votaron":"18262",
       "habiles": "95538",
       "emitidos": "77276",
       "partidos":[
@@ -995,8 +1004,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "144497",
-      "no-votaron":"124577",
+      "blanco_nulo": "144497",
+      "no_votaron":"124577",
       "habiles": "858504",
       "emitidos": "733927",
       "partidos":[
@@ -1061,8 +1070,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "72601",
-      "no-votaron":"95637",
+      "blanco_nulo": "72601",
+      "no_votaron":"95637",
       "habiles": "421956",
       "emitidos": "326319",
       "partidos":[
@@ -1127,8 +1136,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "136201",
-      "no-votaron":"168079",
+      "blanco_nulo": "136201",
+      "no_votaron":"168079",
       "habiles": "875674",
       "emitidos": "707595",
       "partidos":[
@@ -1193,8 +1202,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "153319",
-      "no-votaron":"169899",
+      "blanco_nulo": "153319",
+      "no_votaron":"169899",
       "habiles": "915199",
       "emitidos": "745300",
       "partidos":[
@@ -1260,8 +1269,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "103777",
-      "no-votaron":"132793",
+      "blanco_nulo": "103777",
+      "no_votaron":"132793",
       "habiles": "525051",
       "emitidos": "392258",
       "partidos":[
@@ -1326,8 +1335,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "51942",
-      "no-votaron":"73061",
+      "blanco_nulo": "51942",
+      "no_votaron":"73061",
       "habiles": "274440",
       "emitidos": "201379",
       "partidos":[
@@ -1392,8 +1401,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "54862",
-      "no-votaron":"65524",
+      "blanco_nulo": "54862",
+      "no_votaron":"65524",
       "habiles": "284436",
       "emitidos": "218912",
       "partidos":[
@@ -1458,8 +1467,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "30008",
-      "no-votaron":"44394",
+      "blanco_nulo": "30008",
+      "no_votaron":"44394",
       "habiles": "185057",
       "emitidos": "140663",
       "partidos":[
@@ -1524,8 +1533,8 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco-nulo": "168371",
-      "no-votaron":"230133",
+      "blanco_nulo": "168371",
+      "no_votaron":"230133",
       "habiles": "1009775",
       "emitidos": "779642",
       "partidos":[

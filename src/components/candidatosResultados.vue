@@ -52,7 +52,7 @@
     
     <div class="col-12">
 
-      <elecciones2016 />
+      <elecciones2016 v-if="regionSeleccionada" />
 
     </div>
   </div>
