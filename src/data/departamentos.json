@@ -5,10 +5,10 @@
     "total": 10000,
     "validos": 50,
     "eleccion2016": {
-      "Voto en blanco y nulo": "785438",
-      "Ciudadanos que no votaron":"908015",
-      "Electores Hábiles": "6884549",
-      "Votos emitidos (Solo para corroborar)": "5976534",
+      "blanco-nulo": "785438",
+      "no-votaron":"908015",
+      "habiles": "6884549",
+      "emitidos": "5976534",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
