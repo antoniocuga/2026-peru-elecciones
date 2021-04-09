@@ -46,6 +46,7 @@
         </b-tab>
         <b-tab title="Por partidos">
           <div class="row" :key="partido.partido_id" v-for="partido in eleccion_region.eleccion2016.partidos">
+            <img width="25px" :src="getImagePartido(partido.partido_id)" />
             <div class="col-8 datos-eleccion">{{ partido.partido }}</div>
             <div class="text-right col-4"><span>{{partido.total_votos}}</span></div>
           </div>
@@ -82,6 +83,12 @@
         }
 
         return false        
+      }
+    },
+    methods: {
+        
+      getImagePartido(partido) {
+        return require(`../assets/partidos/${partido}.png`)
       }
     }
   }
