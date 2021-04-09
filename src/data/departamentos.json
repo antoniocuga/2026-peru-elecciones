@@ -68,363 +68,1456 @@
     "ubigeo":"11",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "color" : "#000000",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia":2520,
-        "porcentaje": 30
-      }
-    ]    
+    "eleccion2016": {
+      "blanco-nulo": "75722",
+      "no-votaron":"73371",
+      "habiles": "583777",
+      "emitidos": "510406",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "194463"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "76457"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "69137"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "48776"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "31322"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "3317"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "4499"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "4940"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "1160"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "613"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "arequipa",
     "ubigeo":"04",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "veronika-mendoza",
-        "candidato": "Veronika Mendoza",
-        "partido": "Juntos por el Perú",
-        "color" : "#2fc100",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia":2300,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "126681",
+      "no-votaron":"139785",
+      "habiles": "1035654",
+      "emitidos": "895869",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "184918"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "197452"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "210224"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "86428"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "26603"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "29287"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "18604"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "6730"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "6171"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "2771"
+        }      
+      ]
+    }    
   },
   {
     "departamento": "moquegua",
     "ubigeo":"18",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "rafael-lopez-aliaga",
-        "candidato": "Rafael Lopez Aliaga",
-        "partido": "Renovacion Popular",
-        "color" : "#00aede",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 850,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "16119",
+      "no-votaron":"17915",
+      "habiles": "133777",
+      "emitidos": "115862",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "24310"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "31382"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "27853"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "7386"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "3659"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "1537"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "1811"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "1061"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "416"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "328"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "tacna",
     "ubigeo":"23",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "rafael-lopez-aliaga",
-        "color" : "#00aede",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1000,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "28755",
+      "no-votaron":"34326",
+      "habiles": "253524",
+      "emitidos": "219198",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "40071"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "78500"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "29859"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "18455"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "5929"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "9307"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "4807"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "1339"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "1740"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "436"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "ancash",
     "ubigeo":"02",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "julio-guzman",
-        "candidato": "Julio Guzman",
-        "color" : "#4f1b7f",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 500,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "149995",
+      "no-votaron":"173780",
+      "habiles": "831235",
+      "emitidos": "657455",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "216261"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "109837"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "80069"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "27605"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "30859"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "3569"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "6821"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "29000"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "2194"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "1245"
+        }      
+      ]
+    }
   },
   {
     "departamento": "la libertad",
     "ubigeo":"13",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "rafael-lopez-aliaga",
-        "color" : "#00aede",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1000,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "191115",
+      "no-votaron":"226441",
+      "habiles": "1292488",
+      "emitidos": "1066047",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "432443"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "91024"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "121283"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "59338"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "123725"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "22633"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "9700"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "10294"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "2111"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "2381"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "lambayeque",
     "ubigeo":"14",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "keiko-fujimori",
-        "candidato": "keiko Fujimori",
-        "partido": "Fuerza Popular",
-        "color" : "#fd6600",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 600,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "120385",
+      "no-votaron":"148367",
+      "habiles": "889355",
+      "emitidos": "740988",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "313728"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "67615"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "98741"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "46138"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "60149"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "16924"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "6272"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "5057"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "1489"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "4490"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "piura",
     "ubigeo":"20",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "candidato": "Yonhy Lescano",
-        "partido": "Accion Popular",
-        "color" : "#000000",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1800,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "217768",
+      "no-votaron":"218423",
+      "habiles": "1266557",
+      "emitidos": "1048134",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "456685"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "127952"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "104844"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "46595"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "49037"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "25569"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "7237"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "8236"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "2718"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "1493"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "tumbes",
     "ubigeo":"24",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "color" : "#000000",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1590,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "21702",
+      "no-votaron":"25879",
+      "habiles": "156120",
+      "emitidos": "130241",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "70029"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "11825"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "13189"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "4933"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "4973"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "635"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "1103"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "1515"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "217"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "120"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "amazonas",
     "ubigeo":"20",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "color" : "#000000",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1258,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "50392",
+      "no-votaron":"76623",
+      "habiles": "270175",
+      "emitidos": "193552",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "62083"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "31681"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "17026"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "8166"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "5175"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "13590"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "1043"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "1635"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "2584"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "177"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "loreto",
     "ubigeo":"16",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "color" : "#000000",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1478,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "111703",
+      "no-votaron":"187972",
+      "habiles": "630498",
+      "emitidos": "442526",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "136439"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "51859"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "81826"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "24239"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "19134"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "3296"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "3535"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "7258"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "2726"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "511"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "ucayali",
     "ubigeo":"25",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "color" : "#000000",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1654,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "59336",
+      "no-votaron":"78265",
+      "habiles": "336888",
+      "emitidos": "258623",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "105050"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "33668"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "29155"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "8814"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "7684"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "1969"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "2537"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "2848"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "7198"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "364"
+        }
+      
+      ]
+    }
+    
+    
   },
   {
     "departamento": "san martin",
     "ubigeo":"22",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "color" : "#000000",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1236,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "103711",
+      "no-votaron":"119967",
+      "habiles": "566666",
+      "emitidos": "446699",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "166236"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "72618"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "43550"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "23300"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "20188"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "9440"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "3437"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "2737"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "1063"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "419"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "madre de dios",
     "ubigeo":"17",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "veronika-mendoza",
-        "color" : "#2fc100",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1598,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "17157",
+      "no-votaron":"18262",
+      "habiles": "95538",
+      "emitidos": "77276",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "26656"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "15050"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "5623"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "3912"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "2943"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "2524"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "850"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "1532"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "950"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "79"
+        }
+      
+      ]
+    }
+
+
+
   },
   {
     "departamento": "puno",
     "ubigeo":"21",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "color" : "#000000",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1234,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "144497",
+      "no-votaron":"124577",
+      "habiles": "858504",
+      "emitidos": "733927",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "135239"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "227325"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "50532"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "24140"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "11072"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "117669"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "14722"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "5520"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "2009"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "1202"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "ayacucho",
     "ubigeo":"05",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "color": "#000000",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1259,
-        "porcentaje": 30
+    "eleccion2016": {
+      "blanco-nulo": "72601",
+      "no-votaron":"95637",
+      "habiles": "421956",
+      "emitidos": "326319",
+      "partidos":[
 
-      }
-    ]
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "82138"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "133899"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "15741"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "7306"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "5861"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "3536"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "2266"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "1785"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "837"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "349"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "junin",
     "ubigeo":"12",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "color": "#000000",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 2002,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "136201",
+      "no-votaron":"168079",
+      "habiles": "875674",
+      "emitidos": "707595",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "248217"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "128257"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "121109"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "27481"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "18561"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "7255"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "9131"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "7794"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "2656"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "933"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "cusco",
     "ubigeo":"08",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "color": "#000000",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1252,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "153319",
+      "no-votaron":"169899",
+      "habiles": "915199",
+      "emitidos": "745300",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "128818"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "276143"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "57386"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "62621"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "15657"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "33414"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "9663"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "4032"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "3031"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "1216"
+        }
+      
+      ]
+    }
+    
   },
   {
     "departamento": "huanuco",
     "ubigeo":"10",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "color": "#000000",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1262,
-        "porcentaje": 30
-      }
-    ]
+    "eleccion2016": {
+      "blanco-nulo": "103777",
+      "no-votaron":"132793",
+      "habiles": "525051",
+      "emitidos": "392258",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "112414"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "86717"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "40000"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "17761"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "10852"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "2520"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "3617"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "12456"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "1579"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "569"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "huancavelica",
     "ubigeo":"09",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "color": "#000000",
-        "votos": 50000,
-        "validos": 4025,
-        "diferencia":2500,
-        "porcentaje": 30       
+    "eleccion2016": {
+      "blanco-nulo": "51942",
+      "no-votaron":"73061",
+      "habiles": "274440",
+      "emitidos": "201379",
+      "partidos":[
 
-      }
-    ]
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "43029"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "79295"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "14110"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "3872"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "2765"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "2497"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "1238"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "2129"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "302"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "200"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "apurimac",
     "ubigeo":"03",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "color": "#000000",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1412,
-        "porcentaje": 30
-      }
-    ] 
+    "eleccion2016": {
+      "blanco-nulo": "54862",
+      "no-votaron":"65524",
+      "habiles": "284436",
+      "emitidos": "218912",
+      "partidos":[
+
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "50822"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "82443"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "9214"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "8329"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "3810"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "6818"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "1094"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "1063"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "315"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "142"
+        }
+      
+      ]
+    }
   },
   { 
     "departamento": "pasco",
     "ubigeo":"19",
     "total": 10000,
     "validos": 56,
-    "candidatos": [
-      {
-        "candidato_id": "yonhy-lescano",
-        "votos": 50000,
-        "validos": 65,
-        "diferencia": 1020,
-        "porcentaje": 30
-      }
-    ] 
+    "eleccion2016": {
+      "blanco-nulo": "30008",
+      "no-votaron":"44394",
+      "habiles": "185057",
+      "emitidos": "140663",
+      "partidos":[
 
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "48083"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "22615"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "24523"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "5424"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "5280"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "852"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "1489"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "1836"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "406"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "146"
+        }
+      
+      ]
+    }
   },
   {
     "departamento": "cajamarca",
