@@ -10,17 +10,35 @@
     <b-collapse v-model="openResultados" id="resultados2016" class="col-12">
       <b-tabs>
         <b-tab class="" title="Datos de la votacion">
-          <div class="row">
-            <div class="col-8 datos-eleccion mt-3  text-left">
-              <div>Electores habiles </div>
-              <div>Ciudadanos que no votaron</div>
+          <div class="row mt-3 mb-3">
+            <div class="col-8 datos-eleccion text-left">
+              <div>Electores habiles </div>  
+            </div>
+            <div class="col-4 text-right">
+              <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.habiles}}</span></div>
+            </div>
+          </div>        
+          <div class="row mb-3">
+            <div class="col-8 datos-eleccion text-left">
               <div>Voto en blanco/nulo</div>
+            </div>
+            <div class="col-4 text-right">
+              <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.blanco_nulo}}</span></div>
+            </div>
+          </div>        
+          <div class="row mb-3">
+            <div class="col-8 datos-eleccion text-left">
+              <div>Ciudadanos que no votaron</div>
+            </div>
+            <div class="col-4 text-right">
+              <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.no_votaron}}</span></div>              
+            </div>
+          </div>        
+          <div class="row mb-3">
+            <div class="col-8 datos-eleccion text-left">
               <div>Votos emitidos</div>        
             </div>
-            <div class="col-4 mt-3 text-right">
-              <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.habiles}}</span></div>
-              <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.no_votaron}}</span></div>
-              <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.blanco_nulo}}</span></div>
+            <div class="col-4 text-right">
               <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.emitidos}}</span></div>
             </div>
           </div>        
