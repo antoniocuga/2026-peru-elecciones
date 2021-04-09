@@ -9,14 +9,14 @@
         <b-tab class="" title="Datos de la votacion">
           <div class="row">
             <div class="col-6 text-left">
-              <div>Electores habiles</div>        
+              <div>Electores habiles <span>{{eleccion_region.eleccion2016.habiles}}</span></div>        
             </div>
             <div class="col-6 text-right">
               <div>22901954</div>
             </div>
           </div>
-          <div class="row"><div class="col-6">ciudadanos que no votaron</div><div class="col-6">895785</div></div>
-          <div class="row">{{elecciones_2016}}<div class="col-6">voto en blanco/nulo</div><div class="col-6">votos emitidos</div></div>
+          <div class="row"><div class="col-6">ciudadanos que no votaron <span>{{eleccion_region.elecion2016.no-votaron}}</span></div><div class="col-6">895785</div></div>
+          <div class="row"><div class="col-6">voto en blanco/nulo</div><div class="col-6">votos emitidos <span>{{eleccion_region.eleccion2016.emitidos}}</span></div></div>
 
         </b-tab>
         <b-tab title="Por partidos">
@@ -50,8 +50,8 @@
         return require('../data/departamentos.json')
       },
       eleccion_region() {
-        let region = find(this.elecciones_2016,['region',this.regionSeleccionada.region])
-        return region
+        let departamento = find(this.elecciones_2016,['departamento',this.regionSeleccionada.departamento])
+        return departamento
       }
     }
   }
