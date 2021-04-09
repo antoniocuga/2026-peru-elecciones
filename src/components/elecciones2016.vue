@@ -88,8 +88,12 @@
     methods: {
         
       getImagePartido(partido) {
-        return require(`../assets/partidos/${partido}.png`)
-      }
+        try {
+          return require(`../assets/partidos/${partido}.png`) 
+        } catch (error) {
+          return require(`../assets/partidos/blanco-viciado.png`)
+        }
+      },
     }
   }
 
