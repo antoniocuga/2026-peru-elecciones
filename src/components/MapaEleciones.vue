@@ -4,7 +4,7 @@
         <div class="col-12 mb-3 pb-3">
           <h3 class="m-0 text-center">Resultados a nivel nacional - <b>conteo ONPE al 61%</b> - Última actualización: 11 de Abril a las 23:00</h3>
         </div>
-        <div class="col-auto text-center mt-3" :key="c.candidato_id" v-for="(c, ix) in top_candidatos">
+        <div class="col-auto text-center" :key="c.candidato_id" v-for="(c, ix) in top_candidatos">
           <div>
             <div class="mr-2"><img width="65px" :src="getImageCandidate(c.candidato_id)" /></div>
           </div>
@@ -22,7 +22,7 @@
           </div>
         </div>
       </div>
-      <div class="row mt-5 border-top pt-5">
+      <div class="row mt-3 border-top pt-3">
         <div class="col-12 mapa-resultados-wrapper">
           <candidatosResultados :candidatos="lista_candidatos" />  
           <MapaDepartamentos :lista_candidatos="filteredData" />

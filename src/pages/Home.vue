@@ -11,6 +11,7 @@
   <div class="container">
       <div class="row justify-content-center mb-5 mt-5">
         <div class="col-12 col-md-8 text-center">
+          <h3 class="page-section-tag"><a href="https://ojo-publico.com/elecciones-2021" target="_blank">Elecciones 2021</a></h3>
           <h1 class="page-app-title text-center">Candidatos Lescano, Fujimori, Forsyth y Mendoza pelean 
               pase a la segunda vuelta con estrecho margen</h1>
         </div>
@@ -25,7 +26,7 @@
         </div>
       </div>
 
-      <div class="row pt3 mt-5">
+      <div class="row pt-3 mt-5">
         <div class="col-12 col-md-12 mb-3 subtitle border-bottom">
             <h2>Elecciones y conteo bajo pandemia</h2>
             <span class="line"></span>

@@ -262,7 +262,6 @@ p {
 .mapa-resultados-wrapper {
   position: relative;
   font-family: 'Nunito Sans', sans-serif;
-  overflow: hidden;
 
   h1 {
     font-size: 21px;
@@ -369,8 +368,7 @@ p {
     }
     .resultado-nacional {
       background:#E6F0F9;
-      overflow-y: scroll;
-      height: 200px;
+      overflow-y: auto;
       
 
       h2 {
