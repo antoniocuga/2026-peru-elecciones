@@ -31,6 +31,9 @@
 </template>
 
 <script>
+  
+  import { mapState } from 'vuex'
+  import { find } from 'lodash'
 
   export default {
     name: "elecciones2016",
@@ -40,9 +43,16 @@
       }
     },    
     computed: {
+      ...mapState({        
+        regionSeleccionada: state => state.candidatos.regionSeleccionada,
+      }),
       elecciones_2016() {
         return require('../data/departamentos.json')
       },
+      eleccion_region() {
+        let region = find(this.elecciones_2016,['region',this.regionSeleccionada.region])
+        return region
+      }
     }
   }
 
