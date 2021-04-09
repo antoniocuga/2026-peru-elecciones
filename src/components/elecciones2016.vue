@@ -1,8 +1,8 @@
 <template>
   <div class="row resultado-nacional">
-    <div class="col-8 titulo text-left">
-      <div>Resultados Elecciones 2016 (<b>{{eleccion_region.departamento}}</b>)</div>
-      <div><span v-if="eleccion_region">primera vuelta</span></div>
+    <div class="col-8 mt-3 mb-3titulo text-left">
+      <div>Elecciones 2016 (<b>{{eleccion_region.departamento}}</b>)</div>
+      <div class=""><h2 v-if="eleccion_region">RESULTADOS NACIONALES</h2></div>
     </div>
     <div class="col-4 text-right">
       <b-button @click="openResultados=!openResultados" class="btn"> {{ openResultados ? 'Cerrar' : 'Ver resultados'}}</b-button>
@@ -11,20 +11,25 @@
       <b-tabs>
         <b-tab class="" title="Datos de la votacion">
           <div class="row">
-            <div class="col-6 text-left">
-              <div>Electores habiles <span v-if="eleccion_region">{{eleccion_region.eleccion2016.habiles}}</span></div>        
+            <div class="col-8 datos-eleccion mt-3  text-left">
+              <div>Electores habiles </div>
+              <div>Ciudadanos que no votaron</div>
+              <div>Voto en blanco/nulo</div>
+              <div>Votos emitidos</div>        
             </div>
-            <div class="col-6 text-right">
-              <div>22901954</div>
+            <div class="col-4 mt-3 text-right">
+              <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.habiles}}</span></div>
+              <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.no_votaron}}</span></div>
+              <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.blanco_nulo}}</span></div>
+              <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.emitidos}}</span></div>
             </div>
-          </div>
-          <div class="row"><div class="col-6">ciudadanos que no votaron <span v-if="eleccion_region">{{eleccion_region.eleccion2016.no_votaron}}</span></div><div class="col-6">895785</div></div>
-          <div class="row"><div class="col-6">voto en blanco/nulo</div><div class="col-6">votos emitidos <span v-if="eleccion_region">{{eleccion_region.eleccion2016.emitidos}}</span></div></div>
+          </div>        
 
         </b-tab>
         <b-tab title="Por partidos">
           <div class="row" :key="partido.partido_id" v-for="partido in eleccion_region.eleccion2016.partidos">
-            <div class="col-8">{{ partido.partido }}</div><div class="text-right col-4">{{partido.total_votos}}</div>
+            <div class="col-8 datos-eleccion">{{ partido.partido }}</div>
+            <div class="text-right col-4"><span>{{partido.total_votos}}</span></div>
           </div>
         </b-tab>
       </b-tabs>
