@@ -92,8 +92,7 @@
         return false        
       }
     },
-    methods: {
-        
+    methods: {        
       getImagePartido(partido) {
         try {
           return require(`../assets/partidos/${partido}.png`) 
