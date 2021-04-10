@@ -26,6 +26,9 @@
           <g ref="distritos"></g>
           <g ref="labels"></g>
         </svg>
+        <div class="legend-party">
+          <span class="min-legend"></span><span class="max-legend"></span>
+        </div>
         <button type="button" @click="resetPartidos()" class="btn-back btn active btn-secondary" v-if="partidoSeleccionado.partido_id!='SELECCIONAR PARTIDO'">Ver todos los partidos</button>
         <button type="button" @click="resetPresidente()" class="btn-back btn active btn-secondary" v-if="zoomed==true"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
           <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>

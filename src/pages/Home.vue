@@ -39,22 +39,22 @@
       </div> 
 
 
-      <div class="row pt-3 mt-5 border-bottom">
+      <div class="row pt-3 mt-5 border-bottom justify-content-center">
         <div class="col-12 mb-3 subtitle mt-5 border-bottom">
           <h2>Congreso fragmentado (2021-2026)</h2>
           <span class="line"></span>
           <p>Siete partidos tendrán representantes en el Parlamento: Acción Popular, Fuerza Popular, Víctoria Nacional, Juntos por el Perú, Renovación Popular, Avanza País y el Frente Popular Agrícola FIA del Perú (Frepap). Se requerirá un acuerdo de todas las fuerzas políticas para evitar la inestabilidad de los últimos cinco años.</p>
         </div>
+        <div class="col-7">
+          <congresoGrafico />
+        </div>
 
-        <div class="col-12 col-md-4 resultados2021">
-          
+        <div class="col-12 resultados2021">
           <div class="mapa-resultados-wrapper">
               <PartidosResultados :candidatos="lista_candidatos" />
           </div>          
         </div>
-        <div class="col-7">
-          <congresoGrafico />
-        </div>
+
       </div>    
 
 
@@ -68,7 +68,6 @@
             </div>
             <div class="col-12">
               <SegundaVuelta/>
-    
             </div>
           </div>
           <div class="row">

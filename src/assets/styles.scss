@@ -434,6 +434,15 @@ p {
     }
   }
 
+  .legend-party {
+    position: absolute;
+    width: 200px;
+    height: 35px;
+    left: 35%;
+    bottom: 0;
+    background: #3e3e3e;
+  }
+
   svg.plan-vector-map {
     background: #fff;
   }

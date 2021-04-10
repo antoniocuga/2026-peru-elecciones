@@ -5,6 +5,15 @@
         <g id="parliament"></g>
       </svg>
     </div>
+    <div class="filters">
+      <b-dropdown text="Nacional" variant="dark" class="m-2 departamento-menu">
+        <b-dropdown-item>
+          <a>Nacional</a>
+          <a>Lima metropolitana</a>
+          <a>Lima Provincias</a>
+        </b-dropdown-item>
+      </b-dropdown>
+    </div>
   </div>
 </template>
 
