@@ -4,6 +4,17 @@
 import axios from 'axios'
 
 export default {
+  getAllCongreso (cb) {
+    let candidatos = []
+    axios
+    .get(`/resultados-2021/data/congreso_total.json`)
+    .then(response => {
+      
+      candidatos = response.data
+
+      setTimeout(() => cb(candidatos), 100)
+    })
+  },
   getAllCandidatos (cb) {
     let candidatos = []
     axios

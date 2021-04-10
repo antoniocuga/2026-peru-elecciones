@@ -239,6 +239,26 @@ p {
   }
 }
 
+.congreso-grafico {
+  circle {
+    cursor: pointer;
+
+    &.inactive {
+      opacity: 0.1;
+    }
+  }
+}
+
+.tooltip_congresista {
+  position: absolute;
+  width: 100%;
+  max-width: 320px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.932);
+  color: #000;
+  pointer-events: none;
+}
+
 .tooltip-data {
   position: absolute;
   width: 100%;

@@ -45,18 +45,12 @@
           <span class="line"></span>
           <p>Siete partidos tendrán representantes en el Parlamento: Acción Popular, Fuerza Popular, Víctoria Nacional, Juntos por el Perú, Renovación Popular, Avanza País y el Frente Popular Agrícola FIA del Perú (Frepap). Se requerirá un acuerdo de todas las fuerzas políticas para evitar la inestabilidad de los últimos cinco años.</p>
         </div>
-        <div class="col-7">
+        <div class="col-12">
           <congresoGrafico />
         </div>
-
-        <div class="col-12 resultados2021">
-          <div class="mapa-resultados-wrapper">
-              <PartidosResultados :candidatos="lista_candidatos" />
-          </div>          
-        </div>
-
-      </div>    
-
+      </div>  
+      
+      <div class="tooltip_congresista"></div>
 
       <div class="row">
         <div class="col-12 mt-3 col-md-9">
@@ -111,7 +105,6 @@
   import MapaElecciones from '../components/MapaEleciones.vue'
   import SharingOptions from '../components/SharingOptions.vue'      
   import congresoGrafico from '../components/congresoGrafico.vue'
-  import PartidosResultados from '../components/PartidosResultados.vue'
   import Footer from '../components/Footer.vue'
   import SegundaVuelta from '../components/SegundaVuelta.vue'
   import TopCongreso from '../components/TopCongreso.vue'
@@ -129,7 +122,6 @@
       MapaElecciones,
       congresoGrafico,
       SharingOptions,
-      PartidosResultados,
       SegundaVuelta,
       TopCongreso,                
       Footer,
@@ -137,18 +129,21 @@
     },
     created () {
       this.$store.dispatch('candidatos/getAllCandidatos')
+      this.$store.dispatch('candidatos/getAllCongreso')
     },
     computed: {
       ...mapState({
-        candidatos: state => state.candidatos.todos
+        candidatos: state => state.candidatos.todos,
+        congresistas: state => state.candidatos.congresistas
       }),
       data() {
         return require('../data/departamentos.json')
       },
+      filtered() {
+        return filter(this.candidatos, c => c.candidato_id != "")
+      },
       lista_candidatos() {
-        let filtered = filter(this.candidatos, c => c.candidato_id != "")
-
-        return orderBy(map(groupBy(filtered, 'candidato_id'), (d, id) => {
+        return orderBy(map(groupBy(this.filtered, 'candidato_id'), (d, id) => {
             return {
               candidato_id: id,
               candidato: uniq(map(d, 'candidato')).join(''),

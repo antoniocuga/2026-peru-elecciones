@@ -12,6 +12,7 @@ def load_file(file):
 
 	with open('%s.csv' % file) as f:
 		resultado_total = csv.DictReader(f)
+		congreso_list(resultado_total)
 		
 		for c in resultado_total:
 
@@ -30,13 +31,39 @@ def load_file(file):
 				candidato['validos_nacional'] = float(c['porcentaje_validos'])
 				data.append(candidato)
 
-	
 	distritos_list(candidatos)
 
 	with open('../public/data/%s.json' % file, 'w') as jsonf:
-			jsonf.write(json.dumps(data, indent=2))
+		jsonf.write(json.dumps(data, indent=2))
 
-	
+
+def congreso_list(resultado_total):
+	data_out = []
+
+	top_10 = sorted(resultado_total, key = lambda i: i['total'])[0:10]
+
+	with open('candidatos_congreso.csv') as f:
+		congresistas = csv.DictReader(f)
+
+		for p in top_10:
+
+			for d in departamentos:
+
+				seleccionados = sorted(congresistas, key = lambda i: i['nro'])[0:10]
+
+				candidato = {}
+				#dni,nombre,region,departamento,nro,partido,partido_id
+				candidato['region'] = c['region']
+				candidato['candidato_id'] = c['candidato_id']
+				candidato['dni'] = c['dni']
+				candidato['candidato'] = c['nombre']
+				candidato['color'] = c['color']
+				candidato['partido'] = c['partido']
+				candidato['partido_id'] = c['partido_id']
+
+			data_out.append(candidato)
+			
+	export_congresistas(data_out)
 
 
 def distritos_list(candidatos):
@@ -45,7 +72,6 @@ def distritos_list(candidatos):
 	with open('lambayeque.csv') as f:
 		distritos = csv.DictReader(f)
 
-		
 		for d in distritos:
 			for c in candidatos:
 				candidato = {}
@@ -71,6 +97,11 @@ def distritos_list(candidatos):
 
 def export_departamento(data):
 	with open('../public/data/%s.json' % 'lambayeque', 'w') as jsonf:
+		jsonf.write(json.dumps(data, indent=2))
+
+
+def export_congresistas(data):
+	with open('../public/data/%s.json' % 'congres_total', 'w') as jsonf:
 		jsonf.write(json.dumps(data, indent=2))
 
 # {'desc_ubigeo_reniec': 'Chachapoyas', 'poblacion': '29171', 'latitud': '-6.2294', 'conteo': '', 'desc_dep_reniec': 'Amazonas', 'cod_prov_reniec': '0101', 'altitud': '2338', 'blancos_nulos': '', 'total_votos': '', 'longitud': '-77.8714', 'validos': '', 'cod_dep_reniec': '01', 'cod_ubigeo_reniec': '010101', 'superficie': '153.78', 'desc_prov_reniec': 'Chachapoyas'}
