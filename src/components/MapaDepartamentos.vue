@@ -4,15 +4,15 @@
     <div class="row filter-block">
       <div class="col-12 text-right">
         
-        <b-dropdown :text="partidoSeleccionado.partido_id" variant="dark" class="m-2 departamento-menu">
+        <b-dropdown :text="partidoSeleccionado.partido" variant="light" class="d-inline-block m-2 departamento-menu">
           <b-dropdown-item :key="p.partido_id" v-for="p in partidos">
-            <a @click="show_partido(p.partido_id)">{{ p.partido_id }}</a>
+            <a @click="show_partido(p)">{{ p.partido }}</a>
           </b-dropdown-item>
         </b-dropdown>
 
-        <b-dropdown :text="regionSeleccionada.region" variant="dark" class="m-2 departamento-menu">
+        <b-dropdown :text="regionSeleccionada.departamento" variant="light" class="d-inline-block m-2 departamento-menu">
           <b-dropdown-item :key="dep.region" v-for="dep in departamentos">
-            <a @click="show_departamento(dep.region)">{{ dep.region }}</a>
+            <a @click="show_departamento(dep.region)">{{ dep.departamento }}</a>
           </b-dropdown-item>
         </b-dropdown>
 
@@ -26,10 +26,14 @@
           <g ref="distritos"></g>
           <g ref="labels"></g>
         </svg>
-        <div class="legend-party">
-          <span class="min-legend"></span><span class="max-legend"></span>
+
+        <div class="legend-party" v-if="partidoSeleccionado.color">
+          <div><span class="min-legend">{{ legendaValues.min }}%</span><span class="max-legend">{{ legendaValues.max }}%</span></div>
+          <div class="percent" :style="`height: 15px; width:100%;background: linear-gradient(90deg,#eaeaea, ${partidoSeleccionado.color}ab);`">
+          </div>
         </div>
-        <button type="button" @click="resetPartidos()" class="btn-back btn active btn-secondary" v-if="partidoSeleccionado.partido_id!='SELECCIONAR PARTIDO'">Ver todos los partidos</button>
+
+        <button type="button" @click="resetPartidos()" class="btn-back btn active btn-secondary" v-if="partidoSeleccionado.partido_id!='TODOS'">Ver todos los partidos</button>
         <button type="button" @click="resetPresidente()" class="btn-back btn active btn-secondary" v-if="zoomed==true"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
           <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>
         </svg> Todos los resultados</button>
@@ -60,7 +64,8 @@
         distance: 0,
         bounds: [],
         center_device: [],
-        zoomed: false
+        zoomed: false,
+        legendaValues: {}
       }
     },
     mounted() {
@@ -75,13 +80,15 @@
       },
       partidoSeleccionado(v) {
         this.zoomed = false
-        let max = maxBy(this.departamentos_parse, 'total_departamento')
-        let min = minBy(this.departamentos_parse, 'total_departamento')
-        let color = d3.scaleLinear().domain([min.total_departamento, max.total_departamento]).range(["#eaeaea", `${max.winner.color}ab`])
-
         let base = d3.select(this.$refs['svgmap'])
-        
-        if(v.partido_id != 'SELECCIONAR PARTIDO') {
+
+        if(v.partido_id != 'TODOS') {
+          let max = maxBy(this.departamentos_parse, 'total_departamento').total_departamento
+          let min = minBy(this.departamentos_parse, 'total_departamento').total_departamento
+          let color = d3.scaleLinear().domain([min, max]).range(["#eaeaea", `${v.color}ab`])
+
+          this.legendaValues.max = max
+          this.legendaValues.min = min
 
           base.selectAll('path.departamento-path')        
           .attr("style", (f) => {            
@@ -94,11 +101,11 @@
         } else {
 
           base.selectAll('path.departamento-path')
-          .attr("style", (f) => {
-            let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
-            if(dep)
-              return `fill: ${dep.winner.color}ab;`
-          })
+            .attr("style", (f) => {
+              let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
+              if(dep)
+                return `fill: ${dep.winner.color}ab;`
+            })
         }
 
       },
@@ -113,6 +120,15 @@
 
           d3.selectAll('text.departamento-label').classed('active', false)
           d3.select(`text.${v.region}-label`).classed('active', true)
+        } else {
+
+          if(this.partidoSeleccionado.partido_id != 'TODOS') {
+            this.zoomed = false
+            let max = maxBy(this.departamentos_parse, 'total_departamento').total_departamento
+            let min = minBy(this.departamentos_parse, 'total_departamento').total_departamento
+            this.legendaValues.max = max
+            this.legendaValues.min = min
+          }
         }
       }
     },
@@ -125,18 +141,21 @@
       }),
       partidos() {
         return orderBy(map(groupBy(this.candidatos, 'partido_id'), (item, partido_id) => {
+
           return {
             partido_id: partido_id,
+            partido: uniq(map(item, 'partido')).join(""),
+            color: uniq(map(item, 'color')).join(""),
             departamentos: groupBy(item, 'region')
           }
         }), ['departamento'])
       },
       distritos_parse() {
         let filtered = this.distritos
-        if(this.partidoSeleccionado.partido_id != 'SELECCIONAR PARTIDO') {
+        if(this.partidoSeleccionado.partido_id != 'TODOS') {
           filtered = filter(this.distritos, ['partido_id', this.partidoSeleccionado.partido_id])
         }
-
+        
         return orderBy(map(groupBy(filtered, 'ubigeo'), (item, ubigeo) => {
           return {
             ubigeo: ubigeo,
@@ -156,7 +175,7 @@
           return {
             region: region,
             departamento: uniq(map(item, 'region')).join(''),
-            total_departamento: parseFloat(sumBy(map(item, 'total_departamento'))),
+            total_departamento: parseFloat(uniq(map(item, 'total_departamento')).join("")),
             candidatos: orderBy(item, ['total_departamento'], ['desc']),
             geodata: require(`../data/mapas/${region}.json`),
             winner: maxBy(item, 'validos_nacional')
@@ -166,9 +185,10 @@
       departamentos() {
         let filtered = filter(this.candidatos, c => c.candidato_id != '')
         return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
+          let dep = find(this.perugeo.features, d => d.properties.dep_id == region)
           return {
             region: region,
-            departamento: uniq(map(item, 'region')).join(''),
+            departamento: dep.properties.NOMBDEP,
             total_departamento: parseFloat(sumBy(map(item, 'total_departamento'))),
             candidatos: orderBy(item, ['total_departamento'], ['desc']),
             geodata: require(`../data/mapas/${region}.json`),
@@ -198,18 +218,22 @@
         'getAllDistritos'
       ]),
       resetPartidos() {
-        console.log("reset partidos")
-        this.updatePartidoSeleccionado({partido_id: 'SELECCIONAR PARTIDO'})
+        this.zoomed = false
+        this.updatePartidoSeleccionado({
+          partido_id: "TODOS",
+          partido: "TODOS",
+        })
       },
       resetPresidente() {
-        this.updateRegionSeleccionada({region:'NACIONAL'})
+        this.zoomed = false
+        this.updateRegionSeleccionada({region:'NACIONAL', departamento:'VER REGIÓN'})
       },
       openDepartamentos() {
         this.openMenu = !this.openMenu        
       },
-      show_partido(partido_id) {
-        this.updateRegionSeleccionada({region: 'NACIONAL'})
-        this.updatePartidoSeleccionado({partido_id: partido_id})
+      show_partido(partido) {
+        this.updateRegionSeleccionada({region:'NACIONAL', departamento:'VER REGIÓN'})
+        this.updatePartidoSeleccionado(partido)
       },
       show_departamento(id) {
         let dep = find(this.departamentos, d => d.region == id)
@@ -231,12 +255,21 @@
       },
       transitionPath() {
         let base = d3.select(this.$refs['svgmap'])
-        let center, scale
+        let center, scale, distance, bounds, features_distrito
         
         if(this.regionSeleccionada.region != 'NACIONAL') {
           let dep = find(this.perugeo.features, d => d.properties.dep_id == this.regionSeleccionada.region)
           center = dep.properties.center
-          scale = dep.properties.scale
+          // scale = dep.properties.scale
+          
+          features_distrito = feature(this.regionSeleccionada.geodata, this.regionSeleccionada.geodata.objects[this.regionSeleccionada.region])
+
+          bounds = d3.geoBounds(features_distrito)
+
+          // Compute the angular distance between bound corners
+          distance = d3.geoDistance(bounds[0], bounds[1]),
+          scale = (this.height*1.85) / distance / Math.sqrt(2);
+
         } else if(this.regionSeleccionada.region == 'NACIONAL') {
           center = d3.geoCentroid(this.perugeo)
           scale = this.width / this.distance / Math.sqrt(1)
@@ -346,7 +379,13 @@
           .on("mouseover", (event, f) => {
             if(window.innerWidth > 798 && this.zoomed == false) {
               let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
+
+              if(this.partidoSeleccionado.partido_id != 'TODOS') {
+                dep = find(this.departamentos_parse, d => d.region == f.properties.dep_id)
+              }
+
               let table = this.load_tooltip(dep, f)
+              
               this.tooltip.html(`${table}`)	 
                 .style("left", (event.pageX) + "px")
                 .style("top", (event.pageY - 28) + "px")
@@ -396,12 +435,18 @@
       render_distritos() {
 
         let base = d3.select(this.$refs['base'])
-        let max = maxBy(this.distritos_parse, 'total_distrito')
-        let min = minBy(this.distritos_parse, 'total_distrito')
-        let color = d3.scaleLinear().domain([min.total_distrito, max.total_distrito]).range(["#eaeaea", `${max.winner.color}ab`])
-    
-        
+        let color
 
+        if(this.partidoSeleccionado.partido_id != 'TODOS') {
+          let max = maxBy(this.distritos_parse, 'total_distrito')
+          let min = minBy(this.distritos_parse, 'total_distrito')
+
+          color = d3.scaleLinear().domain([min.total_distrito, max.total_distrito]).range(["#eaeaea", `${max.winner.color}ab`])
+      
+          this.legendaValues.max = max.total_distrito
+          this.legendaValues.min = min.total_distrito
+        }
+        
         let features_distrito = feature(this.regionSeleccionada.geodata, this.regionSeleccionada.geodata.objects[this.regionSeleccionada.region])
 
         base.selectAll('path.distrito-path').remove()
@@ -415,18 +460,20 @@
           .attr("style", (f) => {
             let dep = find(this.distritos_parse, d => d.ubigeo == f.properties.IDDIST)
 
-            console.log(dep)
+            if(dep && this.partidoSeleccionado.partido_id != 'TODOS') {
 
-            if(dep && this.partidoSeleccionado.partido_id != 'SELECCIONAR PARTIDO') {
-              return `fill: ${color(dep.winner.validos)};`
-            } else if(dep) {
+              if(dep.winner)
+                return `fill: ${color(dep.winner.validos)};`
+            } else if(dep && dep.winner) {
               return `fill: ${dep.winner.color}ab;`
+            } else {
+              return `fill: #eaeaea;`
             }
           })
           .on("mouseover", (event, f) => {
             if(window.innerWidth > 798) {
-              console.log(f)
-              let dep = find(this.distritos, d => d.ubigeo == f.properties.ubigeo)
+
+              let dep = find(this.distritos_parse, d => d.ubigeo == f.properties.IDDIST)
               let table = this.load_tooltip(dep, f)
               this.tooltip.html(`${table}`)	 
                 .style("left", (event.pageX) + "px")
@@ -453,50 +500,55 @@
 
         let candidatos = ``
         let name = f.properties.NOMBDEP
-
+        let distrito = f
         let table = ``
 
         if(dep && this.zoomed==false) {
           table = `
             <div class="row border-bottom pb-2 mb-2">
               <div class="col-6 depa"><b>${name}</b></div>
-              <div class="col-6 text-right">Conteo al 67%</div>
+              <div class="col-6 text-right"><span class="badge badge-light">Conteo al 67%</span></div>
             </div>`
+          
+          if(dep.candidatos) {
+            let list = orderBy(dep.candidatos, ['total_departamento'],['desc'])
 
+            let solo_cuatro = list.slice(0, 4)
 
-          let list = orderBy(dep.candidatos, ['total_departamento'],['desc'])
+            map(solo_cuatro, dp => {
+              candidatos += `
+              <div class="tooltip-content row mt-2 pb-1 border-bottom">
+                  <div class="col-2">
+                    <div><img width="40px" src="${this.getImageCandidate(dp.candidato_id)}" /></div>
+                    
+                  </div>
+                  <div class="col-6 pr-0">
+                    <div class="candidato-mapa"><b>${dp.candidato}</b></div>
+                    <div class="partido-mapa"><img width="25px" src="${this.getImagePartido(dp.partido_id)}" />${dp.partido}</div>
+                    
+                  </div>
+                  <div class="pl-0 col-4 text-right">
+                    <div class="candidato-mapa"><b>${dp.total_departamento}%</b></div>
+                    <div class="partido-mapa">+${ numeral(dp.nacional).format('0,0') }</div>
+                  </div>
+                </div>`
+            })
 
-          let solo_cuatro = list.slice(0, 4)
+          } else {
+            candidatos = `No disponible`
+          }
 
-          map(solo_cuatro, dp => {
-            candidatos += `
-            <div class="tooltip-content row mt-2 pb-1 border-bottom">
-                <div class="col-2">
-                  <div><img width="40px" src="${this.getImageCandidate(dp.candidato_id)}" /></div>
-                  
-                </div>
-                <div class="col-6 pr-0">
-                  <div class="candidato-mapa"><b>${dp.candidato}</b></div>
-                  <div class="partido-mapa"><img width="25px" src="${this.getImagePartido(dp.partido_id)}" />${dp.partido}</div>
-                  
-                </div>
-                <div class="pl-0 col-4 text-right">
-                  <div class="candidato-mapa"><b>${dp.total_departamento}%</b></div>
-                  <div class="partido-mapa">+${ numeral(dp.nacional).format('0,0') }</div>
-                </div>
-              </div>`
-          })
 
           table += `<div>${candidatos}</div>`
-        } else if(this.zoomed == true) {
-          let distrito = f
+        }
+        else if(this.zoomed == true && dep) {
           
           let dep = find(this.distritos_parse, d => d.ubigeo == f.properties.IDDIST)
 
           table = `
             <div class="row border-bottom pb-2 mb-2">
               <div class="col-7 depa"><b>${distrito.properties.DISTRITO}</b></div>
-              <div class="col-5 text-right">Conteo al 67%</div>
+              <div class="col-5 text-right"><span class="badge badge-light">Conteo al 67%</span></div>
             </div>`
           let only_four = dep.candidatos.slice(0, 4)
 
@@ -522,6 +574,14 @@
           })
 
           table += `<div>${candidatos}</div>`
+        } else {
+          table = `
+            <div class="row border-bottom pb-2 mb-2">
+              <div class="col-12 depa"><b>${distrito.properties.DISTRITO}</b></div>
+              <div class="col-12">
+                Información no disponible
+              </div>
+            </div>`
         }
 
         return table

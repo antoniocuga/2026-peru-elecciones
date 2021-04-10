@@ -26,8 +26,8 @@
         </div>
       </div>
 
-      <div class="row pt-3 mt-5">
-        <div class="col-12 col-md-12 mb-3 subtitle border-bottom">
+      <div class="row pt-3 mt-5 border-bottom">
+        <div class="col-12 col-md-12 subtitle">
             <h2>Elecciones y conteo bajo pandemia</h2>
             <span class="line"></span>
             <p>La Oficina Nacional de Procesos Electorales (ONPE) enfrentó un gran desafío en la ejecución de las elecciones del Bicentenario. Se espera que el proceso para tener los resultados al 100% demore más de lo normal debido a las condiciones de bioseguridad que se tomarán para evitar infecciones por la Covid-19</p>
@@ -39,8 +39,8 @@
       </div> 
 
 
-      <div class="row pt-3 mt-5 border-bottom justify-content-center">
-        <div class="col-12 mb-3 subtitle mt-5 border-bottom">
+      <div class="row border-bottom justify-content-center">
+        <div class="col-12 mb-3 subtitle mt-5">
           <h2>Congreso fragmentado (2021-2026)</h2>
           <span class="line"></span>
           <p>Siete partidos tendrán representantes en el Parlamento: Acción Popular, Fuerza Popular, Víctoria Nacional, Juntos por el Perú, Renovación Popular, Avanza País y el Frente Popular Agrícola FIA del Perú (Frepap). Se requerirá un acuerdo de todas las fuerzas políticas para evitar la inestabilidad de los últimos cinco años.</p>

@@ -5,10 +5,12 @@ const state = () => ({
   todos: [],
   distritos: [],
   regionSeleccionada: {
-    region: "NACIONAL"
+    region: "NACIONAL",
+    departamento: "VER REGIÓN"
   },
   partidoSeleccionado: {
-    partido_id: "SELECCIONAR PARTIDO"
+    partido_id: "TODOS",
+    partido: "VER POR PARTIDO",
   }
 })
 

@@ -287,7 +287,6 @@ p {
   .candidate-results-vivo {
     position: absolute;
     left: -400px;
-    width: 100%;
     max-width: 400px;
     height: 100vh;
     max-height: 720px;
@@ -295,9 +294,10 @@ p {
     transition: left .15s ease-in-out;
 
     .candidates-list {
-      height: 490px;
+      height: 500px;
       overflow-y: auto;
       background: #ffffff80;
+      box-shadow: 0px 0px 5px #f1f1f1;
 
       .button-more {
         position: sticky;
@@ -306,7 +306,7 @@ p {
     }
 
     &.active {
-      left: 0;
+      left: 15px;
     }
 
     @media (max-width: 720.98px) { 
@@ -329,6 +329,7 @@ p {
       left: 0;
       display: flex;
       padding: 5px 0;
+      border-bottom: dashed 1px #e3e3e3;
     }
 
     .candidate-percent {
@@ -354,34 +355,60 @@ p {
     
     }
     .title-resultados {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
       margin: 5px 0;
-      font-size: 18px;
+      font-size: 14px;
       text-transform: uppercase;
       font-weight: bold;
+      color: #6f6f6f;
 
       span {
-        display: block;
-        float: right;
-        font-size: 14px;
-        font-weight: 400;
+        width: 100%;
+      }
+
+      span.badge {
+        max-width: 120px;
+        flex: auto;
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+        background: #eaeaea !important;
       }       
     }
     .resultado-nacional {
-      background:#E6F0F9;
+      background:#eaeaea;
       overflow-y: auto;
       
+      .nav-link {
+        font-size: 12px;
+        font-weight: 400;
+        padding: 11px 25px;
+      }
 
       h2 {
+        margin: 0;
         font-size: 14px;
         font-family: 'Nunito Sans', sans-serif;
-        font-weight: bolder;
         color: #7A7A7A;
-
+        cursor: pointer;
       }
+
+      h3 {
+        margin: 0;
+        color: #828282;
+      }
+
+      .btn {
+        svg {
+          fill: #7A7A7A;
+        }
+      }
+
       .titulo {
         font-family: 'Nunito Sans', sans-serif;
         font-size: 13px;
-        
       } 
       .datos-eleccion {
         font-size: 14px;
@@ -412,8 +439,8 @@ p {
   .filter-block {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 320px;
+    right: 15px;
+    width: 300px;
     z-index: 999;
   }
 
@@ -421,9 +448,9 @@ p {
     display: flex;
     align-items: center;
     position: absolute;
-    bottom: 35px;
-    right: 35px;
-    width: 110px;
+    top: 120px;
+    right: 20px;
+    width: 135px;
     font-size: 13px;
     line-height: 1.2em;
     padding: 5px;
@@ -436,11 +463,28 @@ p {
 
   .legend-party {
     position: absolute;
-    width: 200px;
+    width: 135px;
     height: 35px;
-    left: 35%;
-    bottom: 0;
-    background: #3e3e3e;
+    right: 20px;
+    top: 195px;
+
+    span {
+      font-size: 13px;
+      font-weight: 400;
+      color: #6d6d6d;
+    }
+
+    span.min-legend {
+      float: left;
+    }
+
+    span.max-legend {
+      float: right;
+    }
+
+    .percent {
+      overflow: hidden;
+    }
   }
 
   svg.plan-vector-map {
@@ -448,7 +492,7 @@ p {
   }
   .distrito-path {
     fill: #91ad8d;
-    stroke: #ffffff21;
+    stroke: #00000021;
     stroke-width: 1px;
     cursor: pointer;
 
@@ -1342,6 +1386,10 @@ p {
     font-weight: 400;
   }
 
+  .top-candidates {
+    background: #f9f9f9;
+  }
+
   .depa {
     text-transform: capitalize;
     color: black;
@@ -1407,7 +1455,6 @@ p {
     margin: 0 auto;
     font-weight: bold;
     font-size: 27px;
-    background: #e6f0f9;
 
     span {
       display: inline-block !important;

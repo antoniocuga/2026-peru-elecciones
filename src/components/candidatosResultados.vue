@@ -1,12 +1,16 @@
 <template>
   <div class="candidate-results-vivo row pb-3 active">
-    <div class="col-12 candidates-list">
-      <div class="row">
-        <div class="col-12 align-self-center">
-          <h2 class="title-resultados">{{regionSeleccionada.region}} <span>Conteo al 98%</span></h2>
+    <div class="col-12 ">
+      <div class="row candidates-list">
+        <div class="col-12 pt-3 pb-3">
+
+          <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region !='NACIONAL'"><span>{{regionSeleccionada.region}}</span> <span class="p-2 badge badge-light">Conteo al 98%</span></h2>
+
+          <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region =='NACIONAL'"><span>RESULTADOS NACIONALES</span><span class="p-2 badge badge-light">Conteo al 98%</span></h2>
+
         </div>
         <div class="col-12">
-          <div class="row candidate-info align-self-center mt-2  pb-1 border-bottom" :key="c.candidato_id" v-for="c in candidatos.slice(0,6)">
+          <div class="row candidate-info align-self-center mt-2 pb-1" :key="c.candidato_id" v-for="c in candidatos.slice(0,6)">
             <div class="col-2 pr-0 img-candidato">
               <img width="40px" :src="getImageCandidate(c.candidato_id)" />
             </div>
@@ -25,7 +29,7 @@
           </div>
         </div>
         <b-collapse v-model="open" id="collapse-1" class="col-12">
-          <div class="row  candidate-info align-self-center mt-2  pb-1 border-bottom" :key="c.candidato_id" v-for="c in candidatos.slice(6, candidatos.length)">
+          <div class="row candidate-info align-self-center mt-2 pb-1" :key="c.candidato_id" v-for="c in candidatos.slice(6, candidatos.length)">
             <div class="col-2 pr-0 img-candidato">
               <img width="40px" :src="getImageCandidate(c.candidato_id)" />
             </div>
@@ -44,8 +48,17 @@
           </div>
         </b-collapse>
     
-        <div class="col-12 mt-3 button-more">
-          <b-button @click="open=!open" class="btn-warning"> {{ open ? 'Cerrar' : 'Mostrar todos'}}</b-button>
+        <div class="col-12 mt-3 button-more pl-0 pr-0">
+          <a v-if="open==false" @click="open=!open" class="d-block btn-light text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+            </svg>
+          </a>
+          <a v-if="open==true" @click="open=!open" class="d-block btn-light text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
