@@ -2,10 +2,62 @@
   {
     "departamento": "NACIONAL",
     "eleccion2016": {
-      "blanco_nulo": "785438",
-      "no_votaron":"908015",
-      "habiles": "6884549",
-      "emitidos": "5976534"
+      "blanco_nulo": "3393987",
+      "no_votaron":"2130063",
+      "habiles": "22901954",
+      "emitidos": "20771891",
+      "partidos": [
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "8152834"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "2874940"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "3228661"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "1069360"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "894278"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "613173"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "203103"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "200012"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "75870"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "65673"
+        }
+      ]
     }
   },
   {
