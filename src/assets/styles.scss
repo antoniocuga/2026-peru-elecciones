@@ -590,7 +590,7 @@ p {
     text-align: left;
     pointer-events: none;
 
-    @media (max-width: 750.98px) { 
+    @media (max-width: 575.98px) { 
       left: 15px;
       bottom: 10vh;
     }
@@ -1566,9 +1566,20 @@ p {
     display: block;
     margin: 5px 0;
     padding: 0 3px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    background: #6caa6d;
+  }
+
+  .peleando {
+    display: block;
+    margin: 5px 0;
+    padding: 0 3px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #252525;
+    background: #e0da87;
   }
 
   .votos-resultado {
