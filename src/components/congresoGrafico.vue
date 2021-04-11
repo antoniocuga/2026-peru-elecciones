@@ -1,7 +1,7 @@
 <template>
   <div class="row congreso-grafico">
     <div class="col-12 mb-2">
-      <h2 class="title-resultados">Resultados a nivel nacional - <span class="badge badge-dark">conteo ONPE al 61%</span> - Última actualización: <span class="badge badge-light">11 de Abril a las 23:00</span></h2>
+      <h2 class="title-resultados"><b>Conteo ONPE al 10% a nivel nacional</b> (Última actualización: 12:00 p.m. del 12 de abril)</h2>
     </div>
     <div class="filters-congreso col-12 mb-3 text-center">
       <b-dropdown :text="depSelected" variant="warning" class="m-2 departamento-menu">
