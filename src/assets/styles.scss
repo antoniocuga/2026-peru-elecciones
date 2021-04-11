@@ -84,6 +84,8 @@ p {
 
 .navbar-brand {
   max-width: 220px;
+  margin: 0 auto;
+
   img {
     width: 100%;
   }
@@ -574,12 +576,41 @@ p {
     }
   }
 
+  .regiones-extra {
+    position: absolute;
+    width: 100%;
+    max-width: 200px;
+    left: 40%;
+    bottom: 35vh;
+    text-align: left;
+    pointer-events: none;
+
+    div {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+      font-size: 13px;
+    }
+
+    span {
+      pointer-events: all;
+    }
+
+    .departamento-path {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      background: #333;
+    }
+  }
+
   .legend-party {
     position: absolute;
     width: 135px;
     height: 35px;
-    right: 20px;
-    top: 195px;
+    left: 40%;
+    top: 0;
 
     span {
       font-size: 13px;
@@ -1532,9 +1563,21 @@ p {
     color: #333;
   }
 
+  .validos {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .porcentaje-resultado {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
   .diferencia {
     display: block;
     font-size: 12px;
+    font-weight: 400;
     color: #63a563;
   }
 

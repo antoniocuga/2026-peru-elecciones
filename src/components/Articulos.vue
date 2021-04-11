@@ -25,7 +25,25 @@
     data() {
       return { 
         articulos: [
-        {
+          {
+            titulo: "Conspiración, desinformación y odio: el discurso de López Aliaga",
+            url: "https://ojo-publico.com/especiales/conspiracion-desinformacion-odio-en-discurso-de-rafael-lopez-aliaga/",
+            imagen: "https://ojo-publico.com/sites/default/files/styles/imagen_600x338/public/2021-04/Rafael_Lopez_Aliaga_Andina.jpeg?h=4362216e&itok=m9iB1jpM"
+            
+          },
+          {
+            titulo: "Las mentiras detrás del archivo de la denuncia de acoso contra Lescano",
+            url: "https://ojo-publico.com/2598/las-mentiras-detras-del-archivo-de-la-denuncia-de-acoso-contra-lescano",
+            imagen: "https://ojo-publico.com/sites/default/files/styles/imagen_745x419/public/2021-03/Lescano_Andina.jpg?h=ea95bb15&itok=O4yzNXD-"
+            
+          },
+          {
+            titulo: "Candidatos de Lescano defienden ascenso al poder de Merino",
+            url: "https://ojo-publico.com/2610/candidatos-de-lescano-defienden-ascenso-al-poder-de-merino",
+            imagen: "https://ojo-publico.com/sites/default/files/styles/imagen_600x338/public/2021-04/Lescano_Alva1.jpg?h=a876271e&itok=Vl1jpw6l"
+            
+          },
+          {
             titulo: "José Luna y otros enemigos de la Sunedu en lista de Urresti",
             url: "https://ojo-publico.com/2557/jose-luna-y-otros-enemigos-de-la-sunedu-en-lista-de-urresti",
             imagen: "https://ojo-publico.com/sites/default/files/styles/imagen_352x198/public/2021-03/William%20Vega%20Mamani%20-%20facebook%20del%20candidato7.jpg?h=1565a4fb&itok=PN1TY5W7"

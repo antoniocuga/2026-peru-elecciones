@@ -3,7 +3,7 @@ import json
 import random
 
 resultados_total = []
-departamentos = ['lima','lima-provincias', 'callao', 'loreto', 'tumbes', 'piura', 'lambayeque', 'la-libertad', 'arequipa', 'moquegua', 'tacna', 'ica', 'ancash', 'amazonas', 'ayacucho', 'cusco', 'madre-de-dios', 'san-martin', 'ucayali', 'junin', 'puno', 'huanuco', 'pasco', 'cajamarca', 'huancavelica', 'apurimac']
+departamentos = ['extranjero','lima','lima-provincias', 'callao', 'loreto', 'tumbes', 'piura', 'lambayeque', 'la-libertad', 'arequipa', 'moquegua', 'tacna', 'ica', 'ancash', 'amazonas', 'ayacucho', 'cusco', 'madre-de-dios', 'san-martin', 'ucayali', 'junin', 'puno', 'huanuco', 'pasco', 'cajamarca', 'huancavelica', 'apurimac']
 data = []
 
 def load_file(file):
@@ -12,7 +12,8 @@ def load_file(file):
 
 	with open('%s.csv' % file) as f:
 		resultado_total = csv.DictReader(f)
-		congreso_list(resultado_total)
+		
+		#	congreso_list(resultado_total)
 		
 		for c in resultado_total:
 

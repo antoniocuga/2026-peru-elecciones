@@ -2,7 +2,7 @@
 
   <div>
       <nav class="navbar navbar-ojo-publico">
-          <div class="container">
+          <div class="container text-centewr">
             <a class="navbar-brand" href="https://www.ojo-publico.com/">
               <img src="../assets/logo.png" />
             </a>

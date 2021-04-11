@@ -27,9 +27,9 @@
           <g ref="labels"></g>
         </svg>
         <div class="regiones-extra">
-          <div>Callao</div>
-          <div>Lima Metropolitana</div>
-          <div>Extranjero</div>
+          <div><span class="callao-path departamento-path"></span><span>Callao</span></div>
+          <div><span class="lima-path departamento-path"></span><span>Lima Metropolitana</span></div>
+          <div><span class="extranjero-path departamento-path"></span><span>Extranjero</span></div>
         </div>
 
         <div class="legend-party" v-if="partidoSeleccionado.color">
@@ -191,10 +191,11 @@
       departamentos() {
         let filtered = filter(this.candidatos, c => c.candidato_id != '')
         return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
+          console.log(region)
           let dep = find(this.perugeo.features, d => d.properties.dep_id == region)
           return {
             region: region,
-            departamento: dep.properties.NOMBDEP,
+            departamento: region != 'extranjero' ? dep.properties.NOMBDEP : 'EXTRANJERO',
             total_departamento: parseFloat(sumBy(map(item, 'total_departamento'))),
             candidatos: orderBy(item, ['total_departamento'], ['desc']),
             geodata: require(`../data/mapas/${region}.json`),
@@ -381,43 +382,89 @@
               return `fill: ${dep.winner.color}ab;`
           })
           .on("click", (event, f) => {
-            let dep = find(this.departamentos, d => d.region == f.properties.dep_id)   
+              let dep = find(this.departamentos, d => d.region == f.properties.dep_id)   
 
-            if(window.innerWidth > 798 && this.zoomed == false) {
-              this.updateRegionSeleccionada(dep)
-            }
-            
-          })
-          .on("mouseover", (event, f) => {
-            if(window.innerWidth > 798 && this.zoomed == false) {
-              let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
-
-              if(this.partidoSeleccionado.partido_id != 'TODOS') {
-                dep = find(this.departamentos_parse, d => d.region == f.properties.dep_id)
+              if(window.innerWidth > 798 && this.zoomed == false) {
+                this.updateRegionSeleccionada(dep)
               }
+              
+            })
+            .on("mouseover", (event, f) => {
+              console.log(event, f)
+              if(window.innerWidth > 798 && this.zoomed == false) {
+                let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
 
-              let table = this.load_tooltip(dep, f)
+                if(this.partidoSeleccionado.partido_id != 'TODOS') {
+                  dep = find(this.departamentos_parse, d => d.region == f.properties.dep_id)
+                }
+
+                let table = this.load_tooltip(dep, f)
+                
+                this.tooltip.html(`${table}`)	 
+                  .style("left", (event.pageX) + "px")
+                  .style("top", (event.pageY - 28) + "px")
               
-              this.tooltip.html(`${table}`)	 
-                .style("left", (event.pageX) + "px")
-                .style("top", (event.pageY - 28) + "px")
-            
-              this.tooltip.transition()
-                .duration(500)	
-                .style("opacity", 0)
+                this.tooltip.transition()
+                  .duration(500)	
+                  .style("opacity", 0)
+                
+                this.tooltip.transition()
+                  .duration(200)	
+                  .style("opacity", 1)
+              }
+            })
+            .on("mouseout", () => {
+              if(window.innerWidth > 798) {
+                this.tooltip.transition()
+                  .duration(500)	
+                  .style("opacity", 0)
+              }
+            })
+
+          d3.selectAll('span.departamento-path')
+            .data(['callao', 'lima', 'extranjero'])
+            .attr("style", (f) => {
+              let dep = find(this.departamentos, d => d.region == f)
+              if(dep)
+                return `background-color: ${dep.winner.color}ab;`
+            })
+            .on("click", (event, f) => {
+              let dep = find(this.departamentos, d => d.region == f)   
+              if(window.innerWidth > 798 && this.zoomed == false) {
+                this.updateRegionSeleccionada(dep)
+              }
+            })
+            .on("mouseover", (event, f) => {
+
+              if(window.innerWidth > 798 && this.zoomed == false) {
+                let dep = find(this.departamentos, d => d.region == f)
+
+                if(this.partidoSeleccionado.partido_id != 'TODOS') {
+                  dep = find(this.departamentos_parse, d => d.region == f)
+                }
+
+                let table = this.load_tooltip(dep, f)
+                
+                this.tooltip.html(`${table}`)	 
+                  .style("left", (event.pageX) + "px")
+                  .style("top", (event.pageY - 28) + "px")
               
-              this.tooltip.transition()
-                .duration(200)	
-                .style("opacity", 1)
-            }
-          })
-          .on("mouseout", () => {
-            if(window.innerWidth > 798) {
-              this.tooltip.transition()
-                .duration(500)	
-                .style("opacity", 0)
-            }
-          })
+                this.tooltip.transition()
+                  .duration(500)	
+                  .style("opacity", 0)
+                
+                this.tooltip.transition()
+                  .duration(200)	
+                  .style("opacity", 1)
+              }
+            })
+            .on("mouseout", () => {
+              if(window.innerWidth > 798) {
+                this.tooltip.transition()
+                  .duration(500)	
+                  .style("opacity", 0)
+              }
+            })
 
           let labelsGroup = d3.select(this.$refs['labels'])
           labelsGroup
@@ -509,9 +556,8 @@
           })
       },
       load_tooltip(dep, f) {
-
         let candidatos = ``
-        let name = f.properties.NOMBDEP
+        let name = dep.departamento
         let distrito = f
         let table = ``
 
