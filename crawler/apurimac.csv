@@ -1,0 +1,85 @@
+ubigeo_reniec,ubigeo_inei,departamento,provincia,distrito_reniec,distrito_inei
+030101,030101,Apurímac,Abancay,Abancay,Abancay
+030102,030103,Apurímac,Abancay,Circa,Circa
+030103,030104,Apurímac,Abancay,Curahuasi,Curahuasi
+030104,030102,Apurímac,Abancay,Chacoche,Chacoche
+030105,030105,Apurímac,Abancay,Huanipaca,Huanipaca
+030106,030106,Apurímac,Abancay,Lambrama,Lambrama
+030107,030107,Apurímac,Abancay,Pichirhua,Pichirhua
+030108,030108,Apurímac,Abancay,San Pedro de Cachora,San Pedro de Cachora
+030109,030109,Apurímac,Abancay,Tamburco,Tamburco
+030201,030401,Apurímac,Aymaraes,Chalhuanca,Chalhuanca
+030202,030402,Apurímac,Aymaraes,Capaya,Capaya
+030203,030403,Apurímac,Aymaraes,Caraybamba,Caraybamba
+030204,030405,Apurímac,Aymaraes,Colcabamba,Colcabamba
+030205,030406,Apurímac,Aymaraes,Cotaruse,Cotaruse
+030206,030404,Apurímac,Aymaraes,Chapimarca,Chapimarca
+030207,030407,Apurímac,Aymaraes,Huayllo,Ihuayllo
+030208,030409,Apurímac,Aymaraes,Lucre,Lucre
+030209,030410,Apurímac,Aymaraes,Pocohuanca,Pocohuanca
+030210,030412,Apurímac,Aymaraes,Sañayca,Sañayca
+030211,030413,Apurímac,Aymaraes,Soraya,Soraya
+030212,030414,Apurímac,Aymaraes,Tapairihua,Tapairihua
+030213,030415,Apurímac,Aymaraes,Tintay,Tintay
+030214,030416,Apurímac,Aymaraes,Toraya,Toraya
+030215,030417,Apurímac,Aymaraes,Yanaca,Yanaca
+030216,030411,Apurímac,Aymaraes,San Juan de Chacña,San Juan de Chacña
+030217,030408,Apurímac,Aymaraes,Justo Apu Sahuaraura,Justo Apu Sahuaraura
+030301,030201,Apurímac,Andahuaylas,Andahuaylas,Andahuaylas
+030302,030202,Apurímac,Andahuaylas,Andarapa,Andarapa
+030303,030203,Apurímac,Andahuaylas,Chiara,Chiara
+030304,030204,Apurímac,Andahuaylas,Huancarama,Huancarama
+030305,030205,Apurímac,Andahuaylas,Huancaray,Huancaray
+030306,030207,Apurímac,Andahuaylas,Kishuara,Kishuara
+030307,030208,Apurímac,Andahuaylas,Pacobamba,Pacobamba
+030308,030210,Apurímac,Andahuaylas,Pampachiri,Pampachiri
+030309,030212,Apurímac,Andahuaylas,San Antonio de Cachi,San Antonio de Cachi
+030310,030213,Apurímac,Andahuaylas,San Jerónimo,San Jerónimo
+030311,030216,Apurímac,Andahuaylas,Talavera,Talavera
+030312,030218,Apurímac,Andahuaylas,Turpo,Turpo
+030313,030209,Apurímac,Andahuaylas,Pacucha,Pacucha
+030314,030211,Apurímac,Andahuaylas,Pomacocha,Pomacocha
+030315,030215,Apurímac,Andahuaylas,Santa María de Chicmo,Santa María de Chicmo
+030316,030217,Apurímac,Andahuaylas,Tumay Huaraca,Tumay Huaraca
+030317,030206,Apurímac,Andahuaylas,Huayana,Huayana
+030318,030214,Apurímac,Andahuaylas,San Miguel de Chaccrampa,San Miguel de Chaccrampa
+030319,030219,Apurímac,Andahuaylas,Kaquiabamba,Kaquiabamba
+030320,030220,Apurímac,Andahuaylas,José María Arguedas,José María Arguedas
+030401,030301,Apurímac,Antabamba,Antabamba,Antabamba
+030402,030302,Apurímac,Antabamba,El Oro,El Oro
+030403,030303,Apurímac,Antabamba,Huaquirca,Huaquirca
+030404,030304,Apurímac,Antabamba,Juan Espinoza Medrano,Juan Espinoza Medrano
+030405,030305,Apurímac,Antabamba,Oropesa,Oropesa
+030406,030306,Apurímac,Antabamba,Pachaconas,Pachaconas
+030407,030307,Apurímac,Antabamba,Sabaino,Sabaino
+030501,030501,Apurímac,Cotabambas,Tambobamba,Tambobamba
+030502,030503,Apurímac,Cotabambas,Coyllurqui,Coyllurqui
+030503,030502,Apurímac,Cotabambas,Cotabambas,Cotabambas
+030504,030504,Apurímac,Cotabambas,Haquira,Haquira
+030505,030505,Apurímac,Cotabambas,Mara,Mara
+030506,030506,Apurímac,Cotabambas,Challhuahuacho,Challhuahuacho
+030601,030701,Apurímac,Grau,Chuquibambilla,Chuquibambilla
+030602,030702,Apurímac,Grau,Curpahuasi,Curpahuasi
+030603,030704,Apurímac,Grau,Huayllati,Huayllati
+030604,030705,Apurímac,Grau,Mamara,Mamara
+030605,030703,Apurímac,Grau,Gamarra,Gamarra
+030606,030706,Apurímac,Grau,Micaela Bastidas,Micaela Bastidas
+030607,030708,Apurímac,Grau,Progreso,Progreso
+030608,030707,Apurímac,Grau,Pataypampa,Pataypampa
+030609,030709,Apurímac,Grau,San Antonio,San Antonio
+030610,030711,Apurímac,Grau,Turpay,Turpay
+030611,030712,Apurímac,Grau,Vilcabamba,Vilcabamba
+030612,030713,Apurímac,Grau,Virundo,Virundo
+030613,030710,Apurímac,Grau,Santa Rosa,Santa Rosa
+030614,030714,Apurímac,Grau,Curasco,Curasco
+030701,030601,Apurímac,Chincheros,Chincheros,Chincheros
+030702,030606,Apurímac,Chincheros,Ongoy,Ongoy
+030703,030605,Apurímac,Chincheros,Ocobamba,Ocobamba
+030704,030603,Apurímac,Chincheros,Cocharcas,Cocharcas
+030705,030602,Apurímac,Chincheros,Anco-Huallo,Anco_Huallo
+030706,030604,Apurímac,Chincheros,Huaccana,Huaccana
+030707,030607,Apurímac,Chincheros,Uranmarca,Uranmarca
+030708,030608,Apurímac,Chincheros,Ranracancha,Ranracancha
+030709,030609,Apurímac,Chincheros,Rocchacc,Rocchacc
+030710,030610,Apurímac,Chincheros,El Porvenir,El Porvenir
+030711,030611,Apurímac,Chincheros,Los Chankas,Los Chankas

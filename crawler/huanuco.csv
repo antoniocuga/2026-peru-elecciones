@@ -1,0 +1,85 @@
+ubigeo_reniec,ubigeo_inei,departamento,provincia,distrito_reniec,distrito_inei
+090101,100101,Huánuco,Huánuco,Huánuco,Huanuco
+090102,100103,Huánuco,Huánuco,Chinchao,Chinchao
+090103,100104,Huánuco,Huánuco,Churubamba,Churubamba
+090104,100105,Huánuco,Huánuco,Margos,Margos
+090105,100106,Huánuco,Huánuco,Quisqui,Quisqui (Kichki)
+090106,100107,Huánuco,Huánuco,San Francisco de Cayran,San Francisco de Cayran
+090107,100108,Huánuco,Huánuco,San Pedro de Chaulan,San Pedro de Chaulan
+090108,100109,Huánuco,Huánuco,Santa María del Valle,Santa María del Valle
+090109,100110,Huánuco,Huánuco,Yarumayo,Yarumayo
+090110,100102,Huánuco,Huánuco,Amarilis,Amarilis
+090111,100111,Huánuco,Huánuco,Pillco Marca,Pillco Marca
+090112,100112,Huánuco,Huánuco,Yacus,Yacus
+090113,100113,Huánuco,Huánuco,San Pablo de Pillao,San Pablo de Pillao
+090201,100201,Huánuco,Ambo,Ambo,Ambo
+090202,100202,Huánuco,Ambo,Cayna,Cayna
+090203,100203,Huánuco,Ambo,Colpas,Colpas
+090204,100204,Huánuco,Ambo,Conchamarca,Conchamarca
+090205,100205,Huánuco,Ambo,Huácar,Huacar
+090206,100206,Huánuco,Ambo,San Francisco,San Francisco
+090207,100207,Huánuco,Ambo,San Rafael,San Rafael
+090208,100208,Huánuco,Ambo,Tomay Kichwa,Tomay Kichwa
+090301,100301,Huánuco,Dos de Mayo,La Unión,La Unión
+090307,100307,Huánuco,Dos de Mayo,Chuquis,Chuquis
+090312,100311,Huánuco,Dos de Mayo,Marías,Marías
+090314,100313,Huánuco,Dos de Mayo,Pachas,Pachas
+090316,100316,Huánuco,Dos de Mayo,Quivilla,Quivilla
+090317,100317,Huánuco,Dos de Mayo,Ripán,Ripan
+090321,100321,Huánuco,Dos de Mayo,Shunqui,Shunqui
+090322,100322,Huánuco,Dos de Mayo,Sillapata,Sillapata
+090323,100323,Huánuco,Dos de Mayo,Yanas,Yanas
+090401,100501,Huánuco,Huamalíes,Llata,Llata
+090402,100502,Huánuco,Huamalíes,Arancay,Arancay
+090403,100503,Huánuco,Huamalíes,Chavín de Pariarca,Chavín de Pariarca
+090404,100504,Huánuco,Huamalíes,Jacas Grande,Jacas Grande
+090405,100505,Huánuco,Huamalíes,Jircan,Jircan
+090406,100506,Huánuco,Huamalíes,Miraflores,Miraflores
+090407,100507,Huánuco,Huamalíes,Monzón,Monzón
+090408,100508,Huánuco,Huamalíes,Punchao,Punchao
+090409,100509,Huánuco,Huamalíes,Puños,Puños
+090410,100510,Huánuco,Huamalíes,Singa,Singa
+090411,100511,Huánuco,Huamalíes,Tantamayo,Tantamayo
+090501,100701,Huánuco,Marañón,Huacrachuco,Huacrachuco
+090502,100702,Huánuco,Marañón,Cholón,Cholon
+090505,100703,Huánuco,Marañón,San Buenaventura,San Buenaventura
+090506,100704,Huánuco,Marañón,La Morada,La Morada
+090507,100705,Huánuco,Marañón,Santa Rosa de Alto Yanajanca,Santa Rosa de Alto Yanajanca
+090601,100601,Huánuco,Leoncio Prado,Rupa-Rupa,Rupa-Rupa
+090602,100602,Huánuco,Leoncio Prado,Daniel Alomía Robles,Daniel Alomía Robles
+090603,100603,Huánuco,Leoncio Prado,Hermilio Valdizan,Hermílio Valdizan
+090604,100605,Huánuco,Leoncio Prado,Luyando,Luyando
+090605,100606,Huánuco,Leoncio Prado,Mariano Dámaso Beraún,Mariano Damaso Beraun
+090606,100604,Huánuco,Leoncio Prado,José Crespo y Castillo,José Crespo y Castillo
+090607,100607,Huánuco,Leoncio Prado,Pucayacu,Pucayacu
+090608,100608,Huánuco,Leoncio Prado,Castillo Grande,Castillo Grande
+090609,100609,Huánuco,Leoncio Prado,Pueblo Nuevo,Pueblo Nuevo
+090610,100610,Huánuco,Leoncio Prado,Santo Domingo de Anda,Santo Domingo de Anda
+090701,100801,Huánuco,Pachitea,Panao,Panao
+090702,100802,Huánuco,Pachitea,Chaglla,Chaglla
+090704,100803,Huánuco,Pachitea,Molino,Molino
+090706,100804,Huánuco,Pachitea,Umari,Umari
+090801,100903,Huánuco,Puerto Inca,Honoria,Honoria
+090802,100901,Huánuco,Puerto Inca,Puerto Inca,Puerto Inca
+090803,100902,Huánuco,Puerto Inca,Codo del Pozuzo,Codo del Pozuzo
+090804,100904,Huánuco,Puerto Inca,Tournavista,Tournavista
+090805,100905,Huánuco,Puerto Inca,Yuyapichis,Yuyapichis
+090901,100401,Huánuco,Huacaybamba,Huacaybamba,Huacaybamba
+090902,100404,Huánuco,Huacaybamba,Pinra,Pinra
+090903,100402,Huánuco,Huacaybamba,Canchabamba,Canchabamba
+090904,100403,Huánuco,Huacaybamba,Cochabamba,Cochabamba
+091001,101001,Huánuco,Lauricocha,Jesús,Jesús
+091002,101002,Huánuco,Lauricocha,Baños,Baños
+091003,101006,Huánuco,Lauricocha,San Francisco de Asís,San Francisco de Asís
+091004,101004,Huánuco,Lauricocha,Queropalca,Queropalca
+091005,101007,Huánuco,Lauricocha,San Miguel de Cauri,San Miguel de Cauri
+091006,101005,Huánuco,Lauricocha,Rondos,Rondos
+091007,101003,Huánuco,Lauricocha,Jivia,Jivia
+091101,101101,Huánuco,Yarowilca,Chavinillo,Chavinillo
+091102,101104,Huánuco,Yarowilca,Aparicio Pomares,Aparicio Pomares
+091103,101102,Huánuco,Yarowilca,Cahuac,Cahuac
+091104,101103,Huánuco,Yarowilca,Chacabamba,Chacabamba
+091105,101105,Huánuco,Yarowilca,Jacas Chico,Jacas Chico
+091106,101106,Huánuco,Yarowilca,Obas,Obas
+091107,101107,Huánuco,Yarowilca,Pampamarca,Pampamarca
+091108,101108,Huánuco,Yarowilca,Choras,Choras

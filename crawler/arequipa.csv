@@ -1,0 +1,110 @@
+ubigeo_reniec,ubigeo_inei,departamento,provincia,distrito_reniec,distrito_inei
+040101,040101,Arequipa,Arequipa,Arequipa,Arequipa
+040102,040103,Arequipa,Arequipa,Cayma,Cayma
+040103,040104,Arequipa,Arequipa,Cerro Colorado,Cerro Colorado
+040104,040105,Arequipa,Arequipa,Characato,Characato
+040105,040106,Arequipa,Arequipa,Chiguata,Chiguata
+040106,040108,Arequipa,Arequipa,La Joya,La Joya
+040107,040110,Arequipa,Arequipa,Miraflores,Miraflores
+040108,040111,Arequipa,Arequipa,Mollebaya,Mollebaya
+040109,040112,Arequipa,Arequipa,Paucarpata,Paucarpata
+040110,040113,Arequipa,Arequipa,Pocsi,Pocsi
+040111,040114,Arequipa,Arequipa,Polobaya,Polobaya
+040112,040115,Arequipa,Arequipa,Quequeña,Quequeña
+040113,040116,Arequipa,Arequipa,Sabandia,Sabandia
+040114,040117,Arequipa,Arequipa,Sachaca,Sachaca
+040115,040118,Arequipa,Arequipa,San Juan de Siguas,San Juan de Siguas
+040116,040119,Arequipa,Arequipa,San Juan de Tarucani,San Juan de Tarucani
+040117,040120,Arequipa,Arequipa,Santa Isabel de Siguas,Santa Isabel de Siguas
+040118,040121,Arequipa,Arequipa,Santa Rita de Siguas,Santa Rita de Siguas
+040119,040122,Arequipa,Arequipa,Socabaya,Socabaya
+040120,040123,Arequipa,Arequipa,Tiabaya,Tiabaya
+040121,040124,Arequipa,Arequipa,Uchumayo,Uchumayo
+040122,040125,Arequipa,Arequipa,Vítor,Vitor
+040123,040126,Arequipa,Arequipa,Yanahuara,Yanahuara
+040124,040127,Arequipa,Arequipa,Yarabamba,Yarabamba
+040125,040128,Arequipa,Arequipa,Yura,Yura
+040126,040109,Arequipa,Arequipa,Mariano Melgar,Mariano Melgar
+040127,040107,Arequipa,Arequipa,Jacobo Hunter,Jacobo Hunter
+040128,040102,Arequipa,Arequipa,Alto Selva Alegre,Alto Selva Alegre
+040129,040129,Arequipa,Arequipa,José Luis Bustamante y Rivero,José Luis Bustamante Y Rivero
+040201,040501,Arequipa,Caylloma,Chivay,Chivay
+040202,040502,Arequipa,Caylloma,Achoma,Achoma
+040203,040503,Arequipa,Caylloma,Cabanaconde,Cabanaconde
+040204,040505,Arequipa,Caylloma,Caylloma,Caylloma
+040205,040504,Arequipa,Caylloma,Callalli,Callalli
+040206,040506,Arequipa,Caylloma,Coporaque,Coporaque
+040207,040507,Arequipa,Caylloma,Huambo,Huambo
+040208,040508,Arequipa,Caylloma,Huanca,Huanca
+040209,040509,Arequipa,Caylloma,Ichupampa,Ichupampa
+040210,040510,Arequipa,Caylloma,Lari,Lari
+040211,040511,Arequipa,Caylloma,Lluta,Lluta
+040212,040512,Arequipa,Caylloma,Maca,Maca
+040213,040513,Arequipa,Caylloma,Madrigal,Madrigal
+040214,040514,Arequipa,Caylloma,San Antonio de Chuca,San Antonio de Chuca
+040215,040515,Arequipa,Caylloma,Sibayo,Sibayo
+040216,040516,Arequipa,Caylloma,Tapay,Tapay
+040217,040517,Arequipa,Caylloma,Tisco,Tisco
+040218,040518,Arequipa,Caylloma,Tuti,Tuti
+040219,040519,Arequipa,Caylloma,Yanque,Yanque
+040220,040520,Arequipa,Caylloma,Majes,Majes
+040301,040201,Arequipa,Camaná,Camaná,Camaná
+040302,040202,Arequipa,Camaná,José María Quimper,José María Quimper
+040303,040203,Arequipa,Camaná,Mariano Nicolás Valcárcel,Mariano Nicolás Valcárcel
+040304,040204,Arequipa,Camaná,Mariscal Cáceres,Mariscal Cáceres
+040305,040205,Arequipa,Camaná,Nicolás de Piérola,Nicolás de Pierola
+040306,040206,Arequipa,Camaná,Ocoña,Ocoña
+040307,040207,Arequipa,Camaná,Quilca,Quilca
+040308,040208,Arequipa,Camaná,Samuel Pastor,Samuel Pastor
+040401,040301,Arequipa,Caravelí,Caravelí,Caravelí
+040402,040302,Arequipa,Caravelí,Acarí,Acarí
+040403,040303,Arequipa,Caravelí,Atico,Atico
+040404,040304,Arequipa,Caravelí,Atiquipa,Atiquipa
+040405,040305,Arequipa,Caravelí,Bella Unión,Bella Unión
+040406,040306,Arequipa,Caravelí,Cahuacho,Cahuacho
+040407,040307,Arequipa,Caravelí,Chala,Chala
+040408,040308,Arequipa,Caravelí,Cháparra,Chaparra
+040409,040309,Arequipa,Caravelí,Huanuhuanu,Huanuhuanu
+040410,040310,Arequipa,Caravelí,Jaqui,Jaqui
+040411,040311,Arequipa,Caravelí,Lomas,Lomas
+040412,040312,Arequipa,Caravelí,Quicacha,Quicacha
+040413,040313,Arequipa,Caravelí,Yauca,Yauca
+040501,040401,Arequipa,Castilla,Aplao,Aplao
+040502,040402,Arequipa,Castilla,Andagua,Andagua
+040503,040403,Arequipa,Castilla,Ayo,Ayo
+040504,040404,Arequipa,Castilla,Chachas,Chachas
+040505,040405,Arequipa,Castilla,Chilcaymarca,Chilcaymarca
+040506,040406,Arequipa,Castilla,Choco,Choco
+040507,040407,Arequipa,Castilla,Huancarqui,Huancarqui
+040508,040408,Arequipa,Castilla,Machaguay,Machaguay
+040509,040409,Arequipa,Castilla,Orcopampa,Orcopampa
+040510,040410,Arequipa,Castilla,Pampacolca,Pampacolca
+040511,040411,Arequipa,Castilla,Tipán,Tipan
+040512,040413,Arequipa,Castilla,Uraca,Uraca
+040513,040412,Arequipa,Castilla,Uñón,Uñon
+040514,040414,Arequipa,Castilla,Viraco,Viraco
+040601,040601,Arequipa,Condesuyos,Chuquibamba,Chuquibamba
+040602,040602,Arequipa,Condesuyos,Andaray,Andaray
+040603,040603,Arequipa,Condesuyos,Cayarani,Cayarani
+040604,040604,Arequipa,Condesuyos,Chichas,Chichas
+040605,040605,Arequipa,Condesuyos,Iray,Iray
+040606,040607,Arequipa,Condesuyos,Salamanca,Salamanca
+040607,040608,Arequipa,Condesuyos,Yanaquihua,Yanaquihua
+040608,040606,Arequipa,Condesuyos,Río Grande,Río Grande
+040701,040701,Arequipa,Islay,Mollendo,Mollendo
+040702,040702,Arequipa,Islay,Cocachacra,Cocachacra
+040703,040703,Arequipa,Islay,Deán Valdivia,Dean Valdivia
+040704,040704,Arequipa,Islay,Islay,Islay
+040705,040705,Arequipa,Islay,Mejía,Mejia
+040706,040706,Arequipa,Islay,Punta de Bombón,Punta de Bombón
+040801,040801,Arequipa,La Unión,Cotahuasi,Cotahuasi
+040802,040802,Arequipa,La Unión,Alca,Alca
+040803,040803,Arequipa,La Unión,Charcana,Charcana
+040804,040804,Arequipa,La Unión,Huaynacotas,Huaynacotas
+040805,040805,Arequipa,La Unión,Pampamarca,Pampamarca
+040806,040806,Arequipa,La Unión,Puyca,Puyca
+040807,040807,Arequipa,La Unión,Quechualla,Quechualla
+040808,040808,Arequipa,La Unión,Sayla,Sayla
+040809,040809,Arequipa,La Unión,Tauria,Tauria
+040810,040810,Arequipa,La Unión,Tomepampa,Tomepampa
+040811,040811,Arequipa,La Unión,Toro,Toro

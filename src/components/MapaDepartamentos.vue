@@ -88,8 +88,10 @@
         let base = d3.select(this.$refs['svgmap'])
 
         if(v.partido_id != 'TODOS') {
+
           let max = maxBy(this.departamentos_parse, 'total_departamento').total_departamento
           let min = minBy(this.departamentos_parse, 'total_departamento').total_departamento
+
           let color = d3.scaleLinear().domain([min, max]).range(["#eaeaea", `${v.color}ab`])
 
           this.legendaValues.max = max
@@ -98,8 +100,17 @@
           base.selectAll('path.departamento-path')        
           .attr("style", (f) => {            
             let dep = find(this.departamentos_parse, d => d.region == f.properties.dep_id)
-            if(dep) {
-              return `fill: ${color(dep.winner.total_departamento)}`
+
+            if(dep) { 
+              return `fill: ${color(dep.winner.validos)}`
+            }
+          })
+
+          d3.selectAll('span.departamento-path')        
+          .attr("style", (f) => {            
+            let dep = find(this.departamentos_parse, d => d.region == f)
+            if(dep) { 
+              return `background: ${color(dep.winner.validos)}`
             }
           })
           
@@ -157,6 +168,7 @@
       },
       distritos_parse() {
         let filtered = this.distritos
+
         if(this.partidoSeleccionado.partido_id != 'TODOS') {
           filtered = filter(this.distritos, ['partido_id', this.partidoSeleccionado.partido_id])
         }
@@ -168,38 +180,42 @@
             distrito: uniq(map(item, 'distrito')).join(''),
             provincia: uniq(map(item, 'provincia')).join(''),
             departamento: uniq(map(item, 'departamento')).join(''),
-            total_distrito: sumBy(map(item, 'validos')),
-            candidatos: orderBy(item, ['total_votos'], ['desc']),
-            winner: maxBy(item, 'total_votos')
+            conteo: sumBy(map(item, 'conteo')),
+            validos: sumBy(map(item, 'validos')),
+            total: sumBy(map(item, 'total')),
+            candidatos: orderBy(item, ['validos'], ['desc']),
+            winner: maxBy(item, 'validos')
           }
         }), ['departamento'])
+
       },
       departamentos_parse() {
-        let filtered = filter(this.lista_candidatos, c => c.candidato_id != '')
+        let filtered = filter(this.lista_candidatos, c => c.partido_id == this.partidoSeleccionado.partido_id)
+
         return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
-          console.log(region)
+
           return {
             region: region,
             departamento: uniq(map(item, 'region')).join(''),
-            total_departamento: parseFloat(uniq(map(item, 'total_departamento')).join("")),
-            candidatos: orderBy(item, ['total_departamento'], ['desc']),
-            geodata: require(`../data/mapas/${region}.json`),
-            winner: maxBy(item, 'validos_nacional')
+            total_departamento: maxBy(item, 'validos').validos,
+            candidatos: orderBy(item, ['validos'], ['desc']),
+            geodata: region != 'total' ? require(`../data/mapas/${region}.json`) : {},
+            winner: maxBy(item, 'validos')
           }
         }), ['departamento'])
       },
       departamentos() {
-        let filtered = filter(this.candidatos, c => c.candidato_id != '')
+        let filtered = filter(this.candidatos, c => c.candidato_id != '' && c.region != 'total')
         return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
-          console.log(region)
+          
           let dep = find(this.perugeo.features, d => d.properties.dep_id == region)
           return {
             region: region,
             departamento: region != 'extranjero' ? dep.properties.NOMBDEP : 'EXTRANJERO',
-            total_departamento: parseFloat(sumBy(map(item, 'total_departamento'))),
-            candidatos: orderBy(item, ['total_departamento'], ['desc']),
+            total_departamento: parseFloat(sumBy(map(item, 'total'))),
+            candidatos: orderBy(item, ['validos'], ['desc']),
             geodata: require(`../data/mapas/${region}.json`),
-            winner: maxBy(item, 'total_departamento')
+            winner: maxBy(item, 'validos')
           }
         }), ['departamento'])
       },
@@ -390,7 +406,7 @@
               
             })
             .on("mouseover", (event, f) => {
-              console.log(event, f)
+
               if(window.innerWidth > 798 && this.zoomed == false) {
                 let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
 
@@ -497,13 +513,13 @@
         let color
 
         if(this.partidoSeleccionado.partido_id != 'TODOS') {
-          let max = maxBy(this.distritos_parse, 'total_distrito')
-          let min = minBy(this.distritos_parse, 'total_distrito')
+          let max = maxBy(this.distritos_parse, 'validos')
+          let min = minBy(this.distritos_parse, 'validos')
 
-          color = d3.scaleLinear().domain([min.total_distrito, max.total_distrito]).range(["#eaeaea", `${max.winner.color}ab`])
+          color = d3.scaleLinear().domain([min.validos, max.validos]).range(["#eaeaea", `${max.winner.color}ab`])
       
-          this.legendaValues.max = max.total_distrito
-          this.legendaValues.min = min.total_distrito
+          this.legendaValues.max = max.validos
+          this.legendaValues.min = min.validos
         }
         
         let features_distrito = feature(this.regionSeleccionada.geodata, this.regionSeleccionada.geodata.objects[this.regionSeleccionada.region])
@@ -520,7 +536,6 @@
             let dep = find(this.distritos_parse, d => d.ubigeo == f.properties.IDDIST)
 
             if(dep && this.partidoSeleccionado.partido_id != 'TODOS') {
-
               if(dep.winner)
                 return `fill: ${color(dep.winner.validos)};`
             } else if(dep && dep.winner) {
@@ -560,12 +575,12 @@
         let name = dep.departamento
         let distrito = f
         let table = ``
-
+        let conteo = uniq(map(dep.candidatos, 'conteo')).join("")
         if(dep && this.zoomed==false) {
           table = `
             <div class="row border-bottom pb-2 mb-2">
               <div class="col-6 depa"><b>${name}</b></div>
-              <div class="col-6 text-right"><span class="badge badge-light">Conteo al 67%</span></div>
+              <div class="col-6 text-right"><span class="badge badge-light">Conteo al ${conteo}%</span></div>
             </div>`
           
           if(dep.candidatos) {
@@ -586,8 +601,8 @@
                     
                   </div>
                   <div class="pl-0 col-4 text-right">
-                    <div class="candidato-mapa"><b>${dp.total_departamento}%</b></div>
-                    <div class="partido-mapa">+${ numeral(dp.nacional).format('0,0') }</div>
+                    <div class="candidato-mapa"><b>${dp.validos}%</b></div>
+                    <div class="partido-mapa">+${ numeral(dp.total).format('0,0') }</div>
                   </div>
                 </div>`
             })
@@ -608,7 +623,7 @@
               <div class="col-7 depa"><b>${distrito.properties.DISTRITO}</b></div>
               <div class="col-5 text-right"><span class="badge badge-light">Conteo al 67%</span></div>
             </div>`
-          let only_four = dep.candidatos.slice(0, 4)
+          let only_four = orderBy(dep.candidatos, ['validos'], ['desc']).slice(0, 4)
 
           map(only_four, dp => {
             if(dp.candidato_id) {

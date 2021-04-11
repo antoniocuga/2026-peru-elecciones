@@ -1,0 +1,111 @@
+ubigeo_reniec,ubigeo_inei,departamento,provincia,distrito_reniec,distrito_inei
+200101,210101,Puno,Puno,Puno,Puno
+200102,210102,Puno,Puno,Ácora,Acora
+200103,210104,Puno,Puno,Atuncolla,Atuncolla
+200104,210105,Puno,Puno,Capachica,Capachica
+200105,210107,Puno,Puno,Coata,Coata
+200106,210106,Puno,Puno,Chucuito,Chucuito
+200107,210108,Puno,Puno,Huata,Huata
+200108,210109,Puno,Puno,Mañazo,Mañazo
+200109,210110,Puno,Puno,Paucarcolla,Paucarcolla
+200110,210111,Puno,Puno,Pichacani,Pichacani
+200111,210113,Puno,Puno,San Antonio,San Antonio
+200112,210114,Puno,Puno,Tiquillaca,Tiquillaca
+200113,210115,Puno,Puno,Vilque,Vilque
+200114,210112,Puno,Puno,Platería,Plateria
+200115,210103,Puno,Puno,Amantaní,Amantani
+200201,210201,Puno,Azángaro,Azángaro,Azángaro
+200202,210202,Puno,Azángaro,Achaya,Achaya
+200203,210203,Puno,Azángaro,Arapa,Arapa
+200204,210204,Puno,Azángaro,Asillo,Asillo
+200205,210205,Puno,Azángaro,Caminaca,Caminaca
+200206,210206,Puno,Azángaro,Chupa,Chupa
+200207,210207,Puno,Azángaro,José Domingo Choquehuanca,José Domingo Choquehuanca
+200208,210208,Puno,Azángaro,Muñani,Muñani
+200210,210209,Puno,Azángaro,Potoni,Potoni
+200212,210210,Puno,Azángaro,Samán,Saman
+200213,210211,Puno,Azángaro,San Antón,San Anton
+200214,210212,Puno,Azángaro,San José,San José
+200215,210213,Puno,Azángaro,San Juan de Salinas,San Juan de Salinas
+200216,210214,Puno,Azángaro,Santiago de Pupuja,Santiago de Pupuja
+200217,210215,Puno,Azángaro,Tirapata,Tirapata
+200301,210301,Puno,Carabaya,Macusani,Macusani
+200302,210302,Puno,Carabaya,Ajoyani,Ajoyani
+200303,210303,Puno,Carabaya,Ayapata,Ayapata
+200304,210304,Puno,Carabaya,Coasa,Coasa
+200305,210305,Puno,Carabaya,Corani,Corani
+200306,210306,Puno,Carabaya,Crucero,Crucero
+200307,210307,Puno,Carabaya,Ituata,Ituata
+200308,210308,Puno,Carabaya,Ollachea,Ollachea
+200309,210309,Puno,Carabaya,San Gabán,San Gaban
+200310,210310,Puno,Carabaya,Usicayos,Usicayos
+200401,210401,Puno,Chucuito,Juli,Juli
+200402,210402,Puno,Chucuito,Desaguadero,Desaguadero
+200403,210403,Puno,Chucuito,Huacullani,Huacullani
+200406,210405,Puno,Chucuito,Pisacoma,Pisacoma
+200407,210406,Puno,Chucuito,Pomata,Pomata
+200410,210407,Puno,Chucuito,Zepita,Zepita
+200412,210404,Puno,Chucuito,Kelluyo,Kelluyo
+200501,210601,Puno,Huancané,Huancané,Huancane
+200502,210602,Puno,Huancané,Cojata,Cojata
+200504,210604,Puno,Huancané,Inchupalla,Inchupalla
+200506,210605,Puno,Huancané,Pusi,Pusi
+200507,210606,Puno,Huancané,Rosaspata,Rosaspata
+200508,210607,Puno,Huancané,Taraco,Taraco
+200509,210608,Puno,Huancané,Vilque Chico,Vilque Chico
+200511,210603,Puno,Huancané,Huatasani,Huatasani
+200601,210701,Puno,Lampa,Lampa,Lampa
+200602,210702,Puno,Lampa,Cabanilla,Cabanilla
+200603,210703,Puno,Lampa,Calapuja,Calapuja
+200604,210704,Puno,Lampa,Nicasio,Nicasio
+200605,210705,Puno,Lampa,Ocuviri,Ocuviri
+200606,210706,Puno,Lampa,Palca,Palca
+200607,210707,Puno,Lampa,Paratia,Paratia
+200608,210708,Puno,Lampa,Pucara,Pucara
+200609,210709,Puno,Lampa,Santa Lucía,Santa Lucia
+200610,210710,Puno,Lampa,Vilavila,Vilavila
+200701,210801,Puno,Melgar,Ayaviri,Ayaviri
+200702,210802,Puno,Melgar,Antauta,Antauta
+200703,210803,Puno,Melgar,Cupi,Cupi
+200704,210804,Puno,Melgar,Llalli,Llalli
+200705,210805,Puno,Melgar,Macari,Macari
+200706,210806,Puno,Melgar,Nuñoa,Nuñoa
+200707,210807,Puno,Melgar,Orurillo,Orurillo
+200708,210808,Puno,Melgar,Santa Rosa,Santa Rosa
+200709,210809,Puno,Melgar,Umachiri,Umachiri
+200801,211201,Puno,Sandia,Sandia,Sandia
+200803,211202,Puno,Sandia,Cuyocuyo,Cuyocuyo
+200804,211203,Puno,Sandia,Limbani,Limbani
+200805,211205,Puno,Sandia,Phara,Phara
+200806,211204,Puno,Sandia,Patambuco,Patambuco
+200807,211206,Puno,Sandia,Quiaca,Quiaca
+200808,211207,Puno,Sandia,San Juan del Oro,San Juan del Oro
+200810,211208,Puno,Sandia,Yanahuaya,Yanahuaya
+200811,211209,Puno,Sandia,Alto Inambari,Alto Inambari
+200812,211210,Puno,Sandia,San Pedro de Putina Punco,San Pedro de Putina Punco
+200901,211101,Puno,San Román,Juliaca,Juliaca
+200902,211102,Puno,San Román,Cabana,Cabana
+200903,211103,Puno,San Román,Cabanillas,Cabanillas
+200904,211104,Puno,San Román,Caracoto,Caracoto
+200905,211105,Puno,San Román,San Miguel,San Miguel
+201001,211301,Puno,Yunguyo,Yunguyo,Yunguyo
+201002,211307,Puno,Yunguyo,Unicachi,Unicachi
+201003,211302,Puno,Yunguyo,Anapia,Anapia
+201004,211303,Puno,Yunguyo,Copani,Copani
+201005,211304,Puno,Yunguyo,Cuturapi,Cuturapi
+201006,211305,Puno,Yunguyo,Ollaraya,Ollaraya
+201007,211306,Puno,Yunguyo,Tinicachi,Tinicachi
+201101,211001,Puno,San Antonio de Putina,Putina,Putina
+201102,211003,Puno,San Antonio de Putina,Pedro Vilca Apaza,Pedro Vilca Apaza
+201103,211004,Puno,San Antonio de Putina,Quilcapuncu,Quilcapuncu
+201104,211002,Puno,San Antonio de Putina,Ananea,Ananea
+201105,211005,Puno,San Antonio de Putina,Sina,Sina
+201201,210501,Puno,El Collao,Ilave,Ilave
+201202,210503,Puno,El Collao,Pilcuyo,Pilcuyo
+201203,210504,Puno,El Collao,Santa Rosa,Santa Rosa
+201204,210502,Puno,El Collao,Capazo,Capazo
+201205,210505,Puno,El Collao,Conduriri,Conduriri
+201301,210901,Puno,Moho,Moho,Moho
+201302,210902,Puno,Moho,Conima,Conima
+201303,210904,Puno,Moho,Tilali,Tilali
+201304,210903,Puno,Moho,Huayrapata,Huayrapata

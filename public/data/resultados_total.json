@@ -1,14 +1,25 @@
 [
   {
+    "region": "total",
+    "candidato_id": "george-forsyth",
+    "candidato": "George Forsyth",
+    "color": "#ff2607",
+    "partido": "Victoria Nacional",
+    "partido_id": "victoria-nacional",
+    "total": 924000,
+    "validos": 2.0,
+    "conteo": 65.0
+  },
+  {
     "region": "extranjero",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -17,9 +28,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -28,9 +39,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "15",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -39,9 +50,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -50,9 +61,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -61,9 +72,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -72,9 +83,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -83,9 +94,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -94,9 +105,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "40",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -105,9 +116,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 11.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -116,9 +127,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -127,9 +138,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -138,9 +149,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -149,9 +160,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 11.0
+    "total": 450000,
+    "validos": 34.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -160,9 +171,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -171,9 +182,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -182,9 +193,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -193,9 +204,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -204,9 +215,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -215,9 +226,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -226,9 +237,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -237,9 +248,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -248,9 +259,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -259,9 +270,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -270,9 +281,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -281,9 +292,9 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 11.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -292,9 +303,20 @@
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 11.0
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "keiko-fujimori",
+    "candidato": "Keiko Fujimori",
+    "color": "#fd6600",
+    "partido": "Fuerza Popular",
+    "partido_id": "fuerza-popular",
+    "total": 2104777,
+    "validos": 5.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -303,9 +325,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -314,9 +336,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -325,9 +347,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -336,9 +358,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "40",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -347,9 +369,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -358,9 +380,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -369,9 +391,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -380,9 +402,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "40",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -391,9 +413,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -402,9 +424,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 15.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -413,9 +435,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -424,9 +446,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -435,9 +457,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -446,9 +468,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 15.0
+    "total": 454777,
+    "validos": 12.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -457,9 +479,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -468,9 +490,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -479,9 +501,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -490,9 +512,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -501,9 +523,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -512,9 +534,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -523,9 +545,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -534,9 +556,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -545,9 +567,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -556,9 +578,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -567,9 +589,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -578,9 +600,9 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 15.0
+    "total": 50000,
+    "validos": 12.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -589,9 +611,20 @@
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 15.0
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "veronika-mendoza",
+    "candidato": "Ver\u00f3nika Mendoza",
+    "color": "#2fc100",
+    "partido": "Juntos por el Per\u00fa",
+    "partido_id": "juntos-por-el-peru",
+    "total": 1392385,
+    "validos": 4.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -600,9 +633,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -611,9 +644,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -622,9 +655,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -633,9 +666,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -644,9 +677,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -655,9 +688,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -666,9 +699,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -677,9 +710,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -688,9 +721,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -699,9 +732,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "40",
-    "validos_nacional": 12.0
+    "total": 40,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -710,9 +743,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -721,9 +754,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -732,9 +765,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -743,9 +776,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 12.0
+    "total": 222345,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -754,9 +787,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -765,9 +798,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -776,9 +809,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -787,9 +820,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -798,9 +831,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -809,9 +842,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -820,9 +853,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -831,9 +864,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -842,9 +875,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -853,9 +886,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -864,9 +897,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -875,9 +908,9 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 12.0
+    "total": 30000,
+    "validos": 8.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -886,9 +919,20 @@
     "color": "#2fc100",
     "partido": "Juntos por el Per\u00fa",
     "partido_id": "juntos-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 12.0
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "julio-guzman",
+    "candidato": "Julio Guzm\u00e1n",
+    "color": "#4f1b7f",
+    "partido": "Partido Morado",
+    "partido_id": "partido-morado",
+    "total": 585232,
+    "validos": 2.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -897,9 +941,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -908,9 +952,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -919,9 +963,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -930,9 +974,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -941,9 +985,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -952,9 +996,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -963,9 +1007,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -974,9 +1018,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -985,9 +1029,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -996,9 +1040,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 2.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -1007,9 +1051,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -1018,9 +1062,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -1029,9 +1073,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -1040,9 +1084,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 2.0
+    "total": 111232,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -1051,9 +1095,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -1062,9 +1106,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -1073,9 +1117,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -1084,9 +1128,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -1095,9 +1139,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -1106,9 +1150,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -1117,9 +1161,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -1128,9 +1172,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -1139,9 +1183,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -1150,9 +1194,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -1161,9 +1205,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -1172,9 +1216,9 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 2.0
+    "total": 1000,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -1183,9 +1227,20 @@
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 2.0
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "daniel-urresti",
+    "candidato": "Daniel Urresti",
+    "color": "#004da3",
+    "partido": "Podemos Per\u00fa",
+    "partido_id": "podemos-peru",
+    "total": 3012363,
+    "validos": 9.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -1194,9 +1249,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -1205,9 +1260,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -1216,9 +1271,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -1227,9 +1282,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -1238,9 +1293,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -1249,9 +1304,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -1260,9 +1315,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -1271,9 +1326,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -1282,9 +1337,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -1293,9 +1348,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 5.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -1304,9 +1359,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -1315,9 +1370,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -1326,9 +1381,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -1337,9 +1392,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 5.0
+    "total": 12123,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -1348,9 +1403,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -1359,9 +1414,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -1370,9 +1425,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -1381,9 +1436,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -1392,9 +1447,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -1403,9 +1458,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -1414,9 +1469,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -1425,9 +1480,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -1436,9 +1491,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -1447,9 +1502,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -1458,9 +1513,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -1469,9 +1524,9 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 5.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -1480,9 +1535,20 @@
     "color": "#004da3",
     "partido": "Podemos Per\u00fa",
     "partido_id": "podemos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 5.0
+    "total": 3000000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "yonhi-lescano",
+    "candidato": "Yonhy Lescano",
+    "color": "#000000",
+    "partido": "Acci\u00f3n Popular",
+    "partido_id": "accion-popular",
+    "total": 462336,
+    "validos": 1.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -1491,9 +1557,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -1502,9 +1568,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "45",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -1513,9 +1579,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -1524,9 +1590,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -1535,9 +1601,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -1546,9 +1612,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -1557,9 +1623,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -1568,9 +1634,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -1579,9 +1645,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -1590,9 +1656,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 15.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -1601,9 +1667,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -1612,9 +1678,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -1623,9 +1689,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -1634,9 +1700,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 15.0
+    "total": 12312,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -1645,9 +1711,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -1656,9 +1722,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -1667,9 +1733,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -1678,9 +1744,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -1689,9 +1755,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -1700,9 +1766,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -1711,9 +1777,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -1722,9 +1788,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -1733,9 +1799,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -1744,9 +1810,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -1755,9 +1821,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -1766,9 +1832,9 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 15.0
+    "total": 1,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -1777,9 +1843,20 @@
     "color": "#000000",
     "partido": "Acci\u00f3n Popular",
     "partido_id": "accion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 15.0
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "hernando-de-soto",
+    "candidato": "Hernando de Soto",
+    "color": "#ff2c79",
+    "partido": "Avanza Pa\u00eds",
+    "partido_id": "avanza-pais",
+    "total": 23439443,
+    "validos": 75.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -1788,9 +1865,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -1799,9 +1876,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -1810,9 +1887,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "45",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -1821,9 +1898,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -1832,9 +1909,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -1843,9 +1920,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -1854,9 +1931,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -1865,9 +1942,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -1876,9 +1953,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -1887,9 +1964,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 3.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -1898,9 +1975,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -1909,9 +1986,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -1920,9 +1997,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -1931,9 +2008,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 3.0
+    "total": 6780,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -1942,9 +2019,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -1953,9 +2030,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -1964,9 +2041,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -1975,9 +2052,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -1986,9 +2063,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -1997,9 +2074,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -2008,9 +2085,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -2019,9 +2096,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -2030,9 +2107,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -2041,9 +2118,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -2052,9 +2129,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -2063,9 +2140,9 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 3.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -2074,9 +2151,20 @@
     "color": "#ff2c79",
     "partido": "Avanza Pa\u00eds",
     "partido_id": "avanza-pais",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 3.0
+    "total": 23432423,
+    "validos": 45.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "daniel-salaverry",
+    "candidato": "Daniel Salaverry",
+    "color": "#ff2600",
+    "partido": "Somos Per\u00fa",
+    "partido_id": "somos-peru",
+    "total": 457020,
+    "validos": 6.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -2085,9 +2173,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -2096,9 +2184,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -2107,9 +2195,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -2118,9 +2206,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -2129,9 +2217,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -2140,9 +2228,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -2151,9 +2239,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -2162,9 +2250,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -2173,9 +2261,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -2184,9 +2272,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -2195,9 +2283,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -2206,9 +2294,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -2217,9 +2305,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -2228,9 +2316,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 6780,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -2239,9 +2327,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -2250,9 +2338,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -2261,9 +2349,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -2272,9 +2360,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -2283,9 +2371,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -2294,9 +2382,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -2305,9 +2393,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -2316,9 +2404,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -2327,9 +2415,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -2338,9 +2426,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -2349,9 +2437,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -2360,9 +2448,9 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -2371,9 +2459,20 @@
     "color": "#ff2600",
     "partido": "Somos Per\u00fa",
     "partido_id": "somos-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 450000,
+    "validos": 32.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "ollanta-humala",
+    "candidato": "Ollanta Humala",
+    "color": "#f52300",
+    "partido": "Partido Nacionalista",
+    "partido_id": "partido-nacionalista",
+    "total": 457020,
+    "validos": 6.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -2382,9 +2481,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -2393,9 +2492,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -2404,9 +2503,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -2415,9 +2514,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -2426,9 +2525,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -2437,9 +2536,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -2448,9 +2547,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -2459,9 +2558,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -2470,9 +2569,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -2481,9 +2580,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -2492,9 +2591,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -2503,9 +2602,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -2514,9 +2613,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -2525,9 +2624,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 6780,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -2536,9 +2635,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "15",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -2547,9 +2646,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -2558,9 +2657,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -2569,9 +2668,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -2580,9 +2679,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -2591,9 +2690,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -2602,9 +2701,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -2613,9 +2712,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -2624,9 +2723,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -2635,9 +2734,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -2646,9 +2745,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -2657,9 +2756,9 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -2668,9 +2767,20 @@
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "cesar-acuna",
+    "candidato": "C\u00e9sar Acu\u00f1a",
+    "color": "#0050a0",
+    "partido": "Alianza para el Progreso",
+    "partido_id": "alianza-para-el-progreso",
+    "total": 457020,
+    "validos": 7.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -2679,9 +2789,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -2690,9 +2800,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -2701,9 +2811,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -2712,9 +2822,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -2723,9 +2833,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -2734,9 +2844,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -2745,9 +2855,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -2756,9 +2866,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -2767,9 +2877,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -2778,9 +2888,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 2.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -2789,9 +2899,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -2800,9 +2910,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -2811,9 +2921,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -2822,9 +2932,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 2.0
+    "total": 6780,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -2833,9 +2943,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -2844,9 +2954,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -2855,9 +2965,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -2866,9 +2976,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -2877,9 +2987,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -2888,9 +2998,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -2899,9 +3009,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -2910,9 +3020,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -2921,9 +3031,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -2932,9 +3042,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -2943,9 +3053,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -2954,9 +3064,9 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 2.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -2965,9 +3075,20 @@
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 2.0
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "alberto-beingolea",
+    "candidato": "Alberto Beingolea",
+    "color": "#009a21",
+    "partido": "Partido Popular Cristiano",
+    "partido_id": "partido-popular-cristiano",
+    "total": 457020,
+    "validos": 7.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -2976,9 +3097,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -2987,9 +3108,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -2998,9 +3119,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -3009,9 +3130,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -3020,9 +3141,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -3031,9 +3152,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -3042,9 +3163,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -3053,9 +3174,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -3064,9 +3185,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -3075,9 +3196,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -3086,9 +3207,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -3097,9 +3218,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -3108,9 +3229,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -3119,9 +3240,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 6780,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -3130,9 +3251,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -3141,9 +3262,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -3152,9 +3273,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "90",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -3163,9 +3284,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -3174,9 +3295,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -3185,9 +3306,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -3196,9 +3317,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -3207,9 +3328,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -3218,9 +3339,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -3229,9 +3350,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -3240,9 +3361,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -3251,9 +3372,9 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -3262,9 +3383,20 @@
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "rafael-lopez-aliaga",
+    "candidato": "Rafael L\u00f3pez Aliaga",
+    "color": "#00aede",
+    "partido": "Renovaci\u00f3n Popular",
+    "partido_id": "renovacion-popular",
+    "total": 457020,
+    "validos": 8.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -3273,9 +3405,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -3284,9 +3416,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -3295,9 +3427,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -3306,9 +3438,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -3317,9 +3449,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -3328,9 +3460,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -3339,9 +3471,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -3350,9 +3482,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -3361,9 +3493,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -3372,9 +3504,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 12.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -3383,9 +3515,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "35",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -3394,9 +3526,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -3405,9 +3537,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -3416,9 +3548,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 12.0
+    "total": 6780,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -3427,9 +3559,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -3438,9 +3570,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -3449,9 +3581,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -3460,9 +3592,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -3471,9 +3603,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -3482,9 +3614,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -3493,9 +3625,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -3504,9 +3636,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -3515,9 +3647,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -3526,9 +3658,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -3537,9 +3669,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -3548,9 +3680,9 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 12.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -3559,9 +3691,20 @@
     "color": "#00aede",
     "partido": "Renovaci\u00f3n Popular",
     "partido_id": "renovacion-popular",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 12.0
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "pedro-castillo",
+    "candidato": "Pedro Castillo",
+    "color": "#f40201",
+    "partido": "Peru Libre",
+    "partido_id": "peru-libre",
+    "total": 2856780,
+    "validos": 51.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -3570,9 +3713,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -3581,9 +3724,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -3592,9 +3735,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -3603,9 +3746,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -3614,9 +3757,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -3625,9 +3768,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -3636,9 +3779,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -3647,9 +3790,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -3658,9 +3801,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -3669,9 +3812,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 4.0
+    "total": 0,
+    "validos": 65.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -3680,9 +3823,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -3691,9 +3834,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -3702,9 +3845,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -3713,9 +3856,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 4.0
+    "total": 6780,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -3724,9 +3867,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -3735,9 +3878,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -3746,9 +3889,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -3757,9 +3900,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -3768,9 +3911,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -3779,9 +3922,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -3790,9 +3933,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -3801,9 +3944,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -3812,9 +3955,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -3823,9 +3966,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -3834,9 +3977,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -3845,9 +3988,9 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 4.0
+    "total": 100000,
+    "validos": 35.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -3856,9 +3999,20 @@
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 4.0
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "rafael-santos",
+    "candidato": "Rafael Santos",
+    "color": "#0055a2",
+    "partido": "Per\u00fa Patria Segura",
+    "partido_id": "peru-patria-segura",
+    "total": 457020,
+    "validos": 17.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -3867,9 +4021,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -3878,9 +4032,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -3889,9 +4043,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -3900,9 +4054,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -3911,9 +4065,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -3922,9 +4076,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -3933,9 +4087,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -3944,9 +4098,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -3955,9 +4109,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -3966,9 +4120,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -3977,9 +4131,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -3988,9 +4142,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -3999,9 +4153,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -4010,9 +4164,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 6780,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -4021,9 +4175,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -4032,9 +4186,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -4043,9 +4197,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -4054,9 +4208,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -4065,9 +4219,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -4076,9 +4230,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -4087,9 +4241,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -4098,9 +4252,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -4109,9 +4263,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -4120,9 +4274,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -4131,9 +4285,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -4142,9 +4296,9 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -4153,9 +4307,20 @@
     "color": "#0055a2",
     "partido": "Per\u00fa Patria Segura",
     "partido_id": "peru-patria-segura",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "marco-arana",
+    "candidato": "Marco Arana",
+    "color": "#4e5405",
+    "partido": "Frente Amplio",
+    "partido_id": "frente-amplio",
+    "total": 457020,
+    "validos": 20.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -4164,9 +4329,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -4175,9 +4340,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -4186,9 +4351,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -4197,9 +4362,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -4208,9 +4373,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -4219,9 +4384,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -4230,9 +4395,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -4241,9 +4406,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -4252,9 +4417,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -4263,9 +4428,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -4274,9 +4439,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -4285,9 +4450,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -4296,9 +4461,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -4307,9 +4472,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 6780,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -4318,9 +4483,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -4329,9 +4494,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -4340,9 +4505,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -4351,9 +4516,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -4362,9 +4527,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -4373,9 +4538,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -4384,9 +4549,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -4395,9 +4560,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -4406,9 +4571,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -4417,9 +4582,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -4428,9 +4593,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -4439,9 +4604,9 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -4450,9 +4615,20 @@
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "andres-alcantara",
+    "candidato": "Andres Alcantara",
+    "color": "#fff000",
+    "partido": "Democracia Directa",
+    "partido_id": "democracia-directa",
+    "total": 457020,
+    "validos": 25.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -4461,9 +4637,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -4472,9 +4648,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -4483,9 +4659,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -4494,9 +4670,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -4505,9 +4681,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -4516,9 +4692,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -4527,9 +4703,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -4538,9 +4714,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -4549,9 +4725,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -4560,9 +4736,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -4571,9 +4747,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -4582,9 +4758,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -4593,9 +4769,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -4604,9 +4780,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 6780,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -4615,9 +4791,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -4626,9 +4802,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -4637,9 +4813,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -4648,9 +4824,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -4659,9 +4835,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -4670,9 +4846,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -4681,9 +4857,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -4692,9 +4868,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -4703,9 +4879,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -4714,9 +4890,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -4725,9 +4901,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -4736,9 +4912,9 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -4747,9 +4923,20 @@
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "ciro-galvez",
+    "candidato": "Ciro Galvez",
+    "color": "#1022b9",
+    "partido": "Renacimiento Unido",
+    "partido_id": "renacimiento-unido",
+    "total": 458604,
+    "validos": 33.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -4758,9 +4945,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "76",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -4769,9 +4956,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -4780,9 +4967,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -4791,9 +4978,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -4802,9 +4989,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -4813,9 +5000,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -4824,9 +5011,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -4835,9 +5022,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -4846,9 +5033,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -4857,9 +5044,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -4868,9 +5055,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -4879,9 +5066,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -4890,9 +5077,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -4901,9 +5088,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 6780,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -4912,9 +5099,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -4923,9 +5110,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -4934,9 +5121,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -4945,9 +5132,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -4956,9 +5143,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -4967,9 +5154,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -4978,9 +5165,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -4989,9 +5176,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -5000,9 +5187,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -5011,9 +5198,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -5022,9 +5209,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -5033,9 +5220,9 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 76,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -5044,9 +5231,20 @@
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "jose-vega",
+    "candidato": "Jos\u00e9 Vega Antonio",
+    "color": "#ff2600",
+    "partido": "Union Por El Peru",
+    "partido_id": "union-por-el-peru",
+    "total": 11374,
+    "validos": 1.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
@@ -5055,9 +5253,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
@@ -5066,9 +5264,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "10",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
@@ -5077,9 +5275,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
@@ -5088,9 +5286,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
@@ -5099,9 +5297,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
@@ -5110,9 +5308,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
@@ -5121,9 +5319,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
@@ -5132,9 +5330,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
@@ -5143,9 +5341,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
@@ -5154,9 +5352,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 0,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
@@ -5165,9 +5363,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
@@ -5176,9 +5374,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
@@ -5187,9 +5385,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
@@ -5198,9 +5396,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 6780,
+    "validos": 3.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
@@ -5209,9 +5407,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
@@ -5220,9 +5418,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "2",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
@@ -5231,9 +5429,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "0",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
@@ -5242,9 +5440,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
@@ -5253,9 +5451,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "6",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
@@ -5264,9 +5462,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
@@ -5275,9 +5473,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
@@ -5286,9 +5484,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
@@ -5297,9 +5495,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
@@ -5308,9 +5506,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "8",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
@@ -5319,9 +5517,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "5",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
@@ -5330,9 +5528,9 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 10,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
@@ -5341,602 +5539,624 @@
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "nacional": 10000.0,
-    "total_departamento": "3",
-    "validos_nacional": 1.0
+    "total": 4354,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "",
+    "candidato": "Blanco/Viciado",
+    "color": "#e3e3e3",
+    "partido": "Blanco/Viciado",
+    "partido_id": "blanco-viciado",
+    "total": 457080,
+    "validos": 43.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 6780,
+    "validos": 12.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 12,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
     "candidato_id": "",
     "candidato": "Blanco/Viciado",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Blanco/Viciado",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "12",
-    "validos_nacional": 25.0
+    "partido_id": "blanco-viciado",
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
+  },
+  {
+    "region": "total",
+    "candidato_id": "",
+    "candidato": "Nulos",
+    "color": "#e3e3e3",
+    "partido": "Nulos",
+    "partido_id": "nulos",
+    "total": 457055,
+    "validos": 43.0,
+    "conteo": 67.0
   },
   {
     "region": "extranjero",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lima-provincias",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "1",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "callao",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "loreto",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tumbes",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "piura",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "lambayeque",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "la-libertad",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "arequipa",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 65.0
   },
   {
     "region": "moquegua",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "tacna",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ica",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ancash",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 6780,
+    "validos": 11.0,
+    "conteo": 65.0
   },
   {
     "region": "amazonas",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ayacucho",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cusco",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "madre-de-dios",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "san-martin",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "ucayali",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "junin",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "puno",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huanuco",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "pasco",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "cajamarca",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "huancavelica",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 11,
+    "validos": 1.0,
+    "conteo": 62.0
   },
   {
     "region": "apurimac",
     "candidato_id": "",
     "candidato": "Nulos",
-    "color": "",
+    "color": "#e3e3e3",
     "partido": "Nulos",
-    "partido_id": "",
-    "nacional": 10000.0,
-    "total_departamento": "11",
-    "validos_nacional": 30.0
+    "partido_id": "nulos",
+    "total": 450000,
+    "validos": 12.0,
+    "conteo": 65.0
   }
 ]

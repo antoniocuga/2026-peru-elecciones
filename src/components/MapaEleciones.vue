@@ -6,7 +6,7 @@
       <div class="row pt-3">
         <div class="col-12 col-sm-12 mapa-resultados-wrapper">
           <MapaDepartamentos :lista_candidatos="filteredData" />
-          <candidatosResultados :candidatos="lista_candidatos" />  
+          <candidatosResultados :candidatos="filteredData" />  
         </div>
       </div>
   </div>    
@@ -18,7 +18,7 @@ import { mapState } from 'vuex'
 import topWidget from '../components/topWidget.vue'
 import candidatosResultados from '../components/candidatosResultados.vue'
 import MapaDepartamentos from '../components/MapaDepartamentos.vue'
-import { filter, map, orderBy, groupBy, sumBy, uniq } from 'lodash'
+import { filter } from 'lodash'
 
 export default {
   name: 'MapaEleciones',
@@ -35,10 +35,18 @@ export default {
   },
   methods: {
     getImageCandidate(c) {
-      return require(`../assets/candidatos/${c}.png`)
+      try {
+        return require(`../assets/candidatos/${c}.png`)
+      } catch (error) {
+        return require(`../assets/candidatos/blanco-viciado.png`)
+      }
     },
     getImagePartido(c) {
-      return require(`../assets/partidos/${c}.png`)
+      try {
+        return require(`../assets/partidos/${c}.png`) 
+      } catch (error) {
+        return require(`../assets/partidos/blanco-viciado.png`)
+      }
     }
   },
   computed: {
@@ -63,23 +71,7 @@ export default {
       }
 
       return filter(this.candidatos, c => c.candidato_id != "")
-    },
-    lista_candidatos() {      
-
-      return orderBy(map(groupBy(this.filteredData, 'candidato_id'), (d, id) => {
-          return {
-            candidato_id: id,
-            region: uniq(map(d, 'region')).join(''),
-            candidato: uniq(map(d, 'candidato')).join(''),
-            partido_id: uniq(map(d, 'partido_id')).join(''),
-            partido: uniq(map(d, 'partido')).join(''),
-            color: uniq(map(d, 'color')).join(''),
-            votos: parseFloat(uniq(map(d, 'nacional')).join('')),
-            validos: parseFloat(uniq(map(d, 'total_departamento')).join('')),
-            porcentaje: this.regionSeleccionada.region != 'NACIONAL' ? sumBy(d, 'total_departamento') : parseFloat(uniq(map(d, 'validos_nacional')).join(''))
-          }
-      }), ['porcentaje'], ['desc'])
-    }        
+    }     
   }
 }
 

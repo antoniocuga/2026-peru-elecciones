@@ -3,7 +3,7 @@ import json
 import random
 
 resultados_total = []
-departamentos = ['extranjero','lima','lima-provincias', 'callao', 'loreto', 'tumbes', 'piura', 'lambayeque', 'la-libertad', 'arequipa', 'moquegua', 'tacna', 'ica', 'ancash', 'amazonas', 'ayacucho', 'cusco', 'madre-de-dios', 'san-martin', 'ucayali', 'junin', 'puno', 'huanuco', 'pasco', 'cajamarca', 'huancavelica', 'apurimac']
+departamentos = ['total','extranjero', 'lima','lima-provincias', 'callao', 'loreto', 'tumbes', 'piura', 'lambayeque', 'la-libertad', 'arequipa', 'moquegua', 'tacna', 'ica', 'ancash', 'amazonas', 'ayacucho', 'cusco', 'madre-de-dios', 'san-martin', 'ucayali', 'junin', 'puno', 'huanuco', 'pasco', 'cajamarca', 'huancavelica', 'apurimac']
 data = []
 
 def load_file(file):
@@ -16,10 +16,9 @@ def load_file(file):
 		#	congreso_list(resultado_total)
 		
 		for c in resultado_total:
-
 			candidatos.append(c)
-
 			for d in departamentos:
+				print(d)
 				candidato = {}
 				candidato['region'] = d
 				candidato['candidato_id'] = c['candidato_id']
@@ -27,12 +26,14 @@ def load_file(file):
 				candidato['color'] = c['color']
 				candidato['partido'] = c['partido']
 				candidato['partido_id'] = c['partido_id']
-				candidato['nacional'] = float(c['total'])
-				candidato['total_departamento'] = c[d]
-				candidato['validos_nacional'] = float(c['porcentaje_validos'])
+				candidato['total'] = int(c['%s' % d])
+				candidato['validos'] = float(c['%s_validos' % d])
+				candidato['conteo'] = float(c['%s_conteo' % d])
 				data.append(candidato)
 
-	distritos_list(candidatos)
+		for d in departamentos:
+			if(d != 'total'):
+				distritos_list(d, candidatos)
 
 	with open('../public/data/%s.json' % file, 'w') as jsonf:
 		jsonf.write(json.dumps(data, indent=2))
@@ -67,37 +68,59 @@ def congreso_list(resultado_total):
 	export_congresistas(data_out)
 
 
-def distritos_list(candidatos):
+def distritos_list(departamento, candidatos):
 	data_out = []
 
-	with open('lambayeque.csv') as f:
+	with open('%s.csv' % departamento) as f:
 		distritos = csv.DictReader(f)
 
 		for d in distritos:
 			for c in candidatos:
 				candidato = {}
-				candidato['region'] = (d['desc_dep_inei']).lower().replace(" ","-")
-				candidato['candidato_id'] = c['candidato_id']
-				candidato['candidato'] = c['candidato']
-				candidato['color'] = c['color']
-				candidato['partido'] = c['partido']
-				candidato['partido_id'] = c['partido_id']
-				candidato['departamento_id'] = d['cod_dep_inei']
-				candidato['departamento'] = d['desc_dep_inei']
-				candidato['provincia'] = d['desc_prov_inei']
-				candidato['provincia_id'] = d['cod_prov_inei']
-				candidato['ubigeo'] = d['cod_ubigeo_inei']
-				candidato['distrito'] = d['desc_ubigeo_inei']
-				candidato['conteo'] = random.randint(0,75)
-				candidato['total_votos'] = random.randint(100000,300000)
-				candidato['validos'] = random.randint(0,35)
-				data_out.append(candidato)
+				candidato['region'] = departamento
 
-	export_departamento(data_out)
+				if(departamento != 'extranjero'):
+					print(departamento)
+					candidato['candidato_id'] = c['candidato_id']
+					candidato['candidato'] = c['candidato']
+					candidato['color'] = c['color']
+					candidato['partido'] = c['partido']
+					candidato['partido_id'] = c['partido_id']
+					candidato['departamento_id'] = departamento
+					candidato['departamento'] = d['departamento']
+					candidato['provincia'] = d['provincia']
+					candidato['provincia_id'] = (d['provincia']).replace(" ","-").lower()
+					candidato['ubigeo_reniec'] = d['ubigeo_reniec']
+					candidato['ubigeo'] = d['ubigeo_inei']
+					candidato['distrito_reniec'] = d['distrito_reniec']
+					candidato['distrito'] = d['distrito_inei']
+					candidato['conteo'] = random.randint(0,75)
+					candidato['total_votos'] = random.randint(100000,300000)
+					candidato['validos'] = random.randint(0,35)
+					data_out.append(candidato)
+				else:
+						candidato['candidato_id'] = c['candidato_id']
+						candidato['candidato'] = c['candidato']
+						candidato['color'] = c['color']
+						candidato['partido'] = c['partido']
+						candidato['partido_id'] = c['partido_id']
+						candidato['departamento_id'] = departamento
+						candidato['departamento'] = departamento
+						candidato['provincia'] = d['nombre']
+						candidato['provincia_id'] = d['nombre']
+						candidato['ubigeo_reniec'] = d['iso']
+						candidato['ubigeo'] = d['iso']
+						candidato['distrito'] = d['nombre']
+						candidato['conteo'] = random.randint(0,75)
+						candidato['total_votos'] = random.randint(100000,300000)
+						candidato['validos'] = random.randint(0,35)
+						data_out.append(candidato)
+
+	export_departamento(data_out, departamento)
 
 
-def export_departamento(data):
-	with open('../public/data/%s.json' % 'lambayeque', 'w') as jsonf:
+def export_departamento(data, departamento):
+	with open('../public/data/%s.json' % departamento, 'w') as jsonf:
 		jsonf.write(json.dumps(data, indent=2))
 
 
