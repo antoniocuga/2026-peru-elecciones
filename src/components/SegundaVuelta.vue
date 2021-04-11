@@ -24,9 +24,9 @@
               <div class="col-5 pl-0">
                 <div class="candidate-results">                
                   <div class="candidate-bar">
-                    <div class="tooltip-c">{{ candidato.validos+"%" }} <span class="badge text-success">+{{ numeral(candidato.total_votos).format('0,0') }}</span> </div>                    
+                    <div class="tooltip-c">{{ candidato.validos+"%" }} <span v-if="candidato.diferencia" class="badge text-success">+{{ numeral(candidato.diferencia).format('0,0') }}</span> </div>                    
                     <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato, eleccion.items)}px;`"></div>
-                    <div class="tooltip-c"><span>Total de votos: {{ numeral(candidato.total_votos).format('0,0') }}</span></div>
+                    <div class="tooltip-c"><span>Total de votos: {{ numeral(candidato.total_votos).format('0,0') }}</span><span v-if="candidato.ganador"></span></div>
                   </div>
                 </div>            
               </div>

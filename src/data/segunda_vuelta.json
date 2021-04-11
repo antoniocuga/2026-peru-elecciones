@@ -8,7 +8,9 @@
         "puesto": 2,
         "total_votos": "3228661",
         "validos": "21.05",
-        "color" : "#f59cf7"
+        "color" : "#f59cf7",
+        "ganador": true        
+
     },
     {
         "candidato": "Keiko Fujimori",
@@ -19,7 +21,8 @@
         "puesto": 1,
         "total_votos": "6115073",
         "validos": "39.86",
-        "color": "#fd6600cc"
+        "color": "#fd6600cc",
+        "diferencia": "2886412"
     },
     {
         "candidato": "Ollanta Humala",
@@ -30,7 +33,9 @@
         "puesto": "1",
         "total_votos": "4643064",
         "validos": "31.7",
-        "color": "#eb1c24cc"
+        "color": "#eb1c24cc",
+        "diferencia": "1193469",
+        "ganador": true
         
     },
     {
@@ -53,7 +58,8 @@
         "puesto": "2",
         "total_votos": "2985858",
         "validos": "24.3",
-        "color": "#ff484ccc"
+        "color": "#ff484ccc",
+        "ganador": true
     },
     {
         "candidato": "Ollanta Humala",
@@ -64,7 +70,8 @@
         "puesto": "1",
         "total_votos": "3758258",
         "validos": "30.6",
-        "color": "#eb1c24cc"
+        "color": "#eb1c24cc",
+        "diferencia": "772400"
     },
     {
         "candidato": "Alejandro Toledo",
@@ -75,7 +82,9 @@
         "puesto": "1",
         "total_votos": "3871167",
         "validos": "36.5",
-        "color": "#25b53d"
+        "color": "#25b53d",
+        "diferencia": "1138310",
+        "ganador": true
     },
     {
         "candidato": "Alan García",
