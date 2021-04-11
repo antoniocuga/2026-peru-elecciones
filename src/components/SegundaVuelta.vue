@@ -18,7 +18,7 @@
                   <div>
                     <h4>{{candidato.candidato}}</h4>
                     <h5><img width="25px" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h5>
-                    <div class="tooltip-c"><span class="badge badge-secondary" v-if="candidato.ganador">Ganador en segunda vuelta</span></div>
+                    <div class="tooltip-c"><span class="badge text-success" v-if="candidato.ganador">Ganador en segunda vuelta</span></div>
                   </div>
                 </div>
               </div>
