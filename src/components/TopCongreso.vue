@@ -2,7 +2,7 @@
 <template>
   <div class="candidato-wrapper">
     <div class="row">
-      <div class="col-12 col-md-6 mb-5" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso">
+      <div class="col-12 col-md-6 mb-3" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso">
         
         <div class="row">
           <div class="col-12">
@@ -25,7 +25,7 @@
           <div class="col-6">
             <div class="candidate-results">                
               <div class="candidate-bar">
-                <div class="tooltip-c">{{ numeral(candidato.total_votos).format('0,0') }} </div>
+                <div class="tooltip-c">{{ numeral(candidato.total_votos).format('0,0') }} votos</div>
                 <div class="percent" :style="`background-color:${candidato.color}cc; width: ${calcScale(candidato, eleccion.items)}px;`"></div>
               </div>                          
             </div>            

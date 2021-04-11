@@ -1,7 +1,7 @@
 <template>
-  <div class="col-12 resultados2021">
+  <div class="col-12 col-sm-12 resultados2021">
       <div class="row justify-content-center top-candidates pb-3 pt-3">
-        <div class="col-12 mb-3">
+        <div class="col-12 col-sm-12 mb-3">
           <h3 class="m-0 text-center">Resultados a nivel nacional - <b>conteo ONPE al 61%</b> - Última actualización: 11 de Abril a las 23:00</h3>
         </div>
         <div class="col-auto text-center" :key="c.candidato_id" v-for="(c, ix) in top_candidatos">
@@ -22,10 +22,10 @@
           </div>
         </div>
       </div>
-      <div class="row border-top pt-3">
-        <div class="col-12 mapa-resultados-wrapper">
+      <div class="row pt-3">
+        <div class="col-12 col-sm-12 mapa-resultados-wrapper">
+          <MapaDepartamentos :lista_candidatos="filteredData" />
           <candidatosResultados :candidatos="lista_candidatos" />  
-          <MapaDepartamentos :lista_candidatos="lista_candidatos" />
         </div>
       </div>
   </div>    

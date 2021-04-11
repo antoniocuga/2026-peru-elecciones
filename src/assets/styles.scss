@@ -240,11 +240,68 @@ p {
 }
 
 .congreso-grafico {
+  font-family: 'Nunito Sans', sans-serif;
+
+  .list-resultados-partidos {
+    max-width: 760px;
+    margin: 0 auto;
+
+    .item-partido {
+      cursor: pointer;
+      border-bottom: dashed 1px #e3e3e3;
+
+      &:hover{
+        background: #e3e3e3;
+      }
+    }
+  }
+
+  .total-votos {
+    font-size: 13px;
+  }
+
+  .title-partidos-curules {
+    font-size: 18px;
+    border-bottom: dashed 1px #e3e3e3;
+  }
+
+  .elegidos {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  h4.candidato-mapa {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .title-resultados {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+
   circle {
     cursor: pointer;
+    opacity: 0.1;
+    transition: opacity .15s ease-in-out;
 
-    &.inactive {
-      opacity: 0.1;
+    &:hover {
+      stroke: #000;
+      stroke-width: 2px;
+    }
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  .filters-congreso {
+    .dropdown-menu.show {
+      max-height: 320px;
+      overflow-y: auto;
     }
   }
 }
@@ -257,6 +314,30 @@ p {
   background: rgba(255, 255, 255, 0.932);
   color: #000;
   pointer-events: none;
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  h4 {
+    margin: 10px 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+  }
 }
 
 .tooltip-data {
@@ -306,6 +387,7 @@ p {
 
   .candidate-results-vivo {
     position: absolute;
+    top: 0;
     left: -400px;
     max-width: 400px;
     height: 100vh;
@@ -329,8 +411,14 @@ p {
       left: 15px;
     }
 
-    @media (max-width: 720.98px) { 
+    @media (max-width: 992.98px) { 
       position: relative;
+      width: 100%;
+      margin: 0 auto;
+
+      &.active {
+        left: 0 !important;
+      }
     }
    
     .img-partidos {
@@ -462,6 +550,11 @@ p {
     right: 15px;
     width: 300px;
     z-index: 999;
+
+    @media (max-width: 720.98px) { 
+      position: relative;
+      width: 100%;
+    }
   }
 
   .btn-back {
@@ -768,10 +861,10 @@ p {
 
     h4 {
       margin: 5px 15px;
-      font-size: 16px;
+      font-size: 13px;
       font-weight: 600;
       text-align: left;
-      color: #585858;
+      color: #000;
 
       @media (max-width: 575.98px) { 
         margin: 0;
@@ -782,10 +875,10 @@ p {
 
     h5 {
       margin: 5px 7px;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 400;
       text-align: left;
-      color: #3e3e3e;
+      color: #000;
 
       @media (max-width: 575.98px) {
         font-size: 11px; 

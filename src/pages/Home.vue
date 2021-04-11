@@ -27,7 +27,7 @@
       </div>
 
       <div class="row pt-3 mt-5 border-bottom">
-        <div class="col-12 col-md-12 subtitle">
+        <div class="col-12 col-sm-12 col-md-12 subtitle">
             <h2>Elecciones y conteo bajo pandemia</h2>
             <span class="line"></span>
             <p>La Oficina Nacional de Procesos Electorales (ONPE) enfrentó un gran desafío en la ejecución de las elecciones del Bicentenario. Se espera que el proceso para tener los resultados al 100% demore más de lo normal debido a las condiciones de bioseguridad que se tomarán para evitar infecciones por la Covid-19</p>
@@ -65,7 +65,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12 mb-3 subtitle mt-5">
+            <div class="col-12 mb-3 subtitle mt-3">
               <h2>Parlamentarios más votados en dos décadas</h2>          
               <span class="line"></span>
               <p>Dos hijos del condenado expresidente Alberto Fujimori han sido los congresistas más votados en las últimas elecciones: Keiko en el 2006 y Kenji Fujimori en 2011 y en 2016. El exgeneral del Ejército, Daniel Urresti, tomó la posta en los comicios legislativos extraordinarios del 2020.</p>

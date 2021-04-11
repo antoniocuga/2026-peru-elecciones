@@ -4,13 +4,13 @@
     <div class="row filter-block">
       <div class="col-12 text-right">
         
-        <b-dropdown :text="partidoSeleccionado.partido" variant="light" class="d-inline-block m-2 departamento-menu">
+        <b-dropdown :text="partidoSeleccionado.partido" variant="warning" class="d-block m-2 departamento-menu">
           <b-dropdown-item :key="p.partido_id" v-for="p in partidos">
             <a @click="show_partido(p)">{{ p.partido }}</a>
           </b-dropdown-item>
         </b-dropdown>
 
-        <b-dropdown :text="regionSeleccionada.departamento" variant="light" class="d-inline-block m-2 departamento-menu">
+        <b-dropdown :text="regionSeleccionada.departamento" variant="warning" class="d-block m-2 departamento-menu">
           <b-dropdown-item :key="dep.region" v-for="dep in departamentos">
             <a @click="show_departamento(dep.region)">{{ dep.departamento }}</a>
           </b-dropdown-item>
@@ -26,6 +26,11 @@
           <g ref="distritos"></g>
           <g ref="labels"></g>
         </svg>
+        <div class="regiones-extra">
+          <div>Callao</div>
+          <div>Lima Metropolitana</div>
+          <div>Extranjero</div>
+        </div>
 
         <div class="legend-party" v-if="partidoSeleccionado.color">
           <div><span class="min-legend">{{ legendaValues.min }}%</span><span class="max-legend">{{ legendaValues.max }}%</span></div>
@@ -172,6 +177,7 @@
       departamentos_parse() {
         let filtered = filter(this.lista_candidatos, c => c.candidato_id != '')
         return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
+          console.log(region)
           return {
             region: region,
             departamento: uniq(map(item, 'region')).join(''),
@@ -272,7 +278,12 @@
 
         } else if(this.regionSeleccionada.region == 'NACIONAL') {
           center = d3.geoCentroid(this.perugeo)
-          scale = this.width / this.distance / Math.sqrt(1)
+
+          if(window.innerWidth < 993) {
+            scale = this.width * 1.65 / this.distance / Math.sqrt(1)
+          } else {
+            scale = this.width / this.distance / Math.sqrt(1)
+          }
         }
 
         const r = d3.interpolate(this.center, center)
@@ -332,11 +343,12 @@
         // Compute the angular distance between bound corners
         this.distance = d3.geoDistance(this.bounds[0], this.bounds[1])
 
-        if(window.innerWidth < 719) {
-          this.width = 360
-          this.height = 450
-          this.center_device =  [this.width/2.2, this.height / 2]
-          this.scale = this.width * 1.4 / this.distance / Math.sqrt(1)
+        if(window.innerWidth < 993) {
+          this.width = window.innerWidth > 500 ? window.innerWidth / 1.7 : window.innerWidth
+          this.height = window.innerWidth >= 500 ? window.innerHeight/1.2 : window.innerHeight/2
+          this.center_device =  [this.width/1.9, this.height / 2]
+          this.scale = this.width * 1.65 / this.distance / Math.sqrt(1)
+          
         } else if(window.innerWidth > 720) {
           this.width = 720
           this.height = 720

@@ -2,7 +2,7 @@
 <template>
   <div class="candidato-wrapper">
     <div class="row">
-      <div class="col-12 col-md-6 mb-5" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_segunda">
+      <div class="col-12 col-md-6 mb-3" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_segunda">
         
         <div class="row">
           <div class="col-12">
@@ -10,7 +10,7 @@
           </div>
           <div class="col-12">
             <div class="row" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
-              <div class="col-6 pr-0">
+              <div class="col-7 pr-0">
                 <div class="candidate-info historico align-self-center">
                   <div class="">
                     <img height="40px" width="40px" :src="getImageCandidate(candidato.candidato_id)" />
@@ -21,13 +21,12 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 pl-0">
+              <div class="col-5 pl-0">
                 <div class="candidate-results">                
                   <div class="candidate-bar">
-                    <div class="tooltip-c">{{ candidato.validos+"%" }} </div>
+                    <div class="tooltip-c">{{ candidato.validos+"%" }} <span class="badge text-success">+{{ numeral(candidato.total_votos).format('0,0') }}</span> </div>                    
                     <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato, eleccion.items)}px;`"></div>
-                    <div class="tooltip-c"><span>{{ numeral(candidato.total_votos).format('0,0') }} votos</span></div>
-                    
+                    <div class="tooltip-c"><span>Total de votos: {{ numeral(candidato.total_votos).format('0,0') }}</span></div>
                   </div>
                 </div>            
               </div>

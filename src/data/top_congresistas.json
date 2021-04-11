@@ -215,18 +215,5 @@
         "color": "#009a21",
         "total_votos": 131060
 
-    },
-    {
-        "eleccion": "2001",
-        "numero": "1",
-        "candidato": "Anel Townsend",
-        "candidato_id": "anel-townsend",
-        "partido": "Perú Posible",
-        "partido_id": "peru-posible",
-        "color": "#006200",
-        "total_votos": 329970
-
     }
-
-
 ]
