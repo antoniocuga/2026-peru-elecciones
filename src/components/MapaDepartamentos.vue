@@ -2,15 +2,15 @@
 
   <div class="mapa-resultados-container">
     <div class="row filter-block">
-      <div class="col-12 text-right">
+      <div class="col-12 text-center">
         
-        <b-dropdown :text="partidoSeleccionado.partido" variant="warning" class="d-block m-2 departamento-menu">
+        <b-dropdown :text="partidoSeleccionado.partido" variant="warning" class="d-inline-block m-2 departamento-menu">
           <b-dropdown-item :key="p.partido_id" v-for="p in partidos">
             <a @click="show_partido(p)">{{ p.partido }}</a>
           </b-dropdown-item>
         </b-dropdown>
 
-        <b-dropdown :text="regionSeleccionada.departamento" variant="warning" class="d-block m-2 departamento-menu">
+        <b-dropdown :text="regionSeleccionada.departamento" variant="warning" class="d-inline-block m-2 departamento-menu">
           <b-dropdown-item :key="dep.region" v-for="dep in departamentos">
             <a @click="show_departamento(dep.region)">{{ dep.departamento }}</a>
           </b-dropdown-item>
@@ -26,7 +26,7 @@
           <g ref="distritos"></g>
           <g ref="labels"></g>
         </svg>
-        <div class="regiones-extra">
+        <div class="regiones-extra" v-if="regionSeleccionada.region == 'NACIONAL'">
           <div><span class="callao-path departamento-path"></span><span>Callao</span></div>
           <div><span class="lima-path departamento-path"></span><span>Lima Metropolitana</span></div>
           <div><span class="extranjero-path departamento-path"></span><span>Extranjero</span></div>
@@ -346,7 +346,7 @@
 
         if(window.innerWidth < 993) {
           this.width = window.innerWidth > 500 ? window.innerWidth / 1.7 : window.innerWidth
-          this.height = window.innerWidth >= 500 ? window.innerHeight/1.2 : window.innerHeight/2
+          this.height = 640
           this.center_device =  [this.width/1.9, this.height / 2]
           this.scale = this.width * 1.65 / this.distance / Math.sqrt(1)
           

@@ -18,6 +18,7 @@
                   <div>
                     <h4>{{candidato.candidato}}</h4>
                     <h5><img width="25px" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h5>
+                    <div class="tooltip-c"><span class="badge badge-secondary" v-if="candidato.ganador">Ganador en segunda vuelta</span></div>
                   </div>
                 </div>
               </div>
@@ -26,7 +27,7 @@
                   <div class="candidate-bar">
                     <div class="tooltip-c">{{ candidato.validos+"%" }} <span v-if="candidato.diferencia" class="badge text-success">+{{ numeral(candidato.diferencia).format('0,0') }}</span> </div>                    
                     <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato, eleccion.items)}px;`"></div>
-                    <div class="tooltip-c"><span>Total de votos: {{ numeral(candidato.total_votos).format('0,0') }}</span><span v-if="candidato.ganador"></span></div>
+                    <div class="tooltip-c"><span>Total de votos: {{ numeral(candidato.total_votos).format('0,0') }}</span></div>
                   </div>
                 </div>            
               </div>

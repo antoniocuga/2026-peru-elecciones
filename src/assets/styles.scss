@@ -571,6 +571,11 @@ p {
     padding: 5px;
     text-align: left;
 
+    @media (max-width: 575.98px) { 
+      right: 15px;
+      top: 590px;
+    }
+
     svg {
       width: 50px;
     }
@@ -584,6 +589,11 @@ p {
     bottom: 35vh;
     text-align: left;
     pointer-events: none;
+
+    @media (max-width: 575.98px) { 
+      left: 15px;
+      bottom: 10vh;
+    }
 
     div {
       display: flex;
@@ -611,6 +621,11 @@ p {
     height: 35px;
     left: 40%;
     top: 0;
+
+    @media (max-width: 575.98px) { 
+      left: 15px;
+      top: 10vh;
+    }
 
     span {
       font-size: 13px;
