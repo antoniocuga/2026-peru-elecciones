@@ -3,7 +3,7 @@
   <div class="row justify-content-center">
     <div class="col-12 col-sm-12 mb-3">
       <h3 class="m-0 text-center">
-        <b>Conteo ONPE al {{ conteo.toFixed(1) }}% a nivel nacional</b> (Última actualización: 12:00 p.m. del 12 de abril)
+        <b>Conteo ONPE al {{ conteo.toFixed(1) }}% a nivel nacional</b> (Última actualización: {{ fecha_hora }})
       </h3>
     </div>
     <div class="col-auto text-center" :key="c.candidato_id" v-for="(c, ix) in topCandidatos">
@@ -64,6 +64,9 @@
       conteo() {
         return parseFloat(uniq(map(this.topCandidatos, 'conteo')).join(""))
       },
+      fecha_hora() {
+        return uniq(map(this.topCandidatos, 'hora')).join("")
+      },
       topCandidatos() {
         let filtered = filter(this.candidatos, d => {
           if(d.region == 'total' && d.candidato_id != 'blanco' && d.candidato_id != 'nulos') {
@@ -81,7 +84,8 @@
               color: uniq(map(d, 'color')).join(''),
               votos: parseFloat(uniq(map(d, 'total')).join('')),
               validos: parseFloat(uniq(map(d, 'validos')).join('')),
-              conteo: parseFloat(uniq(map(d, 'conteo')).join(''))
+              conteo: parseFloat(uniq(map(d, 'conteo')).join('')),
+              hora: uniq(map(d, 'hora')).join('')
             }
         }), ['validos'], ['desc'])
 

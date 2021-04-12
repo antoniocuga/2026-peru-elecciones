@@ -468,14 +468,14 @@
           "total_votos": "216261"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "109837"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "80069"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "109837"
         },
         {
           "partido_id": "accion-popular",
