@@ -27,6 +27,9 @@
     components: {
       SharingOptions,
       topWidget
+    },
+    created () {
+      this.$store.dispatch('candidatos/getAllCandidatos')
     }
   }
   

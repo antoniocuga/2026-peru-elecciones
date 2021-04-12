@@ -632,7 +632,7 @@
                   </div>
                   <div class="pl-0 col-4 text-right">
                     <div class="candidato-mapa"><b>${dp.validos.toFixed(1)}%</b></div>
-                    <div class="partido-mapa text-success">${ numeral(dp.total).format('0,0') }</div>
+                    <div class="partido-mapa text-success">${ numeral(dp.total).format('0,0') } votos</div>
                   </div>
                 </div>`
             })
@@ -650,7 +650,7 @@
 
           table = `
             <div class="row border-bottom pb-2 mb-2">
-              <div class="col-7 depa"><b>${distrito.properties.DISTRITO}</b></div>
+              <div class="col-7 depa"><b>${distrito.properties.DISTRITO}</b> - ${distrito.properties.PROVINCIA}</div>
               <div class="col-5 text-right"><span class="badge badge-secondary">Conteo ONPE al ${dep.conteo.toFixed(1) }%</span></div>
             </div>`
           let only_four = orderBy(dep.candidatos, ['validos'], ['desc']).slice(0, 4)
@@ -672,7 +672,7 @@
                     </div>
                     <div class="pl-0 col-4 text-right">
                       <div class="candidato-mapa"><b>${dp.validos.toFixed(1)}%</b></div>
-                      <div class="partido-mapa">+${ numeral(dp.total_votos).format('0,0') }</div>
+                      <div class="partido-mapa text-success">${ numeral(dp.total_votos).format('0,0') } votos</div>
                     </div>
                   </div>`
               }

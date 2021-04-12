@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <div class="row candidates-list">
+      <div class="row candidates-list" v-if="conteo">
         <div class="col-12 pt-3 pb-3">
           <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region !='NACIONAL'"><span>{{regionSeleccionada.region}}</span> <span class="p-2 badge badge-light">Conteo al {{conteo.toFixed(1)}}%</span></h2>
           <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region =='NACIONAL'"><span>RESULTADOS NACIONALES</span><span class="p-2 badge badge-light">Conteo al {{conteo.toFixed(1)}}%</span></h2>
