@@ -12,8 +12,8 @@
       <div class="row justify-content-center mb-5 mt-5">
         <div class="col-12 col-md-8 text-center">
           <h3 class="page-section-tag"><a href="https://ojo-publico.com/elecciones-2021" target="_blank">Elecciones 2021</a></h3>
-          <h1 class="page-app-title text-center">Candidatos Lescano, Fujimori, Forsyth y Mendoza pelean 
-              pase a la segunda vuelta con estrecho margen</h1>
+          <h1 class="page-app-title text-center">Pedro Castillo lidera contienda electoral rumbo 
+            a la segunda vuelta en conteo de la ONPE</h1>
         </div>
         <div class="credits col-12 text-center">
           Por <a href="https://ojo-publico.com/autor/ojopublico" target="_blank">OjoPúblico</a>
@@ -30,7 +30,7 @@
         <div class="col-12 col-sm-12 col-md-12 subtitle">
             <h2>Elecciones y conteo bajo pandemia</h2>
             <span class="line"></span>
-            <p>La Oficina Nacional de Procesos Electorales (ONPE) enfrentó un gran desafío en la ejecución de las elecciones del Bicentenario. Se espera que el proceso para tener los resultados al 100% demore más de lo normal debido a las condiciones de bioseguridad que se tomarán para evitar infecciones por la Covid-19</p>
+            <p>La Oficina Nacional de Procesos Electorales (ONPE) enfrentó un gran desafío en la ejecución de las elecciones del Bicentenario. Se espera que el proceso para tener los resultados al 100% demore más de lo normal, debido a las condiciones de bioseguridad que se tomaron para evitar infecciones por la Covid-19</p>
         </div>
 
         <MapaElecciones />
@@ -43,7 +43,8 @@
         <div class="col-12 mb-3 subtitle mt-5">
           <h2>Congreso fragmentado (2021-2026)</h2>
           <span class="line"></span>
-          <p>Al menos 10 partidos podrían tener representantes en el Parlamento: Acción Popular, Avanza País, Fuerza Popular, Perú Libre, Victoria Nacional, Juntos por el Perú, Renovación Popular, Podemos Perú, Alianza para el Progreso, Somos Perú y quizá el Frente Popular Agrícola FIA del Perú y el Partido Morado. Se requerirá un acuerdo de todas las fuerzas políticas para evitar la inestabilidad de los últimos cinco años.</p>
+          <p>Once partidos tendrán representantes en el Parlamento: Perú Libre, Acción Popular, Fuerza Popular, Alianza para el Progreso, Renovación Popular, Avanza País, Juntos por el Perú, Podemos Perú, Victoria Nacional, Somos Perú y el Partido Morado. Se requerirá un acuerdo de todas las fuerzas políticas para evitar la inestabilidad de los últimos cinco años.
+          </p>
         </div>
         <div class="col-12">
           <congresoGrafico />
@@ -90,8 +91,8 @@
         <div class="col-12 fuentes text-center mb-5">
           <h4>Créditos:</h4>
           <div>Dirección: Óscar Castilla.</div>
-          <div>Desarrollo web y data: Antonio Cucho y Gianfranco Huamán y Gianfranco Rossi.</div>
-          <div>Investigación: Ralph Zapata, Ernesto Cabral, Elizabeth Salazar y Magali Estrada, Geraldine Santos, Alicia Tovar, Clarys Cárdenas, Alba Rivas, Gustavo Callapiña, Karín Chacón de la Red Investigativa Regional. Con la colaboración de Esthefany Molina.</div>
+          <div>Equipo: Gianfranco Huamán, Gianfranco Rossi y Ernesto Cabral. </div>
+          <div>Desarrollo web: Antonio Cucho</div>
         </div>        
       </div>  
 

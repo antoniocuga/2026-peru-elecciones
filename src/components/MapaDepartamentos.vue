@@ -82,7 +82,8 @@
       lista_candidatos: Array
     },
     watch: {
-      candidatos() {
+      candidatos(v) {
+        console.log(v)
         this.renderMapa()
       },
       partidoSeleccionado(v) {
@@ -216,12 +217,13 @@
       },
       departamentos() {
         let filtered = filter(this.candidatos, c => c.candidato_id != '' && c.region != 'total')
+
         return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
           
-          let dep = find(this.perugeo.features, d => d.properties.dep_id == region)
+          //let dep = find(this.perugeo.features, d => d.properties.dep_id == region)
           return {
             region: region,
-            departamento: region != 'extranjero' ? dep.properties.NOMBDEP : 'EXTRANJERO',
+            departamento: region != 'extranjero' ? uniq(map(item, 'departamento')).join("") : 'EXTRANJERO',
             total_departamento: parseFloat(sumBy(map(item, 'total'))),
             candidatos: orderBy(item, ['validos'], ['desc']),
             geodata: require(`../data/mapas/${region}.json`),
@@ -552,7 +554,10 @@
           .enter()
           .append('path')
           .attr('d',this.path)
-          .attr('class', 'distrito-path')
+          .attr('class', d => {
+            console.log(d)
+            return `distrito-path ${d.properties.IDDIST}-path`
+          })
           .attr("style", (f) => {
             let dep = find(this.distritos_parse, d => d.ubigeo == f.properties.IDDIST)
 
@@ -596,7 +601,7 @@
         let name = dep.departamento
         let distrito = f
         let table = ``
-        let conteo = uniq(map(dep.candidatos, 'conteo')).join("")
+        let conteo = parseFloat(uniq(map(dep.candidatos, 'conteo')).join("")).toFixed(1)
         if(dep && this.zoomed==false) {
           table = `
             <div class="row border-bottom pb-2 mb-2">
@@ -623,7 +628,7 @@
                   </div>
                   <div class="pl-0 col-4 text-right">
                     <div class="candidato-mapa"><b>${dp.validos}%</b></div>
-                    <div class="partido-mapa">+${ numeral(dp.total).format('0,0') }</div>
+                    <div class="partido-mapa text-success">${ numeral(dp.total).format('0,0') }</div>
                   </div>
                 </div>`
             })

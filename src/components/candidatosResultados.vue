@@ -34,7 +34,7 @@
               <div><span class="validos badge">% validos</span></div>
             </div>
             <div class="col-3 votos-validos align-self-center text-center">
-              <span class="diferencia badge">diferencia</span>
+              <span class="diferencia badge">Votos</span>
             </div>          
           </div>
           <div class="row candidate-info align-self-center mt-2 pb-1" :key="c.candidato_id" v-for="c in lista_candidatos.slice(0,6)">
@@ -46,10 +46,10 @@
               <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
             </div> 
             <div class="col-2 porcentaje-resultado align-self-center text-center">
-              <div>{{c.validos}}%</div>               
+              <div>{{c.validos.toFixed(1)}}%</div>               
             </div>
             <div class="col-3 votos-validos align-self-center text-center">
-              <div class="text-center diferencia">+{{ c.votos }}</div>
+              <div class="text-center diferencia">{{ numeral(c.votos).format('0,0') }}</div>
             </div>          
           </div>
         </div>
@@ -63,10 +63,10 @@
               <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
             </div> 
             <div class="col-2 porcentaje-resultado align-self-center text-center">
-              <div>{{c.validos}}%</div>               
+              <div>{{c.validos.toFixed(1)}}%</div>               
             </div>
             <div class="col-3 votos-validos align-self-center text-center">
-              <div class="text-center diferencia">+{{ c.votos }}</div>
+              <div class="text-center diferencia">{{ numeral(c.votos).format('0,0') }}</div>
             </div>          
           </div>
         </b-collapse>
@@ -96,6 +96,7 @@
 </template>
 
 <script>
+  import numeral from 'numeral'
   import { find, filter, map, orderBy, groupBy, uniq, sumBy, maxBy } from 'lodash'
   import elecciones2016 from './elecciones2016.vue'
   import { mapState, mapActions } from 'vuex'
@@ -201,6 +202,7 @@
       ...mapActions('candidatos', [
         'updateRegionSeleccionada'
       ]),
+      numeral,
       resetMapa() {
         this.updateRegionSeleccionada({region:'NACIONAL', departamento:'VER REGIÓN'})
         this.distritoSeleccionado = {
