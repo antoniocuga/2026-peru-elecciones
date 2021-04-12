@@ -21,8 +21,8 @@
 
       <div class="row candidates-list">
         <div class="col-12 pt-3 pb-3">
-          <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region !='NACIONAL'"><span>{{regionSeleccionada.region}}</span> <span class="p-2 badge badge-light">Conteo al 98%</span></h2>
-          <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region =='NACIONAL'"><span>RESULTADOS NACIONALES</span><span class="p-2 badge badge-light">Conteo al 98%</span></h2>
+          <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region !='NACIONAL'"><span>{{regionSeleccionada.region}}</span> <span class="p-2 badge badge-light">Conteo al {{conteo.toFixed(1)}}%</span></h2>
+          <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region =='NACIONAL'"><span>RESULTADOS NACIONALES</span><span class="p-2 badge badge-light">Conteo al {{conteo.toFixed(1)}}%</span></h2>
           <h2 class="distrito-resultados align-self-center" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'"><span>{{ distritoSeleccionado.distrito }}</span></h2>
         </div>
         <div class="col-12">
@@ -159,6 +159,9 @@
           }
         }), ['distrito'])
       },
+      conteo() {
+        return parseFloat(uniq(map(this.lista_candidatos, 'conteo')).join(""))
+      },
       lista_candidatos() {
         
         let data_block
@@ -188,7 +191,8 @@
             color: uniq(map(d, 'color')).join(''),
             votos: parseFloat(uniq(map(d, 'total')).join('')),
             validos: parseFloat(uniq(map(d, 'validos')).join('')),
-            conteo: parseFloat(uniq(map(d, 'conteo')).join(''))
+            conteo: parseFloat(uniq(map(d, 'conteo')).join('')),
+            hora: uniq(map(d, 'hora')).join('')
           }
         }), ['validos'], ['desc'])
       }   

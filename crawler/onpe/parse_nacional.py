@@ -171,28 +171,10 @@ def load_file(file):
 					candidato['validos'] = float(c['POR_VALIDOS'])
 					candidato['emitidos'] = float(c['POR_VALIDOS'])
 					candidato['conteo'] = 100 - float(json_resultados['generals']['generalData']['POR_POR_PROCESAR'])
+					candidato['hora'] = "%s - %s" % (json_resultados['generals']['actData']['HORA'], json_resultados['generals']['actData']['FECHA'])
 					data.append(candidato)
 				except:
 					pass
-			
-	# 		candidatos.append(c)
-	# 		for d in departamentos:
-	# 			print(d, c['candidato_id'])
-	# 			candidato = {}
-	# 			candidato['region'] = d
-	# 			candidato['candidato_id'] = c['candidato_id']
-	# 			candidato['candidato'] = c['candidato']
-	# 			candidato['color'] = c['color']
-	# 			candidato['partido'] = c['partido']
-	# 			candidato['partido_id'] = c['partido_id']
-	# 			candidato['total'] = int(c['%s' % d])
-	# 			candidato['validos'] = float(c['%s_validos' % d])
-	# 			candidato['conteo'] = float(c['%s_conteo' % d])
-	# 			data.append(candidato)
-
-	# 	for d in departamentos:
-	# 		if(d != 'total'):
-	# 			distritos_list(d, candidatos)
 
 	with open('../../public/data/%s.json' % file, 'w') as jsonf:
 		jsonf.write(json.dumps(data, indent=2))
