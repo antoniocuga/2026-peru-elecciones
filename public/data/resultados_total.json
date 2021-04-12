@@ -3,171 +3,214 @@
     "departamento": "AMAZONAS",
     "total": 8196,
     "validos": 10.6453,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 30114,
     "validos": 8.2951,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 10677,
     "validos": 9.4719,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 70856,
     "validos": 11.3641,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 13579,
     "validos": 8.4282,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 29378,
     "validos": 7.3541,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 22744,
     "validos": 6.8829,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 39889,
     "validos": 10.3751,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 1347,
+    "validos": 6.534,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "yonhi-lescano",
+    "candidato": "Yonhy Lescano",
+    "color": "#000000",
+    "partido": "Acción Popular",
+    "partido_id": "accion-popular",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 10067,
     "validos": 11.2082,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 16116,
     "validos": 7.5304,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 12113,
     "validos": 9.3367,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 39552,
     "validos": 11.9459,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 29934,
     "validos": 5.9777,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 29346,
     "validos": 8.3058,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 281757,
     "validos": 6.7805,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 23389,
     "validos": 7.1396,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -179,290 +222,344 @@
     "departamento": "LORETO",
     "total": 17094,
     "validos": 9.495,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 3815,
     "validos": 10.2006,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 6628,
     "validos": 16.09,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 9507,
     "validos": 13.5748,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 30811,
     "validos": 7.0982,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 126653,
     "validos": 29.8837,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 26385,
     "validos": 10.109,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 26084,
     "validos": 14.7371,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 5645,
     "validos": 7.242,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 5716,
     "validos": 7.5925,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
     "partido": "Acción Popular",
     "partido_id": "accion-popular",
-    "region": "ucayali"
-  },
-  {
-    "total": 1347,
-    "validos": 6.534,
-    "candidato_id": "yonhi-lescano",
-    "candidato": "Yonhy Lescano",
-    "color": "#000000",
-    "partido": "Acción Popular",
-    "partido_id": "accion-popular"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 7272,
     "validos": 9.4452,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 32852,
     "validos": 9.0492,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 1537,
     "validos": 1.3636,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 15254,
     "validos": 2.4467,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 3499,
     "validos": 2.1717,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 34505,
     "validos": 8.6374,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 15605,
     "validos": 4.7222,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 10600,
     "validos": 2.757,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 177,
+    "validos": 0.859,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "cesar-acuna",
+    "candidato": "César Acuña",
+    "color": "#0050a0",
+    "partido": "Alianza para el Progreso",
+    "partido_id": "alianza-para-el-progreso",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 1275,
     "validos": 1.4196,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 12320,
     "validos": 5.7566,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 5557,
     "validos": 4.2835,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 13047,
     "validos": 3.9406,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 103768,
     "validos": 20.7217,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 37098,
     "validos": 10.4998,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 156434,
     "validos": 3.7646,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 16941,
     "validos": 5.1713,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -474,290 +571,344 @@
     "departamento": "LORETO",
     "total": 21233,
     "validos": 11.7937,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 2305,
     "validos": 6.1633,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 976,
     "validos": 2.369,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 3458,
     "validos": 4.9375,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 49412,
     "validos": 11.3834,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 8655,
     "validos": 2.0421,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 31534,
     "validos": 12.0818,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 4055,
     "validos": 2.2909,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 8525,
     "validos": 10.9373,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 7659,
     "validos": 10.1732,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
     "partido": "Alianza para el Progreso",
     "partido_id": "alianza-para-el-progreso",
-    "region": "ucayali"
-  },
-  {
-    "total": 177,
-    "validos": 0.859,
-    "candidato_id": "cesar-acuna",
-    "candidato": "César Acuña",
-    "color": "#0050a0",
-    "partido": "Alianza para el Progreso",
-    "partido_id": "alianza-para-el-progreso"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 3107,
     "validos": 4.0355,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 26240,
     "validos": 7.2281,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 4740,
     "validos": 4.2051,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 128244,
     "validos": 20.5683,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 7209,
     "validos": 4.4744,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 21583,
     "validos": 5.4027,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 52589,
     "validos": 15.9144,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 30237,
     "validos": 7.8647,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 3783,
+    "validos": 18.352,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "hernando-de-soto",
+    "candidato": "Hernando de Soto",
+    "color": "#ff2c79",
+    "partido": "Avanza País",
+    "partido_id": "avanza-pais",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 3193,
     "validos": 3.5549,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 13084,
     "validos": 6.1139,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 15044,
     "validos": 11.5959,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 34687,
     "validos": 10.4766,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 61095,
     "validos": 12.2002,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 36567,
     "validos": 10.3495,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 713919,
     "validos": 17.1805,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 32623,
     "validos": 9.9581,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -769,290 +920,344 @@
     "departamento": "LORETO",
     "total": 14407,
     "validos": 8.0022,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 2695,
     "validos": 7.2061,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 3923,
     "validos": 9.5233,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 3864,
     "validos": 5.5172,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 43016,
     "validos": 9.91,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 16591,
     "validos": 3.9145,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 18846,
     "validos": 7.2206,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 18553,
     "validos": 10.4819,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 5674,
     "validos": 7.2793,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 5602,
     "validos": 7.4412,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
     "partido": "Avanza País",
     "partido_id": "avanza-pais",
-    "region": "ucayali"
-  },
-  {
-    "total": 3783,
-    "validos": 18.352,
-    "candidato_id": "hernando-de-soto",
-    "candidato": "Hernando de Soto",
-    "color": "#ff2c79",
-    "partido": "Avanza País",
-    "partido_id": "avanza-pais"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 146,
     "validos": 0.1897,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 1419,
     "validos": 0.3907,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 396,
     "validos": 0.3512,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 2079,
     "validos": 0.3335,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 514,
     "validos": 0.319,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 1001,
     "validos": 0.2505,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 1441,
     "validos": 0.4359,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 2712,
     "validos": 0.7055,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 42,
+    "validos": 0.204,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "andres-alcantara",
+    "candidato": "Andres Alcantara",
+    "color": "#fff000",
+    "partido": "Democracia Directa",
+    "partido_id": "democracia-directa",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 300,
     "validos": 0.3339,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 707,
     "validos": 0.3304,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 323,
     "validos": 0.2491,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 1668,
     "validos": 0.504,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 1785,
     "validos": 0.3563,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 1104,
     "validos": 0.3124,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 12383,
     "validos": 0.298,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 2395,
     "validos": 0.7311,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -1064,290 +1269,344 @@
     "departamento": "LORETO",
     "total": 615,
     "validos": 0.3414,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 112,
     "validos": 0.2996,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 80,
     "validos": 0.1943,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 200,
     "validos": 0.2855,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 1278,
     "validos": 0.2945,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 1238,
     "validos": 0.2923,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 623,
     "validos": 0.2387,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 477,
     "validos": 0.2693,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 350,
     "validos": 0.4493,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 300,
     "validos": 0.3987,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
     "partido": "Democracia Directa",
     "partido_id": "democracia-directa",
-    "region": "ucayali"
-  },
-  {
-    "total": 42,
-    "validos": 0.204,
-    "candidato_id": "andres-alcantara",
-    "candidato": "Andres Alcantara",
-    "color": "#fff000",
-    "partido": "Democracia Directa",
-    "partido_id": "democracia-directa"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 723,
     "validos": 0.9392,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 2680,
     "validos": 0.7381,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 802,
     "validos": 0.7115,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 2531,
     "validos": 0.406,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 1261,
     "validos": 0.7827,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 2568,
     "validos": 0.6428,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 1065,
     "validos": 0.3225,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 2825,
     "validos": 0.7348,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 86,
+    "validos": 0.417,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "marco-arana",
+    "candidato": "Marco Arana",
+    "color": "#4e5405",
+    "partido": "Frente Amplio",
+    "partido_id": "frente-amplio",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 848,
     "validos": 0.9442,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 870,
     "validos": 0.4065,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 600,
     "validos": 0.4626,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 1982,
     "validos": 0.5985,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 1601,
     "validos": 0.3195,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 917,
     "validos": 0.2596,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 12784,
     "validos": 0.3078,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 1334,
     "validos": 0.4071,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -1359,290 +1618,344 @@
     "departamento": "LORETO",
     "total": 621,
     "validos": 0.3451,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 134,
     "validos": 0.3583,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 158,
     "validos": 0.3839,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 209,
     "validos": 0.2985,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 1817,
     "validos": 0.4184,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 2329,
     "validos": 0.5495,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 831,
     "validos": 0.3184,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 917,
     "validos": 0.5182,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 469,
     "validos": 0.6017,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 306,
     "validos": 0.4065,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
     "partido": "Frente Amplio",
     "partido_id": "frente-amplio",
-    "region": "ucayali"
-  },
-  {
-    "total": 86,
-    "validos": 0.417,
-    "candidato_id": "marco-arana",
-    "candidato": "Marco Arana",
-    "color": "#4e5405",
-    "partido": "Frente Amplio",
-    "partido_id": "frente-amplio"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 11711,
     "validos": 15.2107,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 49690,
     "validos": 13.6875,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 7824,
     "validos": 6.9408,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 28070,
     "validos": 4.502,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 10935,
     "validos": 6.7871,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 42282,
     "validos": 10.5843,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 47689,
     "validos": 14.4312,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 15854,
     "validos": 4.1237,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 1882,
+    "validos": 9.13,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "keiko-fujimori",
+    "candidato": "Keiko Fujimori",
+    "color": "#fd6600",
+    "partido": "Fuerza Popular",
+    "partido_id": "fuerza-popular",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 5157,
     "validos": 5.7417,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 24351,
     "validos": 11.3784,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 18918,
     "validos": 14.582,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 40326,
     "validos": 12.1797,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 78179,
     "validos": 15.6116,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 71000,
     "validos": 20.0951,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 562924,
     "validos": 13.5469,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 67094,
     "validos": 20.4806,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -1654,290 +1967,344 @@
     "departamento": "LORETO",
     "total": 29937,
     "validos": 16.6286,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 4128,
     "validos": 11.0376,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 1559,
     "validos": 3.7842,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 7598,
     "validos": 10.8492,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 113120,
     "validos": 26.0604,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 12231,
     "validos": 2.886,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 38607,
     "validos": 14.7917,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 8443,
     "validos": 4.7702,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 28619,
     "validos": 36.7166,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 16256,
     "validos": 21.5925,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
-    "region": "ucayali"
-  },
-  {
-    "total": 1882,
-    "validos": 9.13,
-    "candidato_id": "keiko-fujimori",
-    "candidato": "Keiko Fujimori",
-    "color": "#fd6600",
-    "partido": "Fuerza Popular",
-    "partido_id": "fuerza-popular"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 5605,
     "validos": 7.2798,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 31209,
     "validos": 8.5969,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 11030,
     "validos": 9.7848,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 44190,
     "validos": 7.0874,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 17459,
     "validos": 10.8364,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 23109,
     "validos": 5.7848,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 24752,
     "validos": 7.4906,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 78710,
     "validos": 20.4726,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 3924,
+    "validos": 19.036,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "veronika-mendoza",
+    "candidato": "Verónika Mendoza",
+    "color": "#2fc100",
+    "partido": "Juntos por el Perú",
+    "partido_id": "juntos-por-el-peru",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 6654,
     "validos": 7.4082,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 10724,
     "validos": 5.0109,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 10075,
     "validos": 7.766,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 31448,
     "validos": 9.4982,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 24773,
     "validos": 4.9469,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 18044,
     "validos": 5.1071,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 341504,
     "validos": 8.2183,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 24005,
     "validos": 7.3275,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -1949,290 +2316,344 @@
     "departamento": "LORETO",
     "total": 11507,
     "validos": 6.3917,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 2549,
     "validos": 6.8155,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 3089,
     "validos": 7.4987,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 5026,
     "validos": 7.1764,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 27284,
     "validos": 6.2856,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 25434,
     "validos": 6.0012,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 14055,
     "validos": 5.385,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 12684,
     "validos": 7.1663,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 4180,
     "validos": 5.3628,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 5626,
     "validos": 7.473,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
     "partido": "Juntos por el Perú",
     "partido_id": "juntos-por-el-peru",
-    "region": "ucayali"
-  },
-  {
-    "total": 3924,
-    "validos": 19.036,
-    "candidato_id": "veronika-mendoza",
-    "candidato": "Verónika Mendoza",
-    "color": "#2fc100",
-    "partido": "Juntos por el Perú",
-    "partido_id": "juntos-por-el-peru"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 1262,
     "validos": 1.6392,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 8035,
     "validos": 2.2134,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 581,
     "validos": 0.5153,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 7223,
     "validos": 1.1584,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 1395,
     "validos": 0.8658,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 5236,
     "validos": 1.3107,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 5838,
     "validos": 1.7666,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 3402,
     "validos": 0.8849,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 297,
+    "validos": 1.441,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "daniel-urresti",
+    "candidato": "Daniel Urresti",
+    "color": "#004da3",
+    "partido": "Podemos Perú",
+    "partido_id": "podemos-peru",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 622,
     "validos": 0.6924,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 4820,
     "validos": 2.2522,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 1716,
     "validos": 1.3229,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 4884,
     "validos": 1.4752,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 8386,
     "validos": 1.6745,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 6961,
     "validos": 1.97,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 68828,
     "validos": 1.6563,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 5279,
     "validos": 1.6114,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -2244,290 +2665,344 @@
     "departamento": "LORETO",
     "total": 4435,
     "validos": 2.4633,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 302,
     "validos": 0.8076,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 1593,
     "validos": 3.8672,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 1239,
     "validos": 1.7692,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 13144,
     "validos": 3.0281,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 2177,
     "validos": 0.5136,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 4855,
     "validos": 1.8601,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 2076,
     "validos": 1.1729,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 1113,
     "validos": 1.428,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 1415,
     "validos": 1.8794,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
     "partido": "Podemos Perú",
     "partido_id": "podemos-peru",
-    "region": "ucayali"
-  },
-  {
-    "total": 297,
-    "validos": 1.441,
-    "candidato_id": "daniel-urresti",
-    "candidato": "Daniel Urresti",
-    "color": "#004da3",
-    "partido": "Podemos Perú",
-    "partido_id": "podemos-peru"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 1092,
     "validos": 1.4184,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 5647,
     "validos": 1.5553,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 1306,
     "validos": 1.1587,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 11863,
     "validos": 1.9026,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 1800,
     "validos": 1.117,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 4559,
     "validos": 1.1412,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 10619,
     "validos": 3.2131,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 6675,
     "validos": 1.7362,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 1175,
+    "validos": 5.7,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "julio-guzman",
+    "candidato": "Julio Guzmán",
+    "color": "#4f1b7f",
+    "partido": "Partido Morado",
+    "partido_id": "partido-morado",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 843,
     "validos": 0.9386,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 2028,
     "validos": 0.9476,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 2786,
     "validos": 2.1475,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 7271,
     "validos": 2.1959,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 9392,
     "validos": 1.8754,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 6787,
     "validos": 1.9209,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 150299,
     "validos": 3.617,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 5766,
     "validos": 1.7602,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -2539,290 +3014,344 @@
     "departamento": "LORETO",
     "total": 3038,
     "validos": 1.6873,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 458,
     "validos": 1.2251,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 531,
     "validos": 1.2889,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 1097,
     "validos": 1.5664,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 7446,
     "validos": 1.7154,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 2504,
     "validos": 0.5908,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 2952,
     "validos": 1.1312,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 2855,
     "validos": 1.6129,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 1006,
     "validos": 1.2905,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 987,
     "validos": 1.3112,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
     "partido": "Partido Morado",
     "partido_id": "partido-morado",
-    "region": "ucayali"
-  },
-  {
-    "total": 1175,
-    "validos": 5.7,
-    "candidato_id": "julio-guzman",
-    "candidato": "Julio Guzmán",
-    "color": "#4f1b7f",
-    "partido": "Partido Morado",
-    "partido_id": "partido-morado"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 5827,
     "validos": 7.5683,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 4932,
     "validos": 1.3586,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 2525,
     "validos": 2.2399,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 5979,
     "validos": 0.9589,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 3770,
     "validos": 2.34,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 7333,
     "validos": 1.8356,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 2630,
     "validos": 0.7959,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 3233,
     "validos": 0.8408,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 192,
+    "validos": 0.931,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "ollanta-humala",
+    "candidato": "Ollanta Humala",
+    "color": "#f52300",
+    "partido": "Partido Nacionalista",
+    "partido_id": "partido-nacionalista",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 3662,
     "validos": 4.0771,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 4623,
     "validos": 2.1602,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 1100,
     "validos": 0.8477,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 6535,
     "validos": 1.9737,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 2663,
     "validos": 0.5318,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 2370,
     "validos": 0.6708,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 32720,
     "validos": 0.7875,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 3047,
     "validos": 0.9301,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -2834,290 +3363,344 @@
     "departamento": "LORETO",
     "total": 10275,
     "validos": 5.7074,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 423,
     "validos": 1.1314,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 560,
     "validos": 1.3596,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 1036,
     "validos": 1.4793,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 10292,
     "validos": 2.371,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 4814,
     "validos": 1.1358,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 17260,
     "validos": 6.6129,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 4107,
     "validos": 2.3204,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 803,
     "validos": 1.03,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 1143,
     "validos": 1.518,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
     "partido": "Partido Nacionalista",
     "partido_id": "partido-nacionalista",
-    "region": "ucayali"
-  },
-  {
-    "total": 192,
-    "validos": 0.931,
-    "candidato_id": "ollanta-humala",
-    "candidato": "Ollanta Humala",
-    "color": "#f52300",
-    "partido": "Partido Nacionalista",
-    "partido_id": "partido-nacionalista"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 19664,
     "validos": 25.5404,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 90156,
     "validos": 24.8341,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 58705,
     "validos": 52.0785,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 184755,
     "validos": 29.6318,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 79483,
     "validos": 49.3332,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 174718,
     "validos": 43.7363,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 17189,
     "validos": 5.2018,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 138803,
     "validos": 36.1028,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 783,
+    "validos": 3.798,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "pedro-castillo",
+    "candidato": "Pedro Castillo",
+    "color": "#f40201",
+    "partido": "Peru Libre",
+    "partido_id": "peru-libre",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 47617,
     "validos": 53.015,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 76042,
     "validos": 35.532,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 19313,
     "validos": 14.8866,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 72156,
     "validos": 21.7935,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 55171,
     "validos": 11.0172,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 40920,
     "validos": 11.5816,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 297134,
     "validos": 7.1506,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 48348,
     "validos": 14.7584,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -3129,290 +3712,344 @@
     "departamento": "LORETO",
     "total": 8502,
     "validos": 4.7223,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 12498,
     "validos": 33.4181,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 16209,
     "validos": 39.3478,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 24587,
     "validos": 35.1072,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 33785,
     "validos": 7.7835,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 189540,
     "validos": 44.7221,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 54558,
     "validos": 20.9031,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 60202,
     "validos": 34.0131,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 6110,
     "validos": 7.839,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 8545,
     "validos": 11.35,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
     "partido": "Peru Libre",
     "partido_id": "peru-libre",
-    "region": "ucayali"
-  },
-  {
-    "total": 783,
-    "validos": 3.798,
-    "candidato_id": "pedro-castillo",
-    "candidato": "Pedro Castillo",
-    "color": "#f40201",
-    "partido": "Peru Libre",
-    "partido_id": "peru-libre"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 344,
     "validos": 0.4468,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 4029,
     "validos": 1.1097,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 357,
     "validos": 0.3167,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 8894,
     "validos": 1.4264,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 736,
     "validos": 0.4567,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 1999,
     "validos": 0.5004,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 15181,
     "validos": 4.5939,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 4777,
     "validos": 1.2424,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 497,
+    "validos": 2.411,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "alberto-beingolea",
+    "candidato": "Alberto Beingolea",
+    "color": "#009a21",
+    "partido": "Partido Popular Cristiano",
+    "partido_id": "partido-popular-cristiano",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 276,
     "validos": 0.3072,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 1245,
     "validos": 0.5819,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 2673,
     "validos": 2.0603,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 4171,
     "validos": 1.2599,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 6081,
     "validos": 1.2142,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 5652,
     "validos": 1.5996,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 150692,
     "validos": 3.6264,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 3755,
     "validos": 1.1462,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -3424,290 +4061,344 @@
     "departamento": "LORETO",
     "total": 2383,
     "validos": 1.3234,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 198,
     "validos": 0.5292,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 477,
     "validos": 1.1578,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 557,
     "validos": 0.7954,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 4663,
     "validos": 1.0743,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 1533,
     "validos": 0.3618,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 1341,
     "validos": 0.5138,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 2459,
     "validos": 1.3892,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 588,
     "validos": 0.7544,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 1272,
     "validos": 1.6895,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
     "partido": "Partido Popular Cristiano",
     "partido_id": "partido-popular-cristiano",
-    "region": "ucayali"
-  },
-  {
-    "total": 497,
-    "validos": 2.411,
-    "candidato_id": "alberto-beingolea",
-    "candidato": "Alberto Beingolea",
-    "color": "#009a21",
-    "partido": "Partido Popular Cristiano",
-    "partido_id": "partido-popular-cristiano"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 186,
     "validos": 0.2415,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 1579,
     "validos": 0.4349,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 249,
     "validos": 0.2209,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 2288,
     "validos": 0.367,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 345,
     "validos": 0.2142,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 806,
     "validos": 0.2019,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 1735,
     "validos": 0.5251,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 1320,
     "validos": 0.3433,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 137,
+    "validos": 0.665,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "rafael-santos",
+    "candidato": "Rafael Santos",
+    "color": "#0055a2",
+    "partido": "Perú Patria Segura",
+    "partido_id": "peru-patria-segura",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 169,
     "validos": 0.1882,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 615,
     "validos": 0.2874,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 424,
     "validos": 0.3268,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 1429,
     "validos": 0.4316,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 1929,
     "validos": 0.3852,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 1444,
     "validos": 0.4086,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 19335,
     "validos": 0.4652,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 1308,
     "validos": 0.3992,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -3719,290 +4410,344 @@
     "departamento": "LORETO",
     "total": 747,
     "validos": 0.4151,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 131,
     "validos": 0.3503,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 115,
     "validos": 0.2795,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 163,
     "validos": 0.2328,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 1279,
     "validos": 0.2948,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 1011,
     "validos": 0.2384,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 618,
     "validos": 0.2367,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 583,
     "validos": 0.3294,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 182,
     "validos": 0.2334,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 261,
     "validos": 0.3467,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
     "partido": "Perú Patria Segura",
     "partido_id": "peru-patria-segura",
-    "region": "ucayali"
-  },
-  {
-    "total": 137,
-    "validos": 0.665,
-    "candidato_id": "rafael-santos",
-    "candidato": "Rafael Santos",
-    "color": "#0055a2",
-    "partido": "Perú Patria Segura",
-    "partido_id": "peru-patria-segura"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 1793,
     "validos": 2.3289,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 17396,
     "validos": 4.7919,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 1563,
     "validos": 1.3866,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 19710,
     "validos": 3.1611,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 2896,
     "validos": 1.7975,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 8904,
     "validos": 2.229,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 30708,
     "validos": 9.2926,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 5719,
     "validos": 1.4875,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 293,
+    "validos": 1.421,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "daniel-salaverry",
+    "candidato": "Daniel Salaverry",
+    "color": "#ff2600",
+    "partido": "Somos Perú",
+    "partido_id": "somos-peru",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 986,
     "validos": 1.0978,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 6003,
     "validos": 2.805,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 10905,
     "validos": 8.4055,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 10927,
     "validos": 3.3004,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 23103,
     "validos": 4.6137,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 16576,
     "validos": 4.6916,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 315572,
     "validos": 7.5944,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 24078,
     "validos": 7.3497,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -4014,290 +4759,344 @@
     "departamento": "LORETO",
     "total": 16015,
     "validos": 8.8955,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 1166,
     "validos": 3.1178,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 1201,
     "validos": 2.9152,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 2084,
     "validos": 2.9759,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 29767,
     "validos": 6.8578,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 5270,
     "validos": 1.2436,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 8541,
     "validos": 3.2723,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 8068,
     "validos": 4.5581,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 3992,
     "validos": 5.1217,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 7568,
     "validos": 10.0526,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
     "partido": "Somos Perú",
     "partido_id": "somos-peru",
-    "region": "ucayali"
-  },
-  {
-    "total": 293,
-    "validos": 1.421,
-    "candidato_id": "daniel-salaverry",
-    "candidato": "Daniel Salaverry",
-    "color": "#ff2600",
-    "partido": "Somos Perú",
-    "partido_id": "somos-peru"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 413,
     "validos": 0.5363,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 2017,
     "validos": 0.5556,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 1134,
     "validos": 1.0061,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 3824,
     "validos": 0.6132,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 1961,
     "validos": 1.2172,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 2529,
     "validos": 0.6332,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 1248,
     "validos": 0.3779,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 5192,
     "validos": 1.3505,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 74,
+    "validos": 0.359,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "ciro-galvez",
+    "candidato": "Ciro Galvez",
+    "color": "#1022b9",
+    "partido": "Renacimiento Unido",
+    "partido_id": "renacimiento-unido",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 1935,
     "validos": 2.1543,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 1329,
     "validos": 0.621,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 765,
     "validos": 0.5898,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 8263,
     "validos": 2.4957,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 1515,
     "validos": 0.3025,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 1035,
     "validos": 0.2929,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 17080,
     "validos": 0.411,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 1482,
     "validos": 0.4524,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -4309,290 +5108,344 @@
     "departamento": "LORETO",
     "total": 571,
     "validos": 0.3172,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 218,
     "validos": 0.5825,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 209,
     "validos": 0.5072,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 396,
     "validos": 0.5655,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 1657,
     "validos": 0.3816,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 3901,
     "validos": 0.9205,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 1300,
     "validos": 0.4981,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 916,
     "validos": 0.5176,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 221,
     "validos": 0.2834,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 309,
     "validos": 0.4103,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
     "partido": "Renacimiento Unido",
     "partido_id": "renacimiento-unido",
-    "region": "ucayali"
-  },
-  {
-    "total": 74,
-    "validos": 0.359,
-    "candidato_id": "ciro-galvez",
-    "candidato": "Ciro Galvez",
-    "color": "#1022b9",
-    "partido": "Renacimiento Unido",
-    "partido_id": "renacimiento-unido"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 5621,
     "validos": 7.3008,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 31608,
     "validos": 8.7066,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 5641,
     "validos": 5.0044,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 58077,
     "validos": 9.3146,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 8774,
     "validos": 5.4458,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 25946,
     "validos": 6.4949,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 49961,
     "validos": 15.1192,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 21050,
     "validos": 5.475,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 4745,
+    "validos": 23.018,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "rafael-lopez-aliaga",
+    "candidato": "Rafael López Aliaga",
+    "color": "#00aede",
+    "partido": "Renovación Popular",
+    "partido_id": "renovacion-popular",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 3344,
     "validos": 3.7231,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 26507,
     "validos": 12.3858,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 15421,
     "validos": 11.8866,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 31021,
     "validos": 9.3692,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 66886,
     "validos": 13.3564,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 59066,
     "validos": 16.7175,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 699216,
     "validos": 16.8268,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 38904,
     "validos": 11.8755,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -4604,290 +5457,344 @@
     "departamento": "LORETO",
     "total": 11528,
     "validos": 6.4034,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 2644,
     "validos": 7.0702,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 2494,
     "validos": 6.0545,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 5319,
     "validos": 7.5949,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 45137,
     "validos": 10.3985,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 12164,
     "validos": 2.8699,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 22933,
     "validos": 8.7864,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 15964,
     "validos": 9.0195,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 7047,
     "validos": 9.0407,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 6431,
     "validos": 8.5425,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
     "partido": "Renovación Popular",
     "partido_id": "renovacion-popular",
-    "region": "ucayali"
-  },
-  {
-    "total": 4745,
-    "validos": 23.018,
-    "candidato_id": "rafael-lopez-aliaga",
-    "candidato": "Rafael López Aliaga",
-    "color": "#00aede",
-    "partido": "Renovación Popular",
-    "partido_id": "renovacion-popular"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 995,
     "validos": 1.2923,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 1980,
     "validos": 0.5454,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 1884,
     "validos": 1.6715,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 4329,
     "validos": 0.6943,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 1423,
     "validos": 0.8831,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 1154,
     "validos": 0.289,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 1462,
     "validos": 0.4422,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 3991,
     "validos": 1.038,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 90,
+    "validos": 0.437,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "jose-vega",
+    "candidato": "José Vega Antonio",
+    "color": "#ff2600",
+    "partido": "Union Por El Peru",
+    "partido_id": "union-por-el-peru",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 1254,
     "validos": 1.3961,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 2688,
     "validos": 1.256,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 626,
     "validos": 0.4827,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 4306,
     "validos": 1.3004,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 1567,
     "validos": 0.3128,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 1391,
     "validos": 0.3937,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 21175,
     "validos": 0.5096,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 2224,
     "validos": 0.6788,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -4899,290 +5806,344 @@
     "departamento": "LORETO",
     "total": 866,
     "validos": 0.4811,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 1557,
     "validos": 4.1636,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 233,
     "validos": 0.5653,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 538,
     "validos": 0.7682,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 1684,
     "validos": 0.388,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 3502,
     "validos": 0.8262,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 2728,
     "validos": 1.0453,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 1421,
     "validos": 0.8028,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 319,
     "validos": 0.4092,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 806,
     "validos": 1.0706,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
     "partido": "Union Por El Peru",
     "partido_id": "union-por-el-peru",
-    "region": "ucayali"
-  },
-  {
-    "total": 90,
-    "validos": 0.437,
-    "candidato_id": "jose-vega",
-    "candidato": "José Vega Antonio",
-    "color": "#ff2600",
-    "partido": "Union Por El Peru",
-    "partido_id": "union-por-el-peru"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
     "departamento": "AMAZONAS",
     "total": 3035,
     "validos": 3.9419,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "amazonas"
+    "region": "amazonas",
+    "conteo": 54.6606
   },
   {
     "departamento": "ANCASH",
     "total": 21450,
     "validos": 5.9084,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "ancash"
+    "region": "ancash",
+    "conteo": 77.6273
   },
   {
     "departamento": "APURIMAC",
     "total": 1773,
     "validos": 1.5729,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "apurimac"
+    "region": "apurimac",
+    "conteo": 67.2
   },
   {
     "departamento": "AREQUIPA",
     "total": 25336,
     "validos": 4.0636,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "arequipa"
+    "region": "arequipa",
+    "conteo": 77.8228
   },
   {
     "departamento": "AYACUCHO",
     "total": 4076,
     "validos": 2.5301,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "ayacucho"
+    "region": "ayacucho",
+    "conteo": 58.8028
   },
   {
     "departamento": "CAJAMARCA",
     "total": 11871,
     "validos": 2.9717,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "cajamarca"
+    "region": "cajamarca",
+    "conteo": 74.5037
   },
   {
     "departamento": "CALLAO",
     "total": 27994,
     "validos": 8.4715,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "callao"
+    "region": "callao",
+    "conteo": 39.4225
   },
   {
     "departamento": "CUSCO",
     "total": 9477,
     "validos": 2.4649,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "cusco"
+    "region": "cusco",
+    "conteo": 60.0113
+  },
+  {
+    "departamento": "EXTRANJERO",
+    "total": 1090,
+    "validos": 5.288,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "george-forsyth",
+    "candidato": "George Forsyth",
+    "color": "#ff2607",
+    "partido": "Victoria Nacional",
+    "partido_id": "victoria-nacional",
+    "region": "extranjero"
   },
   {
     "departamento": "HUANCAVELICA",
     "total": 1616,
     "validos": 1.7992,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "huancavelica"
+    "region": "huancavelica",
+    "conteo": 59.3236
   },
   {
     "departamento": "HUANUCO",
     "total": 9937,
     "validos": 4.6434,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "huanuco"
+    "region": "huanuco",
+    "conteo": 70.4047
   },
   {
     "departamento": "ICA",
     "total": 11375,
     "validos": 8.7678,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "ica"
+    "region": "ica",
+    "conteo": 32.2087
   },
   {
     "departamento": "JUNIN",
     "total": 17417,
     "validos": 5.2605,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "junin"
+    "region": "junin",
+    "conteo": 56.3212
   },
   {
     "departamento": "LA LIBERTAD",
     "total": 22945,
     "validos": 4.582,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "la libertad"
+    "region": "la-libertad",
+    "conteo": 63.5202
   },
   {
     "departamento": "LAMBAYEQUE",
     "total": 17039,
     "validos": 4.8226,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "lambayeque"
+    "region": "lambayeque",
+    "conteo": 62.1662
   },
   {
     "departamento": "LIMA",
     "total": 301632,
     "validos": 7.2589,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "lima"
+    "region": "lima",
+    "conteo": 80.2086
   },
   {
     "departamento": "LIMA-PROVINCIAS",
     "total": 25627,
     "validos": 7.8227,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -5194,119 +6155,364 @@
     "departamento": "LORETO",
     "total": 26261,
     "validos": 14.5868,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "loreto"
+    "region": "loreto",
+    "conteo": 50.1672
   },
   {
     "departamento": "MADRE DE DIOS",
     "total": 2066,
     "validos": 5.5242,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "madre de dios"
+    "region": "madre-de-dios",
+    "conteo": 56.0606
   },
   {
     "departamento": "MOQUEGUA",
     "total": 1159,
     "validos": 2.8132,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "moquegua"
+    "region": "moquegua",
+    "conteo": 42.1756
   },
   {
     "departamento": "PASCO",
     "total": 3156,
     "validos": 4.5063,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "pasco"
+    "region": "pasco",
+    "conteo": 64.7482
   },
   {
     "departamento": "PIURA",
     "total": 18477,
     "validos": 4.2567,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "piura"
+    "region": "piura",
+    "conteo": 60.6111
   },
   {
     "departamento": "PUNO",
     "total": 4271,
     "validos": 1.0077,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "puno"
+    "region": "puno",
+    "conteo": 67.1831
   },
   {
     "departamento": "SAN MARTIN",
     "total": 13037,
     "validos": 4.995,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "san martin"
+    "region": "san-martin",
+    "conteo": 85.1463
   },
   {
     "departamento": "TACNA",
     "total": 7132,
     "validos": 4.0296,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "tacna"
+    "region": "tacna",
+    "conteo": 92.7105
   },
   {
     "departamento": "TUMBES",
     "total": 3103,
     "validos": 3.981,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "tumbes"
+    "region": "tumbes",
+    "conteo": 81.5331
   },
   {
     "departamento": "UCAYALI",
     "total": 5083,
     "validos": 6.7518,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
     "partido_id": "victoria-nacional",
-    "region": "ucayali"
+    "region": "ucayali",
+    "conteo": 39.4837
   },
   {
-    "total": 1090,
-    "validos": 5.288,
+    "departamento": "TOTAL",
+    "total": 927392,
+    "validos": 8.9587,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "yonhi-lescano",
+    "candidato": "Yonhy Lescano",
+    "color": "#000000",
+    "partido": "Acción Popular",
+    "partido_id": "accion-popular",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 605553,
+    "validos": 5.8497,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "cesar-acuna",
+    "candidato": "César Acuña",
+    "color": "#0050a0",
+    "partido": "Alianza para el Progreso",
+    "partido_id": "alianza-para-el-progreso",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 1321115,
+    "validos": 12.762,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "hernando-de-soto",
+    "candidato": "Hernando de Soto",
+    "color": "#ff2c79",
+    "partido": "Avanza País",
+    "partido_id": "avanza-pais",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 35688,
+    "validos": 0.3447,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "andres-alcantara",
+    "candidato": "Andres Alcantara",
+    "color": "#fff000",
+    "partido": "Democracia Directa",
+    "partido_id": "democracia-directa",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 43268,
+    "validos": 0.418,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "marco-arana",
+    "candidato": "Marco Arana",
+    "color": "#4e5405",
+    "partido": "Frente Amplio",
+    "partido_id": "frente-amplio",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 1344384,
+    "validos": 12.9869,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "keiko-fujimori",
+    "candidato": "Keiko Fujimori",
+    "color": "#fd6600",
+    "partido": "Fuerza Popular",
+    "partido_id": "fuerza-popular",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 818649,
+    "validos": 7.9082,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "veronika-mendoza",
+    "candidato": "Verónika Mendoza",
+    "color": "#2fc100",
+    "partido": "Juntos por el Perú",
+    "partido_id": "juntos-por-el-peru",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 167114,
+    "validos": 1.6143,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "daniel-urresti",
+    "candidato": "Daniel Urresti",
+    "color": "#004da3",
+    "partido": "Podemos Perú",
+    "partido_id": "podemos-peru",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 252782,
+    "validos": 2.4419,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "julio-guzman",
+    "candidato": "Julio Guzmán",
+    "color": "#4f1b7f",
+    "partido": "Partido Morado",
+    "partido_id": "partido-morado",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 143854,
+    "validos": 1.3896,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "ollanta-humala",
+    "candidato": "Ollanta Humala",
+    "color": "#f52300",
+    "partido": "Partido Nacionalista",
+    "partido_id": "partido-nacionalista",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 1835493,
+    "validos": 17.731,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "pedro-castillo",
+    "candidato": "Pedro Castillo",
+    "color": "#f40201",
+    "partido": "Peru Libre",
+    "partido_id": "peru-libre",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 226830,
+    "validos": 2.1911,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "alberto-beingolea",
+    "candidato": "Alberto Beingolea",
+    "color": "#009a21",
+    "partido": "Partido Popular Cristiano",
+    "partido_id": "partido-popular-cristiano",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 40388,
+    "validos": 0.3901,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "rafael-santos",
+    "candidato": "Rafael Santos",
+    "color": "#0055a2",
+    "partido": "Perú Patria Segura",
+    "partido_id": "peru-patria-segura",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 580804,
+    "validos": 5.6107,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "daniel-salaverry",
+    "candidato": "Daniel Salaverry",
+    "color": "#ff2600",
+    "partido": "Somos Perú",
+    "partido_id": "somos-peru",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 61494,
+    "validos": 0.594,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "ciro-galvez",
+    "candidato": "Ciro Galvez",
+    "color": "#1022b9",
+    "partido": "Renacimiento Unido",
+    "partido_id": "renacimiento-unido",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 1283449,
+    "validos": 12.3982,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "rafael-lopez-aliaga",
+    "candidato": "Rafael López Aliaga",
+    "color": "#00aede",
+    "partido": "Renovación Popular",
+    "partido_id": "renovacion-popular",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 66193,
+    "validos": 0.6394,
+    "hora": "11:20 h - 12/04/2021",
+    "candidato_id": "jose-vega",
+    "candidato": "José Vega Antonio",
+    "color": "#ff2600",
+    "partido": "Union Por El Peru",
+    "partido_id": "union-por-el-peru",
+    "region": "total",
+    "conteo": 67.7309
+  },
+  {
+    "departamento": "TOTAL",
+    "total": 597435,
+    "validos": 5.7713,
+    "hora": "11:20 h - 12/04/2021",
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
     "partido": "Victoria Nacional",
-    "partido_id": "victoria-nacional"
+    "partido_id": "victoria-nacional",
+    "region": "total",
+    "conteo": 67.7309
   }
 ]
