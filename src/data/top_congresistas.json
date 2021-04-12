@@ -7,7 +7,7 @@
         "partido": "Podemos",
         "partido_id": "podemos-peru",
         "color": "#004da3",
-        "total_votos": 484188
+        "total_votos": 588763
     },
     {
         "eleccion": "2020",
@@ -17,7 +17,7 @@
         "partido": "Partido Morado",
         "partido_id": "partido-morado",
         "color": "#4f1b7f",
-        "total_votos": 232731
+        "total_votos": 266654
 
     },
     {
@@ -28,7 +28,7 @@
         "partido": "Fuerza Popular",
         "partido_id": "fuerza-popular",
         "color": "#fd6600",
-        "total_votos": 152485
+        "total_votos": 181640
 
     },
     {
@@ -39,7 +39,7 @@
         "partido": "Pdemos perú",
         "partido_id": "podemos-peru",
         "color": "#004da3",
-        "total_votos": 123248
+        "total_votos": 123926
 
     },
     {
@@ -50,7 +50,7 @@
         "partido": "Frente Amplio",
         "partido_id": "frente-amplio",
         "color": "#2fc100ba",
-        "total_votos": 103486
+        "total_votos": 110790
 
     },
     {
@@ -61,7 +61,7 @@
         "partido": "Fuerza Popular",
         "partido_id": "fuerza-popular",
         "color": "#fd6600",
-        "total_votos": 526545
+        "total_votos": 326037
 
     },
     {
@@ -72,7 +72,7 @@
         "partido": "Peruanos por el Kambio",
         "partido_id": "peruanos-por-el-kambio",
         "color": "#0055a9",
-        "total_votos": 128414
+        "total_votos": 215233
 
     },
     {
@@ -83,7 +83,7 @@
         "partido": "Fuerza Popular",
         "partido_id": "fuerza-popular",
         "color": "#fd6600",
-        "total_votos": 114379
+        "total_votos": 186242
 
     },    
     {
@@ -94,7 +94,7 @@
         "partido": "Fuerza Popular",
         "partido_id": "fuerza-popular",
         "color": "#fd6600",
-        "total_votos": 86222
+        "total_votos": 139912
     },
     {
         "eleccion": "2016",
@@ -115,7 +115,7 @@
         "partido": "Fuerza 2011",
         "partido_id": "fuerza-2011",
         "color": "#fd6600",
-        "total_votos": 329561
+        "total_votos": 381049
 
     },
     {
@@ -126,7 +126,7 @@
         "partido": "Alianza por el Gran Cambio",
         "partido_id": "alianza-por-el-gran-cambio",
         "color": "#fdc402",
-        "total_votos": 185069
+        "total_votos": 215066
 
     },
     {
@@ -137,7 +137,7 @@
         "partido": "Alianza por el Gran Cambio",
         "partido_id": "alianza-por-el-gran-cambio",
         "color": "#0055a9",
-        "total_votos": 137576
+        "total_votos": 159397
     },
     {
         "eleccion": "2011",
@@ -147,7 +147,7 @@
         "partido": "Perú Posible",
         "partido_id": "peru-posible",
         "color": "#006200",
-        "total_votos": 112869
+        "total_votos": 130620
 
     },
     {
