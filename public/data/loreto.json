@@ -100,10 +100,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 815,
-    "validos": 91.5815,
+    "total_votos": 929,
+    "validos": 11.601,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -361,7 +361,7 @@
   },
   {
     "total_votos": 798,
-    "validos": 121.7349,
+    "validos": 15.255,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "yonhi-lescano",
@@ -440,10 +440,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 1051,
-    "validos": 86.8231,
+    "total_votos": 1282,
+    "validos": 8.122,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -500,10 +500,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 4934,
-    "validos": 439.4714,
+    "total_votos": 5110,
+    "validos": 8.918,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -580,10 +580,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 1149,
-    "validos": 88.496,
+    "total_votos": 1252,
+    "validos": 7.592,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -600,10 +600,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 758,
-    "validos": 59.8289,
+    "total_votos": 1265,
+    "validos": 8.688,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -841,7 +841,7 @@
   },
   {
     "total_votos": 316,
-    "validos": 14.5897,
+    "validos": 4.617,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "yonhi-lescano",
@@ -940,10 +940,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 932,
-    "validos": 171.022,
+    "total_votos": 1190,
+    "validos": 18.088,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -1160,10 +1160,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 1436,
-    "validos": 284.3136,
+    "total_votos": 1551,
+    "validos": 19.368,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1421,7 +1421,7 @@
   },
   {
     "total_votos": 1195,
-    "validos": 272.9977,
+    "validos": 22.845,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "cesar-acuna",
@@ -1500,10 +1500,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 1407,
-    "validos": 155.6001,
+    "total_votos": 1768,
+    "validos": 11.201,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1560,10 +1560,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 6203,
-    "validos": 694.5499,
+    "total_votos": 6399,
+    "validos": 11.167,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1640,10 +1640,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 1865,
-    "validos": 233.1436,
+    "total_votos": 2071,
+    "validos": 12.558,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1660,10 +1660,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 1108,
-    "validos": 127.83,
+    "total_votos": 1594,
+    "validos": 10.947,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1901,7 +1901,7 @@
   },
   {
     "total_votos": 307,
-    "validos": 13.772,
+    "validos": 4.486,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "cesar-acuna",
@@ -2000,10 +2000,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 493,
-    "validos": 47.8555,
+    "total_votos": 632,
+    "validos": 9.606,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -2220,10 +2220,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 454,
-    "validos": 28.4159,
+    "total_votos": 492,
+    "validos": 6.144,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -2560,10 +2560,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 794,
-    "validos": 49.5535,
+    "total_votos": 982,
+    "validos": 6.221,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -2620,10 +2620,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 6720,
-    "validos": 815.2032,
+    "total_votos": 6885,
+    "validos": 12.015,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -2700,10 +2700,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 1304,
-    "validos": 113.9826,
+    "total_votos": 1398,
+    "validos": 8.477,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -2720,10 +2720,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 762,
-    "validos": 60.4571,
+    "total_votos": 1094,
+    "validos": 7.513,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -2961,7 +2961,7 @@
   },
   {
     "total_votos": 174,
-    "validos": 4.4231,
+    "validos": 2.542,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "hernando-de-soto",
@@ -3060,10 +3060,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 197,
-    "validos": 7.6416,
+    "total_votos": 251,
+    "validos": 3.815,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -3280,10 +3280,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 22,
-    "validos": 0.0667,
+    "total_votos": 23,
+    "validos": 0.287,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -3541,7 +3541,7 @@
   },
   {
     "total_votos": 11,
-    "validos": 0.0231,
+    "validos": 0.21,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "andres-alcantara",
@@ -3620,10 +3620,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 45,
-    "validos": 0.1593,
+    "total_votos": 59,
+    "validos": 0.374,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -3680,10 +3680,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 205,
-    "validos": 0.7585,
+    "total_votos": 215,
+    "validos": 0.375,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -3760,10 +3760,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 53,
-    "validos": 0.1881,
+    "total_votos": 56,
+    "validos": 0.34,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -3780,10 +3780,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 31,
-    "validos": 0.1001,
+    "total_votos": 55,
+    "validos": 0.378,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -4021,7 +4021,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.0053,
+    "validos": 0.088,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "andres-alcantara",
@@ -4120,10 +4120,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 8,
-    "validos": 0.0126,
+    "total_votos": 9,
+    "validos": 0.137,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -4340,10 +4340,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 38,
-    "validos": 0.1991,
+    "total_votos": 40,
+    "validos": 0.5,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -4601,7 +4601,7 @@
   },
   {
     "total_votos": 21,
-    "validos": 0.0842,
+    "validos": 0.401,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "marco-arana",
@@ -4680,10 +4680,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 43,
-    "validos": 0.1453,
+    "total_votos": 56,
+    "validos": 0.355,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -4740,10 +4740,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 186,
-    "validos": 0.625,
+    "total_votos": 191,
+    "validos": 0.333,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -4820,10 +4820,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 46,
-    "validos": 0.1417,
+    "total_votos": 48,
+    "validos": 0.291,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -4840,10 +4840,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 23,
-    "validos": 0.055,
+    "total_votos": 44,
+    "validos": 0.302,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -5081,7 +5081,7 @@
   },
   {
     "total_votos": 12,
-    "validos": 0.021,
+    "validos": 0.175,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "marco-arana",
@@ -5180,10 +5180,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 17,
-    "validos": 0.057,
+    "total_votos": 20,
+    "validos": 0.304,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -5400,10 +5400,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 608,
-    "validos": 50.9686,
+    "total_votos": 692,
+    "validos": 8.641,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -5661,7 +5661,7 @@
   },
   {
     "total_votos": 1406,
-    "validos": 377.9047,
+    "validos": 26.878,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "keiko-fujimori",
@@ -5740,10 +5740,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 2852,
-    "validos": 639.3043,
+    "total_votos": 3550,
+    "validos": 22.49,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -5800,10 +5800,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 7373,
-    "validos": 981.2726,
+    "total_votos": 7681,
+    "validos": 13.405,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -5880,10 +5880,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 2823,
-    "validos": 534.1681,
+    "total_votos": 3154,
+    "validos": 19.126,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -5900,10 +5900,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 1737,
-    "validos": 314.1538,
+    "total_votos": 2678,
+    "validos": 18.392,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -6141,7 +6141,7 @@
   },
   {
     "total_votos": 1095,
-    "validos": 175.189,
+    "validos": 15.999,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "keiko-fujimori",
@@ -6240,10 +6240,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 832,
-    "validos": 136.2899,
+    "total_votos": 1055,
+    "validos": 16.036,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -6460,10 +6460,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 560,
-    "validos": 43.2376,
+    "total_votos": 642,
+    "validos": 8.017,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -6721,7 +6721,7 @@
   },
   {
     "total_votos": 384,
-    "validos": 28.1894,
+    "validos": 7.341,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "veronika-mendoza",
@@ -6800,10 +6800,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 651,
-    "validos": 33.3117,
+    "total_votos": 827,
+    "validos": 5.239,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -6860,10 +6860,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 3639,
-    "validos": 239.0459,
+    "total_votos": 3784,
+    "validos": 6.604,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -6940,10 +6940,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 803,
-    "validos": 43.2175,
+    "total_votos": 893,
+    "validos": 5.415,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -6960,10 +6960,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 499,
-    "validos": 25.928,
+    "total_votos": 792,
+    "validos": 5.439,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -7201,7 +7201,7 @@
   },
   {
     "total_votos": 455,
-    "validos": 30.2484,
+    "validos": 6.648,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "veronika-mendoza",
@@ -7300,10 +7300,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 349,
-    "validos": 23.9798,
+    "total_votos": 482,
+    "validos": 7.326,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -7520,10 +7520,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 154,
-    "validos": 3.2694,
+    "total_votos": 172,
+    "validos": 2.148,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -7781,7 +7781,7 @@
   },
   {
     "total_votos": 55,
-    "validos": 0.578,
+    "validos": 1.051,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "daniel-urresti",
@@ -7860,10 +7860,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 427,
-    "validos": 14.3301,
+    "total_votos": 530,
+    "validos": 3.358,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -7920,10 +7920,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 1314,
-    "validos": 31.1681,
+    "total_votos": 1364,
+    "validos": 2.38,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -8000,10 +8000,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 373,
-    "validos": 9.325,
+    "total_votos": 410,
+    "validos": 2.486,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -8020,10 +8020,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 239,
-    "validos": 5.9487,
+    "total_votos": 377,
+    "validos": 2.589,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -8261,7 +8261,7 @@
   },
   {
     "total_votos": 62,
-    "validos": 0.5617,
+    "validos": 0.906,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "daniel-urresti",
@@ -8360,10 +8360,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 103,
-    "validos": 2.0888,
+    "total_votos": 139,
+    "validos": 2.113,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -8580,10 +8580,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 192,
-    "validos": 5.0822,
+    "total_votos": 202,
+    "validos": 2.522,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -8841,7 +8841,7 @@
   },
   {
     "total_votos": 39,
-    "validos": 0.2909,
+    "validos": 0.746,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "julio-guzman",
@@ -8920,10 +8920,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 217,
-    "validos": 3.702,
+    "total_votos": 266,
+    "validos": 1.685,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -8980,10 +8980,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 1021,
-    "validos": 18.817,
+    "total_votos": 1057,
+    "validos": 1.845,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -9060,10 +9060,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 256,
-    "validos": 4.393,
+    "total_votos": 277,
+    "validos": 1.68,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -9080,10 +9080,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 164,
-    "validos": 2.8011,
+    "total_votos": 248,
+    "validos": 1.703,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -9321,7 +9321,7 @@
   },
   {
     "total_votos": 44,
-    "validos": 0.2829,
+    "validos": 0.643,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "julio-guzman",
@@ -9420,10 +9420,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 72,
-    "validos": 1.021,
+    "total_votos": 97,
+    "validos": 1.474,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -9640,10 +9640,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 219,
-    "validos": 6.6116,
+    "total_votos": 247,
+    "validos": 3.084,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -9901,7 +9901,7 @@
   },
   {
     "total_votos": 292,
-    "validos": 16.2994,
+    "validos": 5.582,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "ollanta-humala",
@@ -9980,10 +9980,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 837,
-    "validos": 55.0662,
+    "total_votos": 1006,
+    "validos": 6.373,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -10040,10 +10040,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 1198,
-    "validos": 25.9127,
+    "total_votos": 1240,
+    "validos": 2.164,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -10120,10 +10120,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 576,
-    "validos": 22.2394,
+    "total_votos": 645,
+    "validos": 3.911,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -10140,10 +10140,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 660,
-    "validos": 45.3552,
+    "total_votos": 1038,
+    "validos": 7.129,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -10381,7 +10381,7 @@
   },
   {
     "total_votos": 2513,
-    "validos": 922.7233,
+    "validos": 36.718,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "ollanta-humala",
@@ -10480,10 +10480,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 367,
-    "validos": 26.5194,
+    "total_votos": 442,
+    "validos": 6.718,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -10700,10 +10700,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 761,
-    "validos": 79.8441,
+    "total_votos": 848,
+    "validos": 10.589,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -10961,7 +10961,7 @@
   },
   {
     "total_votos": 95,
-    "validos": 1.7252,
+    "validos": 1.816,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "pedro-castillo",
@@ -11040,10 +11040,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 348,
-    "validos": 9.5178,
+    "total_votos": 425,
+    "validos": 2.692,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -11100,10 +11100,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 1796,
-    "validos": 58.2263,
+    "total_votos": 1843,
+    "validos": 3.216,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -11180,10 +11180,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 388,
-    "validos": 10.0919,
+    "total_votos": 442,
+    "validos": 2.68,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -11200,10 +11200,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 300,
-    "validos": 9.372,
+    "total_votos": 466,
+    "validos": 3.2,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -11441,7 +11441,7 @@
   },
   {
     "total_votos": 622,
-    "validos": 56.5274,
+    "validos": 9.088,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "pedro-castillo",
@@ -11540,10 +11540,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 886,
-    "validos": 154.5538,
+    "total_votos": 1198,
+    "validos": 18.209,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -11760,10 +11760,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 34,
-    "validos": 0.1595,
+    "total_votos": 36,
+    "validos": 0.45,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -12021,7 +12021,7 @@
   },
   {
     "total_votos": 53,
-    "validos": 0.5369,
+    "validos": 1.013,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "alberto-beingolea",
@@ -12100,10 +12100,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 133,
-    "validos": 1.3898,
+    "total_votos": 165,
+    "validos": 1.045,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -12160,10 +12160,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 1080,
-    "validos": 21.06,
+    "total_votos": 1121,
+    "validos": 1.956,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -12240,10 +12240,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 189,
-    "validos": 2.3946,
+    "total_votos": 208,
+    "validos": 1.261,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -12260,10 +12260,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 114,
-    "validos": 1.3532,
+    "total_votos": 166,
+    "validos": 1.14,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -12501,7 +12501,7 @@
   },
   {
     "total_votos": 24,
-    "validos": 0.0842,
+    "validos": 0.351,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "alberto-beingolea",
@@ -12600,10 +12600,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 17,
-    "validos": 0.057,
+    "total_votos": 25,
+    "validos": 0.38,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -12820,10 +12820,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 22,
-    "validos": 0.0667,
+    "total_votos": 25,
+    "validos": 0.312,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -13081,7 +13081,7 @@
   },
   {
     "total_votos": 19,
-    "validos": 0.069,
+    "validos": 0.363,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "rafael-santos",
@@ -13160,10 +13160,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 50,
-    "validos": 0.1965,
+    "total_votos": 65,
+    "validos": 0.412,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -13220,10 +13220,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 260,
-    "validos": 1.2194,
+    "total_votos": 269,
+    "validos": 0.469,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -13300,10 +13300,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 55,
-    "validos": 0.203,
+    "total_votos": 60,
+    "validos": 0.364,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -13320,10 +13320,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 35,
-    "validos": 0.1274,
+    "total_votos": 60,
+    "validos": 0.412,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -13561,7 +13561,7 @@
   },
   {
     "total_votos": 13,
-    "validos": 0.0247,
+    "validos": 0.19,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "rafael-santos",
@@ -13660,10 +13660,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 16,
-    "validos": 0.0504,
+    "total_votos": 23,
+    "validos": 0.35,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -13880,10 +13880,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 182,
-    "validos": 4.5664,
+    "total_votos": 206,
+    "validos": 2.572,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -14141,7 +14141,7 @@
   },
   {
     "total_votos": 72,
-    "validos": 0.9907,
+    "validos": 1.376,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "daniel-salaverry",
@@ -14220,10 +14220,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 1232,
-    "validos": 119.2946,
+    "total_votos": 1515,
+    "validos": 9.598,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -14280,10 +14280,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 5982,
-    "validos": 645.9364,
+    "total_votos": 6211,
+    "validos": 10.839,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -14360,10 +14360,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 1571,
-    "validos": 165.4263,
+    "total_votos": 1748,
+    "validos": 10.6,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -14380,10 +14380,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 978,
-    "validos": 99.5897,
+    "total_votos": 1453,
+    "validos": 9.979,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -14621,7 +14621,7 @@
   },
   {
     "total_votos": 145,
-    "validos": 3.0726,
+    "validos": 2.119,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "daniel-salaverry",
@@ -14720,10 +14720,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 146,
-    "validos": 4.1975,
+    "total_votos": 177,
+    "validos": 2.69,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -14940,10 +14940,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 17,
-    "validos": 0.0398,
+    "total_votos": 19,
+    "validos": 0.237,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -15201,7 +15201,7 @@
   },
   {
     "total_votos": 18,
-    "validos": 0.0619,
+    "validos": 0.344,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "ciro-galvez",
@@ -15280,10 +15280,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 28,
-    "validos": 0.0616,
+    "total_votos": 33,
+    "validos": 0.209,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -15340,10 +15340,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 183,
-    "validos": 0.6039,
+    "total_votos": 188,
+    "validos": 0.328,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -15420,10 +15420,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 38,
-    "validos": 0.0969,
+    "total_votos": 44,
+    "validos": 0.267,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -15440,10 +15440,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 36,
-    "validos": 0.135,
+    "total_votos": 58,
+    "validos": 0.398,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -15681,7 +15681,7 @@
   },
   {
     "total_votos": 5,
-    "validos": 0.0036,
+    "validos": 0.073,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "ciro-galvez",
@@ -15780,10 +15780,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 17,
-    "validos": 0.057,
+    "total_votos": 20,
+    "validos": 0.304,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -16000,10 +16000,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 449,
-    "validos": 27.7976,
+    "total_votos": 495,
+    "validos": 6.181,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -16261,7 +16261,7 @@
   },
   {
     "total_votos": 90,
-    "validos": 1.5489,
+    "validos": 1.721,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "rafael-lopez-aliaga",
@@ -16340,10 +16340,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 656,
-    "validos": 33.8234,
+    "total_votos": 821,
+    "validos": 5.201,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -16400,10 +16400,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 4620,
-    "validos": 385.308,
+    "total_votos": 4786,
+    "validos": 8.352,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -16480,10 +16480,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 874,
-    "validos": 51.1989,
+    "total_votos": 969,
+    "validos": 5.876,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -16500,10 +16500,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 621,
-    "validos": 40.1539,
+    "total_votos": 949,
+    "validos": 6.517,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -16741,7 +16741,7 @@
   },
   {
     "total_votos": 211,
-    "validos": 6.5051,
+    "validos": 3.083,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "rafael-lopez-aliaga",
@@ -16840,10 +16840,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 203,
-    "validos": 8.1139,
+    "total_votos": 270,
+    "validos": 4.104,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -17060,10 +17060,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 36,
-    "validos": 0.1786,
+    "total_votos": 39,
+    "validos": 0.487,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -17321,7 +17321,7 @@
   },
   {
     "total_votos": 12,
-    "validos": 0.0275,
+    "validos": 0.229,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "jose-vega",
@@ -17400,10 +17400,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 55,
-    "validos": 0.2376,
+    "total_votos": 71,
+    "validos": 0.45,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -17460,10 +17460,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 241,
-    "validos": 1.0483,
+    "total_votos": 254,
+    "validos": 0.443,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -17540,10 +17540,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 84,
-    "validos": 0.4729,
+    "total_votos": 91,
+    "validos": 0.552,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -17560,10 +17560,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 58,
-    "validos": 0.3503,
+    "total_votos": 81,
+    "validos": 0.556,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -17801,7 +17801,7 @@
   },
   {
     "total_votos": 18,
-    "validos": 0.0473,
+    "validos": 0.263,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "jose-vega",
@@ -17900,10 +17900,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 16,
-    "validos": 0.0504,
+    "total_votos": 24,
+    "validos": 0.365,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -18120,10 +18120,10 @@
     "distrito_id": "teniente cesar lopez rojas"
   },
   {
-    "total_votos": 1254,
-    "validos": 216.8041,
+    "total_votos": 1350,
+    "validos": 16.858,
     "total_actas": 196,
-    "conteo": 25,
+    "conteo": 27.551,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -18381,7 +18381,7 @@
   },
   {
     "total_votos": 571,
-    "validos": 62.3304,
+    "validos": 10.916,
     "total_actas": 53,
     "conteo": 92.4528,
     "candidato_id": "george-forsyth",
@@ -18460,10 +18460,10 @@
     "distrito_id": "alto nanay"
   },
   {
-    "total_votos": 1897,
-    "validos": 282.8427,
+    "total_votos": 2364,
+    "validos": 14.976,
     "total_actas": 165,
-    "conteo": 50.303,
+    "conteo": 63.0303,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -18520,10 +18520,10 @@
     "distrito_id": "indiana"
   },
   {
-    "total_votos": 8442,
-    "validos": 1286.4764,
+    "total_votos": 8703,
+    "validos": 15.188,
     "total_actas": 415,
-    "conteo": 78.7952,
+    "conteo": 81.4458,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -18600,10 +18600,10 @@
     "distrito_id": "napo"
   },
   {
-    "total_votos": 2472,
-    "validos": 409.5857,
+    "total_votos": 2725,
+    "validos": 16.524,
     "total_actas": 212,
-    "conteo": 49.0566,
+    "conteo": 53.3019,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -18620,10 +18620,10 @@
     "distrito_id": "punchana"
   },
   {
-    "total_votos": 1481,
-    "validos": 228.385,
+    "total_votos": 2143,
+    "validos": 14.717,
     "total_actas": 272,
-    "conteo": 24.6324,
+    "conteo": 37.8676,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -18861,7 +18861,7 @@
   },
   {
     "total_votos": 822,
-    "validos": 98.7304,
+    "validos": 12.011,
     "total_actas": 63,
     "conteo": 82.5397,
     "candidato_id": "george-forsyth",
@@ -18960,10 +18960,10 @@
     "distrito_id": "yaquerana"
   },
   {
-    "total_votos": 408,
-    "validos": 32.7746,
+    "total_votos": 525,
+    "validos": 7.98,
     "total_actas": 61,
-    "conteo": 63.9344,
+    "conteo": 86.8852,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",

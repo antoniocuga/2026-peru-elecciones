@@ -40,10 +40,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 202,
-    "validos": 11.813,
+    "total_votos": 218,
+    "validos": 5.738,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -61,7 +61,7 @@
   },
   {
     "total_votos": 506,
-    "validos": 37.4541,
+    "validos": 7.402,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "yonhi-lescano",
@@ -81,7 +81,7 @@
   },
   {
     "total_votos": 161,
-    "validos": 9.792,
+    "validos": 6.082,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "yonhi-lescano",
@@ -101,7 +101,7 @@
   },
   {
     "total_votos": 195,
-    "validos": 12.0607,
+    "validos": 6.185,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "yonhi-lescano",
@@ -121,7 +121,7 @@
   },
   {
     "total_votos": 355,
-    "validos": 34.8823,
+    "validos": 9.826,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "yonhi-lescano",
@@ -141,7 +141,7 @@
   },
   {
     "total_votos": 227,
-    "validos": 24.2935,
+    "validos": 10.702,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "yonhi-lescano",
@@ -160,10 +160,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 2409,
-    "validos": 194.5027,
+    "total_votos": 2590,
+    "validos": 8.001,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -181,7 +181,7 @@
   },
   {
     "total_votos": 186,
-    "validos": 6.1306,
+    "validos": 3.296,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "yonhi-lescano",
@@ -200,10 +200,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 115,
+    "validos": 7.818,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -221,7 +221,7 @@
   },
   {
     "total_votos": 152,
-    "validos": 8.8145,
+    "validos": 5.799,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "yonhi-lescano",
@@ -241,7 +241,7 @@
   },
   {
     "total_votos": 306,
-    "validos": 18.6568,
+    "validos": 6.097,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "yonhi-lescano",
@@ -300,10 +300,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 519,
-    "validos": 77.9849,
+    "total_votos": 549,
+    "validos": 14.451,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -321,7 +321,7 @@
   },
   {
     "total_votos": 802,
-    "validos": 94.0906,
+    "validos": 11.732,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "cesar-acuna",
@@ -341,7 +341,7 @@
   },
   {
     "total_votos": 373,
-    "validos": 52.5594,
+    "validos": 14.091,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "cesar-acuna",
@@ -361,7 +361,7 @@
   },
   {
     "total_votos": 192,
-    "validos": 11.6909,
+    "validos": 6.089,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "cesar-acuna",
@@ -381,7 +381,7 @@
   },
   {
     "total_votos": 308,
-    "validos": 26.257,
+    "validos": 8.525,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "cesar-acuna",
@@ -401,7 +401,7 @@
   },
   {
     "total_votos": 245,
-    "validos": 28.2999,
+    "validos": 11.551,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "cesar-acuna",
@@ -420,10 +420,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 3643,
-    "validos": 444.7739,
+    "total_votos": 3918,
+    "validos": 12.104,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -441,7 +441,7 @@
   },
   {
     "total_votos": 362,
-    "validos": 23.2187,
+    "validos": 6.414,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "cesar-acuna",
@@ -460,10 +460,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 69,
+    "validos": 4.691,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -481,7 +481,7 @@
   },
   {
     "total_votos": 275,
-    "validos": 28.853,
+    "validos": 10.492,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "cesar-acuna",
@@ -501,7 +501,7 @@
   },
   {
     "total_votos": 356,
-    "validos": 25.2511,
+    "validos": 7.093,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "cesar-acuna",
@@ -560,10 +560,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 224,
-    "validos": 14.5264,
+    "total_votos": 239,
+    "validos": 6.291,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -581,7 +581,7 @@
   },
   {
     "total_votos": 614,
-    "validos": 55.1495,
+    "validos": 8.982,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "hernando-de-soto",
@@ -601,7 +601,7 @@
   },
   {
     "total_votos": 205,
-    "validos": 15.8773,
+    "validos": 7.745,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "hernando-de-soto",
@@ -621,7 +621,7 @@
   },
   {
     "total_votos": 205,
-    "validos": 13.3291,
+    "validos": 6.502,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "hernando-de-soto",
@@ -641,7 +641,7 @@
   },
   {
     "total_votos": 214,
-    "validos": 12.6752,
+    "validos": 5.923,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "hernando-de-soto",
@@ -661,7 +661,7 @@
   },
   {
     "total_votos": 104,
-    "validos": 5.0991,
+    "validos": 4.903,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "hernando-de-soto",
@@ -680,10 +680,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 2675,
-    "validos": 239.8137,
+    "total_votos": 2838,
+    "validos": 8.768,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -701,7 +701,7 @@
   },
   {
     "total_votos": 280,
-    "validos": 13.8908,
+    "validos": 4.961,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "hernando-de-soto",
@@ -720,10 +720,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 83,
+    "validos": 5.642,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -741,7 +741,7 @@
   },
   {
     "total_votos": 94,
-    "validos": 3.3708,
+    "validos": 3.586,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "hernando-de-soto",
@@ -761,7 +761,7 @@
   },
   {
     "total_votos": 247,
-    "validos": 12.1549,
+    "validos": 4.921,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "hernando-de-soto",
@@ -821,9 +821,9 @@
   },
   {
     "total_votos": 1,
-    "validos": 0.0003,
+    "validos": 0.026,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -841,7 +841,7 @@
   },
   {
     "total_votos": 36,
-    "validos": 0.1897,
+    "validos": 0.527,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "andres-alcantara",
@@ -861,7 +861,7 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.0306,
+    "validos": 0.34,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "andres-alcantara",
@@ -881,7 +881,7 @@
   },
   {
     "total_votos": 5,
-    "validos": 0.008,
+    "validos": 0.159,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "andres-alcantara",
@@ -901,7 +901,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.01,
+    "validos": 0.166,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "andres-alcantara",
@@ -921,7 +921,7 @@
   },
   {
     "total_votos": 8,
-    "validos": 0.0302,
+    "validos": 0.377,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "andres-alcantara",
@@ -940,10 +940,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 138,
-    "validos": 0.6376,
+    "total_votos": 149,
+    "validos": 0.46,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -961,7 +961,7 @@
   },
   {
     "total_votos": 15,
-    "validos": 0.0399,
+    "validos": 0.266,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "andres-alcantara",
@@ -980,10 +980,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 7,
+    "validos": 0.476,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -1001,7 +1001,7 @@
   },
   {
     "total_votos": 22,
-    "validos": 0.1846,
+    "validos": 0.839,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "andres-alcantara",
@@ -1021,7 +1021,7 @@
   },
   {
     "total_votos": 72,
-    "validos": 1.0332,
+    "validos": 1.435,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "andres-alcantara",
@@ -1081,9 +1081,9 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.0012,
+    "validos": 0.053,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -1101,7 +1101,7 @@
   },
   {
     "total_votos": 35,
-    "validos": 0.1792,
+    "validos": 0.512,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "marco-arana",
@@ -1121,7 +1121,7 @@
   },
   {
     "total_votos": 14,
-    "validos": 0.0741,
+    "validos": 0.529,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "marco-arana",
@@ -1141,7 +1141,7 @@
   },
   {
     "total_votos": 16,
-    "validos": 0.0811,
+    "validos": 0.507,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "marco-arana",
@@ -1161,7 +1161,7 @@
   },
   {
     "total_votos": 16,
-    "validos": 0.0709,
+    "validos": 0.443,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "marco-arana",
@@ -1181,7 +1181,7 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.0382,
+    "validos": 0.424,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "marco-arana",
@@ -1200,10 +1200,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 240,
-    "validos": 1.9296,
+    "total_votos": 266,
+    "validos": 0.822,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -1221,7 +1221,7 @@
   },
   {
     "total_votos": 28,
-    "validos": 0.1389,
+    "validos": 0.496,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "marco-arana",
@@ -1240,10 +1240,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 11,
+    "validos": 0.748,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -1261,7 +1261,7 @@
   },
   {
     "total_votos": 16,
-    "validos": 0.0976,
+    "validos": 0.61,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "marco-arana",
@@ -1281,7 +1281,7 @@
   },
   {
     "total_votos": 17,
-    "validos": 0.0576,
+    "validos": 0.339,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "marco-arana",
@@ -1340,10 +1340,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 1394,
-    "validos": 562.6045,
+    "total_votos": 1544,
+    "validos": 40.642,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -1361,7 +1361,7 @@
   },
   {
     "total_votos": 2189,
-    "validos": 700.9616,
+    "validos": 32.022,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "keiko-fujimori",
@@ -1381,7 +1381,7 @@
   },
   {
     "total_votos": 982,
-    "validos": 364.3122,
+    "validos": 37.099,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "keiko-fujimori",
@@ -1401,7 +1401,7 @@
   },
   {
     "total_votos": 1453,
-    "validos": 669.586,
+    "validos": 46.083,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "keiko-fujimori",
@@ -1421,7 +1421,7 @@
   },
   {
     "total_votos": 1319,
-    "validos": 481.5273,
+    "validos": 36.507,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "keiko-fujimori",
@@ -1441,7 +1441,7 @@
   },
   {
     "total_votos": 810,
-    "validos": 309.339,
+    "validos": 38.19,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "keiko-fujimori",
@@ -1460,10 +1460,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 8819,
-    "validos": 2606.5436,
+    "total_votos": 9646,
+    "validos": 29.8,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -1481,7 +1481,7 @@
   },
   {
     "total_votos": 3059,
-    "validos": 1657.9474,
+    "validos": 54.199,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "keiko-fujimori",
@@ -1500,10 +1500,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 329,
+    "validos": 22.366,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -1521,7 +1521,7 @@
   },
   {
     "total_votos": 1463,
-    "validos": 816.6173,
+    "validos": 55.818,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "keiko-fujimori",
@@ -1541,7 +1541,7 @@
   },
   {
     "total_votos": 2564,
-    "validos": 1309.845,
+    "validos": 51.086,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "keiko-fujimori",
@@ -1600,10 +1600,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 143,
-    "validos": 5.9202,
+    "total_votos": 157,
+    "validos": 4.133,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -1621,7 +1621,7 @@
   },
   {
     "total_votos": 349,
-    "validos": 17.8165,
+    "validos": 5.105,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "veronika-mendoza",
@@ -1641,7 +1641,7 @@
   },
   {
     "total_votos": 101,
-    "validos": 3.8542,
+    "validos": 3.816,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "veronika-mendoza",
@@ -1661,7 +1661,7 @@
   },
   {
     "total_votos": 285,
-    "validos": 25.7612,
+    "validos": 9.039,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "veronika-mendoza",
@@ -1681,7 +1681,7 @@
   },
   {
     "total_votos": 190,
-    "validos": 9.9921,
+    "validos": 5.259,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "veronika-mendoza",
@@ -1701,7 +1701,7 @@
   },
   {
     "total_votos": 137,
-    "validos": 8.8488,
+    "validos": 6.459,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "veronika-mendoza",
@@ -1720,10 +1720,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 1911,
-    "validos": 122.3995,
+    "total_votos": 2042,
+    "validos": 6.309,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -1741,7 +1741,7 @@
   },
   {
     "total_votos": 179,
-    "validos": 5.6779,
+    "validos": 3.172,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "veronika-mendoza",
@@ -1760,10 +1760,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 36,
+    "validos": 2.447,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -1781,7 +1781,7 @@
   },
   {
     "total_votos": 97,
-    "validos": 3.59,
+    "validos": 3.701,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "veronika-mendoza",
@@ -1801,7 +1801,7 @@
   },
   {
     "total_votos": 193,
-    "validos": 7.4209,
+    "validos": 3.845,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "veronika-mendoza",
@@ -1860,10 +1860,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 43,
-    "validos": 0.5354,
+    "total_votos": 48,
+    "validos": 1.263,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -1881,7 +1881,7 @@
   },
   {
     "total_votos": 136,
-    "validos": 2.705,
+    "validos": 1.989,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "daniel-urresti",
@@ -1901,7 +1901,7 @@
   },
   {
     "total_votos": 34,
-    "validos": 0.4366,
+    "validos": 1.284,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "daniel-urresti",
@@ -1921,7 +1921,7 @@
   },
   {
     "total_votos": 24,
-    "validos": 0.1826,
+    "validos": 0.761,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "daniel-urresti",
@@ -1941,7 +1941,7 @@
   },
   {
     "total_votos": 57,
-    "validos": 0.8995,
+    "validos": 1.578,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "daniel-urresti",
@@ -1961,7 +1961,7 @@
   },
   {
     "total_votos": 40,
-    "validos": 0.7544,
+    "validos": 1.886,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "daniel-urresti",
@@ -1980,10 +1980,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 506,
-    "validos": 8.5818,
+    "total_votos": 546,
+    "validos": 1.687,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -2001,7 +2001,7 @@
   },
   {
     "total_votos": 44,
-    "validos": 0.3432,
+    "validos": 0.78,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "daniel-urresti",
@@ -2020,10 +2020,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 18,
+    "validos": 1.224,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -2041,7 +2041,7 @@
   },
   {
     "total_votos": 25,
-    "validos": 0.2385,
+    "validos": 0.954,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "daniel-urresti",
@@ -2061,7 +2061,7 @@
   },
   {
     "total_votos": 32,
-    "validos": 0.2042,
+    "validos": 0.638,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "daniel-urresti",
@@ -2120,10 +2120,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 25,
-    "validos": 0.181,
+    "total_votos": 27,
+    "validos": 0.711,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -2141,7 +2141,7 @@
   },
   {
     "total_votos": 92,
-    "validos": 1.2383,
+    "validos": 1.346,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "julio-guzman",
@@ -2161,7 +2161,7 @@
   },
   {
     "total_votos": 31,
-    "validos": 0.363,
+    "validos": 1.171,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "julio-guzman",
@@ -2181,7 +2181,7 @@
   },
   {
     "total_votos": 66,
-    "validos": 1.3814,
+    "validos": 2.093,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "julio-guzman",
@@ -2201,7 +2201,7 @@
   },
   {
     "total_votos": 61,
-    "validos": 1.0297,
+    "validos": 1.688,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "julio-guzman",
@@ -2221,7 +2221,7 @@
   },
   {
     "total_votos": 25,
-    "validos": 0.2948,
+    "validos": 1.179,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "julio-guzman",
@@ -2240,10 +2240,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 458,
-    "validos": 7.0303,
+    "total_votos": 512,
+    "validos": 1.582,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -2261,7 +2261,7 @@
   },
   {
     "total_votos": 38,
-    "validos": 0.2557,
+    "validos": 0.673,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "julio-guzman",
@@ -2280,10 +2280,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 7,
+    "validos": 0.476,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -2301,7 +2301,7 @@
   },
   {
     "total_votos": 20,
-    "validos": 0.1526,
+    "validos": 0.763,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "julio-guzman",
@@ -2321,7 +2321,7 @@
   },
   {
     "total_votos": 36,
-    "validos": 0.2581,
+    "validos": 0.717,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "julio-guzman",
@@ -2380,10 +2380,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 17,
-    "validos": 0.0836,
+    "total_votos": 19,
+    "validos": 0.5,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -2401,7 +2401,7 @@
   },
   {
     "total_votos": 130,
-    "validos": 2.4726,
+    "validos": 1.902,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "ollanta-humala",
@@ -2421,7 +2421,7 @@
   },
   {
     "total_votos": 19,
-    "validos": 0.1364,
+    "validos": 0.718,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "ollanta-humala",
@@ -2441,7 +2441,7 @@
   },
   {
     "total_votos": 32,
-    "validos": 0.3248,
+    "validos": 1.015,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "ollanta-humala",
@@ -2461,7 +2461,7 @@
   },
   {
     "total_votos": 62,
-    "validos": 1.0639,
+    "validos": 1.716,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "ollanta-humala",
@@ -2481,7 +2481,7 @@
   },
   {
     "total_votos": 29,
-    "validos": 0.3964,
+    "validos": 1.367,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "ollanta-humala",
@@ -2500,10 +2500,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 337,
-    "validos": 3.8047,
+    "total_votos": 368,
+    "validos": 1.137,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -2521,7 +2521,7 @@
   },
   {
     "total_votos": 27,
-    "validos": 0.1291,
+    "validos": 0.478,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "ollanta-humala",
@@ -2540,10 +2540,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 18,
+    "validos": 1.224,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -2561,7 +2561,7 @@
   },
   {
     "total_votos": 25,
-    "validos": 0.2385,
+    "validos": 0.954,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "ollanta-humala",
@@ -2581,7 +2581,7 @@
   },
   {
     "total_votos": 17,
-    "validos": 0.0576,
+    "validos": 0.339,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "ollanta-humala",
@@ -2640,10 +2640,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 211,
-    "validos": 12.89,
+    "total_votos": 242,
+    "validos": 6.37,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -2661,7 +2661,7 @@
   },
   {
     "total_votos": 584,
-    "validos": 49.8911,
+    "validos": 8.543,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "pedro-castillo",
@@ -2681,7 +2681,7 @@
   },
   {
     "total_votos": 169,
-    "validos": 10.7907,
+    "validos": 6.385,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "pedro-castillo",
@@ -2701,7 +2701,7 @@
   },
   {
     "total_votos": 276,
-    "validos": 24.161,
+    "validos": 8.754,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "pedro-castillo",
@@ -2721,7 +2721,7 @@
   },
   {
     "total_votos": 384,
-    "validos": 40.8115,
+    "validos": 10.628,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "pedro-castillo",
@@ -2741,7 +2741,7 @@
   },
   {
     "total_votos": 147,
-    "validos": 10.1886,
+    "validos": 6.931,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "pedro-castillo",
@@ -2760,10 +2760,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 1915,
-    "validos": 122.9047,
+    "total_votos": 2101,
+    "validos": 6.491,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -2781,7 +2781,7 @@
   },
   {
     "total_votos": 505,
-    "validos": 45.1874,
+    "validos": 8.948,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "pedro-castillo",
@@ -2800,10 +2800,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 636,
+    "validos": 43.236,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -2821,7 +2821,7 @@
   },
   {
     "total_votos": 142,
-    "validos": 7.6936,
+    "validos": 5.418,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "pedro-castillo",
@@ -2841,7 +2841,7 @@
   },
   {
     "total_votos": 301,
-    "validos": 18.051,
+    "validos": 5.997,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "pedro-castillo",
@@ -2900,10 +2900,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 25,
-    "validos": 0.181,
+    "total_votos": 28,
+    "validos": 0.737,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -2921,7 +2921,7 @@
   },
   {
     "total_votos": 42,
-    "validos": 0.2579,
+    "validos": 0.614,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "alberto-beingolea",
@@ -2941,7 +2941,7 @@
   },
   {
     "total_votos": 22,
-    "validos": 0.1828,
+    "validos": 0.831,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "alberto-beingolea",
@@ -2961,7 +2961,7 @@
   },
   {
     "total_votos": 20,
-    "validos": 0.1268,
+    "validos": 0.634,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "alberto-beingolea",
@@ -2981,7 +2981,7 @@
   },
   {
     "total_votos": 13,
-    "validos": 0.0468,
+    "validos": 0.36,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "alberto-beingolea",
@@ -3001,7 +3001,7 @@
   },
   {
     "total_votos": 19,
-    "validos": 0.1702,
+    "validos": 0.896,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "alberto-beingolea",
@@ -3020,10 +3020,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 288,
-    "validos": 2.7792,
+    "total_votos": 310,
+    "validos": 0.958,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -3041,7 +3041,7 @@
   },
   {
     "total_votos": 17,
-    "validos": 0.0512,
+    "validos": 0.301,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "alberto-beingolea",
@@ -3060,10 +3060,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 0.068,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -3081,7 +3081,7 @@
   },
   {
     "total_votos": 12,
-    "validos": 0.055,
+    "validos": 0.458,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "alberto-beingolea",
@@ -3101,7 +3101,7 @@
   },
   {
     "total_votos": 34,
-    "validos": 0.2302,
+    "validos": 0.677,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "alberto-beingolea",
@@ -3161,9 +3161,9 @@
   },
   {
     "total_votos": 10,
-    "validos": 0.029,
+    "validos": 0.263,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -3181,7 +3181,7 @@
   },
   {
     "total_votos": 10,
-    "validos": 0.0146,
+    "validos": 0.146,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "rafael-santos",
@@ -3201,7 +3201,7 @@
   },
   {
     "total_votos": 11,
-    "validos": 0.0458,
+    "validos": 0.416,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "rafael-santos",
@@ -3221,7 +3221,7 @@
   },
   {
     "total_votos": 3,
-    "validos": 0.0028,
+    "validos": 0.095,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "rafael-santos",
@@ -3241,7 +3241,7 @@
   },
   {
     "total_votos": 5,
-    "validos": 0.0069,
+    "validos": 0.138,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "rafael-santos",
@@ -3261,7 +3261,7 @@
   },
   {
     "total_votos": 4,
-    "validos": 0.0076,
+    "validos": 0.189,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "rafael-santos",
@@ -3280,10 +3280,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 81,
-    "validos": 0.2195,
+    "total_votos": 90,
+    "validos": 0.278,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -3301,7 +3301,7 @@
   },
   {
     "total_votos": 13,
-    "validos": 0.0299,
+    "validos": 0.23,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "rafael-santos",
@@ -3320,10 +3320,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 2,
+    "validos": 0.136,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -3341,7 +3341,7 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.0015,
+    "validos": 0.076,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "rafael-santos",
@@ -3361,7 +3361,7 @@
   },
   {
     "total_votos": 7,
-    "validos": 0.0097,
+    "validos": 0.139,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "rafael-santos",
@@ -3420,10 +3420,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 153,
-    "validos": 6.7779,
+    "total_votos": 179,
+    "validos": 4.712,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -3441,7 +3441,7 @@
   },
   {
     "total_votos": 495,
-    "validos": 35.843,
+    "validos": 7.241,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "daniel-salaverry",
@@ -3461,7 +3461,7 @@
   },
   {
     "total_votos": 154,
-    "validos": 8.9597,
+    "validos": 5.818,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "daniel-salaverry",
@@ -3481,7 +3481,7 @@
   },
   {
     "total_votos": 87,
-    "validos": 2.4003,
+    "validos": 2.759,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "daniel-salaverry",
@@ -3501,7 +3501,7 @@
   },
   {
     "total_votos": 206,
-    "validos": 11.7461,
+    "validos": 5.702,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "daniel-salaverry",
@@ -3521,7 +3521,7 @@
   },
   {
     "total_votos": 107,
-    "validos": 5.3982,
+    "validos": 5.045,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "daniel-salaverry",
@@ -3540,10 +3540,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 1645,
-    "validos": 90.6889,
+    "total_votos": 1823,
+    "validos": 5.632,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -3561,7 +3561,7 @@
   },
   {
     "total_votos": 193,
-    "validos": 6.6006,
+    "validos": 3.42,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "daniel-salaverry",
@@ -3580,10 +3580,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 26,
+    "validos": 1.768,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -3601,7 +3601,7 @@
   },
   {
     "total_votos": 69,
-    "validos": 1.8168,
+    "validos": 2.633,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "daniel-salaverry",
@@ -3621,7 +3621,7 @@
   },
   {
     "total_votos": 261,
-    "validos": 13.572,
+    "validos": 5.2,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "daniel-salaverry",
@@ -3680,10 +3680,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 7,
-    "validos": 0.0142,
+    "total_votos": 8,
+    "validos": 0.211,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -3701,7 +3701,7 @@
   },
   {
     "total_votos": 17,
-    "validos": 0.0423,
+    "validos": 0.249,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "ciro-galvez",
@@ -3721,7 +3721,7 @@
   },
   {
     "total_votos": 4,
-    "validos": 0.006,
+    "validos": 0.151,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "ciro-galvez",
@@ -3741,7 +3741,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.0114,
+    "validos": 0.19,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "ciro-galvez",
@@ -3761,7 +3761,7 @@
   },
   {
     "total_votos": 7,
-    "validos": 0.0136,
+    "validos": 0.194,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "ciro-galvez",
@@ -3781,7 +3781,7 @@
   },
   {
     "total_votos": 12,
-    "validos": 0.0679,
+    "validos": 0.566,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "ciro-galvez",
@@ -3800,10 +3800,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 91,
-    "validos": 0.2775,
+    "total_votos": 106,
+    "validos": 0.327,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -3821,7 +3821,7 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.0143,
+    "validos": 0.159,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "ciro-galvez",
@@ -3840,10 +3840,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 21,
+    "validos": 1.428,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -3861,7 +3861,7 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.0015,
+    "validos": 0.076,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "ciro-galvez",
@@ -3881,7 +3881,7 @@
   },
   {
     "total_votos": 11,
-    "validos": 0.0241,
+    "validos": 0.219,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "ciro-galvez",
@@ -3940,10 +3940,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 317,
-    "validos": 29.0943,
+    "total_votos": 354,
+    "validos": 9.318,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -3961,7 +3961,7 @@
   },
   {
     "total_votos": 502,
-    "validos": 36.8619,
+    "validos": 7.343,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "rafael-lopez-aliaga",
@@ -3981,7 +3981,7 @@
   },
   {
     "total_votos": 219,
-    "validos": 18.1201,
+    "validos": 8.274,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "rafael-lopez-aliaga",
@@ -4001,7 +4001,7 @@
   },
   {
     "total_votos": 209,
-    "validos": 13.8546,
+    "validos": 6.629,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "rafael-lopez-aliaga",
@@ -4021,7 +4021,7 @@
   },
   {
     "total_votos": 281,
-    "validos": 21.8534,
+    "validos": 7.777,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "rafael-lopez-aliaga",
@@ -4041,7 +4041,7 @@
   },
   {
     "total_votos": 133,
-    "validos": 8.3404,
+    "validos": 6.271,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "rafael-lopez-aliaga",
@@ -4060,10 +4060,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 3160,
-    "validos": 334.6756,
+    "total_votos": 3405,
+    "validos": 10.519,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -4081,7 +4081,7 @@
   },
   {
     "total_votos": 518,
-    "validos": 47.542,
+    "validos": 9.178,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "rafael-lopez-aliaga",
@@ -4100,10 +4100,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 52,
+    "validos": 3.535,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -4121,7 +4121,7 @@
   },
   {
     "total_votos": 137,
-    "validos": 7.161,
+    "validos": 5.227,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "rafael-lopez-aliaga",
@@ -4141,7 +4141,7 @@
   },
   {
     "total_votos": 413,
-    "validos": 33.9858,
+    "validos": 8.229,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "rafael-lopez-aliaga",
@@ -4200,10 +4200,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 7,
-    "validos": 0.0142,
+    "total_votos": 9,
+    "validos": 0.237,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -4221,7 +4221,7 @@
   },
   {
     "total_votos": 39,
-    "validos": 0.2227,
+    "validos": 0.571,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "jose-vega",
@@ -4241,7 +4241,7 @@
   },
   {
     "total_votos": 7,
-    "validos": 0.0185,
+    "validos": 0.264,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "jose-vega",
@@ -4261,7 +4261,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.0114,
+    "validos": 0.19,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "jose-vega",
@@ -4281,7 +4281,7 @@
   },
   {
     "total_votos": 13,
-    "validos": 0.0468,
+    "validos": 0.36,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "jose-vega",
@@ -4301,7 +4301,7 @@
   },
   {
     "total_votos": 10,
-    "validos": 0.0471,
+    "validos": 0.471,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "jose-vega",
@@ -4320,10 +4320,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 127,
-    "validos": 0.541,
+    "total_votos": 147,
+    "validos": 0.454,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -4341,7 +4341,7 @@
   },
   {
     "total_votos": 21,
-    "validos": 0.0781,
+    "validos": 0.372,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "jose-vega",
@@ -4360,10 +4360,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 4,
+    "validos": 0.272,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -4381,7 +4381,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.0137,
+    "validos": 0.229,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "jose-vega",
@@ -4401,7 +4401,7 @@
   },
   {
     "total_votos": 23,
-    "validos": 0.1053,
+    "validos": 0.458,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "jose-vega",
@@ -4460,10 +4460,10 @@
     "distrito_id": "casitas"
   },
   {
-    "total_votos": 154,
-    "validos": 6.8669,
+    "total_votos": 165,
+    "validos": 4.343,
     "total_actas": 31,
-    "conteo": 64.5161,
+    "conteo": 70.9677,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -4481,7 +4481,7 @@
   },
   {
     "total_votos": 258,
-    "validos": 9.7369,
+    "validos": 3.774,
     "total_actas": 58,
     "conteo": 65.5172,
     "candidato_id": "george-forsyth",
@@ -4501,7 +4501,7 @@
   },
   {
     "total_votos": 132,
-    "validos": 6.5828,
+    "validos": 4.987,
     "total_actas": 23,
     "conteo": 60.8696,
     "candidato_id": "george-forsyth",
@@ -4521,7 +4521,7 @@
   },
   {
     "total_votos": 73,
-    "validos": 1.69,
+    "validos": 2.315,
     "total_actas": 19,
     "conteo": 100,
     "candidato_id": "george-forsyth",
@@ -4541,7 +4541,7 @@
   },
   {
     "total_votos": 116,
-    "validos": 3.7248,
+    "validos": 3.211,
     "total_actas": 25,
     "conteo": 88,
     "candidato_id": "george-forsyth",
@@ -4561,7 +4561,7 @@
   },
   {
     "total_votos": 55,
-    "validos": 1.4261,
+    "validos": 2.593,
     "total_actas": 13,
     "conteo": 100,
     "candidato_id": "george-forsyth",
@@ -4580,10 +4580,10 @@
     "distrito_id": "san juan de la virgen"
   },
   {
-    "total_votos": 1395,
-    "validos": 65.2163,
+    "total_votos": 1512,
+    "validos": 4.671,
     "total_actas": 261,
-    "conteo": 69.7318,
+    "conteo": 75.4789,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -4601,7 +4601,7 @@
   },
   {
     "total_votos": 150,
-    "validos": 3.987,
+    "validos": 2.658,
     "total_actas": 44,
     "conteo": 79.5455,
     "candidato_id": "george-forsyth",
@@ -4620,10 +4620,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 36,
+    "validos": 2.447,
     "total_actas": 9,
-    "conteo": 0,
+    "conteo": 100,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -4641,7 +4641,7 @@
   },
   {
     "total_votos": 62,
-    "validos": 1.4669,
+    "validos": 2.366,
     "total_actas": 16,
     "conteo": 100,
     "candidato_id": "george-forsyth",
@@ -4661,7 +4661,7 @@
   },
   {
     "total_votos": 129,
-    "validos": 3.3153,
+    "validos": 2.57,
     "total_actas": 50,
     "conteo": 58,
     "candidato_id": "george-forsyth",

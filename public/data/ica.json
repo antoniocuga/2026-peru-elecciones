@@ -60,10 +60,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 14,
+    "validos": 6.635,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -140,10 +140,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 19,
+    "validos": 18.269,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -200,10 +200,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 84,
+    "validos": 6.122,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -220,10 +220,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 3271,
-    "validos": 323.7636,
+    "total_votos": 3418,
+    "validos": 9.861,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -241,7 +241,7 @@
   },
   {
     "total_votos": 596,
-    "validos": 44.9861,
+    "validos": 7.548,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "yonhi-lescano",
@@ -261,7 +261,7 @@
   },
   {
     "total_votos": 206,
-    "validos": 23.6282,
+    "validos": 11.47,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "yonhi-lescano",
@@ -301,7 +301,7 @@
   },
   {
     "total_votos": 367,
-    "validos": 39.1442,
+    "validos": 10.666,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "yonhi-lescano",
@@ -321,7 +321,7 @@
   },
   {
     "total_votos": 780,
-    "validos": 65.1222,
+    "validos": 8.349,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "yonhi-lescano",
@@ -341,7 +341,7 @@
   },
   {
     "total_votos": 204,
-    "validos": 21.167,
+    "validos": 10.376,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "yonhi-lescano",
@@ -361,7 +361,7 @@
   },
   {
     "total_votos": 172,
-    "validos": 23.9355,
+    "validos": 13.916,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "yonhi-lescano",
@@ -401,7 +401,7 @@
   },
   {
     "total_votos": 163,
-    "validos": 16.7727,
+    "validos": 10.29,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "yonhi-lescano",
@@ -421,7 +421,7 @@
   },
   {
     "total_votos": 600,
-    "validos": 57.072,
+    "validos": 9.512,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "yonhi-lescano",
@@ -441,7 +441,7 @@
   },
   {
     "total_votos": 562,
-    "validos": 59.5046,
+    "validos": 10.588,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "yonhi-lescano",
@@ -460,10 +460,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 153,
-    "validos": 14.7232,
+    "total_votos": 279,
+    "validos": 11.182,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -920,10 +920,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 5,
+    "validos": 2.37,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1000,10 +1000,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 0.962,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1060,10 +1060,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 54,
+    "validos": 3.936,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1080,10 +1080,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 1354,
-    "validos": 55.4734,
+    "total_votos": 1427,
+    "validos": 4.117,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1101,7 +1101,7 @@
   },
   {
     "total_votos": 338,
-    "validos": 14.4698,
+    "validos": 4.281,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "cesar-acuna",
@@ -1121,7 +1121,7 @@
   },
   {
     "total_votos": 113,
-    "validos": 7.11,
+    "validos": 6.292,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "cesar-acuna",
@@ -1161,7 +1161,7 @@
   },
   {
     "total_votos": 186,
-    "validos": 10.0533,
+    "validos": 5.405,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "cesar-acuna",
@@ -1181,7 +1181,7 @@
   },
   {
     "total_votos": 379,
-    "validos": 15.376,
+    "validos": 4.057,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "cesar-acuna",
@@ -1201,7 +1201,7 @@
   },
   {
     "total_votos": 118,
-    "validos": 7.0824,
+    "validos": 6.002,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "cesar-acuna",
@@ -1221,7 +1221,7 @@
   },
   {
     "total_votos": 41,
-    "validos": 1.36,
+    "validos": 3.317,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "cesar-acuna",
@@ -1261,7 +1261,7 @@
   },
   {
     "total_votos": 90,
-    "validos": 5.1138,
+    "validos": 5.682,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "cesar-acuna",
@@ -1281,7 +1281,7 @@
   },
   {
     "total_votos": 241,
-    "validos": 9.2086,
+    "validos": 3.821,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "cesar-acuna",
@@ -1301,7 +1301,7 @@
   },
   {
     "total_votos": 223,
-    "validos": 9.3682,
+    "validos": 4.201,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "cesar-acuna",
@@ -1320,10 +1320,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 91,
-    "validos": 5.2079,
+    "total_votos": 131,
+    "validos": 5.251,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1780,10 +1780,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 20,
+    "validos": 9.479,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -1860,10 +1860,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 3,
+    "validos": 2.885,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -1920,10 +1920,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 115,
+    "validos": 8.382,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -1940,10 +1940,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 5418,
-    "validos": 888.2811,
+    "total_votos": 5678,
+    "validos": 16.381,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -1961,7 +1961,7 @@
   },
   {
     "total_votos": 811,
-    "validos": 83.2978,
+    "validos": 10.271,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "hernando-de-soto",
@@ -1981,7 +1981,7 @@
   },
   {
     "total_votos": 122,
-    "validos": 8.2875,
+    "validos": 6.793,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "hernando-de-soto",
@@ -2021,7 +2021,7 @@
   },
   {
     "total_votos": 208,
-    "validos": 12.5736,
+    "validos": 6.045,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "hernando-de-soto",
@@ -2041,7 +2041,7 @@
   },
   {
     "total_votos": 797,
-    "validos": 67.9921,
+    "validos": 8.531,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "hernando-de-soto",
@@ -2061,7 +2061,7 @@
   },
   {
     "total_votos": 161,
-    "validos": 13.1843,
+    "validos": 8.189,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "hernando-de-soto",
@@ -2081,7 +2081,7 @@
   },
   {
     "total_votos": 60,
-    "validos": 2.9124,
+    "validos": 4.854,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "hernando-de-soto",
@@ -2121,7 +2121,7 @@
   },
   {
     "total_votos": 152,
-    "validos": 14.5859,
+    "validos": 9.596,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "hernando-de-soto",
@@ -2141,7 +2141,7 @@
   },
   {
     "total_votos": 443,
-    "validos": 31.1119,
+    "validos": 7.023,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "hernando-de-soto",
@@ -2161,7 +2161,7 @@
   },
   {
     "total_votos": 515,
-    "validos": 49.9653,
+    "validos": 9.702,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "hernando-de-soto",
@@ -2180,10 +2180,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 104,
-    "validos": 6.8026,
+    "total_votos": 138,
+    "validos": 5.531,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -2640,10 +2640,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 3,
+    "validos": 1.422,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2723,7 +2723,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2780,10 +2780,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 2,
+    "validos": 0.146,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2800,10 +2800,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 84,
-    "validos": 0.2134,
+    "total_votos": 90,
+    "validos": 0.26,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2821,7 +2821,7 @@
   },
   {
     "total_votos": 26,
-    "validos": 0.0855,
+    "validos": 0.329,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "andres-alcantara",
@@ -2841,7 +2841,7 @@
   },
   {
     "total_votos": 1,
-    "validos": 0.0006,
+    "validos": 0.056,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "andres-alcantara",
@@ -2881,7 +2881,7 @@
   },
   {
     "total_votos": 4,
-    "validos": 0.0046,
+    "validos": 0.116,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "andres-alcantara",
@@ -2901,7 +2901,7 @@
   },
   {
     "total_votos": 24,
-    "validos": 0.0617,
+    "validos": 0.257,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "andres-alcantara",
@@ -2921,7 +2921,7 @@
   },
   {
     "total_votos": 4,
-    "validos": 0.0081,
+    "validos": 0.203,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "andres-alcantara",
@@ -2981,7 +2981,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.0227,
+    "validos": 0.379,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "andres-alcantara",
@@ -3001,7 +3001,7 @@
   },
   {
     "total_votos": 13,
-    "validos": 0.0268,
+    "validos": 0.206,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "andres-alcantara",
@@ -3021,7 +3021,7 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.0153,
+    "validos": 0.17,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "andres-alcantara",
@@ -3040,10 +3040,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 1,
-    "validos": 0.0006,
+    "total_votos": 4,
+    "validos": 0.16,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -3500,10 +3500,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 2,
+    "validos": 0.948,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3580,10 +3580,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 0.962,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3640,10 +3640,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 5,
+    "validos": 0.364,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3660,10 +3660,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 121,
-    "validos": 0.4429,
+    "total_votos": 124,
+    "validos": 0.358,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3681,7 +3681,7 @@
   },
   {
     "total_votos": 41,
-    "validos": 0.2128,
+    "validos": 0.519,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "marco-arana",
@@ -3701,7 +3701,7 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.0451,
+    "validos": 0.501,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "marco-arana",
@@ -3741,7 +3741,7 @@
   },
   {
     "total_votos": 24,
-    "validos": 0.1673,
+    "validos": 0.697,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "marco-arana",
@@ -3761,7 +3761,7 @@
   },
   {
     "total_votos": 38,
-    "validos": 0.1547,
+    "validos": 0.407,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "marco-arana",
@@ -3781,7 +3781,7 @@
   },
   {
     "total_votos": 13,
-    "validos": 0.0859,
+    "validos": 0.661,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "marco-arana",
@@ -3801,7 +3801,7 @@
   },
   {
     "total_votos": 4,
-    "validos": 0.013,
+    "validos": 0.324,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "marco-arana",
@@ -3841,7 +3841,7 @@
   },
   {
     "total_votos": 10,
-    "validos": 0.0631,
+    "validos": 0.631,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "marco-arana",
@@ -3861,7 +3861,7 @@
   },
   {
     "total_votos": 31,
-    "validos": 0.1522,
+    "validos": 0.491,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "marco-arana",
@@ -3881,7 +3881,7 @@
   },
   {
     "total_votos": 32,
-    "validos": 0.193,
+    "validos": 0.603,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "marco-arana",
@@ -3900,10 +3900,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 5,
-    "validos": 0.0157,
+    "total_votos": 12,
+    "validos": 0.481,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -4360,10 +4360,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 17,
+    "validos": 8.057,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -4440,10 +4440,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 25,
+    "validos": 24.038,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -4500,10 +4500,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 231,
+    "validos": 16.837,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -4520,10 +4520,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 4153,
-    "validos": 521.9075,
+    "total_votos": 4362,
+    "validos": 12.584,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -4541,7 +4541,7 @@
   },
   {
     "total_votos": 1283,
-    "validos": 208.4747,
+    "validos": 16.249,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "keiko-fujimori",
@@ -4561,7 +4561,7 @@
   },
   {
     "total_votos": 326,
-    "validos": 59.1723,
+    "validos": 18.151,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "keiko-fujimori",
@@ -4601,7 +4601,7 @@
   },
   {
     "total_votos": 509,
-    "validos": 75.2913,
+    "validos": 14.792,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "keiko-fujimori",
@@ -4621,7 +4621,7 @@
   },
   {
     "total_votos": 1830,
-    "validos": 358.4787,
+    "validos": 19.589,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "keiko-fujimori",
@@ -4641,7 +4641,7 @@
   },
   {
     "total_votos": 318,
-    "validos": 51.4365,
+    "validos": 16.175,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "keiko-fujimori",
@@ -4661,7 +4661,7 @@
   },
   {
     "total_votos": 163,
-    "validos": 21.4964,
+    "validos": 13.188,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "keiko-fujimori",
@@ -4701,7 +4701,7 @@
   },
   {
     "total_votos": 242,
-    "validos": 36.9728,
+    "validos": 15.278,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "keiko-fujimori",
@@ -4721,7 +4721,7 @@
   },
   {
     "total_votos": 628,
-    "validos": 62.5237,
+    "validos": 9.956,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "keiko-fujimori",
@@ -4741,7 +4741,7 @@
   },
   {
     "total_votos": 844,
-    "validos": 134.2044,
+    "validos": 15.901,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "keiko-fujimori",
@@ -4760,10 +4760,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 246,
-    "validos": 38.0611,
+    "total_votos": 411,
+    "validos": 16.473,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -5220,10 +5220,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 20,
+    "validos": 9.479,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -5300,10 +5300,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 13,
+    "validos": 12.5,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -5360,10 +5360,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 66,
+    "validos": 4.81,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -5380,10 +5380,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 2806,
-    "validos": 238.2575,
+    "total_votos": 2935,
+    "validos": 8.467,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -5401,7 +5401,7 @@
   },
   {
     "total_votos": 606,
-    "validos": 46.5105,
+    "validos": 7.675,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "veronika-mendoza",
@@ -5421,7 +5421,7 @@
   },
   {
     "total_votos": 87,
-    "validos": 4.2143,
+    "validos": 4.844,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "veronika-mendoza",
@@ -5461,7 +5461,7 @@
   },
   {
     "total_votos": 276,
-    "validos": 22.138,
+    "validos": 8.021,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "veronika-mendoza",
@@ -5481,7 +5481,7 @@
   },
   {
     "total_votos": 772,
-    "validos": 63.7981,
+    "validos": 8.264,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "veronika-mendoza",
@@ -5501,7 +5501,7 @@
   },
   {
     "total_votos": 142,
-    "validos": 10.2567,
+    "validos": 7.223,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "veronika-mendoza",
@@ -5521,7 +5521,7 @@
   },
   {
     "total_votos": 58,
-    "validos": 2.7219,
+    "validos": 4.693,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "veronika-mendoza",
@@ -5561,7 +5561,7 @@
   },
   {
     "total_votos": 122,
-    "validos": 9.3964,
+    "validos": 7.702,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "veronika-mendoza",
@@ -5581,7 +5581,7 @@
   },
   {
     "total_votos": 444,
-    "validos": 31.2532,
+    "validos": 7.039,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "veronika-mendoza",
@@ -5601,7 +5601,7 @@
   },
   {
     "total_votos": 516,
-    "validos": 50.1604,
+    "validos": 9.721,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "veronika-mendoza",
@@ -5620,10 +5620,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 100,
-    "validos": 6.289,
+    "total_votos": 169,
+    "validos": 6.774,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -6080,10 +6080,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 2,
+    "validos": 0.948,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -6160,10 +6160,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 0.962,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -6220,10 +6220,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 18,
+    "validos": 1.312,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -6240,10 +6240,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 455,
-    "validos": 6.2653,
+    "total_votos": 477,
+    "validos": 1.376,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -6261,7 +6261,7 @@
   },
   {
     "total_votos": 96,
-    "validos": 1.1674,
+    "validos": 1.216,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "daniel-urresti",
@@ -6281,7 +6281,7 @@
   },
   {
     "total_votos": 32,
-    "validos": 0.5702,
+    "validos": 1.782,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "daniel-urresti",
@@ -6321,7 +6321,7 @@
   },
   {
     "total_votos": 29,
-    "validos": 0.2445,
+    "validos": 0.843,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "daniel-urresti",
@@ -6341,7 +6341,7 @@
   },
   {
     "total_votos": 105,
-    "validos": 1.1802,
+    "validos": 1.124,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "daniel-urresti",
@@ -6361,7 +6361,7 @@
   },
   {
     "total_votos": 35,
-    "validos": 0.623,
+    "validos": 1.78,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "daniel-urresti",
@@ -6381,7 +6381,7 @@
   },
   {
     "total_votos": 18,
-    "validos": 0.2621,
+    "validos": 1.456,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "daniel-urresti",
@@ -6421,7 +6421,7 @@
   },
   {
     "total_votos": 31,
-    "validos": 0.6067,
+    "validos": 1.957,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "daniel-urresti",
@@ -6441,7 +6441,7 @@
   },
   {
     "total_votos": 66,
-    "validos": 0.6904,
+    "validos": 1.046,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "daniel-urresti",
@@ -6461,7 +6461,7 @@
   },
   {
     "total_votos": 74,
-    "validos": 1.0316,
+    "validos": 1.394,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "daniel-urresti",
@@ -6480,10 +6480,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 18,
-    "validos": 0.2038,
+    "total_votos": 32,
+    "validos": 1.283,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -6940,10 +6940,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 3,
+    "validos": 1.422,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -7020,10 +7020,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 0.962,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -7080,10 +7080,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 32,
+    "validos": 2.332,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -7100,10 +7100,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 991,
-    "validos": 29.7201,
+    "total_votos": 1034,
+    "validos": 2.983,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -7121,7 +7121,7 @@
   },
   {
     "total_votos": 122,
-    "validos": 1.8849,
+    "validos": 1.545,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "julio-guzman",
@@ -7141,7 +7141,7 @@
   },
   {
     "total_votos": 22,
-    "validos": 0.2695,
+    "validos": 1.225,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "julio-guzman",
@@ -7181,7 +7181,7 @@
   },
   {
     "total_votos": 43,
-    "validos": 0.5375,
+    "validos": 1.25,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "julio-guzman",
@@ -7201,7 +7201,7 @@
   },
   {
     "total_votos": 108,
-    "validos": 1.2485,
+    "validos": 1.156,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "julio-guzman",
@@ -7221,7 +7221,7 @@
   },
   {
     "total_votos": 29,
-    "validos": 0.4278,
+    "validos": 1.475,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "julio-guzman",
@@ -7241,7 +7241,7 @@
   },
   {
     "total_votos": 17,
-    "validos": 0.2338,
+    "validos": 1.375,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "julio-guzman",
@@ -7281,7 +7281,7 @@
   },
   {
     "total_votos": 31,
-    "validos": 0.6067,
+    "validos": 1.957,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "julio-guzman",
@@ -7301,7 +7301,7 @@
   },
   {
     "total_votos": 117,
-    "validos": 2.1704,
+    "validos": 1.855,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "julio-guzman",
@@ -7321,7 +7321,7 @@
   },
   {
     "total_votos": 128,
-    "validos": 3.0861,
+    "validos": 2.411,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "julio-guzman",
@@ -7340,10 +7340,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 22,
-    "validos": 0.3045,
+    "total_votos": 33,
+    "validos": 1.323,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -7800,10 +7800,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 6,
+    "validos": 2.844,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -7880,10 +7880,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 5,
+    "validos": 4.808,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -7940,10 +7940,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 18,
+    "validos": 1.312,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -7960,10 +7960,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 211,
-    "validos": 1.3462,
+    "total_votos": 220,
+    "validos": 0.635,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -7981,7 +7981,7 @@
   },
   {
     "total_votos": 54,
-    "validos": 0.3694,
+    "validos": 0.684,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "ollanta-humala",
@@ -8001,7 +8001,7 @@
   },
   {
     "total_votos": 15,
-    "validos": 0.1252,
+    "validos": 0.835,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "ollanta-humala",
@@ -8041,7 +8041,7 @@
   },
   {
     "total_votos": 28,
-    "validos": 0.2279,
+    "validos": 0.814,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "ollanta-humala",
@@ -8061,7 +8061,7 @@
   },
   {
     "total_votos": 73,
-    "validos": 0.5701,
+    "validos": 0.781,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "ollanta-humala",
@@ -8081,7 +8081,7 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.0412,
+    "validos": 0.458,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "ollanta-humala",
@@ -8101,7 +8101,7 @@
   },
   {
     "total_votos": 12,
-    "validos": 0.1165,
+    "validos": 0.971,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "ollanta-humala",
@@ -8141,7 +8141,7 @@
   },
   {
     "total_votos": 12,
-    "validos": 0.091,
+    "validos": 0.758,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "ollanta-humala",
@@ -8161,7 +8161,7 @@
   },
   {
     "total_votos": 87,
-    "validos": 1.1997,
+    "validos": 1.379,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "ollanta-humala",
@@ -8181,7 +8181,7 @@
   },
   {
     "total_votos": 49,
-    "validos": 0.4523,
+    "validos": 0.923,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "ollanta-humala",
@@ -8200,10 +8200,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 15,
-    "validos": 0.1414,
+    "total_votos": 27,
+    "validos": 1.082,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -8660,10 +8660,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 21,
+    "validos": 9.953,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -8740,10 +8740,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 20,
+    "validos": 19.231,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -8800,10 +8800,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 68,
+    "validos": 4.956,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -8820,10 +8820,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 3649,
-    "validos": 402.9226,
+    "total_votos": 3864,
+    "validos": 11.147,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -8841,7 +8841,7 @@
   },
   {
     "total_votos": 1563,
-    "validos": 309.3958,
+    "validos": 19.795,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "pedro-castillo",
@@ -8861,7 +8861,7 @@
   },
   {
     "total_votos": 376,
-    "validos": 78.7156,
+    "validos": 20.935,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "pedro-castillo",
@@ -8901,7 +8901,7 @@
   },
   {
     "total_votos": 679,
-    "validos": 133.9871,
+    "validos": 19.733,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "pedro-castillo",
@@ -8921,7 +8921,7 @@
   },
   {
     "total_votos": 1857,
-    "validos": 369.1345,
+    "validos": 19.878,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "pedro-castillo",
@@ -8941,7 +8941,7 @@
   },
   {
     "total_votos": 358,
-    "validos": 65.1918,
+    "validos": 18.21,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "pedro-castillo",
@@ -8961,7 +8961,7 @@
   },
   {
     "total_votos": 325,
-    "validos": 85.4555,
+    "validos": 26.294,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "pedro-castillo",
@@ -9001,7 +9001,7 @@
   },
   {
     "total_votos": 159,
-    "validos": 15.9604,
+    "validos": 10.038,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "pedro-castillo",
@@ -9021,7 +9021,7 @@
   },
   {
     "total_votos": 1607,
-    "validos": 409.3993,
+    "validos": 25.476,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "pedro-castillo",
@@ -9041,7 +9041,7 @@
   },
   {
     "total_votos": 814,
-    "validos": 124.8269,
+    "validos": 15.335,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "pedro-castillo",
@@ -9060,10 +9060,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 243,
-    "validos": 37.1377,
+    "total_votos": 374,
+    "validos": 14.99,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -9520,10 +9520,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 4,
+    "validos": 1.896,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -9600,10 +9600,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 0.962,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -9660,10 +9660,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 21,
+    "validos": 1.531,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -9680,10 +9680,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 975,
-    "validos": 28.7625,
+    "total_votos": 1010,
+    "validos": 2.914,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -9701,7 +9701,7 @@
   },
   {
     "total_votos": 94,
-    "validos": 1.1186,
+    "validos": 1.19,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "alberto-beingolea",
@@ -9721,7 +9721,7 @@
   },
   {
     "total_votos": 14,
-    "validos": 0.1092,
+    "validos": 0.78,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "alberto-beingolea",
@@ -9761,7 +9761,7 @@
   },
   {
     "total_votos": 27,
-    "validos": 0.212,
+    "validos": 0.785,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "alberto-beingolea",
@@ -9781,7 +9781,7 @@
   },
   {
     "total_votos": 153,
-    "validos": 2.5061,
+    "validos": 1.638,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "alberto-beingolea",
@@ -9801,7 +9801,7 @@
   },
   {
     "total_votos": 19,
-    "validos": 0.1835,
+    "validos": 0.966,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "alberto-beingolea",
@@ -9821,7 +9821,7 @@
   },
   {
     "total_votos": 15,
-    "validos": 0.1821,
+    "validos": 1.214,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "alberto-beingolea",
@@ -9861,7 +9861,7 @@
   },
   {
     "total_votos": 28,
-    "validos": 0.495,
+    "validos": 1.768,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "alberto-beingolea",
@@ -9881,7 +9881,7 @@
   },
   {
     "total_votos": 71,
-    "validos": 0.7995,
+    "validos": 1.126,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "alberto-beingolea",
@@ -9901,7 +9901,7 @@
   },
   {
     "total_votos": 96,
-    "validos": 1.7366,
+    "validos": 1.809,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "alberto-beingolea",
@@ -9920,10 +9920,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 20,
-    "validos": 0.2516,
+    "total_votos": 25,
+    "validos": 1.002,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -10380,10 +10380,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 0.474,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -10463,7 +10463,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -10520,10 +10520,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 12,
+    "validos": 0.875,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -10540,10 +10540,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 119,
-    "validos": 0.4284,
+    "total_votos": 122,
+    "validos": 0.352,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -10561,7 +10561,7 @@
   },
   {
     "total_votos": 23,
-    "validos": 0.0669,
+    "validos": 0.291,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "rafael-santos",
@@ -10581,7 +10581,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.02,
+    "validos": 0.334,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "rafael-santos",
@@ -10621,7 +10621,7 @@
   },
   {
     "total_votos": 11,
-    "validos": 0.0352,
+    "validos": 0.32,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "rafael-santos",
@@ -10641,7 +10641,7 @@
   },
   {
     "total_votos": 32,
-    "validos": 0.1098,
+    "validos": 0.343,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "rafael-santos",
@@ -10661,7 +10661,7 @@
   },
   {
     "total_votos": 3,
-    "validos": 0.0046,
+    "validos": 0.153,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "rafael-santos",
@@ -10681,7 +10681,7 @@
   },
   {
     "total_votos": 4,
-    "validos": 0.013,
+    "validos": 0.324,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "rafael-santos",
@@ -10721,7 +10721,7 @@
   },
   {
     "total_votos": 5,
-    "validos": 0.0158,
+    "validos": 0.316,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "rafael-santos",
@@ -10741,7 +10741,7 @@
   },
   {
     "total_votos": 14,
-    "validos": 0.0311,
+    "validos": 0.222,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "rafael-santos",
@@ -10761,7 +10761,7 @@
   },
   {
     "total_votos": 16,
-    "validos": 0.0482,
+    "validos": 0.301,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "rafael-santos",
@@ -10780,10 +10780,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 3,
-    "validos": 0.0057,
+    "total_votos": 4,
+    "validos": 0.16,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -11240,10 +11240,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 49,
+    "validos": 23.223,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -11320,10 +11320,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 2,
+    "validos": 1.923,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -11380,10 +11380,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 342,
+    "validos": 24.927,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -11400,10 +11400,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 1763,
-    "validos": 94.056,
+    "total_votos": 1850,
+    "validos": 5.337,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -11421,7 +11421,7 @@
   },
   {
     "total_votos": 537,
-    "validos": 36.5214,
+    "validos": 6.801,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "daniel-salaverry",
@@ -11441,7 +11441,7 @@
   },
   {
     "total_votos": 121,
-    "validos": 8.1518,
+    "validos": 6.737,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "daniel-salaverry",
@@ -11481,7 +11481,7 @@
   },
   {
     "total_votos": 350,
-    "validos": 35.5985,
+    "validos": 10.171,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "daniel-salaverry",
@@ -11501,7 +11501,7 @@
   },
   {
     "total_votos": 720,
-    "validos": 55.4904,
+    "validos": 7.707,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "daniel-salaverry",
@@ -11521,7 +11521,7 @@
   },
   {
     "total_votos": 157,
-    "validos": 12.538,
+    "validos": 7.986,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "daniel-salaverry",
@@ -11541,7 +11541,7 @@
   },
   {
     "total_votos": 109,
-    "validos": 9.6127,
+    "validos": 8.819,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "daniel-salaverry",
@@ -11581,7 +11581,7 @@
   },
   {
     "total_votos": 137,
-    "validos": 11.8491,
+    "validos": 8.649,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "daniel-salaverry",
@@ -11601,7 +11601,7 @@
   },
   {
     "total_votos": 781,
-    "validos": 96.6956,
+    "validos": 12.381,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "daniel-salaverry",
@@ -11621,7 +11621,7 @@
   },
   {
     "total_votos": 339,
-    "validos": 21.6519,
+    "validos": 6.387,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "daniel-salaverry",
@@ -11640,10 +11640,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 175,
-    "validos": 19.2605,
+    "total_votos": 269,
+    "validos": 10.782,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -12103,7 +12103,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -12180,10 +12180,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 0.962,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -12240,10 +12240,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 7,
+    "validos": 0.51,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -12260,10 +12260,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 140,
-    "validos": 0.5936,
+    "total_votos": 144,
+    "validos": 0.415,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -12281,7 +12281,7 @@
   },
   {
     "total_votos": 37,
-    "validos": 0.1735,
+    "validos": 0.469,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "ciro-galvez",
@@ -12301,7 +12301,7 @@
   },
   {
     "total_votos": 12,
-    "validos": 0.0802,
+    "validos": 0.668,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "ciro-galvez",
@@ -12341,7 +12341,7 @@
   },
   {
     "total_votos": 124,
-    "validos": 4.469,
+    "validos": 3.604,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "ciro-galvez",
@@ -12361,7 +12361,7 @@
   },
   {
     "total_votos": 56,
-    "validos": 0.3354,
+    "validos": 0.599,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "ciro-galvez",
@@ -12381,7 +12381,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.0183,
+    "validos": 0.305,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "ciro-galvez",
@@ -12401,7 +12401,7 @@
   },
   {
     "total_votos": 5,
-    "validos": 0.0203,
+    "validos": 0.405,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "ciro-galvez",
@@ -12441,7 +12441,7 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.0511,
+    "validos": 0.568,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "ciro-galvez",
@@ -12461,7 +12461,7 @@
   },
   {
     "total_votos": 71,
-    "validos": 0.7995,
+    "validos": 1.126,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "ciro-galvez",
@@ -12481,7 +12481,7 @@
   },
   {
     "total_votos": 30,
-    "validos": 0.1695,
+    "validos": 0.565,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "ciro-galvez",
@@ -12500,10 +12500,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 14,
-    "validos": 0.1233,
+    "total_votos": 28,
+    "validos": 1.122,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -12960,10 +12960,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 10,
+    "validos": 4.739,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -13040,10 +13040,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 6,
+    "validos": 5.769,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -13100,10 +13100,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 170,
+    "validos": 12.391,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -13120,10 +13120,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 4626,
-    "validos": 647.5475,
+    "total_votos": 4844,
+    "validos": 13.975,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -13141,7 +13141,7 @@
   },
   {
     "total_votos": 1025,
-    "validos": 133.0553,
+    "validos": 12.981,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "rafael-lopez-aliaga",
@@ -13161,7 +13161,7 @@
   },
   {
     "total_votos": 144,
-    "validos": 11.5459,
+    "validos": 8.018,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "rafael-lopez-aliaga",
@@ -13201,7 +13201,7 @@
   },
   {
     "total_votos": 235,
-    "validos": 16.0481,
+    "validos": 6.829,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "rafael-lopez-aliaga",
@@ -13221,7 +13221,7 @@
   },
   {
     "total_votos": 933,
-    "validos": 93.1787,
+    "validos": 9.987,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "rafael-lopez-aliaga",
@@ -13241,7 +13241,7 @@
   },
   {
     "total_votos": 157,
-    "validos": 12.538,
+    "validos": 7.986,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "rafael-lopez-aliaga",
@@ -13261,7 +13261,7 @@
   },
   {
     "total_votos": 95,
-    "validos": 7.3017,
+    "validos": 7.686,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "rafael-lopez-aliaga",
@@ -13301,7 +13301,7 @@
   },
   {
     "total_votos": 150,
-    "validos": 14.205,
+    "validos": 9.47,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "rafael-lopez-aliaga",
@@ -13321,7 +13321,7 @@
   },
   {
     "total_votos": 526,
-    "validos": 43.8631,
+    "validos": 8.339,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "rafael-lopez-aliaga",
@@ -13341,7 +13341,7 @@
   },
   {
     "total_votos": 597,
-    "validos": 67.1446,
+    "validos": 11.247,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "rafael-lopez-aliaga",
@@ -13360,10 +13360,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 142,
-    "validos": 12.682,
+    "total_votos": 224,
+    "validos": 8.978,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -13820,10 +13820,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 0.474,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -13900,10 +13900,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 4,
+    "validos": 3.846,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -13960,10 +13960,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 5,
+    "validos": 0.364,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -13980,10 +13980,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 126,
-    "validos": 0.4801,
+    "total_votos": 129,
+    "validos": 0.372,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -14001,7 +14001,7 @@
   },
   {
     "total_votos": 39,
-    "validos": 0.1927,
+    "validos": 0.494,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "jose-vega",
@@ -14021,7 +14021,7 @@
   },
   {
     "total_votos": 11,
-    "validos": 0.0673,
+    "validos": 0.612,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "jose-vega",
@@ -14061,7 +14061,7 @@
   },
   {
     "total_votos": 28,
-    "validos": 0.2279,
+    "validos": 0.814,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "jose-vega",
@@ -14081,7 +14081,7 @@
   },
   {
     "total_votos": 53,
-    "validos": 0.3005,
+    "validos": 0.567,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "jose-vega",
@@ -14101,7 +14101,7 @@
   },
   {
     "total_votos": 7,
-    "validos": 0.0249,
+    "validos": 0.356,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "jose-vega",
@@ -14121,7 +14121,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.0291,
+    "validos": 0.485,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "jose-vega",
@@ -14161,7 +14161,7 @@
   },
   {
     "total_votos": 4,
-    "validos": 0.0101,
+    "validos": 0.253,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "jose-vega",
@@ -14181,7 +14181,7 @@
   },
   {
     "total_votos": 47,
-    "validos": 0.3502,
+    "validos": 0.745,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "jose-vega",
@@ -14201,7 +14201,7 @@
   },
   {
     "total_votos": 26,
-    "validos": 0.1274,
+    "validos": 0.49,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "jose-vega",
@@ -14220,10 +14220,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 7,
-    "validos": 0.0308,
+    "total_votos": 9,
+    "validos": 0.361,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -14680,10 +14680,10 @@
     "distrito_id": "chincha alta"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 33,
+    "validos": 15.64,
     "total_actas": 43,
-    "conteo": 0,
+    "conteo": 9.3023,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -14760,10 +14760,10 @@
     "distrito_id": "pueblo nuevo"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 0.962,
     "total_actas": 4,
-    "conteo": 0,
+    "conteo": 25,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -14820,10 +14820,10 @@
     "distrito_id": "sunampe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 122,
+    "validos": 8.892,
     "total_actas": 13,
-    "conteo": 0,
+    "conteo": 53.8462,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -14840,10 +14840,10 @@
     "distrito_id": "tambo de mora"
   },
   {
-    "total_votos": 2785,
-    "validos": 234.6919,
+    "total_votos": 2935,
+    "validos": 8.467,
     "total_actas": 452,
-    "conteo": 40.4867,
+    "conteo": 42.6991,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -14861,7 +14861,7 @@
   },
   {
     "total_votos": 605,
-    "validos": 46.3551,
+    "validos": 7.662,
     "total_actas": 95,
     "conteo": 43.1579,
     "candidato_id": "george-forsyth",
@@ -14881,7 +14881,7 @@
   },
   {
     "total_votos": 179,
-    "validos": 17.8409,
+    "validos": 9.967,
     "total_actas": 45,
     "conteo": 24.4444,
     "candidato_id": "george-forsyth",
@@ -14921,7 +14921,7 @@
   },
   {
     "total_votos": 313,
-    "validos": 28.4705,
+    "validos": 9.096,
     "total_actas": 18,
     "conteo": 100,
     "candidato_id": "george-forsyth",
@@ -14941,7 +14941,7 @@
   },
   {
     "total_votos": 632,
-    "validos": 42.7548,
+    "validos": 6.765,
     "total_actas": 132,
     "conteo": 40.1515,
     "candidato_id": "george-forsyth",
@@ -14961,7 +14961,7 @@
   },
   {
     "total_votos": 226,
-    "validos": 25.9787,
+    "validos": 11.495,
     "total_actas": 15,
     "conteo": 66.6667,
     "candidato_id": "george-forsyth",
@@ -14981,7 +14981,7 @@
   },
   {
     "total_votos": 132,
-    "validos": 14.0976,
+    "validos": 10.68,
     "total_actas": 53,
     "conteo": 13.2075,
     "candidato_id": "george-forsyth",
@@ -15021,7 +15021,7 @@
   },
   {
     "total_votos": 233,
-    "validos": 34.2743,
+    "validos": 14.71,
     "total_actas": 20,
     "conteo": 40,
     "candidato_id": "george-forsyth",
@@ -15041,7 +15041,7 @@
   },
   {
     "total_votos": 521,
-    "validos": 43.0294,
+    "validos": 8.259,
     "total_actas": 66,
     "conteo": 50,
     "candidato_id": "george-forsyth",
@@ -15061,7 +15061,7 @@
   },
   {
     "total_votos": 438,
-    "validos": 36.1438,
+    "validos": 8.252,
     "total_actas": 65,
     "conteo": 47.6923,
     "candidato_id": "george-forsyth",
@@ -15080,10 +15080,10 @@
     "distrito_id": "subtanjalla"
   },
   {
-    "total_votos": 231,
-    "validos": 33.5597,
+    "total_votos": 326,
+    "validos": 13.066,
     "total_actas": 14,
-    "conteo": 64.2857,
+    "conteo": 100,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",

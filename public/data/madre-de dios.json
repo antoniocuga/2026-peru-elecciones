@@ -180,10 +180,10 @@
     "distrito_id": "laberinto"
   },
   {
-    "total_votos": 61,
-    "validos": 5.3387,
+    "total_votos": 75,
+    "validos": 8.907,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -200,10 +200,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 1879,
-    "validos": 197.8211,
+    "total_votos": 1927,
+    "validos": 10.415,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -400,10 +400,10 @@
     "distrito_id": "laberinto"
   },
   {
-    "total_votos": 31,
-    "validos": 1.3789,
+    "total_votos": 37,
+    "validos": 4.394,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -420,10 +420,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 1204,
-    "validos": 81.2218,
+    "total_votos": 1262,
+    "validos": 6.821,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -620,10 +620,10 @@
     "distrito_id": "laberinto"
   },
   {
-    "total_votos": 43,
-    "validos": 2.6527,
+    "total_votos": 45,
+    "validos": 5.344,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -640,10 +640,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 1506,
-    "validos": 127.0763,
+    "total_votos": 1564,
+    "validos": 8.453,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -841,9 +841,9 @@
   },
   {
     "total_votos": 1,
-    "validos": 0.0014,
+    "validos": 0.119,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -860,10 +860,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 56,
-    "validos": 0.1758,
+    "total_votos": 59,
+    "validos": 0.319,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -1061,9 +1061,9 @@
   },
   {
     "total_votos": 3,
-    "validos": 0.0129,
+    "validos": 0.356,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -1081,9 +1081,9 @@
   },
   {
     "total_votos": 68,
-    "validos": 0.2591,
+    "validos": 0.368,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -1280,10 +1280,10 @@
     "distrito_id": "laberinto"
   },
   {
-    "total_votos": 68,
-    "validos": 6.6341,
+    "total_votos": 90,
+    "validos": 10.689,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -1300,10 +1300,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 1901,
-    "validos": 202.4945,
+    "total_votos": 1956,
+    "validos": 10.571,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -1500,10 +1500,10 @@
     "distrito_id": "laberinto"
   },
   {
-    "total_votos": 47,
-    "validos": 3.1692,
+    "total_votos": 57,
+    "validos": 6.77,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -1520,10 +1520,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 1269,
-    "validos": 90.2259,
+    "total_votos": 1318,
+    "validos": 7.123,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -1720,10 +1720,10 @@
     "distrito_id": "laberinto"
   },
   {
-    "total_votos": 5,
-    "validos": 0.0358,
+    "total_votos": 8,
+    "validos": 0.95,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -1740,10 +1740,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 149,
-    "validos": 1.2441,
+    "total_votos": 159,
+    "validos": 0.859,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -1940,10 +1940,10 @@
     "distrito_id": "laberinto"
   },
   {
-    "total_votos": 7,
-    "validos": 0.0703,
+    "total_votos": 10,
+    "validos": 1.188,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -1960,10 +1960,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 248,
-    "validos": 3.4472,
+    "total_votos": 259,
+    "validos": 1.4,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -2161,9 +2161,9 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.0517,
+    "validos": 0.713,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -2180,10 +2180,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 197,
-    "validos": 2.1749,
+    "total_votos": 203,
+    "validos": 1.097,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -2380,10 +2380,10 @@
     "distrito_id": "laberinto"
   },
   {
-    "total_votos": 281,
-    "validos": 113.288,
+    "total_votos": 336,
+    "validos": 39.905,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -2400,10 +2400,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 5505,
-    "validos": 1698.0723,
+    "total_votos": 5726,
+    "validos": 30.946,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -2600,10 +2600,10 @@
     "distrito_id": "laberinto"
   },
   {
-    "total_votos": 5,
-    "validos": 0.0358,
+    "total_votos": 6,
+    "validos": 0.713,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -2620,10 +2620,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 92,
-    "validos": 0.4738,
+    "total_votos": 94,
+    "validos": 0.508,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -2820,10 +2820,10 @@
     "distrito_id": "laberinto"
   },
   {
-    "total_votos": 2,
-    "validos": 0.0057,
+    "total_votos": 3,
+    "validos": 0.356,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -2841,9 +2841,9 @@
   },
   {
     "total_votos": 61,
-    "validos": 0.2086,
+    "validos": 0.33,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -3040,10 +3040,10 @@
     "distrito_id": "laberinto"
   },
   {
-    "total_votos": 26,
-    "validos": 0.9698,
+    "total_votos": 28,
+    "validos": 3.325,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -3060,10 +3060,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 545,
-    "validos": 16.6443,
+    "total_votos": 561,
+    "validos": 3.032,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -3261,9 +3261,9 @@
   },
   {
     "total_votos": 4,
-    "validos": 0.023,
+    "validos": 0.475,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -3280,10 +3280,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 102,
-    "validos": 0.5834,
+    "total_votos": 105,
+    "validos": 0.567,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -3480,10 +3480,10 @@
     "distrito_id": "laberinto"
   },
   {
-    "total_votos": 52,
-    "validos": 3.8797,
+    "total_votos": 58,
+    "validos": 6.888,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -3500,10 +3500,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 1318,
-    "validos": 97.3343,
+    "total_votos": 1367,
+    "validos": 7.388,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -3700,10 +3700,10 @@
     "distrito_id": "laberinto"
   },
   {
-    "total_votos": 23,
-    "validos": 0.759,
+    "total_votos": 37,
+    "validos": 4.394,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -3720,10 +3720,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 726,
-    "validos": 29.5337,
+    "total_votos": 750,
+    "validos": 4.053,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -3920,10 +3920,10 @@
     "distrito_id": "laberinto"
   },
   {
-    "total_votos": 32,
-    "validos": 1.4691,
+    "total_votos": 38,
+    "validos": 4.513,
     "total_actas": 28,
-    "conteo": 14.2857,
+    "conteo": 17.8571,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -3940,10 +3940,10 @@
     "distrito_id": "las piedras"
   },
   {
-    "total_votos": 1021,
-    "validos": 58.4114,
+    "total_votos": 1064,
+    "validos": 5.75,
     "total_actas": 245,
-    "conteo": 42.8571,
+    "conteo": 44.4898,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",

@@ -1,7 +1,7 @@
 [
   {
     "total_votos": 415,
-    "validos": 52.9291,
+    "validos": 12.754,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "yonhi-lescano",
@@ -80,10 +80,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 1384,
-    "validos": 100.9628,
+    "total_votos": 1639,
+    "validos": 7.552,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -101,7 +101,7 @@
   },
   {
     "total_votos": 64,
-    "validos": 4.9709,
+    "validos": 7.767,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "yonhi-lescano",
@@ -141,7 +141,7 @@
   },
   {
     "total_votos": 577,
-    "validos": 33.9103,
+    "validos": 5.877,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "yonhi-lescano",
@@ -201,7 +201,7 @@
   },
   {
     "total_votos": 784,
-    "validos": 49.7605,
+    "validos": 6.347,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "yonhi-lescano",
@@ -280,10 +280,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 39,
+    "validos": 8.725,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -341,7 +341,7 @@
   },
   {
     "total_votos": 107,
-    "validos": 3.5182,
+    "validos": 3.288,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "cesar-acuna",
@@ -420,10 +420,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 2000,
-    "validos": 210.84,
+    "total_votos": 2223,
+    "validos": 10.243,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -441,7 +441,7 @@
   },
   {
     "total_votos": 97,
-    "validos": 11.4188,
+    "validos": 11.772,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "cesar-acuna",
@@ -481,7 +481,7 @@
   },
   {
     "total_votos": 1333,
-    "validos": 180.9814,
+    "validos": 13.577,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "cesar-acuna",
@@ -541,7 +541,7 @@
   },
   {
     "total_votos": 1505,
-    "validos": 183.3542,
+    "validos": 12.183,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "cesar-acuna",
@@ -620,10 +620,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 32,
+    "validos": 7.159,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -681,7 +681,7 @@
   },
   {
     "total_votos": 86,
-    "validos": 2.273,
+    "validos": 2.643,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "hernando-de-soto",
@@ -760,10 +760,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 1984,
-    "validos": 207.4867,
+    "total_votos": 2161,
+    "validos": 9.958,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -781,7 +781,7 @@
   },
   {
     "total_votos": 26,
-    "validos": 0.8203,
+    "validos": 3.155,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "hernando-de-soto",
@@ -821,7 +821,7 @@
   },
   {
     "total_votos": 640,
-    "validos": 41.7216,
+    "validos": 6.519,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "hernando-de-soto",
@@ -881,7 +881,7 @@
   },
   {
     "total_votos": 1037,
-    "validos": 87.0562,
+    "validos": 8.395,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "hernando-de-soto",
@@ -960,10 +960,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 10,
+    "validos": 2.237,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -1021,7 +1021,7 @@
   },
   {
     "total_votos": 10,
-    "validos": 0.0307,
+    "validos": 0.307,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "andres-alcantara",
@@ -1100,10 +1100,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 84,
-    "validos": 0.3721,
+    "total_votos": 101,
+    "validos": 0.465,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -1121,7 +1121,7 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.0049,
+    "validos": 0.243,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "andres-alcantara",
@@ -1161,7 +1161,7 @@
   },
   {
     "total_votos": 43,
-    "validos": 0.1883,
+    "validos": 0.438,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "andres-alcantara",
@@ -1221,7 +1221,7 @@
   },
   {
     "total_votos": 37,
-    "validos": 0.111,
+    "validos": 0.3,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "andres-alcantara",
@@ -1300,10 +1300,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 0.224,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -1361,7 +1361,7 @@
   },
   {
     "total_votos": 22,
-    "validos": 0.1487,
+    "validos": 0.676,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "marco-arana",
@@ -1440,10 +1440,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 69,
-    "validos": 0.2512,
+    "total_votos": 78,
+    "validos": 0.359,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -1461,7 +1461,7 @@
   },
   {
     "total_votos": 1,
-    "validos": 0.0012,
+    "validos": 0.121,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "marco-arana",
@@ -1501,7 +1501,7 @@
   },
   {
     "total_votos": 35,
-    "validos": 0.1246,
+    "validos": 0.356,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "marco-arana",
@@ -1561,7 +1561,7 @@
   },
   {
     "total_votos": 36,
-    "validos": 0.1048,
+    "validos": 0.291,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "marco-arana",
@@ -1640,10 +1640,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 7,
+    "validos": 1.566,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -1701,7 +1701,7 @@
   },
   {
     "total_votos": 880,
-    "validos": 237.9872,
+    "validos": 27.044,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "keiko-fujimori",
@@ -1780,10 +1780,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 3567,
-    "validos": 670.6317,
+    "total_votos": 4128,
+    "validos": 19.021,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -1801,7 +1801,7 @@
   },
   {
     "total_votos": 158,
-    "validos": 30.2965,
+    "validos": 19.175,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "keiko-fujimori",
@@ -1841,7 +1841,7 @@
   },
   {
     "total_votos": 2412,
-    "validos": 592.556,
+    "validos": 24.567,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "keiko-fujimori",
@@ -1901,7 +1901,7 @@
   },
   {
     "total_votos": 2404,
-    "validos": 467.8424,
+    "validos": 19.461,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "keiko-fujimori",
@@ -1980,10 +1980,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 95,
+    "validos": 21.253,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -2041,7 +2041,7 @@
   },
   {
     "total_votos": 354,
-    "validos": 38.5117,
+    "validos": 10.879,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "veronika-mendoza",
@@ -2120,10 +2120,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 1339,
-    "validos": 94.5066,
+    "total_votos": 1497,
+    "validos": 6.898,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -2141,7 +2141,7 @@
   },
   {
     "total_votos": 62,
-    "validos": 4.6649,
+    "validos": 7.524,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "veronika-mendoza",
@@ -2181,7 +2181,7 @@
   },
   {
     "total_votos": 730,
-    "validos": 54.2755,
+    "validos": 7.435,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "veronika-mendoza",
@@ -2241,7 +2241,7 @@
   },
   {
     "total_votos": 804,
-    "validos": 52.3324,
+    "validos": 6.509,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "veronika-mendoza",
@@ -2320,10 +2320,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 51,
+    "validos": 11.409,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -2381,7 +2381,7 @@
   },
   {
     "total_votos": 49,
-    "validos": 0.7379,
+    "validos": 1.506,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "daniel-urresti",
@@ -2460,10 +2460,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 349,
-    "validos": 6.4216,
+    "total_votos": 400,
+    "validos": 1.843,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -2481,7 +2481,7 @@
   },
   {
     "total_votos": 15,
-    "validos": 0.273,
+    "validos": 1.82,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "daniel-urresti",
@@ -2521,7 +2521,7 @@
   },
   {
     "total_votos": 176,
-    "validos": 3.1557,
+    "validos": 1.793,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "daniel-urresti",
@@ -2581,7 +2581,7 @@
   },
   {
     "total_votos": 288,
-    "validos": 6.7133,
+    "validos": 2.331,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "daniel-urresti",
@@ -2660,10 +2660,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 4,
+    "validos": 0.895,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -2721,7 +2721,7 @@
   },
   {
     "total_votos": 21,
-    "validos": 0.1354,
+    "validos": 0.645,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "julio-guzman",
@@ -2800,10 +2800,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 313,
-    "validos": 5.1645,
+    "total_votos": 338,
+    "validos": 1.557,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -2821,7 +2821,7 @@
   },
   {
     "total_votos": 13,
-    "validos": 0.2051,
+    "validos": 1.578,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "julio-guzman",
@@ -2861,7 +2861,7 @@
   },
   {
     "total_votos": 120,
-    "validos": 1.4664,
+    "validos": 1.222,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "julio-guzman",
@@ -2921,7 +2921,7 @@
   },
   {
     "total_votos": 163,
-    "validos": 2.1516,
+    "validos": 1.32,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "julio-guzman",
@@ -3000,10 +3000,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 9,
+    "validos": 2.013,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -3061,7 +3061,7 @@
   },
   {
     "total_votos": 45,
-    "validos": 0.6224,
+    "validos": 1.383,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "ollanta-humala",
@@ -3140,10 +3140,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 263,
-    "validos": 3.6452,
+    "total_votos": 299,
+    "validos": 1.378,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -3161,7 +3161,7 @@
   },
   {
     "total_votos": 18,
-    "validos": 0.3931,
+    "validos": 2.184,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "ollanta-humala",
@@ -3201,7 +3201,7 @@
   },
   {
     "total_votos": 142,
-    "validos": 2.0533,
+    "validos": 1.446,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "ollanta-humala",
@@ -3261,7 +3261,7 @@
   },
   {
     "total_votos": 188,
-    "validos": 2.8614,
+    "validos": 1.522,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "ollanta-humala",
@@ -3340,10 +3340,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 16,
+    "validos": 3.579,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -3401,7 +3401,7 @@
   },
   {
     "total_votos": 591,
-    "validos": 107.3374,
+    "validos": 18.162,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "pedro-castillo",
@@ -3480,10 +3480,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 1755,
-    "validos": 162.3375,
+    "total_votos": 2076,
+    "validos": 9.566,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -3501,7 +3501,7 @@
   },
   {
     "total_votos": 155,
-    "validos": 29.157,
+    "validos": 18.811,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "pedro-castillo",
@@ -3541,7 +3541,7 @@
   },
   {
     "total_votos": 904,
-    "validos": 83.2403,
+    "validos": 9.208,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "pedro-castillo",
@@ -3601,7 +3601,7 @@
   },
   {
     "total_votos": 1442,
-    "validos": 168.3247,
+    "validos": 11.673,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "pedro-castillo",
@@ -3680,10 +3680,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 80,
+    "validos": 17.897,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -3741,7 +3741,7 @@
   },
   {
     "total_votos": 272,
-    "validos": 22.7365,
+    "validos": 8.359,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "alberto-beingolea",
@@ -3820,10 +3820,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 228,
-    "validos": 2.7406,
+    "total_votos": 254,
+    "validos": 1.17,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -3841,7 +3841,7 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.0049,
+    "validos": 0.243,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "alberto-beingolea",
@@ -3881,7 +3881,7 @@
   },
   {
     "total_votos": 73,
-    "validos": 0.5431,
+    "validos": 0.744,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "alberto-beingolea",
@@ -3941,7 +3941,7 @@
   },
   {
     "total_votos": 108,
-    "validos": 0.9439,
+    "validos": 0.874,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "alberto-beingolea",
@@ -4020,10 +4020,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 3,
+    "validos": 0.671,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -4081,7 +4081,7 @@
   },
   {
     "total_votos": 14,
-    "validos": 0.0602,
+    "validos": 0.43,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "rafael-santos",
@@ -4160,10 +4160,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 68,
-    "validos": 0.2434,
+    "total_votos": 79,
+    "validos": 0.364,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -4221,7 +4221,7 @@
   },
   {
     "total_votos": 35,
-    "validos": 0.1246,
+    "validos": 0.356,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "rafael-santos",
@@ -4281,7 +4281,7 @@
   },
   {
     "total_votos": 44,
-    "validos": 0.1566,
+    "validos": 0.356,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "rafael-santos",
@@ -4360,10 +4360,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 2,
+    "validos": 0.447,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -4421,7 +4421,7 @@
   },
   {
     "total_votos": 78,
-    "validos": 1.8697,
+    "validos": 2.397,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "daniel-salaverry",
@@ -4500,10 +4500,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 1970,
-    "validos": 204.5648,
+    "total_votos": 2330,
+    "validos": 10.736,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -4521,7 +4521,7 @@
   },
   {
     "total_votos": 44,
-    "validos": 2.3496,
+    "validos": 5.34,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "daniel-salaverry",
@@ -4561,7 +4561,7 @@
   },
   {
     "total_votos": 1019,
-    "validos": 105.762,
+    "validos": 10.379,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "daniel-salaverry",
@@ -4621,7 +4621,7 @@
   },
   {
     "total_votos": 1319,
-    "validos": 140.8428,
+    "validos": 10.678,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "daniel-salaverry",
@@ -4700,10 +4700,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 24,
+    "validos": 5.369,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -4761,7 +4761,7 @@
   },
   {
     "total_votos": 12,
-    "validos": 0.0443,
+    "validos": 0.369,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "ciro-galvez",
@@ -4840,10 +4840,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 70,
-    "validos": 0.2583,
+    "total_votos": 77,
+    "validos": 0.355,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -4861,7 +4861,7 @@
   },
   {
     "total_votos": 3,
-    "validos": 0.0109,
+    "validos": 0.364,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "ciro-galvez",
@@ -4901,7 +4901,7 @@
   },
   {
     "total_votos": 31,
-    "validos": 0.098,
+    "validos": 0.316,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "ciro-galvez",
@@ -4961,7 +4961,7 @@
   },
   {
     "total_votos": 32,
-    "validos": 0.0829,
+    "validos": 0.259,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "ciro-galvez",
@@ -5040,10 +5040,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 6,
+    "validos": 1.342,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -5101,7 +5101,7 @@
   },
   {
     "total_votos": 158,
-    "validos": 7.6725,
+    "validos": 4.856,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "rafael-lopez-aliaga",
@@ -5180,10 +5180,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 1993,
-    "validos": 209.3647,
+    "total_votos": 2249,
+    "validos": 10.363,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -5201,7 +5201,7 @@
   },
   {
     "total_votos": 58,
-    "validos": 4.0826,
+    "validos": 7.039,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "rafael-lopez-aliaga",
@@ -5241,7 +5241,7 @@
   },
   {
     "total_votos": 686,
-    "validos": 47.9308,
+    "validos": 6.987,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "rafael-lopez-aliaga",
@@ -5301,7 +5301,7 @@
   },
   {
     "total_votos": 1170,
-    "validos": 110.8107,
+    "validos": 9.471,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "rafael-lopez-aliaga",
@@ -5380,10 +5380,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 30,
+    "validos": 6.711,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -5441,7 +5441,7 @@
   },
   {
     "total_votos": 31,
-    "validos": 0.2954,
+    "validos": 0.953,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "jose-vega",
@@ -5520,10 +5520,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 155,
-    "validos": 1.2664,
+    "total_votos": 181,
+    "validos": 0.834,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -5541,7 +5541,7 @@
   },
   {
     "total_votos": 20,
-    "validos": 0.4854,
+    "validos": 2.427,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "jose-vega",
@@ -5581,7 +5581,7 @@
   },
   {
     "total_votos": 107,
-    "validos": 1.1663,
+    "validos": 1.09,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "jose-vega",
@@ -5641,7 +5641,7 @@
   },
   {
     "total_votos": 116,
-    "validos": 1.0892,
+    "validos": 0.939,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "jose-vega",
@@ -5720,10 +5720,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 23,
+    "validos": 5.145,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -5781,7 +5781,7 @@
   },
   {
     "total_votos": 109,
-    "validos": 3.6515,
+    "validos": 3.35,
     "total_actas": 85,
     "conteo": 44.7059,
     "candidato_id": "george-forsyth",
@@ -5860,10 +5860,10 @@
     "distrito_id": "yurua"
   },
   {
-    "total_votos": 1381,
-    "validos": 100.523,
+    "total_votos": 1592,
+    "validos": 7.336,
     "total_actas": 429,
-    "conteo": 28.4382,
+    "conteo": 32.1678,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -5881,7 +5881,7 @@
   },
   {
     "total_votos": 86,
-    "validos": 8.9758,
+    "validos": 10.437,
     "total_actas": 43,
     "conteo": 13.9535,
     "candidato_id": "george-forsyth",
@@ -5921,7 +5921,7 @@
   },
   {
     "total_votos": 755,
-    "validos": 58.0595,
+    "validos": 7.69,
     "total_actas": 196,
     "conteo": 35.7143,
     "candidato_id": "george-forsyth",
@@ -5981,7 +5981,7 @@
   },
   {
     "total_votos": 876,
-    "validos": 62.1172,
+    "validos": 7.091,
     "total_actas": 255,
     "conteo": 32.1569,
     "candidato_id": "george-forsyth",
@@ -6060,10 +6060,10 @@
     "distrito_id": "irazola"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 15,
+    "validos": 3.356,
     "total_actas": 18,
-    "conteo": 0,
+    "conteo": 16.6667,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",

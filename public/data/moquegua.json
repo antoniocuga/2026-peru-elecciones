@@ -320,10 +320,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 3904,
-    "validos": 643.8086,
+    "total_votos": 4099,
+    "validos": 16.593,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -341,7 +341,7 @@
   },
   {
     "total_votos": 865,
-    "validos": 147.5517,
+    "validos": 17.058,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "yonhi-lescano",
@@ -381,7 +381,7 @@
   },
   {
     "total_votos": 478,
-    "validos": 71.4897,
+    "validos": 14.956,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "yonhi-lescano",
@@ -720,10 +720,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 658,
-    "validos": 18.2924,
+    "total_votos": 680,
+    "validos": 2.753,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -741,7 +741,7 @@
   },
   {
     "total_votos": 92,
-    "validos": 1.6689,
+    "validos": 1.814,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "cesar-acuna",
@@ -781,7 +781,7 @@
   },
   {
     "total_votos": 58,
-    "validos": 1.0527,
+    "validos": 1.815,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "cesar-acuna",
@@ -1120,10 +1120,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 2674,
-    "validos": 302.055,
+    "total_votos": 2752,
+    "validos": 11.14,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -1141,7 +1141,7 @@
   },
   {
     "total_votos": 501,
-    "validos": 49.4988,
+    "validos": 9.88,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "hernando-de-soto",
@@ -1181,7 +1181,7 @@
   },
   {
     "total_votos": 185,
-    "validos": 10.7078,
+    "validos": 5.788,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "hernando-de-soto",
@@ -1520,10 +1520,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 50,
-    "validos": 0.1055,
+    "total_votos": 51,
+    "validos": 0.206,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -1541,7 +1541,7 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.0159,
+    "validos": 0.177,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "andres-alcantara",
@@ -1581,7 +1581,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.0113,
+    "validos": 0.188,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "andres-alcantara",
@@ -1920,10 +1920,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 80,
-    "validos": 0.2704,
+    "total_votos": 84,
+    "validos": 0.34,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -1941,7 +1941,7 @@
   },
   {
     "total_votos": 23,
-    "validos": 0.1044,
+    "validos": 0.454,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "marco-arana",
@@ -1981,7 +1981,7 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.0254,
+    "validos": 0.282,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "marco-arana",
@@ -2320,10 +2320,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 890,
-    "validos": 33.464,
+    "total_votos": 940,
+    "validos": 3.805,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -2341,7 +2341,7 @@
   },
   {
     "total_votos": 220,
-    "validos": 9.5436,
+    "validos": 4.338,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "keiko-fujimori",
@@ -2381,7 +2381,7 @@
   },
   {
     "total_votos": 94,
-    "validos": 2.7645,
+    "validos": 2.941,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "keiko-fujimori",
@@ -2720,10 +2720,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 1736,
-    "validos": 127.3009,
+    "total_votos": 1813,
+    "validos": 7.339,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -2741,7 +2741,7 @@
   },
   {
     "total_votos": 335,
-    "validos": 22.1301,
+    "validos": 6.606,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "veronika-mendoza",
@@ -2781,7 +2781,7 @@
   },
   {
     "total_votos": 253,
-    "validos": 20.0275,
+    "validos": 7.916,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "veronika-mendoza",
@@ -3120,10 +3120,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 1015,
-    "validos": 43.5232,
+    "total_votos": 1073,
+    "validos": 4.344,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -3141,7 +3141,7 @@
   },
   {
     "total_votos": 199,
-    "validos": 7.8088,
+    "validos": 3.924,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "daniel-urresti",
@@ -3181,7 +3181,7 @@
   },
   {
     "total_votos": 72,
-    "validos": 1.6222,
+    "validos": 2.253,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "daniel-urresti",
@@ -3520,10 +3520,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 370,
-    "validos": 5.7831,
+    "total_votos": 382,
+    "validos": 1.546,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -3541,7 +3541,7 @@
   },
   {
     "total_votos": 50,
-    "validos": 0.493,
+    "validos": 0.986,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "julio-guzman",
@@ -3581,7 +3581,7 @@
   },
   {
     "total_votos": 27,
-    "validos": 0.2281,
+    "validos": 0.845,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "julio-guzman",
@@ -3920,10 +3920,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 309,
-    "validos": 4.0324,
+    "total_votos": 319,
+    "validos": 1.291,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -3941,7 +3941,7 @@
   },
   {
     "total_votos": 68,
-    "validos": 0.9119,
+    "validos": 1.341,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "ollanta-humala",
@@ -3981,7 +3981,7 @@
   },
   {
     "total_votos": 35,
-    "validos": 0.3832,
+    "validos": 1.095,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "ollanta-humala",
@@ -4320,10 +4320,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 8267,
-    "validos": 2887.0017,
+    "total_votos": 8630,
+    "validos": 34.935,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -4341,7 +4341,7 @@
   },
   {
     "total_votos": 1873,
-    "validos": 691.8113,
+    "validos": 36.936,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "pedro-castillo",
@@ -4381,7 +4381,7 @@
   },
   {
     "total_votos": 1694,
-    "validos": 897.8878,
+    "validos": 53.004,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "pedro-castillo",
@@ -4720,10 +4720,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 325,
-    "validos": 4.4623,
+    "total_votos": 341,
+    "validos": 1.38,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -4741,7 +4741,7 @@
   },
   {
     "total_votos": 59,
-    "validos": 0.6862,
+    "validos": 1.163,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "alberto-beingolea",
@@ -4781,7 +4781,7 @@
   },
   {
     "total_votos": 20,
-    "validos": 0.1252,
+    "validos": 0.626,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "alberto-beingolea",
@@ -5120,10 +5120,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 76,
-    "validos": 0.244,
+    "total_votos": 79,
+    "validos": 0.32,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -5141,7 +5141,7 @@
   },
   {
     "total_votos": 18,
-    "validos": 0.0639,
+    "validos": 0.355,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "rafael-santos",
@@ -5181,7 +5181,7 @@
   },
   {
     "total_votos": 7,
-    "validos": 0.0153,
+    "validos": 0.219,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "rafael-santos",
@@ -5520,10 +5520,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 726,
-    "validos": 22.2664,
+    "total_votos": 754,
+    "validos": 3.052,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -5541,7 +5541,7 @@
   },
   {
     "total_votos": 187,
-    "validos": 6.8966,
+    "validos": 3.688,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "daniel-salaverry",
@@ -5581,7 +5581,7 @@
   },
   {
     "total_votos": 54,
-    "validos": 0.9126,
+    "validos": 1.69,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "daniel-salaverry",
@@ -5920,10 +5920,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 115,
-    "validos": 0.5589,
+    "total_votos": 118,
+    "validos": 0.478,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -5941,7 +5941,7 @@
   },
   {
     "total_votos": 24,
-    "validos": 0.1135,
+    "validos": 0.473,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "ciro-galvez",
@@ -5981,7 +5981,7 @@
   },
   {
     "total_votos": 11,
-    "validos": 0.0378,
+    "validos": 0.344,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "ciro-galvez",
@@ -6320,10 +6320,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 1616,
-    "validos": 110.3082,
+    "total_votos": 1689,
+    "validos": 6.837,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -6341,7 +6341,7 @@
   },
   {
     "total_votos": 347,
-    "validos": 23.7452,
+    "validos": 6.843,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "rafael-lopez-aliaga",
@@ -6381,7 +6381,7 @@
   },
   {
     "total_votos": 122,
-    "validos": 4.6567,
+    "validos": 3.817,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "rafael-lopez-aliaga",
@@ -6720,10 +6720,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 123,
-    "validos": 0.6396,
+    "total_votos": 131,
+    "validos": 0.53,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -6741,7 +6741,7 @@
   },
   {
     "total_votos": 20,
-    "validos": 0.0788,
+    "validos": 0.394,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "jose-vega",
@@ -6781,7 +6781,7 @@
   },
   {
     "total_votos": 23,
-    "validos": 0.1656,
+    "validos": 0.72,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "jose-vega",
@@ -7120,10 +7120,10 @@
     "distrito_id": "cuchumbaya"
   },
   {
-    "total_votos": 739,
-    "validos": 23.0716,
+    "total_votos": 768,
+    "validos": 3.109,
     "total_actas": 183,
-    "conteo": 68.8525,
+    "conteo": 71.5847,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -7141,7 +7141,7 @@
   },
   {
     "total_votos": 181,
-    "validos": 6.4599,
+    "validos": 3.569,
     "total_actas": 26,
     "conteo": 100,
     "candidato_id": "george-forsyth",
@@ -7181,7 +7181,7 @@
   },
   {
     "total_votos": 48,
-    "validos": 0.721,
+    "validos": 1.502,
     "total_actas": 24,
     "conteo": 66.6667,
     "candidato_id": "george-forsyth",

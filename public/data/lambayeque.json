@@ -1,7 +1,7 @@
 [
   {
     "total_votos": 524,
-    "validos": 47.7783,
+    "validos": 9.118,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "yonhi-lescano",
@@ -20,10 +20,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 7786,
-    "validos": 619.1427,
+    "total_votos": 7977,
+    "validos": 7.932,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -61,7 +61,7 @@
   },
   {
     "total_votos": 364,
-    "validos": 31.8973,
+    "validos": 8.763,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "yonhi-lescano",
@@ -81,7 +81,7 @@
   },
   {
     "total_votos": 235,
-    "validos": 41.6161,
+    "validos": 17.709,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "yonhi-lescano",
@@ -100,10 +100,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 2758,
-    "validos": 186.3305,
+    "total_votos": 3052,
+    "validos": 6.669,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -121,7 +121,7 @@
   },
   {
     "total_votos": 1738,
-    "validos": 106.5394,
+    "validos": 6.13,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "yonhi-lescano",
@@ -141,7 +141,7 @@
   },
   {
     "total_votos": 272,
-    "validos": 24.0611,
+    "validos": 8.846,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "yonhi-lescano",
@@ -161,7 +161,7 @@
   },
   {
     "total_votos": 461,
-    "validos": 24.5068,
+    "validos": 5.316,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "yonhi-lescano",
@@ -221,7 +221,7 @@
   },
   {
     "total_votos": 371,
-    "validos": 19.5628,
+    "validos": 5.273,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "yonhi-lescano",
@@ -241,7 +241,7 @@
   },
   {
     "total_votos": 419,
-    "validos": 47.0286,
+    "validos": 11.224,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "yonhi-lescano",
@@ -261,7 +261,7 @@
   },
   {
     "total_votos": 945,
-    "validos": 74.5605,
+    "validos": 7.89,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "yonhi-lescano",
@@ -281,7 +281,7 @@
   },
   {
     "total_votos": 45,
-    "validos": 3.0915,
+    "validos": 6.87,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "yonhi-lescano",
@@ -301,7 +301,7 @@
   },
   {
     "total_votos": 32,
-    "validos": 2.2211,
+    "validos": 6.941,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "yonhi-lescano",
@@ -321,7 +321,7 @@
   },
   {
     "total_votos": 292,
-    "validos": 27.6378,
+    "validos": 9.465,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "yonhi-lescano",
@@ -361,7 +361,7 @@
   },
   {
     "total_votos": 288,
-    "validos": 17.0237,
+    "validos": 5.911,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "yonhi-lescano",
@@ -381,7 +381,7 @@
   },
   {
     "total_votos": 440,
-    "validos": 50.2612,
+    "validos": 11.423,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "yonhi-lescano",
@@ -400,10 +400,10 @@
     "distrito_id": "tuman"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 20,
+    "validos": 9.132,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -420,10 +420,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 1055,
-    "validos": 119.3944,
+    "total_votos": 1094,
+    "validos": 11.384,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -443,7 +443,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -460,10 +460,10 @@
     "distrito_id": "incahuasi"
   },
   {
-    "total_votos": 189,
-    "validos": 19.8563,
+    "total_votos": 218,
+    "validos": 11.016,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -501,7 +501,7 @@
   },
   {
     "total_votos": 294,
-    "validos": 26.6217,
+    "validos": 9.055,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "yonhi-lescano",
@@ -521,7 +521,7 @@
   },
   {
     "total_votos": 116,
-    "validos": 20.96,
+    "validos": 18.069,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "yonhi-lescano",
@@ -560,10 +560,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 463,
-    "validos": 40.8227,
+    "total_votos": 539,
+    "validos": 8.56,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -580,10 +580,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 2458,
-    "validos": 309.3147,
+    "total_votos": 2494,
+    "validos": 12.649,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -600,10 +600,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 261,
-    "validos": 27.2928,
+    "total_votos": 295,
+    "validos": 10.165,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -620,10 +620,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 735,
-    "validos": 80.1517,
+    "total_votos": 884,
+    "validos": 10.759,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -641,7 +641,7 @@
   },
   {
     "total_votos": 18,
-    "validos": 1.0451,
+    "validos": 5.806,
     "total_actas": 73,
     "conteo": 2.7397,
     "candidato_id": "yonhi-lescano",
@@ -660,10 +660,10 @@
     "distrito_id": "motupe"
   },
   {
-    "total_votos": 41,
-    "validos": 4.1816,
+    "total_votos": 84,
+    "validos": 13.884,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -681,7 +681,7 @@
   },
   {
     "total_votos": 154,
-    "validos": 13.2348,
+    "validos": 8.594,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "yonhi-lescano",
@@ -721,7 +721,7 @@
   },
   {
     "total_votos": 300,
-    "validos": 31.926,
+    "validos": 10.642,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "yonhi-lescano",
@@ -740,10 +740,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 429,
-    "validos": 31.7331,
+    "total_votos": 469,
+    "validos": 7.328,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "yonhi-lescano",
     "candidato": "Yonhy Lescano",
     "color": "#000000",
@@ -761,7 +761,7 @@
   },
   {
     "total_votos": 837,
-    "validos": 121.9007,
+    "validos": 14.564,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "cesar-acuna",
@@ -780,10 +780,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 9247,
-    "validos": 873.2867,
+    "total_votos": 9499,
+    "validos": 9.445,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -821,7 +821,7 @@
   },
   {
     "total_votos": 397,
-    "validos": 37.9413,
+    "validos": 9.557,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "cesar-acuna",
@@ -841,7 +841,7 @@
   },
   {
     "total_votos": 125,
-    "validos": 11.775,
+    "validos": 9.42,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "cesar-acuna",
@@ -860,10 +860,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 4351,
-    "validos": 463.7296,
+    "total_votos": 4852,
+    "validos": 10.602,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -881,7 +881,7 @@
   },
   {
     "total_votos": 3393,
-    "validos": 406.0742,
+    "validos": 11.968,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "cesar-acuna",
@@ -901,7 +901,7 @@
   },
   {
     "total_votos": 335,
-    "validos": 36.4949,
+    "validos": 10.894,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "cesar-acuna",
@@ -921,7 +921,7 @@
   },
   {
     "total_votos": 810,
-    "validos": 75.654,
+    "validos": 9.34,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "cesar-acuna",
@@ -981,7 +981,7 @@
   },
   {
     "total_votos": 1028,
-    "validos": 150.2011,
+    "validos": 14.611,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "cesar-acuna",
@@ -1001,7 +1001,7 @@
   },
   {
     "total_votos": 435,
-    "validos": 50.6906,
+    "validos": 11.653,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "cesar-acuna",
@@ -1021,7 +1021,7 @@
   },
   {
     "total_votos": 1426,
-    "validos": 169.7796,
+    "validos": 11.906,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "cesar-acuna",
@@ -1041,7 +1041,7 @@
   },
   {
     "total_votos": 107,
-    "validos": 17.4795,
+    "validos": 16.336,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "cesar-acuna",
@@ -1061,7 +1061,7 @@
   },
   {
     "total_votos": 51,
-    "validos": 5.6421,
+    "validos": 11.063,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "cesar-acuna",
@@ -1081,7 +1081,7 @@
   },
   {
     "total_votos": 391,
-    "validos": 49.5553,
+    "validos": 12.674,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "cesar-acuna",
@@ -1121,7 +1121,7 @@
   },
   {
     "total_votos": 657,
-    "validos": 88.5965,
+    "validos": 13.485,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "cesar-acuna",
@@ -1141,7 +1141,7 @@
   },
   {
     "total_votos": 536,
-    "validos": 74.5844,
+    "validos": 13.915,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "cesar-acuna",
@@ -1160,10 +1160,10 @@
     "distrito_id": "tuman"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 25,
+    "validos": 11.416,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1180,10 +1180,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 1184,
-    "validos": 150.3798,
+    "total_votos": 1223,
+    "validos": 12.726,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1200,10 +1200,10 @@
     "distrito_id": "ferreñafe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 6.667,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1220,10 +1220,10 @@
     "distrito_id": "incahuasi"
   },
   {
-    "total_votos": 275,
-    "validos": 42.0365,
+    "total_votos": 314,
+    "validos": 15.867,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1261,7 +1261,7 @@
   },
   {
     "total_votos": 448,
-    "validos": 61.8106,
+    "validos": 13.797,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "cesar-acuna",
@@ -1281,7 +1281,7 @@
   },
   {
     "total_votos": 73,
-    "validos": 8.3008,
+    "validos": 11.371,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "cesar-acuna",
@@ -1320,10 +1320,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 756,
-    "validos": 108.8413,
+    "total_votos": 868,
+    "validos": 13.784,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1340,10 +1340,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 2128,
-    "validos": 231.8456,
+    "total_votos": 2138,
+    "validos": 10.843,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1360,10 +1360,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 340,
-    "validos": 46.3148,
+    "total_votos": 374,
+    "validos": 12.888,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1380,10 +1380,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 395,
-    "validos": 23.1509,
+    "total_votos": 498,
+    "validos": 6.061,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1401,7 +1401,7 @@
   },
   {
     "total_votos": 47,
-    "validos": 7.1257,
+    "validos": 15.161,
     "total_actas": 73,
     "conteo": 2.7397,
     "candidato_id": "cesar-acuna",
@@ -1420,10 +1420,10 @@
     "distrito_id": "motupe"
   },
   {
-    "total_votos": 23,
-    "validos": 1.3158,
+    "total_votos": 53,
+    "validos": 8.76,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1441,7 +1441,7 @@
   },
   {
     "total_votos": 98,
-    "validos": 5.3596,
+    "validos": 5.469,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "cesar-acuna",
@@ -1481,7 +1481,7 @@
   },
   {
     "total_votos": 416,
-    "validos": 61.3891,
+    "validos": 14.757,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "cesar-acuna",
@@ -1500,10 +1500,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 438,
-    "validos": 33.0778,
+    "total_votos": 486,
+    "validos": 7.594,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "cesar-acuna",
     "candidato": "César Acuña",
     "color": "#0050a0",
@@ -1521,7 +1521,7 @@
   },
   {
     "total_votos": 314,
-    "validos": 17.157,
+    "validos": 5.464,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "hernando-de-soto",
@@ -1540,10 +1540,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 14148,
-    "validos": 2044.2445,
+    "total_votos": 14576,
+    "validos": 14.493,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -1581,7 +1581,7 @@
   },
   {
     "total_votos": 527,
-    "validos": 66.8605,
+    "validos": 12.687,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "hernando-de-soto",
@@ -1601,7 +1601,7 @@
   },
   {
     "total_votos": 218,
-    "validos": 35.813,
+    "validos": 16.428,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "hernando-de-soto",
@@ -1620,10 +1620,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 4123,
-    "validos": 416.423,
+    "total_votos": 4440,
+    "validos": 9.702,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -1641,7 +1641,7 @@
   },
   {
     "total_votos": 3209,
-    "validos": 363.2267,
+    "validos": 11.319,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "hernando-de-soto",
@@ -1661,7 +1661,7 @@
   },
   {
     "total_votos": 125,
-    "validos": 5.0813,
+    "validos": 4.065,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "hernando-de-soto",
@@ -1681,7 +1681,7 @@
   },
   {
     "total_votos": 855,
-    "validos": 84.2944,
+    "validos": 9.859,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "hernando-de-soto",
@@ -1741,7 +1741,7 @@
   },
   {
     "total_votos": 368,
-    "validos": 19.2464,
+    "validos": 5.23,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "hernando-de-soto",
@@ -1761,7 +1761,7 @@
   },
   {
     "total_votos": 236,
-    "validos": 14.9199,
+    "validos": 6.322,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "hernando-de-soto",
@@ -1781,7 +1781,7 @@
   },
   {
     "total_votos": 1366,
-    "validos": 155.7923,
+    "validos": 11.405,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "hernando-de-soto",
@@ -1801,7 +1801,7 @@
   },
   {
     "total_votos": 103,
-    "validos": 16.1968,
+    "validos": 15.725,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "hernando-de-soto",
@@ -1821,7 +1821,7 @@
   },
   {
     "total_votos": 36,
-    "validos": 2.8112,
+    "validos": 7.809,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "hernando-de-soto",
@@ -1841,7 +1841,7 @@
   },
   {
     "total_votos": 360,
-    "validos": 42.0084,
+    "validos": 11.669,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "hernando-de-soto",
@@ -1881,7 +1881,7 @@
   },
   {
     "total_votos": 449,
-    "validos": 41.3798,
+    "validos": 9.216,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "hernando-de-soto",
@@ -1901,7 +1901,7 @@
   },
   {
     "total_votos": 220,
-    "validos": 12.5642,
+    "validos": 5.711,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "hernando-de-soto",
@@ -1920,10 +1920,10 @@
     "distrito_id": "tuman"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 2,
+    "validos": 0.913,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -1940,10 +1940,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 787,
-    "validos": 66.4385,
+    "total_votos": 811,
+    "validos": 8.439,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -1963,7 +1963,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -1980,10 +1980,10 @@
     "distrito_id": "incahuasi"
   },
   {
-    "total_votos": 28,
-    "validos": 0.4357,
+    "total_votos": 31,
+    "validos": 1.566,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -2021,7 +2021,7 @@
   },
   {
     "total_votos": 254,
-    "validos": 19.8704,
+    "validos": 7.823,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "hernando-de-soto",
@@ -2041,7 +2041,7 @@
   },
   {
     "total_votos": 12,
-    "validos": 0.2243,
+    "validos": 1.869,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "hernando-de-soto",
@@ -2080,10 +2080,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 261,
-    "validos": 12.9717,
+    "total_votos": 299,
+    "validos": 4.748,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -2100,10 +2100,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 1686,
-    "validos": 145.5355,
+    "total_votos": 1700,
+    "validos": 8.622,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -2120,10 +2120,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 141,
-    "validos": 7.9651,
+    "total_votos": 157,
+    "validos": 5.41,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -2140,10 +2140,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 134,
-    "validos": 2.6639,
+    "total_votos": 169,
+    "validos": 2.057,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -2161,7 +2161,7 @@
   },
   {
     "total_votos": 4,
-    "validos": 0.0516,
+    "validos": 1.29,
     "total_actas": 73,
     "conteo": 2.7397,
     "candidato_id": "hernando-de-soto",
@@ -2180,10 +2180,10 @@
     "distrito_id": "motupe"
   },
   {
-    "total_votos": 15,
-    "validos": 0.5596,
+    "total_votos": 35,
+    "validos": 5.785,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -2201,7 +2201,7 @@
   },
   {
     "total_votos": 86,
-    "validos": 4.1271,
+    "validos": 4.799,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "hernando-de-soto",
@@ -2241,7 +2241,7 @@
   },
   {
     "total_votos": 222,
-    "validos": 17.4825,
+    "validos": 7.875,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "hernando-de-soto",
@@ -2260,10 +2260,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 263,
-    "validos": 11.9244,
+    "total_votos": 293,
+    "validos": 4.578,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "hernando-de-soto",
     "candidato": "Hernando de Soto",
     "color": "#ff2c79",
@@ -2281,7 +2281,7 @@
   },
   {
     "total_votos": 16,
-    "validos": 0.0445,
+    "validos": 0.278,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "andres-alcantara",
@@ -2300,10 +2300,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 337,
-    "validos": 1.1593,
+    "total_votos": 349,
+    "validos": 0.347,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2341,7 +2341,7 @@
   },
   {
     "total_votos": 12,
-    "validos": 0.0347,
+    "validos": 0.289,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "andres-alcantara",
@@ -2361,7 +2361,7 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.003,
+    "validos": 0.151,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "andres-alcantara",
@@ -2380,10 +2380,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 144,
-    "validos": 0.5083,
+    "total_votos": 154,
+    "validos": 0.336,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2401,7 +2401,7 @@
   },
   {
     "total_votos": 95,
-    "validos": 0.3183,
+    "validos": 0.335,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "andres-alcantara",
@@ -2421,7 +2421,7 @@
   },
   {
     "total_votos": 8,
-    "validos": 0.0208,
+    "validos": 0.26,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "andres-alcantara",
@@ -2441,7 +2441,7 @@
   },
   {
     "total_votos": 31,
-    "validos": 0.1107,
+    "validos": 0.357,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "andres-alcantara",
@@ -2501,7 +2501,7 @@
   },
   {
     "total_votos": 19,
-    "validos": 0.0513,
+    "validos": 0.27,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "andres-alcantara",
@@ -2521,7 +2521,7 @@
   },
   {
     "total_votos": 14,
-    "validos": 0.0525,
+    "validos": 0.375,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "andres-alcantara",
@@ -2541,7 +2541,7 @@
   },
   {
     "total_votos": 37,
-    "validos": 0.1143,
+    "validos": 0.309,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "andres-alcantara",
@@ -2561,7 +2561,7 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.0061,
+    "validos": 0.305,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "andres-alcantara",
@@ -2581,7 +2581,7 @@
   },
   {
     "total_votos": 5,
-    "validos": 0.0542,
+    "validos": 1.085,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "andres-alcantara",
@@ -2601,7 +2601,7 @@
   },
   {
     "total_votos": 8,
-    "validos": 0.0207,
+    "validos": 0.259,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "andres-alcantara",
@@ -2641,7 +2641,7 @@
   },
   {
     "total_votos": 13,
-    "validos": 0.0347,
+    "validos": 0.267,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "andres-alcantara",
@@ -2661,7 +2661,7 @@
   },
   {
     "total_votos": 10,
-    "validos": 0.026,
+    "validos": 0.26,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "andres-alcantara",
@@ -2683,7 +2683,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2700,10 +2700,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 59,
-    "validos": 0.3735,
+    "total_votos": 60,
+    "validos": 0.624,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2723,7 +2723,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2740,10 +2740,10 @@
     "distrito_id": "incahuasi"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 0.051,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2781,7 +2781,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.0111,
+    "validos": 0.185,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "andres-alcantara",
@@ -2801,7 +2801,7 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.0062,
+    "validos": 0.312,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "andres-alcantara",
@@ -2841,9 +2841,9 @@
   },
   {
     "total_votos": 4,
-    "validos": 0.003,
+    "validos": 0.064,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2861,9 +2861,9 @@
   },
   {
     "total_votos": 63,
-    "validos": 0.2035,
+    "validos": 0.32,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2880,10 +2880,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 6,
-    "validos": 0.0144,
+    "total_votos": 7,
+    "validos": 0.241,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2900,10 +2900,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 8,
-    "validos": 0.0095,
+    "total_votos": 10,
+    "validos": 0.122,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2943,7 +2943,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -2961,7 +2961,7 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.0022,
+    "validos": 0.112,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "andres-alcantara",
@@ -3001,7 +3001,7 @@
   },
   {
     "total_votos": 8,
-    "validos": 0.0227,
+    "validos": 0.284,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "andres-alcantara",
@@ -3020,10 +3020,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 10,
-    "validos": 0.0172,
+    "total_votos": 11,
+    "validos": 0.172,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "andres-alcantara",
     "candidato": "Andres Alcantara",
     "color": "#fff000",
@@ -3041,7 +3041,7 @@
   },
   {
     "total_votos": 14,
-    "validos": 0.0342,
+    "validos": 0.244,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "marco-arana",
@@ -3060,10 +3060,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 253,
-    "validos": 0.6527,
+    "total_votos": 259,
+    "validos": 0.258,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3101,7 +3101,7 @@
   },
   {
     "total_votos": 4,
-    "validos": 0.0038,
+    "validos": 0.096,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "marco-arana",
@@ -3121,7 +3121,7 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.003,
+    "validos": 0.151,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "marco-arana",
@@ -3140,10 +3140,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 105,
-    "validos": 0.2699,
+    "total_votos": 117,
+    "validos": 0.256,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3161,7 +3161,7 @@
   },
   {
     "total_votos": 69,
-    "validos": 0.1677,
+    "validos": 0.243,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "marco-arana",
@@ -3181,7 +3181,7 @@
   },
   {
     "total_votos": 7,
-    "validos": 0.016,
+    "validos": 0.228,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "marco-arana",
@@ -3201,7 +3201,7 @@
   },
   {
     "total_votos": 22,
-    "validos": 0.0559,
+    "validos": 0.254,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "marco-arana",
@@ -3261,7 +3261,7 @@
   },
   {
     "total_votos": 19,
-    "validos": 0.0513,
+    "validos": 0.27,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "marco-arana",
@@ -3281,7 +3281,7 @@
   },
   {
     "total_votos": 14,
-    "validos": 0.0525,
+    "validos": 0.375,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "marco-arana",
@@ -3301,7 +3301,7 @@
   },
   {
     "total_votos": 25,
-    "validos": 0.0522,
+    "validos": 0.209,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "marco-arana",
@@ -3341,7 +3341,7 @@
   },
   {
     "total_votos": 3,
-    "validos": 0.0195,
+    "validos": 0.651,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "marco-arana",
@@ -3361,7 +3361,7 @@
   },
   {
     "total_votos": 12,
-    "validos": 0.0467,
+    "validos": 0.389,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "marco-arana",
@@ -3401,7 +3401,7 @@
   },
   {
     "total_votos": 7,
-    "validos": 0.0101,
+    "validos": 0.144,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "marco-arana",
@@ -3421,7 +3421,7 @@
   },
   {
     "total_votos": 22,
-    "validos": 0.1256,
+    "validos": 0.571,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "marco-arana",
@@ -3443,7 +3443,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3461,9 +3461,9 @@
   },
   {
     "total_votos": 36,
-    "validos": 0.139,
+    "validos": 0.375,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3483,7 +3483,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3501,9 +3501,9 @@
   },
   {
     "total_votos": 5,
-    "validos": 0.0139,
+    "validos": 0.253,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3541,7 +3541,7 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.0249,
+    "validos": 0.277,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "marco-arana",
@@ -3561,7 +3561,7 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.0062,
+    "validos": 0.312,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "marco-arana",
@@ -3600,10 +3600,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 13,
-    "validos": 0.0322,
+    "total_votos": 16,
+    "validos": 0.254,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3621,9 +3621,9 @@
   },
   {
     "total_votos": 64,
-    "validos": 0.2099,
+    "validos": 0.325,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3640,10 +3640,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 5,
-    "validos": 0.01,
+    "total_votos": 6,
+    "validos": 0.207,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3660,10 +3660,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 7,
-    "validos": 0.0073,
+    "total_votos": 10,
+    "validos": 0.122,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3700,10 +3700,10 @@
     "distrito_id": "motupe"
   },
   {
-    "total_votos": 2,
-    "validos": 0.01,
+    "total_votos": 3,
+    "validos": 0.496,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3721,7 +3721,7 @@
   },
   {
     "total_votos": 5,
-    "validos": 0.014,
+    "validos": 0.279,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "marco-arana",
@@ -3761,7 +3761,7 @@
   },
   {
     "total_votos": 13,
-    "validos": 0.0599,
+    "validos": 0.461,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "marco-arana",
@@ -3781,9 +3781,9 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.014,
+    "validos": 0.141,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "marco-arana",
     "candidato": "Marco Arana",
     "color": "#4e5405",
@@ -3801,7 +3801,7 @@
   },
   {
     "total_votos": 1566,
-    "validos": 426.7193,
+    "validos": 27.249,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "keiko-fujimori",
@@ -3820,10 +3820,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 13278,
-    "validos": 1800.4968,
+    "total_votos": 13583,
+    "validos": 13.506,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -3861,7 +3861,7 @@
   },
   {
     "total_votos": 933,
-    "validos": 209.5518,
+    "validos": 22.46,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "keiko-fujimori",
@@ -3881,7 +3881,7 @@
   },
   {
     "total_votos": 135,
-    "validos": 13.7335,
+    "validos": 10.173,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "keiko-fujimori",
@@ -3900,10 +3900,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 7851,
-    "validos": 1509.9043,
+    "total_votos": 8937,
+    "validos": 19.528,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -3921,7 +3921,7 @@
   },
   {
     "total_votos": 5158,
-    "validos": 938.3949,
+    "validos": 18.193,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "keiko-fujimori",
@@ -3941,7 +3941,7 @@
   },
   {
     "total_votos": 748,
-    "validos": 181.951,
+    "validos": 24.325,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "keiko-fujimori",
@@ -3961,7 +3961,7 @@
   },
   {
     "total_votos": 2978,
-    "validos": 1022.6452,
+    "validos": 34.34,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "keiko-fujimori",
@@ -4021,7 +4021,7 @@
   },
   {
     "total_votos": 1470,
-    "validos": 307.1271,
+    "validos": 20.893,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "keiko-fujimori",
@@ -4041,7 +4041,7 @@
   },
   {
     "total_votos": 697,
-    "validos": 130.1369,
+    "validos": 18.671,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "keiko-fujimori",
@@ -4061,7 +4061,7 @@
   },
   {
     "total_votos": 1903,
-    "validos": 302.3677,
+    "validos": 15.889,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "keiko-fujimori",
@@ -4081,7 +4081,7 @@
   },
   {
     "total_votos": 49,
-    "validos": 3.6657,
+    "validos": 7.481,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "keiko-fujimori",
@@ -4101,7 +4101,7 @@
   },
   {
     "total_votos": 87,
-    "validos": 16.4186,
+    "validos": 18.872,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "keiko-fujimori",
@@ -4121,7 +4121,7 @@
   },
   {
     "total_votos": 568,
-    "validos": 104.5802,
+    "validos": 18.412,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "keiko-fujimori",
@@ -4161,7 +4161,7 @@
   },
   {
     "total_votos": 1411,
-    "validos": 408.6397,
+    "validos": 28.961,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "keiko-fujimori",
@@ -4181,7 +4181,7 @@
   },
   {
     "total_votos": 482,
-    "validos": 60.3127,
+    "validos": 12.513,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "keiko-fujimori",
@@ -4200,10 +4200,10 @@
     "distrito_id": "tuman"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 103,
+    "validos": 47.032,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -4220,10 +4220,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 1686,
-    "validos": 304.93,
+    "total_votos": 1749,
+    "validos": 18.2,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -4240,10 +4240,10 @@
     "distrito_id": "ferreñafe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 2,
+    "validos": 13.333,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -4260,10 +4260,10 @@
     "distrito_id": "incahuasi"
   },
   {
-    "total_votos": 414,
-    "validos": 95.2738,
+    "total_votos": 445,
+    "validos": 22.486,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -4301,7 +4301,7 @@
   },
   {
     "total_votos": 752,
-    "validos": 174.1632,
+    "validos": 23.16,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "keiko-fujimori",
@@ -4321,7 +4321,7 @@
   },
   {
     "total_votos": 163,
-    "validos": 41.3841,
+    "validos": 25.389,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "keiko-fujimori",
@@ -4360,10 +4360,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 1491,
-    "validos": 423.3694,
+    "total_votos": 1838,
+    "validos": 29.189,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -4380,10 +4380,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 3424,
-    "validos": 600.2272,
+    "total_votos": 3454,
+    "validos": 17.518,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -4400,10 +4400,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 853,
-    "validos": 291.5127,
+    "total_votos": 1021,
+    "validos": 35.183,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -4420,10 +4420,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 3382,
-    "validos": 1697.02,
+    "total_votos": 4133,
+    "validos": 50.304,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -4441,7 +4441,7 @@
   },
   {
     "total_votos": 120,
-    "validos": 46.452,
+    "validos": 38.71,
     "total_actas": 73,
     "conteo": 2.7397,
     "candidato_id": "keiko-fujimori",
@@ -4460,10 +4460,10 @@
     "distrito_id": "motupe"
   },
   {
-    "total_votos": 110,
-    "validos": 30.0993,
+    "total_votos": 154,
+    "validos": 25.455,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -4481,7 +4481,7 @@
   },
   {
     "total_votos": 716,
-    "validos": 286.0778,
+    "validos": 39.955,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "keiko-fujimori",
@@ -4521,7 +4521,7 @@
   },
   {
     "total_votos": 866,
-    "validos": 266.0352,
+    "validos": 30.72,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "keiko-fujimori",
@@ -4540,10 +4540,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 2631,
-    "validos": 1193.4742,
+    "total_votos": 2899,
+    "validos": 45.297,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
     "color": "#fd6600",
@@ -4561,7 +4561,7 @@
   },
   {
     "total_votos": 653,
-    "validos": 74.1939,
+    "validos": 11.362,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "veronika-mendoza",
@@ -4580,10 +4580,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 5483,
-    "validos": 307.048,
+    "total_votos": 5665,
+    "validos": 5.633,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -4621,7 +4621,7 @@
   },
   {
     "total_votos": 200,
-    "validos": 9.63,
+    "validos": 4.815,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "veronika-mendoza",
@@ -4641,7 +4641,7 @@
   },
   {
     "total_votos": 85,
-    "validos": 5.4442,
+    "validos": 6.405,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "veronika-mendoza",
@@ -4660,10 +4660,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 1720,
-    "validos": 72.4636,
+    "total_votos": 1919,
+    "validos": 4.193,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -4681,7 +4681,7 @@
   },
   {
     "total_votos": 1204,
-    "validos": 51.1339,
+    "validos": 4.247,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "veronika-mendoza",
@@ -4701,7 +4701,7 @@
   },
   {
     "total_votos": 179,
-    "validos": 10.4196,
+    "validos": 5.821,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "veronika-mendoza",
@@ -4721,7 +4721,7 @@
   },
   {
     "total_votos": 352,
-    "validos": 14.2877,
+    "validos": 4.059,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "veronika-mendoza",
@@ -4781,7 +4781,7 @@
   },
   {
     "total_votos": 398,
-    "validos": 22.5149,
+    "validos": 5.657,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "veronika-mendoza",
@@ -4801,7 +4801,7 @@
   },
   {
     "total_votos": 250,
-    "validos": 16.7425,
+    "validos": 6.697,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "veronika-mendoza",
@@ -4821,7 +4821,7 @@
   },
   {
     "total_votos": 619,
-    "validos": 31.9899,
+    "validos": 5.168,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "veronika-mendoza",
@@ -4841,7 +4841,7 @@
   },
   {
     "total_votos": 19,
-    "validos": 0.5512,
+    "validos": 2.901,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "veronika-mendoza",
@@ -4861,7 +4861,7 @@
   },
   {
     "total_votos": 35,
-    "validos": 2.6572,
+    "validos": 7.592,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "veronika-mendoza",
@@ -4881,7 +4881,7 @@
   },
   {
     "total_votos": 171,
-    "validos": 9.4785,
+    "validos": 5.543,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "veronika-mendoza",
@@ -4921,7 +4921,7 @@
   },
   {
     "total_votos": 98,
-    "validos": 1.9708,
+    "validos": 2.011,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "veronika-mendoza",
@@ -4941,7 +4941,7 @@
   },
   {
     "total_votos": 368,
-    "validos": 35.155,
+    "validos": 9.553,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "veronika-mendoza",
@@ -4960,10 +4960,10 @@
     "distrito_id": "tuman"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 8,
+    "validos": 3.653,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -4980,10 +4980,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 508,
-    "validos": 27.6809,
+    "total_votos": 527,
+    "validos": 5.484,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -5003,7 +5003,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -5020,10 +5020,10 @@
     "distrito_id": "incahuasi"
   },
   {
-    "total_votos": 157,
-    "validos": 13.7014,
+    "total_votos": 188,
+    "validos": 9.5,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -5061,7 +5061,7 @@
   },
   {
     "total_votos": 139,
-    "validos": 5.9506,
+    "validos": 4.281,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "veronika-mendoza",
@@ -5081,7 +5081,7 @@
   },
   {
     "total_votos": 44,
-    "validos": 3.0158,
+    "validos": 6.854,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "veronika-mendoza",
@@ -5120,10 +5120,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 245,
-    "validos": 11.4317,
+    "total_votos": 298,
+    "validos": 4.732,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -5140,10 +5140,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 1139,
-    "validos": 66.4151,
+    "total_votos": 1155,
+    "validos": 5.858,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -5160,10 +5160,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 108,
-    "validos": 4.6732,
+    "total_votos": 125,
+    "validos": 4.307,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -5180,10 +5180,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 108,
-    "validos": 1.7302,
+    "total_votos": 128,
+    "validos": 1.558,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -5201,7 +5201,7 @@
   },
   {
     "total_votos": 15,
-    "validos": 0.7258,
+    "validos": 4.839,
     "total_actas": 73,
     "conteo": 2.7397,
     "candidato_id": "veronika-mendoza",
@@ -5220,10 +5220,10 @@
     "distrito_id": "motupe"
   },
   {
-    "total_votos": 16,
-    "validos": 0.6368,
+    "total_votos": 29,
+    "validos": 4.793,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -5241,7 +5241,7 @@
   },
   {
     "total_votos": 108,
-    "validos": 6.5092,
+    "validos": 6.027,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "veronika-mendoza",
@@ -5281,7 +5281,7 @@
   },
   {
     "total_votos": 75,
-    "validos": 1.9958,
+    "validos": 2.661,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "veronika-mendoza",
@@ -5300,10 +5300,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 167,
-    "validos": 4.8079,
+    "total_votos": 180,
+    "validos": 2.812,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "veronika-mendoza",
     "candidato": "Verónika Mendoza",
     "color": "#2fc100",
@@ -5321,7 +5321,7 @@
   },
   {
     "total_votos": 83,
-    "validos": 1.1985,
+    "validos": 1.444,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "daniel-urresti",
@@ -5340,10 +5340,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 1724,
-    "validos": 30.3596,
+    "total_votos": 1763,
+    "validos": 1.753,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -5381,7 +5381,7 @@
   },
   {
     "total_votos": 93,
-    "validos": 2.0823,
+    "validos": 2.239,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "daniel-urresti",
@@ -5401,7 +5401,7 @@
   },
   {
     "total_votos": 25,
-    "validos": 0.471,
+    "validos": 1.884,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "daniel-urresti",
@@ -5420,10 +5420,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 652,
-    "validos": 10.4124,
+    "total_votos": 715,
+    "validos": 1.562,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -5441,7 +5441,7 @@
   },
   {
     "total_votos": 501,
-    "validos": 8.8527,
+    "validos": 1.767,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "daniel-urresti",
@@ -5461,7 +5461,7 @@
   },
   {
     "total_votos": 126,
-    "validos": 5.1635,
+    "validos": 4.098,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "daniel-urresti",
@@ -5481,7 +5481,7 @@
   },
   {
     "total_votos": 206,
-    "validos": 4.8925,
+    "validos": 2.375,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "daniel-urresti",
@@ -5541,7 +5541,7 @@
   },
   {
     "total_votos": 171,
-    "validos": 4.1553,
+    "validos": 2.43,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "daniel-urresti",
@@ -5561,7 +5561,7 @@
   },
   {
     "total_votos": 58,
-    "validos": 0.9013,
+    "validos": 1.554,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "daniel-urresti",
@@ -5581,7 +5581,7 @@
   },
   {
     "total_votos": 232,
-    "validos": 4.4938,
+    "validos": 1.937,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "daniel-urresti",
@@ -5601,7 +5601,7 @@
   },
   {
     "total_votos": 11,
-    "validos": 0.1847,
+    "validos": 1.679,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "daniel-urresti",
@@ -5621,7 +5621,7 @@
   },
   {
     "total_votos": 10,
-    "validos": 0.2169,
+    "validos": 2.169,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "daniel-urresti",
@@ -5641,7 +5641,7 @@
   },
   {
     "total_votos": 48,
-    "validos": 0.7469,
+    "validos": 1.556,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "daniel-urresti",
@@ -5681,7 +5681,7 @@
   },
   {
     "total_votos": 86,
-    "validos": 1.5179,
+    "validos": 1.765,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "daniel-urresti",
@@ -5701,7 +5701,7 @@
   },
   {
     "total_votos": 133,
-    "validos": 4.5925,
+    "validos": 3.453,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "daniel-urresti",
@@ -5720,10 +5720,10 @@
     "distrito_id": "tuman"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 6,
+    "validos": 2.74,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -5740,10 +5740,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 190,
-    "validos": 3.8722,
+    "total_votos": 196,
+    "validos": 2.04,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -5763,7 +5763,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -5780,10 +5780,10 @@
     "distrito_id": "incahuasi"
   },
   {
-    "total_votos": 71,
-    "validos": 2.8024,
+    "total_votos": 78,
+    "validos": 3.941,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -5821,7 +5821,7 @@
   },
   {
     "total_votos": 88,
-    "validos": 2.3848,
+    "validos": 2.71,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "daniel-urresti",
@@ -5841,7 +5841,7 @@
   },
   {
     "total_votos": 13,
-    "validos": 0.2632,
+    "validos": 2.025,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "daniel-urresti",
@@ -5880,10 +5880,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 113,
-    "validos": 2.4318,
+    "total_votos": 133,
+    "validos": 2.112,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -5900,10 +5900,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 589,
-    "validos": 17.7642,
+    "total_votos": 593,
+    "validos": 3.008,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -5920,10 +5920,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 58,
-    "validos": 1.3479,
+    "total_votos": 65,
+    "validos": 2.24,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -5940,10 +5940,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 117,
-    "validos": 2.0311,
+    "total_votos": 139,
+    "validos": 1.692,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -5961,7 +5961,7 @@
   },
   {
     "total_votos": 8,
-    "validos": 0.2065,
+    "validos": 2.581,
     "total_actas": 73,
     "conteo": 2.7397,
     "candidato_id": "daniel-urresti",
@@ -5980,10 +5980,10 @@
     "distrito_id": "motupe"
   },
   {
-    "total_votos": 8,
-    "validos": 0.1592,
+    "total_votos": 10,
+    "validos": 1.653,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -6001,7 +6001,7 @@
   },
   {
     "total_votos": 28,
-    "validos": 0.4374,
+    "validos": 1.562,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "daniel-urresti",
@@ -6041,7 +6041,7 @@
   },
   {
     "total_votos": 54,
-    "validos": 1.0346,
+    "validos": 1.916,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "daniel-urresti",
@@ -6060,10 +6060,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 169,
-    "validos": 4.9247,
+    "total_votos": 179,
+    "validos": 2.797,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "daniel-urresti",
     "candidato": "Daniel Urresti",
     "color": "#004da3",
@@ -6081,7 +6081,7 @@
   },
   {
     "total_votos": 58,
-    "validos": 0.5852,
+    "validos": 1.009,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "julio-guzman",
@@ -6100,10 +6100,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 2622,
-    "validos": 70.2172,
+    "total_votos": 2693,
+    "validos": 2.678,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -6141,7 +6141,7 @@
   },
   {
     "total_votos": 96,
-    "validos": 2.2186,
+    "validos": 2.311,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "julio-guzman",
@@ -6161,7 +6161,7 @@
   },
   {
     "total_votos": 19,
-    "validos": 0.2721,
+    "validos": 1.432,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "julio-guzman",
@@ -6180,10 +6180,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 661,
-    "validos": 10.7016,
+    "total_votos": 724,
+    "validos": 1.582,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -6201,7 +6201,7 @@
   },
   {
     "total_votos": 512,
-    "validos": 9.2467,
+    "validos": 1.806,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "julio-guzman",
@@ -6221,7 +6221,7 @@
   },
   {
     "total_votos": 36,
-    "validos": 0.4216,
+    "validos": 1.171,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "julio-guzman",
@@ -6241,7 +6241,7 @@
   },
   {
     "total_votos": 132,
-    "validos": 2.009,
+    "validos": 1.522,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "julio-guzman",
@@ -6301,7 +6301,7 @@
   },
   {
     "total_votos": 61,
-    "validos": 0.5289,
+    "validos": 0.867,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "julio-guzman",
@@ -6321,7 +6321,7 @@
   },
   {
     "total_votos": 34,
-    "validos": 0.3097,
+    "validos": 0.911,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "julio-guzman",
@@ -6341,7 +6341,7 @@
   },
   {
     "total_votos": 288,
-    "validos": 6.9264,
+    "validos": 2.405,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "julio-guzman",
@@ -6361,7 +6361,7 @@
   },
   {
     "total_votos": 11,
-    "validos": 0.1847,
+    "validos": 1.679,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "julio-guzman",
@@ -6381,7 +6381,7 @@
   },
   {
     "total_votos": 5,
-    "validos": 0.0542,
+    "validos": 1.085,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "julio-guzman",
@@ -6401,7 +6401,7 @@
   },
   {
     "total_votos": 58,
-    "validos": 1.0904,
+    "validos": 1.88,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "julio-guzman",
@@ -6441,7 +6441,7 @@
   },
   {
     "total_votos": 45,
-    "validos": 0.4158,
+    "validos": 0.924,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "julio-guzman",
@@ -6461,7 +6461,7 @@
   },
   {
     "total_votos": 38,
-    "validos": 0.3751,
+    "validos": 0.987,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "julio-guzman",
@@ -6483,7 +6483,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -6500,10 +6500,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 130,
-    "validos": 1.8135,
+    "total_votos": 133,
+    "validos": 1.384,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -6523,7 +6523,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -6541,9 +6541,9 @@
   },
   {
     "total_votos": 22,
-    "validos": 0.2691,
+    "validos": 1.112,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -6581,7 +6581,7 @@
   },
   {
     "total_votos": 35,
-    "validos": 0.3773,
+    "validos": 1.078,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "julio-guzman",
@@ -6601,7 +6601,7 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.1262,
+    "validos": 1.402,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "julio-guzman",
@@ -6640,10 +6640,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 59,
-    "validos": 0.6632,
+    "total_votos": 63,
+    "validos": 1,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -6660,10 +6660,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 451,
-    "validos": 10.4136,
+    "total_votos": 454,
+    "validos": 2.303,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -6680,10 +6680,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 33,
-    "validos": 0.4363,
+    "total_votos": 36,
+    "validos": 1.241,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -6700,10 +6700,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 29,
-    "validos": 0.1247,
+    "total_votos": 30,
+    "validos": 0.365,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -6721,7 +6721,7 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.0129,
+    "validos": 0.645,
     "total_actas": 73,
     "conteo": 2.7397,
     "candidato_id": "julio-guzman",
@@ -6740,10 +6740,10 @@
     "distrito_id": "motupe"
   },
   {
-    "total_votos": 2,
-    "validos": 0.01,
+    "total_votos": 4,
+    "validos": 0.661,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -6761,7 +6761,7 @@
   },
   {
     "total_votos": 43,
-    "validos": 1.032,
+    "validos": 2.4,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "julio-guzman",
@@ -6801,7 +6801,7 @@
   },
   {
     "total_votos": 34,
-    "validos": 0.41,
+    "validos": 1.206,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "julio-guzman",
@@ -6820,10 +6820,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 69,
-    "validos": 0.8211,
+    "total_votos": 76,
+    "validos": 1.188,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "julio-guzman",
     "candidato": "Julio Guzmán",
     "color": "#4f1b7f",
@@ -6841,7 +6841,7 @@
   },
   {
     "total_votos": 53,
-    "validos": 0.4887,
+    "validos": 0.922,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "ollanta-humala",
@@ -6860,10 +6860,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 534,
-    "validos": 2.9103,
+    "total_votos": 545,
+    "validos": 0.542,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -6901,7 +6901,7 @@
   },
   {
     "total_votos": 23,
-    "validos": 0.1274,
+    "validos": 0.554,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "ollanta-humala",
@@ -6921,7 +6921,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.0271,
+    "validos": 0.452,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "ollanta-humala",
@@ -6940,10 +6940,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 318,
-    "validos": 2.4772,
+    "total_votos": 361,
+    "validos": 0.789,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -6961,7 +6961,7 @@
   },
   {
     "total_votos": 186,
-    "validos": 1.2202,
+    "validos": 0.656,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "ollanta-humala",
@@ -6981,7 +6981,7 @@
   },
   {
     "total_votos": 34,
-    "validos": 0.376,
+    "validos": 1.106,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "ollanta-humala",
@@ -7001,7 +7001,7 @@
   },
   {
     "total_votos": 54,
-    "validos": 0.3364,
+    "validos": 0.623,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "ollanta-humala",
@@ -7061,7 +7061,7 @@
   },
   {
     "total_votos": 50,
-    "validos": 0.3555,
+    "validos": 0.711,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "ollanta-humala",
@@ -7081,7 +7081,7 @@
   },
   {
     "total_votos": 16,
-    "validos": 0.0686,
+    "validos": 0.429,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "ollanta-humala",
@@ -7101,7 +7101,7 @@
   },
   {
     "total_votos": 87,
-    "validos": 0.6316,
+    "validos": 0.726,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "ollanta-humala",
@@ -7121,7 +7121,7 @@
   },
   {
     "total_votos": 5,
-    "validos": 0.0382,
+    "validos": 0.763,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "ollanta-humala",
@@ -7141,7 +7141,7 @@
   },
   {
     "total_votos": 8,
-    "validos": 0.1388,
+    "validos": 1.735,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "ollanta-humala",
@@ -7161,7 +7161,7 @@
   },
   {
     "total_votos": 22,
-    "validos": 0.1569,
+    "validos": 0.713,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "ollanta-humala",
@@ -7201,7 +7201,7 @@
   },
   {
     "total_votos": 15,
-    "validos": 0.0462,
+    "validos": 0.308,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "ollanta-humala",
@@ -7221,7 +7221,7 @@
   },
   {
     "total_votos": 18,
-    "validos": 0.0841,
+    "validos": 0.467,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "ollanta-humala",
@@ -7240,10 +7240,10 @@
     "distrito_id": "tuman"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 2,
+    "validos": 0.913,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -7260,10 +7260,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 51,
-    "validos": 0.279,
+    "total_votos": 54,
+    "validos": 0.562,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -7283,7 +7283,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -7300,10 +7300,10 @@
     "distrito_id": "incahuasi"
   },
   {
-    "total_votos": 13,
-    "validos": 0.094,
+    "total_votos": 14,
+    "validos": 0.707,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -7341,7 +7341,7 @@
   },
   {
     "total_votos": 31,
-    "validos": 0.296,
+    "validos": 0.955,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "ollanta-humala",
@@ -7361,7 +7361,7 @@
   },
   {
     "total_votos": 18,
-    "validos": 0.5047,
+    "validos": 2.804,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "ollanta-humala",
@@ -7400,10 +7400,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 44,
-    "validos": 0.3687,
+    "total_votos": 53,
+    "validos": 0.842,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -7420,10 +7420,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 161,
-    "validos": 1.3266,
+    "total_votos": 163,
+    "validos": 0.827,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -7440,10 +7440,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 14,
-    "validos": 0.0785,
+    "total_votos": 19,
+    "validos": 0.655,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -7460,10 +7460,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 39,
-    "validos": 0.2258,
+    "total_votos": 46,
+    "validos": 0.56,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -7481,7 +7481,7 @@
   },
   {
     "total_votos": 11,
-    "validos": 0.3903,
+    "validos": 3.548,
     "total_actas": 73,
     "conteo": 2.7397,
     "candidato_id": "ollanta-humala",
@@ -7500,10 +7500,10 @@
     "distrito_id": "motupe"
   },
   {
-    "total_votos": 7,
-    "validos": 0.1219,
+    "total_votos": 9,
+    "validos": 1.488,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -7521,7 +7521,7 @@
   },
   {
     "total_votos": 16,
-    "validos": 0.1429,
+    "validos": 0.893,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "ollanta-humala",
@@ -7561,7 +7561,7 @@
   },
   {
     "total_votos": 15,
-    "validos": 0.0798,
+    "validos": 0.532,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "ollanta-humala",
@@ -7580,10 +7580,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 55,
-    "validos": 0.5214,
+    "total_votos": 61,
+    "validos": 0.953,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "ollanta-humala",
     "candidato": "Ollanta Humala",
     "color": "#f52300",
@@ -7601,7 +7601,7 @@
   },
   {
     "total_votos": 263,
-    "validos": 12.0349,
+    "validos": 4.576,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "pedro-castillo",
@@ -7620,10 +7620,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 8680,
-    "validos": 769.482,
+    "total_votos": 8877,
+    "validos": 8.827,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -7661,7 +7661,7 @@
   },
   {
     "total_votos": 310,
-    "validos": 23.1353,
+    "validos": 7.463,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "pedro-castillo",
@@ -7681,7 +7681,7 @@
   },
   {
     "total_votos": 38,
-    "validos": 1.0883,
+    "validos": 2.864,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "pedro-castillo",
@@ -7700,10 +7700,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 6963,
-    "validos": 1187.6789,
+    "total_votos": 7902,
+    "validos": 17.266,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -7721,7 +7721,7 @@
   },
   {
     "total_votos": 3457,
-    "validos": 421.5466,
+    "validos": 12.194,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "pedro-castillo",
@@ -7741,7 +7741,7 @@
   },
   {
     "total_votos": 532,
-    "validos": 92.0413,
+    "validos": 17.301,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "pedro-castillo",
@@ -7761,7 +7761,7 @@
   },
   {
     "total_votos": 636,
-    "validos": 46.6442,
+    "validos": 7.334,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "pedro-castillo",
@@ -7821,7 +7821,7 @@
   },
   {
     "total_votos": 1481,
-    "validos": 311.7357,
+    "validos": 21.049,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "pedro-castillo",
@@ -7841,7 +7841,7 @@
   },
   {
     "total_votos": 579,
-    "validos": 89.8029,
+    "validos": 15.51,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "pedro-castillo",
@@ -7861,7 +7861,7 @@
   },
   {
     "total_votos": 980,
-    "validos": 80.1836,
+    "validos": 8.182,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "pedro-castillo",
@@ -7881,7 +7881,7 @@
   },
   {
     "total_votos": 88,
-    "validos": 11.8228,
+    "validos": 13.435,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "pedro-castillo",
@@ -7901,7 +7901,7 @@
   },
   {
     "total_votos": 57,
-    "validos": 7.0475,
+    "validos": 12.364,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "pedro-castillo",
@@ -7921,7 +7921,7 @@
   },
   {
     "total_votos": 335,
-    "validos": 36.3777,
+    "validos": 10.859,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "pedro-castillo",
@@ -7961,7 +7961,7 @@
   },
   {
     "total_votos": 238,
-    "validos": 11.6263,
+    "validos": 4.885,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "pedro-castillo",
@@ -7981,7 +7981,7 @@
   },
   {
     "total_votos": 625,
-    "validos": 101.4062,
+    "validos": 16.225,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "pedro-castillo",
@@ -8000,10 +8000,10 @@
     "distrito_id": "tuman"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 45,
+    "validos": 20.548,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -8020,10 +8020,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 1171,
-    "validos": 147.101,
+    "total_votos": 1198,
+    "validos": 12.466,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -8040,10 +8040,10 @@
     "distrito_id": "ferreñafe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 9,
+    "validos": 60,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -8060,10 +8060,10 @@
     "distrito_id": "incahuasi"
   },
   {
-    "total_votos": 321,
-    "validos": 57.276,
+    "total_votos": 341,
+    "validos": 17.231,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -8101,7 +8101,7 @@
   },
   {
     "total_votos": 386,
-    "validos": 45.8877,
+    "validos": 11.888,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "pedro-castillo",
@@ -8121,7 +8121,7 @@
   },
   {
     "total_votos": 108,
-    "validos": 18.1678,
+    "validos": 16.822,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "pedro-castillo",
@@ -8160,10 +8160,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 746,
-    "validos": 105.9842,
+    "total_votos": 924,
+    "validos": 14.674,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -8180,10 +8180,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 2241,
-    "validos": 257.1099,
+    "total_votos": 2249,
+    "validos": 11.406,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -8200,10 +8200,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 314,
-    "validos": 39.5012,
+    "total_votos": 378,
+    "validos": 13.025,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -8220,10 +8220,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 962,
-    "validos": 137.3063,
+    "total_votos": 1158,
+    "validos": 14.094,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -8241,7 +8241,7 @@
   },
   {
     "total_votos": 52,
-    "validos": 8.7225,
+    "validos": 16.774,
     "total_actas": 73,
     "conteo": 2.7397,
     "candidato_id": "pedro-castillo",
@@ -8260,10 +8260,10 @@
     "distrito_id": "motupe"
   },
   {
-    "total_votos": 138,
-    "validos": 47.3726,
+    "total_votos": 164,
+    "validos": 27.107,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -8281,7 +8281,7 @@
   },
   {
     "total_votos": 237,
-    "validos": 31.3433,
+    "validos": 13.225,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "pedro-castillo",
@@ -8321,7 +8321,7 @@
   },
   {
     "total_votos": 220,
-    "validos": 17.1688,
+    "validos": 7.804,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "pedro-castillo",
@@ -8340,10 +8340,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 583,
-    "validos": 58.6032,
+    "total_votos": 649,
+    "validos": 10.141,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "pedro-castillo",
     "candidato": "Pedro Castillo",
     "color": "#f40201",
@@ -8361,7 +8361,7 @@
   },
   {
     "total_votos": 37,
-    "validos": 0.2383,
+    "validos": 0.644,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "alberto-beingolea",
@@ -8380,10 +8380,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 2254,
-    "validos": 51.8871,
+    "total_votos": 2303,
+    "validos": 2.29,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -8421,7 +8421,7 @@
   },
   {
     "total_votos": 35,
-    "validos": 0.295,
+    "validos": 0.843,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "alberto-beingolea",
@@ -8441,7 +8441,7 @@
   },
   {
     "total_votos": 29,
-    "validos": 0.6337,
+    "validos": 2.185,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "alberto-beingolea",
@@ -8460,10 +8460,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 481,
-    "validos": 5.6662,
+    "total_votos": 527,
+    "validos": 1.152,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -8481,7 +8481,7 @@
   },
   {
     "total_votos": 481,
-    "validos": 8.1626,
+    "validos": 1.697,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "alberto-beingolea",
@@ -8501,7 +8501,7 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.0264,
+    "validos": 0.293,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "alberto-beingolea",
@@ -8521,7 +8521,7 @@
   },
   {
     "total_votos": 122,
-    "validos": 1.7165,
+    "validos": 1.407,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "alberto-beingolea",
@@ -8581,7 +8581,7 @@
   },
   {
     "total_votos": 46,
-    "validos": 0.3008,
+    "validos": 0.654,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "alberto-beingolea",
@@ -8601,7 +8601,7 @@
   },
   {
     "total_votos": 42,
-    "validos": 0.4725,
+    "validos": 1.125,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "alberto-beingolea",
@@ -8621,7 +8621,7 @@
   },
   {
     "total_votos": 213,
-    "validos": 3.7871,
+    "validos": 1.778,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "alberto-beingolea",
@@ -8641,7 +8641,7 @@
   },
   {
     "total_votos": 5,
-    "validos": 0.0382,
+    "validos": 0.763,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "alberto-beingolea",
@@ -8661,7 +8661,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.0781,
+    "validos": 1.302,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "alberto-beingolea",
@@ -8681,7 +8681,7 @@
   },
   {
     "total_votos": 53,
-    "validos": 0.9105,
+    "validos": 1.718,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "alberto-beingolea",
@@ -8721,7 +8721,7 @@
   },
   {
     "total_votos": 61,
-    "validos": 0.7637,
+    "validos": 1.252,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "alberto-beingolea",
@@ -8741,7 +8741,7 @@
   },
   {
     "total_votos": 38,
-    "validos": 0.3751,
+    "validos": 0.987,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "alberto-beingolea",
@@ -8760,10 +8760,10 @@
     "distrito_id": "tuman"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 2,
+    "validos": 0.913,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -8780,10 +8780,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 106,
-    "validos": 1.2052,
+    "total_votos": 110,
+    "validos": 1.145,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -8803,7 +8803,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -8820,10 +8820,10 @@
     "distrito_id": "incahuasi"
   },
   {
-    "total_votos": 5,
-    "validos": 0.0139,
+    "total_votos": 6,
+    "validos": 0.303,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -8861,7 +8861,7 @@
   },
   {
     "total_votos": 24,
-    "validos": 0.1774,
+    "validos": 0.739,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "alberto-beingolea",
@@ -8881,7 +8881,7 @@
   },
   {
     "total_votos": 4,
-    "validos": 0.0249,
+    "validos": 0.623,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "alberto-beingolea",
@@ -8920,10 +8920,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 42,
-    "validos": 0.336,
+    "total_votos": 45,
+    "validos": 0.715,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -8940,10 +8940,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 342,
-    "validos": 5.9884,
+    "total_votos": 348,
+    "validos": 1.765,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -8960,10 +8960,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 10,
-    "validos": 0.0401,
+    "total_votos": 12,
+    "validos": 0.414,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -8980,10 +8980,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 25,
-    "validos": 0.0928,
+    "total_votos": 29,
+    "validos": 0.353,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -9001,7 +9001,7 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.0129,
+    "validos": 0.645,
     "total_actas": 73,
     "conteo": 2.7397,
     "candidato_id": "alberto-beingolea",
@@ -9020,10 +9020,10 @@
     "distrito_id": "motupe"
   },
   {
-    "total_votos": 2,
-    "validos": 0.01,
+    "total_votos": 3,
+    "validos": 0.496,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -9041,7 +9041,7 @@
   },
   {
     "total_votos": 8,
-    "validos": 0.0357,
+    "validos": 0.446,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "alberto-beingolea",
@@ -9081,7 +9081,7 @@
   },
   {
     "total_votos": 26,
-    "validos": 0.2397,
+    "validos": 0.922,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "alberto-beingolea",
@@ -9100,10 +9100,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 29,
-    "validos": 0.145,
+    "total_votos": 31,
+    "validos": 0.484,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "alberto-beingolea",
     "candidato": "Alberto Beingolea",
     "color": "#009a21",
@@ -9121,7 +9121,7 @@
   },
   {
     "total_votos": 24,
-    "validos": 0.1003,
+    "validos": 0.418,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "rafael-santos",
@@ -9140,10 +9140,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 402,
-    "validos": 1.6522,
+    "total_votos": 409,
+    "validos": 0.407,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -9181,7 +9181,7 @@
   },
   {
     "total_votos": 17,
-    "validos": 0.0695,
+    "validos": 0.409,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "rafael-santos",
@@ -9201,7 +9201,7 @@
   },
   {
     "total_votos": 3,
-    "validos": 0.0068,
+    "validos": 0.226,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "rafael-santos",
@@ -9220,10 +9220,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 153,
-    "validos": 0.5738,
+    "total_votos": 177,
+    "validos": 0.387,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -9241,7 +9241,7 @@
   },
   {
     "total_votos": 103,
-    "validos": 0.3739,
+    "validos": 0.363,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "rafael-santos",
@@ -9261,7 +9261,7 @@
   },
   {
     "total_votos": 8,
-    "validos": 0.0208,
+    "validos": 0.26,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "rafael-santos",
@@ -9281,7 +9281,7 @@
   },
   {
     "total_votos": 33,
-    "validos": 0.1257,
+    "validos": 0.381,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "rafael-santos",
@@ -9341,7 +9341,7 @@
   },
   {
     "total_votos": 14,
-    "validos": 0.0279,
+    "validos": 0.199,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "rafael-santos",
@@ -9361,7 +9361,7 @@
   },
   {
     "total_votos": 3,
-    "validos": 0.0024,
+    "validos": 0.08,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "rafael-santos",
@@ -9381,7 +9381,7 @@
   },
   {
     "total_votos": 56,
-    "validos": 0.2621,
+    "validos": 0.468,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "rafael-santos",
@@ -9421,7 +9421,7 @@
   },
   {
     "total_votos": 4,
-    "validos": 0.0347,
+    "validos": 0.868,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "rafael-santos",
@@ -9441,7 +9441,7 @@
   },
   {
     "total_votos": 7,
-    "validos": 0.0159,
+    "validos": 0.227,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "rafael-santos",
@@ -9481,7 +9481,7 @@
   },
   {
     "total_votos": 15,
-    "validos": 0.0462,
+    "validos": 0.308,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "rafael-santos",
@@ -9501,7 +9501,7 @@
   },
   {
     "total_votos": 8,
-    "validos": 0.0166,
+    "validos": 0.208,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "rafael-santos",
@@ -9523,7 +9523,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -9540,10 +9540,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 106,
-    "validos": 1.2052,
+    "total_votos": 111,
+    "validos": 1.155,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -9560,10 +9560,10 @@
     "distrito_id": "ferreñafe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 6.667,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -9581,9 +9581,9 @@
   },
   {
     "total_votos": 7,
-    "validos": 0.0272,
+    "validos": 0.354,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -9621,7 +9621,7 @@
   },
   {
     "total_votos": 98,
-    "validos": 2.9576,
+    "validos": 3.018,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "rafael-santos",
@@ -9680,10 +9680,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 9,
-    "validos": 0.0154,
+    "total_votos": 14,
+    "validos": 0.222,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -9700,10 +9700,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 62,
-    "validos": 0.1965,
+    "total_votos": 63,
+    "validos": 0.32,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -9720,10 +9720,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 2,
-    "validos": 0.0016,
+    "total_votos": 4,
+    "validos": 0.138,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -9740,10 +9740,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 11,
-    "validos": 0.0179,
+    "total_votos": 13,
+    "validos": 0.158,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -9781,9 +9781,9 @@
   },
   {
     "total_votos": 1,
-    "validos": 0.0025,
+    "validos": 0.165,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -9801,7 +9801,7 @@
   },
   {
     "total_votos": 3,
-    "validos": 0.005,
+    "validos": 0.167,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "rafael-santos",
@@ -9841,7 +9841,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.0128,
+    "validos": 0.213,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "rafael-santos",
@@ -9860,10 +9860,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 20,
-    "validos": 0.069,
+    "total_votos": 22,
+    "validos": 0.344,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "rafael-santos",
     "candidato": "Rafael Santos",
     "color": "#0055a2",
@@ -9881,7 +9881,7 @@
   },
   {
     "total_votos": 350,
-    "validos": 21.315,
+    "validos": 6.09,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "daniel-salaverry",
@@ -9900,10 +9900,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 4688,
-    "validos": 224.4614,
+    "total_votos": 4805,
+    "validos": 4.778,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -9941,7 +9941,7 @@
   },
   {
     "total_votos": 139,
-    "validos": 4.6509,
+    "validos": 3.346,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "daniel-salaverry",
@@ -9961,7 +9961,7 @@
   },
   {
     "total_votos": 94,
-    "validos": 6.659,
+    "validos": 7.084,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "daniel-salaverry",
@@ -9980,10 +9980,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 1704,
-    "validos": 71.125,
+    "total_votos": 1962,
+    "validos": 4.287,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -10001,7 +10001,7 @@
   },
   {
     "total_votos": 1506,
-    "validos": 79.9987,
+    "validos": 5.312,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "daniel-salaverry",
@@ -10021,7 +10021,7 @@
   },
   {
     "total_votos": 247,
-    "validos": 19.8415,
+    "validos": 8.033,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "daniel-salaverry",
@@ -10041,7 +10041,7 @@
   },
   {
     "total_votos": 262,
-    "validos": 7.915,
+    "validos": 3.021,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "daniel-salaverry",
@@ -10101,7 +10101,7 @@
   },
   {
     "total_votos": 412,
-    "validos": 24.1267,
+    "validos": 5.856,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "daniel-salaverry",
@@ -10121,7 +10121,7 @@
   },
   {
     "total_votos": 280,
-    "validos": 21.0028,
+    "validos": 7.501,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "daniel-salaverry",
@@ -10141,7 +10141,7 @@
   },
   {
     "total_votos": 603,
-    "validos": 30.361,
+    "validos": 5.035,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "daniel-salaverry",
@@ -10161,7 +10161,7 @@
   },
   {
     "total_votos": 31,
-    "validos": 1.4672,
+    "validos": 4.733,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "daniel-salaverry",
@@ -10181,7 +10181,7 @@
   },
   {
     "total_votos": 33,
-    "validos": 2.3621,
+    "validos": 7.158,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "daniel-salaverry",
@@ -10201,7 +10201,7 @@
   },
   {
     "total_votos": 109,
-    "validos": 3.851,
+    "validos": 3.533,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "daniel-salaverry",
@@ -10241,7 +10241,7 @@
   },
   {
     "total_votos": 237,
-    "validos": 11.53,
+    "validos": 4.865,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "daniel-salaverry",
@@ -10261,7 +10261,7 @@
   },
   {
     "total_votos": 284,
-    "validos": 20.9393,
+    "validos": 7.373,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "daniel-salaverry",
@@ -10283,7 +10283,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -10300,10 +10300,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 404,
-    "validos": 17.5094,
+    "total_votos": 418,
+    "validos": 4.35,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -10323,7 +10323,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -10340,10 +10340,10 @@
     "distrito_id": "incahuasi"
   },
   {
-    "total_votos": 59,
-    "validos": 1.9352,
+    "total_votos": 64,
+    "validos": 3.234,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -10381,7 +10381,7 @@
   },
   {
     "total_votos": 150,
-    "validos": 6.93,
+    "validos": 4.62,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "daniel-salaverry",
@@ -10401,7 +10401,7 @@
   },
   {
     "total_votos": 14,
-    "validos": 0.3053,
+    "validos": 2.181,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "daniel-salaverry",
@@ -10440,10 +10440,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 220,
-    "validos": 9.218,
+    "total_votos": 279,
+    "validos": 4.431,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -10460,10 +10460,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 1017,
-    "validos": 52.9552,
+    "total_votos": 1028,
+    "validos": 5.214,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -10480,10 +10480,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 55,
-    "validos": 1.2122,
+    "total_votos": 72,
+    "validos": 2.481,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -10500,10 +10500,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 182,
-    "validos": 4.914,
+    "total_votos": 208,
+    "validos": 2.532,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -10521,7 +10521,7 @@
   },
   {
     "total_votos": 15,
-    "validos": 0.7258,
+    "validos": 4.839,
     "total_actas": 73,
     "conteo": 2.7397,
     "candidato_id": "daniel-salaverry",
@@ -10540,10 +10540,10 @@
     "distrito_id": "motupe"
   },
   {
-    "total_votos": 7,
-    "validos": 0.1219,
+    "total_votos": 14,
+    "validos": 2.314,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -10561,7 +10561,7 @@
   },
   {
     "total_votos": 46,
-    "validos": 1.1808,
+    "validos": 2.567,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "daniel-salaverry",
@@ -10601,7 +10601,7 @@
   },
   {
     "total_votos": 78,
-    "validos": 2.1583,
+    "validos": 2.767,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "daniel-salaverry",
@@ -10620,10 +10620,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 165,
-    "validos": 4.6943,
+    "total_votos": 183,
+    "validos": 2.859,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "daniel-salaverry",
     "candidato": "Daniel Salaverry",
     "color": "#ff2600",
@@ -10641,7 +10641,7 @@
   },
   {
     "total_votos": 12,
-    "validos": 0.0251,
+    "validos": 0.209,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "ciro-galvez",
@@ -10660,10 +10660,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 254,
-    "validos": 0.6579,
+    "total_votos": 263,
+    "validos": 0.262,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -10701,7 +10701,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.0086,
+    "validos": 0.144,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "ciro-galvez",
@@ -10721,7 +10721,7 @@
   },
   {
     "total_votos": 3,
-    "validos": 0.0068,
+    "validos": 0.226,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "ciro-galvez",
@@ -10740,10 +10740,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 152,
-    "validos": 0.5654,
+    "total_votos": 167,
+    "validos": 0.365,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -10761,7 +10761,7 @@
   },
   {
     "total_votos": 82,
-    "validos": 0.237,
+    "validos": 0.289,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "ciro-galvez",
@@ -10781,7 +10781,7 @@
   },
   {
     "total_votos": 10,
-    "validos": 0.0325,
+    "validos": 0.325,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "ciro-galvez",
@@ -10801,7 +10801,7 @@
   },
   {
     "total_votos": 29,
-    "validos": 0.0969,
+    "validos": 0.334,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "ciro-galvez",
@@ -10861,7 +10861,7 @@
   },
   {
     "total_votos": 18,
-    "validos": 0.0461,
+    "validos": 0.256,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "ciro-galvez",
@@ -10881,7 +10881,7 @@
   },
   {
     "total_votos": 11,
-    "validos": 0.0324,
+    "validos": 0.295,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "ciro-galvez",
@@ -10901,7 +10901,7 @@
   },
   {
     "total_votos": 29,
-    "validos": 0.0702,
+    "validos": 0.242,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "ciro-galvez",
@@ -10921,7 +10921,7 @@
   },
   {
     "total_votos": 3,
-    "validos": 0.0137,
+    "validos": 0.458,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "ciro-galvez",
@@ -10941,7 +10941,7 @@
   },
   {
     "total_votos": 5,
-    "validos": 0.0542,
+    "validos": 1.085,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "ciro-galvez",
@@ -10961,7 +10961,7 @@
   },
   {
     "total_votos": 11,
-    "validos": 0.0393,
+    "validos": 0.357,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "ciro-galvez",
@@ -11001,7 +11001,7 @@
   },
   {
     "total_votos": 14,
-    "validos": 0.0402,
+    "validos": 0.287,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "ciro-galvez",
@@ -11021,7 +11021,7 @@
   },
   {
     "total_votos": 8,
-    "validos": 0.0166,
+    "validos": 0.208,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "ciro-galvez",
@@ -11043,7 +11043,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -11061,9 +11061,9 @@
   },
   {
     "total_votos": 14,
-    "validos": 0.021,
+    "validos": 0.146,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -11080,10 +11080,10 @@
     "distrito_id": "ferreñafe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 6.667,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -11101,9 +11101,9 @@
   },
   {
     "total_votos": 4,
-    "validos": 0.0089,
+    "validos": 0.202,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -11141,7 +11141,7 @@
   },
   {
     "total_votos": 13,
-    "validos": 0.052,
+    "validos": 0.4,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "ciro-galvez",
@@ -11200,10 +11200,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 21,
-    "validos": 0.084,
+    "total_votos": 23,
+    "validos": 0.365,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -11221,9 +11221,9 @@
   },
   {
     "total_votos": 62,
-    "validos": 0.1965,
+    "validos": 0.314,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -11240,10 +11240,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 4,
-    "validos": 0.0064,
+    "total_votos": 5,
+    "validos": 0.172,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -11260,10 +11260,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 16,
-    "validos": 0.0379,
+    "total_votos": 25,
+    "validos": 0.304,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -11281,7 +11281,7 @@
   },
   {
     "total_votos": 1,
-    "validos": 0.0032,
+    "validos": 0.323,
     "total_actas": 73,
     "conteo": 2.7397,
     "candidato_id": "ciro-galvez",
@@ -11301,9 +11301,9 @@
   },
   {
     "total_votos": 3,
-    "validos": 0.0224,
+    "validos": 0.496,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -11321,7 +11321,7 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.0022,
+    "validos": 0.112,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "ciro-galvez",
@@ -11361,7 +11361,7 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.0287,
+    "validos": 0.319,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "ciro-galvez",
@@ -11380,10 +11380,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 22,
-    "validos": 0.0834,
+    "total_votos": 24,
+    "validos": 0.375,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "ciro-galvez",
     "candidato": "Ciro Galvez",
     "color": "#1022b9",
@@ -11401,7 +11401,7 @@
   },
   {
     "total_votos": 636,
-    "validos": 70.3861,
+    "validos": 11.067,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11420,10 +11420,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 20803,
-    "validos": 4419.8054,
+    "total_votos": 21435,
+    "validos": 21.313,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -11461,7 +11461,7 @@
   },
   {
     "total_votos": 665,
-    "validos": 106.4599,
+    "validos": 16.009,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11481,7 +11481,7 @@
   },
   {
     "total_votos": 224,
-    "validos": 37.8112,
+    "validos": 16.88,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11500,10 +11500,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 6779,
-    "validos": 1125.7207,
+    "total_votos": 7648,
+    "validos": 16.711,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -11521,7 +11521,7 @@
   },
   {
     "total_votos": 4997,
-    "validos": 880.7212,
+    "validos": 17.625,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11541,7 +11541,7 @@
   },
   {
     "total_votos": 256,
-    "validos": 21.312,
+    "validos": 8.325,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11561,7 +11561,7 @@
   },
   {
     "total_votos": 1129,
-    "validos": 146.9845,
+    "validos": 13.019,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11621,7 +11621,7 @@
   },
   {
     "total_votos": 830,
-    "validos": 97.9068,
+    "validos": 11.796,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11641,7 +11641,7 @@
   },
   {
     "total_votos": 442,
-    "validos": 52.3328,
+    "validos": 11.84,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11661,7 +11661,7 @@
   },
   {
     "total_votos": 2393,
-    "validos": 478.1214,
+    "validos": 19.98,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11681,7 +11681,7 @@
   },
   {
     "total_votos": 136,
-    "validos": 28.2377,
+    "validos": 20.763,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11701,7 +11701,7 @@
   },
   {
     "total_votos": 64,
-    "validos": 8.8851,
+    "validos": 13.883,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11721,7 +11721,7 @@
   },
   {
     "total_votos": 464,
-    "validos": 69.7902,
+    "validos": 15.041,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11761,7 +11761,7 @@
   },
   {
     "total_votos": 1011,
-    "validos": 209.7926,
+    "validos": 20.751,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11781,7 +11781,7 @@
   },
   {
     "total_votos": 410,
-    "validos": 43.6404,
+    "validos": 10.644,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11800,10 +11800,10 @@
     "distrito_id": "tuman"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 2,
+    "validos": 0.913,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -11820,10 +11820,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 1215,
-    "validos": 158.3631,
+    "total_votos": 1244,
+    "validos": 12.945,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -11843,7 +11843,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -11860,10 +11860,10 @@
     "distrito_id": "incahuasi"
   },
   {
-    "total_votos": 170,
-    "validos": 16.065,
+    "total_votos": 180,
+    "validos": 9.096,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -11901,7 +11901,7 @@
   },
   {
     "total_votos": 342,
-    "validos": 36.0229,
+    "validos": 10.533,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11921,7 +11921,7 @@
   },
   {
     "total_votos": 46,
-    "validos": 3.2959,
+    "validos": 7.165,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "rafael-lopez-aliaga",
@@ -11960,10 +11960,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 510,
-    "validos": 49.5312,
+    "total_votos": 606,
+    "validos": 9.624,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -11980,10 +11980,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 2600,
-    "validos": 346.086,
+    "total_votos": 2634,
+    "validos": 13.359,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -12000,10 +12000,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 187,
-    "validos": 14.01,
+    "total_votos": 210,
+    "validos": 7.236,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -12020,10 +12020,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 496,
-    "validos": 36.5006,
+    "total_votos": 623,
+    "validos": 7.583,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -12041,7 +12041,7 @@
   },
   {
     "total_votos": 9,
-    "validos": 0.2613,
+    "validos": 2.903,
     "total_actas": 73,
     "conteo": 2.7397,
     "candidato_id": "rafael-lopez-aliaga",
@@ -12060,10 +12060,10 @@
     "distrito_id": "motupe"
   },
   {
-    "total_votos": 7,
-    "validos": 0.1219,
+    "total_votos": 12,
+    "validos": 1.983,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -12081,7 +12081,7 @@
   },
   {
     "total_votos": 160,
-    "validos": 14.2864,
+    "validos": 8.929,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "rafael-lopez-aliaga",
@@ -12121,7 +12121,7 @@
   },
   {
     "total_votos": 339,
-    "validos": 40.7681,
+    "validos": 12.026,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "rafael-lopez-aliaga",
@@ -12140,10 +12140,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 586,
-    "validos": 59.2036,
+    "total_votos": 653,
+    "validos": 10.203,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "rafael-lopez-aliaga",
     "candidato": "Rafael López Aliaga",
     "color": "#00aede",
@@ -12161,7 +12161,7 @@
   },
   {
     "total_votos": 22,
-    "validos": 0.0843,
+    "validos": 0.383,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "jose-vega",
@@ -12180,10 +12180,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 340,
-    "validos": 1.1798,
+    "total_votos": 348,
+    "validos": 0.346,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -12221,7 +12221,7 @@
   },
   {
     "total_votos": 14,
-    "validos": 0.0472,
+    "validos": 0.337,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "jose-vega",
@@ -12241,7 +12241,7 @@
   },
   {
     "total_votos": 3,
-    "validos": 0.0068,
+    "validos": 0.226,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "jose-vega",
@@ -12260,10 +12260,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 176,
-    "validos": 0.7586,
+    "total_votos": 199,
+    "validos": 0.435,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -12281,7 +12281,7 @@
   },
   {
     "total_votos": 141,
-    "validos": 0.7008,
+    "validos": 0.497,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "jose-vega",
@@ -12301,7 +12301,7 @@
   },
   {
     "total_votos": 7,
-    "validos": 0.016,
+    "validos": 0.228,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "jose-vega",
@@ -12321,7 +12321,7 @@
   },
   {
     "total_votos": 33,
-    "validos": 0.1257,
+    "validos": 0.381,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "jose-vega",
@@ -12381,7 +12381,7 @@
   },
   {
     "total_votos": 38,
-    "validos": 0.2052,
+    "validos": 0.54,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "jose-vega",
@@ -12401,7 +12401,7 @@
   },
   {
     "total_votos": 11,
-    "validos": 0.0324,
+    "validos": 0.295,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "jose-vega",
@@ -12421,7 +12421,7 @@
   },
   {
     "total_votos": 30,
-    "validos": 0.075,
+    "validos": 0.25,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "jose-vega",
@@ -12461,7 +12461,7 @@
   },
   {
     "total_votos": 1,
-    "validos": 0.0022,
+    "validos": 0.217,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "jose-vega",
@@ -12481,7 +12481,7 @@
   },
   {
     "total_votos": 19,
-    "validos": 0.117,
+    "validos": 0.616,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "jose-vega",
@@ -12521,7 +12521,7 @@
   },
   {
     "total_votos": 14,
-    "validos": 0.0402,
+    "validos": 0.287,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "jose-vega",
@@ -12541,7 +12541,7 @@
   },
   {
     "total_votos": 20,
-    "validos": 0.1038,
+    "validos": 0.519,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "jose-vega",
@@ -12560,10 +12560,10 @@
     "distrito_id": "tuman"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 2,
+    "validos": 0.913,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -12580,10 +12580,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 61,
-    "validos": 0.3989,
+    "total_votos": 63,
+    "validos": 0.656,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -12603,7 +12603,7 @@
     "total_votos": 0,
     "validos": 0,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -12621,9 +12621,9 @@
   },
   {
     "total_votos": 5,
-    "validos": 0.0139,
+    "validos": 0.253,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -12661,7 +12661,7 @@
   },
   {
     "total_votos": 17,
-    "validos": 0.0891,
+    "validos": 0.524,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "jose-vega",
@@ -12681,7 +12681,7 @@
   },
   {
     "total_votos": 2,
-    "validos": 0.0062,
+    "validos": 0.312,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "jose-vega",
@@ -12720,10 +12720,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 16,
-    "validos": 0.0488,
+    "total_votos": 19,
+    "validos": 0.302,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -12740,10 +12740,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 86,
-    "validos": 0.3784,
+    "total_votos": 87,
+    "validos": 0.441,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -12761,9 +12761,9 @@
   },
   {
     "total_votos": 13,
-    "validos": 0.0677,
+    "validos": 0.448,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -12780,10 +12780,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 12,
-    "validos": 0.0214,
+    "total_votos": 15,
+    "validos": 0.183,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -12821,9 +12821,9 @@
   },
   {
     "total_votos": 3,
-    "validos": 0.0224,
+    "validos": 0.496,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -12841,7 +12841,7 @@
   },
   {
     "total_votos": 12,
-    "validos": 0.0804,
+    "validos": 0.67,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "jose-vega",
@@ -12881,7 +12881,7 @@
   },
   {
     "total_votos": 5,
-    "validos": 0.0088,
+    "validos": 0.177,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "jose-vega",
@@ -12901,9 +12901,9 @@
   },
   {
     "total_votos": 14,
-    "validos": 0.0337,
+    "validos": 0.219,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "jose-vega",
     "candidato": "José Vega Antonio",
     "color": "#ff2600",
@@ -12921,7 +12921,7 @@
   },
   {
     "total_votos": 285,
-    "validos": 14.1331,
+    "validos": 4.959,
     "total_actas": 43,
     "conteo": 88.3721,
     "candidato_id": "george-forsyth",
@@ -12940,10 +12940,10 @@
     "distrito_id": "cayalti"
   },
   {
-    "total_votos": 5084,
-    "validos": 263.9613,
+    "total_votos": 5222,
+    "validos": 5.192,
     "total_actas": 855,
-    "conteo": 65.614,
+    "conteo": 67.3684,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -12981,7 +12981,7 @@
   },
   {
     "total_votos": 319,
-    "validos": 24.496,
+    "validos": 7.679,
     "total_actas": 32,
     "conteo": 65.625,
     "candidato_id": "george-forsyth",
@@ -13001,7 +13001,7 @@
   },
   {
     "total_votos": 81,
-    "validos": 4.9442,
+    "validos": 6.104,
     "total_actas": 8,
     "conteo": 100,
     "candidato_id": "george-forsyth",
@@ -13020,10 +13020,10 @@
     "distrito_id": "eten puerto"
   },
   {
-    "total_votos": 1732,
-    "validos": 73.4888,
+    "total_votos": 1913,
+    "validos": 4.18,
     "total_actas": 458,
-    "conteo": 51.5284,
+    "conteo": 57.2052,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -13041,7 +13041,7 @@
   },
   {
     "total_votos": 1519,
-    "validos": 81.388,
+    "validos": 5.358,
     "total_actas": 233,
     "conteo": 66.5236,
     "candidato_id": "george-forsyth",
@@ -13061,7 +13061,7 @@
   },
   {
     "total_votos": 136,
-    "validos": 6.0153,
+    "validos": 4.423,
     "total_actas": 26,
     "conteo": 80.7692,
     "candidato_id": "george-forsyth",
@@ -13081,7 +13081,7 @@
   },
   {
     "total_votos": 527,
-    "validos": 32.0258,
+    "validos": 6.077,
     "total_actas": 96,
     "conteo": 50,
     "candidato_id": "george-forsyth",
@@ -13141,7 +13141,7 @@
   },
   {
     "total_votos": 242,
-    "validos": 8.3224,
+    "validos": 3.439,
     "total_actas": 58,
     "conteo": 70.6897,
     "candidato_id": "george-forsyth",
@@ -13161,7 +13161,7 @@
   },
   {
     "total_votos": 192,
-    "validos": 9.8746,
+    "validos": 5.143,
     "total_actas": 24,
     "conteo": 91.6667,
     "candidato_id": "george-forsyth",
@@ -13181,7 +13181,7 @@
   },
   {
     "total_votos": 745,
-    "validos": 46.339,
+    "validos": 6.22,
     "total_actas": 82,
     "conteo": 82.9268,
     "candidato_id": "george-forsyth",
@@ -13201,7 +13201,7 @@
   },
   {
     "total_votos": 40,
-    "validos": 2.4428,
+    "validos": 6.107,
     "total_actas": 67,
     "conteo": 5.9701,
     "candidato_id": "george-forsyth",
@@ -13221,7 +13221,7 @@
   },
   {
     "total_votos": 19,
-    "validos": 0.783,
+    "validos": 4.121,
     "total_actas": 22,
     "conteo": 22.7273,
     "candidato_id": "george-forsyth",
@@ -13241,7 +13241,7 @@
   },
   {
     "total_votos": 157,
-    "validos": 7.9897,
+    "validos": 5.089,
     "total_actas": 47,
     "conteo": 48.9362,
     "candidato_id": "george-forsyth",
@@ -13281,7 +13281,7 @@
   },
   {
     "total_votos": 213,
-    "validos": 9.3124,
+    "validos": 4.372,
     "total_actas": 31,
     "conteo": 83.871,
     "candidato_id": "george-forsyth",
@@ -13301,7 +13301,7 @@
   },
   {
     "total_votos": 192,
-    "validos": 9.5693,
+    "validos": 4.984,
     "total_actas": 77,
     "conteo": 31.1688,
     "candidato_id": "george-forsyth",
@@ -13320,10 +13320,10 @@
     "distrito_id": "tuman"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 2,
+    "validos": 0.913,
     "total_actas": 35,
-    "conteo": 0,
+    "conteo": 14.2857,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -13340,10 +13340,10 @@
     "distrito_id": "cañaris"
   },
   {
-    "total_votos": 559,
-    "validos": 33.5232,
+    "total_votos": 569,
+    "validos": 5.921,
     "total_actas": 100,
-    "conteo": 57,
+    "conteo": 59,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -13360,10 +13360,10 @@
     "distrito_id": "ferreñafe"
   },
   {
-    "total_votos": 0,
-    "validos": 0,
+    "total_votos": 1,
+    "validos": 6.667,
     "total_actas": 39,
-    "conteo": 0,
+    "conteo": 2.5641,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -13380,10 +13380,10 @@
     "distrito_id": "incahuasi"
   },
   {
-    "total_votos": 54,
-    "validos": 1.6211,
+    "total_votos": 56,
+    "validos": 2.83,
     "total_actas": 11,
-    "conteo": 90.9091,
+    "conteo": 100,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -13421,7 +13421,7 @@
   },
   {
     "total_votos": 161,
-    "validos": 7.9824,
+    "validos": 4.958,
     "total_actas": 35,
     "conteo": 51.4286,
     "candidato_id": "george-forsyth",
@@ -13441,7 +13441,7 @@
   },
   {
     "total_votos": 16,
-    "validos": 0.3987,
+    "validos": 2.492,
     "total_actas": 6,
     "conteo": 83.3333,
     "candidato_id": "george-forsyth",
@@ -13480,10 +13480,10 @@
     "distrito_id": "illimo"
   },
   {
-    "total_votos": 238,
-    "validos": 10.7862,
+    "total_votos": 276,
+    "validos": 4.383,
     "total_actas": 46,
-    "conteo": 73.913,
+    "conteo": 89.1304,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -13500,10 +13500,10 @@
     "distrito_id": "jayanca"
   },
   {
-    "total_votos": 959,
-    "validos": 47.0869,
+    "total_votos": 968,
+    "validos": 4.909,
     "total_actas": 190,
-    "conteo": 60.5263,
+    "conteo": 61.0526,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -13520,10 +13520,10 @@
     "distrito_id": "lambayeque"
   },
   {
-    "total_votos": 92,
-    "validos": 3.3911,
+    "total_votos": 103,
+    "validos": 3.549,
     "total_actas": 52,
-    "conteo": 28.8462,
+    "conteo": 32.6923,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -13540,10 +13540,10 @@
     "distrito_id": "mochumi"
   },
   {
-    "total_votos": 82,
-    "validos": 0.9979,
+    "total_votos": 98,
+    "validos": 1.193,
     "total_actas": 117,
-    "conteo": 34.188,
+    "conteo": 41.8803,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -13561,7 +13561,7 @@
   },
   {
     "total_votos": 6,
-    "validos": 0.1161,
+    "validos": 1.935,
     "total_actas": 73,
     "conteo": 2.7397,
     "candidato_id": "george-forsyth",
@@ -13580,10 +13580,10 @@
     "distrito_id": "motupe"
   },
   {
-    "total_votos": 17,
-    "validos": 0.7189,
+    "total_votos": 24,
+    "validos": 3.967,
     "total_actas": 121,
-    "conteo": 2.4793,
+    "conteo": 4.1322,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
@@ -13601,7 +13601,7 @@
   },
   {
     "total_votos": 68,
-    "validos": 2.5806,
+    "validos": 3.795,
     "total_actas": 20,
     "conteo": 50,
     "candidato_id": "george-forsyth",
@@ -13641,7 +13641,7 @@
   },
   {
     "total_votos": 133,
-    "validos": 6.2749,
+    "validos": 4.718,
     "total_actas": 39,
     "conteo": 35.8974,
     "candidato_id": "george-forsyth",
@@ -13660,10 +13660,10 @@
     "distrito_id": "san jose"
   },
   {
-    "total_votos": 141,
-    "validos": 3.4277,
+    "total_votos": 161,
+    "validos": 2.516,
     "total_actas": 62,
-    "conteo": 53.2258,
+    "conteo": 58.0645,
     "candidato_id": "george-forsyth",
     "candidato": "George Forsyth",
     "color": "#ff2607",
