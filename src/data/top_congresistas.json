@@ -33,18 +33,18 @@
     },
     {
         "eleccion": "2020",
-        "numero": "4",
-        "candidato": "Alberto Beingolea",
-        "candidato_id": "alberto-beingolea",
-        "partido": "Partido Popular Cristiano",
-        "partido_id": "partido-popular-cristiano",
-        "color": "#009a21",
+        "numero": "5",
+        "candidato": "Yeremi Espinoza",
+        "candidato_id": "yeremi-espinoza",
+        "partido": "Pdemos perú",
+        "partido_id": "podemos-peru",
+        "color": "#004da3",
         "total_votos": 123248
 
     },
     {
         "eleccion": "2020",
-        "numero": "5",
+        "numero": "4",
         "candidato": "Enrique Fernández Chacón",
         "candidato_id": "enrique-fernandez-chacon",
         "partido": "Frente Amplio",
@@ -85,27 +85,27 @@
         "color": "#fd6600",
         "total_votos": 114379
 
-    },
+    },    
     {
         "eleccion": "2016",
         "numero": "4",
-        "candidato": "Richard Acuña",
-        "candidato_id": "richard-acuna",
-        "partido": "Alianza Para el Progreso",
-        "partido_id": "alianza-para-el-progreso",
-        "color": "#1e5ba8",
-        "total_votos": 89684
-
-    },
-    {
-        "eleccion": "2016",
-        "numero": "5",
         "candidato": "Yeny Vilcatoma",
         "candidato_id": "yeni-vilcatoma",
         "partido": "Fuerza Popular",
         "partido_id": "fuerza-popular",
         "color": "#fd6600",
         "total_votos": 86222
+    },
+    {
+        "eleccion": "2016",
+        "numero": "4",
+        "candidato": "Maurice Mulder",
+        "candidato_id": "maurice-mulder",
+        "partido": "Alianza Popular",
+        "partido_id": "alianza-popular",
+        "color": "#ff484ccc",
+        "total_votos": 122778
+
     },
     {
         "eleccion": "2011",
@@ -153,12 +153,12 @@
     {
         "eleccion": "2011",
         "numero": "5",
-        "candidato": "Jaime Delgado",
-        "candidato_id": "jaime-delgado",
+        "candidato": "Daniel Abugattas",
+        "candidato_id": "daniel-abugattas",
         "partido": "Gana Perú",
         "partido_id": "gana-peru",
         "color": "#da251c",
-        "total_votos": 102957
+        "total_votos": 119742
 
     },
     {
