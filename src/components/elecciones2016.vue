@@ -24,7 +24,7 @@
               <div>Electores habiles </div>  
             </div>
             <div class="col-4 text-right">
-              <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.habiles}}</span></div>
+              <div><span v-if="eleccion_region">{{numeral(eleccion_region.eleccion2016.habiles).format('0,0')}}</span></div>
             </div>
           </div>        
           <div class="row mb-3">
@@ -32,7 +32,7 @@
               <div>Voto en blanco/nulo</div>
             </div>
             <div class="col-4 text-right">
-              <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.blanco_nulo}}</span></div>
+              <div><span v-if="eleccion_region">{{numeral(eleccion_region.eleccion2016.blanco_nulo).format('0,0')}}</span></div>
             </div>
           </div>        
           <div class="row mb-3">
@@ -40,7 +40,7 @@
               <div>Ciudadanos que no votaron</div>
             </div>
             <div class="col-4 text-right">
-              <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.no_votaron}}</span></div>              
+              <div><span v-if="eleccion_region">{{numeral(eleccion_region.eleccion2016.no_votaron).format('0,0')}}</span></div>              
             </div>
           </div>        
           <div class="row mb-3">
@@ -48,7 +48,7 @@
               <div>Votos emitidos</div>        
             </div>
             <div class="col-4 text-right">
-              <div><span v-if="eleccion_region">{{eleccion_region.eleccion2016.emitidos}}</span></div>
+              <div><span v-if="eleccion_region">{{numeral(eleccion_region.eleccion2016.emitidos).format('0,0')}}</span></div>
             </div>
           </div>        
 
@@ -56,7 +56,7 @@
         <b-tab title="Por partidos">
           <div class="row mb-2 mt-2" :key="partido.partido_id" v-for="partido in eleccion_region.eleccion2016.partidos">
             <div class="col-8 datos-eleccion"><img width="25px" :src="getImagePartido(partido.partido_id)" /> {{ partido.partido }}</div>
-            <div class="text-right col-4"><span>{{partido.total_votos}}</span></div>
+            <div class="text-right col-4"><span>{{numeral(partido.total_votos).format('0,0')}}</span></div>
           </div>
         </b-tab>
       </b-tabs>
@@ -65,7 +65,7 @@
 </template>
 
 <script>
-  
+  import numeral from 'numeral'
   import { mapState } from 'vuex'
   import { find } from 'lodash'
 
@@ -92,7 +92,8 @@
         return false        
       }
     },
-    methods: {        
+    methods: {    
+      numeral,    
       getImagePartido(partido) {
         try {
           return require(`../assets/partidos/${partido}.png`) 

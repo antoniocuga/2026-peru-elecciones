@@ -62,7 +62,11 @@
         partidoSeleccionado: state => state.candidatos.partidoSeleccionado,
       }),
       topCandidatos() {
-        let filtered = filter(this.candidatos, ['region', 'total'])
+        let filtered = filter(this.candidatos, d => {
+          if(d.region == 'total' && d.candidato_id != 'blanco' && d.candidato_id != 'nulos') {
+            return d
+          }
+        })
 
         let candidates = orderBy(map(groupBy(filtered, 'candidato_id'), (d, id) => {
             return {

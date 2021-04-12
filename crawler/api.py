@@ -18,7 +18,7 @@ def load_file(file):
 		for c in resultado_total:
 			candidatos.append(c)
 			for d in departamentos:
-				print(d)
+				print(d, c['candidato_id'])
 				candidato = {}
 				candidato['region'] = d
 				candidato['candidato_id'] = c['candidato_id']

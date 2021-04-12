@@ -1,13 +1,29 @@
 <template>
   <div class="candidate-results-vivo row pb-3 active">
-    <div class="col-12 ">
+    <div class="col-12">
+      <div class="row filter-region d-block d-md-none">
+        <div class="col-12">
+          <button @click="resetMapa()"  class="btn btn-light" v-if="regionSeleccionada.region !='NACIONAL'"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+          </svg></button>
+          <b-dropdown :text="regionSeleccionada.departamento" variant="warning" class="d-inline-block m-2 departamento-menu">
+            <b-dropdown-item @click="show_departamento(dep)" :key="dep.region" v-for="dep in departamentos">
+              <a >{{ dep.departamento }}</a>
+            </b-dropdown-item>
+          </b-dropdown>
+          <b-dropdown :text="distritoSeleccionado.distrito" variant="warning" class="d-inline-block m-2 departamento-menu" v-if="regionSeleccionada.region !='NACIONAL'">
+            <b-dropdown-item @click="selectDistrito(dep)" :key="dep.ubigeo" v-for="dep in distritos">
+              <a>{{ dep.distrito }}</a>
+            </b-dropdown-item>
+          </b-dropdown>
+        </div>
+      </div>
+
       <div class="row candidates-list">
         <div class="col-12 pt-3 pb-3">
-
           <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region !='NACIONAL'"><span>{{regionSeleccionada.region}}</span> <span class="p-2 badge badge-light">Conteo al 98%</span></h2>
-
           <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region =='NACIONAL'"><span>RESULTADOS NACIONALES</span><span class="p-2 badge badge-light">Conteo al 98%</span></h2>
-
+          <h2 class="distrito-resultados align-self-center" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'"><span>{{ distritoSeleccionado.distrito }}</span></h2>
         </div>
         <div class="col-12">
           <div class="row candidate-info align-self-center mt-2 pb-1">
@@ -70,7 +86,7 @@
       </div>
     </div>
     
-    <div class="col-12">
+    <div class="col-12 mt-5">
 
       <elecciones2016 v-if="regionSeleccionada" />
 
@@ -80,9 +96,9 @@
 </template>
 
 <script>
-  import { filter, map, orderBy, groupBy, uniq } from 'lodash'
+  import { find, filter, map, orderBy, groupBy, uniq, sumBy, maxBy } from 'lodash'
   import elecciones2016 from './elecciones2016.vue'
-  import { mapState } from 'vuex'
+  import { mapState, mapActions } from 'vuex'
   
   export default {
     name: 'candidatosResultados.vue',
@@ -94,22 +110,72 @@
     },
     data() {
       return {
-        open: false
+        open: false,
+        distritoSeleccionado: {
+          distrito: "Seleccionar distrito"
+        }
       }
     },
     computed: {
       ...mapState({        
         regionSeleccionada: state => state.candidatos.regionSeleccionada,
+        todosCandidatos: state => state.candidatos.todos,
+        todosDistritos: state => state.candidatos.distritos
       }),
+      perugeo() {
+        return require(`../data/mapas/perugeo.json`)
+      },
+      departamentos_list() {
+        let filtered = filter(this.todosCandidatos, c => c.candidato_id != '' && c.region != 'total' && c.region != 'extranjero')
+        console.log(filtered)
+        return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
+          let dep = find(this.perugeo.features, d => d.properties.dep_id == region)
+          console.log(this.perugeo.features, dep)
+          return {
+            region: region,
+            departamento: region != 'extranjero' ? dep.properties.NOMBDEP : 'EXTRANJERO',
+            total_departamento: parseFloat(sumBy(map(item, 'total'))),
+            candidatos: orderBy(item, ['validos'], ['desc']),
+            geodata: require(`../data/mapas/${region}.json`),
+            winner: maxBy(item, 'validos')
+          }
+        }), ['departamento'])
+      },
+      departamentos() {
+        let filtered = filter(this.todosCandidatos, c => c.candidato_id != '' && c.region != 'total')
+        return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
+          return {
+            region: region,
+            departamento: region.toUpperCase()
+          }
+        }), ['departamento'])
+      },
+      distritos() {
+        return orderBy(map(groupBy(this.todosDistritos, 'ubigeo'), (item, ubigeo) => {
+          return {
+            ubigeo: ubigeo,
+            distrito: uniq(map(item, 'distrito')).join("") + ' (' + uniq(map(item, 'provincia')).join("") +')'
+          }
+        }), ['distrito'])
+      },
       lista_candidatos() {
         
         let data_block
 
-        if(this.regionSeleccionada.region == 'NACIONAL')
-          data_block = filter(this.candidatos, ['region', 'total'])
-        else if(this.regionSeleccionada.region != 'NACIONAL')
-          data_block = filter(this.candidatos, ['region', this.regionSeleccionada.region])
-
+        if(this.regionSeleccionada.region == 'NACIONAL' && this.distritoSeleccionado.distrito == 'Seleccionar distrito') {
+          data_block = filter(this.todosCandidatos, ['region', 'total'])
+        }
+        else if(this.regionSeleccionada.region != 'NACIONAL' && this.distritoSeleccionado.distrito == 'Seleccionar distrito') {
+          data_block = filter(this.todosCandidatos, ['region', this.regionSeleccionada.region])
+        }
+        else if(this.regionSeleccionada.region != 'NACIONAL' && this.distritoSeleccionado.distrito != 'Seleccionar distrito') {
+          console.log(this.todosDistritos)
+          data_block = filter(this.todosDistritos, d => {
+            if(d.region == this.regionSeleccionada.region && d.ubigeo == this.distritoSeleccionado.ubigeo) {
+              return d
+            }
+          })
+        }
 
         return orderBy(map(groupBy(data_block, 'candidato_id'), (d, id) => {
           return {
@@ -132,6 +198,22 @@
       }
     },
     methods: {
+      ...mapActions('candidatos', [
+        'updateRegionSeleccionada'
+      ]),
+      resetMapa() {
+        this.updateRegionSeleccionada({region:'NACIONAL', departamento:'VER REGIÓN'})
+        this.distritoSeleccionado = {
+          distrito: "Seleccionar distrito"
+        }
+      },
+      show_departamento(departamento) {
+        let dep = find(this.departamentos_list, d => d.region == departamento.region)
+        this.updateRegionSeleccionada(dep)
+      },
+      selectDistrito(d) {
+        this.distritoSeleccionado = d
+      },
       getImageCandidate(c) {
         try {
           return require(`../assets/candidatos/${c}.png`)

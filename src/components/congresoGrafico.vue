@@ -15,7 +15,7 @@
     </div>
 
     <div class="col-12 text-center">
-      <svg height="320px" width="640px">
+      <svg class="svg-congreso">
         <g id="parliament"></g>
       </svg>
     </div>
@@ -23,14 +23,14 @@
     <div class="col-12 mt-3 resultados2021">      
       <div class="list-resultados-partidos">
         <div class="row pb-3 justify-content-center">
-          <div class="col-10 mr-5"><h2 class="text-center title-partidos-curules">Total de curules por partidos</h2></div>
-          <div class="col-12 col-md-5 mr-5" :key="c.candidato_id" v-for="c in congresistas_partido">
+          <div class="col-12 col-md-10 mr-md-5"><h2 class="text-center title-partidos-curules">Total de curules por partidos</h2></div>
+          <div class="col-12 col-md-5 mr-md-5" :key="c.candidato_id" v-for="c in congresistas_partido">
             <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
               <div class="col-auto pr-1 img-candidato">
                 <img width="65px" :src="getImagePartido(c.partido_id)" />              
               </div>
-              <div class="col-7 pl-0 pr-0 align-self-center">              
-                <h4 class="candidato-mapa m-0">{{c.partido}}</h4>
+              <div class="col-7 pl-0 pr-md-0 align-self-center">              
+                <h4 class="candidato-mapa m-md-0">{{c.partido}}</h4>
                 <div class="total-votos">Total de votos: 1,545,224</div>
               </div> 
               <div class="col-auto align-self-center text-center pr-0">              
@@ -124,28 +124,32 @@
         tooltip.html(`${table}`)	 
           .style("left", (event.pageX) + "px")
           .style("top", (event.pageY - 28) + "px")
-      
-        tooltip.transition()
-          .duration(500)	
-          .style("opacity", 0)
         
         tooltip.transition()
           .duration(200)	
           .style("opacity", 1)
+          .style("visibility", "visible")
 
       },
       renderCongreso() {
-        let ancho = 600
-        if(window.innerWidth < 993) {
-          ancho = 300
+        let ancho = 600,
+        radius=10,
+        gap=10,
+        h = 25
+
+        if(window.innerWidth < 620) {
+          ancho = window.innerWidth - 100
+          radius= 5
+          gap = 5
+          h = 15
         }
         d3.select('g#parliament').call(
           parliament.parliamentChart(this.congresistas, ancho)
           .debug(false)
           .sections(5)
-          .sectionGap(10)
-          .seatRadius(10)
-          .rowHeight(25)
+          .sectionGap(gap)
+          .seatRadius(radius)
+          .rowHeight(h)
         )
 
         d3.selectAll('circle')
@@ -166,6 +170,7 @@
               tooltip.transition()
                 .duration(150)	
                 .style("opacity", 0)
+                .style("visibility", "hidden")
           })
       }
     }

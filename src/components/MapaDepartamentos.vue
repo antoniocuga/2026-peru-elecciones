@@ -2,7 +2,7 @@
 
   <div class="mapa-resultados-container">
     <div class="row filter-block">
-      <div class="col-12 text-center">
+      <div class="col-12 text-right">
         
         <b-dropdown :text="partidoSeleccionado.partido" variant="warning" class="d-inline-block m-2 departamento-menu">
           <b-dropdown-item :key="p.partido_id" v-for="p in partidos">
@@ -26,7 +26,7 @@
           <g ref="distritos"></g>
           <g ref="labels"></g>
         </svg>
-        <div class="regiones-extra" v-if="regionSeleccionada.region == 'NACIONAL'">
+        <div class="regiones-extra" :class="{'show': regionSeleccionada.region == 'NACIONAL'}">
           <div><span class="callao-path departamento-path"></span><span>Callao</span></div>
           <div><span class="lima-path departamento-path"></span><span>Lima Metropolitana</span></div>
           <div><span class="extranjero-path departamento-path"></span><span>Extranjero</span></div>
@@ -38,10 +38,12 @@
           </div>
         </div>
 
-        <button type="button" @click="resetPartidos()" class="btn-back btn active btn-secondary" v-if="partidoSeleccionado.partido_id!='TODOS'">Ver todos los partidos</button>
-        <button type="button" @click="resetPresidente()" class="btn-back btn active btn-secondary" v-if="zoomed==true"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
-          <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>
-        </svg> Todos los resultados</button>
+        <button type="button" @click="resetPartidos()" class="btn-back btn active btn-secondary" v-if="partidoSeleccionado.partido_id!='TODOS'"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+        </svg> volver</button>
+        <button type="button" @click="resetPresidente()" class="btn-back btn active btn-secondary" v-if="zoomed==true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+        </svg> volver</button>
       </div>
     </div>
     
@@ -106,8 +108,8 @@
             }
           })
 
-          d3.selectAll('span.departamento-path')        
-          .attr("style", (f) => {            
+          d3.selectAll('span.departamento-path')
+          .attr("style", (f) => {
             let dep = find(this.departamentos_parse, d => d.region == f)
             if(dep) { 
               return `background: ${color(dep.winner.validos)}`
@@ -121,6 +123,14 @@
               let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
               if(dep)
                 return `fill: ${dep.winner.color}ab;`
+            })
+
+          d3.selectAll('span.departamento-path')
+            .attr("style", (f) => {            
+              let dep = find(this.departamentos, d => d.region == f)
+              if(dep) { 
+                return `background: ${dep.winner.color}ab;`
+              }
             })
         }
 
@@ -244,7 +254,7 @@
         this.zoomed = false
         this.updatePartidoSeleccionado({
           partido_id: "TODOS",
-          partido: "TODOS",
+          partido: "VER POR PARTIDO",
         })
       },
       resetPresidente() {
@@ -345,6 +355,17 @@
               base.selectAll('path.departamento-path').classed('inactive', false)
               d3.select(".candidate-results-vivo").style("opacity", 1)
               d3.select(".candidate-results-vivo").classed("active", true)
+
+              if(this.partidoSeleccionado.partido_id == "TODOS") {
+                d3.selectAll('span.departamento-path')
+                  .attr("style", (f) => {
+                    let dep = find(this.departamentos, d => d.region == f)
+                    if(dep) { 
+                      return `background: ${dep.winner.color}ab;`
+                    }
+                  })
+              }
+
             }
           })
       },
@@ -362,14 +383,14 @@
 
         if(window.innerWidth < 993) {
           this.width = window.innerWidth > 500 ? window.innerWidth / 1.7 : window.innerWidth
-          this.height = 640
+          this.height = 720
           this.center_device =  [this.width/1.9, this.height / 2]
-          this.scale = this.width * 1.65 / this.distance / Math.sqrt(1)
+          this.scale = this.width * 1.45 / this.distance / Math.sqrt(1)
           
         } else if(window.innerWidth > 720) {
           this.width = 720
           this.height = 720
-          this.center_device =  [this.width/2.6, this.height / 2.2]
+          this.center_device =  [this.width/2.2, this.height / 2.2]
           this.scale = this.width / this.distance / Math.sqrt(1)
         }
 
