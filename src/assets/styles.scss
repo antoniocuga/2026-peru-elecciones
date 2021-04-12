@@ -388,12 +388,7 @@ p {
   }
 
   .candidate-results-vivo {
-    position: absolute;
-    top: 0;
-    left: -400px;
     max-width: 400px;
-    height: 100vh;
-    max-height: 720px;
     z-index: 999;
     transition: left .15s ease-in-out;
 

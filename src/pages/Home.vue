@@ -43,7 +43,7 @@
         <div class="col-12 mb-3 subtitle mt-5">
           <h2>Congreso fragmentado (2021-2026)</h2>
           <span class="line"></span>
-          <p>Siete partidos tendrán representantes en el Parlamento: Acción Popular, Fuerza Popular, Víctoria Nacional, Juntos por el Perú, Renovación Popular, Avanza País y el Frente Popular Agrícola FIA del Perú (Frepap). Se requerirá un acuerdo de todas las fuerzas políticas para evitar la inestabilidad de los últimos cinco años.</p>
+          <p>Al menos 10 partidos podrían tener representantes en el Parlamento: Acción Popular, Avanza País, Fuerza Popular, Perú Libre, Victoria Nacional, Juntos por el Perú, Renovación Popular, Podemos Perú, Alianza para el Progreso, Somos Perú y quizá el Frente Popular Agrícola FIA del Perú y el Partido Morado. Se requerirá un acuerdo de todas las fuerzas políticas para evitar la inestabilidad de los últimos cinco años.</p>
         </div>
         <div class="col-12">
           <congresoGrafico />
@@ -90,8 +90,8 @@
         <div class="col-12 fuentes text-center mb-5">
           <h4>Créditos:</h4>
           <div>Dirección: Óscar Castilla.</div>
-          <div>Equipo investigativo: Ralph Zapata, Ernesto Cabral, Elizabeth Salazar y Magali Estrada, Geraldine Santos, Alicia Tovar, Clarys Cárdenas, Alba Rivas, Gustavo Callapiña, Karín Chacón de la Red Investigativa Regional. </div>
-          <div>Colaboración: Esthefany Molina. Desarrollo web: Antonio Cucho.</div>
+          <div>Desarrollo web y data: Antonio Cucho y Gianfranco Huamán y Gianfranco Rossi.</div>
+          <div>Investigación: Ralph Zapata, Ernesto Cabral, Elizabeth Salazar y Magali Estrada, Geraldine Santos, Alicia Tovar, Clarys Cárdenas, Alba Rivas, Gustavo Callapiña, Karín Chacón de la Red Investigativa Regional. Con la colaboración de Esthefany Molina.</div>
         </div>        
       </div>  
 

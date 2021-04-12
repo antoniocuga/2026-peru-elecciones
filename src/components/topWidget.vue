@@ -2,7 +2,9 @@
 
   <div class="row justify-content-center">
     <div class="col-12 col-sm-12 mb-3">
-      <h3 class="m-0 text-center">Resultados a nivel nacional - <b>conteo ONPE al 61%</b> - Última actualización: 11 de Abril a las 23:00</h3>
+      <h3 class="m-0 text-center">
+        <b>Conteo ONPE al 10% a nivel nacional</b> (Última actualización: 12:00 p.m. del 12 de abril)
+      </h3>
     </div>
     <div class="col-auto text-center" :key="c.candidato_id" v-for="(c, ix) in topCandidatos">
       <div>
