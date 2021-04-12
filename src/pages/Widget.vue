@@ -9,6 +9,11 @@
           <topWidget />
         </div>      
       </div>
+      <div class="col-12 top-candidates pt-3 pb-3">
+        <div class="encuesta-wrapper text-center">
+          <a  target="_parent" href="https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021/" class="btn btn-danger">Ver todos los resultados</a>
+        </div>      
+      </div>
     </div>
   </div>
 </template>

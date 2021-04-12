@@ -33,23 +33,23 @@
     },
     {
         "eleccion": "2020",
-        "numero": "5",
-        "candidato": "Yeremi Espinoza",
-        "candidato_id": "yeremi-espinoza",
-        "partido": "Pdemos perú",
-        "partido_id": "podemos-peru",
-        "color": "#004da3",
-        "total_votos": 123926
-
-    },
-    {
-        "eleccion": "2020",
         "numero": "4",
         "candidato": "Enrique Fernández Chacón",
         "candidato_id": "enrique-fernandez-chacon",
         "partido": "Frente Amplio",
         "partido_id": "frente-amplio",
         "color": "#2fc100ba",
+        "total_votos": 123926
+
+    },
+    {
+        "eleccion": "2020",
+        "numero": "5",
+        "candidato": "Yeremi Espinoza",
+        "candidato_id": "yeremi-espinoza",
+        "partido": "Pdemos perú",
+        "partido_id": "podemos-peru",
+        "color": "#004da3",
         "total_votos": 110790
 
     },

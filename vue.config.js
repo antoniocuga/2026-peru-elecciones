@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/resultados-2021',
+  publicPath: '/especiales/resultados-onpe-elecciones-2021',
   pages: {
     index: {
       entry: 'src/main.js',

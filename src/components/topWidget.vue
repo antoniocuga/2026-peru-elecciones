@@ -89,7 +89,7 @@
             }
         }), ['validos'], ['desc'])
 
-        return candidates.slice(0, 5)
+        return candidates.slice(0, 4)
       }, 
     }
   }
