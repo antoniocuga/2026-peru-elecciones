@@ -135,8 +135,12 @@
 
       },
       renderCongreso() {
+        let ancho = 600
+        if(window.innerWidth < 993) {
+          ancho = 300
+        }
         d3.select('g#parliament').call(
-          parliament.parliamentChart(this.congresistas, 600)
+          parliament.parliamentChart(this.congresistas, ancho)
           .debug(false)
           .sections(5)
           .sectionGap(10)
