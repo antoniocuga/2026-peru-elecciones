@@ -369,7 +369,7 @@
         } else if(window.innerWidth > 720) {
           this.width = 720
           this.height = 720
-          this.center_device =  [this.width/.99, this.height / 2.2]
+          this.center_device =  [this.width/2.6, this.height / 2.2]
           this.scale = this.width / this.distance / Math.sqrt(1)
         }
 

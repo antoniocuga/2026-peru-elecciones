@@ -4,9 +4,11 @@
         <topWidget />
       </div>
       <div class="row pt-3">
-        <div class="col-12 col-sm-12 mapa-resultados-wrapper">
+        <div class="col-12 col-sm-4 mapa-resultados-wrapper">
+          <candidatosResultados :candidatos="filteredData" />
+        </div>
+        <div class="col-12 col-sm-8 mapa-resultados-wrapper">
           <MapaDepartamentos :lista_candidatos="filteredData" />
-          <candidatosResultados :candidatos="filteredData" />  
         </div>
       </div>
   </div>    
