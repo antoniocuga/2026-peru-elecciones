@@ -72,7 +72,7 @@ final %>%
     write_csv("congreso_finalxd.csv")
 ```
 
-```{r}
+```{r, eval=F, echo = F}
 clean %>% anti_join(candidatos_names)
 ```
 
@@ -125,13 +125,7 @@ por_partido <-
     distinct(TOTAL_VOTOS, partido, region, N_CANDIDATOS)
 ```
 
-```{r}
-por_partido %>% 
-    inner_join(
-        filter(prop_nacionales, prop_validos_partido > 0.05), by = "partido"
-    )
 
-```
 ```{r}
 # to_loop <- distinct(por_partido, region, N_CANDIDATOS)
 to_loop <- curules_por_region
