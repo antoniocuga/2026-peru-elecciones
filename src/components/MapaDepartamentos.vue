@@ -85,6 +85,9 @@
       candidatos() {
         this.renderMapa()
       },
+      distritos() {
+        this.render_distritos()
+      },
       partidoSeleccionado(v) {
         this.zoomed = false
         let base = d3.select(this.$refs['svgmap'])

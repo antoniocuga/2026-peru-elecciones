@@ -72,7 +72,6 @@ p {
 .nav-tabs .nav-link {
   font-family: 'Nunito Sans', sans-serif;
   color: #333;
-  padding: 10px 5px;
   font-size: 13px;
   border-radius: 0;
   text-transform: uppercase;
@@ -243,6 +242,11 @@ p {
 
 .congreso-grafico {
   font-family: 'Nunito Sans', sans-serif;
+
+  .congreso-sticky {
+    position: sticky;
+    top: 35px;
+  }
 
   .svg-congreso {
     width: 100%;
