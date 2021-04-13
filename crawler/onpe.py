@@ -62,14 +62,40 @@ class EG2021Spider(scrapy.Spider):
             self.start_requests = self.get_mesas
         if mode == "summary":
             self.start_requests = self.get_summary
-    
+        if mode == "congreso":
+            self.start_requests = self.get_congreso
+        if mode=="candidates":
+            self.start_requests = self.get_candidates
 
     def closed(self, reason):
         self.client.close()
 
+    def get_district_codes(self):
+        bd_utils.create_index('opt_index', ['generals.generalData.POR_ACTAS_PROCESADAS'], self.col_data)
+        cursor = self.col_summary.aggregate([
+            {
+                "$match":{
+                    "is_old":{"$exists":False},
+                    "generals.generalData.POR_ACTAS_PROCESADAS": {"$ne":"100.000"}
+                }
+            },
+            {
+                "$group": {
+                    "_id": "$cod_dist",
+                    "last_ts": { "$last": "$scraped_at" }
+                }
+            },
+            {"$sort": { "last_ts":1}},
+        ])
+        # devolviendo district codes
+        dists =  [{'CDGO_DIST': i['_id']} for i in cursor]
+        return dists
+
 
     def get_summary(self):
-        for dist in self.ubigeos['districts']:
+        districts = [{'CDGO_DIST': '900000'}] + self.ubigeos['districts'] 
+        districts = self.get_district_codes()
+        for dist in districts:
             cod_dist = dist['CDGO_DIST']
             # if self.col_summary.find_one({'cod_dist':cod_dist}) is  None:
             url = f"https://api.resultados.eleccionesgenerales2021.pe/results/10/{cod_dist}?name=param"
@@ -86,11 +112,50 @@ class EG2021Spider(scrapy.Spider):
         self.col_summary.insert_one(jason)
 
 
+    def get_congreso(self):
+        for i in range(1, 28):
+            slug = str(i).zfill(2)
+            url = f"https://api.resultados.eleccionesgenerales2021.pe/results/11/D440{slug}?name=param"
+
+            yield scrapy.Request(url, headers = self.headers, callback=self.parse_congreso, meta = {'meta':{'slug':slug}})
+
+    def parse_congreso(self, response):
+        slug = response.meta['meta']['slug']
+        import code
+        # code.interact(local= dict(locals(), **globals()))
+
+        jason = json.loads(response.text)
+        jason.update({
+            'scraped_at':datetime.datetime.now(),
+            'slug': slug,
+        })
+        self.col_congreso.insert_one(jason)
+
+    def get_candidates(self):
+        deps_raw = """<select _ngcontent-mkf-c98="" id="select_departamento" name="cod_depa" class="select_ubigeo ng-pristine ng-valid ng-touched"><option _ngcontent-mkf-c98="" value="D44001">AMAZONAS</option><option _ngcontent-mkf-c98="" value="D44002">ANCASH</option><option _ngcontent-mkf-c98="" value="D44003">APURIMAC</option><option _ngcontent-mkf-c98="" value="D44004">AREQUIPA</option><option _ngcontent-mkf-c98="" value="D44005">AYACUCHO</option><option _ngcontent-mkf-c98="" value="D44006">CAJAMARCA</option><option _ngcontent-mkf-c98="" value="D44007">CALLAO</option><option _ngcontent-mkf-c98="" value="D44008">CUSCO</option><option _ngcontent-mkf-c98="" value="D44009">HUANCAVELICA</option><option _ngcontent-mkf-c98="" value="D44010">HUANUCO</option><option _ngcontent-mkf-c98="" value="D44011">ICA</option><option _ngcontent-mkf-c98="" value="D44012">JUNIN</option><option _ngcontent-mkf-c98="" value="D44013">LA LIBERTAD</option><option _ngcontent-mkf-c98="" value="D44014">LAMBAYEQUE</option><option _ngcontent-mkf-c98="" value="D44015">LIMA</option><option _ngcontent-mkf-c98="" value="D44016">LIMA PROVINCIAS</option><option _ngcontent-mkf-c98="" value="D44017">LORETO</option><option _ngcontent-mkf-c98="" value="D44018">MADRE DE DIOS</option><option _ngcontent-mkf-c98="" value="D44019">MOQUEGUA</option><option _ngcontent-mkf-c98="" value="D44020">PASCO</option><option _ngcontent-mkf-c98="" value="D44021">PIURA</option><option _ngcontent-mkf-c98="" value="D44022">PUNO</option><option _ngcontent-mkf-c98="" value="D44023">SAN MARTIN</option><option _ngcontent-mkf-c98="" value="D44024">TACNA</option><option _ngcontent-mkf-c98="" value="D44025">TUMBES</option><option _ngcontent-mkf-c98="" value="D44026">UCAYALI</option><option _ngcontent-mkf-c98="" value="D44027">RESIDENTES EN EL EXTRANJERO</option><!----></select>"""
+        partidos_raw ="""<select _ngcontent-mkf-c98="" id="idagrupol" name="cod_prov" class="select_ubigeo ng-pristine ng-valid ng-touched"><option _ngcontent-mkf-c98="" value="0">-- SELECCIONE --</option><option _ngcontent-mkf-c98="" value="00000006">FRENTE POPULAR AGRICOLA FIA DEL PERU - FREPAP</option><option _ngcontent-mkf-c98="" value="00000012">PARTIDO NACIONALISTA PERUANO</option><option _ngcontent-mkf-c98="" value="00000005">EL FRENTE AMPLIO POR JUSTICIA, VIDA Y LIBERTAD</option><option _ngcontent-mkf-c98="" value="00000011">PARTIDO MORADO</option><option _ngcontent-mkf-c98="" value="00000017">PERU PATRIA SEGURA</option><option _ngcontent-mkf-c98="" value="00000022">VICTORIA NACIONAL</option><option _ngcontent-mkf-c98="" value="00000001">ACCION POPULAR</option><option _ngcontent-mkf-c98="" value="00000003">AVANZA PAIS - PARTIDO DE INTEGRACION SOCIAL</option><option _ngcontent-mkf-c98="" value="00000018">PODEMOS PERU</option><option _ngcontent-mkf-c98="" value="00000008">JUNTOS POR EL PERU</option><option _ngcontent-mkf-c98="" value="00000015">PARTIDO POPULAR CRISTIANO - PPC</option><option _ngcontent-mkf-c98="" value="00000007">FUERZA POPULAR</option><option _ngcontent-mkf-c98="" value="00000013">PARTIDO POLITICO CONTIGO</option><option _ngcontent-mkf-c98="" value="00000021">UNION POR EL PERU</option><option _ngcontent-mkf-c98="" value="00000020">RENOVACION POPULAR</option><option _ngcontent-mkf-c98="" value="00000019">RENACIMIENTO UNIDO NACIONAL</option><option _ngcontent-mkf-c98="" value="00000010">PARTIDO DEMOCRATICO SOMOS PERU</option><option _ngcontent-mkf-c98="" value="00000014">PARTIDO POLITICO NACIONAL PERU LIBRE</option><option _ngcontent-mkf-c98="" value="00000004">DEMOCRACIA DIRECTA</option><option _ngcontent-mkf-c98="" value="00000002">ALIANZA PARA EL PROGRESO</option><!----></select>"""
+        sdeps = scrapy.Selector(text = deps_raw)
+        sparts = scrapy.Selector(text = partidos_raw)
+        deps = dict(zip(sdeps.xpath("//option/@value").extract(), [i.strip() for i in  sdeps.xpath("//option/text()").extract()]))
+        partidos = dict(zip(sparts.xpath("//option/@value").extract(), [i.strip() for i in  sparts.xpath("//option/text()").extract()]))
+        partidos.pop('0')
+        for dep_code, dep in deps.items():
+            for part_code, part in partidos.items():
+                url = "https://api.resultados.eleccionesgenerales2021.pe/results/11/{}/{}?name=param".format(dep_code, part_code)
+                meta = {'dep':dep, 'partido':part}
+                yield scrapy.Request(url = url, headers=self.headers, meta = {'meta':meta}, callback = self.parse_candidates)
+
+    def parse_candidates(self, response):
+        jason = json.loads(response.text)
+        jason.update(response.meta['meta'])
+        self.col_congreso_names.insert_one(jason)
+
+
     def get_resultados(self):
         # query = {'PROCESADO':3}
         query = {}
         for mesa in self.col_mesas.find(query):
-            cod_mesa = mesa['NUMMESA']
+            cod_mesa = mesa['NUMMESA']  
             if self.col_data.find_one({'cod_mesa': cod_mesa}, projection={"_id":False, 'cod_mesa':True}) is None:
                 url = f"https://api.resultados.eleccionesgenerales2021.pe/mesas/detalle/{cod_mesa}?name=param"
                 yield scrapy.Request(url, headers = self.headers, callback = self.parse_resultado, meta = {'meta':{'cod_mesa':cod_mesa}})
@@ -167,7 +232,10 @@ class EG2021Spider(scrapy.Spider):
         self.col_data = self.bd['resultados']
         bd_utils.create_index('scraping_idx2', ['cod_mesa'], self.col_data)
 
+        self.col_congreso = self.bd['congreso']
+        bd_utils.create_index('scraping_idx2', ['is_old'], self.col_congreso)
 
+        self.col_congreso_names = self.bd['congresonames']
 
 def parse():
     import pandas as pd

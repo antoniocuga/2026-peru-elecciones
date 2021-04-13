@@ -1,0 +1,185 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(readr)
+library(stringr)
+library(dplyr)
+library(tidyr)
+```
+
+
+```{r}
+data <- read_csv("congreso_sucio.csv")
+candidatos_mapper <- read_csv("candidatos_lista_to_name.csv")
+no_contar <- c("TOTAL DE VOTOS EMITIDOS", "VOTOS EN BLANCO", "VOTOS NULOS", "TOTAL DE VOTOS VÁLIDOS", "VOTOS BLANCOS")
+candidatos_names <- read_csv("candidates_names.csv") %>% rename(AGRUPACION=partido, n_lista_candidato = NUMLISTA, region=departamento) %>% select(-TOTAL_VOTOS, -C_CODI_CANDIDATO)
+```
+```{r}
+clean <- 
+    data %>% 
+    select(AGRUPACION, contains("TOTAL_VOTOS"), NLISTA, POR_VALIDOS, ELECTORES_HABIL, POR_ACTAS_PROCESADAS, N_CANDIDATOS, FECHA, HORA, POR_AVANCE, region) %>% 
+    gather("lista", "voto_preferencial",  -AGRUPACION, - TOTAL_VOTOS, -NLISTA, -POR_VALIDOS, -ELECTORES_HABIL, -POR_ACTAS_PROCESADAS, -N_CANDIDATOS, -FECHA, -HORA, -POR_AVANCE, -region) %>% 
+    mutate(
+        n_lista_candidato = as.integer(str_replace(lista, "TOTAL_VOTOS", ""))
+    ) %>% 
+    filter(
+        n_lista_candidato <= N_CANDIDATOS,
+        !AGRUPACION %in% no_contar
+    ) %>% 
+    select(-NLISTA, -lista) %>% 
+    mutate(
+        region = if_else(region=="RESIDENTES EN EL EXTRANJERO", "RESIDENTES EXT", region)
+    )
+
+final <- 
+    clean %>%
+    left_join(candidatos_names) %>% 
+    mutate(
+        nombre = CANDIDATO,
+        candidato_id = str_replace_all(tolower(CANDIDATO), " ", "-"),
+        partido = AGRUPACION,
+        partido_id = str_replace_all(tolower(AGRUPACION), " ", "-"),
+        nro = n_lista_candidato
+    ) %>% 
+    select(-CANDIDATO, -n_lista_candidato, -AGRUPACION) %>% 
+    left_join(distinct(candidatos_mapper, partido,color)) %>% 
+    mutate(
+        color = case_when(
+            partido == "FRENTE POPULAR AGRICOLA FIA DEL PERU - FREPAP" ~ "#e3e3e3",
+            partido == "EL FRENTE AMPLIO POR JUSTICIA, VIDA Y LIBERTAD" ~ "#4e5405",
+            partido == "PARTIDO DEMOCRATICO SOMOS PERU" ~ "#ff2600",
+            partido == "PARTIDO POLITICO NACIONAL PERU LIBRE" ~ "#1022b9",
+            partido == "AVANZA PAIS - PARTIDO DE INTEGRACION SOCIAL" ~"#ff2c79",
+            partido == "PARTIDO POLITICO CONTIGO" ~"#333",
+            T ~ color
+        )
+    )
+
+final %>% 
+    write_csv("congreso_finalxd.csv")
+```
+
+```{r}
+clean %>% anti_join(candidatos_names)
+```
+
+
+```{r}
+anti_join(clean, candidatos_mapper, by = c("region"="departamento")) %>% distinct(region)
+anti_join(candidatos_mapper, clean, by = c("departamento"="region")) %>% distinct(departamento)
+```
+
+```{r}
+clean %>% 
+    anti_join(
+        candidatos_mapper %>% mutate(nro = as.integer(nro)),
+        by = c("region"="departamento", "n_lista_candidato"="nro", "AGRUPACION"="partido")
+    ) %>% 
+    distinct(region, n_lista_candidato, AGRUPACION) %>% 
+    distinct(AGRUPACION)
+```
+
+```{r}
+candidatos_mapper %>%
+    mutate(nro = as.integer(nro)) %>% 
+    anti_join(
+        clean,
+        by = c("departamento"="region", "nro"="n_lista_candidato", "partido"="AGRUPACION")) %>% 
+    distinct(partido)
+
+```
+
+```{r}
+prop_nacionales <- 
+    distinct(final, TOTAL_VOTOS, partido, region) %>% 
+    mutate(total_nacional = sum(TOTAL_VOTOS)) %>% 
+    group_by(partido) %>% 
+    summarise(
+        total_partido = sum(TOTAL_VOTOS),
+        prop_validos_partido = total_partido/total_nacional
+    ) %>% 
+    distinct() %>% 
+    arrange(desc(prop_validos_partido))
+sum(prop_nacionales$prop_validos_partido)
+```
+```{r}
+filter(prop_nacionales, prop_validos_partido > 0.05)
+
+```
+```{r}
+por_partido <- 
+    final %>% 
+    distinct(TOTAL_VOTOS, partido, region, N_CANDIDATOS)
+```
+
+```{r}
+por_partido %>% 
+    inner_join(
+        filter(prop_nacionales, prop_validos_partido > 0.05), by = "partido"
+    )
+
+```
+```{r}
+to_loop <- distinct(por_partido, region, N_CANDIDATOS)
+
+for (index in 1:nrow(to_loop)){
+    n <- to_loop$N_CANDIDATOS[index]
+    reg <- to_loop$region[index]
+    
+    tmp <- filter(por_partido, region == get("reg"))
+    cont <- tmp
+    for (coef in 2:n){
+        cont <- bind_rows(
+            cont, 
+            mutate(tmp, TOTAL_VOTOS = TOTAL_VOTOS/get("coef"), coef=get("coef"))
+        )
+    }
+    head(arrange(cont, desc(TOTAL_VOTOS)), n)
+}
+```
+
+
+
+```{r}
+general %>% 
+# Mayor a 5% de la data agregada
+  filter(
+    POR_VALIDOS >= 0.05  
+  ) %>% 
+    
+  rename(
+    NACIONAL_POR_VALIDOS = POR_VALIDOS,
+    NACIONAL_VALIDOS = TOTAL
+  ) %>% 
+  select(AGRUPACION,NACIONAL_POR_VALIDOS,NACIONAL_VALIDOS) %>% 
+  inner_join(congreso %>% 
+               filter(region == 'ANCASH'), by = "AGRUPACION") %>% 
+  select(AGRUPACION, NACIONAL_POR_VALIDOS,NACIONAL_VALIDOS,TOTAL_VOTOS,POR_VALIDOS, region) %>% 
+  distinct() %>% 
+  mutate(
+    escaño_1 = TOTAL_VOTOS/1,
+    escaño_2 = TOTAL_VOTOS/2,
+    escaño_3 = TOTAL_VOTOS/3,
+    escaño_4 = TOTAL_VOTOS/4,
+    escaño_5 = TOTAL_VOTOS/5,
+    escaño_6 = TOTAL_VOTOS/6
+  ) %>% 
+  pivot_longer(cols = !1:6, names_to = "n_escaño", values_to = "producto") %>% 
+  arrange(desc(producto)) %>% 
+  slice_head(n=6) %>% 
+  left_join(
+    congreso %>% 
+      filter(region == 'ANCASH') %>% 
+      select(AGRUPACION, CANDIDATO, voto_preferencial) %>% 
+      group_by(AGRUPACION) %>% 
+      arrange(desc(voto_preferencial)) %>%  ## ES EL METODO MAS ACERTADO? se repite en peru libre. 
+      slice(1:1)
+  )
+```
+
+
+
+

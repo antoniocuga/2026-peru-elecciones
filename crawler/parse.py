@@ -1,5 +1,97 @@
 import pandas as pd
 from onpe import EG2021Spider
+import pymongo
+
+# NOTE: para acelerar filtrado de data acumulada
+# RES = list(col.aggregate(
+#    [
+#        {"$match":{"is_old":{"$exists":False}}},
+#         {"$sort": { "_id":-1 } },
+#         {
+#         "$group":
+#          {
+#            "_id": "$cod_dist",
+#            "last_id": { "$last": "$_id" }
+#          }
+#      },
+#    ]
+# ))
+# ids = [i['last_id'] for i in RES]
+# col.update_many({"_id": {"$nin":ids}}, {"$set": {"is_old":True}})
+
+def parse_candidate_names():
+    spider = EG2021Spider("xx")
+    col = spider.col_congreso_names
+
+    dics = []
+    for i in col.find():
+        for j in i['results']:
+            j.update({
+                'departamento': i['dep'],
+                'partido': i['partido'],
+            })
+            dics.append(j)
+    df = pd.DataFrame(dics)
+    df.to_csv('candidates_names.csv', index=False)
+
+
+def parse_congreso():
+    spider = EG2021Spider("xx")
+    col = spider.col_congreso
+
+    region_mapper = {'D44001': 'AMAZONAS',
+    'D44002': 'ANCASH',
+    'D44003': 'APURIMAC',
+    'D44004': 'AREQUIPA',
+    'D44005': 'AYACUCHO',
+    'D44006': 'CAJAMARCA',
+    'D44007': 'CALLAO',
+    'D44008': 'CUSCO',
+    'D44009': 'HUANCAVELICA',
+    'D44010': 'HUANUCO',
+    'D44011': 'ICA',
+    'D44012': 'JUNIN',
+    'D44013': 'LA LIBERTAD',
+    'D44014': 'LAMBAYEQUE',
+    'D44015': 'LIMA',
+    'D44016': 'LIMA PROVINCIAS',
+    'D44017': 'LORETO',
+    'D44018': 'MADRE DE DIOS',
+    'D44019': 'MOQUEGUA',
+    'D44020': 'PASCO',
+    'D44021': 'PIURA',
+    'D44022': 'PUNO',
+    'D44023': 'SAN MARTIN',
+    'D44024': 'TACNA',
+    'D44025': 'TUMBES',
+    'D44026': 'UCAYALI',
+    'D44027': 'RESIDENTES EN EL EXTRANJERO'}
+
+    dfs = []
+    seen = set()
+    for datum in col.find({'is_old':{"$exists":False}}, no_cursor_timeout=True).sort([('_id', pymongo.DESCENDING)]).batch_size(10):
+        # Out[8]: dict_keys(['_id', 'generals', 'results', 'summary', 'scraped_at', 'slug'])
+        if datum['slug'] in seen:
+            col.update_one({'_id':datum['_id']}, {"$set": {"is_old":True}})
+            print('seen', end = "")
+            return None
+        else:
+            print("acc", end = "")
+
+        acc = datum['generals']['generalData']
+        acc.update(datum['generals']['actData'])
+        acc.update({'region': region_mapper['D440' + datum['slug']]})
+        for i in datum['results']:
+            i.update(acc)
+        df = pd.DataFrame(datum['results'])
+        dfs.append(df)
+
+        seen.add(datum['slug'])
+    # datum['summary']
+    final = pd.concat(dfs, ignore_index = True)
+    final.to_csv("congreso_sucio.csv", index=False)
+
+
 
 def parse_summary():
     spider = EG2021Spider("xx")
@@ -33,19 +125,20 @@ def parse_summary():
     # NOTE: aseguramos cojer solo el ultimo
     # check = datetime.datetime.now() - datetime.timedelta(hours=0.4)
     # {'scraped_at':{'$lte':check}, 'is_old':{"$exists":False}}
-    data = list(col.find({'is_old':{"$exists":False}}).sort([('_id', pymongo.DESCENDING)]))
     seen_ubigeos = set()
     dfs = []
-    for datum in data:
+    for datum in col.find({'is_old':{"$exists":False}}, no_cursor_timeout=True).sort([('_id', pymongo.DESCENDING)]).batch_size(10):
         if datum['cod_dist'] in seen_ubigeos:
             col.update_one({'_id':datum['_id']}, {'$set': {"is_old":True}})
-            print("seen")
+            print("seen", flush=True)
             continue
+        else:
+            print("acc", flush=True, end = " ")
 
         ubigeo = datum['summary']["CCODI_UBIGEO"]
         general = datum['generals']['generalData']
         general.update(    datum['generals']['actData'] )
-        general.update( dist_mapper[ubigeo] )
+        general.update( dist_mapper.get(ubigeo, {}) )
         general['tiempo_actualizacion'] = datum['scraped_at']
 
         for i in datum['results']:
@@ -73,3 +166,4 @@ def build_mapper():
 
 if __name__ == "__main__":
     parse_summary()
+    parse_congreso()
