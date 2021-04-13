@@ -7,7 +7,7 @@ export default {
   getAllCongreso (cb) {
     let candidatos = []
     axios
-    .get(`/resultados-2021/data/congreso_total.json`)
+    .get(`https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021/data/congreso_total.json`)
     .then(response => {
       
       candidatos = response.data
@@ -18,10 +18,10 @@ export default {
   getAllCandidatos (cb) {
     let candidatos = []
     axios
-    .get(`/resultados-2021/data/resultados_total.json`)
+    .get(`https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021/data/resultados_total.json`)
     .then(response => {
       
-      candidatos = response.data
+      candidatos = response.data 
 
       setTimeout(() => cb(candidatos), 100)
     })
@@ -30,7 +30,7 @@ export default {
     let candidatos = []
     if(dep_id) {
       axios
-      .get(`/resultados-2021/data/${dep_id}.json`)
+      .get(`https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021/data/${dep_id}.json`)
       .then(response => {
         candidatos = response.data
         

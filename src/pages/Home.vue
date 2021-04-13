@@ -39,7 +39,7 @@
       </div> 
 
 
-      <div class="row border-bottom justify-content-center">
+      <div class="row border-bottom justify-content-center  d-none d-md-none">
         <div class="col-12 mb-3 subtitle mt-5">
           <h2>Congreso fragmentado (2021-2026)</h2>
           <span class="line"></span>

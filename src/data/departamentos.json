@@ -189,6 +189,70 @@
     }
   },
   {
+    "departamento": "lima-provincias",
+    "ubigeo":"15",
+    "total": 10000,
+    "validos": 50,
+    "eleccion2016": {
+      "blanco_nulo": "100021",
+      "no_votaron":"1934456",
+      "habiles": "696209",
+      "emitidos": "2630665",
+      "partidos": [
+        {
+          "partido_id": "fuerza-popular",
+          "partido": "Fuerza Popular",
+          "total_votos": "2305333"
+        },
+        {
+          "partido_id": "frente-amplio",
+          "partido": "Frente Amplio",
+          "total_votos": "82171"
+        },
+        {
+          "partido_id": "peruanos-por-el-kambio",
+          "partido": "Peruanos por el Kambio",
+          "total_votos": "77707"
+        },
+        {
+          "partido_id": "accion-popular",
+          "partido": "Acción Popular",
+          "total_votos": "22369"
+        },
+        {
+          "partido_id": "alianza-popular",
+          "partido": "Alianza Popular",
+          "total_votos": "24130"
+        },
+        {
+          "partido_id": "democracia-directa",
+          "partido": "Democracia Directa",
+          "total_votos": "4723"
+        },
+        {
+          "partido_id": "frente-esperanza",
+          "partido": "Frente Esperanza",
+          "total_votos": "5441"
+        },
+        {
+          "partido_id": "peru-posible",
+          "partido": "Perú Posible",
+          "total_votos": "5515"
+        },
+        {
+          "partido_id": "progresando-peru",
+          "partido": "Progresando Peru",
+          "total_votos": "1829"
+        },
+        {
+          "partido_id": "partido-politico-orden",
+          "partido": "Partido Politico Orden",
+          "total_votos": "1426"
+        }
+      ]
+    }
+  },
+  {
     "departamento": "ica",
     "ubigeo":"11",
     "total": 10000,
@@ -516,7 +580,7 @@
     }
   },
   {
-    "departamento": "la libertad",
+    "departamento": "la-libertad",
     "ubigeo":"13",
     "total": 10000,
     "validos": 56,
@@ -980,7 +1044,7 @@
     
   },
   {
-    "departamento": "san martin",
+    "departamento": "san-martin",
     "ubigeo":"22",
     "total": 10000,
     "validos": 56,
@@ -1046,7 +1110,7 @@
     }
   },
   {
-    "departamento": "madre de dios",
+    "departamento": "madre-de-dios",
     "ubigeo":"17",
     "total": 10000,
     "validos": 56,

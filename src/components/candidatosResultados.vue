@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <div class="row candidates-list">
+      <div class="row candidates-list" v-if="conteo">
         <div class="col-12 pt-3 pb-3">
           <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region !='NACIONAL'"><span>{{regionSeleccionada.region}}</span> <span class="p-2 badge badge-light">Conteo al {{conteo.toFixed(1)}}%</span></h2>
           <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region =='NACIONAL'"><span>RESULTADOS NACIONALES</span><span class="p-2 badge badge-light">Conteo al {{conteo.toFixed(1)}}%</span></h2>
@@ -49,7 +49,8 @@
               <div>{{c.validos.toFixed(1)}}%</div>               
             </div>
             <div class="col-3 votos-validos align-self-center text-center">
-              <div class="text-center diferencia">{{ numeral(c.votos).format('0,0') }}</div>
+              <div class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">{{ numeral(c.votos).format('0,0') }}</div>
+              <div class="text-center diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos).format('0,0') }}</div>
             </div>          
           </div>
         </div>
@@ -66,7 +67,8 @@
               <div>{{c.validos.toFixed(1)}}%</div>               
             </div>
             <div class="col-3 votos-validos align-self-center text-center">
-              <div class="text-center diferencia">{{ numeral(c.votos).format('0,0') }}</div>
+              <div class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">{{ numeral(c.votos).format('0,0') }}</div>
+              <div class="text-center diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos).format('0,0') }}</div>
             </div>          
           </div>
         </b-collapse>
@@ -128,16 +130,15 @@
       },
       departamentos_list() {
         let filtered = filter(this.todosCandidatos, c => c.candidato_id != '' && c.region != 'total' && c.region != 'extranjero')
-        console.log(filtered)
         return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
           let dep = find(this.perugeo.features, d => d.properties.dep_id == region)
-          console.log(this.perugeo.features, dep)
+          let _r = region.replace(" ","-")
           return {
             region: region,
             departamento: region != 'extranjero' ? dep.properties.NOMBDEP : 'EXTRANJERO',
             total_departamento: parseFloat(sumBy(map(item, 'total'))),
             candidatos: orderBy(item, ['validos'], ['desc']),
-            geodata: require(`../data/mapas/${region}.json`),
+            geodata: require(`../data/mapas/${_r}.json`),
             winner: maxBy(item, 'validos')
           }
         }), ['departamento'])
@@ -145,14 +146,15 @@
       departamentos() {
         let filtered = filter(this.todosCandidatos, c => c.candidato_id != '' && c.region != 'total')
         return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
+          let _r = region.replace(" ","-").replace(" ","-")
           return {
-            region: region,
+            region: _r,
             departamento: region.toUpperCase()
           }
         }), ['departamento'])
       },
       distritos() {
-        return orderBy(map(groupBy(this.todosDistritos, 'ubigeo'), (item, ubigeo) => {
+        return orderBy(map(groupBy(this.todosDistritos, 'ubigeo_inei'), (item, ubigeo) => {
           return {
             ubigeo: ubigeo,
             distrito: uniq(map(item, 'distrito')).join("") + ' (' + uniq(map(item, 'provincia')).join("") +')'
@@ -173,9 +175,9 @@
           data_block = filter(this.todosCandidatos, ['region', this.regionSeleccionada.region])
         }
         else if(this.regionSeleccionada.region != 'NACIONAL' && this.distritoSeleccionado.distrito != 'Seleccionar distrito') {
-          console.log(this.todosDistritos)
+
           data_block = filter(this.todosDistritos, d => {
-            if(d.region == this.regionSeleccionada.region && d.ubigeo == this.distritoSeleccionado.ubigeo) {
+            if(d.region == this.regionSeleccionada.region && d.ubigeo_inei == this.distritoSeleccionado.ubigeo) {
               return d
             }
           })
@@ -190,6 +192,7 @@
             partido: uniq(map(d, 'partido')).join(''),
             color: uniq(map(d, 'color')).join(''),
             votos: parseFloat(uniq(map(d, 'total')).join('')),
+            total_votos: parseFloat(uniq(map(d, 'total_votos')).join('')),
             validos: parseFloat(uniq(map(d, 'validos')).join('')),
             conteo: parseFloat(uniq(map(d, 'conteo')).join('')),
             hora: uniq(map(d, 'hora')).join('')
@@ -216,6 +219,9 @@
       show_departamento(departamento) {
         let dep = find(this.departamentos_list, d => d.region == departamento.region)
         this.updateRegionSeleccionada(dep)
+        this.distritoSeleccionado = {
+          distrito: "Seleccionar distrito"
+        }
       },
       selectDistrito(d) {
         this.distritoSeleccionado = d
