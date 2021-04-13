@@ -1,17 +1,18 @@
 <template>
   <div class="row congreso-grafico">
-    <div class="col-12 mb-2">
-      <h2 class="title-resultados"><b>Conteo ONPE al 10% a nivel nacional</b> (Última actualización: 12:00 p.m. del 12 de abril)</h2>
-    </div>
     <div class="filters-congreso col-12 mb-3 text-center">
       <b-dropdown :text="depSelected" variant="warning" class="m-2 departamento-menu">
         <b-dropdown-item @click="reset_congreso()">
-          NACIONAL
+          NACIONAL (130)
         </b-dropdown-item>
         <b-dropdown-item @click="show_departamentos(d)" :key="d.region" v-for="d in departamentos">
-          {{ d.departamento}}
+          {{ d.region}} ({{ d.seats }})
         </b-dropdown-item>
       </b-dropdown>
+    </div>
+
+    <div class="col-12 mb-2" v-if="departamentos_conteo > 0">
+      <h2 class="title-resultados"><b>Conteo ONPE al {{ departamentos_conteo.toFixed(2) }}% a nivel nacional</b></h2> <h2 class="title-resultados">Última actualización: {{ departamentos_hora }}</h2>
     </div>
 
     <div class="col-12 text-center">
@@ -22,8 +23,8 @@
 
     <div class="col-12 mt-3 resultados2021">      
       <div class="list-resultados-partidos">
-        <div class="row pb-3 justify-content-center">
-          <div class="col-12 col-md-10 mr-md-5"><h2 class="text-center title-partidos-curules">Total de curules por partidos</h2></div>
+        <div class="row pb-3">
+          <div class="col-12 col-md-11 mr-md-5 text-center"><h2 class=" title-partidos-curules">Total de curules por partidos</h2></div>
           <div class="col-12 col-md-5 mr-md-5" :key="c.candidato_id" v-for="c in congresistas_partido">
             <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
               <div class="col-auto pr-1 img-candidato">
@@ -31,7 +32,7 @@
               </div>
               <div class="col-7 pl-0 pr-md-0 align-self-center">              
                 <h4 class="candidato-mapa m-md-0">{{c.partido}}</h4>
-                <div class="total-votos">Total de votos: 1,545,224</div>
+                <div class="total-votos">Total de votos: {{numeral(c.total_votos_partido).format('0,0')}}</div>
               </div> 
               <div class="col-auto align-self-center text-center pr-0">              
                   <h5 class="elegidos d-flex align-self-center">{{ c.seats }}</h5>
@@ -47,37 +48,53 @@
 </template>
 
 <script>
+  import numeral from 'numeral'
   import { mapState } from 'vuex'
   import * as d3 from 'd3'
   import * as parliament from 'd3-parliament-chart'
-  import { groupBy, map, orderBy, uniq } from 'lodash'
+  import { filter, groupBy, map, orderBy, uniq, sumBy } from 'lodash'
 
   export default {
     name: 'congresoGrafico.vue',
     data() {
       return {
-        depSelected: 'NACIONAL'
+        depSelected: 'NACIONAL (130)'
       }
     },
     computed: {
       ...mapState({
         congresistas: state => state.candidatos.congresistas
       }),
+      departamentos_conteo() {
+        if(this.depSelected != "NACIONAL (130)")
+          return parseFloat(uniq(map(filter(this.departamentos, ['region', this.depSelected]), 'conteo')).join(""))
+
+        return 0
+      },
+      departamentos_hora() {
+        return uniq(map(filter(this.departamentos, ['region', this.depSelected]), 'hora')).join("")
+      },
       departamentos() {
-        return map(groupBy(this.congresistas, 'region'), (items, r) => {
+        return orderBy(map(groupBy(this.congresistas, 'region'), (items, r) => {
           return {
             region: r,
             departamento: uniq(map(items, 'departamento')).join(""),
+            hora: uniq(map(items, 'hora')).join(""),
+            conteo: uniq(map(items, 'conteo')).join(""),
             seats: items.length,
             congresistas: items
           }
-        })
+        }), ['region'], ['asc'])
+      },
+      congresistas_parse() {
+        return orderBy(this.congresistas, ['partido_id'], ['desc'])
       },
       congresistas_partido() {
         return orderBy(map(groupBy(this.congresistas, 'partido_id'), (items, p) => {
           return {
             partido_id: p,
             partido: uniq(map(items, 'partido')).join(""),
+            total_votos_partido: sumBy(items, 'total_votos_partido'),
             seats: items.length,
             congresistas: items, 
             color: uniq(map(items, 'color')).join("")
@@ -94,6 +111,7 @@
       this.renderCongreso()
     },
     methods: {
+      numeral,
       getImagePartido(c) {
         try {
           return require(`../assets/partidos/${c}.png`) 
@@ -106,20 +124,21 @@
         d3.selectAll(`circle.${c.partido_id}`).classed("active", true)
       },
       show_departamentos(d) {
-        this.depSelected = d.departamento
+        this.depSelected = d.region
+        let _r = d.region.replace(" ","-").toLowerCase()
         d3.selectAll("circle").classed("active", false)
-        d3.selectAll(`circle.${d.region}`).classed("active", true)
+        d3.selectAll(`circle.${_r}`).classed("active", true)
       },
       reset_congreso() {
-        this.depSelected = "NACIONAL"
+        this.depSelected = "NACIONAL (130)"
         d3.selectAll("circle").classed("active", true)
       },
-      show_congresista(event, d) {
+      show_congresista(event, d, _r) {
 
         let tooltip = d3.select(".tooltip_congresista")
-        let table = `<h3>Nro. ${d.nro} - ${d.nombre}</h3>`
-        table += `<h4><img width="25px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido}</h4>`
-        table += `<h5>Región: ${d.departamento}</h5>`
+        let table = `<h5 class="mb-2">${d.region}</h5>`
+        table += `<h3>${d.nombre}</h3>`
+        table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
 
         tooltip.html(`${table}`)	 
           .style("left", (event.pageX) + "px")
@@ -144,7 +163,7 @@
           h = 15
         }
         d3.select('g#parliament').call(
-          parliament.parliamentChart(this.congresistas, ancho)
+          parliament.parliamentChart(this.congresistas_parse, ancho)
           .debug(false)
           .sections(5)
           .sectionGap(gap)
@@ -154,16 +173,19 @@
 
         d3.selectAll('circle')
           .attr("class", d => {
-            return `active ${d.region} ${d.partido_id}`
+            let _r = d.region.replace(" ","-").toLowerCase()
+            return `active ${_r} ${d.partido_id}`
           })
         
         d3.selectAll('circle.active')
           .on("mouseover", (e, d) => {
-            if(this.depSelected == "NACIONAL")
+            let _r = d.region.replace(" ","-").toLowerCase()
+
+            if(this.depSelected == "NACIONAL (130)")
               this.show_congresista(e, d)
             
-            if(this.depSelected !="NACIONAL" && d.departamento == this.depSelected)
-              this.show_congresista(e, d)
+            if(this.depSelected !="NACIONAL (130)" && d.region == this.depSelected)
+              this.show_congresista(e, d, _r)
           })
           .on("mouseout", () => {
             let tooltip = d3.select(".tooltip_congresista")
