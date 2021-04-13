@@ -1,0 +1,1160 @@
+[
+  {
+    "region": "LIMA",
+    "nombre": "MARTIN ALBERTO VIZCARRA CORNEJO",
+    "candidato_id": "martin-alberto-vizcarra-cornejo",
+    "partido": "SOMOS PERU",
+    "partido_id": "somos-peru",
+    "nro": 1,
+    "color": "#ff2600"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "JORGE CARLOS MONTOYA MANRIQUE",
+    "candidato_id": "jorge-carlos-montoya-manrique",
+    "partido": "RENOVACION POPULAR",
+    "partido_id": "renovacion-popular",
+    "nro": 1,
+    "color": "#00aede"
+  },
+  {
+    "region": "AREQUIPA",
+    "nombre": "BERNARDO JAIME QUITO SARMIENTO",
+    "candidato_id": "bernardo-jaime-quito-sarmiento",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "JOSE LEON LUNA GALVEZ",
+    "candidato_id": "jose-leon-luna-galvez",
+    "partido": "PODEMOS PERU",
+    "partido_id": "podemos-peru",
+    "nro": 1,
+    "color": "#004da3"
+  },
+  {
+    "region": "AREQUIPA",
+    "nombre": "MARIA ANTONIETA AGÜERO GUTIERREZ",
+    "candidato_id": "maria-antonieta-agüero-gutierrez",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 2,
+    "color": "#f40201"
+  },
+  {
+    "region": "PUNO",
+    "nombre": "OSCAR ZEA CHOQUECHAMBI",
+    "candidato_id": "oscar-zea-choquechambi",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 3,
+    "color": "#f40201"
+  },
+  {
+    "region": "AREQUIPA",
+    "nombre": "DIANA CAROLINA GONZALES DELGADO",
+    "candidato_id": "diana-carolina-gonzales-delgado",
+    "partido": "AVANZA PAIS",
+    "partido_id": "avanza-pais",
+    "nro": 1,
+    "color": "#ff2c79"
+  },
+  {
+    "region": "CUSCO",
+    "nombre": "ALEJANDRO SOTO REYES",
+    "candidato_id": "alejandro-soto-reyes",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 1,
+    "color": "#0050a0"
+  },
+  {
+    "region": "PUNO",
+    "nombre": "FLAVIO CRUZ MAMANI",
+    "candidato_id": "flavio-cruz-mamani",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "MARIA DE LOS MILAGROS JACKELINE JAUREGUI MARTINEZ DE AGUAYO",
+    "candidato_id": "maria-de-los-milagros-jackeline-jauregui-martinez-de-aguayo",
+    "partido": "RENOVACION POPULAR",
+    "partido_id": "renovacion-popular",
+    "nro": 2,
+    "color": "#00aede"
+  },
+  {
+    "region": "AYACUCHO",
+    "nombre": "ALEX RANDU FLORES RAMIREZ",
+    "candidato_id": "alex-randu-flores-ramirez",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "PUNO",
+    "nombre": "JORGE LUIS FLORES ANCACHI",
+    "candidato_id": "jorge-luis-flores-ancachi",
+    "partido": "ACCION POPULAR",
+    "partido_id": "accion-popular",
+    "nro": 1,
+    "color": "#000000"
+  },
+  {
+    "region": "PUNO",
+    "nombre": "WILSON RUSBEL QUISPE MAMANI",
+    "candidato_id": "wilson-rusbel-quispe-mamani",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 5,
+    "color": "#f40201"
+  },
+  {
+    "region": "PUNO",
+    "nombre": "CARLOS JAVIER ZEBALLOS MADARIAGA",
+    "candidato_id": "carlos-javier-zeballos-madariaga",
+    "partido": "ACCION POPULAR",
+    "partido_id": "accion-popular",
+    "nro": 5,
+    "color": "#000000"
+  },
+  {
+    "region": "AREQUIPA",
+    "nombre": "ALEX ANTONIO PAREDES GONZALES",
+    "candidato_id": "alex-antonio-paredes-gonzales",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 3,
+    "color": "#f40201"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "DIGNA CALLE LOBATON",
+    "candidato_id": "digna-calle-lobaton",
+    "partido": "PODEMOS PERU",
+    "partido_id": "podemos-peru",
+    "nro": 2,
+    "color": "#004da3"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "HERNANDO GUERRA GARCIA CAMPOS",
+    "candidato_id": "hernando-guerra-garcia-campos",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 1,
+    "color": "#fd6600"
+  },
+  {
+    "region": "JUNIN",
+    "nombre": "WALDEMAR JOSE CERRON ROJAS",
+    "candidato_id": "waldemar-jose-cerron-rojas",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "CUSCO",
+    "nombre": "GUIDO BELLIDO UGARTE",
+    "candidato_id": "guido-bellido-ugarte",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "AREQUIPA",
+    "nombre": "PEDRO EDWIN MARTINEZ TALAVERA",
+    "candidato_id": "pedro-edwin-martinez-talavera",
+    "partido": "ACCION POPULAR",
+    "partido_id": "accion-popular",
+    "nro": 1,
+    "color": "#000000"
+  },
+  {
+    "region": "SAN MARTIN",
+    "nombre": "CHERYL TRIGOZO REÁTEGUI",
+    "candidato_id": "cheryl-trigozo-reátegui",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 3,
+    "color": "#0050a0"
+  },
+  {
+    "region": "AREQUIPA",
+    "nombre": "ESDRAS RICARDO MEDINA MINAYA",
+    "candidato_id": "esdras-ricardo-medina-minaya",
+    "partido": "RENOVACION POPULAR",
+    "partido_id": "renovacion-popular",
+    "nro": 1,
+    "color": "#00aede"
+  },
+  {
+    "region": "CAJAMARCA",
+    "nombre": "SEGUNDO TEODOMIRO QUIROZ BARBOZA",
+    "candidato_id": "segundo-teodomiro-quiroz-barboza",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "LA LIBERTAD",
+    "nombre": "DIEGO ALONSO FERNANDO BAZAN CALDERON",
+    "candidato_id": "diego-alonso-fernando-bazan-calderon",
+    "partido": "RENOVACION POPULAR",
+    "partido_id": "renovacion-popular",
+    "nro": 1,
+    "color": "#00aede"
+  },
+  {
+    "region": "LIMA",
+    "partido": "AVANZA PAIS",
+    "partido_id": "avanza-pais",
+    "nro": 1,
+    "color": "#ff2c79"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "NORMA MARTINA YARROW LUMBRERAS",
+    "candidato_id": "norma-martina-yarrow-lumbreras",
+    "partido": "RENOVACION POPULAR",
+    "partido_id": "renovacion-popular",
+    "nro": 4,
+    "color": "#00aede"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "SIGRID TESORO BAZAN NARRO",
+    "candidato_id": "sigrid-tesoro-bazan-narro",
+    "partido": "JUNTOS POR EL PERU",
+    "partido_id": "juntos-por-el-peru",
+    "nro": 6,
+    "color": "#2fc100"
+  },
+  {
+    "region": "JUNIN",
+    "nombre": "ILICH FREDY LOPEZ UREÑA",
+    "candidato_id": "ilich-fredy-lopez-ureña",
+    "partido": "ACCION POPULAR",
+    "partido_id": "accion-popular",
+    "nro": 1,
+    "color": "#000000"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "JOSE DANIEL WILLIAMS ZAPATA",
+    "candidato_id": "jose-daniel-williams-zapata",
+    "partido": "AVANZA PAIS",
+    "partido_id": "avanza-pais",
+    "nro": 2,
+    "color": "#ff2c79"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "CARMEN PATRICIA JUAREZ GALLEGOS",
+    "candidato_id": "carmen-patricia-juarez-gallegos",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 2,
+    "color": "#fd6600"
+  },
+  {
+    "region": "CALLAO",
+    "nombre": "CIRO RONALD CASTILLO ROJO SALAS",
+    "candidato_id": "ciro-ronald-castillo-rojo-salas",
+    "partido": "SOMOS PERU",
+    "partido_id": "somos-peru",
+    "nro": 1,
+    "color": "#ff2600"
+  },
+  {
+    "region": "PIURA",
+    "nombre": "HEIDY LISBETH JUAREZ CALLE",
+    "candidato_id": "heidy-lisbeth-juarez-calle",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 2,
+    "color": "#0050a0"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "ADRIANA JOSEFINA TUDELA GUTIERREZ",
+    "candidato_id": "adriana-josefina-tudela-gutierrez",
+    "partido": "AVANZA PAIS",
+    "partido_id": "avanza-pais",
+    "nro": 5,
+    "color": "#ff2c79"
+  },
+  {
+    "region": "AYACUCHO",
+    "nombre": "GERMAN ADOLFO TACURI VALDIVIA",
+    "candidato_id": "german-adolfo-tacuri-valdivia",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 3,
+    "color": "#f40201"
+  },
+  {
+    "region": "LA LIBERTAD",
+    "nombre": "SEGUNDO HECTOR ACUÑA PERALTA",
+    "candidato_id": "segundo-hector-acuña-peralta",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 1,
+    "color": "#0050a0"
+  },
+  {
+    "region": "CUSCO",
+    "nombre": "LUIS ANGEL ARAGON CARREÑO",
+    "candidato_id": "luis-angel-aragon-carreño",
+    "partido": "ACCION POPULAR",
+    "partido_id": "accion-popular",
+    "nro": 1,
+    "color": "#000000"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "ISABEL CORTEZ AGUIRRE",
+    "candidato_id": "isabel-cortez-aguirre",
+    "partido": "JUNTOS POR EL PERU",
+    "partido_id": "juntos-por-el-peru",
+    "nro": 2,
+    "color": "#2fc100"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "JOSE ALBERTO ARRIOLA TUEROS",
+    "candidato_id": "jose-alberto-arriola-tueros",
+    "partido": "ACCION POPULAR",
+    "partido_id": "accion-popular",
+    "nro": 1,
+    "color": "#000000"
+  },
+  {
+    "region": "CUSCO",
+    "nombre": "JHAKELINE KATY UGARTE MAMANI",
+    "candidato_id": "jhakeline-katy-ugarte-mamani",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 2,
+    "color": "#f40201"
+  },
+  {
+    "region": "AYACUCHO",
+    "nombre": "MARGOT PALACIOS HUAMAN",
+    "candidato_id": "margot-palacios-huaman",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 2,
+    "color": "#f40201"
+  },
+  {
+    "region": "APURIMAC",
+    "nombre": "PAUL SILVIO GUTIERREZ TICONA",
+    "candidato_id": "paul-silvio-gutierrez-ticona",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "CUSCO",
+    "nombre": "RUTH LUQUE IBARRA",
+    "candidato_id": "ruth-luque-ibarra",
+    "partido": "JUNTOS POR EL PERU",
+    "partido_id": "juntos-por-el-peru",
+    "nro": 1,
+    "color": "#2fc100"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "ROBERTO HELBERT SANCHEZ PALOMINO",
+    "candidato_id": "roberto-helbert-sanchez-palomino",
+    "partido": "JUNTOS POR EL PERU",
+    "partido_id": "juntos-por-el-peru",
+    "nro": 1,
+    "color": "#2fc100"
+  },
+  {
+    "region": "CAJAMARCA",
+    "nombre": "AMÉRICO GONZA CASTILLO",
+    "candidato_id": "américo-gonza-castillo",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 3,
+    "color": "#f40201"
+  },
+  {
+    "region": "LIMA",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "HUANCAVELICA",
+    "nombre": "ALFREDO PARIONA SINCHE",
+    "candidato_id": "alfredo-pariona-sinche",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "HUANUCO",
+    "nombre": "LUIS RAUL PICON QUEDO",
+    "candidato_id": "luis-raul-picon-quedo",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 1,
+    "color": "#0050a0"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "YOREL KIRA ALCARRAZ AGUERO",
+    "candidato_id": "yorel-kira-alcarraz-aguero",
+    "partido": "SOMOS PERU",
+    "partido_id": "somos-peru",
+    "nro": 2,
+    "color": "#ff2600"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "JOSE ERNESTO CUETO ASERVI",
+    "candidato_id": "jose-ernesto-cueto-aservi",
+    "partido": "RENOVACION POPULAR",
+    "partido_id": "renovacion-popular",
+    "nro": 9,
+    "color": "#00aede"
+  },
+  {
+    "region": "CAJAMARCA",
+    "nombre": "ELVA EDHIT JULON IRIGOIN",
+    "candidato_id": "elva-edhit-julon-irigoin",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 2,
+    "color": "#0050a0"
+  },
+  {
+    "region": "TACNA",
+    "nombre": "BETSSY BETZABET CHAVEZ CHINO",
+    "candidato_id": "betssy-betzabet-chavez-chino",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "SAN MARTIN",
+    "nombre": "LUCINDA VASQUEZ VELA",
+    "candidato_id": "lucinda-vasquez-vela",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 2,
+    "color": "#f40201"
+  },
+  {
+    "region": "PIURA",
+    "nombre": "IDELSO MANUEL GARCIA CORREA",
+    "candidato_id": "idelso-manuel-garcia-correa",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 3,
+    "color": "#0050a0"
+  },
+  {
+    "region": "HUANUCO",
+    "nombre": "ELIZABETH SARA MEDINA HERMOSILLA",
+    "candidato_id": "elizabeth-sara-medina-hermosilla",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "LA LIBERTAD",
+    "nombre": "EDUARDO JOSE AZABACHE ALVARADO",
+    "candidato_id": "eduardo-jose-azabache-alvarado",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 5,
+    "color": "#0050a0"
+  },
+  {
+    "region": "LAMBAYEQUE",
+    "nombre": "MARIA JESSICA CORDOVA LOBATON",
+    "candidato_id": "maria-jessica-cordova-lobaton",
+    "partido": "RENOVACION POPULAR",
+    "partido_id": "renovacion-popular",
+    "nro": 2,
+    "color": "#00aede"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "ALFREDO AZURIN LOAYZA",
+    "candidato_id": "alfredo-azurin-loayza",
+    "partido": "SOMOS PERU",
+    "partido_id": "somos-peru",
+    "nro": 15,
+    "color": "#ff2600"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "ALEJANDRO ENRIQUE CAVERO ALVA",
+    "candidato_id": "alejandro-enrique-cavero-alva",
+    "partido": "AVANZA PAIS",
+    "partido_id": "avanza-pais",
+    "nro": 14,
+    "color": "#ff2c79"
+  },
+  {
+    "region": "ANCASH",
+    "nombre": "KELLY ROXANA PORTALATINO AVALOS",
+    "candidato_id": "kelly-roxana-portalatino-avalos",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "MARIA DEL CARMEN ALVA PRIETO",
+    "candidato_id": "maria-del-carmen-alva-prieto",
+    "partido": "ACCION POPULAR",
+    "partido_id": "accion-popular",
+    "nro": 2,
+    "color": "#000000"
+  },
+  {
+    "region": "APURIMAC",
+    "nombre": "MARIA ELIZABETH TAIPE CORONADO",
+    "candidato_id": "maria-elizabeth-taipe-coronado",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 2,
+    "color": "#f40201"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "CARLOS ERNESTO BUSTAMANTE DONAYRE",
+    "candidato_id": "carlos-ernesto-bustamante-donayre",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 3,
+    "color": "#fd6600"
+  },
+  {
+    "region": "LIMA PROVINCIAS",
+    "nombre": "LESLIE VIVIAN OLIVOS MARTINEZ",
+    "candidato_id": "leslie-vivian-olivos-martinez",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 1,
+    "color": "#fd6600"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "GLADYS MARGOT ECHAIZ DE NUÑEZ IZAGA",
+    "candidato_id": "gladys-margot-echaiz-de-nuñez-izaga",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 1,
+    "color": "#0050a0"
+  },
+  {
+    "region": "JUNIN",
+    "nombre": "SILVANA EMPERATRIZ ROBLES ARAUJO",
+    "candidato_id": "silvana-emperatriz-robles-araujo",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 2,
+    "color": "#f40201"
+  },
+  {
+    "region": "LA LIBERTAD",
+    "nombre": "VICTOR SEFERINO FLORES RUIZ",
+    "candidato_id": "victor-seferino-flores-ruiz",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 1,
+    "color": "#fd6600"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "ROSANGELLA ANDREA BARBARAN REYES",
+    "candidato_id": "rosangella-andrea-barbaran-reyes",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 8,
+    "color": "#fd6600"
+  },
+  {
+    "region": "CAJAMARCA",
+    "nombre": "YANINA SOCORRO POVEDA MERCEDES",
+    "candidato_id": "yanina-socorro-poveda-mercedes",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 2,
+    "color": "#f40201"
+  },
+  {
+    "region": "CAJAMARCA",
+    "nombre": "SILVIA MARIA MONTEZA FACHO",
+    "candidato_id": "silvia-maria-monteza-facho",
+    "partido": "ACCION POPULAR",
+    "partido_id": "accion-popular",
+    "nro": 1,
+    "color": "#000000"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "ALEJANDRO MUÑANTE BARRIOS",
+    "candidato_id": "alejandro-muñante-barrios",
+    "partido": "RENOVACION POPULAR",
+    "partido_id": "renovacion-popular",
+    "nro": 11,
+    "color": "#00aede"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "MARTHA LUPE MOYANO DELGADO",
+    "candidato_id": "martha-lupe-moyano-delgado",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 4,
+    "color": "#fd6600"
+  },
+  {
+    "region": "LAMBAYEQUE",
+    "nombre": "MARIA GRIMANEZA ACUÑA PERALTA",
+    "candidato_id": "maria-grimaneza-acuña-peralta",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 1,
+    "color": "#0050a0"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "HECTOR VALER PINTO",
+    "candidato_id": "hector-valer-pinto",
+    "partido": "RENOVACION POPULAR",
+    "partido_id": "renovacion-popular",
+    "nro": 3,
+    "color": "#00aede"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "YESSICA ROSSELLI AMURUZ DULANTO",
+    "candidato_id": "yessica-rosselli-amuruz-dulanto",
+    "partido": "AVANZA PAIS",
+    "partido_id": "avanza-pais",
+    "nro": 3,
+    "color": "#ff2c79"
+  },
+  {
+    "region": "PIURA",
+    "nombre": "WILMAR ALBERTO ELERA GARCIA",
+    "candidato_id": "wilmar-alberto-elera-garcia",
+    "partido": "SOMOS PERU",
+    "partido_id": "somos-peru",
+    "nro": 1,
+    "color": "#ff2600"
+  },
+  {
+    "region": "HUANCAVELICA",
+    "nombre": "WILSON SOTO PALACIOS",
+    "candidato_id": "wilson-soto-palacios",
+    "partido": "ACCION POPULAR",
+    "partido_id": "accion-popular",
+    "nro": 1,
+    "color": "#000000"
+  },
+  {
+    "region": "LA LIBERTAD",
+    "nombre": "JUAN BARTOLOME BURGOS OLIVEROS",
+    "candidato_id": "juan-bartolome-burgos-oliveros",
+    "partido": "AVANZA PAIS",
+    "partido_id": "avanza-pais",
+    "nro": 1,
+    "color": "#ff2c79"
+  },
+  {
+    "region": "LIMA PROVINCIAS",
+    "nombre": "JAVIER ROMMEL PADILLA ROMERO",
+    "candidato_id": "javier-rommel-padilla-romero",
+    "partido": "RENOVACION POPULAR",
+    "partido_id": "renovacion-popular",
+    "nro": 1,
+    "color": "#00aede"
+  },
+  {
+    "region": "LIMA",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 2,
+    "color": "#f40201"
+  },
+  {
+    "region": "TACNA",
+    "nombre": "FERNANDO MARIO HERRERA MAMANI",
+    "candidato_id": "fernando-mario-herrera-mamani",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 2,
+    "color": "#f40201"
+  },
+  {
+    "region": "CALLAO",
+    "nombre": "PATRICIA ROSA CHIRINOS VENEGAS",
+    "candidato_id": "patricia-rosa-chirinos-venegas",
+    "partido": "AVANZA PAIS",
+    "partido_id": "avanza-pais",
+    "nro": 1,
+    "color": "#ff2c79"
+  },
+  {
+    "region": "LAMBAYEQUE",
+    "nombre": "ALEJANDRO AURELIO AGUINAGA RECUENCO",
+    "candidato_id": "alejandro-aurelio-aguinaga-recuenco",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 1,
+    "color": "#fd6600"
+  },
+  {
+    "region": "LORETO",
+    "nombre": "JUANA VELA VALLES DE SANTOYO",
+    "candidato_id": "juana-vela-valles-de-santoyo",
+    "partido": "ACCION POPULAR",
+    "partido_id": "accion-popular",
+    "nro": 2,
+    "color": "#000000"
+  },
+  {
+    "region": "PIURA",
+    "nombre": "MIGUEL ANGEL CICCIA VASQUEZ",
+    "candidato_id": "miguel-angel-ciccia-vasquez",
+    "partido": "RENOVACION POPULAR",
+    "partido_id": "renovacion-popular",
+    "nro": 1,
+    "color": "#00aede"
+  },
+  {
+    "region": "PIURA",
+    "nombre": "CRUZ MARIA ZETA CHUNGA",
+    "candidato_id": "cruz-maria-zeta-chunga",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 2,
+    "color": "#fd6600"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "KATHERINE MILAGROS AMPUERO MEZA",
+    "candidato_id": "katherine-milagros-ampuero-meza",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 3,
+    "color": "#0050a0"
+  },
+  {
+    "region": "CALLAO",
+    "partido": "RENOVACION POPULAR",
+    "partido_id": "renovacion-popular",
+    "nro": 1,
+    "color": "#00aede"
+  },
+  {
+    "region": "JUNIN",
+    "nombre": "EDGARD CORNELIO REYMUNDO MERCADO",
+    "candidato_id": "edgard-cornelio-reymundo-mercado",
+    "partido": "JUNTOS POR EL PERU",
+    "partido_id": "juntos-por-el-peru",
+    "nro": 1,
+    "color": "#2fc100"
+  },
+  {
+    "region": "ANCASH",
+    "nombre": "JHAEC DARWIN ESPINOZA VARGAS",
+    "candidato_id": "jhaec-darwin-espinoza-vargas",
+    "partido": "ACCION POPULAR",
+    "partido_id": "accion-popular",
+    "nro": 1,
+    "color": "#000000"
+  },
+  {
+    "region": "ANCASH",
+    "nombre": "ELIAS MARCIAL VARAS MELENDEZ",
+    "candidato_id": "elias-marcial-varas-melendez",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 2,
+    "color": "#f40201"
+  },
+  {
+    "region": "CALLAO",
+    "nombre": "AURISTELA ANA OBANDO MORGAN",
+    "candidato_id": "auristela-ana-obando-morgan",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 1,
+    "color": "#fd6600"
+  },
+  {
+    "region": "LAMBAYEQUE",
+    "nombre": "VIOLETA AMELIA FANZO NIQUEN",
+    "candidato_id": "violeta-amelia-fanzo-niquen",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 2,
+    "color": "#fd6600"
+  },
+  {
+    "region": "ANCASH",
+    "nombre": "GUSTAVO LUIS CARRASCO FERRER",
+    "candidato_id": "gustavo-luis-carrasco-ferrer",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 5,
+    "color": "#0050a0"
+  },
+  {
+    "region": "HUANUCO",
+    "nombre": "ABEL AUGUSTO REYES CAM",
+    "candidato_id": "abel-augusto-reyes-cam",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 2,
+    "color": "#f40201"
+  },
+  {
+    "region": "LA LIBERTAD",
+    "nombre": "CARLOS ENRIQUE ALVA ROJAS",
+    "candidato_id": "carlos-enrique-alva-rojas",
+    "partido": "ACCION POPULAR",
+    "partido_id": "accion-popular",
+    "nro": 1,
+    "color": "#000000"
+  },
+  {
+    "region": "LORETO",
+    "nombre": "PATRICIA GIOVANNA URQUIZO BERGER",
+    "candidato_id": "patricia-giovanna-urquizo-berger",
+    "partido": "PODEMOS PERU",
+    "partido_id": "podemos-peru",
+    "nro": 1,
+    "color": "#004da3"
+  },
+  {
+    "region": "MOQUEGUA",
+    "nombre": "JOHN LARRY COAYLA",
+    "candidato_id": "john-larry-coayla",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 1,
+    "color": "#0050a0"
+  },
+  {
+    "region": "SAN MARTIN",
+    "nombre": "KAROL IVETT PAREDES FONSECA",
+    "candidato_id": "karol-ivett-paredes-fonseca",
+    "partido": "ACCION POPULAR",
+    "partido_id": "accion-popular",
+    "nro": 2,
+    "color": "#000000"
+  },
+  {
+    "region": "JUNIN",
+    "nombre": "DAVID JULIO JIMENEZ HEREDIA",
+    "candidato_id": "david-julio-jimenez-heredia",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 1,
+    "color": "#fd6600"
+  },
+  {
+    "region": "PIURA",
+    "nombre": "EDUARDO ENRIQUE CASTILLO RIVAS",
+    "candidato_id": "eduardo-enrique-castillo-rivas",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 1,
+    "color": "#fd6600"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "CARLOS ANTONIO ANDERSON RAMIREZ",
+    "candidato_id": "carlos-antonio-anderson-ramirez",
+    "partido": "PODEMOS PERU",
+    "partido_id": "podemos-peru",
+    "nro": 3,
+    "color": "#004da3"
+  },
+  {
+    "region": "LIMA PROVINCIAS",
+    "nombre": "ANGELICA ELIZABETH GOICOCHEA PINEDO",
+    "candidato_id": "angelica-elizabeth-goicochea-pinedo",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 3,
+    "color": "#fd6600"
+  },
+  {
+    "region": "LIMA PROVINCIAS",
+    "nombre": "JANET MILAGROS RIVAS CHACARA",
+    "candidato_id": "janet-milagros-rivas-chacara",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 2,
+    "color": "#f40201"
+  },
+  {
+    "region": "ICA",
+    "nombre": "LORENY MEDALY HUAMAN HUAYTA",
+    "candidato_id": "loreny-medaly-huaman-huayta",
+    "partido": "PODEMOS PERU",
+    "partido_id": "podemos-peru",
+    "nro": 2,
+    "color": "#004da3"
+  },
+  {
+    "region": "ICA",
+    "nombre": "RAUL HUAMAN CORONADO",
+    "candidato_id": "raul-huaman-coronado",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 1,
+    "color": "#fd6600"
+  },
+  {
+    "region": "PASCO",
+    "nombre": "FREDDY RONALD DIAZ MONAGO",
+    "candidato_id": "freddy-ronald-diaz-monago",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 4,
+    "color": "#0050a0"
+  },
+  {
+    "region": "PIURA",
+    "nombre": "CESAR MANUEL REVILLA VILLANUEVA",
+    "candidato_id": "cesar-manuel-revilla-villanueva",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 5,
+    "color": "#fd6600"
+  },
+  {
+    "region": "LORETO",
+    "nombre": "JORGE ALBERTO MORANTE FIGARI",
+    "candidato_id": "jorge-alberto-morante-figari",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 1,
+    "color": "#fd6600"
+  },
+  {
+    "region": "PASCO",
+    "nombre": "PASION NEOMIAS DAVILA ATANACIO",
+    "candidato_id": "pasion-neomias-davila-atanacio",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "LAMBAYEQUE",
+    "nombre": "JOSE MARIA BALCAZAR ZELADA",
+    "candidato_id": "jose-maria-balcazar-zelada",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "MOQUEGUA",
+    "nombre": "JORGE SAMUEL COAYLA JUAREZ",
+    "candidato_id": "jorge-samuel-coayla-juarez",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "JOSE ENRIQUE JERI ORE",
+    "candidato_id": "jose-enrique-jeri-ore",
+    "partido": "SOMOS PERU",
+    "partido_id": "somos-peru",
+    "nro": 3,
+    "color": "#ff2600"
+  },
+  {
+    "region": "LA LIBERTAD",
+    "nombre": "LUIS ROBERTO KAMICHE MORANTE",
+    "candidato_id": "luis-roberto-kamiche-morante",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "LORETO",
+    "nombre": "ROSIO TORRES SALINAS",
+    "candidato_id": "rosio-torres-salinas",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 1,
+    "color": "#0050a0"
+  },
+  {
+    "region": "ANCASH",
+    "nombre": "NILZA MERLY CHACON TRUJILLO",
+    "candidato_id": "nilza-merly-chacon-trujillo",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 2,
+    "color": "#fd6600"
+  },
+  {
+    "region": "CAJAMARCA",
+    "nombre": "TANIA ESTEFANY RAMIREZ GARCIA",
+    "candidato_id": "tania-estefany-ramirez-garcia",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 4,
+    "color": "#fd6600"
+  },
+  {
+    "region": "LIMA",
+    "nombre": "GUILLERMO BERMEJO ROJAS",
+    "candidato_id": "guillermo-bermejo-rojas",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 5,
+    "color": "#f40201"
+  },
+  {
+    "region": "AMAZONAS",
+    "nombre": "SEGUNDO TORIBIO MONTALVO CUBAS",
+    "candidato_id": "segundo-toribio-montalvo-cubas",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "ICA",
+    "nombre": "GLADYS VICTORIA TAPIA MEDINA",
+    "candidato_id": "gladys-victoria-tapia-medina",
+    "partido": "RENOVACION POPULAR",
+    "partido_id": "renovacion-popular",
+    "nro": 1,
+    "color": "#00aede"
+  },
+  {
+    "region": "ICA",
+    "nombre": "JORGE ALFONSO MARTICORENA MENDOZA",
+    "candidato_id": "jorge-alfonso-marticorena-mendoza",
+    "partido": "PERU LIBRE",
+    "partido_id": "peru-libre",
+    "nro": 1,
+    "color": "#f40201"
+  },
+  {
+    "region": "SAN MARTIN",
+    "nombre": "LUIS ARTURO ALEGRIA GARCIA",
+    "candidato_id": "luis-arturo-alegria-garcia",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 1,
+    "color": "#fd6600"
+  },
+  {
+    "region": "TUMBES",
+    "nombre": "HECTOR JOSE VENTURA ANGEL",
+    "candidato_id": "hector-jose-ventura-angel",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 2,
+    "color": "#fd6600"
+  },
+  {
+    "region": "MADRE DE DIOS",
+    "nombre": "EDUARDO SALHUANA CAVIDES",
+    "candidato_id": "eduardo-salhuana-cavides",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 2,
+    "color": "#0050a0"
+  },
+  {
+    "region": "AMAZONAS",
+    "nombre": "MERY ELIANA INFANTES CASTAÑEDA",
+    "candidato_id": "mery-eliana-infantes-castañeda",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 1,
+    "color": "#fd6600"
+  },
+  {
+    "region": "UCAYALI",
+    "nombre": "ELVIS HERNAN VERGARA MENDOZA",
+    "candidato_id": "elvis-hernan-vergara-mendoza",
+    "partido": "ACCION POPULAR",
+    "partido_id": "accion-popular",
+    "nro": 2,
+    "color": "#000000"
+  },
+  {
+    "region": "TUMBES",
+    "nombre": "MARIA DEL PILAR CORDERO JON TAY",
+    "candidato_id": "maria-del-pilar-cordero-jon-tay",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 1,
+    "color": "#fd6600"
+  },
+  {
+    "region": "UCAYALI",
+    "nombre": "JENY LUZ LOPEZ MORALES",
+    "candidato_id": "jeny-luz-lopez-morales",
+    "partido": "FUERZA POPULAR",
+    "partido_id": "fuerza-popular",
+    "nro": 1,
+    "color": "#fd6600"
+  },
+  {
+    "region": "UCAYALI",
+    "nombre": "LUIS ALBERTO VICENTE YAYA",
+    "candidato_id": "luis-alberto-vicente-yaya",
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "partido_id": "alianza-para-el-progreso",
+    "nro": 3,
+    "color": "#0050a0"
+  },
+  {
+    "region": "RESIDENTES EXT",
+    "partido": "RENOVACION POPULAR",
+    "partido_id": "renovacion-popular",
+    "nro": 1,
+    "color": "#00aede"
+  },
+  {
+    "region": "RESIDENTES EXT",
+    "partido": "JUNTOS POR EL PERU",
+    "partido_id": "juntos-por-el-peru",
+    "nro": 1,
+    "color": "#2fc100"
+  }
+]
