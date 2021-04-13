@@ -1,4 +1,57 @@
-[
+[   {
+    "eleccion": "2021",
+    "numero": "1",
+    "candidato": "Martin Vizcarra Cornejo",
+    "candidato_id": "martin-vizcarra-cornejo",
+    "partido": "Somos Perú",
+    "partido_id": "somos-peru",
+    "color": "",
+    "total_votos": 
+},
+{
+    "eleccion": "2021",
+    "numero": "2",
+    "candidato": "José Luna Galvez  ",
+    "candidato_id": "jose-luna-galvez",
+    "partido": "Podemos Perú",
+    "partido_id": "podemos-peru",
+    "color": "#004da3",
+    "total_votos": 
+
+},
+{
+    "eleccion": "2021",
+    "numero": "",
+    "candidato": " ",
+    "candidato_id": "" ,
+    "partido": " ",
+    "partido_id": "",
+    "color": "",
+    "total_votos": 
+
+},
+{
+    "eleccion": "2021",
+    "numero": "4",
+    "candidato": "  ",
+    "candidato_id": "",
+    "partido": " ",
+    "partido_id": "-",
+    "color": "",
+    "total_votos": 
+
+},
+{
+    "eleccion": "2021",
+    "numero": "5",
+    "candidato": " ",
+    "candidato_id": "",
+    "partido": " ",
+    "partido_id": "",
+    "color": "",
+    "total_votos": 
+
+},
     {
         "eleccion": "2020",
         "numero": "1",
@@ -47,7 +100,7 @@
         "numero": "5",
         "candidato": "Yeremi Espinoza",
         "candidato_id": "yeremi-espinoza",
-        "partido": "Pdemos perú",
+        "partido": "Podemos perú",
         "partido_id": "podemos-peru",
         "color": "#004da3",
         "total_votos": 110790
