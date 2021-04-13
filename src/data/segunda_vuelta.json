@@ -1,5 +1,31 @@
 [
     {
+        "candidato": "Pedro Castillo",
+        "candidato_id" : "pedro-castillo",
+        "partido": "Perú Libre",
+        "partido_id": "peru-libre",
+        "eleccion": 2021,
+        "puesto": 1,
+        "total_votos": "2569354",
+        "validos": "19.18",
+        "color" : "#f40201",
+        "diferencia": "792424"
+                
+
+    },
+    {
+        "candidato": "Keiko Fujimori",
+        "candidato_id": "keiko-fujimori",
+        "partido": "Fuerza Popular",
+        "partido_id": "fuerza-popular",
+        "eleccion": 2021,
+        "puesto": 2,
+        "total_votos": "1776930",
+        "validos": "13.27",
+        "color": "#fd6600cc"
+        
+    },
+    {
         "candidato": "Pedro Pablo Kuczynski",
         "candidato_id" : "pedro-pablo-kucynski",
         "partido": "Peruanos por el Kambio",
