@@ -798,6 +798,11 @@ p {
     }
   }
 
+  .ganadores-segunda {
+    font-family: 'Nunito Sans', sans-serif;
+    background: #f9f9f9;
+  }
+
   .candidate-results-container {
     width: 100%;
 
@@ -929,6 +934,11 @@ p {
     padding: 5px 0;
     background: #fff;
 
+    &.segunda {
+      width: 180px;
+      background: transparent;
+    }
+
     @media (max-width: 575.98px) { 
       width: 180px;
       min-width: 135px;
@@ -942,6 +952,7 @@ p {
       font-weight: 600;
       text-align: left;
       color: #000;
+      text-transform: capitalize;
 
       @media (max-width: 575.98px) { 
         margin: 0;

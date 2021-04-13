@@ -60,7 +60,7 @@
   import { mapState } from 'vuex'
   import * as d3 from 'd3'
   import * as parliament from 'd3-parliament-chart'
-  import { filter, groupBy, map, orderBy, uniq, sumBy } from 'lodash'
+  import { filter, groupBy, map, orderBy, uniq, sum } from 'lodash'
 
   export default {
     name: 'congresoGrafico.vue',
@@ -102,7 +102,7 @@
           return {
             partido_id: p,
             partido: uniq(map(items, 'partido')).join(""),
-            total_votos_partido: sumBy(items, 'total_votos_partido'),
+            total_votos_partido: sum(uniq(map(items, 'total_votos_partido'))),
             seats: items.length,
             congresistas: items, 
             color: uniq(map(items, 'color')).join("")
@@ -148,7 +148,7 @@
         table += `<h3>${d.nombre}</h3>`
         table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
         table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
-        table += `<h4>Total de votos en ${d.region}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
+        table += `<h4>Total de votos de la agrupación en ${d.region}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
 
         tooltip.html(`${table}`)	 
           .style("left", (event.pageX) + "px")
