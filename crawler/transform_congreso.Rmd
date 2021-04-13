@@ -40,23 +40,32 @@ final <-
     left_join(candidatos_names) %>% 
     mutate(
         nombre = CANDIDATO,
-        candidato_id = str_replace_all(tolower(CANDIDATO), " ", "-"),
+        partido2 = AGRUPACION,
         partido = AGRUPACION,
-        partido_id = str_replace_all(tolower(AGRUPACION), " ", "-"),
+        partido = case_when(
+            partido == "FRENTE POPULAR AGRICOLA FIA DEL PERU - FREPAP" ~ "FREPAP",
+            partido == "EL FRENTE AMPLIO POR JUSTICIA, VIDA Y LIBERTAD" ~ "FRENTE AMPLIO",
+            partido == "PARTIDO DEMOCRATICO SOMOS PERU" ~ "SOMOS PERU",
+            partido == "PARTIDO POLITICO NACIONAL PERU LIBRE" ~ "PERU LIBRE",
+            partido == "AVANZA PAIS - PARTIDO DE INTEGRACION SOCIAL" ~"AVANZA PAIS",
+            T ~ partido
+        ),
+        partido_id = str_replace_all(tolower(partido), " ", "-"),
+        candidato_id = str_replace_all(tolower(CANDIDATO), " ", "-"),
         nro = n_lista_candidato
     ) %>% 
     select(-CANDIDATO, -n_lista_candidato, -AGRUPACION) %>% 
     left_join(distinct(candidatos_mapper, partido,color)) %>% 
     mutate(
         color = case_when(
-            partido == "FRENTE POPULAR AGRICOLA FIA DEL PERU - FREPAP" ~ "#e3e3e3",
-            partido == "EL FRENTE AMPLIO POR JUSTICIA, VIDA Y LIBERTAD" ~ "#4e5405",
-            partido == "PARTIDO DEMOCRATICO SOMOS PERU" ~ "#ff2600",
-            partido == "PARTIDO POLITICO NACIONAL PERU LIBRE" ~ "#1022b9",
-            partido == "AVANZA PAIS - PARTIDO DE INTEGRACION SOCIAL" ~"#ff2c79",
-            partido == "PARTIDO POLITICO CONTIGO" ~"#333",
+            partido2 == "FRENTE POPULAR AGRICOLA FIA DEL PERU - FREPAP" ~ "#e3e3e3",
+            partido2 == "EL FRENTE AMPLIO POR JUSTICIA, VIDA Y LIBERTAD" ~ "#4e5405",
+            partido2 == "PARTIDO DEMOCRATICO SOMOS PERU" ~ "#ff2600",
+            partido2 == "PARTIDO POLITICO NACIONAL PERU LIBRE" ~ "#f40201",
+            partido2 == "AVANZA PAIS - PARTIDO DE INTEGRACION SOCIAL" ~"#ff2c79",
+            partido2 == "PARTIDO POLITICO CONTIGO" ~"#333",
             T ~ color
-        )
+        ),
     )
 
 final %>% 
@@ -208,6 +217,10 @@ congresistas_x_partido_x_region %>% group_by(partido) %>% summarise(x = sum(n_co
 
 ```{r}
 congresistas %>% 
-    select(region, nombre, candidato_id, partido, partido_id, nro, color) %>% 
+    mutate(
+        hora = paste(HORA,FECHA, sep = " - "),
+        conteo = POR_AVANCE
+    ) %>% 
+    select(region, nombre, candidato_id, partido, partido_id, nro, color, total_votos_partido = TOTAL_VOTOS, hora, conteo) %>% 
     jsonlite::toJSON(., pretty = T) %>% write("../public/data/congreso_total.json")
 ```
