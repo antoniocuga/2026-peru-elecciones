@@ -8,7 +8,9 @@ output: html_notebook
 library(readr)
 library(stringr)
 library(dplyr)
+library(httr)
 ```
+
 
 
 
@@ -18,6 +20,8 @@ mapper <- read_csv("map_candidates_to_viz.csv")
 ubigeo_mapper <- read_csv("tabla_equivalencias - Hoja 1.csv")
 no_contar <- c("TOTAL DE VOTOS EMITIDOS", "VOTOS EN BLANCO", "VOTOS NULOS", "TOTAL DE VOTOS VÁLIDOS")
 ```
+
+
 
 ```{r}
 # select(muestra, ACTAS_PROCESADAS, POR_PROCESAR, POR_POR_PROCESAR) %>% sample_n(10)
@@ -48,6 +52,11 @@ general <- avance_procesamiento_dep %>%
 avance_general <- general$avance * 100
 general
 ```
+
+```{r}
+avance_general <- as.numeric(content(httr::GET("https://api.resultados.eleccionesgenerales2021.pe/results/10/000000?name=param"), as="parsed")$generals$generalData$POR_ACTAS_PROCESADAS)
+```
+
 
 ```{r}
 x <- mutate(muestra, hora = paste(HORA,FECHA, sep = " - ")) %>% distinct(hora) 

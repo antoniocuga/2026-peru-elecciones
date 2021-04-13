@@ -1,9 +1,11 @@
 /home/grossir/venvs/py37/bin/python parse.py
 Rscript -e "knitr::purl('/home/grossir/Desktop/Trabajos/OjoPublico/elecciones2021/crawler/transform.Rmd')"
+Rscript -e "knitr::purl('/home/grossir/Desktop/Trabajos/OjoPublico/elecciones2021/crawler/transform_congreso.Rmd')"
 Rscript transform.R
+Rscript transform_congreso.R
 
 
-
+scp "../public/data/congreso_total.json" antoniocucho@157.245.85.179:/var/www/ojo-publico.com/especiales/resultados-onpe-elecciones-2021/data/
 scp "../public/data/resultados_total.json" antoniocucho@157.245.85.179:/var/www/ojo-publico.com/especiales/resultados-onpe-elecciones-2021/data/
 scp "../public/data/amazonas.json" antoniocucho@157.245.85.179:/var/www/ojo-publico.com/especiales/resultados-onpe-elecciones-2021/data/
 scp "../public/data/ancash.json" antoniocucho@157.245.85.179:/var/www/ojo-publico.com/especiales/resultados-onpe-elecciones-2021/data/

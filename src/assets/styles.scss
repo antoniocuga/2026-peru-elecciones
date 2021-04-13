@@ -334,12 +334,13 @@ p {
   background: rgba(255, 255, 255, 0.932);
   color: #000;
   pointer-events: none;
+  box-shadow: 0px 0px 2px #0000005c;
 
   h3 {
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
   }
 
@@ -355,7 +356,7 @@ p {
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
   }
 }
@@ -1661,10 +1662,10 @@ p {
 
   .porcentaje {
     display: block;
-    width: 90px;
+    width: 95px;
     margin: 0 auto;
     font-weight: bold;
-    font-size: 27px;
+    font-size: 24px;
 
     span {
       display: inline-block !important;

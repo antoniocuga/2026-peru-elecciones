@@ -3,21 +3,20 @@ from onpe import EG2021Spider
 import pymongo
 
 # NOTE: para acelerar filtrado de data acumulada
-# RES = list(col.aggregate(
-#    [
-#        {"$match":{"is_old":{"$exists":False}}},
-#         {"$sort": { "_id":-1 } },
-#         {
-#         "$group":
-#          {
-#            "_id": "$cod_dist",
-#            "last_id": { "$last": "$_id" }
-#          }
-#      },
-#    ]
-# ))
-# ids = [i['last_id'] for i in RES]
-# col.update_many({"_id": {"$nin":ids}}, {"$set": {"is_old":True}})
+def flag_as_old_everything_but_last():
+    col = spider.col_summary
+    RES = list(col.aggregate([
+        {"$match":{"is_old":{"$exists":False}}},
+        {"$sort": { "_id":-1 } },
+        {
+            "$group":{
+                "_id": "$cod_dist",
+                "last_id": { "$last": "$_id" }
+            }
+        },
+    ]))
+    ids = [i['last_id'] for i in RES]
+    col.update_many({"_id": {"$nin":ids}}, {"$set": {"is_old":True}})
 
 def parse_candidate_names():
     spider = EG2021Spider("xx")
@@ -73,10 +72,10 @@ def parse_congreso():
         # Out[8]: dict_keys(['_id', 'generals', 'results', 'summary', 'scraped_at', 'slug'])
         if datum['slug'] in seen:
             col.update_one({'_id':datum['_id']}, {"$set": {"is_old":True}})
-            print('seen', end = "")
-            return None
+            print('seen', end = "", flush=True)
+            continue
         else:
-            print("acc", end = "")
+            print("acc", end = "", flush=True)
 
         acc = datum['generals']['generalData']
         acc.update(datum['generals']['actData'])
