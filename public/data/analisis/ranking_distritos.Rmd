@@ -1,0 +1,103 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(purrr)
+library(jsonlite)
+library(tidyverse)
+```
+
+```{r}
+
+path <- "/home/gianco/r_projects/elecciones2021_cucho/public/data"
+files <- dir(path, pattern = "*.json")
+
+
+```
+
+```{r}
+data <- files %>%
+       map_df(~fromJSON(file.path(path, .), flatten = TRUE))
+
+```
+
+```{r}
+data %>% 
+  filter(candidato == 'Keiko Fujimori') %>% 
+  arrange(desc(validos)) %>% 
+  select(-total_actas,-candidato_id,-color,-partido_id)
+```
+
+```{r}
+data %>% 
+  filter(candidato == 'Pedro Castillo') %>% 
+  arrange(desc(validos)) %>% 
+  select(-total_actas,-candidato_id,-color,-partido_id)
+```
+
+```{r}
+data %>% 
+  filter(candidato == 'Pedro Castillo') %>% 
+  arrange(desc(validos)) %>% 
+  select(-total_actas,-candidato_id,-color,-partido_id) %>% 
+  write_excel_csv(file = "/home/gianco/r_projects/elecciones2021_cucho/public/data/analisis/output/pedro_castillo")
+```
+
+```{r}
+data %>% 
+  filter(candidato == 'Pedro Castillo') %>% 
+  arrange(desc(total_votos)) %>% 
+  select(-total_actas,-candidato_id,-color,-partido_id) %>% 
+  write_excel_csv(file = "/home/gianco/r_projects/elecciones2021_cucho/public/data/analisis/output/pedro_castillo_votos")
+```
+
+```{r}
+data %>% 
+  filter(candidato == 'Keiko Fujimori') %>% 
+  arrange(desc(validos)) %>% 
+  select(-total_actas,-candidato_id,-color,-partido_id) %>% 
+  write_excel_csv(file = "/home/gianco/r_projects/elecciones2021_cucho/public/data/analisis/output/keiko_fujimori")
+```
+```{r}
+data %>% 
+  filter(candidato == 'Keiko Fujimori') %>% 
+  arrange(desc(total_votos)) %>% 
+  select(-total_actas,-candidato_id,-color,-partido_id) %>% 
+  write_excel_csv(file = "/home/gianco/r_projects/elecciones2021_cucho/public/data/analisis/output/keiko_fujimori_votos.csv")
+```
+
+```{r}
+
+data %>% 
+  filter(candidato == 'Rafael López Aliaga') %>% 
+  arrange(desc(validos)) %>% 
+  select(-total_actas,-candidato_id,-color,-partido_id) %>% 
+  write_excel_csv(file = "/home/gianco/r_projects/elecciones2021_cucho/public/data/analisis/output/rla.csv")
+```
+```{r}
+data %>% 
+  filter(candidato == 'Rafael López Aliaga') %>% 
+  arrange(desc(total_votos)) %>% 
+  select(-total_actas,-candidato_id,-color,-partido_id) %>% 
+  write_excel_csv(file = "/home/gianco/r_projects/elecciones2021_cucho/public/data/analisis/output/rla_votos.csv")
+```
+
+
+```{r}
+
+data %>% 
+  filter(candidato == 'Hernando de Soto') %>% 
+  arrange(desc(validos)) %>% 
+  select(-total_actas,-candidato_id,-color,-partido_id) %>% 
+  write_excel_csv(file = "/home/gianco/r_projects/elecciones2021_cucho/public/data/analisis/output/hds.csv")
+```
+```{r}
+data %>% 
+  filter(candidato == 'Hernando de Soto') %>% 
+  arrange(desc(total_votos)) %>% 
+  select(-total_actas,-candidato_id,-color,-partido_id) %>% 
+  write_excel_csv(file = "/home/gianco/r_projects/elecciones2021_cucho/public/data/analisis/output/hds_votos.csv")
+```
+
