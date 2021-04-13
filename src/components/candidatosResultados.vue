@@ -46,7 +46,7 @@
               <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
             </div> 
             <div class="col-2 porcentaje-resultado align-self-center text-center">
-              <div>{{c.validos.toFixed(1)}}%</div>               
+              <div>{{c.validos.toFixed(2)}}%</div>               
             </div>
             <div class="col-3 votos-validos align-self-center text-center">
               <div class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">{{ numeral(c.votos).format('0,0') }}</div>
@@ -64,7 +64,7 @@
               <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
             </div> 
             <div class="col-2 porcentaje-resultado align-self-center text-center">
-              <div>{{c.validos.toFixed(1)}}%</div>               
+              <div>{{c.validos.toFixed(2)}}%</div>               
             </div>
             <div class="col-3 votos-validos align-self-center text-center">
               <div class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">{{ numeral(c.votos).format('0,0') }}</div>
