@@ -39,12 +39,11 @@
       </div> 
 
 
-      <div class="row border-bottom justify-content-center">
+      <div class="row border-bottom justify-content-center pb-5">
         <div class="col-12 mb-3 subtitle mt-5">
           <h2>Congreso fragmentado (2021-2026)</h2>
           <span class="line"></span>
-          <p>Once partidos tendrán representantes en el Parlamento: Perú Libre, Acción Popular, Fuerza Popular, Alianza para el Progreso, Renovación Popular, Avanza País, Juntos por el Perú, Podemos Perú, Victoria Nacional, Somos Perú y el Partido Morado. Se requerirá un acuerdo de todas las fuerzas políticas para evitar la inestabilidad de los últimos cinco años.
-          </p>
+          <p>Nueve partidos tendrán representantes en el Parlamento: Peru Libre, Fuerza Popular, Alianza para el Progreso, Renovación Popular, Acción Popular, Avanza País, Somos Perú, Juntos por el Perú, Podemos Perú. Se requerirá un acuerdo de todas las fuerzas políticas para evitar la inestabilidad de los últimos cinco años.</p>
         </div>
         <div class="col-12">
           <congresoGrafico />

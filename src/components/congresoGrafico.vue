@@ -12,7 +12,7 @@
     </div>
 
     <div class="col-12 mb-2" v-if="departamentos_conteo > 0">
-      <h2 class="title-resultados"><b>Conteo ONPE al {{ departamentos_conteo.toFixed(2) }}% a nivel nacional</b></h2> <h2 class="title-resultados">Última actualización: {{ departamentos_hora }}</h2>
+      <h2 class="title-resultados"><b>Conteo ONPE al {{ departamentos_conteo.toFixed(2) }}% en la región {{depSelected}}</b></h2> <h2 class="title-resultados">Última actualización: {{ departamentos_hora }}</h2>
     </div>
 
     <div class="col-12 text-center">
@@ -24,7 +24,8 @@
     <div class="col-12 mt-3 resultados2021">      
       <div class="list-resultados-partidos">
         <div class="row pb-3">
-          <div class="col-12 col-md-11 mr-md-5 text-center"><h2 class=" title-partidos-curules">Total de curules por partidos</h2></div>
+          <div class="col-12 col-md-11 mr-md-5 text-center">
+            <h2 class=" title-partidos-curules">Total de curules por partidos</h2></div>
           <div class="col-12 col-md-5 mr-md-5" :key="c.candidato_id" v-for="c in congresistas_partido">
             <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
               <div class="col-auto pr-1 img-candidato">
@@ -42,8 +43,15 @@
     
         </div>
 
+        <div class="row">
+          <div class="col-12">
+            Fuente: Elaboración propia en base a información de la ONPE.
+          </div>
+        </div>
       </div>          
     </div>
+
+    
   </div>
 </template>
 
@@ -125,7 +133,7 @@
       },
       show_departamentos(d) {
         this.depSelected = d.region
-        let _r = d.region.replace(" ","-").toLowerCase()
+        let _r = d.region.replace(" ","-").replace(" ","-").toLowerCase()
         d3.selectAll("circle").classed("active", false)
         d3.selectAll(`circle.${_r}`).classed("active", true)
       },
@@ -133,12 +141,14 @@
         this.depSelected = "NACIONAL (130)"
         d3.selectAll("circle").classed("active", true)
       },
-      show_congresista(event, d, _r) {
+      show_congresista(event, d) {
 
         let tooltip = d3.select(".tooltip_congresista")
         let table = `<h5 class="mb-2">${d.region}</h5>`
         table += `<h3>${d.nombre}</h3>`
         table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
+        table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
+        table += `<h4>Total de votos en ${d.region}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
 
         tooltip.html(`${table}`)	 
           .style("left", (event.pageX) + "px")
@@ -173,13 +183,13 @@
 
         d3.selectAll('circle')
           .attr("class", d => {
-            let _r = d.region.replace(" ","-").toLowerCase()
+            let _r =  d.region.replace(" ","-").replace(" ","-").toLowerCase()
             return `active ${_r} ${d.partido_id}`
           })
         
         d3.selectAll('circle.active')
           .on("mouseover", (e, d) => {
-            let _r = d.region.replace(" ","-").toLowerCase()
+            let _r =  d.region.replace(" ","-").replace(" ","-").toLowerCase()
 
             if(this.depSelected == "NACIONAL (130)")
               this.show_congresista(e, d)
