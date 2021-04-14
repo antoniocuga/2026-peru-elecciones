@@ -72,7 +72,6 @@ p {
 .nav-tabs .nav-link {
   font-family: 'Nunito Sans', sans-serif;
   color: #333;
-  padding: 10px 5px;
   font-size: 13px;
   border-radius: 0;
   text-transform: uppercase;
@@ -243,6 +242,11 @@ p {
 
 .congreso-grafico {
   font-family: 'Nunito Sans', sans-serif;
+
+  .congreso-sticky {
+    position: sticky;
+    top: 35px;
+  }
 
   .svg-congreso {
     width: 100%;
@@ -798,6 +802,11 @@ p {
     }
   }
 
+  .ganadores-segunda {
+    font-family: 'Nunito Sans', sans-serif;
+    background: #f9f9f9;
+  }
+
   .candidate-results-container {
     width: 100%;
 
@@ -929,6 +938,11 @@ p {
     padding: 5px 0;
     background: #fff;
 
+    &.segunda {
+      width: 180px;
+      background: transparent;
+    }
+
     @media (max-width: 575.98px) { 
       width: 180px;
       min-width: 135px;
@@ -942,6 +956,7 @@ p {
       font-weight: 600;
       text-align: left;
       color: #000;
+      text-transform: capitalize;
 
       @media (max-width: 575.98px) { 
         margin: 0;
