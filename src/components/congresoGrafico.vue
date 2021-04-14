@@ -44,6 +44,35 @@
                 <div class=" text-success d-flex align-self-center">{{numeral(candidato.voto_preferencial).format('0,0')}}</div>
               </div>
             </div>
+
+            <b-collapse v-model="open" id="collapse-1" class="col-12">
+              <div class="row item-partido pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in candidatos_congreso_real_all">
+                <div class="col-auto pr-1 img-candidato">
+                  <img width="65px" :src="getImagePartido(candidato.partido_id)" />              
+                </div>
+                <div class="col-7 pl-0 pr-md-0 align-self-center">              
+                  <div class="candidato-mapa m-md-0"><b>{{candidato.nombre}}</b></div>
+                  <div class="total-votos">Región: {{ candidato.region }}</div>
+                </div>
+                <div class="col-auto align-self-center text-center pr-0">              
+                  <div class=" text-success d-flex align-self-center">{{numeral(candidato.voto_preferencial).format('0,0')}}</div>
+                </div>
+              </div>
+            </b-collapse>
+        
+            <div class="col-12 mt-3 button-more pl-0 pr-0" v-if="depObject.region == 'NACIONAL'">
+              <a v-if="open==false" @click="open=!open" class="d-block btn-light text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+                </svg>
+              </a>
+              <a v-if="open==true" @click="open=!open" class="d-block btn-light text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
+                </svg>
+              </a>
+            </div>
+            
         </b-tab>
       </b-tabs>
     </div>
@@ -74,6 +103,8 @@
         <!-- This tabs content will always be mounted -->
         <b-tab title="Partidos">     
           <div class="list-resultados-partidos">
+
+
             <div class="row pb-3">
               <div class="col-12" :key="c.candidato_id" v-for="c in congresistas_partido">
                 <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
@@ -91,6 +122,8 @@
               </div>
         
             </div>
+
+            
 
             <div class="row">
               <div class="col-12">
@@ -124,6 +157,36 @@
               <div class=" text-success d-flex align-self-center">{{numeral(candidato.voto_preferencial).format('0,0')}}</div>
             </div>
           </div>
+
+          <b-collapse v-model="open" id="collapse-1" class="col-12">
+            <div class="row item-partido pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in candidatos_congreso_real_all">
+              <div class="col-auto pr-1 img-candidato">
+                <img width="65px" :src="getImagePartido(candidato.partido_id)" />              
+              </div>
+              <div class="col-7 pl-0 pr-md-0 align-self-center">              
+                <div class="candidato-mapa m-md-0"><b>{{candidato.nombre}}</b></div>
+                <div class="total-votos">Región: {{ candidato.region }}</div>
+              </div>
+              <div class="col-2 align-self-center text-right pr-0">              
+                <div class=" text-success d-flex align-self-center">{{numeral(candidato.voto_preferencial).format('0,0')}}</div>
+              </div>
+            </div>
+          </b-collapse>
+      
+          <div class="col-12 mt-3 button-more pl-0 pr-0" v-if="depObject.region == 'NACIONAL'">
+            <a v-if="open==false" @click="open=!open" class="d-block btn-light text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+              </svg>
+            </a>
+            <a v-if="open==true" @click="open=!open" class="d-block btn-light text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
+              </svg>
+            </a>
+          </div>
+          
+
         </b-tab>
       </b-tabs>
     </div>
@@ -152,7 +215,8 @@
         depObject: {
           region: "NACIONAL",
           seats: 130
-        }
+        },
+        open: false
       }
     },
     computed: {
@@ -166,7 +230,16 @@
           return orderBy(filtered, ['voto_preferencial'], ['desc'])
         }
 
-        return orderBy(this.congresistas_parse, ['voto_preferencial'], ['desc']).slice(0, 15)
+        return orderBy(this.congresistas_parse, ['voto_preferencial'], ['desc']).slice(0, 10)
+      },
+      candidatos_congreso_real_all() {
+
+        if(this.depObject.region != 'NACIONAL') {
+          let filtered = filter(this.congresistas_parse, ['region', this.depObject.region])
+          return orderBy(filtered, ['voto_preferencial'], ['desc'])
+        }
+
+        return orderBy(this.congresistas_parse, ['voto_preferencial'], ['desc']).slice(10, this.congresistas_parse.length)
       },
       departamentos_conteo() {
         if(this.depSelected != "NACIONAL (130)")
@@ -223,6 +296,7 @@
         }
       },
       show_partidos(c) {
+        this.open=false
         this.depObject = {
           region: "NACIONAL",
           seats: 130
@@ -231,6 +305,7 @@
         d3.selectAll(`circle.${c.partido_id}`).classed("active", true)
       },
       show_departamentos(d) {
+        this.open=false
         this.depSelected = d.region
         let _r = d.region.replace(" ","-").replace(" ","-").toLowerCase()
         this.depObject=d
@@ -238,6 +313,7 @@
         d3.selectAll(`circle.${_r}`).classed("active", true)
       },
       reset_congreso() {
+        this.open=false
         this.depSelected = "NACIONAL (130)"
         this.depObject = {
           region: "NACIONAL",

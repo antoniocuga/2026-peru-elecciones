@@ -86,7 +86,8 @@
         this.renderMapa()
       },
       distritos() {
-        this.render_distritos()
+        if(this.zoomed == true)
+          this.render_distritos()
       },
       partidoSeleccionado(v) {
         this.zoomed = false
@@ -604,9 +605,7 @@
           })
       },
       load_tooltip(dep, f) {
-        console.log(f, dep)
         let candidatos = ``
-        let name = dep.departamento
         let distrito = f
         let table = ``
         let conteo = parseFloat(uniq(map(dep.candidatos, 'conteo')).join("")).toFixed(1)
