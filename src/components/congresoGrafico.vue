@@ -93,7 +93,7 @@
           <g id="parliament"></g>
         </svg>
         <div class="col-12 mb-2" v-if="departamentos_conteo > 0">
-          <h2 class="title-resultados"><b>Conteo ONPE al {{ departamentos_conteo.toFixed(2) }}% en la región {{depSelected}}</b></h2> <h2 class="title-resultados">Última actualización: {{ departamentos_hora }}</h2>
+          <h2 class="title-resultados"><b>Conteo ONPE al {{ departamentos_conteo }}% en la región {{depSelected}}</b></h2> <h2 class="title-resultados">Última actualización: {{ departamentos_hora }}</h2>
         </div>
       </div>
     </div>
@@ -105,7 +105,7 @@
           <div class="list-resultados-partidos">
 
 
-            <div class="row pb-3">
+            <div class="row pb-3 partidos-embed-list">
               <div class="col-12" :key="c.candidato_id" v-for="c in congresistas_partido">
                 <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
                   <div class="col-auto pr-1 img-candidato">

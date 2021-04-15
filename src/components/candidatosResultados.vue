@@ -21,8 +21,8 @@
 
       <div class="row candidates-list" v-if="conteo">
         <div class="col-12 pt-3 pb-3">
-          <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region !='NACIONAL'"><span>{{regionSeleccionada.region}}</span> <span class="p-2 badge badge-light">Conteo al {{conteo.toFixed(1)}}%</span></h2>
-          <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region =='NACIONAL'"><span>RESULTADOS NACIONALES</span><span class="p-2 badge badge-light">Conteo al {{conteo.toFixed(1)}}%</span></h2>
+          <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region !='NACIONAL'"><span>{{regionSeleccionada.region}}</span> <span class="p-2 badge badge-light">Conteo al {{conteo}}%</span></h2>
+          <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region =='NACIONAL'"><span>RESULTADOS NACIONALES</span><span class=" badge badge-light">Conteo al {{conteo}}%</span></h2>
           <h2 class="distrito-resultados align-self-center" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'"><span>{{ distritoSeleccionado.distrito }}</span></h2>
         </div>
         <div class="col-12">
@@ -46,7 +46,7 @@
               <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
             </div> 
             <div class="col-2 porcentaje-resultado align-self-center text-center">
-              <div>{{c.validos.toFixed(2)}}%</div>               
+              <div>{{c.validos}}%</div>               
             </div>
             <div class="col-3 votos-validos align-self-center text-center">
               <div class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">{{ numeral(c.votos).format('0,0') }}</div>
@@ -64,7 +64,7 @@
               <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
             </div> 
             <div class="col-2 porcentaje-resultado align-self-center text-center">
-              <div>{{c.validos.toFixed(2)}}%</div>               
+              <div>{{c.validos}}%</div>               
             </div>
             <div class="col-3 votos-validos align-self-center text-center">
               <div class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">{{ numeral(c.votos).format('0,0') }}</div>

@@ -608,11 +608,12 @@
         let candidatos = ``
         let distrito = f
         let table = ``
-        let conteo = parseFloat(uniq(map(dep.candidatos, 'conteo')).join("")).toFixed(1)
+        let name = f.properties ? f.properties.NAME_1 : dep.departamento
+        let conteo = parseFloat(uniq(map(dep.candidatos, 'conteo')).join(""))
         if(dep && this.zoomed==false) {
           table = `
             <div class="row border-bottom pb-2 mb-2">
-              <div class="col-6 depa"><b>${f.properties.NAME_1}</b></div>
+              <div class="col-6 depa"><b>${name}</b></div>
               <div class="col-6 text-right"><span class="badge badge-secondary">Conteo ONPE al ${conteo}%</span></div>
             </div>`
           
@@ -634,7 +635,7 @@
                     
                   </div>
                   <div class="pl-0 col-4 text-right">
-                    <div class="candidato-mapa"><b>${dp.validos.toFixed(1)}%</b></div>
+                    <div class="candidato-mapa"><b>${dp.validos}%</b></div>
                     <div class="partido-mapa text-success">${ numeral(dp.total).format('0,0') } votos</div>
                   </div>
                 </div>`
@@ -654,7 +655,7 @@
           table = `
             <div class="row border-bottom pb-2 mb-2">
               <div class="col-7 depa"><b>${distrito.properties.DISTRITO}</b> - ${distrito.properties.PROVINCIA}</div>
-              <div class="col-5 text-right"><span class="badge badge-secondary">Conteo ONPE al ${dep.conteo.toFixed(1) }%</span></div>
+              <div class="col-5 text-right"><span class="badge badge-secondary">Conteo ONPE al ${dep.conteo }%</span></div>
             </div>`
           let only_four = orderBy(dep.candidatos, ['validos'], ['desc']).slice(0, 4)
 
@@ -674,7 +675,7 @@
                       
                     </div>
                     <div class="pl-0 col-4 text-right">
-                      <div class="candidato-mapa"><b>${dp.validos.toFixed(1)}%</b></div>
+                      <div class="candidato-mapa"><b>${dp.validos}%</b></div>
                       <div class="partido-mapa text-success">${ numeral(dp.total_votos).format('0,0') } votos</div>
                     </div>
                   </div>`

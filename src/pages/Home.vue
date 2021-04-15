@@ -12,8 +12,7 @@
       <div class="row justify-content-center mb-5 mt-5">
         <div class="col-12 col-md-8 text-center">
           <h3 class="page-section-tag"><a href="https://ojo-publico.com/elecciones-2021" target="_blank">Elecciones 2021</a></h3>
-          <h1 class="page-app-title text-center">Pedro Castillo lidera contienda electoral rumbo 
-            a la segunda vuelta en conteo de la ONPE</h1>
+          <h1 class="page-app-title text-center">Pedro Castillo se enfrentará a Keiko Fujimori en segunda vuelta </h1>
         </div>
         <div class="credits col-12 text-center">
           Por <a href="https://ojo-publico.com/autor/ojopublico" target="_blank">OjoPúblico</a>

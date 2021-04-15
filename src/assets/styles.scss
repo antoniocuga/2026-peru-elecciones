@@ -243,9 +243,78 @@ p {
 .congreso-grafico {
   font-family: 'Nunito Sans', sans-serif;
 
+  .item-partido-embed-top {
+    width: 100%;
+    max-width: 100px;
+    height: 25px;
+    display: flex;
+    background: #2f2f2f;
+    color: #fff;
+    margin: 5px;
+
+    h5 {
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    
+    img {
+      width: 65px;
+    }
+  }
+
+  .partidos-embed-list-top {
+    width: 100%;
+    max-width: 720px;
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .partidos-embed-list {
+    width: 100%;
+    max-width: 430px;
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item-partido-embed {
+    width: 100%;
+    max-width: 75px;
+    height: 25px;
+    display: flex;
+    background: #2f2f2f;
+    color: #fff;
+    margin: 5px;
+
+    h5 {
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    
+    img {
+      width: 40px;
+    }
+  }
+
   .congreso-sticky {
     position: sticky;
     top: 35px;
+  }
+
+  .svg-congreso-embed {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    margin: 0 auto;
+
+    @media (max-width: 620.98px) {
+      max-width: 320px;
+      height: 175px;
+    }
   }
 
   .svg-congreso {
@@ -1173,7 +1242,7 @@ p {
   @media (max-width: 575.98px) { 
     display: block;
     width: 100%;
-    height: 520px;
+    height: 820px;
     margin: 15px auto;
   }
   

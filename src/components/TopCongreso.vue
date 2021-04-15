@@ -7,7 +7,7 @@
         <div class="row">
           <div class="col-12">
             <h3 class="border-bottom pb-2">2021
-            <span class="small float-right text-dark">Conteo ONPE al {{ conteo.toFixed(1) }}%</span></h3>
+            <span class="small float-right text-dark">Conteo ONPE al {{ conteo  }}%</span></h3>
           </div>
         </div>
 

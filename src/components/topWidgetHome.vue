@@ -1,16 +1,19 @@
 <template>
 
   <div class="row justify-content-center">
-    <div class="col-12 col-sm-12 mb-3" v-if="conteo">
-      <h3 class="m-0 text-center">
+
+    <div class="col-12 d-block d-md-none" v-if="conteo">
+      <h3 class="small text-center mt-3 text-secondary">
         <b>Conteo ONPE al {{ conteo }}% a nivel nacional</b> (Última actualización: {{ fecha_hora }})
       </h3>
     </div>
-    <div class="col-12" v-if="conteo">
+
+    <div class="col-12 col-md-6 mb-5 mb-md-0" v-if="conteo">
+
       <div class="row justify-content-center">
         <div class="col-auto text-center" :key="c.candidato_id" v-for="(c, ix) in topCandidatos" >
           <div>
-            <div class="mr-2"><img width="125px" :src="getImageCandidate(c.candidato_id)" /></div>
+            <div class="mr-2"><img width="100px" :src="getImageCandidate(c.candidato_id)" /></div>
           </div>
           <div class="d-flex">
             <div class="card-resultado">              
@@ -30,7 +33,16 @@
           </div>
         </div>
       </div>
+
+      <h3 class="small text-center mt-4 text-secondary d-none d-md-block">
+        <b>Conteo ONPE al {{ conteo }}% a nivel nacional</b><br />(Última actualización: {{ fecha_hora }})
+      </h3>
+
     </div>
+    <div class="col-12 col-md-6">
+      <congresoGraficoEmbed />
+    </div>
+
   </div>
 
 </template>
@@ -38,9 +50,13 @@
 <script>
   import { mapState } from 'vuex'
   import { filter, map, orderBy, groupBy, uniq } from 'lodash'
+  import congresoGraficoEmbed from '../components/congresoGraficoEmbed.vue'
 
   export default {
-    name: "topWidget",
+    name: "topWidgetHome",
+    components: {
+      congresoGraficoEmbed
+    },
     methods: {
       getImageCandidate(c) {
         try {
@@ -64,7 +80,7 @@
         partidoSeleccionado: state => state.candidatos.partidoSeleccionado,
       }),
       conteo() {
-        return parseFloat(uniq(map(this.topCandidatos, 'conteo')).join(""))
+        return uniq(map(this.topCandidatos, 'conteo')).join("")
       },
       fecha_hora() {
         return uniq(map(this.topCandidatos, 'hora')).join("")
@@ -91,7 +107,7 @@
             }
         }), ['validos'], ['desc'])
 
-        return candidates.slice(0, 3)
+        return candidates.slice(0, 2)
       }, 
     }
   }

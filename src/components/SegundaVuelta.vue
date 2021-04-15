@@ -10,7 +10,7 @@
                 <div class="col-12 border-bottom">
                   <h3 class="">2021</h3>
                   <span class="small">
-                    Conteo <b>ONPE al {{ conteo.toFixed(1) }}% a nivel nacional</b> (Última actualización: {{ fecha_hora }})
+                    Conteo <b>ONPE al {{ conteo }}% a nivel nacional</b> (Última actualización: {{ fecha_hora }})
                   </span>
                 </div>
               </div>
@@ -29,7 +29,7 @@
                 <div class="col-12 col-md-6">
                   <div class="candidate-results">                
                     <div class="candidate-bar">
-                      <div class="tooltip-c">{{ candidato.validos.toFixed(2)+"%" }} </div>
+                      <div class="tooltip-c">{{ candidato.validos+"%" }} </div>
                       <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato,top_candidatos, 320)}px;`"></div>
                       <div class="tooltip-c"><span>Total de votos: {{ numeral(candidato.votos).format('0,0') }}</span></div>
                       <div class="tooltip-c"><span class="badge text-success" v-if="ix==0"> Ganando por +{{ numeral(top_candidatos[ix].votos - top_candidatos[ix+1].votos).format('0,0') }} votos</span> </div>
