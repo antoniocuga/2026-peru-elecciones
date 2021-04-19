@@ -54,13 +54,15 @@ general
 ```
 
 ```{r}
-avance_general <- as.numeric(content(httr::GET("https://api.resultados.eleccionesgenerales2021.pe/results/10/000000?name=param"), as="parsed")$generals$generalData$POR_ACTAS_PROCESADAS)
+vista_general <- content(httr::GET("https://api.resultados.eleccionesgenerales2021.pe/results/10/000000?name=param"), as="parsed")
+avance_general <- as.numeric(vista_general$generals$generalData$POR_ACTAS_PROCESADAS)
+hora_general <- paste(vista_general$generals$actData$HORA, vista_general$generals$actData$FECHA, sep=" - ")
 ```
 
 
 ```{r}
-x <- mutate(muestra, hora = paste(HORA,FECHA, sep = " - ")) %>% distinct(hora) 
-hora_general <- x$hora[1]
+# x <- mutate(muestra, hora = paste(HORA,FECHA, sep = " - ")) %>% distinct(hora) 
+# hora_general <- x$hora[1]
 ```
 
 ```{r}
@@ -90,7 +92,41 @@ totales <-
     mutate(
         conteo = avance_general,
         hora = hora_general
-    ) 
+    )
+```
+
+```{r}
+totales %>% arrange(desc(total))
+```
+
+
+```{r}
+res <- list()
+for (index in 1:length(vista_general$results)){
+    vec <- vista_general$results[[index]]
+    if (any(sapply(vec, is.null))){
+    
+    }else{
+        res[[index]] <- as_tibble(vec)
+        
+    }
+
+}
+totales <- bind_rows(res) %>% 
+    mutate(
+        validos = as.numeric(str_replace_all(TOTAL_VOTOS, ",", "")),
+        total = validos,
+        conteo = avance_general,
+        hora = hora_general,
+        por_validos = as.numeric(POR_VALIDOS)
+    ) %>% 
+    select(AGRUPACION, validos, total, conteo, hora, por_validos)
+```
+
+
+
+```{r}
+totales %>% arrange(desc(total))
 ```
 
 ```{r}
@@ -140,7 +176,8 @@ por_dep <-
         avance_procesamiento_dep %>% select(dep, conteo=porcentaje_procesada), by = c("departamento"="dep")
     ) %>% 
     mutate(
-        conteo = if_else(is.na(conteo.x), conteo.y, conteo.x)
+        conteo = if_else(is.na(conteo.x), conteo.y, conteo.x),
+        hora = hora_general
     ) %>% 
     select(-conteo.x, -conteo.y)
 ```
