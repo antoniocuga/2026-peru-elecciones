@@ -85,6 +85,10 @@
       candidatos() {
         this.renderMapa()
       },
+      distritos() {
+        if(this.zoomed == true)
+          this.render_distritos()
+      },
       partidoSeleccionado(v) {
         this.zoomed = false
         let base = d3.select(this.$refs['svgmap'])
@@ -602,14 +606,13 @@
       },
       load_tooltip(dep, f) {
         let candidatos = ``
-        let name = dep.departamento
         let distrito = f
         let table = ``
         let conteo = parseFloat(uniq(map(dep.candidatos, 'conteo')).join("")).toFixed(1)
         if(dep && this.zoomed==false) {
           table = `
             <div class="row border-bottom pb-2 mb-2">
-              <div class="col-6 depa"><b>${name}</b></div>
+              <div class="col-6 depa"><b>${f.properties.NAME_1}</b></div>
               <div class="col-6 text-right"><span class="badge badge-secondary">Conteo ONPE al ${conteo}%</span></div>
             </div>`
           

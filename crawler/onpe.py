@@ -4,6 +4,7 @@ import pymongo
 import environ
 import json
 import os
+import random
 try:
     # Dev
     from datautils import scraping_utils, bd_utils
@@ -15,8 +16,8 @@ import datetime
 class EG2021Spider(scrapy.Spider):
     name = "eg2021"
     custom_settings = {
-        'CONCURRENT_REQUESTS':16,
-        'DOWNLOAD_DELAY': 0.5,
+        'CONCURRENT_REQUESTS':50,
+        'DOWNLOAD_DELAY': 0,
     }
     url = ""
     # NOTE: url a nivel de actas
@@ -40,7 +41,8 @@ class EG2021Spider(scrapy.Spider):
         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36'
     }
 
-    def __init__(self, mode:str):
+    def __init__(self, mode:str, complete_districts='True'):
+        self.complete_districts = complete_districts == 'True'
         env = environ.Env()
         environ.Env.read_env()
         #  NOTE ; requiere un archivo .env en este mismo directorio
@@ -93,8 +95,12 @@ class EG2021Spider(scrapy.Spider):
 
 
     def get_summary(self):
-        districts = [{'CDGO_DIST': '900000'}] + self.ubigeos['districts'] 
-        districts = self.get_district_codes()
+        if self.complete_districts:
+            districts = [{'CDGO_DIST': '900000'}] + self.ubigeos['districts'] 
+        else:
+            districts = self.get_district_codes() + [{'CDGO_DIST': '900000'}]
+
+        random.shuffle(districts)
         for dist in districts:
             cod_dist = dist['CDGO_DIST']
             # if self.col_summary.find_one({'cod_dist':cod_dist}) is  None:
@@ -113,6 +119,8 @@ class EG2021Spider(scrapy.Spider):
 
 
     def get_congreso(self):
+        self.col_congreso.delete_many({})
+
         for i in range(1, 28):
             slug = str(i).zfill(2)
             url = f"https://api.resultados.eleccionesgenerales2021.pe/results/11/D440{slug}?name=param"
