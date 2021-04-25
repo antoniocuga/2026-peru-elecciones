@@ -73,7 +73,10 @@ class EG2021Spider(scrapy.Spider):
         self.client.close()
 
     def get_district_codes(self):
-        bd_utils.create_index('opt_index', ['generals.generalData.POR_ACTAS_PROCESADAS'], self.col_data)
+        try:
+            bd_utils.create_index('opt_index', ['generals.generalData.POR_ACTAS_PROCESADAS'], self.col_data)
+        except:
+            pass
         cursor = self.col_summary.aggregate([
             {
                 "$match":{
@@ -226,24 +229,22 @@ class EG2021Spider(scrapy.Spider):
         self.client = pymongo.MongoClient(self.mongo_cs)
         self.bd = self.client['eg2021']
         self.col_locales = self.bd['locales']
-
-        bd_utils.create_index('scraping_idx', ['CCODI_LOCAL'], self.col_locales)
-        bd_utils.create_index('scraping_idx2', ['CCODI_UBIGEO'], self.col_locales)
-
         self.col_mesas = self.bd['mesas']
-        bd_utils.create_index('scraping_idx', ['dist_ubi', 'cod_local'], self.col_mesas)
-        
         self.col_summary = self.bd['summary']
-        bd_utils.create_index('scraping_idx2', ['cod_dist'], self.col_summary)
-        bd_utils.create_index('processing_indexx', ['scraped_at', 'is_old'], self.col_summary)
-
         self.col_data = self.bd['resultados']
-        bd_utils.create_index('scraping_idx2', ['cod_mesa'], self.col_data)
-
         self.col_congreso = self.bd['congreso']
-        bd_utils.create_index('scraping_idx2', ['is_old'], self.col_congreso)
-
         self.col_congreso_names = self.bd['congresonames']
+        try:
+            bd_utils.create_index('scraping_idx', ['CCODI_LOCAL'], self.col_locales)
+            bd_utils.create_index('scraping_idx2', ['CCODI_UBIGEO'], self.col_locales)
+            bd_utils.create_index('scraping_idx', ['dist_ubi', 'cod_local'], self.col_mesas)
+            bd_utils.create_index('scraping_idx2', ['cod_dist'], self.col_summary)
+            bd_utils.create_index('processing_indexx', ['scraped_at', 'is_old'], self.col_summary)
+            bd_utils.create_index('scraping_idx2', ['is_old'], self.col_congreso)        
+            bd_utils.create_index('scraping_idx2', ['cod_mesa'], self.col_data)
+        except:
+            pass
+
 
 def parse():
     import pandas as pd
