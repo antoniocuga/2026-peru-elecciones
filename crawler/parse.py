@@ -7,6 +7,7 @@ import code
 
 # NOTE: para acelerar filtrado de data acumulada
 def flag_as_old_everything_but_last(col='col_summary', key='cod_dist'):
+    print("flag evrything as old", flush=True)
     spider = EG2021Spider('x')
     col = getattr(spider, col)
     RES = list(col.aggregate([
@@ -21,6 +22,7 @@ def flag_as_old_everything_but_last(col='col_summary', key='cod_dist'):
     ]))
     ids = [i['last_id'] for i in RES]
     col.update_many({"_id": {"$nin":ids}}, {"$set": {"is_old":True}})
+    print("end")
 
 def parse_candidate_names():
     spider = EG2021Spider("xx")
@@ -183,12 +185,11 @@ def build_mapper():
 
 
 if __name__ == "__main__":
-    # parse_congreso()
-    # try:
-    #     parse_summary()
-    # except:
-    #     import traceback
-    #     print(traceback.format_exc())
+    try:
+        parse_summary()
+    except:
+        import traceback
+        print(traceback.format_exc())
 
     try:
         parse_congreso()
