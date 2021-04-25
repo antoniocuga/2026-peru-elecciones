@@ -101,3 +101,20 @@ data %>%
   write_excel_csv(file = "/home/gianco/r_projects/elecciones2021_cucho/public/data/analisis/output/hds_votos.csv")
 ```
 
+```{r}
+data %>% 
+filter(candidato == 'Daniel Salaverry') %>% 
+  summarise(sum(total_votos,na.rm = T))
+```
+
+```{r}
+data %>% 
+filter(candidato == 'Daniel Urresti') %>% 
+  summarise(sum(total_votos,na.rm = T))
+```
+```{r}
+data %>% 
+filter(candidato == 'Daniel Urresti') %>% 
+  View()
+```
+
