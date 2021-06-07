@@ -19,6 +19,9 @@ class EG2021Spider(scrapy.Spider):
         'CONCURRENT_REQUESTS':50,
         'DOWNLOAD_DELAY': 0,
     }
+    BASE_SLUG = "resultadossep"
+    # BASE_SLUG = "resultados" # PRIMERA VUELTA
+
     url = ""
     # NOTE: url a nivel de actas
     # https://www.resultados.eleccionesgenerales2021.pe/EG2021/Actas/Ubigeo/P/010000/010200/010202/0033/000179
@@ -30,9 +33,9 @@ class EG2021Spider(scrapy.Spider):
         'Accept-Encoding': 'gzip, deflate, br',
         'Accept-Language': 'en,es-419;q=0.9,es;q=0.8',
         'Cache-Control': 'no-cache',
-        'Origin': 'https://www.resultados.eleccionesgenerales2021.pe',
+        'Origin': f'https://www.{BASE_SLUG}.eleccionesgenerales2021.pe',
         'Pragma': 'no-cache',
-        'Referer': 'https://www.resultados.eleccionesgenerales2021.pe/',
+        'Referer': f'https://www.{BASE_SLUG}.eleccionesgenerales2021.pe/',
         'Sec-Ch-ua': '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
         'Sec-Ch-ua-mobile': '?0',
         'Sec-Fetch-Dest': 'empty',
@@ -107,7 +110,7 @@ class EG2021Spider(scrapy.Spider):
         for dist in districts:
             cod_dist = dist['CDGO_DIST']
             # if self.col_summary.find_one({'cod_dist':cod_dist}) is  None:
-            url = f"https://api.resultados.eleccionesgenerales2021.pe/results/10/{cod_dist}?name=param"
+            url = f"https://api.{self.BASE_SLUG}.eleccionesgenerales2021.pe/results/10/{cod_dist}?name=param"
             yield scrapy.Request(url, headers = self.headers, callback=self.parse_summary, meta = {'meta':{'cod_dist':cod_dist}})    
 
 
@@ -229,12 +232,16 @@ class EG2021Spider(scrapy.Spider):
         self.client = pymongo.MongoClient(self.mongo_cs)
         self.bd = self.client['eg2021']
         self.col_locales = self.bd['locales']
-        self.col_mesas = self.bd['mesas']
-        self.col_summary = self.bd['summary']
-        self.col_data = self.bd['resultados']
+        self.col_mesas = self.bd['mesas']        
         self.col_congreso = self.bd['congreso']
         self.col_congreso_names = self.bd['congresonames']
+
+        # self.col_summary = self.bd['summary']
+        self.col_summary = self.bd['summary_sep']
+        self.col_data = self.bd['resultados']
+
         try:
+            # NOTE: adaptacion para poder correrlo sin esta dependencia
             bd_utils.create_index('scraping_idx', ['CCODI_LOCAL'], self.col_locales)
             bd_utils.create_index('scraping_idx2', ['CCODI_UBIGEO'], self.col_locales)
             bd_utils.create_index('scraping_idx', ['dist_ubi', 'cod_local'], self.col_mesas)

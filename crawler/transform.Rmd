@@ -54,7 +54,7 @@ general
 ```
 
 ```{r}
-vista_general <- content(httr::GET("https://api.resultados.eleccionesgenerales2021.pe/results/10/000000?name=param"), as="parsed")
+vista_general <- content(httr::GET("https://api.resultadossep.eleccionesgenerales2021.pe/results/10/000000?name=param"), as="parsed")
 avance_general <- as.numeric(vista_general$generals$generalData$POR_ACTAS_PROCESADAS)
 hora_general <- paste(vista_general$generals$actData$HORA, vista_general$generals$actData$FECHA, sep=" - ")
 ```
