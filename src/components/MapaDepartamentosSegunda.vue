@@ -20,7 +20,7 @@
     </div>
     <div class="row">
       <div class="col-12 text-right">
-        <svg width="100%" :height="height" class="plan-vector-map" ref="svgmap_segunda">
+        <svg width="100%" :height="height" class="plan-vector-map" ref="svgmap_segunda" id="mapa_segunda">
           <g ref="base_segunda"></g>
           <g ref="departamentos"></g>
           <g ref="distritos"></g>
@@ -156,8 +156,8 @@
         if(v.region !='NACIONAL') {
           this.getAllDistritosSegunda(v)
 
-          d3.selectAll('path.departamento-path').classed('inactive', true)
-          d3.select(`path.${v.region}-path`).classed('inactive', true)
+          d3.selectAll('#mapa_segunda path.departamento-path').classed('inactive', true)
+          d3.select(`#mapa_segunda path.${v.region}-path`).classed('inactive', true)
 
           d3.selectAll('text.departamento-label').classed('active', false)
           d3.select(`text.${v.region}-label`).classed('active', true)
@@ -359,7 +359,7 @@
               .selectAll('text.departamento-label')
               .classed('inactive', true)
 
-            base.selectAll('path.distrito-path').remove()
+            base.selectAll('#mapa_segunda path.distrito-path').remove()
             
             d3.select(".candidate-results-vivo").style("opacity", 0)
             d3.select(".candidate-results-vivo").classed("active", false)
@@ -375,7 +375,7 @@
               this.zoomed = true
             } else if(this.regionSeleccionada.region == 'NACIONAL') {
               this.zoomed == false
-              base.selectAll('path.departamento-path').classed('inactive', false)
+              base.selectAll('#mapa_segunda path.departamento-path').classed('inactive', false)
               d3.select(".candidate-results-vivo").style("opacity", 1)
               d3.select(".candidate-results-vivo").classed("active", true)
 
