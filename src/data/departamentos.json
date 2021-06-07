@@ -2,20 +2,20 @@
   {
     "departamento": "NACIONAL",
     "eleccion2016": {
-      "blanco_nulo": "3393987",
-      "no_votaron":"2130063",
+      "blanco_nulo": "1190079",
+      "no_votaron":"4559058",
       "habiles": "22901954",
-      "emitidos": "20771891",
+      "emitidos": "18342896",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "8152834"
+          "total_votos": "8555880"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "3228661"
+          "total_votos": "8596937"
         }
       ]
     }
@@ -26,20 +26,20 @@
     "total": 10000,
     "validos": 50,
     "eleccion2016": {
-      "blanco_nulo": "94726",
-      "no_votaron":"100134",
+      "blanco_nulo": "31474",
+      "no_votaron":"103147",
       "habiles": "743928",
-      "emitidos": "643794",
+      "emitidos": "640781",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "222171"
+          "total_votos": "304954"
         },        
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "153850"
+          "total_votos": "304353"
         }
       ]
     }
@@ -50,20 +50,20 @@
     "total": 10000,
     "validos": 50,
     "eleccion2016": {
-      "blanco_nulo": "785438",
-      "no_votaron":"908015",
+      "blanco_nulo": "271629",
+      "no_votaron":"928557",
       "habiles": "6884549",
-      "emitidos": "5976534",
+      "emitidos": "5955992",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "2037761"
+          "total_votos": "2769750"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "1615104"
+          "total_votos": "2914613"
         }
       ]
     }
@@ -74,20 +74,20 @@
     "total": 10000,
     "validos": 50,
     "eleccion2016": {
-      "blanco_nulo": "100021",
-      "no_votaron":"1934456",
+      "blanco_nulo": "28441",
+      "no_votaron":"109626",
       "habiles": "696209",
-      "emitidos": "2630665",
+      "emitidos": "586583",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "2305333"
+          "total_votos": "343953"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "77707"
+          "total_votos": "214189"
         }
       ]
     }
@@ -98,20 +98,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "75722",
-      "no_votaron":"73371",
+      "blanco_nulo": "20063",
+      "no_votaron":"76266",
       "habiles": "583777",
-      "emitidos": "510406",
+      "emitidos": "507511",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "194463"
+          "total_votos": "257271"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "69137"
+          "total_votos": "230177"
         }
       ]
     }
@@ -122,21 +122,21 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "126681",
-      "no_votaron":"139785",
+      "blanco_nulo": "48304",
+      "no_votaron":"147155",
       "habiles": "1035654",
-      "emitidos": "895869",
+      "emitidos": "888499",
       "partidos":[
 
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "184918"
+          "total_votos": "272361"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "210224"
+          "total_votos": "567834"
         }    
       ]
     }    
@@ -147,20 +147,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "16119",
-      "no_votaron":"17915",
+      "blanco_nulo": "6550",
+      "no_votaron":"19346",
       "habiles": "133777",
-      "emitidos": "115862",
+      "emitidos": "114431",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "24310"
+          "total_votos": "34587"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "27853"
+          "total_votos": "73294"
         }
       ]
     }
@@ -171,21 +171,21 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "28755",
-      "no_votaron":"34326",
+      "blanco_nulo": "14533",
+      "no_votaron":"36584",
       "habiles": "253524",
-      "emitidos": "219198",
+      "emitidos": "216940",
       "partidos":[
 
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "40071"
+          "total_votos": "63243"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "29859"
+          "total_votos": "139164"
         }
       ]
     }
@@ -196,20 +196,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "149995",
-      "no_votaron":"173780",
+      "blanco_nulo": "46938",
+      "no_votaron":"188672",
       "habiles": "831235",
-      "emitidos": "657455",
+      "emitidos": "642563",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "216261"
+          "total_votos": "304623"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "80069"
+          "total_votos": "291002"
         }
       ]
     }
@@ -220,20 +220,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "191115",
-      "no_votaron":"226441",
+      "blanco_nulo": "66589",
+      "no_votaron":"247018",
       "habiles": "1292488",
-      "emitidos": "1066047",
+      "emitidos": "1045470",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "432443"
+          "total_votos": "598031"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "121283"
+          "total_votos": "380850"
         }
       ]
     }
@@ -244,20 +244,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "120385",
-      "no_votaron":"148367",
+      "blanco_nulo": "38964",
+      "no_votaron":"156437",
       "habiles": "889355",
-      "emitidos": "740988",
+      "emitidos": "732918",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "313728"
+          "total_votos": "408420"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "98741"
+          "total_votos": "285534"
         }
       ]
     }
@@ -268,20 +268,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "217768",
-      "no_votaron":"218423",
+      "blanco_nulo": "62478",
+      "no_votaron":"233584",
       "habiles": "1266557",
-      "emitidos": "1048134",
+      "emitidos": "1032973",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "456685"
+          "total_votos": "592309"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "104844"
+          "total_votos": "378186"
         }
       ]
     }
@@ -292,20 +292,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "21702",
-      "no_votaron":"25879",
+      "blanco_nulo": "5995",
+      "no_votaron":"26835",
       "habiles": "156120",
-      "emitidos": "130241",
+      "emitidos": "129285",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "70029"
+          "total_votos": "87020"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "13189"
+          "total_votos": "36270"
         }
       ]
     }
@@ -316,21 +316,21 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "50392",
-      "no_votaron":"76623",
+      "blanco_nulo": "16543",
+      "no_votaron":"87605",
       "habiles": "270175",
-      "emitidos": "193552",
+      "emitidos": "182570",
       "partidos":[
 
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "62083"
+          "total_votos": "87128"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "17026"
+          "total_votos": "78899"
         }
       ]
     }
@@ -341,21 +341,21 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "111703",
-      "no_votaron":"187972",
+      "blanco_nulo": "24571",
+      "no_votaron":"200704",
       "habiles": "630498",
-      "emitidos": "442526",
+      "emitidos": "429794",
       "partidos":[
 
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "136439"
+          "total_votos": "186999"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "81826"
+          "total_votos": "218224"
         }
       ]
     }
@@ -366,21 +366,21 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "59336",
-      "no_votaron":"78265",
+      "blanco_nulo": "13674",
+      "no_votaron":"83272",
       "habiles": "336888",
-      "emitidos": "258623",
+      "emitidos": "253616",
       "partidos":[
 
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "105050"
+          "total_votos": "144729"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "29155"
+          "total_votos": "95213"
         }
       ]
     }
@@ -393,20 +393,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "103711",
-      "no_votaron":"119967",
+      "blanco_nulo": "29816",
+      "no_votaron":"128553",
       "habiles": "566666",
-      "emitidos": "446699",
+      "emitidos": "438113",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "166236"
+          "total_votos": "227806"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "43550"
+          "total_votos": "180491"
         }
       ]
     }
@@ -417,20 +417,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "17157",
-      "no_votaron":"18262",
+      "blanco_nulo": "6071",
+      "no_votaron":"19236",
       "habiles": "95538",
-      "emitidos": "77276",
+      "emitidos": "76302",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "26656"
+          "total_votos": "44755"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "5623"
+          "total_votos": "25476"
         }
       ]
     }
@@ -441,20 +441,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "144497",
-      "no_votaron":"124577",
+      "blanco_nulo": "122498",
+      "no_votaron":"144849",
       "habiles": "858504",
-      "emitidos": "733927",
+      "emitidos": "713655",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "135239"
+          "total_votos": "217951"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "50532"
+          "total_votos": "373206"
         }
       ]
     }
@@ -465,21 +465,21 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "72601",
-      "no_votaron":"95637",
+      "blanco_nulo": "30106",
+      "no_votaron":"112520",
       "habiles": "421956",
-      "emitidos": "326319",
+      "emitidos": "309346",
       "partidos":[
 
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "82138"
+          "total_votos": "144102"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "15741"
+          "total_votos": "135228"
         }
       ]
     }
@@ -490,20 +490,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "136201",
-      "no_votaron":"168079",
+      "blanco_nulo": "37637",
+      "no_votaron":"179085",
       "habiles": "875674",
-      "emitidos": "707595",
+      "emitidos": "696589",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "248217"
+          "total_votos": "337248"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "121109"
+          "total_votos": "321704"
         }
       ]
     }
@@ -514,21 +514,21 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "153319",
-      "no_votaron":"169899",
+      "blanco_nulo": "75441",
+      "no_votaron":"196428",
       "habiles": "915199",
-      "emitidos": "745300",
+      "emitidos": "718771",
       "partidos":[
 
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "128818"
+          "total_votos": "225247"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "57386"
+          "total_votos": "418083"
         }
       ]
     }
@@ -540,20 +540,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "103777",
-      "no_votaron":"132793",
+      "blanco_nulo": "30546",
+      "no_votaron":"156267",
       "habiles": "525051",
-      "emitidos": "392258",
+      "emitidos": "368784",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "112414"
+          "total_votos": "172476"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "40000"
+          "total_votos": "165762"
         }
       ]
     }
@@ -564,20 +564,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "51942",
-      "no_votaron":"73061",
+      "blanco_nulo": "18014",
+      "no_votaron":"85782",
       "habiles": "274440",
-      "emitidos": "201379",
+      "emitidos": "188658",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "43029"
+          "total_votos": "73743"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "14110"
+          "total_votos": "96901"
         }
       ]
     }
@@ -588,20 +588,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "54862",
-      "no_votaron":"65524",
+      "blanco_nulo": "23080",
+      "no_votaron":"78790",
       "habiles": "284436",
-      "emitidos": "218912",
+      "emitidos": "205646",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "50822"
+          "total_votos": "87522"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "9214"
+          "total_votos": "95044"
         }
       ]
     }
@@ -612,20 +612,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "30008",
-      "no_votaron":"44394",
+      "blanco_nulo": "7211",
+      "no_votaron":"49269",
       "habiles": "185057",
-      "emitidos": "140663",
+      "emitidos": "135788",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "48083"
+          "total_votos": "64287"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "24523"
+          "total_votos": "64290"
         }
       ]
     }
@@ -636,20 +636,20 @@
     "total": 10000,
     "validos": 56,
     "eleccion2016": {
-      "blanco_nulo": "168371",
-      "no_votaron":"230133",
+      "blanco_nulo": "73323",
+      "no_votaron":"268076",
       "habiles": "1009775",
-      "emitidos": "779642",
+      "emitidos": "741699",
       "partidos":[
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
-          "total_votos": "196086"
+          "total_votos": "333682"
         },
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
-          "total_votos": "52002"
+          "total_votos": "334694"
         }
       ]
     }
