@@ -4,6 +4,7 @@ import pymongo
 import environ
 import json
 import os
+import random
 try:
     # Dev
     from datautils import scraping_utils, bd_utils
@@ -15,8 +16,8 @@ import datetime
 class EG2021Spider(scrapy.Spider):
     name = "eg2021"
     custom_settings = {
-        'CONCURRENT_REQUESTS':16,
-        'DOWNLOAD_DELAY': 0.5,
+        'CONCURRENT_REQUESTS':50,
+        'DOWNLOAD_DELAY': 0,
     }
     url = ""
     # NOTE: url a nivel de actas
@@ -40,7 +41,8 @@ class EG2021Spider(scrapy.Spider):
         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36'
     }
 
-    def __init__(self, mode:str):
+    def __init__(self, mode:str, complete_districts='True'):
+        self.complete_districts = complete_districts == 'True'
         env = environ.Env()
         environ.Env.read_env()
         #  NOTE ; requiere un archivo .env en este mismo directorio
@@ -71,7 +73,10 @@ class EG2021Spider(scrapy.Spider):
         self.client.close()
 
     def get_district_codes(self):
-        bd_utils.create_index('opt_index', ['generals.generalData.POR_ACTAS_PROCESADAS'], self.col_data)
+        try:
+            bd_utils.create_index('opt_index', ['generals.generalData.POR_ACTAS_PROCESADAS'], self.col_data)
+        except:
+            pass
         cursor = self.col_summary.aggregate([
             {
                 "$match":{
@@ -93,8 +98,12 @@ class EG2021Spider(scrapy.Spider):
 
 
     def get_summary(self):
-        districts = [{'CDGO_DIST': '900000'}] + self.ubigeos['districts'] 
-        districts = self.get_district_codes()
+        if self.complete_districts:
+            districts = [{'CDGO_DIST': '900000'}] + self.ubigeos['districts'] 
+        else:
+            districts = self.get_district_codes() + [{'CDGO_DIST': '900000'}]
+
+        random.shuffle(districts)
         for dist in districts:
             cod_dist = dist['CDGO_DIST']
             # if self.col_summary.find_one({'cod_dist':cod_dist}) is  None:
@@ -113,6 +122,8 @@ class EG2021Spider(scrapy.Spider):
 
 
     def get_congreso(self):
+        self.col_congreso.delete_many({})
+
         for i in range(1, 28):
             slug = str(i).zfill(2)
             url = f"https://api.resultados.eleccionesgenerales2021.pe/results/11/D440{slug}?name=param"
@@ -218,24 +229,22 @@ class EG2021Spider(scrapy.Spider):
         self.client = pymongo.MongoClient(self.mongo_cs)
         self.bd = self.client['eg2021']
         self.col_locales = self.bd['locales']
-
-        bd_utils.create_index('scraping_idx', ['CCODI_LOCAL'], self.col_locales)
-        bd_utils.create_index('scraping_idx2', ['CCODI_UBIGEO'], self.col_locales)
-
         self.col_mesas = self.bd['mesas']
-        bd_utils.create_index('scraping_idx', ['dist_ubi', 'cod_local'], self.col_mesas)
-        
         self.col_summary = self.bd['summary']
-        bd_utils.create_index('scraping_idx2', ['cod_dist'], self.col_summary)
-        bd_utils.create_index('processing_indexx', ['scraped_at', 'is_old'], self.col_summary)
-
         self.col_data = self.bd['resultados']
-        bd_utils.create_index('scraping_idx2', ['cod_mesa'], self.col_data)
-
         self.col_congreso = self.bd['congreso']
-        bd_utils.create_index('scraping_idx2', ['is_old'], self.col_congreso)
-
         self.col_congreso_names = self.bd['congresonames']
+        try:
+            bd_utils.create_index('scraping_idx', ['CCODI_LOCAL'], self.col_locales)
+            bd_utils.create_index('scraping_idx2', ['CCODI_UBIGEO'], self.col_locales)
+            bd_utils.create_index('scraping_idx', ['dist_ubi', 'cod_local'], self.col_mesas)
+            bd_utils.create_index('scraping_idx2', ['cod_dist'], self.col_summary)
+            bd_utils.create_index('processing_indexx', ['scraped_at', 'is_old'], self.col_summary)
+            bd_utils.create_index('scraping_idx2', ['is_old'], self.col_congreso)        
+            bd_utils.create_index('scraping_idx2', ['cod_mesa'], self.col_data)
+        except:
+            pass
+
 
 def parse():
     import pandas as pd

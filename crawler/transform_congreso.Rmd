@@ -113,6 +113,7 @@ prop_nacionales <-
     ) %>% 
     distinct() %>% 
     arrange(desc(prop_validos_partido))
+prop_nacionales
 sum(prop_nacionales$prop_validos_partido)
 ```
 ```{r}
@@ -225,7 +226,20 @@ congreso_total <-
         conteo = POR_ACTAS_PROCESADAS,
         nombre = str_to_title(nombre)
     ) %>% 
-    select(region, nombre, candidato_id, partido, partido_id, nro, color, total_votos_partido = TOTAL_VOTOS, hora, conteo, voto_preferencial) #%>% 
+    select(region, nombre, candidato_id, partido, partido_id, nro, color, total_votos_partido = TOTAL_VOTOS, hora, conteo, voto_preferencial )
+
+congreso_total <- 
+    congreso_total %>% 
+        inner_join(
+        congreso_total %>% 
+            group_by(partido) %>% 
+            summarise(total_votos_congreso = sum(unique(total_votos_partido))) %>% 
+            inner_join(select(prop_nacionales %>% ungroup(), total_partido, partido), by = "partido") %>% 
+            mutate(voto_fantasma = total_partido - total_votos_congreso) %>% 
+            select(partido, voto_fantasma),
+        by = "partido"
+    )
+
 
 congreso_total %>% 
     jsonlite::toJSON(., pretty = T) %>% write("../public/data/congreso_total.json")
