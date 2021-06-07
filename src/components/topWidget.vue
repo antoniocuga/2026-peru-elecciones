@@ -20,8 +20,8 @@
 
             <div class="col-12 col-md-6 d-flex align-self-center  text-center">
               <div class="card-resultado">                              
-                <div class="text-center mt-2 mb-2 porcentaje">{{ topCandidatos[0].validos.toFixed(2) }} <span>%</span></div>
-                <div class="text-center mt-2 mb-2 votos-validos">{{ numeral(topCandidatos[1].votos).format('0,0') }} votos</div>
+                <div class="text-center mt-2 mb-2 porcentaje text-center">{{ topCandidatos[0].validos.toFixed(2) }} <span>%</span></div>
+                <div class="text-center mt-2 mb-2 votos-validos text-center">{{ numeral(topCandidatos[1].votos).format('0,0') }} votos</div>
               </div>
             </div>            
 
@@ -35,8 +35,8 @@
             
             <div class="col-12 col-md-6  align-self-center d-none d-md-flex text-center">
               <div class="card-resultado">
-                <div class="text-center mt-2 mb-2 porcentaje">{{ topCandidatos[1].validos.toFixed(2) }} <span>%</span></div>
-                <div class="text-center mt-2 mb-2 votos-validos">{{ numeral(topCandidatos[1].votos).format('0,0') }} votos</div>
+                <div class="text-center mt-2 mb-2 porcentaje text-center">{{ topCandidatos[1].validos.toFixed(2) }} <span>%</span></div>
+                <div class="text-center mt-2 mb-2 votos-validos text-center">{{ numeral(topCandidatos[1].votos).format('0,0') }} votos</div>
               </div>
             </div>
 
@@ -48,8 +48,8 @@
 
             <div class="col-12 col-md-6 d-flex align-self-center d-block d-md-none text-center">
               <div class="card-resultado">
-                <div class="text-center mt-2 mb-2 porcentaje">{{ topCandidatos[1].validos.toFixed(2) }} <span>%</span></div>
-                <div class="text-center mt-2 mb-2 votos-validos">{{ numeral(topCandidatos[1].votos).format('0,0') }} votos</div>
+                <div class="text-center mt-2 mb-2 porcentaje text-center">{{ topCandidatos[1].validos.toFixed(2) }} <span>%</span></div>
+                <div class="text-center mt-2 mb-2 votos-validos text-center">{{ numeral(topCandidatos[1].votos).format('0,0') }} votos</div>
               </div>
             </div>
 
