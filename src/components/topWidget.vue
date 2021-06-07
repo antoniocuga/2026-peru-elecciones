@@ -7,27 +7,54 @@
       </h3>
     </div>
     <div class="col-12" v-if="conteo">
-      <div class="row justify-content-center">
-        <div class="col-auto text-center" :key="c.candidato_id" v-for="(c, ix) in topCandidatos" >
-          <div>
-            <div class="mr-2"><img width="125px" :src="getImageCandidate(c.candidato_id)" /></div>
-          </div>
-          <div class="d-flex">
-            <div class="card-resultado">              
-              <div class="candidato-mapa">{{ c.candidato }}</div>
-              <div class="partido-mapa"><img width="25px" :src="getImagePartido(c.partido_id)" /> {{ c.partido }}</div>
-      
-              <div class="text-center mt-2 mb-2 porcentaje">{{ c.validos.toFixed(3) }} <span>%</span></div>
-      
-              <div class="puesto" v-if="ix == 0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-              </svg> En segunda vuelta</div>
-      
-              <div class="puesto" v-if="ix == 1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-              </svg> En segunda vuelta</div>
+      <div class="row justify-content-center widget-segunda-top">
+        <div class="col-6 text-center">
+          
+          <div class="row">
+
+            <div class="col-12 col-md-6">
+              <div class="mr-2"><img width="125px" :src="getImageCandidate(topCandidatos[0].candidato_id)" /></div>
+              <div class="candidato-mapa">{{ topCandidatos[0].candidato }}</div>
+              <div class="partido-mapa"><img width="25px" :src="getImagePartido(topCandidatos[0].partido_id)" /> {{ topCandidatos[0].partido }}</div>
             </div>
+
+            <div class="col-12 col-md-6 d-flex align-self-center  text-center">
+              <div class="card-resultado">                              
+                <div class="text-center mt-2 mb-2 porcentaje">{{ topCandidatos[0].validos.toFixed(2) }} <span>%</span></div>
+                <div class="text-center mt-2 mb-2 votos-validos">{{ numeral(topCandidatos[1].votos).format('0,0') }} votos</div>
+              </div>
+            </div>            
+
           </div>
+
+        </div>
+        <div class="col-6 text-center">
+          
+          <div class="row">
+
+            
+            <div class="col-12 col-md-6  align-self-center d-none d-md-flex text-center">
+              <div class="card-resultado">
+                <div class="text-center mt-2 mb-2 porcentaje">{{ topCandidatos[1].validos.toFixed(2) }} <span>%</span></div>
+                <div class="text-center mt-2 mb-2 votos-validos">{{ numeral(topCandidatos[1].votos).format('0,0') }} votos</div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="mr-2"><img width="125px" :src="getImageCandidate(topCandidatos[1].candidato_id)" /></div>
+              <div class="candidato-mapa">{{ topCandidatos[1].candidato }}</div>
+              <div class="partido-mapa"><img width="25px" :src="getImagePartido(topCandidatos[1].partido_id)" /> {{ topCandidatos[1].partido }}</div>              
+            </div>
+
+            <div class="col-12 col-md-6 d-flex align-self-center d-block d-md-none text-center">
+              <div class="card-resultado">
+                <div class="text-center mt-2 mb-2 porcentaje">{{ topCandidatos[1].validos.toFixed(2) }} <span>%</span></div>
+                <div class="text-center mt-2 mb-2 votos-validos">{{ numeral(topCandidatos[1].votos).format('0,0') }} votos</div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </div>
@@ -36,12 +63,14 @@
 </template>
 
 <script>
+  import numeral from 'numeral'
   import { mapState } from 'vuex'
   import { filter, map, orderBy, groupBy, uniq } from 'lodash'
 
   export default {
     name: "topWidget",
     methods: {
+      numeral,
       getImageCandidate(c) {
         try {
           return require(`../assets/candidatos/${c}.png`)
@@ -59,9 +88,9 @@
     },
     computed: {     
       ...mapState({
-        candidatos: state => state.candidatos.todos,
-        regionSeleccionada: state => state.candidatos.regionSeleccionada,
-        partidoSeleccionado: state => state.candidatos.partidoSeleccionado,
+        candidatos: state => state.candidatos.todosSegunda,
+        regionSeleccionada: state => state.candidatos.regionSeleccionadaSegunda,
+        partidoSeleccionado: state => state.candidatos.partidoSeleccionadoSegunda,
       }),
       conteo() {
         return parseFloat(uniq(map(this.topCandidatos, 'conteo')).join(""))
