@@ -54,7 +54,7 @@
 
         </b-tab>
         <b-tab title="Por partidos">
-          <div class="row mb-2 mt-2" :key="partido.partido_id" v-for="partido in eleccion_region.eleccion2016.partidos">
+          <div class="row mb-2 mt-2" :key="partido.partido_id" v-for="partido in elecciones_parse">
             <div class="col-8 datos-eleccion"><img width="25px" :src="getImagePartido(partido.partido_id)" /> {{ partido.partido }}</div>
             <div class="text-right col-4"><span>{{numeral(partido.total_votos).format('0,0')}}</span></div>
           </div>
@@ -67,7 +67,7 @@
 <script>
   import numeral from 'numeral'
   import { mapState } from 'vuex'
-  import { find } from 'lodash'
+  import { find, orderBy } from 'lodash'
 
   export default {
     name: "elecciones2016",
@@ -78,10 +78,13 @@
     },    
     computed: {
       ...mapState({        
-        regionSeleccionada: state => state.candidatos.regionSeleccionada,
+        regionSeleccionada: state => state.candidatos.regionSeleccionadaSegunda,
       }),
       elecciones_2016() {
         return require('../data/departamentos.json')
+      },
+      elecciones_parse() {
+        return orderBy(this.eleccion_region.eleccion2016.partidos, ['total_votos'], ['desc'])
       },
       eleccion_region() {
         if(this.elecciones_2016) {

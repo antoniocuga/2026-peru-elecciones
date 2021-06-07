@@ -617,7 +617,7 @@
           })
       },
       load_tooltip(dep, f) {
-        console.log(dep, f)
+
         let candidatos = ``
         let distrito = f
         let table = ``
@@ -633,7 +633,7 @@
           if(dep.candidatos) {
             let list = orderBy(dep.candidatos, ['total_departamento'],['desc'])
 
-            let solo_cuatro = list.slice(0, 4)
+            let solo_cuatro = list.slice(0, 2)
 
             map(solo_cuatro, dp => {
               candidatos += `
@@ -670,7 +670,7 @@
               <div class="col-7 depa"><b>${distrito.properties.DISTRITO}</b> - ${distrito.properties.PROVINCIA}</div>
               <div class="col-5 text-right"><span class="badge badge-secondary">Conteo ONPE al ${dep.conteo }%</span></div>
             </div>`
-          let only_four = orderBy(dep.candidatos, ['validos'], ['desc']).slice(0, 4)
+          let only_four = orderBy(dep.candidatos, ['validos'], ['desc']).slice(0, 2)
 
 
           if(dep.conteo > 0) {

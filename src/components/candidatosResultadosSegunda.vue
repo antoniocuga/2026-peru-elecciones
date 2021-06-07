@@ -37,7 +37,7 @@
               <span class="diferencia badge">Votos</span>
             </div>          
           </div>
-          <div class="row candidate-info align-self-center mt-2 pb-1" :key="c.candidato_id" v-for="c in lista_candidatos.slice(0,6)">
+          <div class="row candidate-info align-self-center mt-2 pb-1" :key="c.candidato_id" v-for="c in lista_candidatos.slice(0,2)">
             <div class="col-2 pr-0 img-candidato pl-0">
               <img width="40px" :src="getImageCandidate(c.candidato_id)" />
             </div>
@@ -53,37 +53,6 @@
               <div class="text-center diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos).format('0,0') }}</div>
             </div>          
           </div>
-        </div>
-        <b-collapse v-model="open" id="collapse-1" class="col-12">
-          <div class="row candidate-info align-self-center mt-2 pb-1" :key="c.candidato_id" v-for="c in lista_candidatos.slice(6, candidatos.length)">
-            <div class="col-2 pr-0 img-candidato">
-              <img width="40px" :src="getImageCandidate(c.candidato_id)" />
-            </div>
-            <div class="col-5 pl-0">
-              <h4 class="candidato-mapa m-0">{{ c.candidato }}</h4>                        
-              <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
-            </div> 
-            <div class="col-2 porcentaje-resultado align-self-center text-center">
-              <div>{{c.validos}}%</div>               
-            </div>
-            <div class="col-3 votos-validos align-self-center text-center">
-              <div class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">{{ numeral(c.votos).format('0,0') }}</div>
-              <div class="text-center diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos).format('0,0') }}</div>
-            </div>          
-          </div>
-        </b-collapse>
-    
-        <div class="col-12 mt-3 button-more pl-0 pr-0">
-          <a v-if="open==false" @click="open=!open" class="d-block btn-light text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
-            </svg>
-          </a>
-          <a v-if="open==true" @click="open=!open" class="d-block btn-light text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
-            </svg>
-          </a>
         </div>
       </div>
     </div>
