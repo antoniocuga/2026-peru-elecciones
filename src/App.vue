@@ -21,6 +21,7 @@ export default {
   },
   created () {
     this.$store.dispatch('candidatos/getAllCandidatos')
+    this.$store.dispatch('candidatos/getAllCandidatosSegunda')
   },
 }
 </script>

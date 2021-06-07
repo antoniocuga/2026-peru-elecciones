@@ -51,6 +51,7 @@ export default {
   },
   getAllDistritosSegunda (cb, { dep_id }) {
     let candidatos = []
+    console.log(dep_id)
     if(dep_id) {
       axios
       .get(`https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021/data/${dep_id}.json`)

@@ -20,8 +20,8 @@
     </div>
     <div class="row">
       <div class="col-12 text-right">
-        <svg width="100%" :height="height" class="plan-vector-map" ref="svgmap">
-          <g ref="base"></g>
+        <svg width="100%" :height="height" class="plan-vector-map" ref="svgmap_segunda">
+          <g ref="base_segunda"></g>
           <g ref="departamentos"></g>
           <g ref="distritos"></g>
           <g ref="labels"></g>
@@ -102,7 +102,7 @@
       },
       partidoSeleccionado(v) {
         this.zoomed = false
-        let base = d3.select(this.$refs['svgmap'])
+        let base = d3.select(this.$refs['svgmap_segunda'])
 
         if(v.partido_id != 'TODOS') {
 
@@ -154,7 +154,7 @@
         this.transitionPath()
 
         if(v.region !='NACIONAL') {
-          this.getAllDistritos(v)
+          this.getAllDistritosSegunda(v)
 
           d3.selectAll('path.departamento-path').classed('inactive', true)
           d3.select(`path.${v.region}-path`).classed('inactive', true)
@@ -277,7 +277,7 @@
       ...mapActions('candidatos', [
         'updateRegionSeleccionadaSegunda',
         'updatePartidoSeleccionado',
-        'getAllDistritos'
+        'getAllDistritosSegunda'
       ]),
       resetPartidos() {
         this.zoomed = false
@@ -316,7 +316,7 @@
         }
       },
       transitionPath() {
-        let base = d3.select(this.$refs['svgmap'])
+        let base = d3.select(this.$refs['svgmap_segunda'])
         let center, scale
         
         if(this.regionSeleccionada.region != 'NACIONAL') {
@@ -395,7 +395,7 @@
       renderMapa() {
 
 
-        let base = d3.select(this.$refs['base'])
+        let base = d3.select(this.$refs['base_segunda'])
 
         this.bounds = d3.geoBounds(this.perugeo)
         
@@ -491,7 +491,7 @@
             .on("click", (event, f) => {
               let dep = find(this.departamentos, d => d.region == f)   
               if(window.innerWidth > 798 && this.zoomed == false && f != 'extranjero') {
-                this.updateRegionSeleccionada(dep)
+                this.updateRegionSeleccionadaSegunda(dep)
               }
             })
             .on("mouseover", (event, f) => {
@@ -553,7 +553,7 @@
       },
       render_distritos() {
 
-        let base = d3.select(this.$refs['base'])
+        let base = d3.select(this.$refs['base_segunda'])
         let color
 
         if(this.partidoSeleccionado.partido_id != 'TODOS') {
