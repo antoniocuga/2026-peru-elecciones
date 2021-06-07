@@ -177,7 +177,7 @@
       ...mapState({
         candidatos: state => state.candidatos.todosSegunda,
         regionSeleccionada: state => state.candidatos.regionSeleccionadaSegunda,
-        partidoSeleccionado: state => state.candidatos.partidoSeleccionado,
+        partidoSeleccionado: state => state.candidatos.partidoSeleccionadoSegunda,
         distritos: state => state.candidatos.distritosSegunda,
       }),
       partidos() {
@@ -276,12 +276,12 @@
     methods: {
       ...mapActions('candidatos', [
         'updateRegionSeleccionadaSegunda',
-        'updatePartidoSeleccionado',
+        'updatePartidoSeleccionadoSegunda',
         'getAllDistritosSegunda'
       ]),
       resetPartidos() {
         this.zoomed = false
-        this.updatePartidoSeleccionado({
+        this.updatePartidoSeleccionadoSegunda({
           partido_id: "TODOS",
           partido: "VER POR PARTIDO",
         })
@@ -295,7 +295,7 @@
       },
       show_partido(partido) {
         this.updateRegionSeleccionadaSegunda({region:'NACIONAL', departamento:'VER REGIÓN'})
-        this.updatePartidoSeleccionado(partido)
+        this.updatePartidoSeleccionadoSegunda(partido)
       },
       show_departamento(id) {
         let dep = find(this.departamentos, d => d.region == id)

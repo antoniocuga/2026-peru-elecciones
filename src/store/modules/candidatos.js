@@ -18,6 +18,10 @@ const state = () => ({
   partidoSeleccionado: {
     partido_id: "TODOS",
     partido: "VER POR PARTIDO",
+  },
+  partidoSeleccionadoSegunda: {
+    partido_id: "TODOS",
+    partido: "VER POR PARTIDO",
   }
 })
 
@@ -71,6 +75,9 @@ const actions = {
   },
   updatePartidoSeleccionado ({ commit }, partido) {
       commit('setPartidoSeleccionado', partido)
+  },
+  updatePartidoSeleccionadoSegunda ({ commit }, partido) {
+      commit('setPartidoSeleccionadoSegunda', partido)
   }
 }
 
@@ -99,6 +106,9 @@ const mutations = {
   },
   setPartidoSeleccionado(state, partido) {
     state.partidoSeleccionado = partido
+  },
+  setPartidoSeleccionadoSegunda(state, partido) {
+    state.partidoSeleccionadoSegunda = partido
   }
 }
 

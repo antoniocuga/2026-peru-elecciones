@@ -58,7 +58,7 @@ export default {
     ...mapState({
       candidatos: state => state.candidatos.todosSegunda,
       regionSeleccionadaSegunda: state => state.candidatos.regionSeleccionadaSegunda,
-      partidoSeleccionado: state => state.candidatos.partidoSeleccionado,
+      partidoSeleccionado: state => state.candidatos.partidoSeleccionadoSegunda,
     }),
     data() {
       return require('../data/departamentos.json')
