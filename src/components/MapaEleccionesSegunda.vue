@@ -1,14 +1,17 @@
 <template>
   <div class="col-12 col-sm-12 resultados2021">
+      <div class="top-candidates pb-3 pt-3">
+        <topWidget />
+      </div>
       <div class="row pt-3">
         <div class="col-12 col-sm-12 col-md-4 d-md-block d-none mapa-resultados-wrapper">
-          <candidatosResultados :candidatos="filteredData" />
+          <candidatosResultadosSegunda :candidatos="filteredData" />
         </div>
         <div class="col-12 col-sm-12 col-md-8 mapa-resultados-wrapper">
-          <MapaDepartamentos :lista_candidatos="filteredData" />
+          <MapaDepartamentosSegunda :lista_candidatos="filteredData" />
         </div>
         <div class="col-12 col-sm-12 d-block d-md-none mapa-resultados-wrapper">
-          <candidatosResultados :candidatos="filteredData" />
+          <candidatosResultadosSegunda :candidatos="filteredData" />
         </div>
       </div>
   </div>    
@@ -17,21 +20,23 @@
 <script>
 
 import { mapState } from 'vuex'
-import candidatosResultados from '../components/candidatosResultados.vue'
-import MapaDepartamentos from '../components/MapaDepartamentos.vue'
+import topWidget from '../components/topWidget.vue'
+import candidatosResultadosSegunda from '../components/candidatosResultadosSegunda.vue'
+import MapaDepartamentosSegunda from '../components/MapaDepartamentosSegunda.vue'
 import { filter } from 'lodash'
 
 export default {
-  name: 'MapaEleciones',
+  name: 'MapaEleccionesSegunda',
   props: {
     encuestas: Array
   },
   components: {
-    MapaDepartamentos,
-    candidatosResultados
+    MapaDepartamentosSegunda,
+    candidatosResultadosSegunda,
+    topWidget
   },
   created () {
-    this.$store.dispatch('candidatos/getAllCandidatos')
+    this.$store.dispatch('candidatos/getAllCandidatosSegunda')
   },
   methods: {
     getImageCandidate(c) {
@@ -51,21 +56,21 @@ export default {
   },
   computed: {
     ...mapState({
-      candidatos: state => state.candidatos.todos,
-      regionSeleccionada: state => state.candidatos.regionSeleccionada,
+      candidatos: state => state.candidatos.todosSegunda,
+      regionSeleccionadaSegunda: state => state.candidatos.regionSeleccionadaSegunda,
       partidoSeleccionado: state => state.candidatos.partidoSeleccionado,
     }),
     data() {
-      return require('../data/departamentos_primera_vuelta.json')
+      return require('../data/departamentos.json')
     },
     filteredData() {
 
-      if(this.regionSeleccionada.region != 'NACIONAL' && this.partidoSeleccionado.partido_id == 'TODOS') {
+      if(this.regionSeleccionadaSegunda.region != 'NACIONAL' && this.partidoSeleccionado.partido_id == 'TODOS') {
 
-        return this.regionSeleccionada.candidatos
+        return this.regionSeleccionadaSegunda.candidatos
       }
 
-      if(this.regionSeleccionada.region == 'NACIONAL' && this.partidoSeleccionado.partido_id != 'TODOS') {
+      if(this.regionSeleccionadaSegunda.region == 'NACIONAL' && this.partidoSeleccionado.partido_id != 'TODOS') {
 
         return filter(this.candidatos, c => c.partido_id == this.partidoSeleccionado.partido_id)
       }

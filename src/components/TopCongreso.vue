@@ -111,7 +111,7 @@
         congresistas: state => state.candidatos.congresistas
       }),
       conteo() {
-        return parseFloat(uniq(map(this.congresistas_parse, 'conteo')).join(""))
+        return parseFloat(uniq(map(this.congresistas_parse, 'conteo_general')).join(""))
       },
       fecha_hora() {
         return uniq(map(this.congresistas_parse, 'hora')).join("")

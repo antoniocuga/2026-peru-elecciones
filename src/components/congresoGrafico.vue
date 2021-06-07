@@ -267,10 +267,11 @@
       },
       congresistas_partido() {
         return orderBy(map(groupBy(this.congresistas, 'partido_id'), (items, p) => {
+          let total_partido = sum(uniq(map(items, 'total_votos_partido'))) + sum(uniq(map(items, 'voto_fantasma'))) 
           return {
             partido_id: p,
             partido: uniq(map(items, 'partido')).join(""),
-            total_votos_partido: sum(uniq(map(items, 'total_votos_partido'))),
+            total_votos_partido: total_partido,
             seats: items.length,
             congresistas: items, 
             color: uniq(map(items, 'color')).join("")

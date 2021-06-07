@@ -71,7 +71,7 @@
   import { find, filter, map, maxBy, minBy, orderBy, sumBy, groupBy, uniq } from 'lodash'  
 
   export default {
-    name: "MapaDepartamentos",
+    name: "MapaDepartamentosSegunda",
     data() {
       return {
         openMenu: false,
@@ -175,10 +175,10 @@
     },
     computed: {
       ...mapState({
-        candidatos: state => state.candidatos.todos,
-        regionSeleccionada: state => state.candidatos.regionSeleccionada,
+        candidatos: state => state.candidatos.todosSegunda,
+        regionSeleccionada: state => state.candidatos.regionSeleccionadaSegunda,
         partidoSeleccionado: state => state.candidatos.partidoSeleccionado,
-        distritos: state => state.candidatos.distritos,
+        distritos: state => state.candidatos.distritosSegunda,
       }),
       partidos() {
         return orderBy(map(groupBy(this.candidatos, 'partido_id'), (item, partido_id) => {
@@ -193,6 +193,7 @@
       },
       distritos_parse() {
         let filtered = this.distritos
+        console.log(this.distritos)
         if(this.partidoSeleccionado.partido_id != 'TODOS' && this.regionSeleccionada.region == 'NACIONAL') {
           filtered = filter(this.distritos, ['partido_id', this.partidoSeleccionado.partido_id])
         }
@@ -242,7 +243,7 @@
       },
       departamentos() {
         let filtered = filter(this.candidatos, c => c.candidato_id != '' && c.region != 'total')
-
+        
         return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
           
           //let dep = find(this.perugeo.features, d => d.properties.dep_id == region)
@@ -274,7 +275,7 @@
     },
     methods: {
       ...mapActions('candidatos', [
-        'updateRegionSeleccionada',
+        'updateRegionSeleccionadaSegunda',
         'updatePartidoSeleccionado',
         'getAllDistritos'
       ]),
@@ -287,18 +288,18 @@
       },
       resetPresidente() {
         this.zoomed = false
-        this.updateRegionSeleccionada({region:'NACIONAL', departamento:'VER REGIÓN'})
+        this.updateRegionSeleccionadaSegunda({region:'NACIONAL', departamento:'VER REGIÓN'})
       },
       openDepartamentos() {
         this.openMenu = !this.openMenu        
       },
       show_partido(partido) {
-        this.updateRegionSeleccionada({region:'NACIONAL', departamento:'VER REGIÓN'})
+        this.updateRegionSeleccionadaSegunda({region:'NACIONAL', departamento:'VER REGIÓN'})
         this.updatePartidoSeleccionado(partido)
       },
       show_departamento(id) {
         let dep = find(this.departamentos, d => d.region == id)
-        this.updateRegionSeleccionada(dep)
+        this.updateRegionSeleccionadaSegunda(dep)
       },
       getImageCandidate(c) {
         try {
@@ -444,7 +445,7 @@
               let dep = find(this.departamentos, d => d.region == f.properties.dep_id)   
 
               if(window.innerWidth > 798 && this.zoomed == false) {
-                this.updateRegionSeleccionada(dep)
+                this.updateRegionSeleccionadaSegunda(dep)
               }
               
             })
@@ -452,11 +453,11 @@
 
               if(window.innerWidth > 798 && this.zoomed == false) {
                 let dep = find(this.departamentos, d => d.region == f.properties.dep_id)
-
+                
                 if(this.partidoSeleccionado.partido_id != 'TODOS') {
                   dep = find(this.departamentos_parse, d => d.region == f.properties.dep_id)
                 }
-
+                
                 let table = this.load_tooltip(dep, f)
                 
                 this.tooltip.html(`${table}`)	 
@@ -592,7 +593,7 @@
           .on("mouseover", (event, f) => {
             if(window.innerWidth > 798) {
               let dep = find(this.distritos_parse, d => d.ubigeo == f.properties.IDDIST)
-
+              console.log(this.distritos_parse)
               let table = this.load_tooltip(dep, f)
               this.tooltip.html(`${table}`)	 
                 .style("left", (event.pageX) + "px")
@@ -616,10 +617,11 @@
           })
       },
       load_tooltip(dep, f) {
+        console.log(dep, f)
         let candidatos = ``
         let distrito = f
         let table = ``
-        let name = f.properties ? f.properties.NAME_1 : dep.departamento
+        let name = f.properties ? f.properties.NAME_1 : dep.departamento        
         let conteo = parseFloat(uniq(map(dep.candidatos, 'conteo')).join(""))
         if(dep && this.zoomed==false) {
           table = `

@@ -573,7 +573,7 @@ p {
       }
 
       span.badge {
-        max-width: 120px;
+        max-width: 140px;
         flex: auto;
         font-size: 12px;
         font-weight: 600;
@@ -713,7 +713,8 @@ p {
       width: 20px;
       height: 20px;
       margin-right: 5px;
-      background: #333;
+      fill: #333;
+      stroke: #333;
     }
   }
 
@@ -1748,7 +1749,7 @@ p {
 
   .porcentaje {
     display: block;
-    width: 95px;
+    width: 110px;
     margin: 0 auto;
     font-weight: bold;
     font-size: 24px;

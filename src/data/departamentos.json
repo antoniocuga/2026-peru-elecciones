@@ -13,49 +13,9 @@
           "total_votos": "8152834"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "2874940"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "3228661"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "1069360"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "894278"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "613173"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "203103"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "200012"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "75870"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "65673"
         }
       ]
     }
@@ -75,51 +35,11 @@
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "222171"
-        },
-        {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "61765"
-        },
+        },        
         {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "153850"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "39187"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "45823"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "4289"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "7538"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "6823"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "3381"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "38241"
         }
       ]
     }
@@ -141,49 +61,9 @@
           "total_votos": "2037761"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "601482"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "1615104"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "383768"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "330311"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "35762"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "64741"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "59320"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "24606"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "38241"
         }
       ]
     }
@@ -205,49 +85,9 @@
           "total_votos": "2305333"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "82171"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "77707"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "22369"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "24130"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "4723"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "5441"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "5515"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "1829"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "1426"
         }
       ]
     }
@@ -263,58 +103,16 @@
       "habiles": "583777",
       "emitidos": "510406",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "194463"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "76457"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "69137"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "48776"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "31322"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "3317"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "4499"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "4940"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "1160"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "613"
         }
-      
       ]
     }
   },
@@ -336,50 +134,10 @@
           "total_votos": "184918"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "197452"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "210224"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "86428"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "26603"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "29287"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "18604"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "6730"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "6171"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "2771"
-        }      
+        }    
       ]
     }    
   },
@@ -400,51 +158,10 @@
           "total_votos": "24310"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "31382"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "27853"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "7386"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "3659"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "1537"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "1811"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "1061"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "416"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "328"
         }
-      
       ]
     }
   },
@@ -466,51 +183,10 @@
           "total_votos": "40071"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "78500"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "29859"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "18455"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "5929"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "9307"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "4807"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "1339"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "1740"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "436"
         }
-      
       ]
     }
   },
@@ -525,7 +201,6 @@
       "habiles": "831235",
       "emitidos": "657455",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
@@ -535,47 +210,7 @@
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "80069"
-        },
-        {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "109837"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "27605"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "30859"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "3569"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "6821"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "29000"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "2194"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "1245"
-        }      
+        }
       ]
     }
   },
@@ -590,58 +225,16 @@
       "habiles": "1292488",
       "emitidos": "1066047",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "432443"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "91024"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "121283"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "59338"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "123725"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "22633"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "9700"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "10294"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "2111"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "2381"
         }
-      
       ]
     }
   },
@@ -656,58 +249,16 @@
       "habiles": "889355",
       "emitidos": "740988",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "313728"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "67615"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "98741"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "46138"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "60149"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "16924"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "6272"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "5057"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "1489"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "4490"
         }
-      
       ]
     }
   },
@@ -722,58 +273,16 @@
       "habiles": "1266557",
       "emitidos": "1048134",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "456685"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "127952"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "104844"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "46595"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "49037"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "25569"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "7237"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "8236"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "2718"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "1493"
         }
-      
       ]
     }
   },
@@ -788,58 +297,16 @@
       "habiles": "156120",
       "emitidos": "130241",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "70029"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "11825"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "13189"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "4933"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "4973"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "635"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "1103"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "1515"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "217"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "120"
         }
-      
       ]
     }
   },
@@ -861,51 +328,10 @@
           "total_votos": "62083"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "31681"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "17026"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "8166"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "5175"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "13590"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "1043"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "1635"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "2584"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "177"
         }
-      
       ]
     }
   },
@@ -927,51 +353,10 @@
           "total_votos": "136439"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "51859"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "81826"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "24239"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "19134"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "3296"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "3535"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "7258"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "2726"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "511"
         }
-      
       ]
     }
   },
@@ -993,51 +378,10 @@
           "total_votos": "105050"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "33668"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "29155"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "8814"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "7684"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "1969"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "2537"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "2848"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "7198"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "364"
         }
-      
       ]
     }
     
@@ -1054,58 +398,16 @@
       "habiles": "566666",
       "emitidos": "446699",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "166236"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "72618"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "43550"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "23300"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "20188"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "9440"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "3437"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "2737"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "1063"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "419"
         }
-      
       ]
     }
   },
@@ -1120,63 +422,18 @@
       "habiles": "95538",
       "emitidos": "77276",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "26656"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "15050"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "5623"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "3912"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "2943"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "2524"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "850"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "1532"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "950"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "79"
         }
-      
       ]
     }
-
-
-
   },
   {
     "departamento": "puno",
@@ -1189,58 +446,16 @@
       "habiles": "858504",
       "emitidos": "733927",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "135239"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "227325"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "50532"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "24140"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "11072"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "117669"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "14722"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "5520"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "2009"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "1202"
         }
-      
       ]
     }
   },
@@ -1262,51 +477,10 @@
           "total_votos": "82138"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "133899"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "15741"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "7306"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "5861"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "3536"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "2266"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "1785"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "837"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "349"
         }
-      
       ]
     }
   },
@@ -1321,58 +495,16 @@
       "habiles": "875674",
       "emitidos": "707595",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "248217"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "128257"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "121109"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "27481"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "18561"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "7255"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "9131"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "7794"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "2656"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "933"
         }
-      
       ]
     }
   },
@@ -1394,51 +526,10 @@
           "total_votos": "128818"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "276143"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "57386"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "62621"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "15657"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "33414"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "9663"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "4032"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "3031"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "1216"
         }
-      
       ]
     }
     
@@ -1454,58 +545,16 @@
       "habiles": "525051",
       "emitidos": "392258",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "112414"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "86717"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "40000"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "17761"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "10852"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "2520"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "3617"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "12456"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "1579"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "569"
         }
-      
       ]
     }
   },
@@ -1520,58 +569,16 @@
       "habiles": "274440",
       "emitidos": "201379",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "43029"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "79295"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "14110"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "3872"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "2765"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "2497"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "1238"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "2129"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "302"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "200"
         }
-      
       ]
     }
   },
@@ -1586,58 +593,16 @@
       "habiles": "284436",
       "emitidos": "218912",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "50822"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "82443"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "9214"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "8329"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "3810"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "6818"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "1094"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "1063"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "315"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "142"
         }
-      
       ]
     }
   },
@@ -1652,58 +617,16 @@
       "habiles": "185057",
       "emitidos": "140663",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "48083"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "22615"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "24523"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "5424"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "5280"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "852"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "1489"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "1836"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "406"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "146"
         }
-      
       ]
     }
   },
@@ -1718,58 +641,16 @@
       "habiles": "1009775",
       "emitidos": "779642",
       "partidos":[
-
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "total_votos": "196086"
         },
         {
-          "partido_id": "frente-amplio",
-          "partido": "Frente Amplio",
-          "total_votos": "62205"
-        },
-        {
           "partido_id": "peruanos-por-el-kambio",
           "partido": "Peruanos por el Kambio",
           "total_votos": "52002"
-        },
-        {
-          "partido_id": "accion-popular",
-          "partido": "Acción Popular",
-          "total_votos": "26239"
-        },
-        {
-          "partido_id": "alianza-popular",
-          "partido": "Alianza Popular",
-          "total_votos": "15715"
-        },
-        {
-          "partido_id": "democracia-directa",
-          "partido": "Democracia Directa",
-          "total_votos": "248667"
-        },
-        {
-          "partido_id": "frente-esperanza",
-          "partido": "Frente Esperanza",
-          "total_votos": "3155"
-        },
-        {
-          "partido_id": "peru-posible",
-          "partido": "Perú Posible",
-          "total_votos": "5397"
-        },
-        {
-          "partido_id": "progresando-peru",
-          "partido": "Progresando Peru",
-          "total_votos": "1052"
-        },
-        {
-          "partido_id": "partido-politico-orden",
-          "partido": "Partido Politico Orden",
-          "total_votos": "753"
         }
-      
       ]
     }
   }

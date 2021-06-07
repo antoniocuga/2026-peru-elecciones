@@ -76,7 +76,7 @@
           {
             titulo: "Forsyth acumuló patrimonio vehicular en base a donaciones",
             url: "https://ojo-publico.com/2450/forsyth-acumulo-patrimonio-vehicular-en-base-donaciones",
-            imagen: "https://ojo-publico.com/sites/default/files/styles/imagen_544x306/public/2021-01/george_Forsyth_victoria_nacional_portada.jpg?h=bb83cc06&itok=DFO0j_V7",
+            imagen: "https://ojo-publico.com/sites/default/files/2021-01/george_Forsyth_victoria_nacional_portada.jpg",
             
           }
         ]
