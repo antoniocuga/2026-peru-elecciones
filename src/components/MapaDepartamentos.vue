@@ -20,13 +20,13 @@
     </div>
     <div class="row">
       <div class="col-12 text-right">
-        <svg width="100%" :height="height" class="plan-vector-map" ref="svgmap">
+        <svg width="100%" :height="height" class="plan-vector-map" ref="svgmap" id="mapa_primera">
           <g ref="base"></g>
           <g ref="departamentos"></g>
           <g ref="distritos"></g>
           <g ref="labels"></g>
         </svg>
-        <div class="regiones-extra" :class="{'show': regionSeleccionada.region == 'NACIONAL'}">
+        <div id="primera_extra" class="regiones-extra" :class="{'show': regionSeleccionada.region == 'NACIONAL'}">
           <div><span class="callao-path departamento-path"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
             <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z"/>
@@ -156,8 +156,8 @@
         if(v.region !='NACIONAL') {
           this.getAllDistritos(v)
 
-          d3.selectAll('path.departamento-path').classed('inactive', true)
-          d3.select(`path.${v.region}-path`).classed('inactive', true)
+          d3.selectAll('#mapa_primera path.departamento-path').classed('inactive', true)
+          d3.select(`#mapa_primera path.${v.region}-path`).classed('inactive', true)
 
           d3.selectAll('text.departamento-label').classed('active', false)
           d3.select(`text.${v.region}-label`).classed('active', true)
@@ -269,7 +269,7 @@
         return require(`../data/mapas/perugeo.json`)
       },
       tooltip() {
-        return d3.select("div.tooltip")
+        return d3.select("#tooltip_primera")
       }
     },
     methods: {
@@ -480,7 +480,7 @@
               }
             })
 
-          d3.selectAll('span.departamento-path')
+          d3.selectAll('#primera_extra span.departamento-path')
             .data(['callao', 'lima', 'extranjero'])
             .attr("style", (f) => {
               let dep = find(this.departamentos, d => d.region == f)

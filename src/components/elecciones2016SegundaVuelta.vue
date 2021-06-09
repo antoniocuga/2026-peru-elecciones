@@ -3,9 +3,9 @@
     <div class="col-10 titulo pr-0">
       <div class="pt-3 pb-3 pr-0 pl-2">
 
-        <h3 v-if="eleccion_region.departamento == 'NACIONAL'">NACIONAL</h3>
-        <h3 v-if="eleccion_region.departamento != 'NACIONAL'">{{ regionSeleccionada.departamento }}</h3>
-        <h2 @click="openResultados=!openResultados" v-if="eleccion_region">Resultados de elecciones 2016 (Segunda vuelta)</h2>
+        <h3 class="comparador-title"><b>COMPARADOR CON COMICIOS DEL 2016</b></h3>
+        <h2 @click="openResultados=!openResultados" v-if="eleccion_region">Segunda vuelta</h2>
+        <h3 class="mt-3 comparador-region" v-if="eleccion_region.departamento != 'NACIONAL'">{{ regionSeleccionada.departamento }}</h3>
       </div>
     </div>
     <div class="col-2 pl-0 text-right align-self-center">
@@ -18,6 +18,12 @@
     </div>
     <b-collapse v-model="openResultados" id="resultados2016" class="col-12">
       <b-tabs>
+        <b-tab title="Por candidatos">
+          <div class="row mb-2 mt-2" :key="partido.partido_id" v-for="partido in elecciones_parse">
+            <div class="col-8 datos-eleccion"><img width="25px" :src="getImagePartido(partido.partido_id)" /> {{ partido.partido }}</div>
+            <div class="text-right col-4"><span>{{numeral(partido.total_votos).format('0,0')}}</span></div>
+          </div>
+        </b-tab>
         <b-tab class="" title="Datos de la votacion">
           <div class="row mt-3 mb-3">
             <div class="col-8 datos-eleccion text-left">
@@ -53,12 +59,6 @@
           </div>        
 
         </b-tab>
-        <b-tab title="Por partidos">
-          <div class="row mb-2 mt-2" :key="partido.partido_id" v-for="partido in elecciones_parse">
-            <div class="col-8 datos-eleccion"><img width="25px" :src="getImagePartido(partido.partido_id)" /> {{ partido.partido }}</div>
-            <div class="text-right col-4"><span>{{numeral(partido.total_votos).format('0,0')}}</span></div>
-          </div>
-        </b-tab>
       </b-tabs>
     </b-collapse>
   </div>
@@ -73,7 +73,7 @@
     name: "elecciones2016",
     data() {
       return {
-        openResultados: false
+        openResultados: true
       }
     },    
     computed: {

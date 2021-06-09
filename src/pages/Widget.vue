@@ -6,7 +6,7 @@
       </div>
       <div class="col-12 top-candidates pt-3 pb-3">
         <div class="encuesta-wrapper ">
-          <topWidgetHome />
+          <topWidget />
         </div>      
       </div>
       <div class="col-12 top-candidates pt-3 pb-3">
@@ -21,13 +21,13 @@
 <script>
   
   import SharingOptions from '../components/SharingOptions.vue'
-  import topWidgetHome from '../components/topWidgetHome.vue'
+  import topWidget from '../components/topWidget.vue'
 
   export default  {
     name: "Widget",
     components: {
       SharingOptions,
-      topWidgetHome
+      topWidget
     },
     created () {
       this.$store.dispatch('candidatos/getAllCandidatos')

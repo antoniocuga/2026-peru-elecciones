@@ -38,7 +38,7 @@
             </div>          
           </div>
           <div class="row candidate-info align-self-center mt-2 pb-1" :key="c.candidato_id" v-for="c in lista_candidatos.slice(0,2)">
-            <div class="col-2 pr-0 img-candidato pl-0">
+            <div class="col-2 pr-0 img-candidato">
               <img width="40px" :src="getImageCandidate(c.candidato_id)" />
             </div>
             <div class="col-5 pl-0 pr-0">
@@ -91,8 +91,8 @@
     computed: {
       ...mapState({        
         regionSeleccionadaSegunda: state => state.candidatos.regionSeleccionadaSegunda,
-        todosCandidatos: state => state.candidatos.todos,
-        todosDistritos: state => state.candidatos.distritos
+        todosCandidatos: state => state.candidatos.todosSegunda,
+        todosDistritos: state => state.candidatos.distritosSegunda
       }),
       perugeo() {
         return require(`../data/mapas/perugeo.json`)
@@ -176,18 +176,18 @@
     },
     methods: {
       ...mapActions('candidatos', [
-        'updateRegionSeleccionada'
+        'updateRegionSeleccionadaSegunda'
       ]),
       numeral,
       resetMapa() {
-        this.updateRegionSeleccionada({region:'NACIONAL', departamento:'VER REGIÓN'})
+        this.updateRegionSeleccionadaSegunda({region:'NACIONAL', departamento:'VER REGIÓN'})
         this.distritoSeleccionado = {
           distrito: "Seleccionar distrito"
         }
       },
       show_departamento(departamento) {
         let dep = find(this.departamentos_list, d => d.region == departamento.region)
-        this.updateRegionSeleccionada(dep)
+        this.updateRegionSeleccionadaSegunda(dep)
         this.distritoSeleccionado = {
           distrito: "Seleccionar distrito"
         }
