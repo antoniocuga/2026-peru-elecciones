@@ -84,7 +84,7 @@ def parse_congreso():
             print('seen', end = "", flush=True)
             continue
         else:
-            print("acc", end = "", flush=True)
+            print("acc", region_mapper['D440' + datum['slug']], end = "   ", flush=True)
             print(datum['slug'],  datum['generals']['actData'])
 
         acc = datum['generals']['generalData']
@@ -184,6 +184,18 @@ def build_mapper():
     candidate_mapper = pd.read_csv("map_candidates_to_viz.csv")
 
 
+def bot():
+    token = "1795276989:AAFlrS5mV6-Nm-rWA7LC2UVfTk2G1nCrwmY"
+    get_group_id = f"https://api.telegram.org/bot{token}/getUpdates"
+    import requests
+    r = requests.get(get_group_id)
+    group_id =- 584687770
+    msg = "xd"
+    send_msg = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={group_id}&text={msg}"
+    requests.post(send_msg)
+
+
+
 if __name__ == "__main__":
     try:
         parse_summary()
@@ -191,8 +203,9 @@ if __name__ == "__main__":
         import traceback
         print(traceback.format_exc())
 
-    try:
-        parse_congreso()
-    except:
-        import traceback
-        print(traceback.format_exc())
+    # NOTE: comentando para segunda vuelta
+    # try:
+    #     parse_congreso()
+    # except:
+    #     import traceback
+    #     print(traceback.format_exc())
