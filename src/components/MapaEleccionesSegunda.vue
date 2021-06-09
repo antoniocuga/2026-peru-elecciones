@@ -1,19 +1,19 @@
 <template>
   <div class="col-12 col-sm-12 resultados2021">
-      <div class="top-candidates pb-3 pt-3">
-        <topWidget />
+    <div class="top-candidates pb-3 pt-3">
+      <topWidget />
+    </div>
+    <div class="row pt-3">
+      <div class="col-12 col-sm-12 col-md-4 d-md-block d-none mapa-resultados-wrapper">
+        <candidatosResultadosSegunda :candidatos="filteredData" />
       </div>
-      <div class="row pt-3">
-        <div class="col-12 col-sm-12 col-md-4 d-md-block d-none mapa-resultados-wrapper">
-          <candidatosResultadosSegunda :candidatos="filteredData" />
-        </div>
-        <div class="col-12 col-sm-12 col-md-8 mapa-resultados-wrapper">
-          <MapaDepartamentosSegunda :lista_candidatos="filteredData" />
-        </div>
-        <div class="col-12 col-sm-12 d-block d-md-none mapa-resultados-wrapper">
-          <candidatosResultadosSegunda :candidatos="filteredData" />
-        </div>
+      <div class="col-12 col-sm-12 col-md-8 mapa-resultados-wrapper">
+        <MapaDepartamentosSegunda :lista_candidatos="filteredData" />
       </div>
+      <div class="col-12 col-sm-12 d-block d-md-none mapa-resultados-wrapper">
+        <candidatosResultadosSegunda :candidatos="filteredData" />
+      </div>
+    </div>
   </div>    
 </template>
 

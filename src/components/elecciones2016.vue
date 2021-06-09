@@ -75,7 +75,7 @@
       return {
         openResultados: false
       }
-    },    
+    },
     computed: {
       ...mapState({        
         regionSeleccionada: state => state.candidatos.regionSeleccionada,

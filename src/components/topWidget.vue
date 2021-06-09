@@ -21,7 +21,8 @@
             <div class="col-12 col-md-6 d-flex align-self-center  text-center">
               <div class="card-resultado">                              
                 <div class="text-center mt-2 mb-2 porcentaje text-center">{{ topCandidatos[0].validos.toFixed(2) }} <span>%</span></div>
-                <div class="text-center mt-2 mb-2 votos-validos text-center">{{ numeral(topCandidatos[1].votos).format('0,0') }} votos</div>
+                <div class="text-center mt-2 mb-2 votos-total text-center">{{ numeral(topCandidatos[0].votos).format('0,0') }} votos</div>
+                <div class="text-center mt-2 mb-2 votos-validos text-center">+{{ numeral(topCandidatos[0].votos - topCandidatos[1].votos).format('0,0') }}</div>                
               </div>
             </div>            
 
@@ -31,12 +32,12 @@
         <div class="col-6 text-center">
           
           <div class="row">
-
             
             <div class="col-12 col-md-6  align-self-center d-none d-md-flex text-center">
               <div class="card-resultado">
                 <div class="text-center mt-2 mb-2 porcentaje text-center">{{ topCandidatos[1].validos.toFixed(2) }} <span>%</span></div>
-                <div class="text-center mt-2 mb-2 votos-validos text-center">{{ numeral(topCandidatos[1].votos).format('0,0') }} votos</div>
+                <div class="text-center mt-2 mb-2 votos-total text-center">{{ numeral(topCandidatos[1].votos).format('0,0') }} votos</div>
+                <div class="text-center mt-2 mb-2 votos-validos text-center">  <span></span> </div>                
               </div>
             </div>
 
@@ -49,7 +50,8 @@
             <div class="col-12 col-md-6 d-flex align-self-center d-block d-md-none text-center">
               <div class="card-resultado">
                 <div class="text-center mt-2 mb-2 porcentaje text-center">{{ topCandidatos[1].validos.toFixed(2) }} <span>%</span></div>
-                <div class="text-center mt-2 mb-2 votos-validos text-center">{{ numeral(topCandidatos[1].votos).format('0,0') }} votos</div>
+                <div class="text-center mt-2 mb-2 votos-total text-center">{{ numeral(topCandidatos[1].votos).format('0,0') }} votos</div>
+                <div class="text-center mt-2 mb-2 votos-validos text-center">  <span></span> </div>        
               </div>
             </div>
 

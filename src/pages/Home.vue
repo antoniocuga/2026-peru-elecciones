@@ -12,7 +12,7 @@
       <div class="row justify-content-center mb-5 mt-5">
         <div class="col-12 col-md-8 text-center">
           <h3 class="page-section-tag"><a href="https://ojo-publico.com/elecciones-2021" target="_blank">Elecciones 2021</a></h3>
-          <h1 class="page-app-title text-center">Pedro Castillo se enfrentará a Keiko Fujimori en segunda vuelta </h1>
+          <h1 class="page-app-title text-center">ONPE: Pedro Castillo y Keiko Fujimori en reñidas elecciones</h1>
         </div>
         <div class="credits col-12 text-center">
           Por <a href="https://ojo-publico.com/autor/ojopublico" target="_blank">OjoPúblico</a>
@@ -27,7 +27,7 @@
 
       <div class="row pt-3 mt-5 border-bottom">
         <div class="col-12 col-sm-12 col-md-12 subtitle">
-            <h2>Elecciones y conteo bajo pandemia <b-button variant="light" id="popover-target-1">
+            <h2>Segunda vuelta <b-button variant="light" id="popover-target-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
                 <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
               </svg>
@@ -36,12 +36,13 @@
               <div class="small">*El especial extrae información del sitio web de la ONPE cada 20 minutos. Esto puede generar un desfase breve con respecto a su última actualización. Por dicho motivo, los porcentajes de votación y cantidad de votos pueden aparecer diferentes a las cifras oficiales, temporalmente.</div>
             </b-popover></h2>
             <span class="line"></span>
-            <p>La Oficina Nacional de Procesos Electorales (ONPE) enfrentó un gran desafío en la ejecución de las elecciones del Bicentenario. Se espera que el proceso para tener los resultados al 100% demore más de lo normal, debido a las condiciones de bioseguridad que se tomaron para evitar infecciones por la Covid-19</p>
+            <p>La Oficina Nacional de Procesos Electorales (ONPE) empezó a brindar información preliminar casi a la medianoche del 6 de junio, principalmente de las mesas de votación de zonas urbanas. Se espera que en los próximos días acabe el conteo final.</p>
         </div>
 
         <MapaEleccionesSegunda />
         <!-- Show data in mobile -->
-        <div class="tooltip tooltip-data mobile-results"></div>
+        <div class="tooltip tooltip-data mobile-results" id="tooltip_primera"></div>
+        <div class="tooltip tooltip-data mobile-results" id="tooltip_segunda"></div>
       </div> 
 
       <div class="row pt-3 mt-5 border-bottom">

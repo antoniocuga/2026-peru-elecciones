@@ -9,19 +9,19 @@ const state = () => ({
   distritosSegunda: [],
   regionSeleccionada: {
     region: "NACIONAL",
-    departamento: "VER REGIÓN"
+    departamento: "EXPLORAR REGIÓN"
   },
   regionSeleccionadaSegunda: {
     region: "NACIONAL",
-    departamento: "VER REGIÓN"
+    departamento: "EXPLORAR REGIÓN"
   },
   partidoSeleccionado: {
     partido_id: "TODOS",
-    partido: "VER POR PARTIDO",
+    partido: "EXPLORAR POR PARTIDO",
   },
   partidoSeleccionadoSegunda: {
     partido_id: "TODOS",
-    partido: "VER POR PARTIDO",
+    partido: "EXPLORAR POR PARTIDO",
   }
 })
 

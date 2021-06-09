@@ -1,6 +1,6 @@
 <template>
 
-  <div class="mapa-resultados-container">
+  <div class="mapa-resultados-container container">
     <div class="row filter-block">
       <div class="col-12 text-right">
         
@@ -26,7 +26,7 @@
           <g ref="distritos"></g>
           <g ref="labels"></g>
         </svg>
-        <div class="regiones-extra" :class="{'show': regionSeleccionada.region == 'NACIONAL'}">
+        <div id="regiones_segunda" class="regiones-extra" :class="{'show': regionSeleccionada.region == 'NACIONAL'}">
           <div><span class="callao-path departamento-path"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
             <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z"/>
@@ -130,7 +130,6 @@
               return `background: ${color(dep.winner.validos)}`
             }
           })
-          
         } else {
 
           base.selectAll('path.departamento-path')
@@ -141,9 +140,9 @@
             })
 
           d3.selectAll('span.departamento-path')
-            .attr("style", (f) => {            
+            .attr("style", (f) => {
               let dep = find(this.departamentos, d => d.region == f)
-              if(dep) { 
+              if(dep) {
                 return `background: ${dep.winner.color}ab;`
               }
             })
@@ -270,7 +269,7 @@
         return require(`../data/mapas/perugeo.json`)
       },
       tooltip() {
-        return d3.select("div.tooltip")
+        return d3.select("#tooltip_segunda")
       }
     },
     methods: {
@@ -283,18 +282,18 @@
         this.zoomed = false
         this.updatePartidoSeleccionadoSegunda({
           partido_id: "TODOS",
-          partido: "VER POR PARTIDO",
+          partido: "EXPLORAR PORPARTIDO",
         })
       },
       resetPresidente() {
         this.zoomed = false
-        this.updateRegionSeleccionadaSegunda({region:'NACIONAL', departamento:'VER REGIÓN'})
+        this.updateRegionSeleccionadaSegunda({region:'NACIONAL', departamento:'EXPLORAR REGIÓN'})
       },
       openDepartamentos() {
         this.openMenu = !this.openMenu        
       },
       show_partido(partido) {
-        this.updateRegionSeleccionadaSegunda({region:'NACIONAL', departamento:'VER REGIÓN'})
+        this.updateRegionSeleccionadaSegunda({region:'NACIONAL', departamento:'EXPLORAR REGIÓN'})
         this.updatePartidoSeleccionadoSegunda(partido)
       },
       show_departamento(id) {
@@ -325,12 +324,13 @@
           // scale = dep.properties.scale
           
           scale = dep.properties.scale //(this.height*1.85) / distance / Math.sqrt(2);
+          console.log(scale)
 
         } else if(this.regionSeleccionada.region == 'NACIONAL') {
           center = d3.geoCentroid(this.perugeo)
 
           if(window.innerWidth < 993) {
-            scale = this.width * 1.65 / this.distance / Math.sqrt(1)
+            scale = this.width / this.distance / Math.sqrt(1)
           } else {
             scale = this.width / this.distance / Math.sqrt(1)
           }
@@ -406,13 +406,13 @@
 
         if(window.innerWidth < 993) {
           this.width = window.innerWidth > 500 ? window.innerWidth / 1.7 : window.innerWidth
-          this.height = 720
-          this.center_device =  [this.width/1.9, this.height / 2]
-          this.scale = this.width * 1.45 / this.distance / Math.sqrt(1)
+          this.height = 640
+          this.center_device =  [this.width/2.5, this.height / 2]
+          this.scale = this.width * 1.15 / this.distance / Math.sqrt(1)
           
         } else if(window.innerWidth > 720) {
           this.width = 720
-          this.height = 720
+          this.height = 660
           this.center_device =  [this.width/2.2, this.height / 2.2]
           this.scale = this.width / this.distance / Math.sqrt(1)
         }
@@ -481,7 +481,7 @@
               }
             })
 
-          d3.selectAll('span.departamento-path')
+          d3.selectAll('#regiones_segunda span.departamento-path')
             .data(['callao', 'lima', 'extranjero'])
             .attr("style", (f) => {
               let dep = find(this.departamentos, d => d.region == f)
