@@ -8,18 +8,28 @@ import random
 try:
     # Dev
     from datautils import scraping_utils, bd_utils
+    # from datautils.proxy_spider import CustomProxyMiddleware
 except:
+
     pass
 
 import datetime
+
 
 class EG2021Spider(scrapy.Spider):
     name = "eg2021"
     custom_settings = {
         'CONCURRENT_REQUESTS':50,
         'DOWNLOAD_DELAY': 0,
+        'ROBOTSTXT_OBEY' : False,
+        'DOWNLOADER_MIDDLEWARES': {
+            # CustomProxyMiddleware: 350,
+            'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 400,
+        },
+
+
     }
-    handle_httpstatus_list = [200]#, 403]
+    handle_httpstatus_list = [200, 403]
     BASE_SLUG = "resultadossep"
 
     # http_status
@@ -82,6 +92,11 @@ class EG2021Spider(scrapy.Spider):
             self.start_requests = self.get_congreso
         if mode=="candidates":
             self.start_requests = self.get_candidates
+
+        self.KEY_MAPPER = {}
+        self.PROXY_KEYNAME = 'cod_dist'
+        self.use_proxies = True
+
 
     def closed(self, reason):
         self.client.close()

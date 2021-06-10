@@ -9,6 +9,7 @@ library(readr)
 library(stringr)
 library(dplyr)
 library(httr)
+library(jsonlite)
 ```
 
 
@@ -54,10 +55,51 @@ general
 ```
 
 ```{r}
-vista_general <- content(httr::GET("https://api.resultadossep.eleccionesgenerales2021.pe/results/10/000000?name=param"), as="parsed")
+avance_procesamiento_dep
+```
+
+
+
+```{r}
+# vista_general <- content(httr::GET("https://api.resultadossep.eleccionesgenerales2021.pe/results/10/000000?name=param"), as="parsed")
+vista_general <- read_json("000000.json")
 avance_general <- as.numeric(vista_general$generals$generalData$POR_ACTAS_PROCESADAS)
 hora_general <- paste(vista_general$generals$actData$HORA, vista_general$generals$actData$FECHA, sep=" - ")
 ```
+
+
+
+```{r}
+ubigeos_dep <- 
+    muestra %>% 
+    distinct(ubigeo, dep) %>%
+    mutate(nuevo =  paste0( str_sub(ubigeo, 1, 2), "0000")  ) %>% 
+    distinct(nuevo, dep) %>% arrange(desc(nuevo)) %>% filter(str_sub(nuevo,1,1) %in% c("1","2", "0")) %>% 
+    bind_rows(
+        tibble(dep=c("EXTRANJERO", "TOTAL"), nuevo =c("900000", "000000") )
+    ) %>% 
+    apply(1, function(x){
+        dep <- x[1]
+        
+        
+        # urldep <- paste0("https://api.resultadossep.eleccionesgenerales2021.pe/results/10/", x[2],"?name=param")
+        # vista_url <- content(httr::GET(urldep), as="parsed")
+        vista_url <- read_json(paste0(x[2], ".json"))
+        
+        tibble(
+            "fecha"=vista_url$generals$actData$FECHA, 
+            "hora"=vista_url$generals$actData$HORA,
+            "por_actas_procesadas"=vista_url$generals$generalData$POR_ACTAS_PROCESADAS,
+            "dep"=dep,
+            "candidato" = c(vista_url$results[[1]]$NOMBREe_CANDIDATO,vista_url$results[[2]]$NOMBREe_CANDIDATO),
+            "por_validos" = c(vista_url$results[[1]]$POR_VALIDOS,vista_url$results[[2]]$POR_VALIDOS),
+            "total_votos" = c(vista_url$results[[1]]$TOTAL_VOTOS,vista_url$results[[2]]$TOTAL_VOTOS),
+        )
+})
+```
+
+
+
 
 
 ```{r}
@@ -183,9 +225,47 @@ por_dep <-
 ```
 
 ```{r}
-por_dep %>% 
-    mutate(region = str_replace_all(region, " ", "-")) %>% 
+nuevas <- 
+    bind_rows(ubigeos_dep) %>% 
+    mutate(
+        hora = paste(hora, fecha, sep=" - "),
+        conteo = as.numeric(por_actas_procesadas),
+        departamento = dep,
+        candidato = if_else(candidato=="JOSE PEDRO CASTILLO TERRONES", "Pedro Castillo", "Keiko Fujimori"),
+        total = as.numeric(str_replace_all(total_votos, ",", "")),
+        validos = as.numeric(por_validos)
+    ) %>% 
+    select(hora, conteo, departamento, candidato,total, validos)
+```
+
+
+```{r}
+por_dep %>%
+    select(-total, -validos, -hora, -conteo) %>%
+    inner_join(nuevas, by = c("departamento", "candidato")) %>%
+    bind_rows(por_dep %>% filter(departamento %in% c("LIMA-PROVINCIAS"))) %>%
+    mutate(
+        region = str_replace_all(region, " ", "-"),
+        contabilizadas = vista_general$generals$generalData$POR_ACTAS_CONTABILIZADAS %>% as.numeric()
+    ) %>%
     jsonlite::toJSON(., pretty = T) %>% write("../public/data/resultados_total.json")
+```
+
+Comprobando cual era el problema
+```{r}
+# nueva_ver <- 
+#     por_dep %>%
+#     select(-total, -validos, -hora, -conteo) %>%
+#     inner_join(nuevas, by = c("departamento", "candidato")) %>%
+#     bind_rows(por_dep %>% filter(departamento %in% c("LIMA-PROVINCIAS", "EXTRANJERO"))) %>%
+#     mutate(region = str_replace_all(region, " ", "-"))
+#     por_dep %>%
+#     select(-total, -validos, -hora, -conteo) %>%
+#     anti_join(nuevas, by = c("departamento", "candidato")) 
+
+```
+```{r}
+# full_join(nueva_ver, por_dep, by = c("region","candidato", "partido", "departamento")) %>% View()
 ```
 
 
