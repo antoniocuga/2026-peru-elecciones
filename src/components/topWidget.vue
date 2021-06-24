@@ -3,7 +3,7 @@
   <div class="row justify-content-center">
     <div class="col-12 col-sm-12 mb-3" v-if="conteo">
       <h3 class="m-0 text-center">
-        <b>Conteo ONPE al {{ conteo }}% a nivel nacional</b> (Última actualización: {{ fecha_hora }})
+        <b>Conteo ONPE al {{ conteo }}% a nivel nacional de actas procesadas / {{contabilizadas}}% de actas contabilizadas </b> <br>Última actualización: {{ fecha_hora }}
       </h3>
     </div>
     <div class="col-12" v-if="conteo">
@@ -97,6 +97,9 @@
       conteo() {
         return parseFloat(uniq(map(this.topCandidatos, 'conteo')).join(""))
       },
+      contabilizadas() {
+        return parseFloat(uniq(map(this.topCandidatos, 'contabilizadas')).join(""))
+      },
       fecha_hora() {
         return uniq(map(this.topCandidatos, 'hora')).join("")
       },
@@ -118,6 +121,7 @@
               votos: parseFloat(uniq(map(d, 'total')).join('')),
               validos: parseFloat(uniq(map(d, 'validos')).join('')),
               conteo: parseFloat(uniq(map(d, 'conteo')).join('')),
+              contabilizadas: parseFloat(uniq(map(d, 'contabilizadas')).join('')),
               hora: uniq(map(d, 'hora')).join('')
             }
         }), ['validos'], ['desc'])

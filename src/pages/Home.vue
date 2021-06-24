@@ -12,7 +12,7 @@
       <div class="row justify-content-center mb-5 mt-5">
         <div class="col-12 col-md-8 text-center">
           <h3 class="page-section-tag"><a href="https://ojo-publico.com/elecciones-2021" target="_blank">Elecciones 2021</a></h3>
-          <h1 class="page-app-title text-center">ONPE: Pedro Castillo y Keiko Fujimori en reñidas elecciones</h1>
+          <h1 class="page-app-title text-center">Pedro Castillo gana la mayoría de votos al 100% de la ONPE</h1>
         </div>
         <div class="credits col-12 text-center">
           Por <a href="https://ojo-publico.com/autor/ojopublico" target="_blank">OjoPúblico</a>
@@ -33,7 +33,7 @@
               </svg>
             </b-button>
             <b-popover target="popover-target-1" triggers="hover" placement="bottom">
-              <div class="small">*El especial extrae información del sitio web de la ONPE cada 20 minutos. Esto puede generar un desfase breve con respecto a su última actualización. Por dicho motivo, los porcentajes de votación y cantidad de votos pueden aparecer diferentes a las cifras oficiales, temporalmente.</div>
+              <div class="small">*El especial extrae información del sitio web de la ONPE cada 20 minutos, siempre y cuando no exista algún tipo de defecto que evite el libre flujo de la data. Por este motivo, se puede generar un desfase con respecto a su última actualización, y los porcentajes de votación y cantidad de votos pueden verse diferentes a las cifras oficiales, temporalmente. Si tiene dudas también puede acudir a onpe.gob.pe</div>
             </b-popover></h2>
             <span class="line"></span>
             <p>La Oficina Nacional de Procesos Electorales (ONPE) empezó a brindar información preliminar casi a la medianoche del 6 de junio, principalmente de las mesas de votación de zonas urbanas. Se espera que en los próximos días acabe el conteo final.</p>
