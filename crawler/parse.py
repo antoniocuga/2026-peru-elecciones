@@ -11,8 +11,8 @@ def flag_as_old_everything_but_last(col='col_summary', key='cod_dist'):
     spider = EG2021Spider('x')
     col = getattr(spider, col)
     RES = list(col.aggregate([
-        {"$match":{"is_old":{"$exists":False}}},
-        {"$sort": { "_id":-1 } },
+        # {"$match":{"$or":[{'is_old':{"$exists":False}}, {"is_old":False}]}  },
+        {"$sort": { "scraped_at":1 } },
         {
             "$group":{
                 "_id": f"${key}",
@@ -23,6 +23,24 @@ def flag_as_old_everything_but_last(col='col_summary', key='cod_dist'):
     ids = [i['last_id'] for i in RES]
     col.update_many({"_id": {"$nin":ids}}, {"$set": {"is_old":True}})
     print("end")
+
+def unflag_last_seen():
+    spider = EG2021Spider('x')
+    col = getattr(spider, 'col_summary')
+    RES = col.aggregate([
+        {"$sort": { "scraped_at":-1 } },
+        {
+            "$group":{
+                "_id": "$cod_dist",
+                "last_id": { "$first": "$_id" }
+            }
+        },
+        ])
+    ids = [i['last_id'] for i in RES]
+    res = col.update_many({"_id": {"$in":ids}}, {"$set": {"is_old":False}})
+    return res
+
+
 
 def parse_candidate_names():
     spider = EG2021Spider("xx")
@@ -77,7 +95,7 @@ def parse_congreso():
 
     dfs = []
     seen = set()
-    for datum in col.find({'is_old':{"$exists":False}}, no_cursor_timeout=True).sort([('_id', pymongo.DESCENDING)]).batch_size(10):
+    for datum in col.find({"$or":[{'is_old':{"$exists":False}}, {"is_old":False}]}, no_cursor_timeout=True).sort([('_id', pymongo.DESCENDING)]).batch_size(10):
         # Out[8]: dict_keys(['_id', 'generals', 'results', 'summary', 'scraped_at', 'slug'])
         if datum['slug'] in seen:
             col.update_one({'_id':datum['_id']}, {"$set": {"is_old":True}})
@@ -140,7 +158,7 @@ def parse_summary():
     # {'scraped_at':{'$lte':check}, 'is_old':{"$exists":False}}
     seen_ubigeos = set()
     dfs = []
-    for datum in col.find({'is_old':{"$exists":False}}, no_cursor_timeout=True).sort([('_id', pymongo.DESCENDING)]).batch_size(10):
+    for datum in col.find({"$or":[{'is_old':{"$exists":False}}, {"is_old":False}]}, no_cursor_timeout=True).sort([('_id', pymongo.DESCENDING)]).batch_size(10):
         if datum['cod_dist'] in seen_ubigeos:
             col.update_one({'_id':datum['_id']}, {'$set': {"is_old":True}})
             print("seen", flush=True, end = " ")
@@ -149,11 +167,25 @@ def parse_summary():
             print("acc", flush=True, end = " ")
 
         ubigeo = datum['summary']["CCODI_UBIGEO"]
-        general = datum['generals']['generalData']
+        general = datum['generals']['generalData'] or {}
         # if general is None:
         #     print(datum)
         #     continue
-        general.update(    datum['generals']['actData'] )
+        # if datum is None:
+        #     print(datum)
+        #     print("Datum is none")
+        #     code.interact(local= dict(locals(), **globals()) )
+        #     continue
+        # if general is None:
+        #     print(general)
+        #     print("general is none")
+        #     code.interact(local= dict(locals(), **globals()) )
+        #     continue
+        # if general.get('generals') is None:
+        #     print(general)
+        #     code.interact(local= dict(locals(), **globals()) )
+        
+        general.update(    datum.get('generals', {}).get('actData', {})   )
         general.update( dist_mapper.get(ubigeo, {}) )
         general['tiempo_actualizacion'] = datum['scraped_at']
 
@@ -163,7 +195,7 @@ def parse_summary():
         dfs.append(df)
         seen_ubigeos.add(datum['cod_dist'])
     if len(seen_ubigeos) != 1875:
-        raise Exception("Data no completa")
+        raise Exception(f"Data no completa {len(seen_ubigeos)}")
     final = pd.concat(dfs, ignore_index=True)
     # code.interact(local=dict(locals(),**globals()))
     fpath = os.path.dirname(os.path.abspath(__file__))  + "/muestra_resumen_distrito.csv"

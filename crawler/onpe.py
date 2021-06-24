@@ -8,18 +8,31 @@ import random
 try:
     # Dev
     from datautils import scraping_utils, bd_utils
+    # from datautils.proxy_spider import CustomProxyMiddleware
 except:
+
     pass
 
 import datetime
+
 
 class EG2021Spider(scrapy.Spider):
     name = "eg2021"
     custom_settings = {
         'CONCURRENT_REQUESTS':50,
         'DOWNLOAD_DELAY': 0,
+        'ROBOTSTXT_OBEY' : False,
+        'DOWNLOADER_MIDDLEWARES': {
+            # CustomProxyMiddleware: 350,
+            'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 400,
+        },
+
+
     }
+    handle_httpstatus_list = [200, 403]
     BASE_SLUG = "resultadossep"
+
+    # http_status
     # BASE_SLUG = "resultados" # PRIMERA VUELTA
 
     url = ""
@@ -30,18 +43,26 @@ class EG2021Spider(scrapy.Spider):
     # https://www.resultados.eleccionesgenerales2021.pe/EG2021/Actas/Ubigeo/P/140000/140100/140101/2674
     headers = {
         'Accept': 'application/json, text/plain, */*',
+        # 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
         'Accept-Encoding': 'gzip, deflate, br',
-        'Accept-Language': 'en,es-419;q=0.9,es;q=0.8',
         'Cache-Control': 'no-cache',
+        'Accept-Language': 'en,es-419;q=0.9,es;q=0.8',
         'Origin': f'https://www.{BASE_SLUG}.eleccionesgenerales2021.pe',
         'Pragma': 'no-cache',
         'Referer': f'https://www.{BASE_SLUG}.eleccionesgenerales2021.pe/',
-        'Sec-Ch-ua': '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
-        'Sec-Ch-ua-mobile': '?0',
+        # 'Referer': 'https://www.resultadossep.eleccionesgenerales2021.pe/SEP2021/ResumenGeneral/10/T',
+        'Sec-CH-UA': '"Google Chrome";v="91", "Chromium";v="91", ";Not A Brand";v="99"',
+        'Sec-CH-UA-Mobile': '?0',
         'Sec-Fetch-Dest': 'empty',
         'Sec-Fetch-Mode': 'cors',
         'Sec-Fetch-Site': 'same-site',
-        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36'
+        'Cookie':'__cf_bm=3bed8e09092ea9de5d9635f284a3913ada214881-1623202150-1800-AVby7IHu5Won/mRAN4C69luLTllTBsSAKWI/lCtm77Flw4BhBe3RJ2SFG0hD2gRj+IMMwra7VPql8+IZSIxcZt8=',
+
+        # 'Sec-Fetch-Dest': 'document',
+        # 'Sec-Fetch-Mode': 'navigate',
+        # 'Sec-Fetch-Site': 'none',
+        # 'Sec-Fetch-User': '?1',
+        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
     }
 
     def __init__(self, mode:str, complete_districts='True'):
@@ -71,6 +92,11 @@ class EG2021Spider(scrapy.Spider):
             self.start_requests = self.get_congreso
         if mode=="candidates":
             self.start_requests = self.get_candidates
+
+        self.KEY_MAPPER = {}
+        self.PROXY_KEYNAME = 'cod_dist'
+        self.use_proxies = True
+
 
     def closed(self, reason):
         self.client.close()
@@ -115,6 +141,10 @@ class EG2021Spider(scrapy.Spider):
 
 
     def parse_summary(self, response):
+        if response.status != 200:
+            import code
+            code.interact(local= dict(locals(), **globals()))
+
         cod_dist = response.meta['meta']['cod_dist']
         jason = json.loads(response.text)
         jason.update({
