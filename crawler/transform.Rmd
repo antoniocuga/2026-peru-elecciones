@@ -10,15 +10,19 @@ library(stringr)
 library(dplyr)
 library(httr)
 library(jsonlite)
+library(here)
 ```
 
 
+```{r}
+here::set_here(path = "/home/gianco/op_projects/elecciones2021/crawler")
+```
 
 
 ```{r}
-muestra <- read_csv("muestra_resumen_distrito.csv", col_types = cols(.default = "c"))
-mapper <- read_csv("map_candidates_to_viz.csv")
-ubigeo_mapper <- read_csv("tabla_equivalencias - Hoja 1.csv")
+muestra <- read_csv(paste0(here(),"/muestra_resumen_distrito.csv"), col_types = cols(.default = "c"))
+mapper <- read_csv(paste0(here(),"/map_candidates_to_viz.csv"))
+ubigeo_mapper <- read_csv(paste0(here(),"/tabla_equivalencias - Hoja 1.csv"))
 no_contar <- c("TOTAL DE VOTOS EMITIDOS", "VOTOS EN BLANCO", "VOTOS NULOS", "TOTAL DE VOTOS VÁLIDOS")
 ```
 
