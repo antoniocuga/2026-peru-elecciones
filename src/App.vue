@@ -1,31 +1,21 @@
 <template>
   <div class="wrapper">
-    <router-view></router-view>
+    <router-view />
   </div>
 </template>
 
-<script>
+<script setup>
+import { onMounted } from 'vue'
+import { useCandidatosStore } from './stores/candidatos'
 
-import { mapState } from 'vuex'
-import router from './router'
-import store from './store'
+const store = useCandidatosStore()
 
-export default {
-  name: 'App',
-  router,
-  store,
-  computed: {
-    ...mapState({
-      candidatos: state => state.candidatos.todos
-    })
-  },
-  created () {
-    this.$store.dispatch('candidatos/getAllCandidatos')
-    this.$store.dispatch('candidatos/getAllCandidatosSegunda')
-  },
-}
+onMounted(() => {
+  store.getAllCandidatos()
+  store.getAllCandidatosSegunda()
+})
 </script>
 
 <style lang="scss">
-  @import "assets/styles.scss";
+@use "assets/styles.scss";
 </style>

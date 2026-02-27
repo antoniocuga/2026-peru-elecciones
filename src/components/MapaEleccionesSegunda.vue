@@ -19,10 +19,12 @@
 
 <script>
 
-import { mapState } from 'vuex'
-import topWidget from '../components/topWidget.vue'
-import candidatosResultadosSegunda from '../components/candidatosResultadosSegunda.vue'
-import MapaDepartamentosSegunda from '../components/MapaDepartamentosSegunda.vue'
+import { storeToRefs } from 'pinia'
+import { useCandidatosStore } from '../stores/candidatos'
+import { getPartidoImage, getCandidatoImage } from '../utils/assets'
+import topWidget from './topWidget.vue'
+import candidatosResultadosSegunda from './candidatosResultadosSegunda.vue'
+import MapaDepartamentosSegunda from './MapaDepartamentosSegunda.vue'
 import { filter } from 'lodash'
 
 export default {
@@ -35,51 +37,41 @@ export default {
     candidatosResultadosSegunda,
     topWidget
   },
-  created () {
-    this.$store.dispatch('candidatos/getAllCandidatosSegunda')
+  setup() {
+    const store = useCandidatosStore()
+    return { ...storeToRefs(store), store }
+  },
+  created() {
+    this.store.getAllCandidatosSegunda()
   },
   methods: {
     getImageCandidate(c) {
-      try {
-        return require(`../assets/candidatos/${c}.png`)
-      } catch (error) {
-        return require(`../assets/candidatos/blanco-viciado.png`)
-      }
+      return getCandidatoImage(c)
     },
     getImagePartido(c) {
-      try {
-        return require(`../assets/partidos/${c}.png`) 
-      } catch (error) {
-        return require(`../assets/partidos/blanco-viciado.png`)
-      }
+      return getPartidoImage(c)
     }
   },
   computed: {
-    ...mapState({
-      candidatos: state => state.candidatos.todosSegunda,
-      regionSeleccionadaSegunda: state => state.candidatos.regionSeleccionadaSegunda,
-      partidoSeleccionado: state => state.candidatos.partidoSeleccionadoSegunda,
-    }),
-    data() {
-      return require('../data/departamentos.json')
-    },
     filteredData() {
+      const isRegion = this.regionSeleccionadaSegunda.region != 'NACIONAL'
+      const isPartido = this.partidoSeleccionadoSegunda.partido_id != 'TODOS'
+      const regionCandidatos = Array.isArray(this.regionSeleccionadaSegunda.candidatos)
+        ? this.regionSeleccionadaSegunda.candidatos : []
 
-      if(this.regionSeleccionadaSegunda.region != 'NACIONAL' && this.partidoSeleccionado.partido_id == 'TODOS') {
-
-        return this.regionSeleccionadaSegunda.candidatos
+      if (isRegion && !isPartido) {
+        return regionCandidatos
       }
-
-      if(this.regionSeleccionadaSegunda.region == 'NACIONAL' && this.partidoSeleccionado.partido_id != 'TODOS') {
-
-        return filter(this.candidatos, c => c.partido_id == this.partidoSeleccionado.partido_id)
+      if (!isRegion && isPartido) {
+        return filter(this.todosSegunda, c => c.partido_id == this.partidoSeleccionadoSegunda.partido_id)
       }
-
-      return filter(this.candidatos, c => c.candidato_id != "")
-    }     
+      if (isRegion && isPartido) {
+        return filter(regionCandidatos, c => c.partido_id == this.partidoSeleccionadoSegunda.partido_id)
+      }
+      return filter(this.todosSegunda, c => c.candidato_id != "")
+    }
   }
 }
-
 </script>
 
 

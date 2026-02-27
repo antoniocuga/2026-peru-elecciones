@@ -5,34 +5,29 @@
         <SharingOptions />
       </div>
       <div class="col-12 top-candidates pt-3 pb-3">
-        <div class="encuesta-wrapper ">
-          <topWidget />
-        </div>      
+        <div class="encuesta-wrapper">
+          <TopWidget />
+        </div>
       </div>
       <div class="col-12 top-candidates pt-3 pb-3">
         <div class="encuesta-wrapper text-center">
-          <a  target="_parent" href="https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021/" class="btn btn-danger">Ver todos los resultados</a>
-        </div>      
+          <a target="_blank" rel="noopener" href="https://ojo-publico.com/especiales/resultados-onpe-elecciones-2026/" class="btn btn-danger">Ver todos los resultados</a>
+        </div>
       </div>
     </div>
-    <!-- <div class="tooltip_congresista"></div> -->
   </div>
 </template>
-<script>
-  
-  import SharingOptions from '../components/SharingOptions.vue'
-  import topWidget from '../components/topWidget.vue'
 
-  export default  {
-    name: "Widget",
-    components: {
-      SharingOptions,
-      topWidget
-    },
-    created () {
-      this.$store.dispatch('candidatos/getAllCandidatos')
-      this.$store.dispatch('candidatos/getAllCongreso')
-    }
-  }
-  
+<script setup>
+import { onMounted } from 'vue'
+import { useCandidatosStore } from '../stores/candidatos'
+import SharingOptions from '../components/SharingOptions.vue'
+import TopWidget from '../components/topWidget.vue'
+
+const store = useCandidatosStore()
+
+onMounted(() => {
+  store.getAllCandidatos()
+  store.getAllCongreso()
+})
 </script>

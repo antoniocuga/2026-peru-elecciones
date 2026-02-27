@@ -73,28 +73,27 @@
 </template>
 
 <script>
-  import { mapState } from 'vuex'
+  import { storeToRefs } from 'pinia'
+  import { useCandidatosStore } from '../stores/candidatos'
+  import { getPartidoImage, getCandidatoImage } from '../utils/assets'
   import numeral from 'numeral'
   import * as d3 from 'd3'
   import { groupBy, map, orderBy, maxBy, uniq } from 'lodash'
-  
+  import votosCongresoData from '../data/top_congresistas.json'
+
   export default {
-    name: 'TopCongreso.vue',
+    name: 'TopCongreso',
+    setup() {
+      const store = useCandidatosStore()
+      return { ...storeToRefs(store), store }
+    },
     methods: {
       numeral,
       getImageCandidate(c) {
-        try {
-          return require(`../assets/candidatos/${c}.png`) 
-        } catch (error) {
-          return require(`../assets/candidatos/blanco-viciado.png`)
-        }
+        return getCandidatoImage(c)
       },
       getImagePartido(c) {
-        try {
-          return require(`../assets/partidos/${c}.png`) 
-        } catch (error) {
-          return require(`../assets/partidos/blanco-viciado.png`)
-        }
+        return getPartidoImage(c)
       },
       calcScale(candidato, items, field) {
         let w = 150
@@ -107,9 +106,6 @@
       }
     },
     computed: {
-      ...mapState({
-        congresistas: state => state.candidatos.congresistas
-      }),
       conteo() {
         return parseFloat(uniq(map(this.congresistas_parse, 'conteo_general')).join(""))
       },
@@ -120,7 +116,7 @@
         return orderBy(this.congresistas, ['voto_preferencial'], ['desc'])
       },
       votos_congreso() {
-        return require('../data/top_congresistas.json')
+        return votosCongresoData
       },
       candidatos_congreso_real() {
         return orderBy(map(groupBy(this.congresistas_parse.slice(0, 5), 'eleccion'), (items, eleccion) => {

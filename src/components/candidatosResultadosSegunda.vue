@@ -6,16 +6,16 @@
           <button @click="resetMapa()"  class="btn btn-light" v-if="regionSeleccionadaSegunda.region !='NACIONAL'"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
           </svg></button>
-          <b-dropdown :text="regionSeleccionadaSegunda.departamento" variant="warning" class="d-inline-block m-2 departamento-menu">
-            <b-dropdown-item @click="show_departamento(dep)" :key="dep.region" v-for="dep in departamentos">
-              <a >{{ dep.departamento }}</a>
-            </b-dropdown-item>
-          </b-dropdown>
-          <b-dropdown :text="distritoSeleccionado.distrito" variant="warning" class="d-inline-block m-2 departamento-menu" v-if="regionSeleccionadaSegunda.region !='NACIONAL'">
-            <b-dropdown-item @click="selectDistrito(dep)" :key="dep.ubigeo" v-for="dep in distritos">
-              <a>{{ dep.distrito }}</a>
-            </b-dropdown-item>
-          </b-dropdown>
+        <BDropdown :text="regionSeleccionadaSegunda.departamento" variant="warning" class="d-inline-block m-2 departamento-menu">
+          <BDropdownItem @click="show_departamento(dep)" :key="dep.region" v-for="dep in departamentos">
+            <a>{{ dep.departamento }}</a>
+          </BDropdownItem>
+        </BDropdown>
+        <BDropdown :text="distritoSeleccionado.distrito" variant="warning" class="d-inline-block m-2 departamento-menu" v-if="regionSeleccionadaSegunda.region !='NACIONAL'">
+          <BDropdownItem @click="selectDistrito(dep)" :key="dep.ubigeo" v-for="dep in distritos">
+            <a>{{ dep.distrito }}</a>
+          </BDropdownItem>
+        </BDropdown>
         </div>
       </div>
 
@@ -70,8 +70,11 @@
   import numeral from 'numeral'
   import { find, filter, map, orderBy, groupBy, uniq, sumBy, maxBy } from 'lodash'
   import elecciones2016SegundaVuelta from './elecciones2016SegundaVuelta.vue'
-  import { mapState, mapActions } from 'vuex'
-  
+  import { storeToRefs } from 'pinia'
+  import { useCandidatosStore } from '../stores/candidatos'
+  import { getPartidoImage, getCandidatoImage } from '../utils/assets'
+  import { getMapaData, getPerugeo } from '../utils/mapas'
+
   export default {
     name: 'candidatosResultadosSegunda',
     props: {
@@ -79,6 +82,16 @@
     },
     components: {
       elecciones2016SegundaVuelta
+    },
+    setup() {
+      const store = useCandidatosStore()
+      const refs = storeToRefs(store)
+      return {
+        ...refs,
+        store,
+        todosCandidatos: refs.todosSegunda,
+        todosDistritos: refs.distritosSegunda,
+      }
     },
     data() {
       return {
@@ -89,25 +102,21 @@
       }
     },
     computed: {
-      ...mapState({        
-        regionSeleccionadaSegunda: state => state.candidatos.regionSeleccionadaSegunda,
-        todosCandidatos: state => state.candidatos.todosSegunda,
-        todosDistritos: state => state.candidatos.distritosSegunda
-      }),
       perugeo() {
-        return require(`../data/mapas/perugeo.json`)
+        return getPerugeo()
       },
       departamentos_list() {
+        if (!this.perugeo || !this.perugeo.features) return []
         let filtered = filter(this.todosCandidatos, c => c.candidato_id != '' && c.region != 'total' && c.region != 'extranjero')
         return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
           let dep = find(this.perugeo.features, d => d.properties.dep_id == region)
           let _r = region.replace(" ","-")
           return {
             region: region,
-            departamento: region != 'extranjero' ? dep.properties.NOMBDEP : 'EXTRANJERO',
+            departamento: region != 'extranjero' && dep ? dep.properties.NOMBDEP : 'EXTRANJERO',
             total_departamento: parseFloat(sumBy(map(item, 'total'))),
             candidatos: orderBy(item, ['validos'], ['desc']),
-            geodata: require(`../data/mapas/${_r}.json`),
+            geodata: getMapaData(_r),
             winner: maxBy(item, 'validos')
           }
         }), ['departamento'])
@@ -134,9 +143,7 @@
         return parseFloat(uniq(map(this.lista_candidatos, 'conteo')).join(""))
       },
       lista_candidatos() {
-        
-        let data_block
-
+        let data_block = []
         if(this.regionSeleccionadaSegunda.region == 'NACIONAL' && this.distritoSeleccionado.distrito == 'Seleccionar distrito') {
           data_block = filter(this.todosCandidatos, ['region', 'total'])
         }
@@ -144,14 +151,9 @@
           data_block = filter(this.todosCandidatos, ['region', this.regionSeleccionadaSegunda.region])
         }
         else if(this.regionSeleccionadaSegunda.region != 'NACIONAL' && this.distritoSeleccionado.distrito != 'Seleccionar distrito') {
-
-          data_block = filter(this.todosDistritos, d => {
-            if(d.region == this.regionSeleccionadaSegunda.region && d.ubigeo_inei == this.distritoSeleccionado.ubigeo) {
-              return d
-            }
-          })
+          data_block = filter(this.todosDistritos, d => d.region == this.regionSeleccionadaSegunda.region && d.ubigeo_inei == this.distritoSeleccionado.ubigeo)
         }
-
+        if (!data_block || data_block.length === 0) return []
         return orderBy(map(groupBy(data_block, 'candidato_id'), (d, id) => {
           return {
             candidato_id: id,
@@ -175,41 +177,25 @@
       }
     },
     methods: {
-      ...mapActions('candidatos', [
-        'updateRegionSeleccionadaSegunda'
-      ]),
       numeral,
       resetMapa() {
-        this.updateRegionSeleccionadaSegunda({region:'NACIONAL', departamento:'VER REGIÓN'})
-        this.distritoSeleccionado = {
-          distrito: "Seleccionar distrito"
-        }
+        this.store.updateRegionSeleccionadaSegunda({region:'NACIONAL', departamento:'VER REGIÓN'})
+        this.distritoSeleccionado = { distrito: "Seleccionar distrito" }
       },
       show_departamento(departamento) {
         let dep = find(this.departamentos_list, d => d.region == departamento.region)
-        this.updateRegionSeleccionadaSegunda(dep)
-        this.distritoSeleccionado = {
-          distrito: "Seleccionar distrito"
-        }
+        this.store.updateRegionSeleccionadaSegunda(dep)
+        this.distritoSeleccionado = { distrito: "Seleccionar distrito" }
       },
       selectDistrito(d) {
         this.distritoSeleccionado = d
       },
       getImageCandidate(c) {
-        try {
-          return require(`../assets/candidatos/${c}.png`)
-        } catch (error) {
-          return require(`../assets/candidatos/blanco-viciado.png`)
-        }
+        return getCandidatoImage(c)
       },
       getImagePartido(c) {
-        try {
-          return require(`../assets/partidos/${c}.png`) 
-        } catch (error) {
-          return require(`../assets/partidos/blanco-viciado.png`)
-        }
+        return getPartidoImage(c)
       }
     }
   }
-
 </script>

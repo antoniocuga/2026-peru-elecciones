@@ -48,7 +48,9 @@
 </template>
 
 <script>
-  import { mapState } from 'vuex'
+  import { storeToRefs } from 'pinia'
+  import { useCandidatosStore } from '../stores/candidatos'
+  import { getPartidoImage, getCandidatoImage } from '../utils/assets'
   import { filter, map, orderBy, groupBy, uniq } from 'lodash'
   import congresoGraficoEmbed from '../components/congresoGraficoEmbed.vue'
 
@@ -57,28 +59,25 @@
     components: {
       congresoGraficoEmbed
     },
-    methods: {
-      getImageCandidate(c) {
-        try {
-          return require(`../assets/candidatos/${c}.png`)
-        } catch (error) {
-          return require(`../assets/candidatos/blanco-viciado.png`)
-        }
-      },
-      getImagePartido(c) {
-        try {
-          return require(`../assets/partidos/${c}.png`) 
-        } catch (error) {
-          return require(`../assets/partidos/blanco-viciado.png`)
-        }
+    setup() {
+      const store = useCandidatosStore()
+      const refs = storeToRefs(store)
+      return {
+        ...refs,
+        candidatos: refs.todos,
+        regionSeleccionada: refs.regionSeleccionada,
+        partidoSeleccionado: refs.partidoSeleccionado,
       }
     },
-    computed: {     
-      ...mapState({
-        candidatos: state => state.candidatos.todos,
-        regionSeleccionada: state => state.candidatos.regionSeleccionada,
-        partidoSeleccionado: state => state.candidatos.partidoSeleccionado,
-      }),
+    methods: {
+      getImageCandidate(c) {
+        return getCandidatoImage(c)
+      },
+      getImagePartido(c) {
+        return getPartidoImage(c)
+      }
+    },
+    computed: {
       conteo() {
         return uniq(map(this.topCandidatos, 'conteo')).join("")
       },

@@ -85,28 +85,28 @@
 </template>
 
 <script>
-  import { mapState } from 'vuex'
+  import { storeToRefs } from 'pinia'
+  import { useCandidatosStore } from '../stores/candidatos'
+  import { getPartidoImage, getCandidatoImage } from '../utils/assets'
   import numeral from 'numeral'
   import * as d3 from 'd3'
   import { groupBy, filter, map, orderBy, maxBy, uniq } from 'lodash'
-  
+  import segundaVueltaData from '../data/segunda_vuelta.json'
+
   export default {
-    name: 'SegundaVuelta.vue',
+    name: 'SegundaVuelta',
+    setup() {
+      const store = useCandidatosStore()
+      const refs = storeToRefs(store)
+      return { ...refs, todosCandidatos: refs.todos }
+    },
     methods: {
       numeral,
       getImageCandidate(c) {
-        try {
-          return require(`../assets/candidatos/${c}.png`) 
-        } catch (error) {
-          return require(`../assets/candidatos/blanco-viciado.png`)
-        }
+        return getCandidatoImage(c)
       },
       getImagePartido(c) {
-        try {
-          return require(`../assets/partidos/${c}.png`) 
-        } catch (error) {
-          return require(`../assets/partidos/blanco-viciado.png`)
-        }
+        return getPartidoImage(c)
       },
       calcScale(candidato, items, w) {
         
@@ -119,11 +119,8 @@
         }
     },
     computed: {
-      ...mapState({
-        todosCandidatos: state => state.candidatos.todos,
-      }),
       segunda_vuelta() {
-        return require('../data/segunda_vuelta.json')
+        return segundaVueltaData
       },
       candidatos_segunda() {
         return orderBy(map(groupBy(this.segunda_vuelta, 'eleccion'), (items, eleccion) => {

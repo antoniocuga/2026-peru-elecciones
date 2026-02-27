@@ -13,13 +13,19 @@
 
 <script>
   import numeral from 'numeral'
-  import { mapState } from 'vuex'
+  import { storeToRefs } from 'pinia'
+  import { useCandidatosStore } from '../stores/candidatos'
+  import { getPartidoImage } from '../utils/assets'
   import * as d3 from 'd3'
   import * as parliament from 'd3-parliament-chart'
   import { filter, groupBy, map, orderBy, uniq, sum } from 'lodash'
 
   export default {
     name: 'congresoTopWidget',
+    setup() {
+      const store = useCandidatosStore()
+      return { ...storeToRefs(store), store }
+    },
     data() {
       return {
         depSelected: 'NACIONAL (130)',
@@ -31,9 +37,6 @@
       }
     },
     computed: {
-      ...mapState({
-        congresistas: state => state.candidatos.congresistas
-      }),
       candidatos_congreso_real() {
 
         if(this.depObject.region != 'NACIONAL') {
@@ -92,11 +95,7 @@
     methods: {
       numeral,
       getImagePartido(c) {
-        try {
-          return require(`../assets/partidos/${c}.png`) 
-        } catch (error) {
-          return require(`../assets/partidos/blanco-viciado.png`)
-        }
+        return getPartidoImage(c)
       },
       show_partidos(c) {
         this.open=false

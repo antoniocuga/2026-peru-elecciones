@@ -1,65 +1,31 @@
 /**
- * Client-server processing
+ * API client - returns Promises
  */
 import axios from 'axios'
 
+const BASE = 'https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021'
+
 export default {
-  getAllCongreso (cb) {
-    let candidatos = []
-    axios
-    .get(`https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021/data-primera-vuelta/congreso_total.json`)
-    .then(response => {
-      
-      candidatos = response.data
-
-      setTimeout(() => cb(candidatos), 100)
-    })
+  async getAllCongreso() {
+    const { data } = await axios.get(`${BASE}/data-primera-vuelta/congreso_total.json`)
+    return data
   },
-  getAllCandidatos (cb) {
-    let candidatos = []
-    axios
-    .get(`https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021/data-primera-vuelta/resultados_total.json`)
-    .then(response => {
-      
-      candidatos = response.data 
-
-      setTimeout(() => cb(candidatos), 100)
-    })
+  async getAllCandidatos() {
+    const { data } = await axios.get(`${BASE}/data-primera-vuelta/resultados_total.json`)
+    return data
   },
-  getAllCandidatosSegunda (cb) {
-    let candidatos = []
-    axios
-    .get(`https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021/data/resultados_total.json`)
-    .then(response => {
-      
-      candidatos = response.data 
-
-      setTimeout(() => cb(candidatos), 100)
-    })
+  async getAllCandidatosSegunda() {
+    const { data } = await axios.get(`${BASE}/data/resultados_total.json`)
+    return data
   },
-  getAllDistritos (cb, { dep_id }) {
-    let candidatos = []
-    if(dep_id) {
-      axios
-      .get(`https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021/data-primera-vuelta/${dep_id}.json`)
-      .then(response => {
-        candidatos = response.data
-        
-        setTimeout(() => cb(candidatos), 100)
-      })
-    }
+  async getAllDistritos({ dep_id }) {
+    if (!dep_id) return []
+    const { data } = await axios.get(`${BASE}/data-primera-vuelta/${dep_id}.json`)
+    return data
   },
-  getAllDistritosSegunda (cb, { dep_id }) {
-    let candidatos = []
-    console.log(dep_id)
-    if(dep_id) {
-      axios
-      .get(`https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021/data/${dep_id}.json`)
-      .then(response => {
-        candidatos = response.data
-        
-        setTimeout(() => cb(candidatos), 100)
-      })
-    }
-  }
+  async getAllDistritosSegunda({ dep_id }) {
+    if (!dep_id) return []
+    const { data } = await axios.get(`${BASE}/data/${dep_id}.json`)
+    return data
+  },
 }

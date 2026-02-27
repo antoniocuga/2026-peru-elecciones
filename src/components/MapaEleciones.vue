@@ -16,9 +16,11 @@
 
 <script>
 
-import { mapState } from 'vuex'
-import candidatosResultados from '../components/candidatosResultados.vue'
-import MapaDepartamentos from '../components/MapaDepartamentos.vue'
+import { storeToRefs } from 'pinia'
+import { useCandidatosStore } from '../stores/candidatos'
+import { getPartidoImage, getCandidatoImage } from '../utils/assets'
+import candidatosResultados from './candidatosResultados.vue'
+import MapaDepartamentos from './MapaDepartamentos.vue'
 import { filter } from 'lodash'
 
 export default {
@@ -30,51 +32,41 @@ export default {
     MapaDepartamentos,
     candidatosResultados
   },
-  created () {
-    this.$store.dispatch('candidatos/getAllCandidatos')
+  setup() {
+    const store = useCandidatosStore()
+    return { ...storeToRefs(store), store }
+  },
+  created() {
+    this.store.getAllCandidatos()
   },
   methods: {
     getImageCandidate(c) {
-      try {
-        return require(`../assets/candidatos/${c}.png`)
-      } catch (error) {
-        return require(`../assets/candidatos/blanco-viciado.png`)
-      }
+      return getCandidatoImage(c)
     },
     getImagePartido(c) {
-      try {
-        return require(`../assets/partidos/${c}.png`) 
-      } catch (error) {
-        return require(`../assets/partidos/blanco-viciado.png`)
-      }
+      return getPartidoImage(c)
     }
   },
   computed: {
-    ...mapState({
-      candidatos: state => state.candidatos.todos,
-      regionSeleccionada: state => state.candidatos.regionSeleccionada,
-      partidoSeleccionado: state => state.candidatos.partidoSeleccionado,
-    }),
-    data() {
-      return require('../data/departamentos_primera_vuelta.json')
-    },
     filteredData() {
+      const isRegion = this.regionSeleccionada.region != 'NACIONAL'
+      const isPartido = this.partidoSeleccionado.partido_id != 'TODOS'
+      const regionCandidatos = Array.isArray(this.regionSeleccionada.candidatos)
+        ? this.regionSeleccionada.candidatos : []
 
-      if(this.regionSeleccionada.region != 'NACIONAL' && this.partidoSeleccionado.partido_id == 'TODOS') {
-
-        return this.regionSeleccionada.candidatos
+      if (isRegion && !isPartido) {
+        return regionCandidatos
       }
-
-      if(this.regionSeleccionada.region == 'NACIONAL' && this.partidoSeleccionado.partido_id != 'TODOS') {
-
-        return filter(this.candidatos, c => c.partido_id == this.partidoSeleccionado.partido_id)
+      if (!isRegion && isPartido) {
+        return filter(this.todos, c => c.partido_id == this.partidoSeleccionado.partido_id)
       }
-
-      return filter(this.candidatos, c => c.candidato_id != "")
-    }     
+      if (isRegion && isPartido) {
+        return filter(regionCandidatos, c => c.partido_id == this.partidoSeleccionado.partido_id)
+      }
+      return filter(this.todos, c => c.candidato_id != "")
+    }
   }
 }
-
 </script>
 
 

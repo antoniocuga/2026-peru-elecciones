@@ -1,5 +1,58 @@
 [
     {
+        "eleccion": "2021",
+        "candidato": "Martin Alberto Vizcarra Cornejo",
+        "candidato_id": "martin-alberto-vizcarra-cornejo",
+        "partido": "SOMOS PERU",
+        "partido_id": "somos-peru",
+        "numero": 1,
+        "color": "#ff2600",        
+        "total_votos": 208261        
+    },
+    {
+        "eleccion": "2021",
+        "candidato": "Jorge Carlos Montoya Manrique",
+        "candidato_id": "jorge-carlos-montoya-manrique",
+        "partido": "RENOVACION POPULAR",
+        "partido_id": "renovacion-popular",
+        "numero": 1,
+        "color": "#00aede",        
+        "total_votos": 138152
+        
+    },
+    {
+        "eleccion": "2021",
+        "candidato": "Jose Leon Luna Galvez",
+        "candidato_id": "jose-leon-luna-galvez",
+        "partido": "PODEMOS PERU",
+        "partido_id": "podemos-peru",
+        "numero": 1,
+        "color": "#004da3",        
+        "total_votos": 90995
+        
+    },
+    {
+        "eleccion": "2021",
+        "candidato": "Susel Ana Maria Paredes Pique",
+        "candidato_id": "susel-ana-maria-paredes-pique",
+        "partido": "PARTIDO MORADO",
+        "partido_id": "partido-morado",
+        "numero": 1,
+        "color": "#4f1b7f",        
+        "total_votos": 76755        
+    },
+    {
+        "eleccion": "2021",
+        "candidato": "Maria De Los Milagros Jackeline Jauregui Martinez De Aguayo",
+        "candidato_id": "maria-de-los-milagros-jackeline-jauregui-martinez-de-aguayo",
+        "partido": "RENOVACION POPULAR",
+        "partido_id": "renovacion-popular",
+        "numero": 2,
+        "color": "#00aede",        
+        "total_votos": 67947
+        
+    },
+    {
         "eleccion": "2020",
         "numero": "1",
         "candidato": "Daniel Urresti",

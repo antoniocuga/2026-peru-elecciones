@@ -18,13 +18,12 @@
 </template>
 
 <script>
+import logoAliadosUrl from '../assets/logo-aliados.png'
 
-  export default {
-    name: "BannerSidebar",
-    computed: {
-      logoAliados() {
-        return require('../assets/logo-aliados.png')
-      }
-    }
+export default {
+  name: "BannerSidebar",
+  data() {
+    return { logoAliados: logoAliadosUrl }
   }
+}
 </script>

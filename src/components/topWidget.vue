@@ -66,34 +66,33 @@
 
 <script>
   import numeral from 'numeral'
-  import { mapState } from 'vuex'
+  import { storeToRefs } from 'pinia'
+  import { useCandidatosStore } from '../stores/candidatos'
+  import { getPartidoImage, getCandidatoImage } from '../utils/assets'
   import { filter, map, orderBy, groupBy, uniq } from 'lodash'
 
   export default {
     name: "topWidget",
+    setup() {
+      const store = useCandidatosStore()
+      const refs = storeToRefs(store)
+      return {
+        ...refs,
+        candidatos: refs.todosSegunda,
+        regionSeleccionada: refs.regionSeleccionadaSegunda,
+        partidoSeleccionado: refs.partidoSeleccionadoSegunda,
+      }
+    },
     methods: {
       numeral,
       getImageCandidate(c) {
-        try {
-          return require(`../assets/candidatos/${c}.png`)
-        } catch (error) {
-          return require(`../assets/candidatos/blanco-viciado.png`)
-        }
+        return getCandidatoImage(c)
       },
       getImagePartido(c) {
-        try {
-          return require(`../assets/partidos/${c}.png`) 
-        } catch (error) {
-          return require(`../assets/partidos/blanco-viciado.png`)
-        }
+        return getPartidoImage(c)
       }
     },
-    computed: {     
-      ...mapState({
-        candidatos: state => state.candidatos.todosSegunda,
-        regionSeleccionada: state => state.candidatos.regionSeleccionadaSegunda,
-        partidoSeleccionado: state => state.candidatos.partidoSeleccionadoSegunda,
-      }),
+    computed: {
       conteo() {
         return parseFloat(uniq(map(this.topCandidatos, 'conteo')).join(""))
       },

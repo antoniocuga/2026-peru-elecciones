@@ -1,9 +1,8 @@
 <template>
   <div class="row congreso-grafico">
     <div class="col-5 d-none d-md-block">
-      <b-tabs content-class="mt-3">
-        <!-- This tabs content will always be mounted -->
-        <b-tab title="Partidos">     
+      <BTabs content-class="mt-3">
+        <BTab title="Partidos">     
           <div class="list-resultados-partidos">
             <div class="row pb-3">
               <div class="col-12" :key="c.candidato_id" v-for="c in congresistas_partido">
@@ -29,8 +28,8 @@
               </div>
             </div>
           </div>  
-        </b-tab>
-        <b-tab title="Lista de congresistas" class="list-resultados-partidos" lazy>
+        </BTab>
+        <BTab title="Lista de congresistas" class="list-resultados-partidos" lazy>
  
             <div class="row item-partido pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in candidatos_congreso_real">
               <div class="col-auto pr-1 img-candidato">
@@ -45,7 +44,7 @@
               </div>
             </div>
 
-            <b-collapse v-model="open" id="collapse-1" class="col-12">
+            <BCollapse v-model="open" id="collapse-1" class="col-12">
               <div class="row item-partido pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in candidatos_congreso_real_all">
                 <div class="col-auto pr-1 img-candidato">
                   <img width="65px" :src="getImagePartido(candidato.partido_id)" />              
@@ -58,7 +57,7 @@
                   <div class=" text-success d-flex align-self-center">{{numeral(candidato.voto_preferencial).format('0,0')}}</div>
                 </div>
               </div>
-            </b-collapse>
+            </BCollapse>
         
             <div class="col-12 mt-3 button-more pl-0 pr-0" v-if="depObject.region == 'NACIONAL'">
               <a v-if="open==false" @click="open=!open" class="d-block btn-light text-center">
@@ -73,21 +72,21 @@
               </a>
             </div>
             
-        </b-tab>
-      </b-tabs>
+        </BTab>
+      </BTabs>
     </div>
 
     <div class="col-12 col-md-7 text-center">
       <div class="congreso-sticky">
         <div class="filters-congreso mb-3 text-center">
-          <b-dropdown :text="`${depObject.region} (${depObject.seats})`" variant="warning" class="m-2 departamento-menu">
-            <b-dropdown-item @click="reset_congreso()">
+          <BDropdown :text="`${depObject.region} (${depObject.seats})`" variant="warning" class="m-2 departamento-menu">
+            <BDropdownItem @click="reset_congreso()">
               NACIONAL (130)
-            </b-dropdown-item>
-            <b-dropdown-item @click="show_departamentos(d)" :key="d.region" v-for="d in departamentos">
+            </BDropdownItem>
+            <BDropdownItem @click="show_departamentos(d)" :key="d.region" v-for="d in departamentos">
               {{ d.region}} ({{ d.seats }})
-            </b-dropdown-item>
-          </b-dropdown>
+            </BDropdownItem>
+          </BDropdown>
         </div>
         <svg class="svg-congreso">
           <g id="parliament"></g>
@@ -99,9 +98,8 @@
     </div>
 
     <div class="col-12 mt-3 d-block d-md-none">
-      <b-tabs content-class="mt-3">
-        <!-- This tabs content will always be mounted -->
-        <b-tab title="Partidos">     
+      <BTabs content-class="mt-3">
+        <BTab title="Partidos">     
           <div class="list-resultados-partidos">
 
 
@@ -131,8 +129,8 @@
               </div>
             </div>
           </div>  
-        </b-tab>
-        <b-tab title="Lista de congresistas" class="list-resultados-partidos" lazy>
+        </BTab>
+        <BTab title="Lista de congresistas" class="list-resultados-partidos" lazy>
  
           <div class="row pb-2 pt-2">
             <div class="col-2 pr-1">             
@@ -158,7 +156,7 @@
             </div>
           </div>
 
-          <b-collapse v-model="open" id="collapse-1" class="col-12">
+          <BCollapse v-model="open" id="collapse-1" class="col-12">
             <div class="row item-partido pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in candidatos_congreso_real_all">
               <div class="col-auto pr-1 img-candidato">
                 <img width="65px" :src="getImagePartido(candidato.partido_id)" />              
@@ -171,7 +169,7 @@
                 <div class=" text-success d-flex align-self-center">{{numeral(candidato.voto_preferencial).format('0,0')}}</div>
               </div>
             </div>
-          </b-collapse>
+          </BCollapse>
       
           <div class="col-12 mt-3 button-more pl-0 pr-0" v-if="depObject.region == 'NACIONAL'">
             <a v-if="open==false" @click="open=!open" class="d-block btn-light text-center">
@@ -187,8 +185,8 @@
           </div>
           
 
-        </b-tab>
-      </b-tabs>
+        </BTab>
+      </BTabs>
     </div>
 
 
@@ -202,13 +200,19 @@
 
 <script>
   import numeral from 'numeral'
-  import { mapState } from 'vuex'
+  import { storeToRefs } from 'pinia'
+  import { useCandidatosStore } from '../stores/candidatos'
+  import { getPartidoImage } from '../utils/assets'
   import * as d3 from 'd3'
   import * as parliament from 'd3-parliament-chart'
   import { filter, groupBy, map, orderBy, uniq, sum } from 'lodash'
 
   export default {
     name: 'congresoGrafico.vue',
+    setup() {
+      const store = useCandidatosStore()
+      return { ...storeToRefs(store), store }
+    },
     data() {
       return {
         depSelected: 'NACIONAL (130)',
@@ -220,9 +224,6 @@
       }
     },
     computed: {
-      ...mapState({
-        congresistas: state => state.candidatos.congresistas
-      }),
       candidatos_congreso_real() {
 
         if(this.depObject.region != 'NACIONAL') {
@@ -290,11 +291,7 @@
     methods: {
       numeral,
       getImagePartido(c) {
-        try {
-          return require(`../assets/partidos/${c}.png`) 
-        } catch (error) {
-          return require(`../assets/partidos/blanco-viciado.png`)
-        }
+        return getPartidoImage(c)
       },
       show_partidos(c) {
         this.open=false

@@ -5,7 +5,7 @@
 
         <h3 class="comparador-title"><b>COMPARADOR CON COMICIOS DEL 2016</b></h3>
         <h2 @click="openResultados=!openResultados" v-if="eleccion_region">Segunda vuelta</h2>
-        <h3 class="mt-3 comparador-region" v-if="eleccion_region.departamento != 'NACIONAL'">{{ regionSeleccionada.departamento }}</h3>
+        <h3 class="mt-3 comparador-region" v-if="eleccion_region && regionSeleccionadaSegunda">{{ regionSeleccionadaSegunda.departamento }}</h3>
       </div>
     </div>
     <div class="col-2 pl-0 text-right align-self-center">
@@ -16,15 +16,15 @@
         <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
       </svg></a>
     </div>
-    <b-collapse v-model="openResultados" id="resultados2016" class="col-12">
-      <b-tabs>
-        <b-tab title="Por candidatos">
+    <BCollapse v-model="openResultados" id="resultados2016" class="col-12">
+      <BTabs>
+        <BTab title="Por candidatos">
           <div class="row mb-2 mt-2" :key="partido.partido_id" v-for="partido in elecciones_parse">
             <div class="col-8 datos-eleccion"><img width="25px" :src="getImagePartido(partido.partido_id)" /> {{ partido.partido }}</div>
             <div class="text-right col-4"><span>{{numeral(partido.total_votos).format('0,0')}}</span></div>
           </div>
-        </b-tab>
-        <b-tab class="" title="Datos de la votacion">
+        </BTab>
+        <BTab class="" title="Datos de la votacion">
           <div class="row mt-3 mb-3">
             <div class="col-8 datos-eleccion text-left">
               <div>Electores habiles </div>  
@@ -58,53 +58,50 @@
             </div>
           </div>        
 
-        </b-tab>
-      </b-tabs>
-    </b-collapse>
+        </BTab>
+      </BTabs>
+    </BCollapse>
   </div>
 </template>
 
 <script>
   import numeral from 'numeral'
-  import { mapState } from 'vuex'
+  import { storeToRefs } from 'pinia'
+  import { useCandidatosStore } from '../stores/candidatos'
+  import { getPartidoImage } from '../utils/assets'
   import { find, orderBy } from 'lodash'
+  import departamentosData from '../data/departamentos.json'
 
   export default {
-    name: "elecciones2016",
+    name: "elecciones2016SegundaVuelta",
     data() {
       return {
         openResultados: true
       }
-    },    
+    },
+    setup() {
+      const store = useCandidatosStore()
+      return { ...storeToRefs(store), store }
+    },
     computed: {
-      ...mapState({        
-        regionSeleccionada: state => state.candidatos.regionSeleccionadaSegunda,
-      }),
       elecciones_2016() {
-        return require('../data/departamentos.json')
+        return departamentosData
       },
       elecciones_parse() {
-        return orderBy(this.eleccion_region.eleccion2016.partidos, ['total_votos'], ['desc'])
+        return this.eleccion_region ? orderBy(this.eleccion_region.eleccion2016.partidos, ['total_votos'], ['desc']) : []
       },
       eleccion_region() {
-        if(this.elecciones_2016) {
-          let departamento = find(this.elecciones_2016, ['departamento', this.regionSeleccionada.region])
-          return departamento  
+        if (this.elecciones_2016 && this.regionSeleccionadaSegunda) {
+          return find(this.elecciones_2016, ['departamento', this.regionSeleccionadaSegunda.region])
         }
-
-        return false        
+        return false
       }
     },
-    methods: {    
-      numeral,    
+    methods: {
+      numeral,
       getImagePartido(partido) {
-        try {
-          return require(`../assets/partidos/${partido}.png`) 
-        } catch (error) {
-          return require(`../assets/partidos/blanco-viciado.png`)
-        }
+        return getPartidoImage(partido)
       },
     }
   }
-
 </script>
