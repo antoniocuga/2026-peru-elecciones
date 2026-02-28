@@ -3,7 +3,7 @@
  */
 import axios from 'axios'
 
-const BASE = 'https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021'
+const BASE = import.meta.env.VITE_API_BASE || 'https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021'
 
 export default {
   async getAllCongreso() {
