@@ -78,9 +78,12 @@
 
         <div class="mt-4">
             <p class="small text-light" style="font-size: 0.75rem; opacity: 0.8;">
-                *El especial extrae información del sitio web de la ONPE cada 20 minutos...
+                *El especial extrae información del sitio web de la ONPE cada 20 minutos. Esto puede generar un desfase breve con respecto a su última actualización.
             </p>
         </div>
+            <p class="small text-light" style="font-size: 0.75rem; opacity: 0.8;">
+                Por dicho motivo,los porcentajes de votación y cantidad de votos pueden aparecer diferentes a las cifras oficiales, temporalmente.
+            </p>
     </div>
 </div>
 </template>
@@ -97,34 +100,6 @@ export default {
 <style>
 
 /* Bordes redondeados especiales para los extremos */
-.custom-rounded-left {
-    border-top-left-radius: 50px !important;
-    border-bottom-left-radius: 50px !important;
-    border-right: 1px solid #dee2e6 !important;
-}
 
-.custom-rounded-right {
-    border-top-right-radius: 50px !important;
-    border-bottom-right-radius: 50px !important;
-    border-left: 1px solid #dee2e6 !important;
-}
-
-.card-candidate {
-    height: 100px;
-    background-color: white;
-    overflow: hidden;
-    border-radius: 0; /* Por defecto rectos, excepto los extremos */
-}
-
-.card-candidate img {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-}
-
-/* Línea punteada inferior */
-.border-top.dotted {
-    border-top: 2px dotted #28a745 !important;
-}
 
 </style>

@@ -1804,3 +1804,34 @@ h3.comparador-region {
   }
 }
 
+/* estilos del newwidget*/
+
+.custom-rounded-left {
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+    border-right: 1px solid #dee2e6 !important;
+}
+
+.custom-rounded-right {
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+    border-left: 1px solid #dee2e6 !important;
+}
+
+.card-candidate {
+    height: 100px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 0; /* Por defecto rectos, excepto los extremos */
+}
+
+.card-candidate img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+/* Línea punteada inferior */
+.border-top.dotted {
+    border-top: 2px dotted #28a745 !important;
+}
