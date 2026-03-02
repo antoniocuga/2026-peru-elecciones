@@ -40,8 +40,6 @@
           <p>La Oficina Nacional de Procesos Electorales (ONPE) brinda la información preliminar de las mesas de votación. El conteo final se completa en los días siguientes.</p>
         </div>
         <MapaEleccionesSegunda />
-        <div class="tooltip tooltip-data mobile-results" id="tooltip_primera"></div>
-        <div class="tooltip tooltip-data mobile-results" id="tooltip_segunda"></div>
       </div>
 
       <div class="row pt-3 mt-5 border-bottom">

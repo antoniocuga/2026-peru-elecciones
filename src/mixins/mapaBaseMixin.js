@@ -54,7 +54,23 @@ export const mapaBaseMixin = {
   },
 
   mounted() {
+    // Ensure the tooltip div exists on document.body (needed when component is
+    // used standalone/embedded and the parent page didn't provide it)
+    if (this._tooltipId && !document.querySelector(this._tooltipId)) {
+      const tip = document.createElement('div')
+      tip.id = this._tooltipId.replace(/^#/, '')
+      tip.className = 'tooltip tooltip-data'
+      document.body.appendChild(tip)
+      this._tooltipCreatedByMixin = true
+    }
     this.renderMapa()
+  },
+
+  beforeUnmount() {
+    if (this._tooltipCreatedByMixin) {
+      const el = document.querySelector(this._tooltipId)
+      if (el) el.remove()
+    }
   },
 
   props: {
