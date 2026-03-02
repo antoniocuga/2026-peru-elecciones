@@ -95,11 +95,3 @@ export default {
 }
 
 </script>
-
-
-<style>
-
-/* Bordes redondeados especiales para los extremos */
-
-
-</style>
