@@ -60,24 +60,26 @@ export const useCandidatosStore = defineStore('candidatos', {
       const key = rawKey === 'NACIONAL' ? rawKey : String(rawKey).toLowerCase().trim()
       if (distritosCache[key] != null) {
         const cached = distritosCache[key]
-        this.distritos = Array.isArray(cached) ? cached : cached?.candidatos ?? []
+        this.distritos = Array.isArray(cached) ? cached : Array.isArray(cached?.candidatos) ? cached.candidatos : []
         return
       }
       const result = await api.getAllDistritos({ dep_id: key })
       distritosCache[key] = result
-      this.distritos = Array.isArray(result) ? result : result?.candidatos ?? result ?? []
+      this.distritos = Array.isArray(result) ? result
+        : Array.isArray(result?.candidatos) ? result.candidatos : []
     },
     async getAllDistritosSegunda(region) {
       const rawKey = region?.region ?? 'NACIONAL'
       const key = rawKey === 'NACIONAL' ? rawKey : String(rawKey).toLowerCase().trim()
       if (distritosSegundaCache[key] != null) {
         const cached = distritosSegundaCache[key]
-        this.distritosSegunda = Array.isArray(cached) ? cached : cached?.candidatos ?? []
+        this.distritosSegunda = Array.isArray(cached) ? cached : Array.isArray(cached?.candidatos) ? cached.candidatos : []
         return
       }
       const result = await api.getAllDistritosSegunda({ dep_id: key })
       distritosSegundaCache[key] = result
-      this.distritosSegunda = Array.isArray(result) ? result : result?.candidatos ?? result ?? []
+      this.distritosSegunda = Array.isArray(result) ? result
+        : Array.isArray(result?.candidatos) ? result.candidatos : []
     },
 
     updateRegionSeleccionada(region) {

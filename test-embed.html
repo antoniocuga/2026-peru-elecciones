@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Embed Test</title>
+  <style>
+    body { font-family: sans-serif; background: #f5f5f5; margin: 0; }
+    .page-content { max-width: 900px; margin: 0 auto; padding: 24px; }
+    .editorial-text { background: white; padding: 16px; border-radius: 4px; margin-bottom: 16px; color: #333; }
+    .widget-label { font-size: 11px; font-weight: bold; color: #999; text-transform: uppercase;
+                    letter-spacing: 1px; margin-bottom: 4px; }
+  </style>
+  <script type="module" src="/src/embed.js"></script>
+</head>
+<body>
+  <div class="page-content">
+
+    <div class="editorial-text">
+      <h1>Elecciones Perú 2026</h1>
+      <p>Texto editorial antes del primer widget...</p>
+    </div>
+
+    <p class="widget-label">widget-mapa</p>
+    <div id="widget-mapa"></div>
+
+    <div class="editorial-text">
+      <p>Más texto editorial entre widgets...</p>
+    </div>
+
+    <p class="widget-label">widget-congreso</p>
+    <div id="widget-congreso"></div>
+
+    <p class="widget-label">widget-conteo</p>
+    <div id="widget-conteo"></div>
+
+    <p class="widget-label">widget-historico</p>
+    <div id="widget-historico"></div>
+
+    <p class="widget-label">widget-resultados</p>
+    <div id="widget-resultados"></div>
+
+    <p class="widget-label">widget-new</p>
+    <div id="widget-new"></div>
+
+  </div>
+</body>
+</html>

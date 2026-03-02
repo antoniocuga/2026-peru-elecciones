@@ -20,4 +20,21 @@ export default defineConfig({
   server: {
     port: 5173,
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main:  fileURLToPath(new URL('./index.html', import.meta.url)),
+        embed: fileURLToPath(new URL('./src/embed.js', import.meta.url)),
+      },
+      output: {
+        entryFileNames: (chunk) =>
+          chunk.name === 'embed' ? 'embed.[hash].js' : 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: (asset) =>
+          asset.name?.endsWith('.css') && asset.originalFileName?.includes('embed')
+            ? 'embed.[hash].css'
+            : 'assets/[name].[hash][extname]',
+      },
+    },
+  },
 })

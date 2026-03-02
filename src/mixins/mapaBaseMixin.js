@@ -450,7 +450,8 @@ export const mapaBaseMixin = {
       const objectKey = Object.keys(geo.objects)[0]
       if (!objectKey) return
 
-      const rawDistritos = this.store[this._rawDistritosKey] || []
+      const _raw = this.store[this._rawDistritosKey]
+      const rawDistritos = Array.isArray(_raw) ? _raw : []
       let parsed = this.distritos_parse
 
       if (!parsed.length && rawDistritos.length) {
