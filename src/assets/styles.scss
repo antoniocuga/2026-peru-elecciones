@@ -41,6 +41,41 @@ p {
   }
 }
 
+
+h1.interactive_headline {
+  max-width: 620px;
+  margin: 45px auto 0 auto;
+  font-family: "EB Garamond", serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 37px;
+  letter-spacing: .4px;
+  text-align: center;
+
+  @media (max-width: 575.98px) { 
+    font-size: 24px;
+    line-height: 1.2em;
+  }
+}
+
+h2.interactive_subheadline {
+  max-width: 620px;
+  margin: 45px auto 0 auto;
+  font-family: "EB Garamond", serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 37px;
+  letter-spacing: .4px;
+  text-align: center;
+
+  @media (max-width: 575.98px) { 
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+}
+
 .ultima-actualizacion {
   color: #464646;
   font-size: 14px;
@@ -1252,23 +1287,6 @@ p {
     height: 820px;
     margin: 15px auto;
   }
-  
-  h1.page-title {
-    max-width: 620px;
-    margin: 45px auto 0 auto;
-    font-family: "noto serif",serif;
-    text-align: center;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 37px;
-    letter-spacing: .4px;
-    text-align: center;
-
-    @media (max-width: 575.98px) { 
-      font-size: 21px;
-      line-height: 1.2em;
-    }
-  }
 }
 
 // Encuestas by date
@@ -1817,9 +1835,16 @@ h3.comparador-region {
         gap: 8px;
     }
 
-    img {
+    img.img-candidato {
         width: 60px;
         height: 60px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+    
+    img.partido-icon {
+        width: 20px;
+        height: 20px;
         object-fit: cover;
         flex-shrink: 0;
     }

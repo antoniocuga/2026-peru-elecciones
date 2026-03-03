@@ -1,20 +1,14 @@
 <template>
-  <div class="container">
-    <div v-if="topCandidatos.length">
-
-      <div class="d-flex justify-content-between align-items-end mb-4">
-        <h2 class="fw-bold m-0">Resultados presidenciales a nivel nacional</h2>
-        <span class="text-warning fw-bold" v-if="conteo">{{ conteo }}% contabilizado</span>
-      </div>
-
+  <div class="container-fluid py-4" style="background-color:#dce8ec;">
+    <div class="container" v-if="topCandidatos.length">
       <div class="row g-2">
         <div class="col-6 col-md-3" v-for="(c, i) in topCandidatos" :key="c.candidato_id">
           <div class="card card-candidate border-3"
                :class="i === 0 ? 'custom-rounded-left' : i === 3 ? 'custom-rounded-right' : ''"
                :style="`border-color: ${c.color} !important`">
             <div class="card-body d-flex align-items-center p-2">
-              <img src="https://via.placeholder.com/80"
-                   class="rounded-circle border border-3 flex-shrink-0"
+              <img :src="getImageCandidate(c.candidato_id)"
+                   class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                    :style="`border-color: ${c.color} !important`"
                    width="60" height="60" alt="" />
               <div class="ms-2 text-dark overflow-hidden">
@@ -27,7 +21,10 @@
                   </small>
                 </div>
                 <p class="candidato-nombre mb-0">{{ c.candidato }}</p>
-                <p class="partido-nombre mb-0">{{ c.partido }}</p>
+                <p class="partido-nombre mb-0">
+                  <img width="20" height="20" class="partido-icon me-1" :src="getImagePartido(c.partido_id)" alt="" />
+                  {{ c.partido }}
+                </p>
               </div>
             </div>
           </div>
@@ -38,10 +35,11 @@
       </div>
 
       <div class="mt-3">
-        <p class="small text-light mb-0" style="font-size:0.75rem; opacity:0.8;">
+        <p class="small text-dark mb-0 text-center" style="font-size:0.75rem; opacity:0.8;">
           Última actualización: {{ fechaHora }} · Datos ONPE, actualizados cada 20 minutos.
         </p>
       </div>
+
     </div>
   </div>
 </template>
@@ -50,6 +48,7 @@
 import numeral from 'numeral'
 import { storeToRefs } from 'pinia'
 import { useCandidatosStore } from '../stores/candidatos'
+import { getPartidoImage, getCandidatoImage } from '../utils/assets'
 import { filter, map, orderBy, groupBy, uniq } from 'lodash'
 
 export default {
@@ -64,6 +63,12 @@ export default {
   },
   methods: {
     numeral,
+    getImageCandidate(id) {
+      return getCandidatoImage(id)
+    },
+    getImagePartido(id) {
+      return getPartidoImage(id)
+    },
   },
   computed: {
     conteo() {
