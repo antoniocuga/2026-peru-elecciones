@@ -29,12 +29,18 @@ export default defineConfig({
       },
       output: {
         entryFileNames: (chunk) =>
-          chunk.name === 'embed' ? 'embed.[hash].js' : 'assets/[name].[hash].js',
-        chunkFileNames: 'assets/[name].[hash].js',
+          chunk.name === 'embed' ? 'embed.js' : 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
         assetFileNames: (asset) =>
           asset.name?.endsWith('.css') && asset.originalFileName?.includes('embed')
-            ? 'embed.[hash].css'
-            : 'assets/[name].[hash][extname]',
+            ? 'embed.css'
+            : 'assets/[name][extname]',
+        manualChunks: {
+          'vendor-vue':       ['vue', 'pinia', 'vue-router'],
+          'vendor-d3':        ['d3', 'd3-geo', 'topojson-client'],
+          'vendor-bootstrap': ['bootstrap', 'bootstrap-vue-3', '@popperjs/core'],
+          'vendor-utils':     ['lodash', 'numeral', 'axios'],
+        },
       },
     },
   },
