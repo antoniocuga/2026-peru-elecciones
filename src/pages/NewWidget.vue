@@ -1,97 +1,98 @@
 <template>
-  <div class="container-fluid py-5" style="background-color: #444; color: white;">
-    <div class="container">
-        <div class="d-flex justify-content-between align-items-end mb-4">
-            <h2 class="fw-bold m-0">Resultados presidenciales a nivel nacional</h2>
-            <span class="text-warning fw-bold">15%* (Conteo rápido)</span>
+  <div class="container">
+    <div v-if="topCandidatos.length">
+
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <h2 class="fw-bold m-0">Resultados presidenciales a nivel nacional</h2>
+        <span class="text-warning fw-bold" v-if="conteo">{{ conteo }}% contabilizado</span>
+      </div>
+
+      <div class="row g-2">
+        <div class="col-6 col-md-3" v-for="(c, i) in topCandidatos" :key="c.candidato_id">
+          <div class="card card-candidate border-3"
+               :class="i === 0 ? 'custom-rounded-left' : i === 3 ? 'custom-rounded-right' : ''"
+               :style="`border-color: ${c.color} !important`">
+            <div class="card-body d-flex align-items-center p-2">
+              <img src="https://via.placeholder.com/80"
+                   class="rounded-circle border border-3 flex-shrink-0"
+                   :style="`border-color: ${c.color} !important`"
+                   width="60" height="60" alt="" />
+              <div class="ms-2 text-dark overflow-hidden">
+                <div class="d-flex align-items-baseline flex-wrap">
+                  <span class="porcentaje-top" :style="`color: ${c.color}`">
+                    {{ c.validos.toFixed(1) }}%
+                  </span>
+                  <small class="votos-top ms-1">
+                    {{ numeral(c.votos).format('0,0') }} votos
+                  </small>
+                </div>
+                <p class="candidato-nombre mb-0">{{ c.candidato }}</p>
+                <p class="partido-nombre mb-0">{{ c.partido }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="segunda-vuelta-badge" v-if="i === 0 || i === 1">
+            ✓ En segunda vuelta
+          </div>
         </div>
+      </div>
 
-        <div class="row g-2">
-            <div class="col-md-3">
-                <div class="card card-candidate border-success border-3 custom-rounded-left">
-                    <div class="card-body d-flex align-items-center p-2">
-                        <div class="position-relative">
-                            <img src="https://via.placeholder.com/80" class="rounded-circle border border-success border-3" alt="Rafael">
-                        </div>
-                        <div class="ms-3 text-dark">
-                            <div class="d-flex align-items-baseline">
-                                <span class="h4 fw-bold text-info mb-0">11.7%</span>
-                                <small class="text-muted ms-1" style="font-size: 0.7rem;">1,692,279 votos</small>
-                            </div>
-                            <p class="fw-bold mb-0 small">Rafael López Aliaga</p>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-2">
-                    <small class="text-success fw-bold border-top border-success pt-1 d-block" style="border-style: dotted !important;">En segunda vuelta</small>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card card-candidate border-warning border-3">
-                    <div class="card-body d-flex align-items-center p-2">
-                        <img src="https://via.placeholder.com/80" class="rounded-circle border border-warning border-3" alt="Keiko">
-                        <div class="ms-3 text-dark">
-                            <div class="d-flex align-items-baseline">
-                                <span class="h4 fw-bold text-orange mb-0" style="color: #ff7800;">11.2%</span>
-                                <small class="text-muted ms-1" style="font-size: 0.7rem;">1,692,279 votos</small>
-                            </div>
-                            <p class="fw-bold mb-0 small">Keiko Fujimori Higushi</p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card card-candidate border-warning border-3">
-                    <div class="card-body d-flex align-items-center p-2">
-                        <img src="https://via.placeholder.com/80" class="rounded-circle border border-warning border-3" alt="Keiko">
-                        <div class="ms-3 text-dark">
-                            <div class="d-flex align-items-baseline">
-                                <span class="h4 fw-bold text-orange mb-0" style="color: #ff7800;">11.2%</span>
-                                <small class="text-muted ms-1" style="font-size: 0.7rem;">1,692,279 votos</small>
-                            </div>
-                            <p class="fw-bold mb-0 small">Keiko Fujimori Higushi</p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card card-candidate border-warning border-3 custom-rounded-right">
-                    <div class="card-body d-flex align-items-center p-2">
-                        <img src="https://via.placeholder.com/80" class="rounded-circle border border-warning border-3" alt="Keiko">
-                        <div class="ms-3 text-dark">
-                            <div class="d-flex align-items-baseline">
-                                <span class="h4 fw-bold text-orange mb-0" style="color: #ff7800;">11.2%</span>
-                                <small class="text-muted ms-1" style="font-size: 0.7rem;">1,692,279 votos</small>
-                            </div>
-                            <p class="fw-bold mb-0 small">Keiko Fujimori Higushi</p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            </div>
-
-        <div class="mt-4">
-            <p class="small text-light" style="font-size: 0.75rem; opacity: 0.8;">
-                *El especial extrae información del sitio web de la ONPE cada 20 minutos. Esto puede generar un desfase breve con respecto a su última actualización.
-            </p>
-        </div>
-            <p class="small text-light" style="font-size: 0.75rem; opacity: 0.8;">
-                Por dicho motivo,los porcentajes de votación y cantidad de votos pueden aparecer diferentes a las cifras oficiales, temporalmente.
-            </p>
+      <div class="mt-3">
+        <p class="small text-light mb-0" style="font-size:0.75rem; opacity:0.8;">
+          Última actualización: {{ fechaHora }} · Datos ONPE, actualizados cada 20 minutos.
+        </p>
+      </div>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
+import numeral from 'numeral'
+import { storeToRefs } from 'pinia'
+import { useCandidatosStore } from '../stores/candidatos'
+import { filter, map, orderBy, groupBy, uniq } from 'lodash'
 
 export default {
-  name: 'NewWidget'
+  name: 'TopResultados',
+  setup() {
+    const store = useCandidatosStore()
+    const refs = storeToRefs(store)
+    return { ...refs, store, candidatos: refs.todos }
+  },
+  mounted() {
+    this.store.getAllCandidatos()
+  },
+  methods: {
+    numeral,
+  },
+  computed: {
+    conteo() {
+      return parseFloat(uniq(map(this.topCandidatos, 'conteo')).join('')) || 0
+    },
+    fechaHora() {
+      return uniq(map(this.topCandidatos, 'hora')).join('')
+    },
+    topCandidatos() {
+      const filtered = filter(this.candidatos, d =>
+        d.region === 'total' &&
+        d.candidato_id !== 'blanco' &&
+        d.candidato_id !== 'nulos'
+      )
+      return orderBy(
+        map(groupBy(filtered, 'candidato_id'), (d, id) => ({
+          candidato_id: id,
+          candidato:  uniq(map(d, 'candidato')).join(''),
+          partido_id: uniq(map(d, 'partido_id')).join(''),
+          partido:    uniq(map(d, 'partido')).join(''),
+          color:      uniq(map(d, 'color')).join(''),
+          votos:      parseFloat(uniq(map(d, 'total')).join('')) || 0,
+          validos:    parseFloat(uniq(map(d, 'validos')).join('')) || 0,
+          conteo:     parseFloat(uniq(map(d, 'conteo')).join('')) || 0,
+          hora:       uniq(map(d, 'hora')).join(''),
+        })),
+        ['validos'], ['desc']
+      ).slice(0, 4)
+    },
+  },
 }
-
 </script>

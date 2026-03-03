@@ -23,8 +23,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main:  fileURLToPath(new URL('./index.html', import.meta.url)),
-        embed: fileURLToPath(new URL('./src/embed.js', import.meta.url)),
+        main:       fileURLToPath(new URL('./index.html', import.meta.url)),
+        embed:      fileURLToPath(new URL('./src/embed.js', import.meta.url)),
+        testEmbed:  fileURLToPath(new URL('./test-embed.html', import.meta.url)),
       },
       output: {
         entryFileNames: (chunk) =>
