@@ -8,7 +8,7 @@
             <div class="col-12 col-md-9 pb-3 ganadores-segunda">
               <div class="row mt-3">
                 <div class="col-12 border-bottom">
-                  <h3 class="">2021</h3>
+                  <h3 class="">2026</h3>
                   <span class="small">
                     Conteo <b>ONPE al {{ conteo }}% a nivel nacional</b> (Última actualización: {{ fecha_hora }})
                   </span>
