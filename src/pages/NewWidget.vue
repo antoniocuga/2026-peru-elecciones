@@ -1,9 +1,16 @@
 <template>
   <div class="container-fluid py-4" style="background-color:#dce8ec;">
     <div class="container" v-if="topCandidatos.length">
+
+     <div class="mb-2">
+        <p class="small text-dark mb-0 text-center" style="font-size:0.75rem; opacity:0.8;">
+          Última actualización: {{ fechaHora }} · Datos ONPE, actualizados cada 20 minutos.
+        </p>
+      </div>
+
       <div class="row g-2">
         <div class="col-6 col-md-3" v-for="(c, i) in topCandidatos" :key="c.candidato_id">
-          <div class="card card-candidate border-3"
+          <div class="card card-candidate border-1"
                :class="i === 0 ? 'custom-rounded-left' : i === 3 ? 'custom-rounded-right' : ''"
                >
             <div class="card-body d-flex align-items-center p-2">
@@ -34,11 +41,7 @@
         </div>
       </div>
 
-      <div class="mt-3">
-        <p class="small text-dark mb-0 text-center" style="font-size:0.75rem; opacity:0.8;">
-          Última actualización: {{ fechaHora }} · Datos ONPE, actualizados cada 20 minutos.
-        </p>
-      </div>
+     
 
     </div>
   </div>

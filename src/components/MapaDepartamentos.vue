@@ -1,16 +1,16 @@
 <template>
 
   <div class="mapa-resultados-container">
-    <div class="row filter-block">
-      <div class="col-12 text-right">
+    <div class="row">
+      <div class="col-12 text-end">
         
-        <BDropdown :text="partidoSeleccionado.partido" variant="warning" class="d-inline-block m-2 departamento-menu">
+        <BDropdown :text="partidoSeleccionado.partido" class="m-2 departamento-menu">
           <BDropdownItem :key="p.partido_id" v-for="p in partidos">
             <a @click="show_partido(p)">{{ p.partido }}</a>
           </BDropdownItem>
         </BDropdown>
 
-        <BDropdown :text="regionSeleccionada.departamento" variant="warning" class="d-inline-block m-2 departamento-menu">
+        <BDropdown :text="regionSeleccionada.departamento"  class="m-2 departamento-menu">
           <BDropdownItem :key="dep.region" v-for="dep in departamentos">
             <a @click="show_departamento(dep.region)">{{ dep.departamento }}</a>
           </BDropdownItem>

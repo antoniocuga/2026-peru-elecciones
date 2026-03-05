@@ -104,7 +104,7 @@ h2.interactive_subheadline {
 }
 
 .nav-tabs .nav-link {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #333;
   font-size: 13px;
   border-radius: 0;
@@ -132,7 +132,7 @@ h2.interactive_subheadline {
 
 .creditos {
   h4 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 21px;
     font-weight: 900;
   }
@@ -146,7 +146,7 @@ h2.interactive_subheadline {
 
 .subtitle {
   h2 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     font-weight: 900;
 
@@ -275,7 +275,7 @@ h2.interactive_subheadline {
 }
 
 .congreso-grafico {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 
   .item-partido-embed-top {
     width: 100%;
@@ -395,8 +395,8 @@ h2.interactive_subheadline {
   }
   
   h4.candidato-mapa {
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
   }
 
   .title-resultados {
@@ -448,7 +448,7 @@ h2.interactive_subheadline {
   h3 {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 15px;
     font-weight: 600;
   }
@@ -456,7 +456,7 @@ h2.interactive_subheadline {
   h4 {
     margin: 10px 0;
     padding: 0;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;
   }
@@ -464,7 +464,7 @@ h2.interactive_subheadline {
   h5 {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: 400;
   }
@@ -493,7 +493,7 @@ h2.interactive_subheadline {
 
 .mapa-resultados-wrapper {
   position: relative;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 
   h1 {
     font-size: 21px;
@@ -601,7 +601,6 @@ h2.interactive_subheadline {
       font-size: 14px;
       text-transform: uppercase;
       font-weight: bold;
-      color: #6f6f6f;
 
       span {
         width: 100%;
@@ -613,7 +612,7 @@ h2.interactive_subheadline {
         font-size: 12px;
         font-weight: 600;
         text-align: center;
-        background: #eaeaea !important;
+        border-radius: 0;
       }       
     }
     .resultado-nacional {
@@ -629,7 +628,7 @@ h2.interactive_subheadline {
       h2 {
         margin: 0;
         font-size: 14px;
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: 'Nunito', sans-serif;
         color: #7A7A7A;
         cursor: pointer;
       }
@@ -646,14 +645,14 @@ h2.interactive_subheadline {
       }
 
       .titulo {
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: 'Nunito', sans-serif;
         font-size: 13px;
       } 
       .datos-eleccion {
         font-size: 14px;
         color: #393939;
         font-weight: bold;
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: 'Nunito', sans-serif;
       }
       span {
         font-size: 13px;
@@ -882,7 +881,7 @@ h2.interactive_subheadline {
 }
 
 .candidato-wrapper {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 
   h2 {
     margin: 25px 0;
@@ -914,7 +913,7 @@ h2.interactive_subheadline {
   }
 
   .ganadores-segunda {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background: #f9f9f9;
   }
 
@@ -1098,7 +1097,7 @@ h2.interactive_subheadline {
       opacity: 0.9;
 
       img {
-        height: 55px;
+        height: 35px;
       }
 
       @media (max-width: 575.98px) { 
@@ -1234,7 +1233,7 @@ h2.interactive_subheadline {
 
   h3 {
     margin: 15px 0;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 19px;
     font-weight: 900;
   }
@@ -1293,7 +1292,7 @@ h2.interactive_subheadline {
 .encuesta-wrapper {
   float: left;
   width: 100%;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 
   .nota-encuesta {
     height: 18px;
@@ -1525,7 +1524,7 @@ h2.interactive_subheadline {
   }
 
   h4 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 900;
     font-size: 18px;
 
@@ -1570,7 +1569,7 @@ h2.interactive_subheadline {
   }
 
   .diferencia {
-    display: block;
+    display: inline;
     font-size: 12px;
     color: #63a563;
   }
@@ -1670,7 +1669,7 @@ h3.comparador-region {
 
 .bg-dark {
   h4 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: #fff;
   }
 }
@@ -1684,7 +1683,7 @@ h3.comparador-region {
 }
 
 .resultados2021 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 
   h3 {
     margin: 15px 0;
@@ -1704,7 +1703,7 @@ h3.comparador-region {
   }
 
   .candidato-mapa {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: bold;
   }
@@ -1748,10 +1747,11 @@ h3.comparador-region {
   }
 
   .diferencia {
-    display: block;
+    display: inline-block;
     font-size: 12px;
     font-weight: 400;
     color: #63a563;
+    padding: 0 5px;
   }
 
   .partido-mapa {
@@ -1816,30 +1816,26 @@ h3.comparador-region {
 .custom-rounded-left {
     border-top-left-radius: 50px !important;
     border-bottom-left-radius: 50px !important;
-    border-right: 1px solid #dee2e6 !important;
 }
 
 .custom-rounded-right {
     border-top-right-radius: 50px !important;
     border-bottom-right-radius: 50px !important;
-    border-left: 1px solid #dee2e6 !important;
 }
 
 .card-candidate {
-    height: 90px;
-    background-color: white;
-    overflow: hidden;
+    border-width: 1px;
     border-radius: 0;
 
     .card-body {
-        gap: 8px;
+      gap: 4px;
     }
 
     img.img-candidato {
-        width: 60px;
-        height: 60px;
-        object-fit: cover;
-        flex-shrink: 0;
+      width: 75px;
+      height: 75px;
+      object-fit: cover;
+      flex-shrink: 0;
     }
     
     img.partido-icon {
@@ -1851,14 +1847,14 @@ h3.comparador-region {
 
     .candidato-nombre {
         font-weight: 700;
-        font-size: 0.8rem;
+        font-size: 18px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
     .partido-nombre {
-        font-size: 0.65rem;
+        font-size: 14px;
         color: #666;
         white-space: nowrap;
         overflow: hidden;
@@ -1866,13 +1862,13 @@ h3.comparador-region {
     }
 
     .porcentaje-top {
-        font-size: 1.1rem;
+        font-size: 22px;
         font-weight: 700;
         line-height: 1;
     }
 
     .votos-top {
-        font-size: 0.7rem;
+        font-size:14px;
         color: #888;
     }
 }
@@ -1884,9 +1880,15 @@ h3.comparador-region {
 
 /* Segunda vuelta badge below card */
 .segunda-vuelta-badge {
-    font-size: 0.7rem;
+    font-size: 14px;
     font-weight: 700;
-    color: #28a745;
+    background-color: #35a950;
     text-align: center;
     margin-top: 4px;
+    color: #fff;
+    border-radius: 15px;
+    display: block;
+    padding: 2px 10px;
+    margin: 5px auto;
+    width: 60%;
 }

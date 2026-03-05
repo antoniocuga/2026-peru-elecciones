@@ -5,7 +5,7 @@
 
         <h3 v-if="eleccion_region && eleccion_region.departamento == 'NACIONAL'">NACIONAL</h3>
         <h3 v-if="eleccion_region && regionSeleccionada">{{ regionSeleccionada.departamento }}</h3>
-        <h2 @click="openResultados=!openResultados" v-if="eleccion_region">Resultados de elecciones 2016 (Primera vuelta)</h2>
+        <h2 @click="openResultados=!openResultados" v-if="eleccion_region">Resultados de elecciones 2021 (Primera vuelta)</h2>
       </div>
     </div>
     <div class="col-2 pl-0 text-right align-self-center">
