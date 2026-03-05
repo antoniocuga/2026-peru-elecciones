@@ -16,7 +16,7 @@ const routes = [
   { path: '/resultados/congreso', name: 'CongresoWidget', component: CongresoWidget, props: true },
   { path: '/resultados/conteo', name: 'ConteoWidget', component: ConteoWidget, props: true },
   { path: '/resultados/historico', name: 'HistoricoWidget', component: HistoricoWidget, props: true },
-  { path: '/resultados/senado', name: 'SenadoWidget', component: HistoricoWidget, props: true },
+  { path: '/resultados/senado', name: 'SenadoWidget', component: SenadoWidget, props: true },
   { path: '/resultados/mapa', name: 'MapaWidget', component: MapaWidget, props: true }
 
 ]
