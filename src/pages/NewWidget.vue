@@ -5,7 +5,7 @@
         <div class="col-6 col-md-3" v-for="(c, i) in topCandidatos" :key="c.candidato_id">
           <div class="card card-candidate border-3"
                :class="i === 0 ? 'custom-rounded-left' : i === 3 ? 'custom-rounded-right' : ''"
-               :style="`border-color: ${c.color} !important`">
+               >
             <div class="card-body d-flex align-items-center p-2">
               <img :src="getImageCandidate(c.candidato_id)"
                    class="rounded-circle border border-3 flex-shrink-0 img-candidato"
