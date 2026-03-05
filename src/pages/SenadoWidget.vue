@@ -11,7 +11,7 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useCandidatosStore } from '../stores/candidatos'
-import congresoGrafico from '../components/congresoGrafico.vue';
+import SenadoGrafico from '../components/SenadoGrafico.vue';
 
 const store = useCandidatosStore()
 
