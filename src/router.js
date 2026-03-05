@@ -5,6 +5,7 @@ import NewWidget from './pages/NewWidget.vue'
 import CongresoWidget from './pages/CongresoWidget.vue'
 import ConteoWidget from './pages/ConteoWidget.vue'
 import HistoricoWidget from './pages/HistoricoWidget.vue'
+import SenadoWidget from './pages/SenadoWidget.vue'
 import MapaWidget from './pages/MapaWidget.vue'
 
 
@@ -15,6 +16,7 @@ const routes = [
   { path: '/resultados/congreso', name: 'CongresoWidget', component: CongresoWidget, props: true },
   { path: '/resultados/conteo', name: 'ConteoWidget', component: ConteoWidget, props: true },
   { path: '/resultados/historico', name: 'HistoricoWidget', component: HistoricoWidget, props: true },
+  { path: '/resultados/senado', name: 'SenadoWidget', component: HistoricoWidget, props: true },
   { path: '/resultados/mapa', name: 'MapaWidget', component: MapaWidget, props: true }
 
 ]
