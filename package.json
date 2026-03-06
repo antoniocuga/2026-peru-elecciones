@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "generate:2026": "node scripts/generate-2026-results.js",
+    "generate:senado": "node scripts/generate-senado-sample.js",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix"
   },
   "dependencies": {

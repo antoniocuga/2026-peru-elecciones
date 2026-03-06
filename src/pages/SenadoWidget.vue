@@ -5,7 +5,7 @@
           <SenadoGrafico />
         </div>
       </div>  
-      <div class="tooltip_congresista"></div>
+      <div class="tooltip_congresista tooltip_senado"></div>
   </div>
 </template>
 <script setup>
@@ -17,6 +17,6 @@ const store = useCandidatosStore()
 
 onMounted(() => {
   store.getAllCandidatos()
-  store.getAllCongreso()
+  store.getAllSenado()
 })
 </script>

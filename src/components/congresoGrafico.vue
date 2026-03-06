@@ -29,7 +29,7 @@
             </div>
           </div>  
         </BTab>
-        <BTab title="Lista de congresistas" class="list-resultados-partidos" lazy>
+        <BTab title="Lista de diputados" class="list-resultados-partidos" lazy>
  
             <div class="row item-partido pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in candidatos_congreso_real">
               <div class="col-auto pr-1 img-candidato">
@@ -353,7 +353,7 @@
         d3.select('g#parliament').call(
           parliament.parliamentChart(this.congresistas_parse, ancho)
           .debug(false)
-          .sections(5)
+          .sections(3)
           .sectionGap(gap)
           .seatRadius(radius)
           .rowHeight(h)

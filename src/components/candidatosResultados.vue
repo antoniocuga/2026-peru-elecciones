@@ -32,13 +32,14 @@
           
           <div class="card card-candidate align-self-center mt-2 p-3" :key="c.candidato_id" v-for="c in displayCandidatos.slice(0,6)">
             <div class="row">
-              <div class="col-3 pr-0 pl-0 text-center">
+              <div class="col-5 col-md-4 col-lg-3 pr-0 pl-0 text-center">
                   <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                    :style="`border-color: ${c.color} !important`" :src="getImageCandidate(c.candidato_id)" />
               </div>
-              <div class="col-8 pl-0 pr-0">
+              <div class="col-7 col-md-8 col-md-9 pl-0 pr-0">
                 <div>
                 <span :style="`color: ${c.color} !important; font-size:22px; font-weight: 600;`">{{c.validos.toFixed(3)}}%</span>
+
                 <span class=" align-self-center text-center">
                   <span class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
                     {{ numeral(c.votos).format('0,0') }}
@@ -54,6 +55,7 @@
             </div> 
           </div>
         </div>
+        
         <BCollapse v-model="open" id="collapse-1" class="col-12">
 
          <div class="card card-candidate align-self-center mt-2 pb-1" :key="c.candidato_id" v-for="c in displayCandidatos.slice(6, displayCandidatos.length)">

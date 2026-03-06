@@ -17,7 +17,15 @@ const RESULTADOS_SEGUNDA = import.meta.env.VITE_RESULTADOS_SEGUNDA || 'resultado
 
 export default {
   async getAllCongreso() {
-    const { data } = await axios.get(`${BASE}/${DATA_PRIMERA_DIR}/congreso_total.json`)
+    const url = `${BASE}/${DATA_PRIMERA_DIR}/congreso_total.json`
+    if (import.meta.env.DEV) console.log('[API] getAllCongreso', url)
+    const { data } = await axios.get(url)
+    return data
+  },
+  async getAllSenado() {
+    const url = `${BASE}/${DATA_PRIMERA_DIR}/senado_total.json`
+    if (import.meta.env.DEV) console.log('[API] getAllSenado', url)
+    const { data } = await axios.get(url)
     return data
   },
   async getAllCandidatos() {

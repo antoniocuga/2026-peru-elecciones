@@ -12,6 +12,7 @@ export const useCandidatosStore = defineStore('candidatos', {
     todos: [],
     todosSegunda: [],
     congresistas: [],
+    senadores: [],
     distritos: [],
     distritosSegunda: [],
     regionSeleccionada: {
@@ -53,6 +54,13 @@ export const useCandidatosStore = defineStore('candidatos', {
         inflight.congresistas = api.getAllCongreso().finally(() => { delete inflight.congresistas })
       }
       this.congresistas = await inflight.congresistas
+    },
+    async getAllSenado() {
+      if (this.senadores.length > 0) return
+      if (!inflight.senadores) {
+        inflight.senadores = api.getAllSenado().finally(() => { delete inflight.senadores })
+      }
+      this.senadores = await inflight.senadores
     },
 
     async getAllDistritos(region) {
