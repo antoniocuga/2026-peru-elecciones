@@ -49,27 +49,23 @@
               <h3 class="border-bottom">{{ eleccion.eleccion }}</h3>
             </div>
             <div class="col-12">
-              <div class="row" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
-                <div class="col-7 pr-0">
-                  <div class="candidate-info historico align-self-center">
-                    <div class="">
-                      <img height="40px" width="40px" :src="getImageCandidate(candidato.candidato_id)" />
-                    </div>
-                    <div>
-                      <h4>{{candidato.candidato}}</h4>
-                      <h5><img width="25px" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h5>
-                      <div class="tooltip-c"><span class="badge text-success" v-if="candidato.ganador">Ganador en segunda vuelta</span></div>
-                    </div>
+              <div class="card card-candidate align-self-center mt-2 p-3" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
+                <div class="row">
+                  <div class="col-4 pr-0">                    
+                      <div class="">
+                        <img  class="rounded-circle border border-3 flex-shrink-0 img-candidat" :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                      </div>                      
                   </div>
-                </div>
-                <div class="col-5 pl-0">
-                  <div class="candidate-results">                
-                    <div class="candidate-bar">
-                      <div class="tooltip-c">{{ candidato.validos+"%" }} <span v-if="candidato.diferencia" class="badge text-success">+{{ numeral(candidato.diferencia).format('0,0') }}</span> </div>                    
-                      <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato, eleccion.items, 150)}px;`"></div>
-                      <div class="tooltip-c"><span>Total de votos: {{ numeral(candidato.total_votos).format('0,0') }}</span></div>
-                    </div>
-                  </div>            
+                  <div class="col-8 pl-0">
+                    <div class="candidate-results">                
+                      
+                        <div class="tooltip-c">{{ candidato.validos+"%" }} <span v-if="candidato.diferencia" class="badge text-success">+{{ numeral(candidato.diferencia).format('0,0') }}</span> </div>                    
+                        <h6 class="candidato-mapa m-0">{{candidato.candidato}}</h6>
+                        <h5><img width="25px" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h5>
+                        <div class="tooltip-c"><span class="badge text-success" v-if="candidato.ganador">Ganador en segunda vuelta</span></div>                      
+                      
+                    </div>            
+                  </div>
                 </div>
               </div>
               
