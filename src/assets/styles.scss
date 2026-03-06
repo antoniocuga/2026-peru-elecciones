@@ -590,15 +590,40 @@ h2.interactive_subheadline {
   }
 }
 
-.senado-widget-wrapper {
-  position: relative;
-}
-
 .tooltip_senado {
-  position: fixed;
-  z-index: 99999;
-  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  max-width: 320px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.932);
+  color: #000;
   pointer-events: none;
+  box-shadow: 0px 0px 2px #0000005c;
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  h4 {
+    margin: 10px 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 .tooltip-data {
@@ -1957,6 +1982,13 @@ h3.comparador-region {
 .card-candidate {
     border-width: 1px;
     border-radius: 0;
+
+    .ganador-badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 12px;
+    }
 
     .card-body {
       gap: 4px;

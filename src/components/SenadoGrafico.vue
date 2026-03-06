@@ -188,15 +188,11 @@
             </a>
           </div>
           
-
         </BTab>
       </BTabs>
     </div>
 
 
-    <div class="col-12 mt-3 resultados2021">      
-          
-    </div>
     </template>
   </div>
 </template>
@@ -211,9 +207,6 @@
 
   export default {
     name: 'SenadoGrafico',
-    inject: {
-      senadoTooltipRef: { default: null }
-    },
     setup() {
       const store = useCandidatosStore()
       return { ...storeToRefs(store), store }
@@ -389,12 +382,8 @@
         this.highlightedPartido = null
         this.updateSunburstHighlight()
       },
-      _getTooltipSelection() {
-        const el = this.senadoTooltipRef?.value ?? document.querySelector('.tooltip_senado')
-        return el ? d3.select(el) : d3.select(null)
-      },
       showSunburstTooltip(event, d) {
-        const tooltip = this._getTooltipSelection()
+        const tooltip = d3.select('.tooltip_senado')
         const dd = d.data
         let html = ''
         // Leaf = candidate (same tooltip as congresoGrafico: name, party, logo, votos)
@@ -418,22 +407,20 @@
           html = `<strong>${dd.name || ''}</strong>`
           if (dd.tipo) html += `<br>Tipo: ${dd.tipo}<br>Región: ${dd.region || '-'}<br>Partido: ${dd.partido || '-'}`
         }
-        const el = tooltip.node()
-        if (!el) return
         tooltip.html(html)
-          .style('position', 'fixed')
           .style('left', (event.pageX) + 'px')
           .style('top', (event.pageY - 28) + 'px')
+        tooltip.transition()
+          .duration(200)
+          .style('opacity', 1)
           .style('visibility', 'visible')
-          .style('opacity', '1')
-        tooltip.interrupt().transition().duration(200).style('opacity', 1)
       },
       hideSunburstTooltip() {
-        const tooltip = this._getTooltipSelection()
-        if (tooltip.empty()) return
-        tooltip.interrupt().transition().duration(150).style('opacity', 0).on('end', function () {
-          d3.select(this).style('visibility', 'hidden')
-        })
+        const tooltip = d3.select('.tooltip_senado')
+        tooltip.transition()
+          .duration(150)
+          .style('opacity', 0)
+          .style('visibility', 'hidden')
       },
       renderSunburst() {
         const g = this.$refs.sunburst
