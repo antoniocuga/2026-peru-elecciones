@@ -53,15 +53,15 @@
                 <div class="row">
                   <div class="col-4 pr-0">                    
                       <div class="">
-                        <img  class="rounded-circle border border-3 flex-shrink-0 img-candidat" :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                        <img  class="rounded-circle border border-3 flex-shrink-0 img-candidato" :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
                       </div>                      
                   </div>
                   <div class="col-8 pl-0">
-                    <div class="candidate-results">                
-                      
-                        <div class="tooltip-c">{{ candidato.validos+"%" }} <span v-if="candidato.diferencia" class="badge text-success">+{{ numeral(candidato.diferencia).format('0,0') }}</span> </div>                    
-                        <h6 class="candidato-mapa m-0">{{candidato.candidato}}</h6>
-                        <h5><img width="25px" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h5>
+                    <div class="">
+                        <div class="tooltip-c" :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ candidato.validos+"%" }} <span v-if="candidato.diferencia" class="badge text-success">+{{ numeral(candidato.diferencia).format('0,0') }}</span> </div>
+                                        
+                        <h4 class="candidato-mapa m-0">{{candidato.candidato}}</h4>
+                        <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h4>
                         <div class="tooltip-c"><span class="badge text-success" v-if="candidato.ganador">Ganador en segunda vuelta</span></div>                      
                       
                     </div>            
