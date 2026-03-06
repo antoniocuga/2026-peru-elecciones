@@ -389,23 +389,31 @@
       showSunburstTooltip(event, d) {
         const tooltip = d3.select('.tooltip_senado')
         const dd = d.data
-        let html = `<strong>${dd.name || ''}</strong>`
-        if (dd.senado_tipo !== undefined) {
-          html += `<br>Tipo: ${dd.senado_tipo}<br>Región: ${dd.region || '-'}<br>Partido: ${dd.partido || '-'}`
-        } else if (dd.nombre) {
+        let html = ''
+        // Leaf = candidate (same tooltip as congresoGrafico: name, party, logo, votos)
+        if (!d.children || d.children.length === 0) {
+          const region = dd.region != null ? dd.region : ''
+          const nombre = dd.nombre != null ? dd.nombre : ''
+          const partidoId = dd.partido_id != null ? dd.partido_id : ''
+          const partido = dd.partido != null ? dd.partido : ''
+          const nro = dd.nro != null ? dd.nro : ''
           const preferencial = numeral(dd.voto_preferencial != null ? dd.voto_preferencial : 0).format('0,0')
           const totalPartido = numeral(dd.total_votos_partido != null ? dd.total_votos_partido : 0).format('0,0')
-          html = `<h5 class="mb-2">${dd.region || ''}</h5><h3>${dd.nombre}</h3>`
-          html += `<h4><img width="35px" src="${this.getImagePartido(dd.partido_id || '')}" /> ${dd.partido || ''} - Nro. ${dd.nro || ''}</h4>`
-          html += `<h4>Voto preferencial: <span class="text-success">${preferencial}</span></h4>`
-          html += `<h4>Total votos agrupación: <span class="text-success">${totalPartido}</span></h4>`
+          html = `<h5 class="mb-2">${region}</h5>`
+          html += `<h3>${nombre}</h3>`
+          html += `<h4><img width="35px" src="${this.getImagePartido(partidoId)}" /> ${partido} - Nro. ${nro}</h4>`
+          html += `<h4>Voto preferencial del candidato: <span class="text-success">${preferencial}</span></h4>`
+          html += `<h4>Total de votos de la agrupación en ${region}: <span class="text-success">${totalPartido}</span></h4>`
         } else if (d.children && d.children.length) {
           const n = d.value ?? d.children.length
           html = `<strong>${dd.name || 'Grupo'}</strong><br>${n} senador${n !== 1 ? 'es' : ''}`
+        } else {
+          html = `<strong>${dd.name || ''}</strong>`
+          if (dd.tipo) html += `<br>Tipo: ${dd.tipo}<br>Región: ${dd.region || '-'}<br>Partido: ${dd.partido || '-'}`
         }
         tooltip.html(html)
-          .style('left', (event.pageX + 10) + 'px')
-          .style('top', (event.pageY - 20) + 'px')
+          .style('left', (event.pageX) + 'px')
+          .style('top', (event.pageY - 28) + 'px')
         tooltip.transition().duration(200).style('opacity', 1).style('visibility', 'visible')
       },
       hideSunburstTooltip() {

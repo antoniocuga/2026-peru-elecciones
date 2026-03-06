@@ -1,11 +1,11 @@
 <template>
-  <div class="">
+  <div class="senado-widget-wrapper">
      <div class="row border-bottom justify-content-center pb-5">
         <div class="col-md-12">
           <SenadoGrafico />
         </div>
-      </div>  
-      <div class="tooltip_congresista tooltip_senado"></div>
+      </div>
+      <div class="tooltip_congresista tooltip_senado" aria-hidden="true"></div>
   </div>
 </template>
 <script setup>

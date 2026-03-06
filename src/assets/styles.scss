@@ -590,6 +590,14 @@ h2.interactive_subheadline {
   }
 }
 
+.senado-widget-wrapper {
+  position: relative;
+}
+
+.tooltip_senado {
+  z-index: 9999;
+}
+
 .tooltip-data {
   position: absolute;
   width: 100%;
