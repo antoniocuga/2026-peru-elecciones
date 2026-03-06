@@ -595,7 +595,10 @@ h2.interactive_subheadline {
 }
 
 .tooltip_senado {
-  z-index: 9999;
+  position: fixed;
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .tooltip-data {

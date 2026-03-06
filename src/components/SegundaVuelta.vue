@@ -15,33 +15,41 @@
                   </span>
                 </div>
               </div>
-              <div class="card card-candidate" :key="candidato.candidato_id" v-for="(candidato, ix) in top_candidatos.slice(0,2)">
-                <div class="row justify-content-center mt-3">
-                  <div class="col-12 col-md-3">
-                    <div class="">
+
+              <div class="row">
+                <div class="card card-candidate col-12 col-md-6" :key="candidato.candidato_id" v-for="(candidato, ix) in top_candidatos.slice(0,2)">
+                  <div class="row justify-content-center mt-3">
+                    <div class="col-12 col-md-3">
                       <div class="">
-                        <img  class="rounded-circle border border-3 flex-shrink-0 img-candidato" :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                        <div class="">
+                          <img  class="rounded-circle border border-3 flex-shrink-0 img-candidato" :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-12 col-md-3">
+                    <div class="col-12 col-md-9">
+
+                      <h4 class="candidato-mapa m-0">{{candidato.candidato}}</h4>
+
+                      <div class="candidate-results">   
+                                   
+                        <div class="candidate-bar">
+                          <div class="tooltip-c">{{ candidato.validos.toFixed(3)+"%" }} </div>
+                          <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato,top_candidatos, 320)}px;`"></div>
+                          <div class="tooltip-c"><span>Total de votos: {{ numeral(candidato.votos).format('0,0') }}</span></div>
+                          <div class="tooltip-c"><span class="badge text-success" v-if="ix==0"> Ganando por +{{ numeral(top_candidatos[ix].votos - top_candidatos[ix+1].votos).format('0,0') }} votos</span> </div>
+                        </div>
+                      </div>   
+
                       <div>
-                        <h4 class="candidato-mapa m-0">{{candidato.candidato}}</h4>
+
                         <h4 class="partido-mapa"><img width="25px" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h4>
                       </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="candidate-results">                
-                      <div class="candidate-bar">
-                        <div class="tooltip-c">{{ candidato.validos.toFixed(3)+"%" }} </div>
-                        <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato,top_candidatos, 320)}px;`"></div>
-                        <div class="tooltip-c"><span>Total de votos: {{ numeral(candidato.votos).format('0,0') }}</span></div>
-                        <div class="tooltip-c"><span class="badge text-success" v-if="ix==0"> Ganando por +{{ numeral(top_candidatos[ix].votos - top_candidatos[ix+1].votos).format('0,0') }} votos</span> </div>
-                      </div>
-                    </div>            
+
+                    </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
 
