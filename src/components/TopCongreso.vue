@@ -1,35 +1,45 @@
 
 <template>
-  <div class="candidato-wrapper">
+  <div class="candidato-wrapper resultados2021">
     <div class="row">
       <div class="col-12 col-md-6 mb-3" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso_real">
         
         <div class="row">
           <div class="col-12">
-            <h3 class="border-bottom pb-2">2021
+            <h3 class="border-bottom pb-2">2026
             <span class="small float-right text-dark">Conteo ONPE al {{ conteo  }}%</span></h3>
           </div>
         </div>
 
-        <div class="row" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
-          <div class="col-6">
-            <div class="candidate-info historico align-self-center">
-              <div class="">
-                <img height="40px" width="40px" :src="getImageCandidate(candidato.candidato_id)" />
-              </div>
+        <div class="card card-candidate align-self-center mt-2 p-3" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
+          <div class="row">
+            <div class="col-3">
               <div>
-                <h4>{{candidato.nombre}}</h4>
-                <h5><img width="25px" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h5>
+                <div class="">
+                  <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                   :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-6">
-            <div class="candidate-results">                
-              <div class="candidate-bar">
-                <div class="tooltip-c">{{ numeral(candidato.voto_preferencial).format('0,0') }} votos</div>
-                <div class="percent" :style="`background-color:${candidato.color}cc; width: ${calcScale(candidato, eleccion.items, 'voto_preferencial')}px;`"></div>
-              </div>                          
-            </div>            
+            <div class="col-9">
+              <div>
+                <div>
+                  <div class="tooltip-c">
+                  <span :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>
+                  
+                  </div>
+                  <h4 class="candidato-mapa m-0">{{ candidato.nombre }}</h4>
+                <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
+
+                </div>
+              </div>
+
+              <div class="candidate-results">                
+                <div class="candidate-bar">
+                  <div class="percent" :style="`background-color:${candidato.color}cc; width: ${calcScale(candidato, eleccion.items, 'voto_preferencial')}px;`"></div>
+                </div>                          
+              </div>            
+            </div>
           </div>
         </div>
       </div>
@@ -42,27 +52,40 @@
           </div>
         </div>
 
-        <div class="row" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
-          <div class="col-6">
-            <div class="candidate-info historico align-self-center">
-              <div class="">
-                <img height="40px" width="40px" :src="getImageCandidate(candidato.candidato_id)" />
-              </div>
+        <div class="card card-candidate  align-self-center mt-2 p-3" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
+
+        <div class="row">
+            <div class="col-3">
               <div>
-                <h4>{{candidato.candidato}}</h4>
-                <h5><img width="25px" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h5>
+                <div class="">
+                  <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                   :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                </div>
               </div>
             </div>
+            <div class="col-9">
+              <div>
+                <div>
+                  <div class="tooltip-c">
+                  <span :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ numeral(candidato.total_votos).format('0,0') }}</span>
+                  
+                  </div>
+                  <h4 class="candidato-mapa m-0">{{ candidato.candidato }}</h4>
+                <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
+
+                </div>
+              </div>
+
+              <div class="candidate-results">                
+                <div class="candidate-bar">
+                  <div class="percent" :style="`background-color:${candidato.color}cc; width: ${calcScale(candidato, eleccion.items, 'total_votos')}px;`"></div>
+                </div>                          
+              </div>            
+            </div>
           </div>
-          <div class="col-6">
-            <div class="candidate-results">                
-              <div class="candidate-bar">
-                <div class="tooltip-c">{{ numeral(candidato.total_votos).format('0,0') }} votos</div>
-                <div class="percent" :style="`background-color:${candidato.color}cc; width: ${calcScale(candidato, eleccion.items, 'total_votos')}px;`"></div>
-              </div>                          
-            </div>            
-          </div>
+
         </div>
+
       </div>
 
 
