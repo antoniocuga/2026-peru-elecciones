@@ -16,7 +16,7 @@
             <div class="card-body d-flex align-items-center p-2">
               <img :src="getImageCandidate(c.candidato_id)"
                    class="rounded-circle border border-3 flex-shrink-0 img-candidato"
-                   :style="`border-color: ${c.color} !important`"
+                   :style="`border-color: ${c.color} !important; background-color: ${c.color} !important;`"
                    width="60" height="60" alt="" />
               <div class="ms-2 text-dark overflow-hidden">
                 <div class="d-flex align-items-baseline flex-wrap">
