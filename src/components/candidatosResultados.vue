@@ -66,7 +66,7 @@
               </div>
               <div class="col-8 pl-0 pr-0">
                 <div>
-                <span :style="`color: ${c.color} !important`">{{c.validos.toFixed(3)}}%</span>
+                <span :style="`color: ${c.color} !important; font-size:22px; font-weight: 600;`">{{c.validos.toFixed(3)}}%</span>
                 <span class=" align-self-center text-center">
                   <span class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
                     {{ numeral(c.votos).format('0,0') }}
