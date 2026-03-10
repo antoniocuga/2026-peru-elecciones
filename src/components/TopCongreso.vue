@@ -67,7 +67,7 @@
               <div>
                 <div>
                   <div class="tooltip-c">
-                  <span :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ numeral(candidato.total_votos).format('0,0') }}</span>
+                  <span :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ numeral(candidato.total_votos).format('0,0') }}</span> <span class="small badge-secondary">Votos</span>
                   
                   </div>
                   <h4 class="candidato-mapa m-0">{{ candidato.candidato }}</h4>
@@ -76,11 +76,7 @@
                 </div>
               </div>
 
-              <div class="candidate-results">                
-                <div class="candidate-bar">
-                  <div class="percent" :style="`background-color:${candidato.color}cc; width: ${calcScale(candidato, eleccion.items, 'total_votos')}px;`"></div>
-                </div>                          
-              </div>            
+          
             </div>
           </div>
 
