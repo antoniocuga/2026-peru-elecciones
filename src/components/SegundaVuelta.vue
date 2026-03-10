@@ -8,11 +8,12 @@
           <div class="row justify-content-center">
             <div class="col-12 pb-3 ganadores-segunda">
               <div class="row mt-3">
-                <div class="col-12 border-bottom">
-                  <h3 class="">2026</h3>
-                  <span class="small">
-                    Conteo <b>ONPE al {{ conteo }}% a nivel nacional</b> (Última actualización: {{ fecha_hora }})
-                  </span>
+                <div class="col-8 border-bottom">
+                  <h3 class="fw-bold align-self-center"><span>RESULTADOS NACIONALES 2026</span></h3>
+                </div>
+                
+                <div class="col-4 border-bottom">
+                  <h3 class="title-resultados text-end"><span class="float-right badge text-bg-dark">Conteo al {{ conteo }}%</span></h3>
                 </div>
               </div>
 
@@ -71,7 +72,7 @@
                     <div class="row">
                       <div class="col-4 col-lg-3 pr-0">                    
                           <div class="">
-                            <img  class="rounded-circle border border-3 flex-shrink-0 img-candidato" :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                            <img  class="rounded-circle border border-3 flex-shrink-0 img-candidato" :style="candidato.ganador ? `background-color: ${candidato.color} !important` : ''" :src="getImageCandidate(candidato.candidato_id)" />
                           </div>                      
                       </div>
                       <div class="col-3 col-md-6 col-lg-5 p-0 align-self-center">
