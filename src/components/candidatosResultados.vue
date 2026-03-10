@@ -30,7 +30,7 @@
 
         <div class="col-12">
           
-          <div class="card card-candidate align-self-center mt-2 p-3" :key="c.candidato_id" v-for="c in displayCandidatos.slice(0,6)">
+          <div class="card card-candidate align-self-center mt-2 p-2" :key="c.candidato_id" v-for="c in displayCandidatos.slice(0,6)">
             <div class="row">
               <div class="col-5 col-md-4 col-lg-3 pr-0 pl-0 text-center">
                   <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
@@ -49,8 +49,8 @@
                 
                 </div>
 
-                <h4 class="candidato-mapa m-0">{{ c.candidato }}</h4>
-                <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
+                <h4 class="candidato-mapa mt-1">{{ c.candidato }}</h4>
+                <h4 class="partido-mapa mt-1"><img width="25px" class="partido-icon" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
               </div> 
             </div> 
           </div>
@@ -58,9 +58,9 @@
         
         <BCollapse v-model="open" id="collapse-1" class="col-12">
 
-         <div class="card card-candidate align-self-center mt-2 pb-1" :key="c.candidato_id" v-for="c in displayCandidatos.slice(6, displayCandidatos.length)">
+         <div class="card card-candidate align-self-center mt-2 p-2" :key="c.candidato_id" v-for="c in displayCandidatos.slice(6, displayCandidatos.length)">
             <div class="row">
-              <div class="col-4 pr-0 pl-0">
+              <div class="col-5 col-md-4 col-lg-3 pr-0 pl-0 text-center">
                   <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                    :style="`border-color: ${c.color} !important`" :src="getImageCandidate(c.candidato_id)" />
               </div>
@@ -76,8 +76,8 @@
                 
                 </div>
 
-                <h4 class="candidato-mapa m-0">{{ c.candidato }}</h4>
-                <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
+                <h4 class="candidato-mapa mt-1">{{ c.candidato }}</h4>
+                <h4 class="partido-mapa mt-1"><img width="25px" class="partido-icon" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
               </div> 
             </div> 
           </div>
