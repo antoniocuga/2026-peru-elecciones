@@ -74,16 +74,24 @@
                             <img  class="rounded-circle border border-3 flex-shrink-0 img-candidato" :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
                           </div>                      
                       </div>
-                      <div class="col-8 col-lg-9 pl-0">
+                      <div class="col-3 col-md-6 col-lg-5 p-0 align-self-center">
                         <div class="">
-                            <div class="tooltip-c" :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ candidato.validos+"%" }} <span v-if="candidato.diferencia" class="badge text-success">+{{ numeral(candidato.diferencia).format('0,0') }}</span> </div>
-                                            
+                           
                             <h4 class="candidato-mapa m-0">{{candidato.candidato}}</h4>
-                            <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h4>
-                            <div class="ganador-badge"><span class="badge text-success" v-if="candidato.ganador">✓ Ganador en segunda vuelta</span></div>                      
+                            <h4 class="partido-mapa mt-1 mb-0"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h4>
+                            <div class="p-0 small badge"><span class=" text-success" v-if="candidato.ganador">✓ Ganador en segunda vuelta</span></div>                      
                           
-                        </div>            
-                      </div>
+                        </div>    
+                      </div>    
+
+
+                        <div class="col-2 col-md-2 col-lg-4  align-self-center text-end">
+                         <div class="tooltip-c" :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ candidato.validos+"%" }} </div>       
+
+                         <span v-if="candidato.diferencia" class="p-0 small badge text-secondary">+{{ numeral(candidato.diferencia).format('0,0') }} votos</span>        
+                        </div> 
+
+
                     </div>
                   </div>
               

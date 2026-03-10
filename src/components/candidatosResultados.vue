@@ -32,7 +32,7 @@
           
           <div class="card card-candidate align-self-center mt-2 p-2" :key="c.candidato_id" v-for="c in displayCandidatos.slice(0,6)">
             <div class="row">
-              <div class="col-4 col-md-4 col-lg-3 pr-0 pl-0 text-center">
+              <div class="col-4 col-md-4 col-lg-3 text-center">
                   <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                    :style="`border-color: ${c.color} !important`" :src="getImageCandidate(c.candidato_id)" />
               </div>
