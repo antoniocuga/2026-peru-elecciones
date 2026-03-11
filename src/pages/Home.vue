@@ -168,5 +168,6 @@ const { todos: candidatos, congresistas } = storeToRefs(store)
 onMounted(() => {
   store.getAllCandidatos()
   store.getAllCongreso()
+  store.getAllSenado()
 })
 </script>
