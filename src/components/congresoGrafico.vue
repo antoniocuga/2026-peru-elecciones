@@ -1,6 +1,6 @@
 <template>
-  <div class="row congreso-grafico">
-    <div class="col-5 d-none d-md-block">
+  <div class="row congreso-grafico">    
+    <div class="col-5 d-none d-md-block">       
       <BTabs content-class="mt-3">
         <BTab title="Partidos">     
           <div class="list-resultados-partidos">
@@ -40,7 +40,7 @@
                 <div class="total-votos">Región: {{ candidato.region }}</div>
               </div>
               <div class="col-auto align-self-center text-center pr-0">              
-                <div class=" text-success d-flex align-self-center">{{numeral(candidato.voto_preferencial).format('0,0')}}</div>
+                <div class="text-success d-flex align-self-center">{{numeral(candidato.voto_preferencial).format('0,0')}}</div>
               </div>
             </div>
 

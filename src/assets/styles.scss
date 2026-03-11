@@ -516,14 +516,14 @@ h2.interactive_subheadline {
   
   h4.candidato-mapa {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 700;   
   }
 
   .title-resultados {
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-  }
+  } 
 
   .distrito-resultados {
     font-size: 13px;
@@ -2055,3 +2055,64 @@ h3.comparador-region {
     margin: 5px auto;
     width: 60%;
 }
+
+
+/*titulos congreso*/
+
+.diputados-resultados span {
+    font-size: 16px;
+    font-weight: 600 !important;    
+    margin-right: 5px;
+  }
+
+  /* agregaodos */
+
+@media screen and (min-width: 768px)  {
+
+  .congreso-candidato {
+    font-family: "Nunito", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin-left: 21px !important;
+
+  }
+
+  .congreso-pasado {  
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    margin-left: 21px !important;
+  }
+
+  .candidato-diputado {
+    font-family: "Nunito", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin-left: 21px !important;
+  }
+
+  .candidato-senador {
+    font-family: "Nunito", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin-left: 21px !important;
+  }
+
+  .candidato-partido {
+    font-family: "Nunito", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin-left: 21px !important;
+  }
+
+  .partido {
+    font-family: "Nunito", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin-left: 21px !important;
+  }
+
+}
+
+
+
+
