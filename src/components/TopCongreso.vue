@@ -8,7 +8,7 @@
       
         <div class="row ganadores-segunda p-3">
 
-          <div class="col-12 col-md-6" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso_real">
+          <div class="col-12 col-md-6" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_senado_real">
             <div class="card card-candidate align-self-center p-2">
 
               <div class="row">
@@ -16,7 +16,7 @@
                 <h3 class="mt-2 fw-bold align-self-center"><span>CAMARA DE SENADORES 2026</span></h3>
               </div>
               <div class="col-md-5 col-12">
-              <h3 class="title-resultados text-end"><span class="float-right badge text-bg-dark">Conteo al {{ conteo  }}%</span></h3></div></div>
+              <h3 class="title-resultados text-end"><span class="float-right badge text-bg-dark">Conteo al {{ conteo_senado  }}%</span></h3></div></div>
 
 
               <div class="border-bottom"  :key="candidato.candidato_id" v-for="candidato in eleccion.items">
@@ -90,6 +90,7 @@
               </div>
             </div>
           </div>
+          
         </div>
       
       </div>
@@ -177,6 +178,10 @@
       conteo() {
         return parseFloat(uniq(map(this.congresistas_parse, 'conteo_general')).join(""))
       },
+      conteo_senado() {
+        if (!this.senadores || this.senadores.length === 0) return '—'
+        return this.senadores[0]?.conteo_general ?? '—'
+      },
       fecha_hora() {
         return uniq(map(this.congresistas_parse, 'hora')).join("")
       },
@@ -193,6 +198,12 @@
             items: items
           }
         }), ['eleccion'], ['desc'])
+      },
+      candidatos_senado_real() {
+        if (!this.senadores || this.senadores.length === 0) return []
+        const nacional = this.senadores.filter(s => s.senado_tipo === 'nacional')
+        const top = orderBy(nacional, ['voto_preferencial'], ['desc']).slice(0, 5)
+        return [{ eleccion: '2026', items: top }]
       },
       candidatos_congreso() {
         return orderBy(map(groupBy(this.votos_congreso, 'eleccion'), (items, eleccion) => {
