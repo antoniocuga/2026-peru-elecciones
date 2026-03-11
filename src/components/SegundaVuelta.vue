@@ -6,7 +6,7 @@
         <div class="col-12">
           
           <div class="row justify-content-center">
-            <div class="col-12 pb-3 ganadores-segunda">
+            <div class="col-12 mb-3 pb-3 ganadores-segunda">
               <div class="row mt-3">
                 <div class="col-12 col-md-8 border-bottom">
                   <h3 class="fw-bold align-self-center"><span>RESULTADOS NACIONALES 2026</span></h3>
@@ -19,7 +19,7 @@
 
               <div class="p-3 card card-candidate ">
               <div class="row">
-                <div class="col-12 col-md-6" :class="{'border-bottom': ix==0}" :key="candidato.candidato_id" v-for="(candidato, ix) in top_candidatos.slice(0,2)">
+                <div class="col-12 col-md-6" :class="{'border-bottom border-lg-none': ix==0}" :key="candidato.candidato_id" v-for="(candidato, ix) in top_candidatos.slice(0,2)">
                   <div class="row justify-content-center mt-3">
                     <div class="col-4 col-md-3">
                       <div class="">
