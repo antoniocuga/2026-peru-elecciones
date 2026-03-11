@@ -8,25 +8,23 @@
           <div class="row justify-content-center">
             <div class="col-12 mb-3 pb-3 ganadores-segunda">
               <div class="row mt-3">
-                <div class="col-12 col-md-8 border-bottom">
+                <div class="col-12 col-md-8 ">
                   <h3 class="fw-bold align-self-center"><span>RESULTADOS NACIONALES 2026</span></h3>
                 </div>
                 
-                <div class="col-4 border-bottom">
+                <div class="col-4 ">
                   <h3 class="title-resultados text-end"><span class="float-right badge text-bg-dark">Conteo al {{ conteo }}%</span></h3>
                 </div>
               </div>
 
               <div class="p-3 card card-candidate ">
               <div class="row">
-                <div class="col-12 col-md-6" :class="{'border-bottom border-lg-none': ix==0}" :key="candidato.candidato_id" v-for="(candidato, ix) in top_candidatos.slice(0,2)">
+                <div class="col-12 col-md-6" :key="candidato.candidato_id" v-for="(candidato, ix) in top_candidatos.slice(0,2)">
                   <div class="row justify-content-center mt-3">
                     <div class="col-4 col-md-3">
-                      <div class="">
                         <div class="">
                           <img  class="rounded-circle border border-3 flex-shrink-0 img-candidato" :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
                         </div>
-                      </div>
                     </div>
                     <div class="col-8 col-md-9">
 
@@ -66,7 +64,7 @@
               
                 <div class="row">
                   <div class="col-12 mb-2">
-                    <h3 class="m-0">{{ eleccion.eleccion }}</h3>
+                    <h3 class="m-0 fw-bold">Elecciones {{ eleccion.eleccion }}</h3>
                   </div>
                   <div class="col-12">
                     <div class="mt-2 pb-2" :class="{'border-bottom': iv==0}" :key="candidato.candidato_id" v-for="(candidato, iv) in eleccion.items">
