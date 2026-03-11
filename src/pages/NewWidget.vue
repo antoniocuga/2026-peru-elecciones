@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid py-4" style="background-color:#dce8ec;">
+  <div class="container py-4" style="background-color:#dce8ec;">
     <div class="container" v-if="topCandidatos.length">
 
      <div class="mb-2">
@@ -9,7 +9,7 @@
       </div>
 
       <div class="row g-2">
-        <div class="col-6 col-md-3" v-for="(c, i) in topCandidatos" :key="c.candidato_id">
+        <div class="col-6 col-md-4" v-for="(c, i) in topCandidatos" :key="c.candidato_id">
           <div class="card card-candidate border-1"
                :class="i === 0 ? 'custom-rounded-left' : i === 3 ? 'custom-rounded-right' : ''"
                >
@@ -99,7 +99,7 @@ export default {
           hora:       uniq(map(d, 'hora')).join(''),
         })),
         ['validos'], ['desc']
-      ).slice(0, 4)
+      ).slice(0, 3)
     },
   },
 }

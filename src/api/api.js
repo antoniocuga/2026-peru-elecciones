@@ -15,6 +15,22 @@ const RESULTADOS_PRIMERA = import.meta.env.VITE_RESULTADOS_PRIMERA || 'resultado
 const DATA_SEGUNDA_DIR = import.meta.env.VITE_DATA_SEGUNDA_DIR || 'data'
 const RESULTADOS_SEGUNDA = import.meta.env.VITE_RESULTADOS_SEGUNDA || 'resultados_total.json'
 
+// In dev, Vite serves public/ at root, so data must be requested as /data-primera-vuelta/...
+// In production, BASE is the app origin/base path.
+function getPrimeraUrl(filename) {
+  if (import.meta.env.DEV) {
+    return `/${DATA_PRIMERA_DIR}/${filename}`
+  }
+  return `${BASE}/${DATA_PRIMERA_DIR}/${filename}`
+}
+
+function getSegundaUrl(filename) {
+  if (import.meta.env.DEV) {
+    return `/${DATA_SEGUNDA_DIR}/${filename}`
+  }
+  return `${BASE}/${DATA_SEGUNDA_DIR}/${filename}`
+}
+
 export default {
   async getAllCongreso() {
     const url = `${BASE}/${DATA_PRIMERA_DIR}/congreso_total.json`

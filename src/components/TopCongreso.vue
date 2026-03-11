@@ -8,7 +8,7 @@
       
         <div class="row ganadores-segunda p-3">
 
-          <div class="col-12 col-md-6" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso_real">
+          <div class="col-12 col-md-6" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_senado_real">
             <div class="card card-candidate align-self-center p-2">
 
               <div class="row">
@@ -16,10 +16,10 @@
                 <h3 class="mt-2 fw-bold align-self-center"><span>CAMARA DE SENADORES 2026</span></h3>
               </div>
               <div class="col-md-5 col-12">
-              <h3 class="title-resultados text-end"><span class="float-right badge text-bg-dark">Conteo al {{ conteo  }}%</span></h3></div></div>
+              <h3 class="title-resultados text-end"><span class="float-right badge text-bg-dark">Conteo al {{ conteo_senado  }}%</span></h3></div></div>
 
 
-              <div class="border-bottom"  :key="candidato.candidato_id" v-for="candidato in eleccion.items">
+              <div class="border-bottom pt-2 pb-2"  :key="candidato.candidato_id" v-for="candidato in eleccion.items">
                 <div class="row">
                   <div class="col-4 col-md-4 col-lg-3 text-center">
                     <div>
@@ -33,8 +33,6 @@
                     <div>
                       <div>
                         <div class="tooltip-c">
-                          
-                          
                           <h4 class="candidato-mapa  candidato-partido mt-1">{{ candidato.nombre }}</h4>
                           <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
                         </div>
@@ -43,8 +41,9 @@
                     </div>                           
                   </div>
                   <div class="col-2 col-md-2 col-lg-3 p-0  align-self-center text-end">
-                    <div>
-                    <span :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>  <span class="small badge-secondary">Votos</span>
+                    <span class="small badge-secondary d-block" style="font-size: 10px;">Voto preferencial</span>
+                    <span :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>  
+                  <div>
                     
                 
                 </div>
@@ -67,7 +66,7 @@
               </div>
 
 
-              <div class="border-bottom"  :key="candidato.candidato_id" v-for="candidato in eleccion.items">
+              <div class="border-bottom pt-2 pb-2"  :key="candidato.candidato_id" v-for="candidato in eleccion.items">
                 <div class="row">
                   <div class="col-4 col-md-4 col-lg-3 text-center">
                     <div>
@@ -91,10 +90,9 @@
                     </div>                           
                   </div>
                   <div class="col-2 col-md-2 col-lg-3 p-0  align-self-center text-end">
-                    <div>
-                    <span class="congreso-pasado" :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>  <span class="small badge-secondary">Votos</span>
-                    
-                
+                    <span class="small badge-secondary d-block" style="font-size: 10px;">Voto preferencial</span>
+                    <span class="congreso-pasado" :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>
+                  <div>
                 </div>
               </div>
 
@@ -102,6 +100,7 @@
               </div>
             </div>
           </div>
+          
         </div>
       
       </div>
@@ -114,10 +113,10 @@
         <div class="card card-candidate p-2">
             <h3 class="mt-2 fw-bold  pb-2">Congreso {{ eleccion.eleccion }}</h3>
 
-          <div class="border-bottom" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
+          <div class="border-bottom pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
 
             <div class="row">
-              <div class="col-4 col-md-4 col-lg-3 pr-0 pl-0 text-center">
+              <div class="col-3 col-md-4 col-lg-3 pr-0 pl-0 text-center">
                 <div>
                   <div class="">
                     <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
@@ -126,7 +125,7 @@
                 </div>
               </div>
               
-              <div class="col-3 col-md-6 col-lg-5 p-0 align-self-center">
+              <div class="col-5 col-md-6 col-lg-5 p-0 align-self-center">
                 <div>
                   <div>
                     <div class="tooltip-c">
@@ -138,9 +137,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-2 col-md-2 col-lg-3 p-0  align-self-center text-end congreso-pasado">
-                
-                <span :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ numeral(candidato.total_votos).format('0,0') }}</span> <span class="small badge-secondary">Votos</span>
+              <div class="col-4 col-md-2 col-lg-3 align-self-center text-end congreso-pasado">
+                 <span class="d-inline-block small badge-secondary" style="font-size: 10px;">Voto preferencial</span>
+                <span :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ numeral(candidato.total_votos).format('0,0') }}</span>
               </div>
             </div>
 
@@ -193,6 +192,10 @@
       conteo() {
         return parseFloat(uniq(map(this.congresistas_parse, 'conteo_general')).join(""))
       },
+      conteo_senado() {
+        if (!this.senadores || this.senadores.length === 0) return '—'
+        return this.senadores[0]?.conteo_general ?? '—'
+      },
       fecha_hora() {
         return uniq(map(this.congresistas_parse, 'hora')).join("")
       },
@@ -209,6 +212,12 @@
             items: items
           }
         }), ['eleccion'], ['desc'])
+      },
+      candidatos_senado_real() {
+        if (!this.senadores || this.senadores.length === 0) return []
+        const nacional = this.senadores.filter(s => s.senado_tipo === 'nacional')
+        const top = orderBy(nacional, ['voto_preferencial'], ['desc']).slice(0, 5)
+        return [{ eleccion: '2026', items: top }]
       },
       candidatos_congreso() {
         return orderBy(map(groupBy(this.votos_congreso, 'eleccion'), (items, eleccion) => {
