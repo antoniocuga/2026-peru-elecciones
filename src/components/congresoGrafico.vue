@@ -2,7 +2,34 @@
   <div class="row congreso-grafico">    
     <div class="col-5 d-none d-md-block">       
       <BTabs content-class="mt-3">
-        <BTab title="Partidos">     
+        <BTab title="Senadores por partido">     
+          <div class="list-resultados-partidos">
+            <div class="row pb-3">
+              <div class="col-12" :key="c.candidato_id" v-for="c in congresistas_partido">
+                <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
+                  <div class="col-auto pr-1 img-candidato">
+                    <img width="65px" :src="getImagePartido(c.partido_id)" />              
+                  </div>
+                  <div class="col-7 pl-0 pr-md-0 align-self-center">              
+                    <h4 class="candidato-mapa m-md-0">{{c.partido}}</h4>
+                    <div class="total-votos">Total de votos: {{numeral(c.total_votos_partido).format('0,0')}}</div>
+                  </div> 
+                  <div class="col-auto align-self-center text-center pr-0">              
+                      <h5 class="elegidos d-flex align-self-center">{{ c.seats }}</h5>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                Fuente: Elaboración propia en base a información de la ONPE.
+              </div>
+            </div>
+          </div>  
+        </BTab>
+        <BTab title="Diputados por partido">     
           <div class="list-resultados-partidos">
             <div class="row pb-3">
               <div class="col-12" :key="c.candidato_id" v-for="c in congresistas_partido">

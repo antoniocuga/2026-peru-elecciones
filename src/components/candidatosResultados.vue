@@ -43,7 +43,7 @@
               
               <div class="col-2 col-md-2 col-lg-3 p-0  align-self-center text-end">
                 <div>
-                <span :style="`color: ${c.color} !important; font-size:22px; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
+                <span :style="`font-size:22px; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
 
                 <span class=" align-self-center text-center">
                   <span class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
@@ -73,7 +73,7 @@
               
               <div class="col-2 col-md-2 col-lg-3 p-0  align-self-center text-end">
                 <div>
-                <span :style="`color: ${c.color} !important; font-size:22px; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
+                <span :style="`font-size:22px; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
 
                 <span class=" align-self-center text-center">
                   <span class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">

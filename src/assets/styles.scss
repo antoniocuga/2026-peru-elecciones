@@ -1980,6 +1980,17 @@ h3.comparador-region {
     border-bottom-right-radius: 50px !important;
 }
 
+@media screen and (max-width: 568px) {
+    .custom-rounded-left {
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+    .custom-rounded-right {
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+}
+
 .card-candidate {
     border-width: 1px;
     border-radius: 0;
