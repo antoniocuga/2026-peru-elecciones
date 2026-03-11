@@ -1971,12 +1971,34 @@ h3.comparador-region {
 
 .custom-rounded-left {
     border-top-left-radius: 50px !important;
-    border-bottom-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;    
+
+  }
+
+@media screen and (max-width: 568px) {
+      .custom-rounded-left {
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;  
+      }
+      
+      .custom-rounded-right {
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;  
+      }
+                
 }
 
 .custom-rounded-right {
     border-top-right-radius: 50px !important;
     border-bottom-right-radius: 50px !important;
+}
+
+@media screen and (max-width: 568px) {      
+      .custom-rounded-right {
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;  
+      }
+                
 }
 
 .card-candidate {
@@ -2110,6 +2132,8 @@ h3.comparador-region {
     font-weight: bold !important;
     margin-left: 21px !important;
   }
+
+  
 
 }
 
