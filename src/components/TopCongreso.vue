@@ -21,15 +21,11 @@
 
               <div class="border-bottom pt-2 pb-2"  :key="candidato.candidato_id" v-for="candidato in eleccion.items">
                 <div class="row">
-                  <div class="col-4 col-md-4 col-lg-3 text-center">
-                    <div>
-                      <div class="">
-                        <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                  <div class="col-4 col-md-4 col-lg-4 text-center">
+                    <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                         :style="`background-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
-                      </div>
-                    </div>
                   </div>
-                  <div class="col-3 col-md-6 col-lg-5 p-0 align-self-center">
+                  <div class="col-5 col-md-5 col-lg-5 p-0 align-self-center">
                     <div>
                       <div>
                         <div class="tooltip-c">
@@ -40,9 +36,9 @@
                       </div>
                     </div>                           
                   </div>
-                  <div class="col-2 col-md-2 col-lg-3 p-0  align-self-center text-end">
+                  <div class="col-3 col-md-3 col-lg-3 p-0  align-self-center text-center">
                     <span class="small badge-secondary d-block" style="font-size: 10px;">Voto preferencial</span>
-                    <span :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>  
+                    <span :style="`font-size: 1rem; font-weight: 600;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>  
                   <div>
                     
                 
@@ -68,7 +64,7 @@
 
               <div class="border-bottom pt-2 pb-2"  :key="candidato.candidato_id" v-for="candidato in eleccion.items">
                 <div class="row">
-                  <div class="col-4 col-md-4 col-lg-3 text-center">
+                  <div class="col-4 col-md-4 col-lg-4 text-center">
                     <div>
                       <div class="">
                         <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
@@ -76,7 +72,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-3 col-md-6 col-lg-5 p-0 align-self-center">
+                  <div class="col-5 col-md-5 col-lg-5 p-0 align-self-center">
                     <div>
                       <div>
                         <div class="tooltip-c">
@@ -89,9 +85,9 @@
                       </div>
                     </div>                           
                   </div>
-                  <div class="col-2 col-md-2 col-lg-3 p-0  align-self-center text-end">
+                  <div class="col-3 col-md-3 col-lg-3 p-0  align-self-center text-center">
                     <span class="small badge-secondary d-block" style="font-size: 10px;">Voto preferencial</span>
-                    <span class="congreso-pasado" :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>
+                    <span class="congreso-pasado" :style="`font-size:1rem; font-weight: 600;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>
                   <div>
                 </div>
               </div>
@@ -139,7 +135,7 @@
               </div>
               <div class="col-4 col-md-2 col-lg-3 align-self-center text-end congreso-pasado">
                  <span class="d-inline-block small badge-secondary" style="font-size: 10px;">Voto preferencial</span>
-                <span :style="`color: ${candidato.color} !important; font-size:22px; font-weight: 600;`">{{ numeral(candidato.total_votos).format('0,0') }}</span>
+                <span :style="`font-size: 1rem; font-weight: 600;`">{{ numeral(candidato.total_votos).format('0,0') }}</span>
               </div>
             </div>
 
