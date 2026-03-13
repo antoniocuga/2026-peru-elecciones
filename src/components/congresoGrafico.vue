@@ -1,6 +1,6 @@
 <template>
   <div class="row congreso-grafico">    
-    <div class="col-5 d-none d-md-block">       
+    <div class="col-12 col-md-6 col-lg-5 order-md-0 order-1">       
       <BTabs content-class="mt-3">
         <BTab title="Senadores por partido">     
           <div class="list-resultados-partidos">
@@ -28,35 +28,8 @@
               </div>
             </div>
           </div>  
-        </BTab>
-        <BTab title="Diputados por partido">     
-          <div class="list-resultados-partidos">
-            <div class="row pb-3">
-              <div class="col-12" :key="c.candidato_id" v-for="c in congresistas_partido">
-                <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
-                  <div class="col-auto pr-1 img-candidato">
-                    <img width="65px" :src="getImagePartido(c.partido_id)" />              
-                  </div>
-                  <div class="col-7 pl-0 pr-md-0 align-self-center">              
-                    <h4 class="candidato-mapa m-md-0">{{c.partido}}</h4>
-                    <div class="total-votos">Total de votos: {{numeral(c.total_votos_partido).format('0,0')}}</div>
-                  </div> 
-                  <div class="col-auto align-self-center text-center pr-0">              
-                      <h5 class="elegidos d-flex align-self-center">{{ c.seats }}</h5>
-                  </div>
-                </div>
-              </div>
-        
-            </div>
-
-            <div class="row">
-              <div class="col-12">
-                Fuente: Elaboración propia en base a información de la ONPE.
-              </div>
-            </div>
-          </div>  
-        </BTab>
-        <BTab title="Lista de diputados" class="list-resultados-partidos" lazy>
+        </BTab>        
+        <BTab title="Diputados por partidos" class="list-resultados-partidos" lazy>
  
             <div class="row item-partido pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in candidatos_congreso_real">
               <div class="col-auto pr-1 img-candidato">
@@ -103,7 +76,7 @@
       </BTabs>
     </div>
 
-    <div class="col-12 col-md-7 text-center">
+    <div class="col-12 col-md-6 col-lg-7 text-center">
       <div class="congreso-sticky">
         <div class="filters-congreso mb-3 text-center">
           <BDropdown :text="`${depObject.region} (${depObject.seats})`" variant="warning" class="m-2 departamento-menu">
@@ -124,97 +97,7 @@
       </div>
     </div>
 
-    <div class="col-12 mt-3 d-block d-md-none">
-      <BTabs content-class="mt-3">
-        <BTab title="Partidos">     
-          <div class="list-resultados-partidos">
-
-
-            <div class="row pb-3 partidos-embed-list">
-              <div class="col-12" :key="c.candidato_id" v-for="c in congresistas_partido">
-                <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
-                  <div class="col-auto pr-1 img-candidato">
-                    <img width="65px" :src="getImagePartido(c.partido_id)" />              
-                  </div>
-                  <div class="col-7 pl-0 pr-md-0 align-self-center">              
-                    <h4 class="candidato-mapa m-md-0">{{c.partido}}</h4>
-                    <div class="total-votos">Total de votos: {{numeral(c.total_votos_partido).format('0,0')}}</div>
-                  </div> 
-                  <div class="col-auto align-self-center text-center pr-0">              
-                      <h5 class="elegidos d-flex align-self-center">{{ c.seats }}</h5>
-                  </div>
-                </div>
-              </div>
-        
-            </div>
-
-            
-
-            <div class="row">
-              <div class="col-12">
-                Fuente: Elaboración propia en base a información de la ONPE.
-              </div>
-            </div>
-          </div>  
-        </BTab>
-        <BTab title="Lista de congresistas" class="list-resultados-partidos" lazy>
- 
-          <div class="row pb-2 pt-2">
-            <div class="col-2 pr-1">             
-            </div>
-            <div class="col-6 pl-0 pr-md-0 align-self-center">              
-              <div class="candidato-mapa m-md-0"></div>
-            </div>
-            <div class="col-4 text-right pr-0 small text-success">              
-              Voto preferencial
-            </div>
-          </div>
-
-          <div class="row item-partido pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in candidatos_congreso_real">
-            <div class="col-auto pr-1 img-candidato">
-              <img width="65px" :src="getImagePartido(candidato.partido_id)" />              
-            </div>
-            <div class="col-7 pl-0 pr-md-0 align-self-center">              
-              <div class="candidato-mapa m-md-0"><b>{{candidato.nombre}}</b></div>
-              <div class="total-votos">Región: {{ candidato.region }}</div>
-            </div>
-            <div class="col-2 align-self-center text-right pr-0">              
-              <div class=" text-success d-flex align-self-center">{{numeral(candidato.voto_preferencial).format('0,0')}}</div>
-            </div>
-          </div>
-
-          <BCollapse v-model="open" id="collapse-1" class="col-12">
-            <div class="row item-partido pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in candidatos_congreso_real_all">
-              <div class="col-auto pr-1 img-candidato">
-                <img width="65px" :src="getImagePartido(candidato.partido_id)" />              
-              </div>
-              <div class="col-7 pl-0 pr-md-0 align-self-center">              
-                <div class="candidato-mapa m-md-0"><b>{{candidato.nombre}}</b></div>
-                <div class="total-votos">Región: {{ candidato.region }}</div>
-              </div>
-              <div class="col-2 align-self-center text-right pr-0">              
-                <div class=" text-success d-flex align-self-center">{{numeral(candidato.voto_preferencial).format('0,0')}}</div>
-              </div>
-            </div>
-          </BCollapse>
-      
-          <div class="col-12 mt-3 button-more pl-0 pr-0" v-if="depObject.region == 'NACIONAL'">
-            <a v-if="open==false" @click="open=!open" class="d-block btn-light text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
-              </svg>
-            </a>
-            <a v-if="open==true" @click="open=!open" class="d-block btn-light text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
-              </svg>
-            </a>
-          </div>
-          
-
-        </BTab>
-      </BTabs>
-    </div>
+    
 
 
     <div class="col-12 mt-3 resultados2021">      

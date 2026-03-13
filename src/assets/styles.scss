@@ -123,6 +123,13 @@
   --bs-form-valid-border-color: #198754;
   --bs-form-invalid-color: #dc3545;
   --bs-form-invalid-border-color: #dc3545;
+  --bs-btn-font-size: 0.8rem;
+  --bs-btn-bg: #6c757d;
+}
+
+.btn-secondary {
+  font-size: 0.8rem;  
+  background-color: #6c757d;
 }
 
 .flex-nowrap {
@@ -2018,6 +2025,7 @@ h3.comparador-region {
         height: 20px;
         object-fit: cover;
         flex-shrink: 0;
+        margin-right: 5px;
     }
 
     .candidato-nombre {
@@ -2075,4 +2083,11 @@ h3.comparador-region {
   font-size: 16px;
   font-weight: 600 !important;    
   margin-right: 5px;
+}
+
+
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 1020px;
+  }
 }

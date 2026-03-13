@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="row justify-content-center">
-      <div class="col-9">
+      <div class="col-12 col-md-12 col-lg-12">
         <SegundaVuelta/>
       </div>
     </div>

@@ -1,25 +1,22 @@
 <template>
 
-  <div class="mapa-resultados-container">
-    <div class="row">
-      <div class="col-12 text-end">
-        
-        <BDropdown :text="partidoSeleccionado.partido" class="m-2 departamento-menu">
-          <BDropdownItem :key="p.partido_id" v-for="p in partidos">
-            <a @click="show_partido(p)">{{ p.partido }}</a>
-          </BDropdownItem>
-        </BDropdown>
-
-        <BDropdown :text="regionSeleccionada.departamento"  class="m-2 departamento-menu">
-          <BDropdownItem :key="dep.region" v-for="dep in departamentos">
-            <a @click="show_departamento(dep.region)">{{ dep.departamento }}</a>
-          </BDropdownItem>
-        </BDropdown>
-
-      </div>
-    </div>
+  <div class="mapa-resultados-container">    
     <div class="row">
       <div class="col-12 text-right">
+        <div class="filter-block">
+          <BDropdown :text="partidoSeleccionado.partido" class="m-2 departamento-menu">
+            <BDropdownItem :key="p.partido_id" v-for="p in partidos">
+              <a @click="show_partido(p)">{{ p.partido }}</a>
+            </BDropdownItem>
+          </BDropdown>
+      
+          <BDropdown :text="regionSeleccionada.departamento"  class="m-2 departamento-menu">
+            <BDropdownItem :key="dep.region" v-for="dep in departamentos">
+              <a @click="show_departamento(dep.region)">{{ dep.departamento }}</a>
+            </BDropdownItem>
+          </BDropdown>
+
+        </div>
         <svg width="100%" :height="height" class="plan-vector-map" ref="svgmap" id="mapa_primera">
           <g ref="base"></g>
           <g ref="departamentos"></g>

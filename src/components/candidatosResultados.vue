@@ -1,23 +1,6 @@
 <template>
   <div class="candidate-results-vivo row pb-3 active">
-    <div class="col-12">
-      <div class="row filter-region d-block d-md-none">
-        <div class="col-12">
-          <button @click="resetMapa()"  class="btn btn-light" v-if="regionSeleccionada.region !='NACIONAL'"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-          </svg></button>
-        <BDropdown :text="regionSeleccionada.departamento" variant="warning" class="d-inline-block m-2 departamento-menu">
-          <BDropdownItem @click="show_departamento(dep)" :key="dep.region" v-for="dep in departamentos">
-            <a>{{ dep.departamento }}</a>
-          </BDropdownItem>
-        </BDropdown>
-        <BDropdown :text="distritoSeleccionado.distrito" variant="warning" class="d-inline-block m-2 departamento-menu" v-if="regionSeleccionada.region !='NACIONAL'">
-          <BDropdownItem @click="selectDistrito(dep)" :key="dep.ubigeo" v-for="dep in distritos">
-            <a>{{ dep.distrito }}</a>
-          </BDropdownItem>
-        </BDropdown>
-        </div>
-      </div>
+    <div class="col-12">      
 
       <div class="row " v-if="displayCandidatos.length" :key="regionSeleccionada.region">
         <div class="col-12 pt-3 pb-3">
@@ -32,18 +15,18 @@
           
           <div class="card card-candidate align-self-center mt-2 p-2" :key="c.candidato_id" v-for="c in displayCandidatos.slice(0,6)">
             <div class="row">
-              <div class="col-4 col-md-4 col-lg-3 text-center">
+              <div class="col-4 col-md-4 col-lg-4 text-center">
                   <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                    :style="`border-color: ${c.color} !important`" :src="getImageCandidate(c.candidato_id)" />
               </div>
-              <div class="col-3 col-md-6 col-lg-5 p-0 align-self-center">
+              <div class="col-5 col-md-5 col-lg-5 p-0 align-self-center">
                 <h4 class="candidato-mapa mt-1">{{ c.candidato }}</h4>
-                <h4 class="partido-mapa mt-1"><img width="25px" class="partido-icon" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
+                <h4 class="partido-mapa mt-1"><img width="25px" class="partido-icon pr-2" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
               </div> 
               
-              <div class="col-2 col-md-2 col-lg-3 p-0  align-self-center text-end">
+              <div class="col-3 col-md-3 col-lg-3 p-0  align-self-center text-center">
                 <div>
-                <span :style="`font-size:22px; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
+                <span :style="`font-size:1rem; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
 
                 <span class=" align-self-center text-center">
                   <span class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
@@ -66,14 +49,14 @@
                   <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                    :style="`border-color: ${c.color} !important`" :src="getImageCandidate(c.candidato_id)" />
               </div>
-              <div class="col-3 col-md-6 col-lg-5 p-0 align-self-center">
+              <div class="col-5 col-md-6 col-lg-5 p-0 align-self-center">
                 <h4 class="candidato-mapa mt-1">{{ c.candidato }}</h4>
-                <h4 class="partido-mapa mt-1"><img width="25px" class="partido-icon" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
+                <h4 class="partido-mapa mt-1"><img width="25px" class="partido-icon pr-2" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
               </div> 
               
-              <div class="col-2 col-md-2 col-lg-3 p-0  align-self-center text-end">
+              <div class="col-3 col-md-2 col-lg-3 p-0  align-self-center text-center">
                 <div>
-                <span :style="`font-size:22px; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
+                <span :style="`font-size: 1rem; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
 
                 <span class=" align-self-center text-center">
                   <span class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
@@ -91,33 +74,27 @@
         </BCollapse>
     
         <div class="col-12 mt-3 button-more pl-0 pr-0">
-          <a v-if="open==false" @click="open=!open" class="d-block btn-light text-center">
+          <a v-if="open==false" @click="open=!open" class="d-block btn btn-light text-center">Ver todos los resultados
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
             </svg>
           </a>
-          <a v-if="open==true" @click="open=!open" class="d-block btn-light text-center">
+          <a v-if="open==true" @click="open=!open" class="d-block btn btn-light text-center">Cerrar
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
             </svg>
           </a>
         </div>
       </div>
-    </div>
+    </div>  
     
-    <div class="col-12 mt-5">
-
-      <elecciones2016 v-if="regionSeleccionada" />
-
-    </div>
   </div>
   
 </template>
 
 <script>
   import numeral from 'numeral'
-  import { find, filter, map, orderBy, groupBy, uniq, sumBy, maxBy } from 'lodash'
-  import elecciones2016 from './elecciones2016.vue'
+  import { find, filter, map, orderBy, groupBy, uniq, sumBy, maxBy } from 'lodash'  
   import { storeToRefs } from 'pinia'
   import { useCandidatosStore } from '../stores/candidatos'
   import { getPartidoImage, getCandidatoImage } from '../utils/assets'
@@ -127,10 +104,7 @@
     name: 'candidatosResultados',
     props: {
       candidatos: Array
-    },
-    components: {
-      elecciones2016
-    },
+    },    
     setup() {
       const store = useCandidatosStore()
       const refs = storeToRefs(store)

@@ -9,9 +9,9 @@
       </div>
 
       <div class="row g-2">
-        <div class="col-6 col-md-4" v-for="(c, i) in topCandidatos" :key="c.candidato_id">
+        <div class="col-12 col-md-4" v-for="(c, i) in topCandidatos" :key="c.candidato_id">
           <div class="card card-candidate border-1"
-               :class="i === 0 ? 'custom-rounded-left' : i === 3 ? 'custom-rounded-right' : ''"
+               :class="i === 0 ? 'custom-rounded-left' : i === 2 ? 'custom-rounded-right' : ''"
                >
             <div class="card-body d-flex align-items-center p-2">
               <img :src="getImageCandidate(c.candidato_id)"
