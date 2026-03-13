@@ -18,5 +18,6 @@ const store = useCandidatosStore()
 onMounted(() => {
   store.getAllCandidatos()
   store.getAllCongreso()
+  store.getAllSenado()
 })
 </script>

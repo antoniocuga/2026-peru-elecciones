@@ -5,6 +5,7 @@ import { registerBootstrap } from './plugins/bootstrap-vue'
 import Widget from './pages/Widget.vue'
 import NewWidget from './pages/NewWidget.vue'
 import CongresoWidget from './pages/CongresoWidget.vue'
+import CongresoListaWidget from './pages/CongresoListaWidget.vue'
 import SenadoWidget from './pages/SenadoWidget.vue'
 import ConteoWidget from './pages/ConteoWidget.vue'
 import HistoricoWidget from './pages/HistoricoWidget.vue'
@@ -26,8 +27,9 @@ const pinia = createPinia()
  * Available widget IDs:
  *   widget-resultados   → full results embed (Widget.vue)
  *   widget-new          → new results layout (NewWidget.vue)
- *   widget-congreso     → congress results (CongresoWidget.vue)
- *   widget-senado       → senate results (SenadoWidget.vue)
+ *   widget-congreso        → congress results (CongresoWidget.vue)
+ *   widget-congreso-lista  → diputados list only (CongresoListaWidget.vue)
+ *   widget-senado          → senate results (SenadoWidget.vue)
  *   widget-conteo       → vote count (ConteoWidget.vue)
  *   widget-historico    → historical results (HistoricoWidget.vue)
  *   widget-mapa         → interactive map (MapaWidget.vue)
@@ -35,8 +37,9 @@ const pinia = createPinia()
 const widgets = {
   'widget-resultados': Widget,
   'widget-new':        NewWidget,
-  'widget-congreso':   CongresoWidget,
-  'widget-senado':     SenadoWidget,
+  'widget-congreso':        CongresoWidget,
+  'widget-congreso-lista':  CongresoListaWidget,
+  'widget-senado':          SenadoWidget,
   'widget-conteo':     ConteoWidget,
   'widget-historico':  HistoricoWidget,
   'widget-mapa':       MapaWidget,

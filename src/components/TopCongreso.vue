@@ -6,7 +6,7 @@
 
       <div class="col-12 p-3">
       
-        <div class="row ganadores-segunda p-3">
+        <div class="row p-3">
 
           <div class="col-12 col-md-6" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_senado_real">
             <div class="card card-candidate align-self-center p-2">

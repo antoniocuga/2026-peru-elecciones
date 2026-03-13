@@ -9,15 +9,19 @@
  */
 import axios from 'axios'
 
-const BASE = import.meta.env.VITE_API_BASE || 'https://ojo-publico.com/especiales/resultados-onpe-elecciones-2021'
+const BASE = import.meta.env.VITE_API_BASE || '/especiales/resultados-onpe-elecciones-2021'
 const DATA_PRIMERA_DIR = import.meta.env.VITE_DATA_PRIMERA_DIR || 'data-primera-vuelta'
 const RESULTADOS_PRIMERA = import.meta.env.VITE_RESULTADOS_PRIMERA || 'resultados_total.json'
 const DATA_SEGUNDA_DIR = import.meta.env.VITE_DATA_SEGUNDA_DIR || 'data'
 const RESULTADOS_SEGUNDA = import.meta.env.VITE_RESULTADOS_SEGUNDA || 'resultados_total.json'
 
-// In dev, Vite serves public/ at root, so data must be requested as /data-primera-vuelta/...
-// In production, BASE is the app origin/base path.
+// In dev, use full URL to current origin so requests hit the Vite dev server.
+// Public files are served at /data-primera-vuelta/ via vite.config server.proxy.
 function getPrimeraUrl(filename) {
+  if (import.meta.env.DEV && typeof window !== 'undefined') {
+    const path = `/${DATA_PRIMERA_DIR}/${filename}`
+    return new URL(path, window.location.origin).href
+  }
   if (import.meta.env.DEV) {
     return `/${DATA_PRIMERA_DIR}/${filename}`
   }
@@ -33,15 +37,15 @@ function getSegundaUrl(filename) {
 
 export default {
   async getAllCongreso() {
-    const url = `${BASE}/${DATA_PRIMERA_DIR}/congreso_total.json`
+    const url = getPrimeraUrl('congreso_total.json')
     if (import.meta.env.DEV) console.log('[API] getAllCongreso', url)
-    const { data } = await axios.get(url)
+    const { data } = await axios.get(url, { baseURL: '' })
     return data
   },
   async getAllSenado() {
-    const url = `${BASE}/${DATA_PRIMERA_DIR}/senado_total.json`
+    const url = getPrimeraUrl('senado_total.json')
     if (import.meta.env.DEV) console.log('[API] getAllSenado', url)
-    const { data } = await axios.get(url)
+    const { data } = await axios.get(url, { baseURL: '' })
     return data
   },
   async getAllCandidatos() {
@@ -63,3 +67,4 @@ export default {
     return data
   },
 }
+ 

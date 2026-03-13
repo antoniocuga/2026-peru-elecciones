@@ -1,9 +1,33 @@
 import { fileURLToPath, URL } from 'node:url'
+import path from 'node:path'
+import fs from 'node:fs'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
+const rootDir = path.dirname(fileURLToPath(import.meta.url))
+const dataDir = path.join(rootDir, 'public', 'data-primera-vuelta')
+
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    // Serve public/data-primera-vuelta at /data-primera-vuelta in dev (avoids 404 with base path)
+    {
+      name: 'serve-data-primera',
+      configureServer(server) {
+        server.middlewares.use('/data-primera-vuelta', (req, res, next) => {
+          const name = (req.url || '/').replace(/^\//, '').replace(/[?#].*$/, '') || 'index.json'
+          if (!name || name.includes('..')) return next()
+          const file = path.join(dataDir, name)
+          if (fs.existsSync(file) && fs.statSync(file).isFile()) {
+            res.setHeader('Content-Type', 'application/json')
+            res.end(fs.readFileSync(file))
+          } else {
+            next()
+          }
+        })
+      },
+    },
+  ],
   base: '/especiales/resultados-onpe-elecciones-2026/',
   resolve: {
     alias: {
