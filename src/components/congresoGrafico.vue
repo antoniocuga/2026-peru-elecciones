@@ -1,9 +1,9 @@
 <template>
   <div class="row congreso-grafico">    
     <div class="col-12 col-md-6 col-lg-5 order-md-0 order-1">       
-      <BTabs content-class="mt-3">
+      <BTabs>
         <BTab title="Diputados por partido">     
-          <div class="list-resultados-partidos">
+          <div class="list-resultados-partidos p-3">
             <div class="row pb-3">
               <div class="col-12" :key="c.candidato_id" v-for="c in congresistas_partido">
                 <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
@@ -30,7 +30,7 @@
           </div>  
         </BTab>        
         <BTab title="Senados por partidos" class="list-resultados-partidos" lazy>
-          <div class="list-resultados-partidos">
+          <div class="list-resultados-partidos p-3">
             <div class="row pb-3" v-if="senadores_partido.length">
               <div class="col-12" :key="'s-' + c.partido_id" v-for="c in senadores_partido">
                 <div class="row candidate-info align-self-center pt-2 pb-2 item-partido">
@@ -72,8 +72,9 @@
             </BDropdownItem>
           </BDropdown>
         </div>
-        <svg class="svg-congreso">
-          <g id="parliament"></g>
+        <svg class="svg-congreso" ref="svgCongreso" :viewBox="`0 0 ${svgSize.width} ${svgSize.height}`" preserveAspectRatio="xMidYMid meet">
+          <g id="parliament-senado"></g>
+          <g id="parliament-congreso"></g>
         </svg>
         <div class="col-12 mb-2" v-if="departamentos_conteo > 0">
           <h2 class="title-resultados"><b>Conteo ONPE al {{ departamentos_conteo }}% en la región {{depSelected}}</b></h2> <h2 class="title-resultados">Última actualización: {{ departamentos_hora }}</h2>
@@ -113,7 +114,8 @@
         depObject: {
           region: "NACIONAL",
           seats: 130
-        }
+        },
+        svgSize: { width: 600, height: 300 }
       }
     },
     computed: {
@@ -166,10 +168,28 @@
             color: uniq(map(items, 'color')).join('')
           }
         }), ['seats'], ['desc'])
+      },
+      senadores_parse_60() {
+        if (!this.senadores || !this.senadores.length) return []
+        const all = orderBy(
+          [...this.senadores],
+          ['partido_id', 'voto_preferencial'],
+          ['asc', 'desc']
+        )
+        const n = all.length
+        if (n >= 60) return all.slice(0, 60)
+        const repeated = []
+        for (let i = 0; i < 60; i++) {
+          repeated.push({ ...all[i % n], _idx: i })
+        }
+        return repeated
       }
     },
     watch: {
       congresistas() {
+        this.renderCongreso()
+      },
+      senadores() {
         this.renderCongreso()
       }
     },
@@ -205,66 +225,106 @@
         d3.selectAll("circle").classed("active", true)
       },
       show_congresista(event, d) {
-
-        let tooltip = d3.select(".tooltip_congresista")
-        let table = `<h5 class="mb-2">${d.region}</h5>`
-        table += `<h3>${d.nombre}</h3>`
-        table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
-        table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
-        table += `<h4>Total de votos de la agrupación en ${d.region}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
-
-        tooltip.html(`${table}`)	 
+        const tooltip = d3.select(".tooltip_congresista")
+        let table = ''
+        if (d.senado_tipo) {
+          table = `<h5 class="mb-2">Senado (${d.region || 'NACIONAL'})</h5>`
+          table += `<h3>${d.nombre}</h3>`
+          table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido}</h4>`
+          table += `<h4>Voto preferencial: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
+        } else {
+          table = `<h5 class="mb-2">${d.region}</h5>`
+          table += `<h3>${d.nombre}</h3>`
+          table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
+          table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
+          table += `<h4>Total de votos de la agrupación en ${d.region}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
+        }
+        tooltip.html(table)
           .style("left", (event.pageX) + "px")
           .style("top", (event.pageY - 28) + "px")
-        
         tooltip.transition()
-          .duration(200)	
+          .duration(200)
           .style("opacity", 1)
           .style("visibility", "visible")
-
       },
       renderCongreso() {
-        let ancho = 600,
-        radius=10,
-        gap=10,
-        h = 25
+        const el = this.$refs.svgCongreso
+        const maxW = 640
+        const minW = 320
+        let ancho = el && el.getBoundingClientRect
+          ? Math.min(maxW, Math.max(minW, el.getBoundingClientRect().width || 600))
+          : 600
+        const height = ancho / 2
+        this.svgSize = { width: ancho, height }
 
-        if(window.innerWidth < 620) {
-          ancho = window.innerWidth - 100
-          radius= 5
+        let radius = 10,
+          gap = 5,
+          h = 25
+        if (ancho < 420) {
+          radius = 5
           gap = 5
           h = 15
         }
-        d3.select('g#parliament').call(
-          parliament.parliamentChart(this.congresistas_parse, ancho)
-          .debug(false)
-          .sections(3)
-          .sectionGap(gap)
-          .seatRadius(radius)
-          .rowHeight(h)
+
+        const innerAncho = Math.round(ancho * 0.72)
+        const offset = (ancho - innerAncho) / 2
+
+        // Outer ring: 60 senadores (senado) — larger seats so they fill more of the rows
+        const radiusSenado = radius
+        const rowHeightSenado = h 
+        const gapSenado = gap + 14
+        const gSenado = d3.select('g#parliament-senado')
+        gSenado.selectAll('*').remove()
+        gSenado.call(
+          parliament.parliamentChart(this.senadores_parse_60, ancho)
+            .debug(false)
+            .sections(3)
+            .sectionGap(gapSenado)
+            .seatRadius(radiusSenado)
+            .rowHeight(rowHeightSenado)
         )
 
-        d3.selectAll('circle')
-          .attr("class", d => {
-            let _r =  d.region.replace(" ","-").replace(" ","-").toLowerCase()
-            return `active ${_r} ${d.partido_id}`
+        // Inner ring: 130 congresistas; position inside the outer semicircle
+        const gCongreso = d3.select('g#parliament-congreso')
+          .attr('transform', `translate(${offset}, ${offset})`)
+        gCongreso.selectAll('*').remove()
+        gCongreso.call(
+          parliament.parliamentChart(this.congresistas_parse, innerAncho)
+            .debug(false)
+            .sections(3)
+            .sectionGap(gap)
+            .seatRadius(Math.max(4, radius - 2))
+            .rowHeight(Math.max(12, h - 4))
+        )
+
+        // Classes and events for all circles (senado + congreso)
+        d3.selectAll('.svg-congreso circle')
+          .attr("class", function (d) {
+            if (d.senado_tipo) {
+              return `active seat-senado ${(d.region || '').toString().replace(/\s/g, '-').toLowerCase()} ${d.partido_id}`
+            }
+            const _r = (d.region || '').replace(/\s/g, '-').toLowerCase()
+            return `active seat-congreso ${_r} ${d.partido_id}`
           })
-        
-        d3.selectAll('circle.active')
+
+        d3.selectAll('.svg-congreso circle.active')
           .on("mouseover", (e, d) => {
-            let _r =  d.region.replace(" ","-").replace(" ","-").toLowerCase()
-            if(this.depSelected == "NACIONAL (130)")
+            if (d.senado_tipo) {
               this.show_congresista(e, d)
-            
-            if(this.depSelected !="NACIONAL (130)" && d.region == this.depSelected)
-              this.show_congresista(e, d, _r)
+              return
+            }
+            const _r = (d.region || '').replace(/\s/g, '-').toLowerCase()
+            if (this.depSelected === "NACIONAL (130)")
+              this.show_congresista(e, d)
+            else if (d.region === this.depSelected)
+              this.show_congresista(e, d)
           })
           .on("mouseout", () => {
-            let tooltip = d3.select(".tooltip_congresista")
-              tooltip.transition()
-                .duration(150)	
-                .style("opacity", 0)
-                .style("visibility", "hidden")
+            d3.select(".tooltip_congresista")
+              .transition()
+              .duration(150)
+              .style("opacity", 0)
+              .style("visibility", "hidden")
           })
       }
     }

@@ -2,7 +2,7 @@
 
   <div class="mapa-resultados-container">    
     <div class="row">
-      <div class="col-12 text-right">
+      <div class="col-12 text-right text-end">
         <div class="filter-block">
           <BDropdown :text="partidoSeleccionado.partido" class="m-2 departamento-menu">
             <BDropdownItem :key="p.partido_id" v-for="p in partidos">

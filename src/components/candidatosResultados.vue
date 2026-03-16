@@ -2,90 +2,100 @@
   <div class="candidate-results-vivo row pb-3 active">
     <div class="col-12">      
 
-      <div class="row " v-if="displayCandidatos.length" :key="regionSeleccionada.region">
-        <div class="col-12 pt-3 pb-3">
-        
-          <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region !='NACIONAL'"><span>{{regionSeleccionada.region}}</span> <span class="p-2 badge text-bg-dark">Conteo al {{conteo}}%</span></h2>
+      <BTabs>
+        <BTab :title="`Resulados nacionales`">
+          <template #title>
+             <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region !='NACIONAL'"><span>{{regionSeleccionada.region}}</span></h2>
 
-          <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region =='NACIONAL'"><span>RESULTADOS NACIONALES</span><span class=" badge text-bg-dark">Conteo al {{conteo}}%</span></h2>
-          <h2 class="distrito-resultados align-self-center" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'"><span>{{ distritoSeleccionado.distrito }}</span></h2>
-        </div>
-
-        <div class="col-12">
+              <h2 class="title-resultados align-self-center" v-if="regionSeleccionada.region =='NACIONAL'"><span>RESULTADOS NACIONALES</span></h2>
+              <h2 class="distrito-resultados align-self-center" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'"><span>{{ distritoSeleccionado.distrito }}</span></h2>
+          </template>
           
-          <div class="card card-candidate align-self-center mt-2 p-2" :key="c.candidato_id" v-for="c in displayCandidatos.slice(0,6)">
-            <div class="row">
-              <div class="col-4 col-md-4 col-lg-4 text-center">
-                  <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
-                   :style="`border-color: ${c.color} !important`" :src="getImageCandidate(c.candidato_id)" />
-              </div>
-              <div class="col-5 col-md-5 col-lg-5 p-0 align-self-center">
-                <h4 class="candidato-mapa mt-1">{{ c.candidato }}</h4>
-                <h4 class="partido-mapa mt-1"><img width="25px" class="partido-icon pr-2" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
-              </div> 
+          <div class=" bg-white " v-if="displayCandidatos.length" :key="regionSeleccionada.region">
+          <div class="row" v-if="displayCandidatos.length" :key="regionSeleccionada.region">
+
+            <div class="col-12">
               
-              <div class="col-3 col-md-3 col-lg-3 p-0  align-self-center text-center">
-                <div>
-                <span :style="`font-size:1rem; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
+              <div class="card card-candidate align-self-center mt-2 p-2" :key="c.candidato_id" v-for="c in displayCandidatos.slice(0,6)">
+                <div class="row">
+                  <div class="col-4 col-md-4 col-lg-4 text-center">
+                      <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                      :style="`border-color: ${c.color} !important`" :src="getImageCandidate(c.candidato_id)" />
+                  </div>
+                  <div class="col-5 col-md-5 col-lg-5 p-0 align-self-center">
+                    <h4 class="candidato-mapa mt-1">{{ c.candidato }}</h4>
+                    <h4 class="partido-mapa mt-1"><img width="25px" class="partido-icon pr-2" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
+                  </div> 
+                  
+                  <div class="col-3 col-md-3 col-lg-3 p-0  align-self-center text-center">
+                    <div>
+                    <span :style="`font-size:1rem; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
 
-                <span class=" align-self-center text-center">
-                  <span class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
-                    Votos: {{ numeral(c.votos).format('0,0') }}
-                  </span>
-                  <span class="text-center diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos).format('0,0') }} votos</span>
-                </span>   
-                
-                </div>
-              </div> 
-            </div> 
-          </div>
-        </div>
-        
-        <BCollapse v-model="open" id="collapse-1" class="col-12">
-
-         <div class="card card-candidate align-self-center mt-2 p-2" :key="c.candidato_id" v-for="c in displayCandidatos.slice(6, displayCandidatos.length)">
-            <div class="row">
-              <div class="col-4 col-md-4 col-lg-3 pr-0 pl-0 text-center">
-                  <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
-                   :style="`border-color: ${c.color} !important`" :src="getImageCandidate(c.candidato_id)" />
+                    <span class=" align-self-center text-center">
+                      <span class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
+                        Votos: {{ numeral(c.votos).format('0,0') }}
+                      </span>
+                      <span class="text-center diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos).format('0,0') }} votos</span>
+                    </span>   
+                    
+                    </div>
+                  </div> 
+                </div> 
               </div>
-              <div class="col-5 col-md-6 col-lg-5 p-0 align-self-center">
-                <h4 class="candidato-mapa mt-1">{{ c.candidato }}</h4>
-                <h4 class="partido-mapa mt-1"><img width="25px" class="partido-icon pr-2" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
-              </div> 
-              
-              <div class="col-3 col-md-2 col-lg-3 p-0  align-self-center text-center">
-                <div>
-                <span :style="`font-size: 1rem; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
+              </div>
+            </div>
+            
+            <BCollapse v-model="open" id="collapse-1" class="col-12">
 
-                <span class=" align-self-center text-center">
-                  <span class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
-                    Votos: {{ numeral(c.votos).format('0,0') }}
-                  </span>
-                  <span class="text-center diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos).format('0,0') }} votos</span>
-                </span>   
-                
-                </div>
-              </div> 
-            </div> 
+            <div class="card card-candidate align-self-center mt-2 p-2" :key="c.candidato_id" v-for="c in displayCandidatos.slice(6, displayCandidatos.length)">
+                <div class="row">
+                  <div class="col-4 col-md-4 col-lg-3 pr-0 pl-0 text-center">
+                      <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                      :style="`border-color: ${c.color} !important`" :src="getImageCandidate(c.candidato_id)" />
+                  </div>
+                  <div class="col-5 col-md-6 col-lg-5 p-0 align-self-center">
+                    <h4 class="candidato-mapa mt-1">{{ c.candidato }}</h4>
+                    <h4 class="partido-mapa mt-1"><img width="25px" class="partido-icon pr-2" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
+                  </div> 
+                  
+                  <div class="col-3 col-md-2 col-lg-3 p-0  align-self-center text-center">
+                    <div>
+                    <span :style="`font-size: 1rem; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
+
+                    <span class=" align-self-center text-center">
+                      <span class="text-center diferencia" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
+                        Votos: {{ numeral(c.votos).format('0,0') }}
+                      </span>
+                      <span class="text-center diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos).format('0,0') }} votos</span>
+                    </span>   
+                    
+                    </div>
+                  </div> 
+                </div> 
+              </div>
+              
+              
+            </BCollapse>
+        
+            <div class="col-12 mt-3 button-more pl-0 pr-0">
+              <a v-if="open==false" @click="open=!open" class="d-block btn btn-light text-center">Ver todos los resultados
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+                </svg>
+              </a>
+              <a v-if="open==true" @click="open=!open" class="d-block btn btn-light text-center">Cerrar
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
+                </svg>
+              </a>
+            </div>
           </div>
-          
-          
-        </BCollapse>
-    
-        <div class="col-12 mt-3 button-more pl-0 pr-0">
-          <a v-if="open==false" @click="open=!open" class="d-block btn btn-light text-center">Ver todos los resultados
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
-            </svg>
-          </a>
-          <a v-if="open==true" @click="open=!open" class="d-block btn btn-light text-center">Cerrar
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
-            </svg>
-          </a>
-        </div>
-      </div>
+
+        </BTab>
+        <BTab deactive :title="`Conteo al ${conteo} %`">
+        </BTab>
+      </BTabs>
+
     </div>  
     
   </div>

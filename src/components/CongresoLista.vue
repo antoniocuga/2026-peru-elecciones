@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <BCollapse v-model="open" id="collapse-congreso-lista" class="col-12">
+    <BCollapse v-model="open" id="collapse-congreso-lista" class="col-12 ">
       <div class="row item-partido pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in candidatos_congreso_real_all">
         <div class="col-auto pr-1 img-candidato">
           <img width="65px" :src="getImagePartido(candidato.partido_id)" />

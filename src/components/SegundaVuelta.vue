@@ -7,7 +7,7 @@
             <div class="col-12 col-md-6 mb-3">
 
             <BTabs>
-              <BTab :title="`Elecciones 2026 - Conteo al ${ conteo }`">
+              <BTab :title="`Elecciones 2026 - resultados en vivo`">
 
                 <div class="p-3 card card-candidate border-top-0">
 
@@ -53,6 +53,7 @@
                   </div>
                 </div>
               </Btab>
+              <BTab disabled :title="`Conteo al ${conteo}%`"></BTab>
             </Btabs>
 
   
@@ -97,7 +98,6 @@
                 
                   </div>
                 </div>
-
               </div>
               </Btab>
             </Btabs>
