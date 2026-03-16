@@ -4,90 +4,91 @@
     <div class="row">
         <div class="col-12">
           <div class="row justify-content-center">
-            <div class="col-12 col-md-6 mb-3 pb-3">
-              <div class="row mt-3">
-                <div class="col-12 col-md-8 ">
-                  <h3 class="fw-bold align-self-center"><span>RESULTADOS NACIONALES 2026</span></h3>
-                </div>
-                
-                <div class="col-4 ">
-                  <h3 class="title-resultados text-end"><span class="float-right badge text-bg-dark">Conteo al {{ conteo }}%</span></h3>
-                </div>
-              </div>
-  
-              <div class="p-3 card card-candidate ">
-              <div class="row">
-                <div class="col-12 col-md-12" :key="candidato.candidato_id" v-for="(candidato, ix) in top_candidatos.slice(0,2)">
-                  <div class="row justify-content-center mt-3">
-                    <div class="col-3 col-md-3 col-lg-3 p-0">
-                        <div class="">
-                          <img  class="rounded-circle border border-3 flex-shrink-0 img-candidato" :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
-                        </div>
-                    </div>
-                    <div class="col-5 col-md-6 col-lg-6 p-0 align-self-center">
-  
-                      
-                      <h4 class="candidato-mapa m-0">{{candidato.candidato}}</h4>
-                      <h4 class="partido-mapa p-0"><img width="25px" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h4>
-  
-                      <div>
-                      <span class="badge text-success m-0 p-0" v-if="ix==0"> Ganando por +{{ numeral(top_candidatos[ix].votos - top_candidatos[ix+1].votos).format('0,0') }} votos</span>
-                      </div>
-                      
-  
-                      <div class="candidate-results">   
-                                   
-                        <div class="candidate-bar d-none">
-                          <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato,top_candidatos, 320)}px;`"></div>
-                        </div>
-                      </div>   
-  
-                      <div>
-  
-                        
-                      </div>
-  
-                    </div>
-                    <div class="col-4 col-md-2 col-lg-3 p-1 align-sef-center text-center">
-                      <div class="tooltip-c"><span :style="`font-size:1rem; font-weight: 600;`">{{ candidato.validos.toFixed(3)+"%" }}</span> <span class="badge text-secondary">{{ numeral(candidato.votos).format('0,0') }} votos</span> </div>
+            <div class="col-12 col-md-6 mb-3">
 
+            <BTabs>
+              <BTab :title="`Elecciones 2026 - Conteo al ${ conteo }`">
+
+                <div class="p-3 card card-candidate border-top-0">
+
+      
+                  <div class="row">
+                    <div class="col-12 col-md-12" :key="candidato.candidato_id" v-for="(candidato, ix) in top_candidatos.slice(0,2)">
+                      <div class="row justify-content-center mt-3">
+                        <div class="col-3 col-md-3 col-lg-3 p-0 text-center">
+                            <div class="">
+                              <img  class="rounded-circle border border-3 flex-shrink-0 img-candidato" :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-6 col-lg-6 p-0 align-self-center">
+      
+                          
+                          <h4 class="candidato-mapa m-0">{{candidato.candidato}}</h4>
+                          <h4 class="partido-mapa p-0"><img width="25px" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h4>
+      
+                          <div>
+                          <span class="badge text-success m-0 p-0" v-if="ix==0"> Ganando por +{{ numeral(top_candidatos[ix].votos - top_candidatos[ix+1].votos).format('0,0') }} votos</span>
+                          </div>
+                          
+      
+                          <div class="candidate-results">   
+                                      
+                            <div class="candidate-bar d-none">
+                              <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato,top_candidatos, 320)}px;`"></div>
+                            </div>
+                          </div>   
+      
+                          <div>
+      
+                            
+                          </div>
+      
+                        </div>
+                        <div class="col-4 col-md-2 col-lg-3 p-1 align-sef-center text-center">
+                          <div class="tooltip-c"><span :style="`font-size:1rem; font-weight: 600;`">{{ candidato.validos.toFixed(3)+"%" }}</span> <span class="badge text-secondary">{{ numeral(candidato.votos).format('0,0') }} votos</span> </div>
+
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              </div>
+              </Btab>
+            </Btabs>
+
   
             </div>
-            <div class="col-12 col-md-6 " :key="eleccion.eleccion" v-for="(eleccion) in candidatos_segunda">
-              <div class="card card-candidate align-self-center  p-3 mb-3">
+            <div class="col-12 col-md-6 mb-3" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_segunda">
+
+            <BTabs>
+              <BTab :title="`Elecciones ${ eleccion.eleccion }`">
+              <div class="card card-candidate align-self-center border-top-0 p-3">
               
                 <div class="row">
-                  <div class="col-12 mb-2">
-                    <h3 class="m-0 fw-bold">Elecciones {{ eleccion.eleccion }}</h3>
-                  </div>
+
                   <div class="col-12">
                     <div class="mt-2 pb-2" :class="{'border-bottom': iv==0}" :key="candidato.candidato_id" v-for="(candidato, iv) in eleccion.items">
                       <div class="row">
-                        <div class="col-3 col-lg-3 p-0">                    
+                        <div class="col-3 col-md-4 col-lg-3 pr-0 pl-0 text-center">                    
                             <div class="">
                               <img  class="rounded-circle border border-3 flex-shrink-0 img-candidato" :style="candidato.ganador ? `background-color: ${candidato.color} !important` : ''" :src="getImageCandidate(candidato.candidato_id)" />
                             </div>                      
                         </div>
-                        <div class="col-5 col-md-6 col-lg-6 p-0 align-self-center">
+                        <div class="col-5 col-md-6 col-lg-5 p-0 align-self-center">
                           <div class="">
-                            
                               <h4 class="candidato-mapa m-0">{{candidato.candidato}}</h4>
                               <h4 class="partido-mapa mt-1 mb-0"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h4>
                               <div class="p-0 small badge"><span class=" text-success" v-if="candidato.ganador">✓ Ganador en segunda vuelta</span></div>                      
-                            
                           </div>    
                         </div>    
 
 
-                          <div class="col-4 col-md-2 col-lg-3 p-1 align-self-center text-center">
-                          <div class="tooltip-c" :style="`font-size:1rem; font-weight: 600;`">{{ candidato.validos+"%" }} </div>       
+                          <div class="col-4 col-md-2 col-lg-4 align-self-center text-end congreso-pasado">
+                          <div class="tooltip-c" :style="`font-size:1rem; font-weight: 600;`">
+                          <span class="text-secondary text-end fw-light d-block badge">Validos</span>
+                          
+                          {{ candidato.validos+"%" }} </div>       
 
-                          <span v-if="candidato.diferencia" class="p-0 small badge text-secondary">+{{ numeral(candidato.diferencia).format('0,0') }} votos</span>        
+                          <span v-if="candidato.diferencia" class="p-0 small badge text-end text-secondary">+{{ numeral(candidato.diferencia).format('0,0') }} <span class="mt-1 fw-light d-block">Difencia de votos</span></span>        
                           </div> 
 
 
@@ -98,6 +99,9 @@
                 </div>
 
               </div>
+              </Btab>
+            </Btabs>
+          
 
             </div>
           </div>

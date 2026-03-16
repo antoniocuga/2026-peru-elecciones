@@ -101,11 +101,11 @@
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: #fff3cd;
-  --bs-border-width: 1px;
+  --bs-border-width: 2px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
-  --bs-border-radius: 0;
+  --bs-border-radius: 4px;
   --bs-border-radius-sm: 0;
   --bs-border-radius-lg: 0;
   --bs-border-radius-xl: 0;
@@ -232,13 +232,15 @@ h2.interactive_subheadline {
 
 .nav-tabs .nav-link {
   font-family: 'Nunito', sans-serif;
-  color: #333;
+  color: #508190;
   font-size: 13px;
+  font-weight: 600;
   border-radius: 0;
   text-transform: uppercase;
 
   &.active {
     font-weight: 600;
+    color: #000;
   }
 }
 
@@ -527,7 +529,7 @@ h2.interactive_subheadline {
   }
 
   .title-resultados {
-    font-size: 16px;
+    font-size: 0.8rem;
     font-weight: 400;
     text-align: center;
   } 
@@ -1850,7 +1852,7 @@ h3.comparador-region {
 
   h3 {
     margin: 15px 0;
-    font-size: 16px;
+    font-size: 0.8rem;
     font-weight: 400;
   }
 
@@ -1998,8 +2000,18 @@ h3.comparador-region {
     }
 }
 
+.tabs {
+  background-color: #e1e1e1;
+}
+.tab-content {
+  border-right: 2px solid #dee2e6;
+  border-left: 2px solid #dee2e6;
+  border-bottom: 2px solid #dee2e6;
+  border-radius: 4px;
+}
+
 .card-candidate {
-    border-width: 1px;
+    border-width: 0px;
     border-radius: 0;
 
     .ganador-badge {

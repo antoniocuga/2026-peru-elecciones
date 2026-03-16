@@ -8,7 +8,7 @@
       
         <div class="row">
           <div class="col-12">
-            <BTabs content-class="mt-2">
+            <BTabs >
               <BTab :title="`Senadores 2026 ${ conteo_senado }%`">
                 <div class="col-12" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_senado_real">
                   <div class="card card-candidate align-self-center p-2 border-top-0">
@@ -47,8 +47,8 @@
                           <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
                         </div>
                         <div class="col-3 col-md-3 col-lg-3 p-0 align-self-center text-center">
-                          <span class="small badge-secondary d-block" style="font-size: 10px;">Voto preferencial</span>
                           <span class="congreso-pasado" :style="`font-size:1rem; font-weight: 600;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>
+                          <span class="small badge-secondary d-block fw-light" style="font-size: 10px;">Voto preferencial</span>
                         </div>
                       </div>
                     </div>
@@ -63,7 +63,7 @@
 
       <div class="col-12  mt-3 col-md-6 mb-3":key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso" >
 
-      <BTabs content-class="mt-2">
+      <BTabs>
         <BTab :title="`Congreso ${ eleccion.eleccion }`">
           <div class="card card-candidate p-2 border-top-0">
 
