@@ -33,7 +33,7 @@
           <div class="list-resultados-partidos p-3">
             <div class="row pb-3" v-if="senadores_partido.length">
               <div class="col-12" :key="'s-' + c.partido_id" v-for="c in senadores_partido">
-                <div class="row candidate-info align-self-center pt-2 pb-2 item-partido">
+                <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
                   <div class="col-auto pr-1 img-candidato">
                     <img width="65px" :src="getImagePartido(c.partido_id)" />
                   </div>
@@ -63,7 +63,7 @@
     <div class="col-12 col-md-6 col-lg-7 text-center">
       <div class="congreso-sticky">
         <div class="filters-congreso mb-3 text-center">
-          <BDropdown :text="`${depObject.region} (${depObject.seats})`" variant="warning" class="m-2 departamento-menu">
+          <BDropdown :text="`${depObject.region} (${depObject.seats})`" variant="secondary" class="m-2 departamento-menu">
             <BDropdownItem @click="reset_congreso()">
               NACIONAL (130)
             </BDropdownItem>
@@ -72,10 +72,17 @@
             </BDropdownItem>
           </BDropdown>
         </div>
+        <div class="col-12 mb-2" v-if="departamentos_conteo == 0">
+          <h5>60 senadores</h5>
+        </div>
         <svg class="svg-congreso" ref="svgCongreso" :viewBox="`0 0 ${svgSize.width} ${svgSize.height}`" preserveAspectRatio="xMidYMid meet">
           <g id="parliament-senado"></g>
           <g id="parliament-congreso"></g>
+          <g id="parliament-labels"></g>
         </svg>
+        <div class="col-12 mb-2" v-if="departamentos_conteo == 0">
+          <h5>130 congresistas</h5>
+        </div>
         <div class="col-12 mb-2" v-if="departamentos_conteo > 0">
           <h2 class="title-resultados"><b>Conteo ONPE al {{ departamentos_conteo }}% en la región {{depSelected}}</b></h2> <h2 class="title-resultados">Última actualización: {{ departamentos_hora }}</h2>
         </div>
@@ -254,24 +261,20 @@
         let ancho = el && el.getBoundingClientRect
           ? Math.min(maxW, Math.max(minW, el.getBoundingClientRect().width || 600))
           : 600
-        const height = ancho / 2
+        const isMobile = ancho < 420
+        const height = isMobile ? ancho * 0.65 : ancho / 2
         this.svgSize = { width: ancho, height }
 
-        let radius = 10,
-          gap = 5,
-          h = 25
-        if (ancho < 420) {
-          radius = 5
-          gap = 5
-          h = 15
-        }
+        let gap = 5
+        let h = isMobile ? 10 : 15
 
-        const innerAncho = Math.round(ancho * 0.72)
+        const innerFactor = isMobile ? 0.82 : 0.72
+        const innerAncho = Math.round(ancho * innerFactor)
         const offset = (ancho - innerAncho) / 2
 
-        // Outer ring: 60 senadores (senado) — larger seats so they fill more of the rows
-        const radiusSenado = radius
-        const rowHeightSenado = h 
+        // Outer ring: 60 senadores (senado) — responsive seat size
+        const radiusSenado = Math.max(6, Math.min(13, ancho * (isMobile ? 0.02 : 0.018)))
+        const rowHeightSenado = radiusSenado * (isMobile ? 2.0 : 2.3)
         const gapSenado = gap + 14
         const gSenado = d3.select('g#parliament-senado')
         gSenado.selectAll('*').remove()
@@ -285,6 +288,14 @@
         )
 
         // Inner ring: 130 congresistas; position inside the outer semicircle
+        // Congreso proportions: ~60% of Senado seat sizing (with a minimum radial gap)
+        const MIN_RADIAL_GAP = 2
+        const rawInnerRadius = radiusSenado * 0.8
+        const radiusCongreso = Math.max(
+          4,
+          Math.min(9, rawInnerRadius, radiusSenado - MIN_RADIAL_GAP)
+        )
+        const rowHeightCongreso = Math.max(10, rowHeightSenado * 0.8)
         const gCongreso = d3.select('g#parliament-congreso')
           .attr('transform', `translate(${offset}, ${offset})`)
         gCongreso.selectAll('*').remove()
@@ -293,9 +304,11 @@
             .debug(false)
             .sections(3)
             .sectionGap(gap)
-            .seatRadius(Math.max(4, radius - 2))
-            .rowHeight(Math.max(12, h - 4))
+            .seatRadius(radiusCongreso)
+            .rowHeight(rowHeightCongreso)
         )
+
+        
 
         // Classes and events for all circles (senado + congreso)
         d3.selectAll('.svg-congreso circle')

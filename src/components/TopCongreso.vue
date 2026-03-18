@@ -4,12 +4,12 @@
 
     <div class="row">
 
-      <div class="col-6 mt-3">
+      <div class="col-12 col-md-6 col-lg-6 mt-3">
       
         <div class="row">
           <div class="col-12">
             <BTabs >
-              <BTab :title="`Senadores 2026 ${ conteo_senado }%`">
+              <BTab :title="`Senadores 2026`">
                 <div class="col-12" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_senado_real">
                   <div class="card card-candidate align-self-center p-2 border-top-0">
                     <div class="border-bottom pt-2 pb-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
@@ -35,10 +35,10 @@
               </BTab>
               <BTab title="Diputados 2026">
                 <div class="col-12" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso_real">
-                  <div class="card card-candidate align-self-center border-top-0">
+                  <div class="card card-candidate align-self-center border-top-0 p-2">
                     <div class="border-bottom pt-2 pb-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
                       <div class="row">
-                        <div class="col-4 col-md-4 col-lg-4 text-center">
+                        <div class="col-12 col-md-4 col-lg-4 text-center">
                           <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                               :style="`background-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
                         </div>
@@ -55,6 +55,8 @@
                   </div>
                 </div>
               </BTab>
+
+              <BTab disabled :title="`Conteo al ${ conteo_senado }%`"></BTab>
             </BTabs>
           </div>
         </div>
@@ -79,7 +81,7 @@
                 </div>
               </div>
               
-              <div class="col-5 col-md-6 col-lg-5 p-0 align-self-center">
+              <div class="col-5 col-md-5 col-lg-5 p-0 align-self-center">
                 <div>
                   <div>
                     <div class="tooltip-c">
@@ -91,7 +93,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4 col-md-2 col-lg-3 align-self-center text-end congreso-pasado">
+              <div class="col-4 col-md-3 col-lg-3 align-self-center text-end congreso-pasado">
                 <span :style="`font-size: 1rem; font-weight: 600;`">{{ numeral(candidato.total_votos).format('0,0') }}</span>
                 <span class="small badge-secondary d-block fw-light" style="font-size: 10px;">Voto preferencial</span>
               </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="container_app_elecciones2026 wrapper" data-bs-theme="light">
     <router-view />
   </div>
 </template>
