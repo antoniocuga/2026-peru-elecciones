@@ -4,8 +4,7 @@
         <div class="col-md-12">
           <congresoGrafico />
         </div>
-      </div>  
-      <div class="tooltip_congresista"></div>
+      </div>
   </div>
 </template>
 <script setup>

@@ -107,6 +107,11 @@
   import * as parliament from 'd3-parliament-chart'
   import { filter, groupBy, map, orderBy, uniq, sum } from 'lodash'
   import CongresoLista from './CongresoLista.vue'
+  import {
+    acquireCongresoBodyTooltip,
+    releaseCongresoBodyTooltip,
+    CONGRESO_TOOLTIP_ID,
+  } from '../utils/congresoTooltip'
 
   export default {
     name: 'congresoGrafico.vue',
@@ -201,7 +206,11 @@
       }
     },
     mounted() {
+      acquireCongresoBodyTooltip()
       this.renderCongreso()
+    },
+    beforeUnmount() {
+      releaseCongresoBodyTooltip()
     },
     methods: {
       numeral,
@@ -232,7 +241,7 @@
         d3.selectAll("circle").classed("active", true)
       },
       show_congresista(event, d) {
-        const tooltip = d3.select(".tooltip_congresista")
+        const tooltip = d3.select(`#${CONGRESO_TOOLTIP_ID}`)
         let table = ''
         if (d.senado_tipo) {
           table = `<h5 class="mb-2">Senado (${d.region || 'NACIONAL'})</h5>`
@@ -247,12 +256,12 @@
           table += `<h4>Total de votos de la agrupación en ${d.region}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
         }
         tooltip.html(table)
-          .style("left", (event.pageX) + "px")
-          .style("top", (event.pageY - 28) + "px")
+          .style('left', `${event.clientX}px`)
+          .style('top', `${event.clientY - 28}px`)
         tooltip.transition()
           .duration(200)
-          .style("opacity", 1)
-          .style("visibility", "visible")
+          .style('opacity', 1)
+          .style('visibility', 'visible')
       },
       renderCongreso() {
         const el = this.$refs.svgCongreso
@@ -332,12 +341,12 @@
             else if (d.region === this.depSelected)
               this.show_congresista(e, d)
           })
-          .on("mouseout", () => {
-            d3.select(".tooltip_congresista")
+          .on('mouseout', () => {
+            d3.select(`#${CONGRESO_TOOLTIP_ID}`)
               .transition()
               .duration(150)
-              .style("opacity", 0)
-              .style("visibility", "hidden")
+              .style('opacity', 0)
+              .style('visibility', 'hidden')
           })
       }
     }

@@ -31,6 +31,11 @@
   import * as d3 from 'd3'
   import * as parliament from 'd3-parliament-chart'
   import { filter, groupBy, map, orderBy, uniq, sum } from 'lodash'
+  import {
+    acquireCongresoBodyTooltip,
+    releaseCongresoBodyTooltip,
+    CONGRESO_TOOLTIP_ID,
+  } from '../utils/congresoTooltip'
 
   export default {
     name: 'congresoGraficoEmbed',
@@ -110,7 +115,11 @@
       }
     },
     mounted() {
+      acquireCongresoBodyTooltip()
       this.renderCongreso()
+    },
+    beforeUnmount() {
+      releaseCongresoBodyTooltip()
     },
     methods: {
       numeral,
@@ -144,23 +153,21 @@
         d3.selectAll("circle").classed("active", true)
       },
       show_congresista(event, d) {
-
-        let tooltip = d3.select(".tooltip_congresista")
+        const tooltip = d3.select(`#${CONGRESO_TOOLTIP_ID}`)
         let table = `<h5 class="mb-2">${d.region}</h5>`
         table += `<h3>${d.nombre}</h3>`
         table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
         table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
         table += `<h4>Total de votos de la agrupación en ${d.region}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
 
-        tooltip.html(`${table}`)	 
-          .style("left", (event.pageX) + "px")
-          .style("top", (event.pageY - 28) + "px")
-        
-        tooltip.transition()
-          .duration(200)	
-          .style("opacity", 1)
-          .style("visibility", "visible")
+        tooltip.html(table)
+          .style('left', `${event.clientX}px`)
+          .style('top', `${event.clientY - 28}px`)
 
+        tooltip.transition()
+          .duration(200)
+          .style('opacity', 1)
+          .style('visibility', 'visible')
       },
       renderCongreso() {
         let ancho = 400,
@@ -195,15 +202,15 @@
             if(this.depSelected == "NACIONAL (130)")
               this.show_congresista(e, d)
             
-            if(this.depSelected !="NACIONAL (130)" && d.region == this.depSelected)
-              this.show_congresista(e, d, _r)
+            if (this.depSelected !== 'NACIONAL (130)' && d.region === this.depSelected)
+              this.show_congresista(e, d)
           })
-          .on("mouseout", () => {
-            let tooltip = d3.select(".tooltip_congresista")
-              tooltip.transition()
-                .duration(150)	
-                .style("opacity", 0)
-                .style("visibility", "hidden")
+          .on('mouseout', () => {
+            d3.select(`#${CONGRESO_TOOLTIP_ID}`)
+              .transition()
+              .duration(150)
+              .style('opacity', 0)
+              .style('visibility', 'hidden')
           })
       }
     }

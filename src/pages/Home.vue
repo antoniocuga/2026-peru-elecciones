@@ -81,8 +81,6 @@
         </div>
       </div>
 
-      <div class="tooltip_congresista"></div>
-
       <div class="row">
         <div class="col-12 mt-3 col-md-9">
           <div class="row">

@@ -6,28 +6,6 @@ import * as d3 from 'd3'
 import { feature } from 'topojson'
 import { find, filter, map, maxBy, minBy, orderBy, sumBy, groupBy, uniq } from 'lodash'
 
-/**
- * Shared mixin for MapaDepartamentos and MapaDepartamentosSegunda.
- *
- * Each consuming component must set via data():
- *   _mapId                  – SVG element id
- *   _regionesExtraId        – id of the small-regions div
- *   _tooltipId              – CSS selector for the tooltip element
- *   _rawDistritosKey        – store state key for raw districts array
- *   _mobileHeight           – SVG height on mobile
- *   _desktopHeight          – SVG height on desktop
- *   _mobileScaleMultiplier  – scale multiplier for mobile zoom
- *   _tooltipCandidatosCount – max candidates shown in tooltip
- *
- * Each consuming component must override these abstract methods:
- *   _fetchDistritos(v)            → Promise
- *   _updateRegionSeleccionada(dep)
- *   _updatePartidoSeleccionado(partido)
- *   _getDefaultRegionLabel()      → String
- *   _getDefaultPartidoLabel()     → String
- *
- * Templates must use refs: 'svgmap', 'base', 'labels'
- */
 export const mapaBaseMixin = {
   data() {
     return {
