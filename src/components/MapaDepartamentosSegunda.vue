@@ -4,17 +4,41 @@
     <div class="row filter-block">
       <div class="col-12 text-right">
         
-        <BDropdown :text="partidoSeleccionado.partido" variant="warning" class="d-inline-block m-2 departamento-menu">
-          <BDropdownItem :key="p.partido_id" v-for="p in partidos">
-            <a @click="show_partido(p)">{{ p.partido }}</a>
-          </BDropdownItem>
-        </BDropdown>
+        <DropdownBs4
+          :text="partidoSeleccionado.partido"
+          variant="warning"
+          :wrapperClass="['d-inline-block', 'm-2', 'departamento-menu']"
+        >
+          <template #default="{ close }">
+            <button
+              type="button"
+              class="dropdown-item"
+              :key="p.partido_id"
+              v-for="p in partidos"
+              @click="close(); show_partido(p)"
+            >
+              {{ p.partido }}
+            </button>
+          </template>
+        </DropdownBs4>
 
-        <BDropdown :text="regionSeleccionada.departamento" variant="warning" class="d-inline-block m-2 departamento-menu">
-          <BDropdownItem :key="dep.region" v-for="dep in departamentos">
-            <a @click="show_departamento(dep.region)">{{ dep.departamento }}</a>
-          </BDropdownItem>
-        </BDropdown>
+        <DropdownBs4
+          :text="regionSeleccionada.departamento"
+          variant="warning"
+          :wrapperClass="['d-inline-block', 'm-2', 'departamento-menu']"
+        >
+          <template #default="{ close }">
+            <button
+              type="button"
+              class="dropdown-item"
+              :key="dep.region"
+              v-for="dep in departamentos"
+              @click="close(); show_departamento(dep.region)"
+            >
+              {{ dep.departamento }}
+            </button>
+          </template>
+        </DropdownBs4>
 
       </div>
     </div>
@@ -65,9 +89,11 @@
   import { storeToRefs } from 'pinia'
   import { useCandidatosStore } from '../stores/candidatos'
   import { mapaBaseMixin } from '../mixins/mapaBaseMixin'
+  import DropdownBs4 from './DropdownBs4.vue'
 
   export default {
     name: 'MapaDepartamentosSegunda',
+    components: { DropdownBs4 },
     mixins: [mapaBaseMixin],
     setup() {
       const store = useCandidatosStore()

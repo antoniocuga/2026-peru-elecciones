@@ -6,16 +6,41 @@
           <button @click="resetMapa()"  class="btn btn-light" v-if="regionSeleccionadaSegunda.region !='NACIONAL'"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
           </svg></button>
-        <BDropdown :text="regionSeleccionadaSegunda.departamento" variant="warning" class="d-inline-block m-2 departamento-menu">
-          <BDropdownItem @click="show_departamento(dep)" :key="dep.region" v-for="dep in departamentos">
-            <a>{{ dep.departamento }}</a>
-          </BDropdownItem>
-        </BDropdown>
-        <BDropdown :text="distritoSeleccionado.distrito" variant="warning" class="d-inline-block m-2 departamento-menu" v-if="regionSeleccionadaSegunda.region !='NACIONAL'">
-          <BDropdownItem @click="selectDistrito(dep)" :key="dep.ubigeo" v-for="dep in distritos">
-            <a>{{ dep.distrito }}</a>
-          </BDropdownItem>
-        </BDropdown>
+        <DropdownBs4
+          :text="regionSeleccionadaSegunda.departamento"
+          variant="warning"
+          :wrapperClass="['d-inline-block', 'm-2', 'departamento-menu']"
+        >
+          <template #default="{ close }">
+            <button
+              type="button"
+              class="dropdown-item"
+              :key="dep.region"
+              v-for="dep in departamentos"
+              @click="close(); show_departamento(dep)"
+            >
+              {{ dep.departamento }}
+            </button>
+          </template>
+        </DropdownBs4>
+        <DropdownBs4
+          v-if="regionSeleccionadaSegunda.region !='NACIONAL'"
+          :text="distritoSeleccionado.distrito"
+          variant="warning"
+          :wrapperClass="['d-inline-block', 'm-2', 'departamento-menu']"
+        >
+          <template #default="{ close }">
+            <button
+              type="button"
+              class="dropdown-item"
+              :key="dep.ubigeo"
+              v-for="dep in distritos"
+              @click="close(); selectDistrito(dep)"
+            >
+              {{ dep.distrito }}
+            </button>
+          </template>
+        </DropdownBs4>
         </div>
       </div>
 
@@ -74,6 +99,7 @@
   import { useCandidatosStore } from '../stores/candidatos'
   import { getPartidoImage, getCandidatoImage } from '../utils/assets'
   import { getMapaData, getPerugeo } from '../utils/mapas'
+  import DropdownBs4 from './DropdownBs4.vue'
 
   export default {
     name: 'candidatosResultadosSegunda',
@@ -81,7 +107,8 @@
       candidatos: Array
     },
     components: {
-      elecciones2016SegundaVuelta
+      elecciones2016SegundaVuelta,
+      DropdownBs4,
     },
     setup() {
       const store = useCandidatosStore()

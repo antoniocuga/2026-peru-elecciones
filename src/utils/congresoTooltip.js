@@ -8,7 +8,9 @@ export function acquireCongresoBodyTooltip() {
   if (!el) {
     el = document.createElement('div')
     el.id = CONGRESO_TOOLTIP_ID
-    el.className = 'tooltip_congresista'
+    // Use a unique class so host pages don't accidentally style it via
+    // generic selectors like `.tooltip_congresista`
+    el.className = 'ej2026-congreso-tooltip'
     document.body.appendChild(el)
   }
   refCount++
