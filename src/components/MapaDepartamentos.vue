@@ -2,7 +2,7 @@
 
   <div class="mapa-resultados-container">    
     <div class="row">
-      <div class="col-12 text-right text-end">
+      <div class="col-12 text-right">
         <div class="filter-block">
           <DropdownBs4
             :text="partidoSeleccionado.partido"

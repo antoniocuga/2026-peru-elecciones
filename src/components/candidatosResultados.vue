@@ -28,22 +28,22 @@
                       <h4 class="partido-mapa mt-1"><img width="25px" class="partido-icon pr-2" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
                     </div> 
                     
-                    <div class="col-3 col-md-4 col-lg-4 align-self-center text-end">
+                    <div class="col-3 col-md-4 col-lg-4 align-self-center text-right">
                       <div>
                       
-                      <span class="d-block text-end small badge fw-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
+                      <span class="d-block text-right small badge font-weight-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
                           Validos
                         </span>
-                      <span class="text-end" :style="`font-size:1rem; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
+                      <span class="text-right" :style="`font-size:1rem; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
 
-                      <span class=" align-self-end text-end">
-                        <span style="font-size: 1rem;" class="d-block text-end  text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
+                      <span class="align-self-end text-right">
+                        <span style="font-size: 1rem;" class="d-block text-right text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
                           {{ numeral(c.votos).format('0,0') }}
                         </span>
-                        <span class="d-block text-end small badge fw-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
+                        <span class="d-block text-right small badge font-weight-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
                           Votos estimados
                         </span>
-                        <span class="d-block text-end diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos).format('0,0') }} votos</span>
+                        <span class="d-block text-right diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos).format('0,0') }} votos</span>
                       </span>   
                       
                       </div>

@@ -45,10 +45,10 @@
                           </div>
       
                         </div>
-                        <div class="col-4 col-md-3 col-lg-4 align-sef-center text-end">
+                        <div class="col-4 col-md-3 col-lg-4 align-sef-center text-right">
                           <div class="tooltip-c" style="font-size: 1rem; font-weight: 600;">
-                          <span class="d-block badge fw-light small text-end text-secondary">Validos</span>
-                          <span :style="`font-size:1rem; font-weight: 600;`">{{ candidato.validos.toFixed(3)+"%" }}</span> <span :style="`font-weight: 600;`" class="d-block badge text-secondary small text-end d-block">{{ numeral(candidato.votos).format('0,0') }}</span><span class="d-block badge fw-light small text-end text-secondary">Votos estimados</span></div>
+                          <span class="d-block badge font-weight-light small text-right text-secondary">Validos</span>
+                          <span :style="`font-size:1rem; font-weight: 600;`">{{ candidato.validos.toFixed(3)+"%" }}</span> <span :style="`font-weight: 600;`" class="d-block badge text-secondary small text-right d-block">{{ numeral(candidato.votos).format('0,0') }}</span><span class="d-block badge font-weight-light small text-right text-secondary">Votos estimados</span></div>
 
                         </div>
                       </div>
@@ -87,18 +87,18 @@
                         </div>    
 
 
-                          <div class="col-4 col-md-3 col-lg-4 align-self-center text-end congreso-pasado">
+                          <div class="col-4 col-md-3 col-lg-4 align-self-center text-right congreso-pasado">
                           <div class="tooltip-c" :style="`font-size:1rem; font-weight: 600;`">
-                          <span class="text-secondary text-end fw-light d-block badge">Validos</span>
+                          <span class="text-secondary text-right font-weight-light d-block badge">Validos</span>
                           <span style="font-size: 1rem; font-weight: 600;">
                             {{ candidato.validos+"%" }}
                           </span>
                            </div>       
 
-                          <span v-if="candidato.diferencia" class="d-block p-0 small badge text-end text-secondary">
+                          <span v-if="candidato.diferencia" class="d-block p-0 small badge text-right text-secondary">
                           
-                          <span :style="`font-weight: 600; font-size: 0.7rem; `" class="d-block badge text-secondary small text-end d-block">+{{ numeral(candidato.diferencia).format('0,0') }} </span>    
-                          <span class="mt-1 fw-light d-block">Diferencia</span></span>        
+                          <span :style="`font-weight: 600; font-size: 0.7rem; `" class="d-block badge text-secondary small text-right d-block">+{{ numeral(candidato.diferencia).format('0,0') }} </span>    
+                          <span class="mt-1 font-weight-light d-block">Diferencia</span></span>        
                           </div> 
 
 
