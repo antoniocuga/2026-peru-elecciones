@@ -3,6 +3,7 @@ import { createPinia } from 'pinia'
 import { registerBootstrap } from './plugins/bootstrap-vue'
 
 import Widget from './pages/Widget.vue'
+import HomeWidget from './pages/HomeWidget.vue'
 import NewWidget from './pages/NewWidget.vue'
 import CongresoWidget from './pages/CongresoWidget.vue'
 import CongresoListaWidget from './pages/CongresoListaWidget.vue'
@@ -17,6 +18,7 @@ const pinia = createPinia()
 
 const widgets = {
   'widget-resultados': Widget,
+  'widget-home': HomeWidget,
   'widget-new':        NewWidget,
   'widget-congreso':        CongresoWidget,
   'widget-congreso-lista':  CongresoListaWidget,
