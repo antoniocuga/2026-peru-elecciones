@@ -83,14 +83,26 @@
     <div class="col-12 col-md-7 text-center">
       <div class="congreso-sticky">
         <div class="filters-congreso mb-3 text-center">
-          <BDropdown :text="`${depObject.region} (${depObject.seats})`" variant="warning" class="m-2 departamento-menu">
-            <BDropdownItem @click="reset_congreso()">
-              NACIONAL ({{ listSource.length }})
-            </BDropdownItem>
-            <BDropdownItem @click="show_departamentos(d)" :key="d.region" v-for="d in departamentos">
-              {{ d.region}} ({{ d.seats }})
-            </BDropdownItem>
-          </BDropdown>
+          <DropdownBs4
+            :text="`${depObject.region} (${depObject.seats})`"
+            variant="warning"
+            :wrapperClass="['d-inline-block', 'm-2', 'departamento-menu']"
+          >
+            <template #default="{ close }">
+              <button type="button" class="dropdown-item" @click="close(); reset_congreso()">
+                NACIONAL ({{ listSource.length }})
+              </button>
+              <button
+                type="button"
+                class="dropdown-item"
+                :key="d.region"
+                v-for="d in departamentos"
+                @click="close(); show_departamentos(d)"
+              >
+                {{ d.region }} ({{ d.seats }})
+              </button>
+            </template>
+          </DropdownBs4>
         </div>
         <svg class="svg-congreso svg-sunburst" viewBox="0 0 640 360" ref="svgSunburst">
           <g ref="sunburst"></g>
@@ -204,9 +216,11 @@
   import { getPartidoImage } from '../utils/assets'
   import * as d3 from 'd3'
   import { filter, groupBy, map, orderBy, uniq, sum } from 'lodash'
+  import DropdownBs4 from './DropdownBs4.vue'
 
   export default {
     name: 'SenadoGrafico',
+    components: { DropdownBs4 },
     setup() {
       const store = useCandidatosStore()
       return { ...storeToRefs(store), store }

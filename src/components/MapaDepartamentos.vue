@@ -2,19 +2,43 @@
 
   <div class="mapa-resultados-container">    
     <div class="row">
-      <div class="col-12 text-right text-end">
+      <div class="col-12 text-right">
         <div class="filter-block">
-          <BDropdown :text="partidoSeleccionado.partido" class="m-2 departamento-menu">
-            <BDropdownItem :key="p.partido_id" v-for="p in partidos">
-              <a @click="show_partido(p)">{{ p.partido }}</a>
-            </BDropdownItem>
-          </BDropdown>
+          <DropdownBs4
+            :text="partidoSeleccionado.partido"
+            variant="secondary"
+            :wrapperClass="['d-inline-block', 'm-2', 'departamento-menu']"
+          >
+            <template #default="{ close }">
+              <button
+                type="button"
+                class="dropdown-item"
+                :key="p.partido_id"
+                v-for="p in partidos"
+                @click="close(); show_partido(p)"
+              >
+                {{ p.partido }}
+              </button>
+            </template>
+          </DropdownBs4>
       
-          <BDropdown :text="regionSeleccionada.departamento"  class="m-2 departamento-menu">
-            <BDropdownItem :key="dep.region" v-for="dep in departamentos">
-              <a @click="show_departamento(dep.region)">{{ dep.departamento }}</a>
-            </BDropdownItem>
-          </BDropdown>
+          <DropdownBs4
+            :text="regionSeleccionada.departamento"
+            variant="secondary"
+            :wrapperClass="['d-inline-block', 'm-2', 'departamento-menu']"
+          >
+            <template #default="{ close }">
+              <button
+                type="button"
+                class="dropdown-item"
+                :key="dep.region"
+                v-for="dep in departamentos"
+                @click="close(); show_departamento(dep.region)"
+              >
+                {{ dep.departamento }}
+              </button>
+            </template>
+          </DropdownBs4>
 
         </div>
         <svg width="100%" :height="height" class="plan-vector-map" ref="svgmap" id="mapa_primera">
@@ -62,9 +86,11 @@
   import { storeToRefs } from 'pinia'
   import { useCandidatosStore } from '../stores/candidatos'
   import { mapaBaseMixin } from '../mixins/mapaBaseMixin'
+  import DropdownBs4 from './DropdownBs4.vue'
 
   export default {
     name: 'MapaDepartamentos',
+    components: { DropdownBs4 },
     mixins: [mapaBaseMixin],
     setup() {
       const store = useCandidatosStore()

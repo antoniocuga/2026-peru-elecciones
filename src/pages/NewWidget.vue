@@ -8,7 +8,7 @@
         </p>
       </div>
 
-      <div class="row g-2">
+      <div class="row">
         <div class="col-12 col-md-4" v-for="(c, i) in topCandidatos" :key="c.candidato_id">
           <div class="card card-candidate border-1"
                :class="i === 0 ? 'custom-rounded-left' : i === 2 ? 'custom-rounded-right' : ''"
@@ -18,18 +18,18 @@
                    class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                    :style="`background-color: ${c.color} !important;`"
                    width="60" height="60" alt="" />
-              <div class="ms-2 text-dark overflow-hidden">
+              <div class="ml-2 text-dark overflow-hidden">
                 <div class="d-flex align-items-baseline flex-wrap">
                   <span class="porcentaje-top" :style="`color: ${c.color}`">
                     {{ c.validos.toFixed(1) }}%
                   </span>
-                  <small class="votos-top ms-1">
+                  <small class="votos-top ml-1">
                     {{ numeral(c.votos).format('0,0') }} votos
                   </small>
                 </div>
                 <p class="candidato-nombre mb-0">{{ c.candidato }}</p>
                 <p class="partido-nombre mb-0">
-                  <img width="20" height="20" class="partido-icon me-1" :src="getImagePartido(c.partido_id)" alt="" />
+                  <img width="20" height="20" class="partido-icon mr-1" :src="getImagePartido(c.partido_id)" alt="" />
                   {{ c.partido }}
                 </p>
               </div>

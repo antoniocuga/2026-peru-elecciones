@@ -24,9 +24,9 @@
                             <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
                           </div>
                         </div>
-                        <div class="col-4 col-md-3 col-lg-3 align-self-center text-end congreso-pasado align-self-center text-center">
+                        <div class="col-4 col-md-3 col-lg-3 align-self-center text-right congreso-pasado align-self-center text-center">
                           <span :style="`display:block; font-size: 1rem; font-weight: 600; text-align: right;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>
-                          <span class="small text-secondary d-block fw-light text-end" style="font-size: 10px;">Voto preferencial</span>
+                          <span class="small text-secondary d-block font-weight-light text-right" style="font-size: 10px;">Voto preferencial</span>
                         </div>
                       </div>
                     </div>
@@ -46,9 +46,9 @@
                           <h4 class="candidato-mapa mt-1 candidato-diputado">{{ candidato.nombre }}</h4>
                           <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
                         </div>
-                        <div class="col-3 col-md-3 col-lg-3 p-0 align-self-center text-end">
-                          <span class="congreso-pasado text-end d-block" :style="`font-size:1rem; font-weight: 600;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>
-                          <span class="small  text-secondary d-block fw-light text-end" style="font-size: 10px;">Voto preferencial</span>
+                        <div class="col-3 col-md-3 col-lg-3 p-0 align-self-center text-right">
+                          <span class="congreso-pasado text-right d-block" :style="`font-size:1rem; font-weight: 600;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>
+                          <span class="small text-secondary d-block font-weight-light text-right" style="font-size: 10px;">Voto preferencial</span>
                         </div>
                       </div>
                     </div>
@@ -93,9 +93,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4 col-md-3 col-lg-3 align-self-center text-end congreso-pasado">
+              <div class="col-4 col-md-3 col-lg-3 align-self-center text-right congreso-pasado">
                 <span :style="`font-size: 1rem; font-weight: 600;`">{{ numeral(candidato.total_votos).format('0,0') }}</span>
-                <span class="small badge text-secondary d-block fw-light text-end" style="font-size: 10px;">Voto preferencial</span>
+                <span class="small badge text-secondary d-block font-weight-light text-right" style="font-size: 10px;">Voto preferencial</span>
               </div>
             </div>
 

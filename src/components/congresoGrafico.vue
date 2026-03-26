@@ -61,17 +61,9 @@
     </div>
 
     <div class="col-12 col-md-6 col-lg-7 text-center">
-      <div class="congreso-sticky">
-        <div class="filters-congreso mb-3 text-center">
-          <BDropdown :text="`${depObject.region} (${depObject.seats})`" variant="secondary" class="m-2 departamento-menu">
-            <BDropdownItem @click="reset_congreso()">
-              NACIONAL (130)
-            </BDropdownItem>
-            <BDropdownItem @click="show_departamentos(d)" :key="d.region" v-for="d in departamentos">
-              {{ d.region}} ({{ d.seats }})
-            </BDropdownItem>
-          </BDropdown>
-        </div>
+      <div>
+
+      <div class="congreso-sticky  border-bottom pb-3">
         <div class="col-12 mb-2" v-if="departamentos_conteo == 0">
           <h5>60 senadores</h5>
         </div>
@@ -83,9 +75,33 @@
         <div class="col-12 mb-2" v-if="departamentos_conteo == 0">
           <h5>130 congresistas</h5>
         </div>
-        <div class="col-12 mb-2" v-if="departamentos_conteo > 0">
-          <h2 class="title-resultados"><b>Conteo ONPE al {{ departamentos_conteo }}% en la región {{depSelected}}</b></h2> <h2 class="title-resultados">Última actualización: {{ departamentos_hora }}</h2>
-        </div>
+      </div>
+      </div>
+      <div class="filters-congreso mb-3 text-center">
+        <span class="medium">Mostrar por región:</span>
+        <DropdownBs4
+          :text="`${depObject.region} (${depObject.seats})`"
+          variant="secondary"
+          :wrapperClass="['d-inline-block', 'm-2', 'departamento-menu']"
+        >
+          <template #default="{ close }">
+            <button type="button" class="dropdown-item" @click="close(); reset_congreso()">
+              NACIONAL (Todos)
+            </button>
+            <button
+              type="button"
+              class="dropdown-item"
+              :key="d.region"
+              v-for="d in departamentos"
+              @click="close(); show_departamentos(d)"
+            >
+              {{ d.region }} ({{ d.seats }})
+            </button>
+          </template>
+        </DropdownBs4>
+      </div>
+      <div class="col-12 mb-2" v-if="departamentos_conteo > 0">
+        <h2 class="title-resultados"><b>Conteo ONPE al {{ departamentos_conteo }}% en la región {{depSelected}}</b></h2> <h2 class="title-resultados">Última actualización: {{ departamentos_hora }}</h2>
       </div>
     </div>
 
@@ -107,6 +123,7 @@
   import * as parliament from 'd3-parliament-chart'
   import { filter, groupBy, map, orderBy, uniq, sum } from 'lodash'
   import CongresoLista from './CongresoLista.vue'
+  import DropdownBs4 from './DropdownBs4.vue'
   import {
     acquireCongresoBodyTooltip,
     releaseCongresoBodyTooltip,
@@ -115,7 +132,7 @@
 
   export default {
     name: 'congresoGrafico.vue',
-    components: { CongresoLista },
+    components: { CongresoLista, DropdownBs4 },
     setup() {
       const store = useCandidatosStore()
       return { ...storeToRefs(store), store }
