@@ -61,17 +61,17 @@
             </Btabs>
 
   
-            </div>
+            </div>            
             <div class="col-12 col-md-6 mb-3" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_segunda">
 
             <BTabs>
-              <BTab :title="`Primera vuelta Elecciones ${ eleccion.eleccion }`">
+              <BTab>
               <div class="card card-candidate align-self-center border-top-0 p-3">
               
                 <div class="row">
 
                   <div class="col-12">
-                    <div class="mt-2 pb-2" :class="{'border-bottom': iv==0}" :key="candidato.candidato_id" v-for="(candidato, iv) in eleccion.items">
+                    <div class="mt-2 pb-2" :class="{'border-bottom': iv==0}" :key="candidato.candidato_id" v-for="(candidato, iv) in eleccion.segunda_vuelta">
                       <div class="row">
                         <div class="col-3 col-md-4 col-lg-3 pr-0 pl-0 text-center">                    
                             <div class="">
@@ -163,10 +163,11 @@
         return segundaVueltaData
       },
       candidatos_segunda() {
-        return orderBy(map(groupBy(this.segunda_vuelta, 'eleccion'), (items, eleccion) => {
+        return orderBy(map(groupBy(this.segunda_vuelta, 'eleccion'), (candidatos, eleccion) => {
           return {
             eleccion: eleccion,
-            items: orderBy(items, 'puesto')
+            items: orderBy(candidatos, 'puesto'),
+            segunda_vuelta: orderBy(candidatos.filter(d => d.eleccion_tipo=='Segunda Vuelta'), 'puesto')
           }
         }), ['eleccion'], ['desc'])
       },
