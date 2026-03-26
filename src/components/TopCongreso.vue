@@ -34,7 +34,7 @@
                 </div>
               </BTab>
               <BTab title="Diputados 2026">
-                <div class="col-12" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso_real">
+                <div :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso_real">
                   <div class="card card-candidate align-self-center border-top-0 p-2">
                     <div class="border-bottom pt-2 pb-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
                       <div class="row">
