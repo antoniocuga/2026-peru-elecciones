@@ -1,5 +1,6 @@
 [
-    {
+     {
+        "eleccion_tipo": "Primera vuelta",
         "candidato": "Pedro Castillo",
         "candidato_id": "pedro-castillo",
         "partido": "Perú Libre",
@@ -13,6 +14,7 @@
         "ganador": true 
     },
     {
+        "eleccion_tipo": "Primera vuelta",
         "candidato": "Keiko Fujimori",
         "candidato_id": "keiko-fujimori",
         "partido": "Fuerza Popular",
@@ -24,6 +26,7 @@
         "color": "#fd6600cc"        
     },
     {
+        "eleccion_tipo": "Primera vuelta",
         "candidato": "Pedro Pablo Kuczynski",
         "candidato_id" : "pedro-pablo-kucynski",
         "partido": "Peruanos por el Kambio",
@@ -37,6 +40,7 @@
 
     },
     {
+        "eleccion_tipo": "Primera vuelta",
         "candidato": "Keiko Fujimori",
         "candidato_id": "keiko-fujimori",
         "partido": "Fuerza Popular",
@@ -49,6 +53,7 @@
         "diferencia": "2886412"
     },
     {
+        "eleccion_tipo": "Primera vuelta",
         "candidato": "Ollanta Humala",
         "candidato_id": "ollanta-humala",
         "partido": "Gana Perú",
@@ -63,6 +68,7 @@
         
     },
     {
+        "eleccion_tipo": "Primera vuelta",
         "candidato": "Keiko Fujimori",
         "candidato_id": "keiko-fujimori",
         "partido": "Fuerza 2011",
@@ -74,6 +80,7 @@
         "color": "#fd6600cc"
     },
     {
+        "eleccion_tipo": "Primera vuelta",
         "candidato": "Alan García",
         "candidato_id": "alan-garcia",
         "partido": "Partido Aprista Peruano",
@@ -86,6 +93,7 @@
         "ganador": true
     },
     {
+        "eleccion_tipo": "Primera vuelta",
         "candidato": "Ollanta Humala",
         "candidato_id": "ollanta-humala",
         "partido": "Unión por el Perú",
@@ -98,6 +106,7 @@
         "diferencia": "772400"
     },
     {
+        "eleccion_tipo": "Primera vuelta",
         "candidato": "Alejandro Toledo",
         "candidato_id": "alejandro-toledo",
         "partido": "Perú Posible",
@@ -111,6 +120,139 @@
         "ganador": true
     },
     {
+        "eleccion_tipo": "Primera vuelta",
+        "candidato": "Alan García",
+        "candidato_id": "alan-garcia",
+        "partido": "Partido Aprista Peruano",
+        "partido_id": "partido-aprista",
+        "eleccion": 2001,
+        "puesto": "2",
+        "total_votos": "2732857",
+        "validos": "25.8",
+        "color": "#ff484ccc"
+    },
+    {
+        "eleccion_tipo": "Segunda Vuelta",
+        "candidato": "Pedro Castillo",
+        "candidato_id": "pedro-castillo",
+        "partido": "Perú Libre",
+        "partido_id": "peru-libre",
+        "eleccion": 2021,
+        "puesto": "1",
+        "total_votos": "2724752",
+        "validos": "18.9",
+        "color": "#ff484ccc",
+        "diferencia": "2886412",
+        "ganador": true 
+    },
+    {
+        "eleccion_tipo": "Segunda Vuelta",
+        "candidato": "Keiko Fujimori",
+        "candidato_id": "keiko-fujimori",
+        "partido": "Fuerza Popular",
+        "partido_id": "fuerza-popular",
+        "eleccion": 2021,
+        "puesto": 2,
+        "total_votos": "1930762",
+        "validos": "13.4",
+        "color": "#fd6600cc"        
+    },
+    {
+        "eleccion_tipo": "Segunda Vuelta",
+        "candidato": "Pedro Pablo Kuczynski",
+        "candidato_id" : "pedro-pablo-kucynski",
+        "partido": "Peruanos por el Kambio",
+        "partido_id": "peruanos-por-el-kambio",
+        "eleccion": 2016,
+        "puesto": 2,
+        "total_votos": "3228661",
+        "validos": "21.05",
+        "color" : "#f59cf7",
+        "ganador": true        
+
+    },
+    {
+        "eleccion_tipo": "Segunda Vuelta",
+        "candidato": "Keiko Fujimori",
+        "candidato_id": "keiko-fujimori",
+        "partido": "Fuerza Popular",
+        "partido_id": "fuerza-popular",
+        "eleccion": 2016,
+        "puesto": 1,
+        "total_votos": "6115073",
+        "validos": "39.86",
+        "color": "#fd6600cc",
+        "diferencia": "2886412"
+    },
+    {
+        "eleccion_tipo": "Segunda Vuelta",
+        "candidato": "Ollanta Humala",
+        "candidato_id": "ollanta-humala",
+        "partido": "Gana Perú",
+        "partido_id": "partido-nacionalista",
+        "eleccion": 2011,
+        "puesto": "1",
+        "total_votos": "4643064",
+        "validos": "31.7",
+        "color": "#eb1c24cc",
+        "diferencia": "1193469",
+        "ganador": true
+        
+    },
+    {
+        "eleccion_tipo": "Segunda Vuelta",
+        "candidato": "Keiko Fujimori",
+        "candidato_id": "keiko-fujimori",
+        "partido": "Fuerza 2011",
+        "partido_id": "fuerza-popular",
+        "eleccion": 2011,
+        "puesto": "2",
+        "total_votos": "3449595",
+        "validos": "23.55",
+        "color": "#fd6600cc"
+    },
+    {
+        "eleccion_tipo": "Segunda Vuelta",
+        "candidato": "Alan García",
+        "candidato_id": "alan-garcia",
+        "partido": "Partido Aprista Peruano",
+        "partido_id": "partido-aprista",
+        "eleccion": 2006,
+        "puesto": "2",
+        "total_votos": "2985858",
+        "validos": "24.3",
+        "color": "#ff484ccc",
+        "ganador": true
+    },
+    {
+        "eleccion_tipo": "Segunda Vuelta",
+        "candidato": "Ollanta Humala",
+        "candidato_id": "ollanta-humala",
+        "partido": "Unión por el Perú",
+        "partido_id": "partido-nacionalista",
+        "eleccion": 2006,
+        "puesto": "1",
+        "total_votos": "3758258",
+        "validos": "30.6",
+        "color": "#eb1c24cc",
+        "diferencia": "772400"
+    },
+    {
+        "eleccion_tipo": "Segunda Vuelta",
+        "candidato": "Alejandro Toledo",
+        "candidato_id": "alejandro-toledo",
+        "partido": "Perú Posible",
+        "partido_id": "peru-posible",
+        "eleccion": 2001,
+        "puesto": "1",
+        "total_votos": "3871167",
+        "validos": "36.5",
+        "color": "#25b53d",
+        "diferencia": "1138310",
+        "ganador": true
+    },
+    {
+        "eleccion_tipo": "Segunda Vuelta",
         "candidato": "Alan García",
         "candidato_id": "alan-garcia",
         "partido": "Partido Aprista Peruano",
