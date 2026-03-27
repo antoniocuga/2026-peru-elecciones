@@ -139,10 +139,10 @@
         "partido_id": "peru-libre",
         "eleccion": 2021,
         "puesto": "1",
-        "total_votos": "2724752",
-        "validos": "18.9",
+        "total_votos": "8836380",
+        "validos": "50.13",
         "color": "#ff484ccc",
-        "diferencia": "2886412",
+        "diferencia": "44263",
         "ganador": true 
     },
     {
@@ -153,9 +153,10 @@
         "partido_id": "fuerza-popular",
         "eleccion": 2021,
         "puesto": 2,
-        "total_votos": "1930762",
-        "validos": "13.4",
-        "color": "#fd6600cc"        
+        "total_votos": "8792117",
+        "validos": "49.87",
+        "color": "#fd6600cc"
+        
     },
     {
         "eleccion_tipo": "Segunda Vuelta",
@@ -165,9 +166,10 @@
         "partido_id": "peruanos-por-el-kambio",
         "eleccion": 2016,
         "puesto": 2,
-        "total_votos": "3228661",
-        "validos": "21.05",
+        "total_votos": "8596937",
+        "validos": "50.12",
         "color" : "#f59cf7",
+        "diferencia": "41057",
         "ganador": true        
 
     },
@@ -179,10 +181,9 @@
         "partido_id": "fuerza-popular",
         "eleccion": 2016,
         "puesto": 1,
-        "total_votos": "6115073",
-        "validos": "39.86",
-        "color": "#fd6600cc",
-        "diferencia": "2886412"
+        "total_votos": "8555880",
+        "validos": "49.88",
+        "color": "#fd6600cc"        
     },
     {
         "eleccion_tipo": "Segunda Vuelta",
@@ -192,10 +193,10 @@
         "partido_id": "partido-nacionalista",
         "eleccion": 2011,
         "puesto": "1",
-        "total_votos": "4643064",
-        "validos": "31.7",
+        "total_votos": "7937704",
+        "validos": "51.41",
         "color": "#eb1c24cc",
-        "diferencia": "1193469",
+        "diferencia": "447057",
         "ganador": true
         
     },
@@ -207,8 +208,8 @@
         "partido_id": "fuerza-popular",
         "eleccion": 2011,
         "puesto": "2",
-        "total_votos": "3449595",
-        "validos": "23.55",
+        "total_votos": "7490647",
+        "validos": "48.55",
         "color": "#fd6600cc"
     },
     {
@@ -219,9 +220,10 @@
         "partido_id": "partido-aprista",
         "eleccion": 2006,
         "puesto": "2",
-        "total_votos": "2985858",
-        "validos": "24.3",
+        "total_votos": "6965017",
+        "validos": "52.63",
         "color": "#ff484ccc",
+        "diferencia": "694937",
         "ganador": true
     },
     {
@@ -232,8 +234,8 @@
         "partido_id": "partido-nacionalista",
         "eleccion": 2006,
         "puesto": "1",
-        "total_votos": "3758258",
-        "validos": "30.6",
+        "total_votos": "6270080",
+        "validos": "47.38",
         "color": "#eb1c24cc",
         "diferencia": "772400"
     },
@@ -245,10 +247,10 @@
         "partido_id": "peru-posible",
         "eleccion": 2001,
         "puesto": "1",
-        "total_votos": "3871167",
-        "validos": "36.5",
+        "total_votos": "5548556",
+        "validos": "53.10",
         "color": "#25b53d",
-        "diferencia": "1138310",
+        "diferencia": "643627",
         "ganador": true
     },
     {
@@ -259,10 +261,38 @@
         "partido_id": "partido-aprista",
         "eleccion": 2001,
         "puesto": "2",
-        "total_votos": "2732857",
-        "validos": "25.8",
+        "total_votos": "4904929",
+        "validos": "46.92",
         "color": "#ff484ccc"
+    },
+    {
+        "eleccion_tipo": "Segunda Vuelta",
+        "candidato": "Alberto Fujimori",
+        "candidato_id": "alberto-fujimori",
+        "partido": "Peru 2000",
+        "partido_id": "peru-2000",
+        "eleccion": 2001,
+        "puesto": "1",
+        "total_votos": "6041685",
+        "validos": "74.30",
+        "color": "#ff484ccc",
+        "diferencia": "3955470",
+        "ganador": true
+    },     
+    {
+        "eleccion_tipo": "Segunda Vuelta",
+        "candidato": "Alejandro Toledo",
+        "candidato_id": "alejandro-toledo",
+        "partido": "Perú Posible",
+        "partido_id": "peru-posible",
+        "eleccion": 2001,
+        "puesto": "2",
+        "total_votos": "2086215",
+        "validos": "25.70",
+        "color": "#25b53d"
+       
     }
+    
 
 
 
