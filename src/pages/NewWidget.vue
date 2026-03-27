@@ -1,42 +1,49 @@
 <template>
-  <div class="container py-4" style="background-color:#dce8ec;">
+  <div class="container py-4 pb-0" style="background-color:#dce8ec;">
     <div class="container" v-if="topCandidatos.length">
 
-     <div class="mb-2">
-        <p class="small text-dark mb-0 text-center" style="font-size:0.75rem; opacity:0.8;">
-          Última actualización: {{ fechaHora }} · Datos ONPE, actualizados cada 20 minutos.
-        </p>
-      </div>
-
       <div class="row">
-        <div class="col-12 col-md-4" v-for="(c, i) in topCandidatos" :key="c.candidato_id">
+        <div class="col-12 col-md-4 p-1" v-for="(c, i) in topCandidatos" :key="c.candidato_id">
           <div class="card card-candidate border-1"
-               :class="i === 0 ? 'custom-rounded-left' : i === 2 ? 'custom-rounded-right' : ''"
+               :class="i === 0 ? 'custom-rounded-left  border-right' : i === 2 ? 'custom-rounded-right  border-left' : ''"
                >
-            <div class="card-body d-flex align-items-center p-2">
+            <div class="card-body d-flex align-items-center justify-content-between p-2">
               <img :src="getImageCandidate(c.candidato_id)"
                    class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                    :style="`background-color: ${c.color} !important;`"
                    width="60" height="60" alt="" />
-              <div class="ml-2 text-dark overflow-hidden">
-                <div class="d-flex align-items-baseline flex-wrap">
-                  <span class="porcentaje-top" :style="`color: ${c.color}`">
-                    {{ c.validos.toFixed(1) }}%
-                  </span>
-                  <small class="votos-top ml-1">
-                    {{ numeral(c.votos).format('0,0') }} votos
-                  </small>
-                </div>
-                <p class="candidato-nombre mb-0">{{ c.candidato }}</p>
-                <p class="partido-nombre mb-0">
-                  <img width="20" height="20" class="partido-icon mr-1" :src="getImagePartido(c.partido_id)" alt="" />
+              <div class="ml-2 text-dark text-left overflow-hidden">
+                <p class="p-0 candidato-nombre mb-0">{{ c.candidato }}</p>
+                <p class="p-0 partido-nombre mb-0">
+                  <img width="20" height="20" class="partido-icon" :src="getImagePartido(c.partido_id)" alt="" />
                   {{ c.partido }}
                 </p>
+                <div class="segunda-vuelta-badge" v-if="i === 0 || i === 1">
+                  ✓ Segunda vuelta
+                </div>
+              </div>
+              <div style="min-width: 70px;" class="ml-2 text-dark overflow-hidden justify-content-end mr-3">
+                <div class="d-block text-right align-items-baseline flex-wrap">
+                  <span class="porcentaje-top d-block" :style="`color: ${c.color}`">
+                    {{ c.validos.toFixed(1) }}%
+                  </span>
+                  <span style="font-size: 0.8rem;" class="votos-top ml-1 d-block">
+                    {{ numeral(c.votos).format('0,0') }} 
+                  </span>
+                  <span style="font-size: 0.8rem;" class="votos-top ml-1 d-block text-small small">
+                    votos
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="segunda-vuelta-badge" v-if="i === 0 || i === 1">
-            ✓ En segunda vuelta
+         
+        </div>
+        <div class="col-12">
+          <div class="mt-2 mb-0 pb-0">
+            <p class="small text-dark mt-3 mb-0 text-center" style="font-size:0.75rem; opacity:0.8;">
+              Última actualización: {{ fechaHora }} · Datos ONPE, actualizados cada 20 minutos.
+            </p>
           </div>
         </div>
       </div>

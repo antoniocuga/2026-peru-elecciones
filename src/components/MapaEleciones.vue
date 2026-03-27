@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 col-sm-12 resultados2021">
+  <div class="resultados2021">
       <div class="row pt-3">
         <div class="col-12 col-sm-12 col-md-6 col-lg-5 d-md-block d-none">
           <candidatosResultados :candidatos="filteredData" />

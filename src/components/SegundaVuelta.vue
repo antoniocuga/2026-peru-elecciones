@@ -4,64 +4,7 @@
     <div class="row">
         <div class="col-12">
           <div class="row justify-content-center">
-            <div class="col-12 col-md-6 mb-3">
 
-            <BTabs>
-              <BTab :title="`Elecciones 2026 - resultados en vivo`">
-
-                <div class="card p-3 card-candidate border-top-0">
-
-      
-                    <div :class="{'border-bottom': ix==0}"  class="mt-2 pb-2 col-12 col-md-12" :key="candidato.candidato_id" v-for="(candidato, ix) in top_candidatos.slice(0,2)">
-                  <div class="row">
-                    <div class="col-12 col-md-12">
-                      <div class="row justify-content-center">
-                        <div class="col-3 col-md-3 col-lg-3 text-center">
-                            <div class="">
-                              <img  class="rounded-circle border border-3 flex-shrink-0 img-candidato" :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
-                            </div>
-                        </div>
-                        <div class="col-5 col-md-5 col-lg-5 p-0 align-self-center">
-      
-                          
-                          <h4 class="candidato-mapa m-0">{{candidato.candidato}}</h4>
-                          <h4 class="partido-mapa p-0"><img width="25px" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h4>
-      
-                          <div>
-                          <span class="badge text-success m-0 p-0" v-if="ix==0"> Ganando por +{{ numeral(top_candidatos[ix].votos - top_candidatos[ix+1].votos).format('0,0') }} votos</span>
-                          </div>
-                          
-      
-                          <div class="candidate-results">   
-                                      
-                            <div class="candidate-bar d-none">
-                              <div class="percent" :style="`background-color:${candidato.color}; width: ${calcScale(candidato,top_candidatos, 320)}px;`"></div>
-                            </div>
-                          </div>   
-      
-                          <div>
-      
-                            
-                          </div>
-      
-                        </div>
-                        <div class="col-4 col-md-3 col-lg-4 align-sef-center text-right">
-                          <div class="tooltip-c" style="font-size: 1rem; font-weight: 600;">
-                          <span class="d-block badge font-weight-light small text-right text-secondary">Validos</span>
-                          <span :style="`font-size:1rem; font-weight: 600;`">{{ candidato.validos.toFixed(3)+"%" }}</span> <span :style="`font-weight: 600;`" class="d-block badge text-secondary small text-right d-block">{{ numeral(candidato.votos).format('0,0') }}</span><span class="d-block badge font-weight-light small text-right text-secondary">Votos estimados</span></div>
-
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Btab>
-              <BTab disabled :title="`Conteo al ${conteo}%`"></BTab>
-            </Btabs>
-
-  
-            </div>            
             <div class="col-12 col-md-6 mb-3" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_segunda">
 
             <BTabs>
@@ -116,7 +59,7 @@
 
                     <div class="col-12">
                       <div class="mt-2 pb-2" :class="{'border-bottom': iv==0}" :key="candidato.candidato_id" v-for="(candidato, iv) in eleccion.segunda_vuelta">
-                        <div class="row">
+                        <div class="row" v-if="!candidato.nota">
                           <div class="col-3 col-md-4 col-lg-3 pr-0 pl-0 text-center">                    
                               <div class="">
                                 <img  class="rounded-circle border border-3 flex-shrink-0 img-candidato" :style="candidato.ganador ? `background-color: ${candidato.color} !important` : ''" :src="getImageCandidate(candidato.candidato_id)" />
@@ -129,9 +72,7 @@
                                 <div class="p-0 small badge"><span class=" text-success" v-if="candidato.ganador">✓ Ganador en segunda vuelta</span></div>                      
                             </div>    
                           </div>    
-
-
-                            <div class="col-4 col-md-3 col-lg-4 align-self-center text-right congreso-pasado">
+                          <div class="col-4 col-md-3 col-lg-4 align-self-center text-right congreso-pasado">
                             <div class="tooltip-c" :style="`font-size:1rem; font-weight: 600;`">
                             <span class="text-secondary text-right font-weight-light d-block badge">Validos</span>
                             <span style="font-size: 1rem; font-weight: 600;">
@@ -143,9 +84,12 @@
                             
                             <span :style="`font-weight: 600; font-size: 0.7rem; `" class="d-block badge text-secondary small text-right d-block">+{{ numeral(candidato.diferencia).format('0,0') }} </span>    
                             <span class="mt-1 font-weight-light d-block">Diferencia</span></span>        
-                            </div> 
-
-
+                          </div> 
+                        </div>
+                        <div class="p-3 background-light text-small small">
+                        <div class="nota" v-if="candidato.nota">
+                        {{ candidato.nota }}
+                        </div>
                         </div>
                       </div>
                   
@@ -173,12 +117,15 @@
   import { useCandidatosStore } from '../stores/candidatos'
   import { getPartidoImage, getCandidatoImage } from '../utils/assets'
   import numeral from 'numeral'
-  import * as d3 from 'd3'
-  import { groupBy, filter, map, orderBy, maxBy, uniq } from 'lodash'
+  import { groupBy, filter, map, orderBy, uniq } from 'lodash'
   import segundaVueltaData from '../data/segunda_vuelta.json'
+  import SegundaVueltaLiveCard from './SegundaVueltaLiveCard.vue'
 
   export default {
     name: 'SegundaVuelta',
+    components: {
+      SegundaVueltaLiveCard,
+    },
     setup() {
       const store = useCandidatosStore()
       const refs = storeToRefs(store)
@@ -191,16 +138,7 @@
       },
       getImagePartido(c) {
         return getPartidoImage(c)
-      },
-      calcScale(candidato, items, w) {
-        
-        let _m = maxBy(items, 'validos')
-        let myScale = d3.scaleLinear()
-          .domain([0, _m.validos])
-          .range([0, w])
-
-        return myScale(parseFloat(candidato.validos))
-        }
+      }
     },
     computed: {
       segunda_vuelta() {

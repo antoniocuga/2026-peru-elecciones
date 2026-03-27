@@ -2082,17 +2082,29 @@
 
   /* Segunda vuelta badge below card */
   .segunda-vuelta-badge {
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 700;
-      background-color: #35a9509e;
-      text-align: center;
+      background-color: transparent;
+      text-align: left;
       margin-top: 4px;
-      color: #fff;
-      border-radius: 15px;
+      color: #35a950;
       display: block;
       padding: 2px 10px;
       margin: 5px auto;
-      width: 60%;
+      width: 120px;
+  }
+
+  .tercera-vuelta-badge {
+      font-size: 10px;
+      font-weight: 700;
+      background-color: #ffffff9e;
+      text-align: center;
+      margin-top: 4px;
+      color: #000000;
+      display: block;
+      padding: 2px 10px;
+      margin: 5px auto;
+      width: 120px;
   }
 
 

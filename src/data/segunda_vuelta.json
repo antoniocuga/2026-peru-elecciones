@@ -266,7 +266,7 @@
         "color": "#ff484ccc"
     },
     {
-        "eleccion_tipo": "Segunda Vuelta",
+        "eleccion_tipo": "Primera vuelta",
         "candidato": "Alberto Fujimori",
         "candidato_id": "alberto-fujimori",
         "partido": "Peru 2000",
@@ -280,7 +280,7 @@
         "ganador": true
     },     
     {
-        "eleccion_tipo": "Segunda Vuelta",
+        "eleccion_tipo": "Primera vuelta",
         "candidato": "Alejandro Toledo",
         "candidato_id": "alejandro-toledo",
         "partido": "Perú Posible",
@@ -290,10 +290,11 @@
         "total_votos": "2086215",
         "validos": "25.70",
         "color": "#25b53d"
-       
+    },
+    {
+        "eleccion_tipo": "Segunda Vuelta",
+        "eleccion": 2000,
+        "nota": "Las elecciones generales se realizaron el 9 de abril del 2000 en un contexto de acusaciones por corrupción, violaciones de derechos humanos y amenazas desde las fuerzas de seguridad del régimen de Alberto Fujimori. El candidato Alejandro Toledo denunció que las elecciones de segunda vuelta no serían justas ni libres y pidió a sus partidarios que impugnen sus votos a modo de boicot, lo que llegó a que casi el 30% de los votos de dichos comicios fueran nulos. Fujimori obtuvo la victoria e inició su mandato el 28 de julio del 2000. Cuatro meses después renunció al cargo desde el extranjero y en medio de la difusión de los llamados \"vladivideos\". El gobierno de transición convocó a elecciones para el 2021."
+
     }
-    
-
-
-
 ]
