@@ -2177,9 +2177,20 @@
 
 //  Header embed
 
+
+.block-region-content > div:nth-child(1) > div:nth-child(2) > h2:nth-child(1) {
+  font-family: var(--heading-3-dk-font);
+  font-size: var(--heading-3-dk-font-size);
+  font-weight: var(--heading-3-dk-font-weight);
+  line-height: var(--heading-3-dk-line-height);
+  letter-spacing: 0;
+  padding: 0 15px;
+}
+
 .block-region-content > div:nth-child(1) > div:nth-child(2) {
   max-width: 1120px;
   margin: 0 auto;
+  padding: 35px 0;
 }
 .block-region-content > div:nth-child(1) > div:nth-child(2) h1 {
     font-family: var(--heading-3-dk-font);

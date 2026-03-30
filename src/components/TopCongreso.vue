@@ -16,7 +16,7 @@
                       <div class="row">
                         <div class="col-4 col-md-3 col-lg-3 text-center">
                           <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
-                              :style="`background-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                              :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
                         </div>
                         <div class="col-4 col-md-4 col-lg-5 p-0 align-self-center">
                           <div class="tooltip-c">
@@ -40,7 +40,7 @@
                       <div class="row">
                         <div class="col-4 col-md-3 col-lg-3 text-center">
                           <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
-                              :style="`background-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                              :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
                         </div>
                         <div class="col-4 col-md-4 col-lg-5 p-0 align-self-center">
                           <h4 class="candidato-mapa mt-1 candidato-diputado">{{ candidato.nombre }}</h4>
@@ -75,7 +75,7 @@
                   <div>
                     <div class="">
                       <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
-                      :style="`background-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                      :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
                     </div>
                   </div>
                 </div>
@@ -117,7 +117,7 @@
                     <div>
                       <div class="">
                         <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
-                        :style="`background-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                        :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
                       </div>
                     </div>
                   </div>

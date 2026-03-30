@@ -62,7 +62,7 @@ import { getPartidoImage, getCandidatoImage } from '../utils/assets'
 import { filter, map, orderBy, groupBy, uniq } from 'lodash'
 
 export default {
-  name: 'TopResultados',
+  name: 'NewWidget',
   setup() {
     const store = useCandidatosStore()
     const refs = storeToRefs(store)
