@@ -24,7 +24,9 @@ export const mapaBaseMixin = {
       _regionesExtraId: 'regiones',
       _tooltipId: '#tooltip',
       _rawDistritosKey: 'distritos',
-      _mobileHeight: 720,
+      /** SVG height when innerWidth < 768 (phones / narrow) */
+      _mobileHeight: 640,
+      /** SVG height for tablet in fluid layout (768–992) and desktop */
       _desktopHeight: 720,
       _mobileScaleMultiplier: 1.45,
       _tooltipCandidatosCount: 4,
@@ -353,7 +355,8 @@ export const mapaBaseMixin = {
 
       if (window.innerWidth < 993) {
         this.width = window.innerWidth > 500 ? window.innerWidth / 1.7 : window.innerWidth
-        this.height = this._mobileHeight
+        this.height =
+          window.innerWidth < 768 ? this._mobileHeight : this._desktopHeight
         this.center_device = [this.width / 2, this.height / 2]
         this.scale = this.width * this._mobileScaleMultiplier / this.distance
       } else if (window.innerWidth > 720) {

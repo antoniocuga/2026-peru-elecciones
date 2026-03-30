@@ -14,17 +14,17 @@
                   <div class="card card-candidate align-self-center p-2 border-top-0">
                     <div class="border-bottom pt-2 pb-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
                       <div class="row">
-                        <div class="col-3 col-md-4 col-lg-3 pr-0 pl-0 text-center">
+                        <div class="col-4 col-md-3 col-lg-3 text-center">
                           <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                               :style="`background-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
                         </div>
-                        <div class="col-5 col-md-5 col-lg-5 p-0 align-self-center">
+                        <div class="col-4 col-md-4 col-lg-5 p-0 align-self-center">
                           <div class="tooltip-c">
                             <h4 class="candidato-mapa candidato-partido mt-1">{{ candidato.nombre }}</h4>
                             <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
                           </div>
                         </div>
-                        <div class="col-4 col-md-3 col-lg-3 align-self-center text-right congreso-pasado align-self-center text-center">
+                        <div class="col-4 col-md-4 col-lg-4 align-self-center text-right">
                           <span :style="`display:block; font-size: 1rem; font-weight: 600; text-align: right;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>
                           <span class="small text-secondary d-block font-weight-light text-right" style="font-size: 10px;">Voto preferencial</span>
                         </div>
@@ -38,15 +38,15 @@
                   <div class="card card-candidate align-self-center border-top-0 p-2">
                     <div class="border-bottom pt-2 pb-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
                       <div class="row">
-                        <div class="col-3 col-md-4 col-lg-3 pr-0 pl-0 text-center">
+                        <div class="col-4 col-md-3 col-lg-3 text-center">
                           <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                               :style="`background-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
                         </div>
-                        <div class="col-5 col-md-5 col-lg-5 p-0 align-self-center">
+                        <div class="col-4 col-md-4 col-lg-5 p-0 align-self-center">
                           <h4 class="candidato-mapa mt-1 candidato-diputado">{{ candidato.nombre }}</h4>
                           <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
                         </div>
-                        <div class="col-3 col-md-3 col-lg-3 p-0 align-self-center text-right">
+                        <div class="col-4 col-md-4 col-lg-4 align-self-center text-right">
                           <span class="congreso-pasado text-right d-block" :style="`font-size:1rem; font-weight: 600;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>
                           <span class="small text-secondary d-block font-weight-light text-right" style="font-size: 10px;">Voto preferencial</span>
                         </div>
@@ -63,50 +63,87 @@
       
       </div>
 
-      <div class="col-12  mt-3 col-md-6 mb-3":key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso" >
+      <div class="col-12  mt-3 col-md-6 mb-3" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso.slice(0,2)" >
+        <BTabs>
+          <BTab :title="`Congreso ${ eleccion.eleccion }`">
+            <div class="card card-candidate p-2 border-top-0">
 
-      <BTabs>
-        <BTab :title="`Congreso ${ eleccion.eleccion }`">
-          <div class="card card-candidate p-2 border-top-0">
+            <div class="border-bottom pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
 
-          <div class="border-bottom pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
-
-            <div class="row">
-              <div class="col-3 col-md-4 col-lg-3 pr-0 pl-0 text-center">
-                <div>
-                  <div class="">
-                    <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
-                    :style="`background-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+              <div class="row">
+                <div class="col-4 col-md-3 col-lg-3 text-center">
+                  <div>
+                    <div class="">
+                      <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                      :style="`background-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              
-              <div class="col-5 col-md-5 col-lg-5 p-0 align-self-center">
-                <div>
+                
+                <div class="col-4 col-md-4 col-lg-5 p-0 align-self-center">
                   <div>
-                    <div class="tooltip-c">
+                    <div>
+                      <div class="tooltip-c">
+                        
+                      </div>
+                      <h4 class="candidato-mapa candidato-partido mt-1">{{ candidato.candidato }}</h4>
+                      <h4 class="partido-mapa partido"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
                       
                     </div>
-                    <h4 class="candidato-mapa candidato-partido mt-1">{{ candidato.candidato }}</h4>
-                    <h4 class="partido-mapa partido"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
-                    
                   </div>
                 </div>
+                <div class="col-4 col-md-4 col-lg-4 align-self-center text-right">
+                  <span :style="`font-size: 1rem; font-weight: 600;`">{{ numeral(candidato.total_votos).format('0,0') }}</span>
+                  <span class="small badge text-secondary d-block font-weight-light text-right" style="font-size: 10px;">Voto preferencial</span>
+                </div>
               </div>
-              <div class="col-4 col-md-3 col-lg-3 align-self-center text-right congreso-pasado">
-                <span :style="`font-size: 1rem; font-weight: 600;`">{{ numeral(candidato.total_votos).format('0,0') }}</span>
-                <span class="small badge text-secondary d-block font-weight-light text-right" style="font-size: 10px;">Voto preferencial</span>
-              </div>
+
             </div>
 
           </div>
+          </BTab>
+        </BTabs>
+      </div>
 
-        </div>
-        </Btab>
-      </Btabs>
-      
-        
-        
+      <div class="col-12  mt-3 col-md-6 mb-3">
+        <BTabs>
+          <BTab :title="`Congreso ${ eleccion.eleccion }`" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso.slice(2)" >
+            <div class="card card-candidate p-2 border-top-0">
+
+              <div class="border-bottom pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
+
+                <div class="row">
+                  <div class="col-4 col-md-3 col-lg-3 text-center">
+                    <div>
+                      <div class="">
+                        <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                        :style="`background-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-4 col-md-4 col-lg-5 p-0 align-self-center">
+                    <div>
+                      <div>
+                        <div class="tooltip-c">
+                          
+                        </div>
+                        <h4 class="candidato-mapa candidato-partido mt-1">{{ candidato.candidato }}</h4>
+                        <h4 class="partido-mapa partido"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-4 col-lg-4 align-self-center text-right">
+                    <span :style="`font-size: 1rem; font-weight: 600;`">{{ numeral(candidato.total_votos).format('0,0') }}</span>
+                    <span class="small badge text-secondary d-block font-weight-light text-right" style="font-size: 10px;">Voto preferencial</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </BTab>
+        </BTabs>
       </div>
 
 

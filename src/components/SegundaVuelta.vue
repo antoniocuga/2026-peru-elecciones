@@ -86,7 +86,7 @@
                             <span class="mt-1 font-weight-light d-block">Diferencia</span></span>        
                           </div> 
                         </div>
-                        <div class="p-3 background-light text-small small">
+                        <div class=" background-light text-small small">
                         <div class="nota" v-if="candidato.nota">
                         {{ candidato.nota }}
                         </div>

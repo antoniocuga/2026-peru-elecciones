@@ -1,12 +1,8 @@
 <template>
   <div class="">
-    <div class="row">
-      <div class="col-md-12">
         <div class="mapa">
           <MapaEleciones/>
         </div>
-      </div>
-    </div>    
   </div>
 </template>
 <script setup>

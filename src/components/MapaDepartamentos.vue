@@ -108,7 +108,7 @@
         _regionesExtraId: 'primera_extra',
         _tooltipId: '#tooltip_primera',
         _rawDistritosKey: 'distritos',
-        _mobileHeight: 720,
+        _mobileHeight: 640,
         _desktopHeight: 720,
         _mobileScaleMultiplier: 1.45,
         _tooltipCandidatosCount: 4,

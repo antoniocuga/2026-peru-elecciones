@@ -18,7 +18,7 @@
                   <img width="20" height="20" class="partido-icon" :src="getImagePartido(c.partido_id)" alt="" />
                   {{ c.partido }}
                 </p>
-                <div class="segunda-vuelta-badge" v-if="i === 0 || i === 1">
+                <div class="segunda-vuelta-badge m-0 p-0 mt-2" v-if="i === 0 || i === 1">
                   ✓ Segunda vuelta
                 </div>
               </div>
@@ -30,7 +30,7 @@
                   <span style="font-size: 0.8rem;" class="votos-top ml-1 d-block">
                     {{ numeral(c.votos).format('0,0') }} 
                   </span>
-                  <span style="font-size: 0.8rem;" class="votos-top ml-1 d-block text-small small">
+                  <span style="font-size: 0.6rem;" class="votos-top ml-1 d-block text-small small">
                     votos
                   </span>
                 </div>

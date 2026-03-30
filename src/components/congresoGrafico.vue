@@ -1,8 +1,13 @@
 <template>
   <div class="row congreso-grafico">    
-    <div class="col-12 col-md-6 col-lg-5 order-md-0 order-1">       
+    <div class="col-12 col-sm-12 col-md-6 col-lg-5 order-md-0 order-1">       
       <BTabs>
-        <BTab title="Diputados por partido">     
+        <BTab>
+          <template #title>
+            <span class="d-inline-flex align-items-center gap-1">
+              Diputados por partido
+            </span>
+          </template>
           <div class="list-resultados-partidos p-3">
             <div class="row pb-3">
               <div class="col-12" :key="c.candidato_id" v-for="c in congresistas_partido">
@@ -22,14 +27,14 @@
         
             </div>
 
-            <div class="row">
-              <div class="col-12">
-                Fuente: Elaboración propia en base a información de la ONPE.
-              </div>
-            </div>
           </div>  
         </BTab>        
-        <BTab title="Senados por partidos" class="list-resultados-partidos" lazy>
+        <BTab class="list-resultados-partidos" lazy>
+          <template #title>
+            <span class="d-inline-flex align-items-center gap-1">
+              Senados por partidos
+            </span>
+          </template>
           <div class="list-resultados-partidos p-3">
             <div class="row pb-3" v-if="senadores_partido.length">
               <div class="col-12" :key="'s-' + c.partido_id" v-for="c in senadores_partido">
@@ -50,43 +55,71 @@
             <div class="row" v-else>
               <div class="col-12 text-center py-3 text-muted">Cargando datos de senado...</div>
             </div>
-            <div class="row">
-              <div class="col-12">
-                Fuente: Elaboración propia en base a información de la ONPE.
-              </div>
-            </div>
           </div>
         </BTab>
       </BTabs>
     </div>
 
-    <div class="col-12 col-md-6 col-lg-7 text-center">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-7 text-center">
       <div>
 
-      <div class="congreso-sticky  border-bottom pb-3">
-        <div class="col-12 mb-2" v-if="departamentos_conteo == 0">
-          <h5>60 senadores</h5>
+      <div class="congreso-sticky border-bottom pb-3">
+        <!-- Mobile &lt; md: two stacked semicircles -->
+        <div class="d-md-none">
+          <div class="col-12 mb-2">
+            <h5>{{ headingSenadoSeats }} senadores</h5>
+          </div>
+          <svg
+            class="svg-congreso"
+            ref="svgSenadoMobile"
+            :viewBox="`0 0 ${svgSizeSenadoMobile.width} ${svgSizeSenadoMobile.height}`"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g id="parliament-senado-mobile"></g>
+          </svg>
+          <div class="col-12 mb-2 mt-3">
+            <h5>{{ headingCongresoSeats }} congresistas</h5>
+          </div>
+          <svg
+            class="svg-congreso"
+            ref="svgCongresoMobile"
+            :viewBox="`0 0 ${svgSizeCongresoMobile.width} ${svgSizeCongresoMobile.height}`"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g id="parliament-congreso-mobile"></g>
+          </svg>
         </div>
-        <svg class="svg-congreso" ref="svgCongreso" :viewBox="`0 0 ${svgSize.width} ${svgSize.height}`" preserveAspectRatio="xMidYMid meet">
-          <g id="parliament-senado"></g>
-          <g id="parliament-congreso"></g>
-          <g id="parliament-labels"></g>
-        </svg>
-        <div class="col-12 mb-2" v-if="departamentos_conteo == 0">
-          <h5>130 congresistas</h5>
+        <!-- md+: nested semicircles in one SVG -->
+        <div class="d-none d-md-block">
+          <div class="col-12 mb-2">
+            <h5>{{ headingSenadoSeats }} senadores</h5>
+          </div>
+          <svg
+            class="svg-congreso"
+            ref="svgCongresoDesktop"
+            :viewBox="`0 0 ${svgSize.width} ${svgSize.height}`"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g id="parliament-senado"></g>
+            <g id="parliament-congreso"></g>
+            <g id="parliament-labels"></g>
+          </svg>
+          <div class="col-12 mb-2">
+            <h5>{{ headingCongresoSeats }} congresistas</h5>
+          </div>
         </div>
       </div>
       </div>
       <div class="filters-congreso mb-3 text-center">
-        <span class="medium">Mostrar por región:</span>
+        <span class="medium">Mostrar resultados por</span>
         <DropdownBs4
-          :text="`${depObject.region} (${depObject.seats})`"
-          variant="secondary"
+          :text="`${depObject.region}`"
+          variant="link-dark"
           :wrapperClass="['d-inline-block', 'm-2', 'departamento-menu']"
         >
           <template #default="{ close }">
             <button type="button" class="dropdown-item" @click="close(); reset_congreso()">
-              NACIONAL (Todos)
+              TODAS LAS REGIONES
             </button>
             <button
               type="button"
@@ -95,7 +128,7 @@
               v-for="d in departamentos"
               @click="close(); show_departamentos(d)"
             >
-              {{ d.region }} ({{ d.seats }})
+              {{ d.region }}
             </button>
           </template>
         </DropdownBs4>
@@ -103,11 +136,6 @@
       <div class="col-12 mb-2" v-if="departamentos_conteo > 0">
         <h2 class="title-resultados"><b>Conteo ONPE al {{ departamentos_conteo }}% en la región {{depSelected}}</b></h2> <h2 class="title-resultados">Última actualización: {{ departamentos_hora }}</h2>
       </div>
-    </div>
-
-
-    <div class="col-12 mt-3 resultados2021">      
-          
     </div>
 
     
@@ -129,6 +157,16 @@
     releaseCongresoBodyTooltip,
     CONGRESO_TOOLTIP_ID,
   } from '../utils/congresoTooltip'
+  import {
+    resolveCongresoChartLayout,
+    resolveSplitSenadoSvgLayout,
+    resolveSplitCongresoSvgLayout,
+  } from '../utils/congresoChartLayout'
+
+  /** Match Bootstrap `md` — below this, senado + congreso render as two SVGs */
+  const PARLIAMENT_SPLIT_MAX_WIDTH_PX = 840
+
+  const REGION_NACIONAL = 'TODAS LAS REGIONES'
 
   export default {
     name: 'congresoGrafico.vue',
@@ -139,17 +177,39 @@
     },
     data() {
       return {
-        depSelected: 'NACIONAL (130)',
+        depSelected: REGION_NACIONAL,
         depObject: {
-          region: "NACIONAL",
+          region: REGION_NACIONAL,
           seats: 130
         },
-        svgSize: { width: 600, height: 300 }
+        svgSize: { width: 600, height: 300 },
+        svgSizeSenadoMobile: { width: 320, height: 200 },
+        svgSizeCongresoMobile: { width: 320, height: 220 },
+        tabTooltipSenado:
+          'Escaños y votos totales por agrupación en el Senado (60 curules). Pasa el cursor sobre el semicírculo exterior para resaltar a cada partido.',
       }
     },
     computed: {
+      /** Curules de congreso mostrados en el título (nacional = total en datos; regional = escaños de la región). */
+      headingCongresoSeats() {
+        if (this.depSelected === REGION_NACIONAL) {
+          return this.congresistas?.length ?? 0
+        }
+        const row = this.departamentos.find((d) => d.region === this.depSelected)
+        return row ? row.seats : this.depObject.seats
+      },
+      /**
+       * Senado: 60 a nivel nacional (como el gráfico). Por región, cantidad de senadores
+       * en los datos con esa región.
+       */
+      headingSenadoSeats() {
+        if (this.depSelected === REGION_NACIONAL || !this.senadores?.length) {
+          return 60
+        }
+        return filter(this.senadores, ['region', this.depSelected]).length
+      },
       departamentos_conteo() {
-        if(this.depSelected != "NACIONAL (130)")
+        if (this.depSelected !== REGION_NACIONAL)
           return parseFloat(uniq(map(filter(this.departamentos, ['region', this.depSelected]), 'conteo')).join(""))
 
         return 0
@@ -224,9 +284,14 @@
     },
     mounted() {
       acquireCongresoBodyTooltip()
+      this._onResizeParliament = () => this.renderCongreso()
+      window.addEventListener('resize', this._onResizeParliament, { passive: true })
       this.renderCongreso()
     },
     beforeUnmount() {
+      if (this._onResizeParliament) {
+        window.removeEventListener('resize', this._onResizeParliament)
+      }
       releaseCongresoBodyTooltip()
     },
     methods: {
@@ -234,34 +299,37 @@
       getImagePartido(c) {
         return getPartidoImage(c)
       },
+      isSplitParliamentCharts() {
+        return typeof window !== 'undefined' && window.innerWidth < PARLIAMENT_SPLIT_MAX_WIDTH_PX
+      },
       show_partidos(c) {
         this.depObject = {
-          region: "NACIONAL",
-          seats: 130
+          region: REGION_NACIONAL,
+          seats: this.congresistas?.length ?? 130
         }
-        d3.selectAll("circle").classed("active", false)
-        d3.selectAll(`circle.${c.partido_id}`).classed("active", true)
+        d3.selectAll('.svg-congreso circle').classed('active', false)
+        d3.selectAll(`.svg-congreso circle.${c.partido_id}`).classed('active', true)
       },
       show_departamentos(d) {
         this.depSelected = d.region
         let _r = d.region.replace(" ","-").replace(" ","-").toLowerCase()
         this.depObject=d
-        d3.selectAll("circle").classed("active", false)
-        d3.selectAll(`circle.${_r}`).classed("active", true)
+        d3.selectAll('.svg-congreso circle').classed('active', false)
+        d3.selectAll(`.svg-congreso circle.${_r}`).classed('active', true)
       },
       reset_congreso() {
-        this.depSelected = "NACIONAL (130)"
+        this.depSelected = REGION_NACIONAL
         this.depObject = {
-          region: "NACIONAL",
-          seats: 130
+          region: REGION_NACIONAL,
+          seats: this.congresistas?.length ?? 130
         }
-        d3.selectAll("circle").classed("active", true)
+        d3.selectAll('.svg-congreso circle').classed('active', true)
       },
       show_congresista(event, d) {
         const tooltip = d3.select(`#${CONGRESO_TOOLTIP_ID}`)
         let table = ''
         if (d.senado_tipo) {
-          table = `<h5 class="mb-2">Senado (${d.region || 'NACIONAL'})</h5>`
+          table = `<h5 class="mb-2">Senado (${d.region || 'TODAS LAS REGIONES'})</h5>`
           table += `<h3>${d.nombre}</h3>`
           table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido}</h4>`
           table += `<h4>Voto preferencial: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
@@ -281,60 +349,103 @@
           .style('visibility', 'visible')
       },
       renderCongreso() {
-        const el = this.$refs.svgCongreso
-        const maxW = 640
-        const minW = 320
-        let ancho = el && el.getBoundingClientRect
-          ? Math.min(maxW, Math.max(minW, el.getBoundingClientRect().width || 600))
-          : 600
-        const isMobile = ancho < 420
-        const height = isMobile ? ancho * 0.65 : ancho / 2
-        this.svgSize = { width: ancho, height }
+        const split = this.isSplitParliamentCharts()
 
-        let gap = 5
-        let h = isMobile ? 10 : 15
+        const clearDesktop = () => {
+          const root = this.$refs.svgCongresoDesktop
+          if (!root) return
+          d3.select(root).select('#parliament-senado').selectAll('*').remove()
+          d3.select(root).select('#parliament-congreso').selectAll('*').remove()
+        }
+        const clearMobile = () => {
+          const rs = this.$refs.svgSenadoMobile
+          const rc = this.$refs.svgCongresoMobile
+          if (rs) d3.select(rs).select('#parliament-senado-mobile').selectAll('*').remove()
+          if (rc) d3.select(rc).select('#parliament-congreso-mobile').selectAll('*').remove()
+        }
 
-        const innerFactor = isMobile ? 0.82 : 0.72
-        const innerAncho = Math.round(ancho * innerFactor)
-        const offset = (ancho - innerAncho) / 2
+        if (split) {
+          clearDesktop()
+          const elS = this.$refs.svgSenadoMobile
+          const elC = this.$refs.svgCongresoMobile
+          if (!elS || !elC) return
 
-        // Outer ring: 60 senadores (senado) — responsive seat size
-        const radiusSenado = Math.max(6, Math.min(13, ancho * (isMobile ? 0.02 : 0.018)))
-        const rowHeightSenado = radiusSenado * (isMobile ? 2.0 : 2.3)
-        const gapSenado = gap + 14
-        const gSenado = d3.select('g#parliament-senado')
-        gSenado.selectAll('*').remove()
-        gSenado.call(
-          parliament.parliamentChart(this.senadores_parse_60, ancho)
-            .debug(false)
-            .sections(3)
-            .sectionGap(gapSenado)
-            .seatRadius(radiusSenado)
-            .rowHeight(rowHeightSenado)
-        )
+          const wS =
+            elS.getBoundingClientRect
+              ? elS.getBoundingClientRect().width || null
+              : null
+          const wC =
+            elC.getBoundingClientRect
+              ? elC.getBoundingClientRect().width || null
+              : null
+          const LS = resolveSplitSenadoSvgLayout(wS ?? undefined)
+          const LC = resolveSplitCongresoSvgLayout(wC ?? wS ?? undefined)
+          this.svgSizeSenadoMobile = { ...LS.svg }
+          this.svgSizeCongresoMobile = { ...LC.svg }
 
-        // Inner ring: 130 congresistas; position inside the outer semicircle
-        // Congreso proportions: ~60% of Senado seat sizing (with a minimum radial gap)
-        const MIN_RADIAL_GAP = 2
-        const rawInnerRadius = radiusSenado * 0.8
-        const radiusCongreso = Math.max(
-          4,
-          Math.min(9, rawInnerRadius, radiusSenado - MIN_RADIAL_GAP)
-        )
-        const rowHeightCongreso = Math.max(10, rowHeightSenado * 0.8)
-        const gCongreso = d3.select('g#parliament-congreso')
-          .attr('transform', `translate(${offset}, ${offset})`)
-        gCongreso.selectAll('*').remove()
-        gCongreso.call(
-          parliament.parliamentChart(this.congresistas_parse, innerAncho)
-            .debug(false)
-            .sections(3)
-            .sectionGap(gap)
-            .seatRadius(radiusCongreso)
-            .rowHeight(rowHeightCongreso)
-        )
+          const gSenadoM = d3.select(elS).select('#parliament-senado-mobile')
+          gSenadoM.selectAll('*').remove()
+          gSenadoM.call(
+            parliament
+              .parliamentChart(this.senadores_parse_60, LS.ring.chartWidth)
+              .debug(false)
+              .sections(LS.ring.sections)
+              .sectionGap(LS.ring.sectionGap)
+              .seatRadius(LS.ring.seatRadius)
+              .rowHeight(LS.ring.rowHeight)
+          )
 
-        
+          const gCongresoM = d3.select(elC).select('#parliament-congreso-mobile')
+          gCongresoM.selectAll('*').remove()
+          gCongresoM.call(
+            parliament
+              .parliamentChart(this.congresistas_parse, LC.ring.chartWidth)
+              .debug(false)
+              .sections(LC.ring.sections)
+              .sectionGap(LC.ring.sectionGap)
+              .seatRadius(LC.ring.seatRadius)
+              .rowHeight(LC.ring.rowHeight)
+          )
+        } else {
+          clearMobile()
+          const el = this.$refs.svgCongresoDesktop
+          if (!el) return
+          const measured =
+            el && el.getBoundingClientRect
+              ? el.getBoundingClientRect().width || null
+              : null
+          const L = resolveCongresoChartLayout(measured ?? undefined)
+          this.svgSize = { width: L.svg.width, height: L.svg.height }
+
+          const gSenado = d3.select(el).select('#parliament-senado')
+          gSenado.selectAll('*').remove()
+          gSenado.call(
+            parliament
+              .parliamentChart(this.senadores_parse_60, L.senado.chartWidth)
+              .debug(false)
+              .sections(L.senado.sections)
+              .sectionGap(L.senado.sectionGap)
+              .seatRadius(L.senado.seatRadius)
+              .rowHeight(L.senado.rowHeight)
+          )
+
+          const gCongreso = d3.select(el).select('#parliament-congreso')
+          gCongreso
+            .attr(
+              'transform',
+              `translate(${L.congreso.translate.x}, ${L.congreso.translate.y})`
+            )
+          gCongreso.selectAll('*').remove()
+          gCongreso.call(
+            parliament
+              .parliamentChart(this.congresistas_parse, L.congreso.chartWidth)
+              .debug(false)
+              .sections(L.congreso.sections)
+              .sectionGap(L.congreso.sectionGap)
+              .seatRadius(L.congreso.seatRadius)
+              .rowHeight(L.congreso.rowHeight)
+          )
+        }
 
         // Classes and events for all circles (senado + congreso)
         d3.selectAll('.svg-congreso circle')
@@ -353,7 +464,7 @@
               return
             }
             const _r = (d.region || '').replace(/\s/g, '-').toLowerCase()
-            if (this.depSelected === "NACIONAL (130)")
+            if (this.depSelected === REGION_NACIONAL)
               this.show_congresista(e, d)
             else if (d.region === this.depSelected)
               this.show_congresista(e, d)

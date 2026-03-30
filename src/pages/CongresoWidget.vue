@@ -1,7 +1,7 @@
 <template>
   <div class="">
-     <div class="row border-bottom justify-content-center pb-5">
-        <div class="col-md-12">
+     <div class="pb-5">
+        <div class="">
           <congresoGrafico />
         </div>
       </div>
@@ -10,7 +10,7 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useCandidatosStore } from '../stores/candidatos'
-import congresoGrafico from '../components/congresoGrafico.vue';
+import congresoGrafico from '../components/congresoGrafico.vue'
 
 const store = useCandidatosStore()
 

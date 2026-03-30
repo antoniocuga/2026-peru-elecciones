@@ -1,6 +1,6 @@
 <template>
-  <div class="candidate-results-vivo row pb-3 active">
-    <div class="col-12">      
+  <div class="candidate-results-vivo  pb-3 active">
+    <div>      
 
       <BTabs>
         <BTab :title="`Resulados nacionales`">
@@ -23,20 +23,20 @@
                         <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                         :style="`border-color: ${c.color} !important`" :src="getImageCandidate(c.candidato_id)" />
                     </div>
-                    <div class="col-5 col-md-4 col-lg-5 p-0 align-self-center">
+                    <div class="col-4 col-md-4 col-lg-5 p-0 align-self-center">
                       <h4 class="candidato-mapa mt-1">{{ c.candidato }}</h4>
                       <h4 class="partido-mapa mt-1"><img width="25px" class="partido-icon mr-2" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
                     </div> 
                     
-                    <div class="col-3 col-md-4 col-lg-4 align-self-center text-right">
+                    <div class="col-4 col-md-4 col-lg-4 align-self-center text-right">
                       <div>
                       
-                      <span class="d-block text-right small badge font-weight-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
+                      <span style="font-size: 0.6rem;"  class="d-block text-right font-weight-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
                           Validos
                         </span>
                       <span class="text-right" :style="`font-size:1rem; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
 
-                      <span class="align-self-end text-right">
+                      <span style="font-size: 0.8rem;"  class="align-self-end text-right">
                         <span style="font-size: 0.8rem;" class="d-block text-right text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
                           {{ numeral(c.votos).format('0,0') }}
                         </span>
@@ -72,7 +72,7 @@
                       <span class="d-block text-right small badge font-weight-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
                           Validos
                         </span>
-                    <span class="text-right" :style="`font-size:1rem; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
+                    <span class="text-right" :style="`font-size:0.8rem; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
 
                     <span class="align-self-end text-right">
                         <span style="font-size: 0.8rem;" class="text-bold d-block text-right text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
