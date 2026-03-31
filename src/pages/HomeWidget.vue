@@ -100,7 +100,7 @@
               </div>
             </div>
 
-            <div>
+            <div class="ml-5 mt-3 mb-2">
           <div class="small mb-0 pb-0 text-center">
             <a class="btn btn-dark" href="https://dev.ojo-publico.com/6133/elecciones-presidenciales-y-legislativas-peru"><strong>Ver todos los resultados</strong></a>
           </div>
