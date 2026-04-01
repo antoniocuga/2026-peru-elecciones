@@ -46,7 +46,7 @@
         </div>
 
         <div class="col-12" v-if="congresoStackTotal > 0 || senadoStackTotal > 0">
-          <div class="widget-parliament-summary mt-3 px-1 d-flex">
+          <div class="widget-parliament-summary mt-3 px-1">
 
             <div v-if="senadoStackTotal > 0" class="widget-parliament-row ">
               <div class="widget-parliament-label small text-dark fw-semibold mb-1">
@@ -222,14 +222,33 @@ export default {
 </script>
 
 <style scoped>
-.widget-parliament-summary {
-  max-width: 100%;
-}
 
 .widget-parliament-row {
   width: 100%;
   max-width: 360px;
 }
+
+.widget-parliament-summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+@media (max-width: 640px) {
+  .widget-parliament-summary {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 35px 0;
+  }
+}
+
+
 
 .stacked-bar {
   display: flex;
