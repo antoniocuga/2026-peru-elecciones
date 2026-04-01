@@ -63,7 +63,7 @@
       
       </div>
 
-      <div class="col-12  mt-3 col-md-6 mb-3" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso.slice(0,2)" >
+      <div>
         <BTabs>
           <BTab :title="`Congreso ${ eleccion.eleccion }`">
             <div class="card card-candidate p-2 border-top-0">
@@ -107,7 +107,7 @@
 
       <div class="col-12  mt-3 col-md-6 mb-3">
         <BTabs>
-          <BTab :title="`Congreso ${ eleccion.eleccion }`" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso.slice(2)" >
+          <BTab :title="`Congreso ${ eleccion.eleccion }`" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso" >
             <div class="card card-candidate p-2 border-top-0">
 
               <div class="border-bottom pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">

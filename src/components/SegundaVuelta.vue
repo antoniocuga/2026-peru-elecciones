@@ -25,7 +25,7 @@
                             <div class="">
                                 <h4 class="candidato-mapa m-0">{{candidato.candidato}}</h4>
                                 <h4 class="partido-mapa mt-1 mb-0"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" /> {{candidato.partido}}</h4>
-                                <div class="p-0 small badge"><span class=" text-success" v-if="candidato.ganador">✓ Ganador en segunda vuelta</span></div>                      
+                                
                             </div>    
                           </div>    
 
