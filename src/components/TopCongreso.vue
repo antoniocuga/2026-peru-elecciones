@@ -63,47 +63,7 @@
       
       </div>
 
-      <div>
-        <BTabs>
-          <BTab :title="`Congreso ${ eleccion.eleccion }`">
-            <div class="card card-candidate p-2 border-top-0">
-
-            <div class="border-bottom pb-2 pt-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
-
-              <div class="row">
-                <div class="col-4 col-md-3 col-lg-3 text-center">
-                  <div>
-                    <div class="">
-                      <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
-                      :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-4 col-md-4 col-lg-5 p-0 align-self-center">
-                  <div>
-                    <div>
-                      <div class="tooltip-c">
-                        
-                      </div>
-                      <h4 class="candidato-mapa candidato-partido mt-1">{{ candidato.candidato }}</h4>
-                      <h4 class="partido-mapa partido"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4 col-md-4 col-lg-4 align-self-center text-right">
-                  <span :style="`font-size: 1rem; font-weight: 600;`">{{ numeral(candidato.total_votos).format('0,0') }}</span>
-                  <span class="small badge text-secondary d-block font-weight-light text-right" style="font-size: 10px;">Voto preferencial</span>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-          </BTab>
-        </BTabs>
-      </div>
+      
 
       <div class="col-12  mt-3 col-md-6 mb-3">
         <BTabs>
