@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-3 pb-2 pb-0" style="background-color:#dce8ec;">
+  <div class="container pb-3 pt-3 mb-3" style="background-color:#dce8ec;">
     <div class="container" v-if="topCandidatos.length">
 
       <div class="row">
@@ -66,10 +66,22 @@
                     'stacked-bar__seg--last': i === senadoStackRows.length - 1,
                   }"
                   :style="stackedSegStyle(p.seats, p.color)"
-                  :data-stack-tip="`${p.partido}: ${p.seats} escaños`"
                   tabindex="0"
                 >
                   <span class="stacked-bar__num">{{ p.seats }}</span>
+                  <div class="stack-tip" role="tooltip">
+                    <img
+                      class="stack-tip__logo"
+                      :src="getImagePartido(p.partido_id)"
+                      width="28"
+                      height="28"
+                      alt=""
+                    />
+                    <div class="stack-tip__body">
+                      <span class="stack-tip__party">{{ p.partido }}</span>
+                      <span class="stack-tip__seats">{{ p.seats }} escaños</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -92,17 +104,29 @@
                     'stacked-bar__seg--last': i === congresoStackRows.length - 1,
                   }"
                   :style="stackedSegStyle(p.seats, p.color)"
-                  :data-stack-tip="`${p.partido}: ${p.seats} escaños`"
                   tabindex="0"
                 >
                   <span class="stacked-bar__num">{{ p.seats }}</span>
+                  <div class="stack-tip" role="tooltip">
+                    <img
+                      class="stack-tip__logo"
+                      :src="getImagePartido(p.partido_id)"
+                      width="28"
+                      height="28"
+                      alt=""
+                    />
+                    <div class="stack-tip__body">
+                      <span class="stack-tip__party">{{ p.partido }}</span>
+                      <span class="stack-tip__seats">{{ p.seats }} escaños</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="ml-5 mt-3 mb-2">
           <div class="small mb-0 pb-0 text-center">
-            <a class="btn btn-dark" href="https://dev.ojo-publico.com/6133/elecciones-presidenciales-y-legislativas-peru"><strong>Ver todos los resultados</strong></a>
+            <a class="btn btn-light" href="https://dev.ojo-publico.com/6133/elecciones-presidenciales-y-legislativas-peru"><strong>Ver todos los resultados</strong></a>
           </div>
         </div>
 
@@ -236,7 +260,6 @@ export default {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
-  padding: 35px 0;
 }
 
 @media (max-width: 640px) {
@@ -244,7 +267,6 @@ export default {
     display: block;
     max-width: 100%;
     margin: 0 auto;
-    padding: 35px 0;
   }
 }
 
@@ -279,37 +301,59 @@ export default {
   border-radius: 0 5px 5px 0;
 }
 
-/* Match #tooltip-congresista.tooltip_congresista (congresoGrafico seat tooltips) */
-.stacked-bar__seg::after {
-  
-  content: attr(data-stack-tip);
+/* Same visual language as #tooltip-congresista.tooltip_congresista */
+.stack-tip {
   position: absolute;
   bottom: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%) translateY(4px);
-  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   max-width: min(320px, 85vw);
   padding: 10px 15px;
-  font-family: "Nunito Sans",sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.35;
+  font-family: 'Nunito Sans', sans-serif;
   color: #000;
   background: rgba(255, 255, 255, 0.932);
   box-shadow: 0px 0px 2px #0000005c;
-  white-space: normal;
-  word-wrap: break-word;
-  text-align: left;
-  overflow: hidden;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   z-index: 1080;
   transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+  text-align: left;
 }
 
-.stacked-bar__seg:hover::after,
-.stacked-bar__seg:focus-visible::after {
+.stack-tip__logo {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.stack-tip__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.stack-tip__party {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+  word-wrap: break-word;
+}
+
+.stack-tip__seats {
+  font-size: 13px;
+  font-weight: 400;
+  color: #333;
+}
+
+.stacked-bar__seg:hover .stack-tip,
+.stacked-bar__seg:focus-visible .stack-tip {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
@@ -326,6 +370,5 @@ export default {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
-  display: none;
 }
 </style>

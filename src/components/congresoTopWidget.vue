@@ -23,6 +23,7 @@
     acquireCongresoBodyTooltip,
     releaseCongresoBodyTooltip,
     CONGRESO_TOOLTIP_ID,
+    clampCongresoTooltipToViewport,
   } from '../utils/congresoTooltip'
 
   export default {
@@ -143,13 +144,15 @@
         table += `<h4>Total de votos de la agrupación en ${d.region}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
 
         tooltip.html(table)
-          .style('left', `${event.clientX}px`)
-          .style('top', `${event.clientY - 28}px`)
-
+          .style('visibility', 'visible')
+          .style('opacity', 0)
+        const node = tooltip.node()
+        if (node) {
+          clampCongresoTooltipToViewport(node, event.clientX, event.clientY, 28)
+        }
         tooltip.transition()
           .duration(200)
           .style('opacity', 1)
-          .style('visibility', 'visible')
       },
       renderCongreso() {
         let ancho = 400,

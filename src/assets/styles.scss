@@ -2137,7 +2137,8 @@
 
 
 /* Appended to document.body — must be global (embeds may omit .container_app_elecciones2026) */
-#tooltip-congresista.tooltip_congresista {
+#tooltip-congresista.tooltip_congresista,
+#tooltip-congresista.ej2026-congreso-tooltip {
   position: fixed;
   z-index: 1080;
   visibility: hidden;

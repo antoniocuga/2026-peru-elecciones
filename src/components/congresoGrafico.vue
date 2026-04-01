@@ -17,7 +17,7 @@
                   </div>
                   <div class="col-7 pl-0 pr-md-0 align-self-center">              
                     <h4 class="candidato-mapa m-md-0">{{c.partido}}</h4>
-                    <div class="total-votos">Total de votos: {{numeral(c.total_votos_partido).format('0,0')}}</div>
+                    <div class="text-secondary small light">Votos estimados: {{numeral(c.total_votos_partido).format('0,0')}}</div>
                   </div> 
                   <div class="col-auto align-self-center text-center pr-0">              
                       <h5 class="elegidos d-flex align-self-center">{{ c.seats }}</h5>
@@ -44,7 +44,7 @@
                   </div>
                   <div class="col-7 pl-0 pr-md-0 align-self-center">
                     <h4 class="candidato-mapa m-md-0">{{ c.partido }}</h4>
-                    <div class="total-votos">Total de votos: {{ numeral(c.total_votos_partido).format('0,0') }}</div>
+                    <div class="text-secondary small light">Votos estimados: {{ numeral(c.total_votos_partido).format('0,0') }}</div>
                   </div>
                   <div class="col-auto align-self-center text-center pr-0">
                     <h5 class="elegidos d-flex align-self-center">{{ c.seats }}</h5>
@@ -156,6 +156,7 @@
     acquireCongresoBodyTooltip,
     releaseCongresoBodyTooltip,
     CONGRESO_TOOLTIP_ID,
+    clampCongresoTooltipToViewport,
   } from '../utils/congresoTooltip'
   import {
     resolveCongresoChartLayout,
@@ -338,15 +339,18 @@
           table += `<h3>${d.nombre}</h3>`
           table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
           table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
-          table += `<h4>Total de votos de la agrupación en ${d.region}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
+          table += `<h4>Votos estimados de la agrupación en ${d.region}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
         }
         tooltip.html(table)
-          .style('left', `${event.clientX}px`)
-          .style('top', `${event.clientY - 28}px`)
+          .style('visibility', 'visible')
+          .style('opacity', 0)
+        const node = tooltip.node()
+        if (node) {
+          clampCongresoTooltipToViewport(node, event.clientX, event.clientY, 28)
+        }
         tooltip.transition()
           .duration(200)
           .style('opacity', 1)
-          .style('visibility', 'visible')
       },
       renderCongreso() {
         const split = this.isSplitParliamentCharts()
