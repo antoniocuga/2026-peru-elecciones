@@ -11,7 +11,7 @@
             <img width="65px" :src="getImagePartido(c.partido_id)" />              
           </div>
           <div class="col-6 pl-0">              
-            <h4 class="candidato-mapa m-0">{{c.partido}}</h4>               
+            <h4 class="candidato-mapa m-0">{{ capitalizeWords(c.partido) }}</h4>               
           </div> 
           <div class="col-auto votos-validos align-self-center text-center">              
               <span>congresistas</span><h5 class="diferencia">{{ c.seats }}</h5>                              
@@ -39,6 +39,7 @@
       }
     },
     methods: {
+      capitalizeWords,
       getImageCandidate(c) {
         return require(`../assets/candidatos/${c}.png`)
       },

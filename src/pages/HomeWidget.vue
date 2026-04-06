@@ -21,7 +21,7 @@
                 <p class="p-0 candidato-nombre mb-0">{{ c.candidato }}</p>
                 <p class="p-0 partido-nombre mb-0">
                   <img width="20" height="20" class="partido-icon" :src="getImagePartido(c.partido_id)" alt="" />
-                  {{ c.partido }}
+                  {{ capitalizeWords(c.partido) }}
                 </p>
                 <div class="segunda-vuelta-badge m-0 p-0 mt-2" v-if="i === 0 || i === 1">
                   ✓ Segunda vuelta
@@ -67,21 +67,13 @@
                   }"
                   :style="stackedSegStyle(p.seats, p.color)"
                   tabindex="0"
+                  @mouseenter="onStackSegEnter($event, p, 'senado')"
+                  @mousemove="onStackSegMove($event, p, 'senado')"
+                  @mouseleave="hideStackTooltip"
+                  @focus="onStackSegFocus($event, p, 'senado')"
+                  @blur="hideStackTooltip"
                 >
                   <span class="stacked-bar__num">{{ p.seats }}</span>
-                  <div class="stack-tip" role="tooltip">
-                    <img
-                      class="stack-tip__logo"
-                      :src="getImagePartido(p.partido_id)"
-                      width="28"
-                      height="28"
-                      alt=""
-                    />
-                    <div class="stack-tip__body">
-                      <span class="stack-tip__party">{{ p.partido }}</span>
-                      <span class="stack-tip__seats">{{ p.seats }} escaños</span>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -105,21 +97,13 @@
                   }"
                   :style="stackedSegStyle(p.seats, p.color)"
                   tabindex="0"
+                  @mouseenter="onStackSegEnter($event, p, 'congreso')"
+                  @mousemove="onStackSegMove($event, p, 'congreso')"
+                  @mouseleave="hideStackTooltip"
+                  @focus="onStackSegFocus($event, p, 'congreso')"
+                  @blur="hideStackTooltip"
                 >
                   <span class="stacked-bar__num">{{ p.seats }}</span>
-                  <div class="stack-tip" role="tooltip">
-                    <img
-                      class="stack-tip__logo"
-                      :src="getImagePartido(p.partido_id)"
-                      width="28"
-                      height="28"
-                      alt=""
-                    />
-                    <div class="stack-tip__body">
-                      <span class="stack-tip__party">{{ p.partido }}</span>
-                      <span class="stack-tip__seats">{{ p.seats }} escaños</span>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -148,7 +132,22 @@ import numeral from 'numeral'
 import { storeToRefs } from 'pinia'
 import { useCandidatosStore } from '../stores/candidatos'
 import { getPartidoImage, getCandidatoImage } from '../utils/assets'
+import { capitalizeWords } from '../utils/formatText'
+import {
+  CONGRESO_TOOLTIP_ID,
+  acquireCongresoBodyTooltip,
+  releaseCongresoBodyTooltip,
+  clampCongresoTooltipToViewport,
+} from '../utils/congresoTooltip'
 import { filter, map, orderBy, groupBy, uniq } from 'lodash'
+
+function escapeHtml(text) {
+  return String(text ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+}
 
 export default {
   name: 'HomeWidget',
@@ -157,13 +156,24 @@ export default {
     const refs = storeToRefs(store)
     return { ...refs, store, candidatos: refs.todos }
   },
+  data() {
+    return {
+      stackTipKey: '',
+    }
+  },
   mounted() {
+    acquireCongresoBodyTooltip()
     this.store.getAllCandidatos()
     this.store.getAllCongreso()
     this.store.getAllSenado()
   },
+  beforeUnmount() {
+    this.hideStackTooltip()
+    releaseCongresoBodyTooltip()
+  },
   methods: {
     numeral,
+    capitalizeWords,
     getImageCandidate(id) {
       return getCandidatoImage(id)
     },
@@ -179,6 +189,53 @@ export default {
         backgroundColor: color || '#6c757d',
         opacity: 0.7
       }
+    },
+    stackSegmentKey(p, chamber) {
+      return `${chamber}:${p.partido_id}`
+    },
+    onStackSegEnter(event, p, chamber) {
+      this.stackTipKey = this.stackSegmentKey(p, chamber)
+      this.showStackTooltip(p, chamber, event.clientX, event.clientY)
+    },
+    onStackSegMove(event, p, chamber) {
+      if (this.stackTipKey !== this.stackSegmentKey(p, chamber)) return
+      const el = document.getElementById(CONGRESO_TOOLTIP_ID)
+      if (!el || el.style.visibility !== 'visible') return
+      clampCongresoTooltipToViewport(el, event.clientX, event.clientY, 28)
+    },
+    onStackSegFocus(event, p, chamber) {
+      this.stackTipKey = this.stackSegmentKey(p, chamber)
+      const r = event.currentTarget.getBoundingClientRect()
+      this.showStackTooltip(p, chamber, r.left + r.width / 2, r.top)
+    },
+    showStackTooltip(p, chamber, clientX, clientY) {
+      const el = document.getElementById(CONGRESO_TOOLTIP_ID)
+      if (!el) return
+      const chamberLabel =
+        chamber === 'senado' ? 'Senado' : 'Cámara de diputados'
+      const logoSrc = this.getImagePartido(p.partido_id)
+      const partyEsc = escapeHtml(capitalizeWords(p.partido))
+      const seats = Number(p.seats) || 0
+      el.innerHTML = `
+        <h5 class="mb-2">${chamberLabel}</h5>
+        <h3>${partyEsc}</h3>
+        <h4><img width="35" src="${logoSrc}" alt="" /> ${seats} escaños</h4>
+      `
+      el.style.visibility = 'visible'
+      el.style.opacity = '0'
+      clampCongresoTooltipToViewport(el, clientX, clientY, 28)
+      requestAnimationFrame(() => {
+        el.style.transition = 'opacity 0.2s ease'
+        el.style.opacity = '1'
+      })
+    },
+    hideStackTooltip() {
+      this.stackTipKey = ''
+      const el = document.getElementById(CONGRESO_TOOLTIP_ID)
+      if (!el) return
+      el.style.transition = 'opacity 0.15s ease'
+      el.style.opacity = '0'
+      el.style.visibility = 'hidden'
     },
   },
   computed: {
@@ -279,10 +336,9 @@ export default {
   max-width: 350px;
   height: 22px;
   border-radius: 6px;
-  overflow: visible;
+  overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.08);
   position: relative;
-  z-index: 1;
 }
 
 .stacked-bar__seg {
@@ -299,64 +355,6 @@ export default {
 
 .stacked-bar__seg--last {
   border-radius: 0 5px 5px 0;
-}
-
-/* Same visual language as #tooltip-congresista.tooltip_congresista */
-.stack-tip {
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%) translateY(4px);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  max-width: min(320px, 85vw);
-  padding: 10px 15px;
-  font-family: 'Nunito Sans', sans-serif;
-  color: #000;
-  background: rgba(255, 255, 255, 0.932);
-  box-shadow: 0px 0px 2px #0000005c;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  z-index: 1080;
-  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
-  text-align: left;
-}
-
-.stack-tip__logo {
-  flex-shrink: 0;
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  border-radius: 2px;
-}
-
-.stack-tip__body {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  min-width: 0;
-}
-
-.stack-tip__party {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.25;
-  word-wrap: break-word;
-}
-
-.stack-tip__seats {
-  font-size: 13px;
-  font-weight: 400;
-  color: #333;
-}
-
-.stacked-bar__seg:hover .stack-tip,
-.stacked-bar__seg:focus-visible .stack-tip {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
 }
 
 .stacked-bar__num {

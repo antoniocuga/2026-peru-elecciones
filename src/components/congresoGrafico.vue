@@ -16,7 +16,7 @@
                     <img width="65px" :src="getImagePartido(c.partido_id)" />              
                   </div>
                   <div class="col-7 pl-0 pr-md-0 align-self-center">              
-                    <h4 class="candidato-mapa m-md-0">{{c.partido}}</h4>
+                    <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
                     <div class="text-secondary small light">Votos estimados: {{numeral(c.total_votos_partido).format('0,0')}}</div>
                   </div> 
                   <div class="col-auto align-self-center text-center pr-0">              
@@ -27,7 +27,7 @@
         
             </div>
 
-          </div>  
+          </div> 
         </BTab>        
         <BTab class="list-resultados-partidos" lazy>
           <template #title>
@@ -43,7 +43,7 @@
                     <img width="65px" :src="getImagePartido(c.partido_id)" />
                   </div>
                   <div class="col-7 pl-0 pr-md-0 align-self-center">
-                    <h4 class="candidato-mapa m-md-0">{{ c.partido }}</h4>
+                    <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
                     <div class="text-secondary small light">Votos estimados: {{ numeral(c.total_votos_partido).format('0,0') }}</div>
                   </div>
                   <div class="col-auto align-self-center text-center pr-0">
@@ -147,6 +147,7 @@
   import { storeToRefs } from 'pinia'
   import { useCandidatosStore } from '../stores/candidatos'
   import { getPartidoImage } from '../utils/assets'
+  import { capitalizeWords } from '../utils/formatText'
   import * as d3 from 'd3'
   import * as parliament from 'd3-parliament-chart'
   import { filter, groupBy, map, orderBy, uniq, sum } from 'lodash'
@@ -297,6 +298,7 @@
     },
     methods: {
       numeral,
+      capitalizeWords,
       getImagePartido(c) {
         return getPartidoImage(c)
       },
@@ -330,18 +332,20 @@
         const tooltip = d3.select(`#${CONGRESO_TOOLTIP_ID}`)
         let table = ''
         if (d.senado_tipo) {
-          table = `<h5 class="mb-2">Senado (${d.region || 'TODAS LAS REGIONES'})</h5>`
+          table = `<h5 class="mb-2 border-bottom pb-2">Senado (${d.region || 'TODAS LAS REGIONES'})</h5>`
           table += `<h3>${d.nombre}</h3>`
           table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido}</h4>`
           table += `<h4>Voto preferencial: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
         } else {
-          table = `<h5 class="mb-2">${d.region}</h5>`
+          table = `<h5 class="mb-2 border-bottom pb-2">${d.region}</h5>`
           table += `<h3>${d.nombre}</h3>`
           table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
           table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
-          table += `<h4>Votos estimados de la agrupación en ${d.region}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
+          table += `<h4>Votos estimados de la agrupación: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
         }
+        tooltip.interrupt()
         tooltip.html(table)
+          .style('pointer-events', 'none')
           .style('visibility', 'visible')
           .style('opacity', 0)
         const node = tooltip.node()
@@ -475,10 +479,13 @@
           })
           .on('mouseout', () => {
             d3.select(`#${CONGRESO_TOOLTIP_ID}`)
+              .interrupt()
               .transition()
-              .duration(150)
+              .duration(70)
               .style('opacity', 0)
-              .style('visibility', 'hidden')
+              .on('end', function () {
+                this.style.visibility = 'hidden'
+              })
           })
       }
     }

@@ -32,6 +32,7 @@ export function acquireCongresoBodyTooltip() {
     el.id = CONGRESO_TOOLTIP_ID
     // Namespaced token + shared styles (see styles.scss: #tooltip-congresista.tooltip_congresista)
     el.className = 'ej2026-congreso-tooltip tooltip_congresista'
+    el.style.pointerEvents = 'none'
     document.body.appendChild(el)
   }
   refCount++

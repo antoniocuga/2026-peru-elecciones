@@ -40,6 +40,7 @@ export const mapaBaseMixin = {
       const tip = document.createElement('div')
       tip.id = this._tooltipId.replace(/^#/, '')
       tip.className = 'tooltip tooltip-data'
+      tip.style.pointerEvents = 'none'
       document.body.appendChild(tip)
       this._tooltipCreatedByMixin = true
     }
@@ -574,9 +575,10 @@ export const mapaBaseMixin = {
         if (dep.candidatos) {
           const top = orderBy(dep.candidatos, ['total_departamento'], ['desc']).slice(0, count)
           map(top, dp => {
+            const borderColor = dp.color || '#6c757d'
             candidatos += `
               <div class="tooltip-content row mt-2 pb-1 border-bottom">
-                <div class="col-2"><div><img width="40px" src="${this.getImageCandidate(dp.candidato_id)}" /></div></div>
+                <div class="col-2"><div><img class="rounded-circle border border-3 flex-shrink-0 img-candidato" width="40" height="40" style="border-color: ${borderColor} !important; object-fit: cover;" src="${this.getImageCandidate(dp.candidato_id)}" alt="" /></div></div>
                 <div class="col-6 pr-0">
                   <div class="candidato-mapa"><b>${dp.candidato}</b></div>
                   <div class="partido-mapa"><img width="25px" src="${this.getImagePartido(dp.partido_id)}" />${dp.partido}</div>
@@ -601,9 +603,10 @@ export const mapaBaseMixin = {
           const top = orderBy(dep.candidatos || [], ['validos'], ['desc']).slice(0, count)
           map(top, dp => {
             if (dp.candidato_id) {
+              const borderColor = dp.color || '#6c757d'
               candidatos += `
                 <div class="tooltip-content row mt-2 pb-1 border-bottom">
-                  <div class="col-2"><div><img width="40px" src="${this.getImageCandidate(dp.candidato_id)}" /></div></div>
+                  <div class="col-2"><div><img class="rounded-circle border border-3 flex-shrink-0 img-candidato" width="40" height="40" style="border-color: ${borderColor} !important; object-fit: cover;" src="${this.getImageCandidate(dp.candidato_id)}" alt="" /></div></div>
                   <div class="col-6 pr-0">
                     <div class="candidato-mapa"><b>${dp.candidato}</b></div>
                     <div class="partido-mapa"><img width="25px" src="${this.getImagePartido(dp.partido_id)}" />${dp.partido}</div>

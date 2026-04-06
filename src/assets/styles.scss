@@ -212,24 +212,6 @@
     }
   }
 
-  .tabs-encuestas {
-    ul.nav-tabs {
-      display: flex;
-      align-items: center;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      overflow-y: hidden;
-    
-      li {
-        min-width: 130px;
-        width: 100%;
-        max-width: 220px;
-        font-size: 13px;
-        text-align: center;
-      }
-    }
-  }
-
   .nav-tabs .nav-link {
     font-family: 'Nunito', sans-serif;
     color: #fff;
@@ -238,6 +220,8 @@
     font-weight: 600;
     border-radius: 0;
     text-transform: uppercase;
+    padding: .5rem 0.6rem !important;
+    margin-right: 1px !important;
 
   &.disabled {
     background-color: transparent;
@@ -587,7 +571,7 @@
     padding: 10px 15px;
     background: rgba(255, 255, 255, 0.932);
     color: #000;
-    pointer-events: none;
+    pointer-events: none !important;
     box-shadow: 0px 0px 2px #0000005c;
 
     h3 {
@@ -623,7 +607,7 @@
     padding: 10px 15px;
     background: rgba(255, 255, 255, 0.932);
     color: #000;
-    pointer-events: none;
+    pointer-events: none !important;
     box-shadow: 0px 0px 2px #0000005c;
 
     h3 {
@@ -658,17 +642,17 @@
     padding: 10px 15px;
     background: rgba(255, 255, 255, 0.932);
     color: #000;
-    pointer-events: none;
+    pointer-events: none !important;
     box-shadow: 0px 0px 2px #0000005c;
 
     .tooltip-content {
-      pointer-events: none;
+      pointer-events: none !important;
     }
 
     @media (max-width: 798.98px) {
       position: relative;
       max-width: 400px;
-      pointer-events: none;
+      pointer-events: none !important;
     }
   }
 
@@ -2147,7 +2131,7 @@
   padding: 10px 15px;
   background: rgba(255, 255, 255, 0.932);
   color: #000;
-  pointer-events: none;
+  pointer-events: none !important;
   box-shadow: 0px 0px 2px #0000005c;
 
   h3 {
@@ -2175,6 +2159,19 @@
   }
 }
 
+/* Floating tooltips (maps, senado sunburst, BS5): never steal hover from underlying targets */
+#tooltip-congresista,
+#tooltip,
+#tooltip_primera,
+#tooltip_segunda,
+.tooltip.tooltip-data,
+.tooltip_senado,
+.tooltip_congresista,
+.tooltip[role='tooltip'],
+.tooltip .tooltip-inner {
+  pointer-events: none !important;
+}
+
 
 //  Header embed
 
@@ -2183,6 +2180,15 @@
   max-width: 1120px;
   margin: 0 auto;
   padding: 35px 0;
+}
+
+.contenido-especial-elecciones-2026 .nav-link {
+  padding: .5rem 0.6rem !important;
+}
+
+.contenido-especial-elecciones-2026 .nav-tabs {
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .block-region-content > div:nth-child(1) > div:nth-child(2) > h2:nth-child(1) {

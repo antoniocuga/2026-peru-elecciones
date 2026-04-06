@@ -15,7 +15,7 @@
                     <img width="65px" :src="getImagePartido(c.partido_id)" />              
                   </div>
                   <div class="col-7 pl-0 pr-md-0 align-self-center">              
-                    <h4 class="candidato-mapa m-md-0">{{c.partido}}</h4>
+                    <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
                     <div class="total-votos">Total de votos: {{numeral(c.total_votos_partido).format('0,0')}}</div>
                   </div> 
                   <div class="col-auto align-self-center text-center pr-0">              
@@ -126,7 +126,7 @@
                     <img width="65px" :src="getImagePartido(c.partido_id)" />              
                   </div>
                   <div class="col-7 pl-0 pr-md-0 align-self-center">              
-                    <h4 class="candidato-mapa m-md-0">{{c.partido}}</h4>
+                    <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
                     <div class="total-votos">Total de votos: {{numeral(c.total_votos_partido).format('0,0')}}</div>
                   </div> 
                   <div class="col-auto align-self-center text-center pr-0">              
@@ -214,6 +214,7 @@
   import { storeToRefs } from 'pinia'
   import { useCandidatosStore } from '../stores/candidatos'
   import { getPartidoImage } from '../utils/assets'
+  import { capitalizeWords } from '../utils/formatText'
   import * as d3 from 'd3'
   import { filter, groupBy, map, orderBy, uniq, sum } from 'lodash'
   import DropdownBs4 from './DropdownBs4.vue'
@@ -316,6 +317,7 @@
     },
     methods: {
       numeral,
+      capitalizeWords,
       getImagePartido(c) {
         return getPartidoImage(c)
       },
