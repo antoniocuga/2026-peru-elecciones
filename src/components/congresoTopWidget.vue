@@ -24,6 +24,8 @@
     releaseCongresoBodyTooltip,
     CONGRESO_TOOLTIP_ID,
     clampCongresoTooltipToViewport,
+    isParliamentPlaceholderSeat,
+    tooltipInformacionNoDisponibleHtml,
   } from '../utils/congresoTooltip'
 
   export default {
@@ -137,11 +139,16 @@
       },
       show_congresista(event, d) {
         const tooltip = d3.select(`#${CONGRESO_TOOLTIP_ID}`)
-        let table = `<h5 class="mb-2">${d.region}</h5>`
-        table += `<h3>${d.nombre}</h3>`
-        table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
-        table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
-        table += `<h4>Total de votos de la agrupación en ${d.region}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
+        let table = ''
+        if (isParliamentPlaceholderSeat(d)) {
+          table = tooltipInformacionNoDisponibleHtml()
+        } else {
+          table = `<h5 class="mb-2">${d.region}</h5>`
+          table += `<h3>${d.nombre}</h3>`
+          table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
+          table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
+          table += `<h4>Total de votos de la agrupación en ${d.region}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
+        }
 
         tooltip.html(table)
           .style('visibility', 'visible')

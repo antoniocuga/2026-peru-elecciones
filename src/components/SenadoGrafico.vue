@@ -218,6 +218,10 @@
   import * as d3 from 'd3'
   import { filter, groupBy, map, orderBy, uniq, sum } from 'lodash'
   import DropdownBs4 from './DropdownBs4.vue'
+  import {
+    isParliamentPlaceholderSeat,
+    tooltipInformacionNoDisponibleHtml,
+  } from '../utils/congresoTooltip'
 
   export default {
     name: 'SenadoGrafico',
@@ -404,18 +408,22 @@
         let html = ''
         // Leaf = candidate (same tooltip as congresoGrafico: name, party, logo, votos)
         if (!d.children || d.children.length === 0) {
-          const region = dd.region != null ? dd.region : ''
-          const nombre = dd.nombre != null ? dd.nombre : ''
-          const partidoId = dd.partido_id != null ? dd.partido_id : ''
-          const partido = dd.partido != null ? dd.partido : ''
-          const nro = dd.nro != null ? dd.nro : ''
-          const preferencial = numeral(dd.voto_preferencial != null ? dd.voto_preferencial : 0).format('0,0')
-          const totalPartido = numeral(dd.total_votos_partido != null ? dd.total_votos_partido : 0).format('0,0')
-          html = `<h5 class="mb-2">${region}</h5>`
-          html += `<h3>${nombre}</h3>`
-          html += `<h4><img width="35px" src="${this.getImagePartido(partidoId)}" /> ${partido} - Nro. ${nro}</h4>`
-          html += `<h4>Voto preferencial del candidato: <span class="text-success">${preferencial}</span></h4>`
-          html += `<h4>Total de votos de la agrupación en ${region}: <span class="text-success">${totalPartido}</span></h4>`
+          if (isParliamentPlaceholderSeat(dd)) {
+            html = tooltipInformacionNoDisponibleHtml()
+          } else {
+            const region = dd.region != null ? dd.region : ''
+            const nombre = dd.nombre != null ? dd.nombre : ''
+            const partidoId = dd.partido_id != null ? dd.partido_id : ''
+            const partido = dd.partido != null ? dd.partido : ''
+            const nro = dd.nro != null ? dd.nro : ''
+            const preferencial = numeral(dd.voto_preferencial != null ? dd.voto_preferencial : 0).format('0,0')
+            const totalPartido = numeral(dd.total_votos_partido != null ? dd.total_votos_partido : 0).format('0,0')
+            html = `<h5 class="mb-2">${region}</h5>`
+            html += `<h3>${nombre}</h3>`
+            html += `<h4><img width="35px" src="${this.getImagePartido(partidoId)}" /> ${partido} - Nro. ${nro}</h4>`
+            html += `<h4>Voto preferencial del candidato: <span class="text-success">${preferencial}</span></h4>`
+            html += `<h4>Total de votos de la agrupación en ${region}: <span class="text-success">${totalPartido}</span></h4>`
+          }
         } else if (d.children && d.children.length) {
           const n = d.value ?? d.children.length
           html = `<strong>${dd.name || 'Grupo'}</strong><br>${n} senador${n !== 1 ? 'es' : ''}`

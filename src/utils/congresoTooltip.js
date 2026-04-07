@@ -1,6 +1,23 @@
 /** Body-mounted tooltip for parliament seats (embed-safe). Ref-counted for multiple consumers. */
 export const CONGRESO_TOOLTIP_ID = 'tooltip-congresista'
 
+/** Single copy for map + parliament + embed when there is no real data yet */
+export const TOOLTIP_INFORMACION_NO_DISPONIBLE = 'Información no disponible'
+
+/** Matches placeholder seats in congresoGrafico when congreso/senado arrays are empty */
+export const PARLIAMENT_PLACEHOLDER_PARTIDO_ID = 'sin-resultados'
+
+export function isParliamentPlaceholderSeat(d) {
+  if (!d || typeof d !== 'object') return false
+  if (d.partido_id === PARLIAMENT_PLACEHOLDER_PARTIDO_ID) return true
+  const cid = d.candidato_id
+  return typeof cid === 'string' && cid.startsWith('placeholder-')
+}
+
+export function tooltipInformacionNoDisponibleHtml() {
+  return `<p class="mb-0">${TOOLTIP_INFORMACION_NO_DISPONIBLE}</p>`
+}
+
 let refCount = 0
 
 /**

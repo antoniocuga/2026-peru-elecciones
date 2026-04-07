@@ -158,6 +158,9 @@
     releaseCongresoBodyTooltip,
     CONGRESO_TOOLTIP_ID,
     clampCongresoTooltipToViewport,
+    PARLIAMENT_PLACEHOLDER_PARTIDO_ID,
+    isParliamentPlaceholderSeat,
+    tooltipInformacionNoDisponibleHtml,
   } from '../utils/congresoTooltip'
   import {
     resolveCongresoChartLayout,
@@ -169,6 +172,49 @@
   const PARLIAMENT_SPLIT_MAX_WIDTH_PX = 840
 
   const REGION_NACIONAL = 'TODAS LAS REGIONES'
+
+  const CONGRESO_TOTAL_SEATS = 130
+  const SENADO_TOTAL_SEATS = 60
+  /** Neutral seats when JSON / API has not loaded yet */
+  const EMPTY_PARLIAMENT_COLOR = '#ADB5BD'
+
+  function makePlaceholderCongresoSeats() {
+    return Array.from({ length: CONGRESO_TOTAL_SEATS }, (_, i) => ({
+      region: REGION_NACIONAL,
+      departamento: '',
+      nombre: 'Sin resultados',
+      candidato_id: `placeholder-congreso-${i}`,
+      partido: '—',
+      partido_id: PARLIAMENT_PLACEHOLDER_PARTIDO_ID,
+      nro: 1,
+      color: EMPTY_PARLIAMENT_COLOR,
+      total_votos_partido: 0,
+      hora: '—',
+      conteo: 0,
+      voto_preferencial: 0,
+      voto_fantasma: 0,
+      conteo_general: 0,
+    }))
+  }
+
+  function makePlaceholderSenadoSeats() {
+    return Array.from({ length: SENADO_TOTAL_SEATS }, (_, i) => ({
+      senado_tipo: 'nacional',
+      region: 'NACIONAL',
+      nombre: 'Sin resultados',
+      candidato_id: `placeholder-senado-${i}`,
+      partido: '—',
+      partido_id: PARLIAMENT_PLACEHOLDER_PARTIDO_ID,
+      nro: 1,
+      color: EMPTY_PARLIAMENT_COLOR,
+      total_votos_partido: 0,
+      hora: '—',
+      conteo: 0,
+      voto_preferencial: 0,
+      voto_fantasma: 0,
+      conteo_general: 0,
+    }))
+  }
 
   export default {
     name: 'congresoGrafico.vue',
@@ -195,7 +241,7 @@
       /** Curules de congreso mostrados en el título (nacional = total en datos; regional = escaños de la región). */
       headingCongresoSeats() {
         if (this.depSelected === REGION_NACIONAL) {
-          return this.congresistas?.length ?? 0
+          return this.congresistas?.length ? this.congresistas.length : CONGRESO_TOTAL_SEATS
         }
         const row = this.departamentos.find((d) => d.region === this.depSelected)
         return row ? row.seats : this.depObject.seats
@@ -274,7 +320,16 @@
           repeated.push({ ...all[i % n], _idx: i })
         }
         return repeated
-      }
+      },
+      /** Semicircles: real data or gray placeholders (130 / 60 curules). */
+      congresistasForChart() {
+        if (this.congresistas?.length) return this.congresistas_parse
+        return makePlaceholderCongresoSeats()
+      },
+      senadoresForChart() {
+        if (this.senadores?.length) return this.senadores_parse_60
+        return makePlaceholderSenadoSeats()
+      },
     },
     watch: {
       congresistas() {
@@ -308,7 +363,7 @@
       show_partidos(c) {
         this.depObject = {
           region: REGION_NACIONAL,
-          seats: this.congresistas?.length ?? 130
+          seats: this.congresistas?.length || CONGRESO_TOTAL_SEATS,
         }
         d3.selectAll('.svg-congreso circle').classed('active', false)
         d3.selectAll(`.svg-congreso circle.${c.partido_id}`).classed('active', true)
@@ -324,14 +379,16 @@
         this.depSelected = REGION_NACIONAL
         this.depObject = {
           region: REGION_NACIONAL,
-          seats: this.congresistas?.length ?? 130
+          seats: this.congresistas?.length || CONGRESO_TOTAL_SEATS,
         }
         d3.selectAll('.svg-congreso circle').classed('active', true)
       },
       show_congresista(event, d) {
         const tooltip = d3.select(`#${CONGRESO_TOOLTIP_ID}`)
         let table = ''
-        if (d.senado_tipo) {
+        if (isParliamentPlaceholderSeat(d)) {
+          table = tooltipInformacionNoDisponibleHtml()
+        } else if (d.senado_tipo) {
           table = `<h5 class="mb-2 border-bottom pb-2">Senado (${d.region || 'TODAS LAS REGIONES'})</h5>`
           table += `<h3>${d.nombre}</h3>`
           table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido}</h4>`
@@ -395,7 +452,7 @@
           gSenadoM.selectAll('*').remove()
           gSenadoM.call(
             parliament
-              .parliamentChart(this.senadores_parse_60, LS.ring.chartWidth)
+              .parliamentChart(this.senadoresForChart, LS.ring.chartWidth)
               .debug(false)
               .sections(LS.ring.sections)
               .sectionGap(LS.ring.sectionGap)
@@ -407,7 +464,7 @@
           gCongresoM.selectAll('*').remove()
           gCongresoM.call(
             parliament
-              .parliamentChart(this.congresistas_parse, LC.ring.chartWidth)
+              .parliamentChart(this.congresistasForChart, LC.ring.chartWidth)
               .debug(false)
               .sections(LC.ring.sections)
               .sectionGap(LC.ring.sectionGap)
@@ -429,7 +486,7 @@
           gSenado.selectAll('*').remove()
           gSenado.call(
             parliament
-              .parliamentChart(this.senadores_parse_60, L.senado.chartWidth)
+              .parliamentChart(this.senadoresForChart, L.senado.chartWidth)
               .debug(false)
               .sections(L.senado.sections)
               .sectionGap(L.senado.sectionGap)
@@ -446,7 +503,7 @@
           gCongreso.selectAll('*').remove()
           gCongreso.call(
             parliament
-              .parliamentChart(this.congresistas_parse, L.congreso.chartWidth)
+              .parliamentChart(this.congresistasForChart, L.congreso.chartWidth)
               .debug(false)
               .sections(L.congreso.sections)
               .sectionGap(L.congreso.sectionGap)

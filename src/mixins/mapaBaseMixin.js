@@ -5,6 +5,7 @@ import { getPartidoImage, getCandidatoImage } from '../utils/assets'
 import * as d3 from 'd3'
 import { feature } from 'topojson'
 import { find, filter, map, maxBy, minBy, orderBy, sumBy, groupBy, uniq } from 'lodash'
+import { TOOLTIP_INFORMACION_NO_DISPONIBLE } from '../utils/congresoTooltip'
 
 export const mapaBaseMixin = {
   data() {
@@ -557,7 +558,7 @@ export const mapaBaseMixin = {
     load_tooltip(dep, f) {
       if (!dep) {
         const name = f.properties?.DISTRITO || f.properties?.NAME_1 || 'Distrito'
-        return `<div class="row border-bottom pb-2 mb-2"><div class="col-12 depa"><b>${name}</b></div><div class="col-12">Información no disponible</div></div>`
+        return `<div class="row border-bottom pb-2 mb-2"><div class="col-12 depa"><b>${name}</b></div><div class="col-12">${TOOLTIP_INFORMACION_NO_DISPONIBLE}</div></div>`
       }
 
       const count = this._tooltipCandidatosCount || 4
@@ -572,7 +573,7 @@ export const mapaBaseMixin = {
             <div class="col-6 depa"><b>${name}</b></div>
             <div class="col-6 text-right"><span class="badge badge-secondary">Conteo ONPE al ${conteo}%</span></div>
           </div>`
-        if (dep.candidatos) {
+        if (dep.candidatos?.length) {
           const top = orderBy(dep.candidatos, ['total_departamento'], ['desc']).slice(0, count)
           map(top, dp => {
             const borderColor = dp.color || '#6c757d'
@@ -589,8 +590,11 @@ export const mapaBaseMixin = {
                 </div>
               </div>`
           })
+          if (!candidatos.trim()) {
+            candidatos = TOOLTIP_INFORMACION_NO_DISPONIBLE
+          }
         } else {
-          candidatos = 'No disponible'
+          candidatos = TOOLTIP_INFORMACION_NO_DISPONIBLE
         }
         table += `<div>${candidatos}</div>`
       } else {
@@ -599,7 +603,7 @@ export const mapaBaseMixin = {
             <div class="col-7 depa"><b>${f.properties.DISTRITO ?? ''}</b> - ${f.properties.PROVINCIA ?? ''}</div>
             <div class="col-5 text-right"><span class="badge badge-secondary">Conteo ONPE al ${dep.conteo ?? 0}%</span></div>
           </div>`
-        if (dep.conteo > 0) {
+        if (dep.conteo > 0 && dep.candidatos?.length) {
           const top = orderBy(dep.candidatos || [], ['validos'], ['desc']).slice(0, count)
           map(top, dp => {
             if (dp.candidato_id) {
@@ -618,8 +622,11 @@ export const mapaBaseMixin = {
                 </div>`
             }
           })
+          if (!candidatos.trim()) {
+            candidatos = TOOLTIP_INFORMACION_NO_DISPONIBLE
+          }
         } else {
-          candidatos = 'Información sin procesar'
+          candidatos = TOOLTIP_INFORMACION_NO_DISPONIBLE
         }
         table += `<div>${candidatos}</div>`
       }
