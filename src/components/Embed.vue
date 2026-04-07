@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 col-sm-12 resultados2021">
+  <div class="col-12 col-sm-12 resultados2026">
       <div class="row justify-content-center top-candidates pb-3 pt-3">
         <div class="col-12 mb-3">
           <h3 class="m-0 text-center">Resultados a nivel nacional - <b>conteo ONPE al 61%</b> - Última actualización: 11 de Abril a las 23:00</h3>
