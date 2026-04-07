@@ -9,7 +9,7 @@
  */
 import axios from 'axios'
 
-const BASE = import.meta.env.VITE_API_BASE || '/especiales/resultados-onpe-elecciones-2021'
+const BASE = import.meta.env.VITE_API_BASE || '/especiales/resultados-onpe-elecciones-2026'
 const DATA_PRIMERA_DIR = import.meta.env.VITE_DATA_PRIMERA_DIR || 'data-primera-vuelta'
 const RESULTADOS_PRIMERA = import.meta.env.VITE_RESULTADOS_PRIMERA || 'resultados_total.json'
 const DATA_SEGUNDA_DIR = import.meta.env.VITE_DATA_SEGUNDA_DIR || 'data'
@@ -35,35 +35,40 @@ function getSegundaUrl(filename) {
   return `${BASE}/${DATA_SEGUNDA_DIR}/${filename}`
 }
 
+function requestWithTimestamp(url) {
+  return axios.get(url, {
+    baseURL: '',
+    params: { t: Date.now() },
+  })
+}
+
 export default {
   async getAllCongreso() {
     const url = getPrimeraUrl('congreso_total.json')
-    if (import.meta.env.DEV) console.log('[API] getAllCongreso', url)
-    const { data } = await axios.get(url, { baseURL: '' })
+    const { data } = await requestWithTimestamp(url)
     return data
   },
   async getAllSenado() {
     const url = getPrimeraUrl('senado_total.json')
-    if (import.meta.env.DEV) console.log('[API] getAllSenado', url)
-    const { data } = await axios.get(url, { baseURL: '' })
+    const { data } = await requestWithTimestamp(url)
     return data
   },
   async getAllCandidatos() {
-    const { data } = await axios.get(`${BASE}/${DATA_PRIMERA_DIR}/${RESULTADOS_PRIMERA}`)
+    const { data } = await requestWithTimestamp(`${BASE}/${DATA_PRIMERA_DIR}/${RESULTADOS_PRIMERA}`)
     return data
   },
   async getAllCandidatosSegunda() {
-    const { data } = await axios.get(`${BASE}/${DATA_SEGUNDA_DIR}/${RESULTADOS_SEGUNDA}`)
+    const { data } = await requestWithTimestamp(`${BASE}/${DATA_SEGUNDA_DIR}/${RESULTADOS_SEGUNDA}`)
     return data
   },
   async getAllDistritos({ dep_id }) {
     if (!dep_id) return []
-    const { data } = await axios.get(`${BASE}/${DATA_PRIMERA_DIR}/${dep_id}.json`)
+    const { data } = await requestWithTimestamp(`${BASE}/${DATA_PRIMERA_DIR}/${dep_id}.json`)
     return data
   },
   async getAllDistritosSegunda({ dep_id }) {
     if (!dep_id) return []
-    const { data } = await axios.get(`${BASE}/${DATA_SEGUNDA_DIR}/${dep_id}.json`)
+    const { data } = await requestWithTimestamp(`${BASE}/${DATA_SEGUNDA_DIR}/${dep_id}.json`)
     return data
   },
 }

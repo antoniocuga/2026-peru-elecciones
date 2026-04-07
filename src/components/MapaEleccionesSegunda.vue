@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 col-sm-12 resultados2021">
+  <div class="col-12 col-sm-12 resultados2026">
     <div class="top-candidates pb-3 pt-3">
       <topWidget />
     </div>

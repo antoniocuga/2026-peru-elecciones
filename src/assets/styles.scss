@@ -321,77 +321,7 @@
     }
   }
 
-  .periodo-wrapper {
-    font-family: 'Noto Serif', serif;
 
-    .periodo-title {
-      text-align: left;
-      font-size: 21px;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-  }
-
-
-  .VueCarousel-dot {
-    background-color: #cacaca !important;
-
-    &.VueCarousel-dot--active {
-      background-color: #333 !important;
-    }
-  }
-
-  #mesesTabs {
-    @media (max-width: 575.98px) { 
-      overflow-x: auto;
-      overflow-y: hidden;
-    }
-
-    .nav-link {
-      font-size: 14px;
-      font-weight: 400;
-      text-transform: uppercase;
-
-      @media (max-width: 575.98px) {
-        min-width: 140px;
-        font-size: 12px;
-        padding: 10px 5px;
-        text-align: center;
-      }
-
-      &.active {
-        font-weight: 600;
-      }
-    }
-  }
-
-  .encuestas-control {
-    position: sticky;
-    display: flex;
-    align-items: center;
-    z-index: 999;
-
-    a {
-      color: #3e3e3ebd;
-      background: #fff;
-
-      &:hover {
-        color: #333;
-      }
-
-      &.hide {
-        visibility: hidden;
-      }
-    }
-
-    &.prev {
-      left: 0;
-    }
-
-    &.next {
-      right: 0;
-    }
-  }
 
   .congreso-grafico {
     font-family: 'Nunito', sans-serif;
@@ -1682,31 +1612,6 @@
     }
   }
 
-  .fuentes {
-    font-size: 15px;
-    line-height: 1.5em;
-    color: #4c4c4c;
-
-    @media (max-width: 575.98px) {
-      font-size: 14px;
-    }
-
-    h4 {
-      font-family: 'Nunito', sans-serif;
-      font-weight: 900;
-      font-size: 18px;
-
-      @media (max-width: 575.98px) {
-        font-size: 16px;
-      }
-    }
-
-    a {
-      color: #4c4c4c;
-      border-bottom: solid 1px #4c4c4c;
-    }
-  }
-
   .candidate-results {
     font-size: 15px;
     font-weight: 600;
@@ -1788,69 +1693,7 @@
     width:auto ;
   }
 
-  h3.comparador-title {
-    font-size: 14px !important;
-  }
-
-  h3.comparador-region {
-    font-size: 14px !important;
-  }
-
-  .foot-note {
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 15px;
-    font-weight: 600;
-    color: #757575;
-  }
-
-  .articulos-item {
-    padding: 0 5px;
-
-    h3 {
-      margin: 10px 0;
-      font-size: 16px;
-      font-weight: 900;
-
-      @media (max-width: 575.98px) { 
-        font-size: 14px;
-      }
-
-      a {
-        color: #333;
-      }
-    }
-    img {
-      width: 100%;
-    }
-  }
-
-  .bg-gray {
-    padding: 0 5px;
-    background: #e6f0f9;
-
-    .row {
-      max-width: 1120px;
-      margin: 0 auto;
-    }
-  }
-
-  .bg-dark {
-    h4 {
-      font-family: 'Nunito', sans-serif;
-      color: #fff;
-    }
-  }
-
-  .VueCarousel-dot-container {
-    margin: 0 !important;
-
-    button {
-      margin: 0 !important;
-    }
-  }
-
-  .resultados2021 {
+  .resultados2026 {
     font-family: 'Nunito', sans-serif;
 
     h3 {
@@ -1992,7 +1835,7 @@
       border-bottom-right-radius: 50px !important;
   }
 
-  @media screen and (max-width: 568px) {
+  @media screen and (max-width: 740px) {
       .custom-rounded-left {
           border-top-left-radius: 0px !important;
           border-bottom-left-radius: 0px !important;
@@ -2045,14 +1888,25 @@
 
       .candidato-nombre {
           font-weight: 700;
-          font-size: 18px;
+          font-size: 1.1rem;
           white-space: nowrap;
           overflow: hidden;
-          text-overflow: ellipsis;
+          
+          @media (max-width: 1120.98px) {
+            font-size: 0.9rem;
+          }
+         
+          @media (max-width: 900.98px) {
+            font-size: 0.7rem;
+          }
+
+          @media (max-width: 575.98px) {
+            font-size: 1rem;
+          }
       }
 
       .partido-nombre {
-          font-size: 14px;
+          font-size: 0.75rem;
           color: #666;
           white-space: nowrap;
           overflow: hidden;
@@ -2060,7 +1914,7 @@
       }
 
       .porcentaje-top {
-          font-size: 22px;
+          font-size: 18px;
           font-weight: 700;
           line-height: 1;
       }
@@ -2182,8 +2036,8 @@
   padding: 35px 0;
 }
 
-.contenido-especial-elecciones-2026 .nav-link {
-  padding: .5rem 0.6rem !important;
+.contenido-especial-elecciones-2026 .nav-tabs .nav-link {
+  padding: 0.4rem 0.4rem !important;
 }
 
 .contenido-especial-elecciones-2026 .nav-tabs {

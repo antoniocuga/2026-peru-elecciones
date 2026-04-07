@@ -1,6 +1,6 @@
 
 <template>
-  <div class="candidato-wrapper resultados2021">
+  <div class="candidato-wrapper resultados2026">
 
     <div class="row">
 
