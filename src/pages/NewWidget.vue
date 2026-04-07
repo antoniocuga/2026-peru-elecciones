@@ -18,9 +18,6 @@
                   <img width="20" height="20" class="partido-icon" :src="getImagePartido(c.partido_id)" alt="" />
                   {{ c.partido }}
                 </p>
-                <div class="segunda-vuelta-badge m-0 p-0 mt-2" v-if="i === 0 || i === 1">
-                  ✓ Segunda vuelta
-                </div>
               </div>
               <div style="min-width: 70px;" class="ml-2 text-dark overflow-hidden justify-content-end mr-3">
                 <div class="d-block text-right align-items-baseline flex-wrap">

@@ -3,11 +3,6 @@
     <div class="container" v-if="topCandidatos.length">
 
       <div class="row">
-        <div class="col-12">
-        <div class="widget-parliament-label small text-dark fw-semibold mb-1">
-              Resultados presidenciales
-          </div>
-        </div>  
         <div class="col-12 col-md-4 p-1" v-for="(c, i) in topCandidatos" :key="c.candidato_id">
           <div class="card card-candidate border-1"
                :class="i === 0 ? 'custom-rounded-left  border-right' : i === 2 ? 'custom-rounded-right  border-left' : ''"
@@ -23,9 +18,6 @@
                   <img width="20" height="20" class="partido-icon" :src="getImagePartido(c.partido_id)" alt="" />
                   {{ capitalizeWords(c.partido) }}
                 </p>
-                <div class="segunda-vuelta-badge m-0 p-0 mt-2" v-if="i === 0 || i === 1">
-                  ✓ Segunda vuelta
-                </div>
               </div>
               <div style="min-width: 70px;" class="ml-2 text-dark overflow-hidden justify-content-end mr-3">
                 <div class="d-block text-right align-items-baseline flex-wrap">
