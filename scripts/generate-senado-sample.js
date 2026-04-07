@@ -7,53 +7,17 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import { loadPartyTemplatesFromCrawler } from './lib/crawler-national.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(__dirname, '..')
 const CONGRESO_PATH = path.join(ROOT, 'public/data-primera-vuelta/congreso_total.json')
-// Use 2026 resultados so senado has same 36 parties (names, colors, partido_id for logos)
-const RESULTADOS_PATH = path.join(ROOT, 'public/data-primera-vuelta/resultados_total_2026.json')
+const CRAWLLER_RESULTS_PATH = path.join(ROOT, 'crawller/resultados.json')
 const OUTPUT_PATH = path.join(ROOT, 'public/data-primera-vuelta/senado_total.json')
 
 const HORA = '12:00 h - 26/02/2026'
 const MAX_PARTIES_SENADO = 6 // voting system allows at most 6 parties in senate
-const COLORES = ['#00aede', '#fd6600', '#2fc100', '#f40201', '#0050a0', '#4f1b7f', '#1022b9', '#ff2600', '#009a21', '#4e5405', '#ff2c79', '#004da3']
-
-/** Build partido_id -> color from resultados_total.json (legacy helper). */
-function loadPartyColorsFromResultados (filePath) {
-  if (!fs.existsSync(filePath)) return {}
-  const rows = JSON.parse(fs.readFileSync(filePath, 'utf8'))
-  const map = {}
-  for (const row of rows) {
-    if (row.partido_id && row.color && map[row.partido_id] == null) {
-      map[row.partido_id] = row.color
-    }
-  }
-  return map
-}
-
-/** Build list of parties from resultados_total.json (names + colors) so senado matches running parties and logos. */
-function loadPartyTemplatesFromResultados (filePath) {
-  if (!fs.existsSync(filePath)) return []
-  const rows = JSON.parse(fs.readFileSync(filePath, 'utf8'))
-  const seen = new Set()
-  const list = []
-  for (const row of rows) {
-    if (row.partido_id && row.partido && row.color && !seen.has(row.partido_id)) {
-      seen.add(row.partido_id)
-      list.push({
-        partido_id: row.partido_id,
-        partido: row.partido,
-        color: row.color,
-        nro: list.length + 1,
-        total_votos_partido: 200000 - list.length * 5000,
-        voto_preferencial: 100000,
-        voto_fantasma: 80000,
-      })
-    }
-  }
-  return list
-}
+const FALLBACK_COLOR = '#9CA3AF'
 
 function slug (str) {
   return String(str)
@@ -71,7 +35,7 @@ function buildRow (opts) {
     partido,
     partido_id,
     nro: nro ?? 1,
-    color: color ?? COLORES[0],
+    color: color ?? FALLBACK_COLOR,
     total_votos_partido: total_votos_partido ?? 100000,
     hora: HORA,
     conteo: 100,
@@ -85,18 +49,18 @@ function main () {
   const congreso = JSON.parse(fs.readFileSync(CONGRESO_PATH, 'utf8'))
   const regionesUnicas = [...new Set(congreso.map(r => r.region))].filter(r => r !== 'LIMA').sort()
 
-  // Use at most 6 parties from resultados (senate voting system limit) – same names, colors, partido_id for logos
-  let partyTemplates = loadPartyTemplatesFromResultados(RESULTADOS_PATH)
+  // At most 6 parties (senate limit) — names, colors, partido_id from crawller/resultados.json only
+  let partyTemplates = loadPartyTemplatesFromCrawler(CRAWLLER_RESULTS_PATH)
   if (partyTemplates.length === 0) {
-    console.warn('No parties in resultados file; using single fallback party.')
-    partyTemplates = [{ partido_id: 'partido-sample', partido: 'Partido Sample', color: COLORES[0], nro: 1, total_votos_partido: 200000, voto_preferencial: 100000, voto_fantasma: 80000 }]
+    console.warn('No parties in crawler file; using single fallback party.')
+    partyTemplates = [{ partido_id: 'partido-sample', partido: 'Partido Sample', color: FALLBACK_COLOR, nro: 1, total_votos_partido: 200000, voto_preferencial: 100000, voto_fantasma: 80000 }]
   }
   partyTemplates = partyTemplates.slice(0, MAX_PARTIES_SENADO)
   const numParties = partyTemplates.length
   const nacionales = []
   const regionales = []
 
-  // 30 nacional senators: round-robin across parties from resultados (same names/colors as running parties)
+  // 30 nacional senators: round-robin across parties from crawler (same names/colors as running parties)
   for (let i = 0; i < 30; i++) {
     const template = partyTemplates[i % numParties] || partyTemplates[0]
     nacionales.push(buildRow({

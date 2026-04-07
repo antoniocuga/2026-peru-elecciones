@@ -1,23 +1,18 @@
 /**
- * Generates resultados_total_2026.json from public/2026-lista/candidatos.json
- * Run: node scripts/generate-2026-results.js
+ * Generates resultados_total_2026.json from elecciones2026/crawller/resultados.json
+ * (nacional rows only: candidato, partido, color). Colors are taken only from that file.
+ * Run: npm run generate:2026
  * Output: public/data-primera-vuelta/resultados_total_2026.json
  */
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import { loadNationalCandidatesFromCrawler } from './lib/crawler-national.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(__dirname, '..')
-const CANDIDATOS_PATH = path.join(ROOT, 'public/2026-lista/candidatos.json')
+const CRAWLLER_RESULTS_PATH = path.join(ROOT, 'crawller/resultados.json')
 const OUTPUT_PATH = path.join(ROOT, 'public/data-primera-vuelta/resultados_total_2026.json')
-
-const ACCENTS = { á: 'a', é: 'e', í: 'i', ó: 'o', ú: 'u', ñ: 'n', Á: 'a', É: 'e', Í: 'i', Ó: 'o', Ú: 'u', Ñ: 'n' }
-function slug (str) {
-  let s = String(str)
-  Object.keys(ACCENTS).forEach(k => { s = s.replace(new RegExp(k, 'g'), ACCENTS[k]) })
-  return s.replace(/\s+/g, '-').replace(/[^a-z0-9-]/gi, '').toLowerCase()
-}
 
 const REGIONS = [
   { region: 'amazonas', departamento: 'AMAZONAS' },
@@ -50,27 +45,15 @@ const REGIONS = [
   { region: 'total', departamento: 'TOTAL' },
 ]
 
-const COLOR_PALETTE = [
-  '#00aede', '#fd6600', '#2fc100', '#f40201', '#0050a0', '#4f1b7f', '#1022b9',
-  '#ff2600', '#009a21', '#4e5405', '#ff2c79', '#004da3', '#0055a2', '#ff2607',
-  '#000000', '#fff000', '#f52300', '#436b1c', '#8b4513', '#2e5090', '#a0522d',
-  '#556b2f', '#6a0dad', '#b22222', '#006400', '#4b0082', '#808000', '#ff6347',
-  '#20b2aa', '#9370db', '#dda0dd', '#f0e68c', '#e6e6fa',
-]
-
 function main () {
-  const raw = fs.readFileSync(CANDIDATOS_PATH, 'utf8')
-  const candidatos = JSON.parse(raw)
+  const normalized = loadNationalCandidatesFromCrawler(CRAWLLER_RESULTS_PATH)
+  if (normalized.length === 0) {
+    console.error('No nacional candidates in crawler; aborting.')
+    process.exit(1)
+  }
+
   const hora = '12:00 h - 26/02/2026'
   const conteo = 100
-
-  const normalized = candidatos.map((c, i) => ({
-    candidato: c.candidato,
-    candidato_id: slug(c.candidato),
-    partido: c.partido_politico,
-    partido_id: slug(c.partido_politico),
-    color: COLOR_PALETTE[i % COLOR_PALETTE.length],
-  }))
 
   const totalVotos = 14_000_000
   const totalValidosPct = normalized.map((_, i) => Math.max(0.5, 18 - i * 0.6))
@@ -109,7 +92,7 @@ function main () {
 
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true })
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(out, null, 2), 'utf8')
-  console.log('Wrote', OUTPUT_PATH, '-', out.length, 'rows')
+  console.log('Wrote', OUTPUT_PATH, '-', out.length, 'rows (', normalized.length, 'candidates from crawler )')
 }
 
 main()
