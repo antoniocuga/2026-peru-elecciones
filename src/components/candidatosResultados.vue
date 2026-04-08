@@ -7,7 +7,7 @@
           <template #title>
              <span class="title-resultados align-self-center" v-if="regionSeleccionada.region !='NACIONAL'"><span>{{regionSeleccionada.region}}</span></span>
 
-              <span class="title-resultados align-self-center" v-if="regionSeleccionada.region =='NACIONAL'"><span>RESULTADOS NACIONALES</span></span>
+              <span class="title-resultados align-self-center" v-if="regionSeleccionada.region =='NACIONAL'"><span>RESULTADOS</span></span>
               <span class="distrito-resultados align-self-center" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'"><span>{{ distritoSeleccionado.distrito }}</span></span>
           </template>
           
@@ -233,7 +233,7 @@
           candidato_id: `${PLACEHOLDER_PREFIX}${i + 1}`,
           candidato: '',
           partido_id: 'sin-resultados',
-          partido: '',
+          partido: 'Información no disponible',
           color: PLACEHOLDER_COLOR,
           votos: 0,
           total_votos: 0,

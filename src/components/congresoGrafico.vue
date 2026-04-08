@@ -14,17 +14,19 @@
                 <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
                   <div class="col-auto pr-1 img-candidato">
                     <div
-                      v-if="isParliamentPlaceholderSeat(c)"
-                      class="rounded-circle border border-3 flex-shrink-0"
-                      style="width:65px;height:65px;background:#ADB5BD;border-color:#ADB5BD !important;"
+                      v-if="isCongresoPartyListPlaceholder(c)"
+                      class="congreso-grafico__party-placeholder rounded-circle border border-3"
                       role="img"
                       aria-hidden="true"
                     />
                     <img v-else width="65px" :src="getImagePartido(c.partido_id)" />
                   </div>
-                  <div class="col-7 pl-0 pr-md-0 align-self-center">              
+                  <div class="col-7 pl-0 pr-md-0 align-self-center" v-if="c.total_votos_partido >  0">              
                     <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
                     <div class="text-secondary small light">Votos válidos: {{numeral(c.total_votos_partido).format('0,0')}}</div>
+                  </div> 
+                  <div v-else class="col-7 pl-0 pr-md-0 align-self-center">              
+                    <div class="text-secondary small light">Información no disponible</div>
                   </div> 
                   <div class="col-auto align-self-center text-center pr-0">              
                       <h5 class="elegidos d-flex align-self-center">{{ c.seats }}</h5>
@@ -48,9 +50,8 @@
                 <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
                   <div class="col-auto pr-1 img-candidato">
                     <div
-                      v-if="isParliamentPlaceholderSeat(c)"
-                      class="rounded-circle border border-3 flex-shrink-0"
-                      style="width:65px;height:65px;background:#ADB5BD;border-color:#ADB5BD !important;"
+                      v-if="isCongresoPartyListPlaceholder(c)"
+                      class="congreso-grafico__party-placeholder rounded-circle border border-3"
                       role="img"
                       aria-hidden="true"
                     />
@@ -390,6 +391,12 @@
       isParliamentPlaceholderSeat(d) {
         return isParliamentPlaceholderSeat(d)
       },
+      /** List rows use partido_id `sin-resultados` or `sin-resultados-*`, not seat objects */
+      isCongresoPartyListPlaceholder(c) {
+        const id = c?.partido_id
+        if (typeof id !== 'string') return false
+        return id === PARLIAMENT_PLACEHOLDER_PARTIDO_ID || id.startsWith(`${PARLIAMENT_PLACEHOLDER_PARTIDO_ID}-`)
+      },
       formatRegionLabel(region) {
         if (!region) return ''
         if (region === REGION_NACIONAL) return 'Todas las regiones'
@@ -590,3 +597,18 @@
   }
 
 </script>
+
+<style scoped>
+.congreso-grafico__party-placeholder {
+  width: 65px;
+  height: 65px;
+  min-width: 65px;
+  min-height: 65px;
+  max-width: 65px;
+  max-height: 65px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  background-color: #adb5bd;
+  border-color: #adb5bd !important;
+}
+</style>

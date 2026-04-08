@@ -52,7 +52,7 @@
                   </div>
                 </div>
               </Btab>
-              <BTab :title="`Segunda vuelta ${eleccion.eleccion}`">
+              <BTab :title="`Segunda vuelta ${eleccion.eleccion}`" v-if="!eleccion.segunda_vuelta[0].nota"> 
                 <div class="card card-candidate align-self-center border-top-0 p-3">
                 
                   <div class="row">
@@ -133,6 +133,14 @@
     },
     methods: {
       numeral,
+      segundaVueltaNotaTooltip(eleccion) {
+        const raw = eleccion?.segunda_vuelta?.[0]?.nota
+        return typeof raw === 'string' && raw.trim() ? raw.trim() : ''
+      },
+      segundaVueltaNotaAria(eleccion) {
+        const t = this.segundaVueltaNotaTooltip(eleccion)
+        return t ? 'Información: segunda vuelta' : 'Información'
+      },
       getImageCandidate(c) {
         return getCandidatoImage(c)
       },
