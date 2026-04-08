@@ -41,7 +41,7 @@
                           {{ numeral(c.votos).format('0,0') }}
                         </span>
                         <span class="d-block text-right text-small badge font-weight-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
-                          Votos estimados
+                          Votos válidos
                         </span>
                         <span class="d-block text-right diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos).format('0,0') }} votos</span>
                       </span>   
@@ -79,7 +79,7 @@
                           {{ numeral(c.votos).format('0,0') }}
                         </span>
                         <span class="d-block text-right small badge font-weight-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
-                          Votos estimados
+                          Votos válidos
                         </span>
                         <span class="d-block text-right diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos).format('0,0') }} votos</span>
                       </span>    

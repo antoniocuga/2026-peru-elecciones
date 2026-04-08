@@ -17,7 +17,7 @@
                   </div>
                   <div class="col-7 pl-0 pr-md-0 align-self-center">              
                     <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
-                    <div class="text-secondary small light">Votos estimados: {{numeral(c.total_votos_partido).format('0,0')}}</div>
+                    <div class="text-secondary small light">Votos válidos: {{numeral(c.total_votos_partido).format('0,0')}}</div>
                   </div> 
                   <div class="col-auto align-self-center text-center pr-0">              
                       <h5 class="elegidos d-flex align-self-center">{{ c.seats }}</h5>
@@ -44,7 +44,7 @@
                   </div>
                   <div class="col-7 pl-0 pr-md-0 align-self-center">
                     <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
-                    <div class="text-secondary small light">Votos estimados: {{ numeral(c.total_votos_partido).format('0,0') }}</div>
+                    <div class="text-secondary small light">Votos válidos: {{ numeral(c.total_votos_partido).format('0,0') }}</div>
                   </div>
                   <div class="col-auto align-self-center text-center pr-0">
                     <h5 class="elegidos d-flex align-self-center">{{ c.seats }}</h5>
@@ -398,7 +398,7 @@
           table += `<h3>${d.nombre}</h3>`
           table += `<h4 class="text-light"><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
           table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
-          table += `<h4>Votos estimados de la agrupación: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
+          table += `<h4>Votos válidos de la agrupación: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
         }
         tooltip.interrupt()
         tooltip.html(table)

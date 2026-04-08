@@ -43,7 +43,7 @@
                         {{ numeral(candidato.votos).format('0,0') }}
                       </span>
                       <span class="d-block badge font-weight-light small text-right text-secondary">
-                        Votos estimados
+                        Votos válidos
                       </span>
                     </div>
                   </div>
