@@ -17,8 +17,7 @@
                         <div class="col-4 col-md-3 col-lg-3 text-center">
                           <div
                             v-if="isPlaceholderCandidate(candidato)"
-                            class="rounded-circle border border-3 flex-shrink-0 img-candidato"
-                            style="background:#ADB5BD; border-color: #ADB5BD !important;"
+                            class="top-congreso__avatar-placeholder rounded-circle border border-3 flex-shrink-0 img-candidato"
                             role="img"
                             aria-hidden="true"
                           />
@@ -49,8 +48,7 @@
                         <div class="col-4 col-md-3 col-lg-3 text-center">
                           <div
                             v-if="isPlaceholderCandidate(candidato)"
-                            class="rounded-circle border border-3 flex-shrink-0 img-candidato"
-                            style="background:#ADB5BD; border-color: #ADB5BD !important;"
+                            class="top-congreso__avatar-placeholder rounded-circle border border-3 flex-shrink-0 img-candidato"
                             role="img"
                             aria-hidden="true"
                           />
@@ -204,7 +202,7 @@
           eleccion: '2026',
           items: Array.from({ length: 5 }, (_, i) => ({
             candidato_id: `${PLACEHOLDER_PREFIX}senado-${i + 1}`,
-            nombre: 'Resultados pendientes',
+            nombre: '',
             partido_id: 'sin-resultados',
             partido: 'Información no disponible',
             color: PLACEHOLDER_COLOR,
@@ -238,3 +236,18 @@
   }
 
 </script>
+
+<style scoped>
+.top-congreso__avatar-placeholder {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
+  max-width: 56px;
+  max-height: 56px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  background-color: #adb5bd;
+  border-color: #adb5bd !important;
+}
+</style>

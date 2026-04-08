@@ -1,3 +1,12 @@
+/** Escape a plain string for safe insertion into HTML. */
+export function escapeHtml(text) {
+  return String(text ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+}
+
 /**
  * Title-case each whitespace-separated word (first letter upper, rest lower per word).
  */

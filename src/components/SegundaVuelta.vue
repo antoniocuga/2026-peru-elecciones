@@ -8,7 +8,28 @@
             <div class="col-12 col-md-6 mb-3" :key="eleccion.eleccion" v-for="(eleccion) in candidatos_segunda">
 
             <BTabs>
-              <BTab :title="`Primera vuelta ${eleccion.eleccion}`">
+              <BTab>
+                <template #title>
+                  <span class="d-inline-flex align-items-center flex-wrap gap-1">
+                    <span>Primera vuelta {{ eleccion.eleccion }}</span>
+                    <!-- span (not <button>): tab title lives inside <button.nav-link> — nested buttons are invalid -->
+                    <span
+                      v-if="segundaVueltaNotaText(eleccion)"
+                      tabindex="0"
+                      class="text-secondary ms-1 align-middle lh-1 d-inline-flex"
+                      style="cursor: help;"
+                      :title="segundaVueltaNotaText(eleccion)"
+                      :aria-label="segundaVueltaNotaAria(eleccion)"
+                      @click.stop
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                      </svg>
+                    </span>
+                  </span>
+                </template>
+
                 <div class="card card-candidate align-self-center border-top-0 p-3">
                 
                   <div class="row">
@@ -52,7 +73,7 @@
                   </div>
                 </div>
               </Btab>
-              <BTab :title="`Segunda vuelta ${eleccion.eleccion}`" v-if="!eleccion.segunda_vuelta[0].nota"> 
+              <BTab :title="`Segunda vuelta ${eleccion.eleccion}`" v-if="segundaVueltaHasCandidatos(eleccion)"> 
                 <div class="card card-candidate align-self-center border-top-0 p-3">
                 
                   <div class="row">
@@ -97,6 +118,7 @@
                   </div>
                 </div>
               </Btab>
+              
             </Btabs>
           
 
@@ -133,13 +155,20 @@
     },
     methods: {
       numeral,
-      segundaVueltaNotaTooltip(eleccion) {
-        const raw = eleccion?.segunda_vuelta?.[0]?.nota
-        return typeof raw === 'string' && raw.trim() ? raw.trim() : ''
+      /** Nota may live on any `segunda_vuelta` row (e.g. a stub row with only `nota`, not necessarily [0]). */
+      segundaVueltaNotaText(eleccion) {
+        const rows = eleccion?.segunda_vuelta
+        if (!Array.isArray(rows)) return ''
+        const row = rows.find((r) => r != null && typeof r.nota === 'string' && String(r.nota).trim())
+        return row ? String(row.nota).trim() : ''
       },
       segundaVueltaNotaAria(eleccion) {
-        const t = this.segundaVueltaNotaTooltip(eleccion)
-        return t ? 'Información: segunda vuelta' : 'Información'
+        return this.segundaVueltaNotaText(eleccion) ? 'Información sobre la segunda vuelta' : 'Información'
+      },
+      segundaVueltaHasCandidatos(eleccion) {
+        const rows = eleccion?.segunda_vuelta
+        if (!Array.isArray(rows)) return false
+        return rows.some((r) => r && (r.candidato_id || r.candidato))
       },
       getImageCandidate(c) {
         return getCandidatoImage(c)
