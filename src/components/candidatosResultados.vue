@@ -11,21 +11,35 @@
               <span class="distrito-resultados align-self-center" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'"><span>{{ distritoSeleccionado.distrito }}</span></span>
           </template>
           
-          <div class=" bg-white " v-if="displayCandidatos.length" :key="regionSeleccionada.region">
-          <div class="row" v-if="displayCandidatos.length" :key="regionSeleccionada.region">
+          <div class=" bg-white " :key="regionSeleccionada.region">
+          <div class="row" :key="regionSeleccionada.region">
 
             <div class="col-12">
               
               <div class="card card-candidate align-self-center">
-                <div class="border-bottom mt-2 p-2" :key="c.candidato_id" v-for="c in displayCandidatos.slice(0,6)">
+                <div class="border-bottom mt-2 p-2" :key="c.candidato_id" v-for="c in displayCandidatosForView.slice(0,6)">
                   <div class="row ">
                     <div class="col-4 col-md-3 col-lg-3 text-center">
-                        <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
-                        :style="`border-color: ${c.color} !important`" :src="getImageCandidate(c.candidato_id)" />
+                        <div
+                          v-if="isPlaceholderCandidate(c)"
+                          class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                          style="width:56px; height:56px; min-width:56px; background:#ADB5BD; border-color: #ADB5BD !important;"
+                          role="img"
+                          aria-hidden="true"
+                        />
+                        <img
+                          v-else
+                          class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                          :style="`border-color: ${c.color} !important`"
+                          :src="getImageCandidate(c.candidato_id)"
+                        />
                     </div>
                     <div class="col-4 col-md-4 col-lg-5 p-0 align-self-center">
                       <h4 class="candidato-mapa mt-1">{{ c.candidato }}</h4>
-                      <h4 class="partido-mapa mt-1"><img width="25px" class="partido-icon mr-2" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
+                      <h4 class="partido-mapa mt-1">
+                        <img v-if="!isPlaceholderCandidate(c)" width="25px" class="partido-icon mr-2" :src="getImagePartido(c.partido_id)" />
+                        {{ c.partido || '\u00A0' }}
+                      </h4>
                     </div> 
                     
                     <div class="col-4 col-md-4 col-lg-4 align-self-center text-right">
@@ -34,16 +48,16 @@
                       <span style="font-size: 0.6rem;"  class="d-block text-right font-weight-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
                           Validos
                         </span>
-                      <span class="text-right" :style="`font-size:1rem; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
+                      <span class="text-right" :style="`font-size:1rem; font-weight: 600;`">{{ Number(c.validos || 0).toFixed(2) }}%</span>
 
                       <span style="font-size: 0.8rem;"  class="align-self-end text-right">
                         <span style="font-size: 0.8rem;" class="d-block text-right text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
-                          {{ numeral(c.votos).format('0,0') }}
+                          {{ numeral(c.votos || 0).format('0,0') }}
                         </span>
                         <span class="d-block text-right text-small badge font-weight-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
                           Votos estimados
                         </span>
-                        <span class="d-block text-right diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos).format('0,0') }} votos</span>
+                        <span class="d-block text-right diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos || 0).format('0,0') }} votos</span>
                       </span>   
                       
                       </div>
@@ -56,15 +70,29 @@
             
             <BCollapse v-model="open" id="collapse-1" class="col-12">
 
-            <div class="card card-candidate align-self-center mt-2 " :key="c.candidato_id" v-for="c in displayCandidatos.slice(6, displayCandidatos.length)">
+            <div class="card card-candidate align-self-center mt-2 " :key="c.candidato_id" v-for="c in displayCandidatosForView.slice(6, displayCandidatosForView.length)">
                 <div class="row border-bottom">
                   <div class="col-4 col-md-3 col-lg-3 text-center">
-                      <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
-                      :style="`border-color: ${c.color} !important`" :src="getImageCandidate(c.candidato_id)" />
+                      <div
+                        v-if="isPlaceholderCandidate(c)"
+                        class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                        style="width:56px; height:56px; min-width:56px; background:#ADB5BD; border-color: #ADB5BD !important;"
+                        role="img"
+                        aria-hidden="true"
+                      />
+                      <img
+                        v-else
+                        class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                        :style="`border-color: ${c.color} !important`"
+                        :src="getImageCandidate(c.candidato_id)"
+                      />
                   </div>
                   <div class="col-5 col-md-4 col-lg-5 p-0 align-self-center">
                     <h4 class="candidato-mapa mt-1">{{ c.candidato }}</h4>
-                    <h4 class="partido-mapa mt-1"><img width="25px" class="partido-icon mr-2" :src="getImagePartido(c.partido_id)" />{{ c.partido }}</h4>
+                    <h4 class="partido-mapa mt-1">
+                      <img v-if="!isPlaceholderCandidate(c)" width="25px" class="partido-icon mr-2" :src="getImagePartido(c.partido_id)" />
+                      {{ c.partido || '\u00A0' }}
+                    </h4>
                   </div> 
                   
                   <div class="col-3 col-md-4 col-lg-4  align-self-center text-right">
@@ -72,16 +100,16 @@
                       <span class="d-block text-right small badge font-weight-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
                           Validos
                         </span>
-                    <span class="text-right" :style="`font-size:0.8rem; font-weight: 600;`">{{c.validos.toFixed(2)}}%</span>
+                    <span class="text-right" :style="`font-size:0.8rem; font-weight: 600;`">{{ Number(c.validos || 0).toFixed(2) }}%</span>
 
                     <span class="align-self-end text-right">
                         <span style="font-size: 0.8rem;" class="text-bold d-block text-right text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
-                          {{ numeral(c.votos).format('0,0') }}
+                          {{ numeral(c.votos || 0).format('0,0') }}
                         </span>
                         <span class="d-block text-right small badge font-weight-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
                           Votos estimados
                         </span>
-                        <span class="d-block text-right diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos).format('0,0') }} votos</span>
+                        <span class="d-block text-right diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos || 0).format('0,0') }} votos</span>
                       </span>    
                     
                     </div>
@@ -93,12 +121,12 @@
             </BCollapse>
         
             <div class="col-12 mt-3 button-more pl-0 pr-0">
-              <a v-if="open==false" @click="open=!open" class="d-block btn btn-light text-center">Ver todos los candidatos
+              <a v-if="open==false && displayCandidatosForView.length > 6" @click="open=!open" class="d-block btn btn-light text-center">Ver todos los candidatos
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
                 </svg>
               </a>
-              <a v-if="open==true" @click="open=!open" class="d-block btn btn-light text-center">Cerrar
+              <a v-if="open==true && displayCandidatosForView.length > 6" @click="open=!open" class="d-block btn btn-light text-center">Cerrar
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
                 </svg>
@@ -124,6 +152,8 @@
   import { useCandidatosStore } from '../stores/candidatos'
   import { getPartidoImage, getCandidatoImage } from '../utils/assets'
   import { getMapaData, getPerugeo } from '../utils/mapas'
+  const PLACEHOLDER_PREFIX = 'placeholder-candidato-'
+  const PLACEHOLDER_COLOR = '#ADB5BD'
 
   export default {
     name: 'candidatosResultados',
@@ -197,6 +227,21 @@
         }
         return this.lista_candidatos
       },
+      displayCandidatosForView() {
+        if (this.displayCandidatos && this.displayCandidatos.length) return this.displayCandidatos
+        return Array.from({ length: 6 }, (_, i) => ({
+          candidato_id: `${PLACEHOLDER_PREFIX}${i + 1}`,
+          candidato: '',
+          partido_id: 'sin-resultados',
+          partido: '',
+          color: PLACEHOLDER_COLOR,
+          votos: 0,
+          total_votos: 0,
+          validos: 0,
+          conteo: 0,
+          hora: '',
+        }))
+      },
       lista_candidatos() {
         let data_block = []
 
@@ -236,6 +281,9 @@
     },
     methods: {
       numeral,
+      isPlaceholderCandidate(c) {
+        return String(c?.candidato_id || '').startsWith(PLACEHOLDER_PREFIX)
+      },
       normalizeCandidatosList(items) {
         if (!items || !items.length) return []
         return orderBy(map(groupBy(items, 'candidato_id'), (d, id) => {

@@ -10,10 +10,17 @@
           </template>
           <div class="list-resultados-partidos p-3">
             <div class="row pb-3">
-              <div class="col-12" :key="c.candidato_id" v-for="c in congresistas_partido">
+              <div class="col-12" :key="c.partido_id" v-for="c in congresistasPartidoForList">
                 <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
                   <div class="col-auto pr-1 img-candidato">
-                    <img width="65px" :src="getImagePartido(c.partido_id)" />              
+                    <div
+                      v-if="isParliamentPlaceholderSeat(c)"
+                      class="rounded-circle border border-3 flex-shrink-0"
+                      style="width:65px;height:65px;background:#ADB5BD;border-color:#ADB5BD !important;"
+                      role="img"
+                      aria-hidden="true"
+                    />
+                    <img v-else width="65px" :src="getImagePartido(c.partido_id)" />
                   </div>
                   <div class="col-7 pl-0 pr-md-0 align-self-center">              
                     <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
@@ -36,11 +43,18 @@
             </span>
           </template>
           <div class="list-resultados-partidos p-3">
-            <div class="row pb-3" v-if="senadores_partido.length">
-              <div class="col-12" :key="'s-' + c.partido_id" v-for="c in senadores_partido">
+            <div class="row pb-3">
+              <div class="col-12" :key="'s-' + c.partido_id" v-for="c in senadoresPartidoForList">
                 <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
                   <div class="col-auto pr-1 img-candidato">
-                    <img width="65px" :src="getImagePartido(c.partido_id)" />
+                    <div
+                      v-if="isParliamentPlaceholderSeat(c)"
+                      class="rounded-circle border border-3 flex-shrink-0"
+                      style="width:65px;height:65px;background:#ADB5BD;border-color:#ADB5BD !important;"
+                      role="img"
+                      aria-hidden="true"
+                    />
+                    <img v-else width="65px" :src="getImagePartido(c.partido_id)" />
                   </div>
                   <div class="col-7 pl-0 pr-md-0 align-self-center">
                     <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
@@ -51,9 +65,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row" v-else>
-              <div class="col-12 text-center py-3 text-muted">Cargando datos de senado...</div>
             </div>
           </div>
         </BTab>
@@ -113,13 +124,13 @@
       <div class="filters-congreso mb-3 text-center">
         <span class="medium">Mostrar resultados por</span>
         <DropdownBs4
-          :text="`${depObject.region}`"
+          :text="formatRegionLabel(depObject.region)"
           variant="link-dark"
           :wrapperClass="['d-inline-block', 'm-2', 'departamento-menu']"
         >
           <template #default="{ close }">
             <button type="button" class="dropdown-item" @click="close(); reset_congreso()">
-              TODAS LAS REGIONES
+              Todas las regiones
             </button>
             <button
               type="button"
@@ -128,13 +139,13 @@
               v-for="d in departamentos"
               @click="close(); show_departamentos(d)"
             >
-              {{ d.region }}
+              {{ formatRegionLabel(d.region) }}
             </button>
           </template>
         </DropdownBs4>
       </div>
       <div class="col-12 mb-2" v-if="departamentos_conteo > 0">
-        <h2 class="title-resultados"><b>Conteo ONPE al {{ departamentos_conteo }}% en la región {{depSelected}}</b></h2> <h2 class="title-resultados">Última actualización: {{ departamentos_hora }}</h2>
+        <h2 class="title-resultados"><b>Conteo ONPE al {{ departamentos_conteo }}% en la región {{ formatRegionLabel(depSelected) }}</b></h2> <h2 class="title-resultados">Última actualización: {{ departamentos_hora }}</h2>
       </div>
     </div>
 
@@ -175,6 +186,7 @@
 
   const CONGRESO_TOTAL_SEATS = 130
   const SENADO_TOTAL_SEATS = 60
+  const PLACEHOLDER_LIST_ROWS = 5
   /** Neutral seats when JSON / API has not loaded yet */
   const EMPTY_PARLIAMENT_COLOR = '#ADB5BD'
 
@@ -293,6 +305,17 @@
           }
         }), ['seats'], ['desc'])
       },
+      congresistasPartidoForList() {
+        if (this.congresistas_partido.length) return this.congresistas_partido
+        return Array.from({ length: PLACEHOLDER_LIST_ROWS }, (_, i) => ({
+          partido_id: `${PARLIAMENT_PLACEHOLDER_PARTIDO_ID}-${i + 1}`,
+          partido: '',
+          total_votos_partido: 0,
+          seats: 0,
+          congresistas: [],
+          color: EMPTY_PARLIAMENT_COLOR,
+        }))
+      },
       senadores_partido() {
         if (!this.senadores || !this.senadores.length) return []
         return orderBy(map(groupBy(this.senadores, 'partido_id'), (items, p) => {
@@ -305,6 +328,16 @@
             color: uniq(map(items, 'color')).join('')
           }
         }), ['seats'], ['desc'])
+      },
+      senadoresPartidoForList() {
+        if (this.senadores_partido.length) return this.senadores_partido
+        return Array.from({ length: PLACEHOLDER_LIST_ROWS }, (_, i) => ({
+          partido_id: `${PARLIAMENT_PLACEHOLDER_PARTIDO_ID}-s-${i + 1}`,
+          partido: '',
+          total_votos_partido: 0,
+          seats: 0,
+          color: EMPTY_PARLIAMENT_COLOR,
+        }))
       },
       senadores_parse_60() {
         if (!this.senadores || !this.senadores.length) return []
@@ -354,6 +387,14 @@
     methods: {
       numeral,
       capitalizeWords,
+      isParliamentPlaceholderSeat(d) {
+        return isParliamentPlaceholderSeat(d)
+      },
+      formatRegionLabel(region) {
+        if (!region) return ''
+        if (region === REGION_NACIONAL) return 'Todas las regiones'
+        return capitalizeWords(String(region).replace(/-/g, ' ').toLowerCase())
+      },
       getImagePartido(c) {
         return getPartidoImage(c)
       },

@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-4 pb-0" style="background-color:#dce8ec;">
+  <div class="container py-4 pb-0" style="background-color:#506573;">
     <div class="container" v-if="topCandidatos.length">
 
       <div class="row">
@@ -38,7 +38,7 @@
         </div>
         <div class="col-12">
           <div class="mt-2 mb-0 pb-0">
-            <p class="small text-dark mt-3 mb-0 text-center" style="font-size:0.75rem; opacity:0.8;">
+            <p class="small text-light mt-3 mb-0 text-center" style="font-size:0.75rem; opacity:0.8;">
               Última actualización: {{ fechaHora }} · Datos ONPE, actualizados cada 20 minutos.
             </p>
           </div>

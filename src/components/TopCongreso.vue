@@ -10,22 +10,30 @@
           <div class="col-12">
             <BTabs >
               <BTab :title="`Senadores 2026`">
-                <div :key="eleccion.eleccion" v-for="(eleccion) in candidatos_senado_real">
+                <div :key="eleccion.eleccion" v-for="(eleccion) in candidatos_senado_real_view">
                   <div class="card card-candidate align-self-center p-2 border-top-0">
                     <div class="border-bottom pt-2 pb-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
                       <div class="row">
                         <div class="col-4 col-md-3 col-lg-3 text-center">
+                          <div
+                            v-if="isPlaceholderCandidate(candidato)"
+                            class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                            style="background:#ADB5BD; border-color: #ADB5BD !important;"
+                            role="img"
+                            aria-hidden="true"
+                          />
                           <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                              v-else
                               :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
                         </div>
                         <div class="col-4 col-md-4 col-lg-5 p-0 align-self-center">
                           <div class="tooltip-c">
                             <h4 class="candidato-mapa candidato-partido mt-1">{{ candidato.nombre }}</h4>
-                            <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
+                            <h4 class="partido-mapa"><img v-if="!isPlaceholderCandidate(candidato)" width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
                           </div>
                         </div>
                         <div class="col-4 col-md-4 col-lg-4 align-self-center text-right">
-                          <span :style="`display:block; font-size: 1rem; font-weight: 600; text-align: right;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>
+                          <span :style="`display:block; font-size: 1rem; font-weight: 600; text-align: right;`">{{ numeral(candidato.voto_preferencial || 0).format('0,0') }}</span>
                           <span class="small text-secondary d-block font-weight-light text-right" style="font-size: 10px;">Voto preferencial</span>
                         </div>
                       </div>
@@ -34,20 +42,28 @@
                 </div>
               </BTab>
               <BTab title="Diputados 2026">
-                <div :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso_real">
+                <div :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso_real_view">
                   <div class="card card-candidate align-self-center border-top-0 p-2">
                     <div class="border-bottom pt-2 pb-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
                       <div class="row">
                         <div class="col-4 col-md-3 col-lg-3 text-center">
+                          <div
+                            v-if="isPlaceholderCandidate(candidato)"
+                            class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                            style="background:#ADB5BD; border-color: #ADB5BD !important;"
+                            role="img"
+                            aria-hidden="true"
+                          />
                           <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
+                              v-else
                               :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
                         </div>
                         <div class="col-4 col-md-4 col-lg-5 p-0 align-self-center">
                           <h4 class="candidato-mapa mt-1 candidato-diputado">{{ candidato.nombre }}</h4>
-                          <h4 class="partido-mapa"><img width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
+                          <h4 class="partido-mapa"><img v-if="!isPlaceholderCandidate(candidato)" width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
                         </div>
                         <div class="col-4 col-md-4 col-lg-4 align-self-center text-right">
-                          <span class="congreso-pasado text-right d-block" :style="`font-size:1rem; font-weight: 600;`">{{ numeral(candidato.voto_preferencial).format('0,0') }}</span>
+                          <span class="congreso-pasado text-right d-block" :style="`font-size:1rem; font-weight: 600;`">{{ numeral(candidato.voto_preferencial || 0).format('0,0') }}</span>
                           <span class="small text-secondary d-block font-weight-light text-right" style="font-size: 10px;">Voto preferencial</span>
                         </div>
                       </div>
@@ -121,6 +137,8 @@
   import * as d3 from 'd3'
   import { groupBy, map, orderBy, maxBy, uniq } from 'lodash'
   import votosCongresoData from '../data/top_congresistas.json'
+  const PLACEHOLDER_PREFIX = 'placeholder-top-'
+  const PLACEHOLDER_COLOR = '#ADB5BD'
 
   export default {
     name: 'TopCongreso',
@@ -144,6 +162,9 @@
           .range([0, w])
 
         return myScale(parseFloat(candidato[field]))
+      },
+      isPlaceholderCandidate(candidato) {
+        return String(candidato?.candidato_id || '').startsWith(PLACEHOLDER_PREFIX)
       }
     },
     computed: {
@@ -176,6 +197,34 @@
         const nacional = this.senadores.filter(s => s.senado_tipo === 'nacional')
         const top = orderBy(nacional, ['voto_preferencial'], ['desc']).slice(0, 5)
         return [{ eleccion: '2026', items: top }]
+      },
+      candidatos_senado_real_view() {
+        if (this.candidatos_senado_real.length) return this.candidatos_senado_real
+        return [{
+          eleccion: '2026',
+          items: Array.from({ length: 5 }, (_, i) => ({
+            candidato_id: `${PLACEHOLDER_PREFIX}senado-${i + 1}`,
+            nombre: 'Resultados pendientes',
+            partido_id: 'sin-resultados',
+            partido: 'Información no disponible',
+            color: PLACEHOLDER_COLOR,
+            voto_preferencial: 0,
+          })),
+        }]
+      },
+      candidatos_congreso_real_view() {
+        if (this.candidatos_congreso_real.length) return this.candidatos_congreso_real
+        return [{
+          eleccion: '2026',
+          items: Array.from({ length: 5 }, (_, i) => ({
+            candidato_id: `${PLACEHOLDER_PREFIX}congreso-${i + 1}`,
+            nombre: 'Resultados pendientes',
+            partido_id: 'sin-resultados',
+            partido: 'Información no disponible',
+            color: PLACEHOLDER_COLOR,
+            voto_preferencial: 0,
+          })),
+        }]
       },
       candidatos_congreso() {
         return orderBy(map(groupBy(this.votos_congreso, 'eleccion'), (items, eleccion) => {
