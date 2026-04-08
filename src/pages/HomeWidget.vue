@@ -1,5 +1,5 @@
 <template>
-  <div class="container pb-3 pt-3 mb-3" style="background-color:#506573;">
+  <div class="elecciones-embed-widget container pb-3 pt-3 mb-3">
     <div class="container">
       <div class="row">
         <PresidencialTopThreeCards variant="home" :candidatos="displayTopCandidatos" />

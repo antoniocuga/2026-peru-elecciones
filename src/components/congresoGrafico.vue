@@ -440,12 +440,12 @@
         if (isParliamentPlaceholderSeat(d)) {
           table = tooltipInformacionNoDisponibleHtml()
         } else if (d.senado_tipo) {
-          table = `<h5 class="mb-2 border-bottom pb-2">Senado (${d.region || 'TODAS LAS REGIONES'})</h5>`
+          table = `<h5 class="mb-2 border-bottom pb-2">Senado (${this.formatRegionLabel(d.region || REGION_NACIONAL)})</h5>`
           table += `<h3>${d.nombre}</h3>`
           table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido}</h4>`
           table += `<h4>Voto preferencial: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
         } else {
-          table = `<h5 class="mb-2 border-bottom pb-2">${d.region}</h5>`
+          table = `<h5 class="mb-2 border-bottom pb-2">${this.formatRegionLabel(d.region || REGION_NACIONAL)}</h5>`
           table += `<h3>${d.nombre}</h3>`
           table += `<h4 class="text-light"><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
           table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`

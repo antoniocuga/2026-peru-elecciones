@@ -1975,6 +1975,15 @@
   }
 
 
+/* Presidencial embed shells (HomeWidget, NewWidget); font matches embed HTML Google Fonts link */
+.elecciones-embed-widget {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  background-color: #506573;
+  font-family: "Nunito Sans", sans-serif;
+}
+
 /* Appended to document.body — must be global (embeds may omit .container_app_elecciones2026) */
 #tooltip-congresista.tooltip_congresista,
 #tooltip-congresista.ej2026-congreso-tooltip {
@@ -2044,22 +2053,13 @@
 .contenido-especial-elecciones-2026 .nav-tabs {
   flex-wrap: nowrap;
   overflow-x: auto;
-}
+}  
 
-.block-region-content > div:nth-child(1) > div:nth-child(2) > h2:nth-child(1) {
-  font-family: var(--heading-2-dk-font);
-  font-size: var(--heading-2-dk-font-size);
-  font-weight: var(--heading-2-dk-font-weight);
-  line-height: var(--heading-2-dk-line-height);
-  letter-spacing: 0;
-  padding: 0 15px;
-}
-
-.block-region-content > div:nth-child(1) > div:nth-child(2) {
+.especiales-elecciones-block {
   max-width: 1120px;
   margin: 0 auto;
 }
-.block-region-content > div:nth-child(1) > div:nth-child(2) h1 {
+.especiales-elecciones-block h1 {
     font-family: var(--heading-3-dk-font);
     font-size: var(--heading-3-dk-font-size);
     font-weight: var(--heading-3-dk-font-weight);
@@ -2067,14 +2067,14 @@
     letter-spacing: 0;
     padding: 0 15px;
 }
-.block-region-content > div:nth-child(1) > div:nth-child(2) p {
+.especiales-elecciones-block p {
     padding: 0 15px;
 }
-.block-region-content h2 {
+.especiales-elecciones-block h2 {
     padding: 0 15px;
-    font-family: var(--heading-3-dk-font);
-    font-size: var(--heading-4-dk-font-size);
-    font-weight: var(--heading-3-dk-font-weight);
-    line-height: var(--heading-3-dk-line-height);
+    font-family: var(--heading-2-dk-font);
+    font-size: var(--heading-2-dk-font-size);
+    font-weight: var(--heading-2-dk-font-weight);
+    line-height: var(--heading-2-dk-line-height);
     letter-spacing: 0;
 }

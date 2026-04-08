@@ -23,8 +23,8 @@
               :style="`border-color: ${c.color} !important;`"
               alt="Foto de candidato a la presidencia del Perú"
             />
-            <div class="ml-2 text-dark text-left overflow-hidden">
-              <p class="p-0 candidato-nombre mb-2" :class="{ 'text-light': isPresidentialPlaceholder(c) }">{{ c.candidato }}</p>
+            <div class="ml-2 text-dark text-left">
+              <p class="p-0 candidato-nombre mb-1" :class="{ 'text-light': isPresidentialPlaceholder(c) }">{{ c.candidato }}</p>
               <p class="p-0 partido-nombre mb-0" :class="{ 'text-light': isPresidentialPlaceholder(c) }">
                 <img
                   v-if="!isPresidentialPlaceholder(c)"
@@ -37,15 +37,15 @@
                 {{ isPresidentialPlaceholder(c) ? c.partido : capitalizeWords(c.partido) }}
               </p>
             </div>
-            <div style="min-width: 65px;" class="ml-2 text-light overflow-hidden justify-content-end mr-3">
+            <div style="min-width: 65px; line-height: 0.5em" class="ml-2 text-light overflow-hidden justify-content-end mr-3">
               <div class="d-block text-right align-items-baseline flex-wrap">
-                <span class="porcentaje-top d-block" :style="`font-size: 1rem; color: ${isPresidentialPlaceholder(c) ? WIDGET_PLACEHOLDER_COLOR : c.color}`">
+                <span class="porcentaje-top d-block" :style="`font-size: 1.1rem; color: ${isPresidentialPlaceholder(c) ? WIDGET_PLACEHOLDER_COLOR : c.color}`">
                   {{ c.validos.toFixed(1) }}%
                 </span>
-                <span style="font-size: 0.6rem;" class="votos-top m-0 p-0 d-block">
+                <span style="font-size: 0.7rem;" class="votos-top m-1 p-0 d-block">
                   {{ numeral(c.votos).format('0,0') }}
                 </span>
-                <span style="font-size: 0.6rem;" class="m-0 votos-top d-block text-small small">
+                <span style="font-size: 10px;" class="m-0 votos-top d-block">
                   Votos válidos
                 </span>
               </div>

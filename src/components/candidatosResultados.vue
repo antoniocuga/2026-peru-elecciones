@@ -44,10 +44,7 @@
                     
                     <div class="col-4 col-md-4 col-lg-4 align-self-center text-right">
                       <div>
-                      
-                      <span style="font-size: 0.6rem;"  class="d-block text-right font-weight-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
-                          Validos
-                        </span>
+
                       <span class="text-right" :style="`font-size:1rem; font-weight: 600;`">{{ Number(c.validos || 0).toFixed(2) }}%</span>
 
                       <span style="font-size: 0.8rem;"  class="align-self-end text-right">
@@ -55,7 +52,7 @@
                           {{ numeral(c.votos || 0).format('0,0') }}
                         </span>
                         <span class="d-block text-right text-small badge font-weight-light text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
-                          Votos válidos
+                          Votos
                         </span>
                         <span class="d-block text-right diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos || 0).format('0,0') }} votos</span>
                       </span>   
@@ -135,7 +132,7 @@
           </div>
 
         </BTab>
-        <BTab disabled :title="`Conteo al ${conteo} %`">
+        <BTab disabled :title="`Al ${conteo} % de los votos válidos`">
         </BTab>
       </BTabs>
 

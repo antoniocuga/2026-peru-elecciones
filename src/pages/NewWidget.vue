@@ -1,17 +1,17 @@
 <template>
-  <div class="container py-3 pb-0" style="background-color:#506573;">
-    <div class="container" v-if="topCandidatos.length">
+  <div class="elecciones-embed-widget">
+    <div class="container py-2 pb-0" v-if="topCandidatos.length">
       <div class="row">
         <div class="col-12">
           <div class="pb-1">
-            <p class="small text-light mb-0 text-center" style="font-size:0.75rem; opacity:0.8;">
-              Última actualización: {{ fechaHora }}
+            <p class="small text-light mt-0 mb-0 text-center" style="font-size: 0.75rem; opacity: 0.9">
+              Conteo al {{ conteo }}%. Última actualización: {{ fechaHora }}
             </p>
           </div>
         </div>
         <PresidencialTopThreeCards variant="new" :candidatos="topCandidatos" />
         <div class="col-12">
-          <div class="text-right text-white mt-2 small text-light">Fuente:ONPE</div>
+          <div class="text-end text-white mt-2 small">Fuente: ONPE</div>
         </div>
       </div>
     </div>

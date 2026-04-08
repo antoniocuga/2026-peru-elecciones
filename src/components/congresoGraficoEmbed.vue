@@ -28,6 +28,7 @@
   import { storeToRefs } from 'pinia'
   import { useCandidatosStore } from '../stores/candidatos'
   import { getPartidoImage } from '../utils/assets'
+  import { capitalizeWords } from '../utils/formatText'
   import * as d3 from 'd3'
   import * as parliament from 'd3-parliament-chart'
   import { filter, groupBy, map, orderBy, uniq, sum } from 'lodash'
@@ -126,6 +127,10 @@
     },
     methods: {
       numeral,
+      regionTooltipLabel(region) {
+        if (region == null || region === '') return ''
+        return capitalizeWords(String(region).replace(/-/g, ' ').toLowerCase())
+      },
       getImagePartido(c) {
         return getPartidoImage(c)
       },
@@ -161,11 +166,12 @@
         if (isParliamentPlaceholderSeat(d)) {
           table = tooltipInformacionNoDisponibleHtml()
         } else {
-          table = `<h5 class="mb-2">${d.region}</h5>`
+          const reg = this.regionTooltipLabel(d.region)
+          table = `<h5 class="mb-2">${reg}</h5>`
           table += `<h3>${d.nombre}</h3>`
           table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
           table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
-          table += `<h4>Total de votos de la agrupación en ${d.region}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
+          table += `<h4>Total de votos de la agrupación en ${reg}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
         }
 
         tooltip.html(table)
