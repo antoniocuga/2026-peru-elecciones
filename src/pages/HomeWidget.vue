@@ -47,7 +47,7 @@
                     {{ numeral(c.votos).format('0,0') }} 
                   </span>
                   <span style="font-size: 0.6rem;" class="votos-top ml-1 d-block text-small small">
-                    votos
+                    Votos válidos
                   </span>
                 </div>
               </div>
@@ -61,7 +61,7 @@
 
             <div class="widget-parliament-row">
               <div class="widget-parliament-label small text-light fw-semibold mb-1">
-              Cámara de senadores <span class="text-light fw-normal">({{ widgetSenadoTotal }})</span>
+              Senadores <span class="text-light fw-normal">({{ widgetSenadoTotal }})</span>
               </div>
               <div
                 class="stacked-bar"
@@ -88,7 +88,7 @@
 
             <div class="widget-parliament-row mb-2 mb-md-0">
               <div class="widget-parliament-label small text-light fw-semibold mb-1">
-                Cámara de diputados <span class="text-light fw-normal">({{ widgetCongresoTotal }})</span>
+                Diputados <span class="text-light fw-normal">({{ widgetCongresoTotal }})</span>
               </div>
               <div
                 class="stacked-bar"
@@ -118,7 +118,7 @@
                 class="btn btn-light btn-sm"
                 href="https://dev.ojo-publico.com/6133/elecciones-presidenciales-y-legislativas-peru"
               >
-                <strong>Ver todos los resultados</strong>
+                <strong>Ver los resultados</strong>
               </a>
             </div>
 
