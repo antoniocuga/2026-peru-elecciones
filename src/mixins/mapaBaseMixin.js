@@ -579,7 +579,7 @@ export const mapaBaseMixin = {
             const borderColor = dp.color || '#6c757d'
             candidatos += `
               <div class="tooltip-content row mt-2 pb-1 border-bottom">
-                <div class="col-3"><div><img class="rounded-circle border border-3 flex-shrink-0 img-candidato" width="40px" height="40px" style="border-color: ${borderColor} !important; object-fit: cover;" src="${this.getImageCandidate(dp.candidato_id)}" alt="" /></div></div>
+                <div class="col-3"><div><img style="min-width: 40px; min-height: 40px;" class="rounded-circle border border-3 flex-shrink-0 img-candidato" width="40px" height="40px" style="border-color: ${borderColor} !important; object-fit: cover;" src="${this.getImageCandidate(dp.candidato_id)}" alt="" /></div></div>
                 <div class="col-5 pr-0">
                   <div class="candidato-mapa"><b>${dp.candidato}</b></div>
                   <div class="partido-mapa"><img width="25px" src="${this.getImagePartido(dp.partido_id)}" />${dp.partido}</div>

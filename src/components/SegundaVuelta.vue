@@ -18,11 +18,13 @@
                       class="sv-nota-tip__trigger text-secondary ms-1 align-middle lh-1 d-inline-flex"
                       :aria-describedby="notaTipVisible ? notaTipDomId : undefined"
                       :aria-label="segundaVueltaNotaAria(eleccion)"
-                      @click.stop
-                      @mouseenter="showNotaTip($event, eleccion)"
-                      @mouseleave="scheduleHideNotaTip"
-                      @focusin="showNotaTip($event, eleccion)"
-                      @focusout="scheduleHideNotaTip"
+                      @click.stop.prevent="toggleNotaTip($event, eleccion)"
+                      @mouseenter="openNotaTip($event, eleccion)"
+                      @mouseleave="closeNotaTip"
+                      @focusin="openNotaTip($event, eleccion)"
+                      @focusout="closeNotaTip"
+                      @keydown.enter.prevent="toggleNotaTip($event, eleccion)"
+                      @keydown.space.prevent="toggleNotaTip($event, eleccion)"
                     >
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ml-3 bi bi-info-circle" viewBox="0 0 16 16" aria-hidden="true">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
@@ -141,8 +143,6 @@
         class="segunda-vuelta-nota-tooltip"
         :style="notaTipStyle"
         role="tooltip"
-        @mouseenter="cancelNotaTipHide"
-        @mouseleave="hideNotaTipNow"
       >
         {{ notaTipText }}
       </div>
@@ -160,8 +160,6 @@
   import SegundaVueltaLiveCard from './SegundaVueltaLiveCard.vue'
 
   let segundaVueltaNotaTipSeq = 0
-  const NOTA_TIP_SHOW_MS = 48
-  const NOTA_TIP_HIDE_BRIDGE_MS = 100
 
   export default {
     name: 'SegundaVuelta',
@@ -179,74 +177,63 @@
         notaTipVisible: false,
         notaTipText: '',
         notaTipStyle: {},
-        notaTipShowTimer: null,
-        notaTipHideTimer: null,
+        notaTipActiveKey: null,
       }
     },
     mounted() {
       this._onNotaTipEsc = (e) => {
-        if (e.key === 'Escape') this.hideNotaTipNow()
+        if (e.key === 'Escape') this.closeNotaTip()
       }
       document.addEventListener('keydown', this._onNotaTipEsc)
     },
     beforeUnmount() {
       document.removeEventListener('keydown', this._onNotaTipEsc)
-      clearTimeout(this.notaTipShowTimer)
-      clearTimeout(this.notaTipHideTimer)
-      this.hideNotaTipNow()
+      this.closeNotaTip()
     },
     methods: {
       numeral,
-      cancelNotaTipHide() {
-        clearTimeout(this.notaTipHideTimer)
-        this.notaTipHideTimer = null
+      positionNotaTip(triggerEl) {
+        const r = triggerEl.getBoundingClientRect()
+        const maxW = 320
+        const pad = 12
+        let left = r.left + r.width / 2 - maxW / 2
+        left = Math.max(pad, Math.min(left, window.innerWidth - maxW - pad))
+        this.notaTipStyle = {
+          position: 'fixed',
+          left: `${left}px`,
+          top: `${r.bottom + 8}px`,
+          maxWidth: `${maxW}px`,
+          zIndex: 10800,
+        }
+        this.$nextTick(() => {
+          const tip = this.$refs.notaTipEl
+          if (!tip) return
+          const tr = tip.getBoundingClientRect()
+          let top = r.bottom + 8
+          if (tr.bottom > window.innerHeight - pad) top = r.top - tr.height - 8
+          top = Math.max(pad, top)
+          this.notaTipStyle = { ...this.notaTipStyle, top: `${top}px` }
+        })
       },
-      showNotaTip(evt, eleccion) {
+      openNotaTip(evt, eleccion) {
         const text = this.segundaVueltaNotaText(eleccion)
         if (!text) return
-        clearTimeout(this.notaTipShowTimer)
-        clearTimeout(this.notaTipHideTimer)
-        this.notaTipHideTimer = null
-        this.notaTipShowTimer = setTimeout(() => {
-          const el = evt.currentTarget
-          const r = el.getBoundingClientRect()
-          const maxW = 360
-          const pad = 12
-          let left = r.left + r.width / 2 - maxW / 2
-          left = Math.max(pad, Math.min(left, window.innerWidth - maxW - pad))
-          this.notaTipText = text
-          this.notaTipStyle = {
-            position: 'fixed',
-            left: `${left}px`,
-            top: `${r.bottom + 8}px`,
-            maxWidth: `${maxW}px`,
-            zIndex: 10800,
-          }
-          this.notaTipVisible = true
-          this.$nextTick(() => {
-            const tip = this.$refs.notaTipEl
-            if (!tip) return
-            const tr = tip.getBoundingClientRect()
-            let top = r.bottom + 8
-            if (tr.bottom > window.innerHeight - pad) {
-              top = r.top - tr.height - 8
-            }
-            top = Math.max(pad, top)
-            this.notaTipStyle = { ...this.notaTipStyle, top: `${top}px` }
-          })
-        }, NOTA_TIP_SHOW_MS)
+        this.notaTipText = text
+        this.notaTipActiveKey = eleccion.eleccion
+        this.notaTipVisible = true
+        this.positionNotaTip(evt.currentTarget)
       },
-      scheduleHideNotaTip() {
-        this.cancelNotaTipHide()
-        this.notaTipHideTimer = setTimeout(() => {
-          this.hideNotaTipNow()
-        }, NOTA_TIP_HIDE_BRIDGE_MS)
+      toggleNotaTip(evt, eleccion) {
+        if (this.notaTipVisible && this.notaTipActiveKey === eleccion.eleccion) {
+          this.closeNotaTip()
+          return
+        }
+        this.openNotaTip(evt, eleccion)
       },
-      hideNotaTipNow() {
-        clearTimeout(this.notaTipShowTimer)
-        this.cancelNotaTipHide()
+      closeNotaTip() {
         this.notaTipVisible = false
         this.notaTipText = ''
+        this.notaTipActiveKey = null
       },
       /** Nota may live on any `segunda_vuelta` row (e.g. a stub row with only `nota`, not necessarily [0]). */
       segundaVueltaNotaText(eleccion) {
@@ -311,27 +298,19 @@
 
 </script>
 
-<style scoped>
-.sv-nota-tip__trigger {
-  cursor: help;
-  outline-offset: 2px;
-}
-</style>
-
-<style>
-/* Teleport → body: scoped attrs don’t apply; unique class avoids clashes. */
+<style> 
 .segunda-vuelta-nota-tooltip {
   box-sizing: border-box;
   padding: 0.65rem 0.85rem;
-  font-size: 0.8125rem;
+  font-size: 0.8rem;
   line-height: 1.45;
-  color: #fff;
-  background: #212529;
+  color: #000;
+  background:rgb(255, 255, 255);
   border-radius: 6px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
   max-height: min(50vh, 280px);
   overflow-y: auto;
-  pointer-events: auto;
+  pointer-events: none;
   white-space: pre-wrap;
 }
 </style>

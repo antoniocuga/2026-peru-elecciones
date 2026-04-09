@@ -11,7 +11,7 @@
         </div>
         <PresidencialTopThreeCards variant="new" :candidatos="topCandidatos" />
         <div class="col-12">
-          <div class="text-end text-white mt-2 small">Fuente: ONPE</div>
+          <div class="text-right text-white mt-2 small">Fuente: ONPE</div>
         </div>
       </div>
     </div>

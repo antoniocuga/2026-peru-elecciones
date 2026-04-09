@@ -2,6 +2,13 @@
   <div class="elecciones-embed-widget container pb-3 pt-3 mb-3">
     <div class="container">
       <div class="row">
+        <div class="col-12">
+          <div class="p-0">
+            <p class="small text-light mt-0 mb-0 text-center" style="font-size: 0.75rem; opacity: 0.9">
+              Conteo al {{ conteo }}%. Última actualización: {{ fechaHora }}
+            </p>
+          </div>
+        </div>
         <PresidencialTopThreeCards variant="home" :candidatos="displayTopCandidatos" />
         <div class="col-12">
           <WidgetParliamentSummary :congresistas="congresistas" :senadores="senadores" />

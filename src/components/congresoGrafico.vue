@@ -250,11 +250,10 @@
         svgSizeSenadoMobile: { width: 320, height: 200 },
         svgSizeCongresoMobile: { width: 320, height: 220 },
         tabTooltipSenado:
-          'Escaños y votos totales por agrupación en el Senado (60 curules). Pasa el cursor sobre el semicírculo exterior para resaltar a cada partido.',
+          '',
       }
     },
     computed: {
-      /** Curules de congreso mostrados en el título (nacional = total en datos; regional = escaños de la región). */
       headingCongresoSeats() {
         if (this.depSelected === REGION_NACIONAL) {
           return this.congresistas?.length ? this.congresistas.length : CONGRESO_TOTAL_SEATS
@@ -267,10 +266,7 @@
        * en los datos con esa región.
        */
       headingSenadoSeats() {
-        if (this.depSelected === REGION_NACIONAL || !this.senadores?.length) {
-          return 60
-        }
-        return filter(this.senadores, ['region', this.depSelected]).length
+        return SENADO_TOTAL_SEATS
       },
       departamentos_conteo() {
         if (this.depSelected !== REGION_NACIONAL)
@@ -331,7 +327,7 @@
             seats: items.length,
             color: uniq(map(items, 'color')).join('')
           }
-        }), ['seats'], ['desc'])
+        }), ['partido', 'partido_id'], ['asc', 'asc'])
       },
       senadoresPartidoForList() {
         if (this.senadores_partido.length) return this.senadores_partido
@@ -343,17 +339,24 @@
           color: EMPTY_PARLIAMENT_COLOR,
         }))
       },
+      /** Por partido (nombre + partido_id). Dentro del partido: voto preferencial y candidato_id — sin usar senado_tipo (ordenar por candidato_id mezcla nacional/regional por el prefijo en el id). */
       senadores_parse_60() {
         if (!this.senadores || !this.senadores.length) return []
-        const all = orderBy(
-          [...this.senadores],
-          ['partido_id', 'voto_preferencial'],
-          ['asc', 'desc']
+        const grouped = groupBy(this.senadores, 'partido_id')
+        const byParty = orderBy(
+          map(grouped, (items, partido_id) => ({
+            partido_id,
+            partido: uniq(map(items, 'partido')).join(''),
+            items: orderBy(items, ['voto_preferencial', 'candidato_id'], ['desc', 'asc']),
+          })),
+          ['partido', 'partido_id'],
+          ['asc', 'asc']
         )
+        const all = byParty.flatMap((g) => g.items)
         const n = all.length
-        if (n >= 60) return all.slice(0, 60)
+        if (n >= SENADO_TOTAL_SEATS) return all.slice(0, SENADO_TOTAL_SEATS)
         const repeated = []
-        for (let i = 0; i < 60; i++) {
+        for (let i = 0; i < SENADO_TOTAL_SEATS; i++) {
           repeated.push({ ...all[i % n], _idx: i })
         }
         return repeated
@@ -567,7 +570,7 @@
         d3.selectAll('.svg-congreso circle')
           .attr("class", function (d) {
             if (d.senado_tipo) {
-              return `active seat-senado ${(d.region || '').toString().replace(/\s/g, '-').toLowerCase()} ${d.partido_id}`
+              return `active seat-senado ${d.partido_id}`
             }
             const _r = (d.region || '').replace(/\s/g, '-').toLowerCase()
             return `active seat-congreso ${_r} ${d.partido_id}`

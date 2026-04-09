@@ -19,7 +19,8 @@ export const CONGRESO_CHART_LAYOUT = {
   /** Shared base gap for congreso sectionGap; senado adds senadoExtraGap */
   baseSectionGap: 5,
   senado: {
-    sections: 3,
+    /** One continuous arc: data index matches angular order. Multiple sections merge wedges and sort by angle, breaking party adjacency. */
+    sections: 1,
     /** added to baseSectionGap for outer ring */
     sectionGapExtra: 14,
     radius: {

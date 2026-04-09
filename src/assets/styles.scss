@@ -484,6 +484,14 @@
       }
     }
 
+    /* Senado: curules sin-highlight deben seguir viéndose (p. ej. vacantes grises + hover por partido). */
+    .svg-congreso circle.seat-senado {
+      opacity: 0.5;
+      &.active {
+        opacity: 1;
+      }
+    }
+
     .filters-congreso {
       background: #00000021;
       .dropdown-menu.show {
@@ -2044,6 +2052,15 @@
   max-width: 1120px;
   margin: 0 auto;
   font-family: "Nunito Sans", sans-serif;
+}
+
+.contenido-especial-elecciones-2026 h2 {
+  font-family: var(--heading-4-dk-font);
+  font-size: var(--heading-4-dk-font-size);
+  font-weight: var(--heading-4-dk-font-weight);
+  line-height: var(--heading-4-dk-line-height);
+  letter-spacing: 0;
+  padding: 0 15px;
 }
 
 .contenido-especial-elecciones-2026 .nav-tabs .nav-link {

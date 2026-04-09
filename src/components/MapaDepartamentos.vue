@@ -6,7 +6,7 @@
         <div class="filter-block">
           <DropdownBs4
             :text="partidoSeleccionado.partido"
-            variant="secondary"
+            variant="light"
             :wrapperClass="['d-inline-block', 'm-2', 'departamento-menu']"
           >
             <template #default="{ close }">
@@ -24,7 +24,7 @@
       
           <DropdownBs4
             :text="regionSeleccionada.departamento"
-            variant="secondary"
+            variant="light"
             :wrapperClass="['d-inline-block', 'm-2', 'departamento-menu']"
           >
             <template #default="{ close }">
