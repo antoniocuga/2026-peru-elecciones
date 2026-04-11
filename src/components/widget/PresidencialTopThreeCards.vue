@@ -1,18 +1,18 @@
 <template>
   <template v-for="(c, i) in candidatos" :key="c.candidato_id">
-    <div class="col-12 col-md-4 p-1">
+    <div class="col-12 col-md-4 p-1 ej2026-pres-top-card-wrap">
       
         <div
-          class="card card-candidate border-1"
+          class="ej2026-embed-card card card-candidate border-1 ej2026-pres-top-card"
           :class="[
             i === 0 ? 'custom-rounded-left  border-right' : i === 2 ? 'custom-rounded-right  border-left' : '',
-            { 'home-widget__card--waiting': isPresidentialPlaceholder(c) },
+            { 'home-widget__card--waiting ej2026-pres-top-card--placeholder': isPresidentialPlaceholder(c) },
           ]"
         >
-          <div class="card-body d-flex align-items-center justify-content-between p-2">
+          <div class="card-body d-flex align-items-center justify-content-between p-2 ej2026-pres-card-body">
             <div
               v-if="isPresidentialPlaceholder(c)"
-              class="home-widget__avatar-placeholder rounded-circle border border-2 flex-shrink-0"
+              class="home-widget__avatar-placeholder ej2026-pres-avatar-ph rounded-circle border border-2 flex-shrink-0"
               role="img"
               aria-hidden="true"
             />
@@ -23,9 +23,15 @@
               :style="`border-color: ${c.color} !important;`"
               alt="Foto de candidato a la presidencia del Perú"
             />
-            <div class="ml-2 text-dark text-left">
-              <p class="p-0 candidato-nombre mb-1" :class="{ 'text-light': isPresidentialPlaceholder(c) }">{{ c.candidato }}</p>
-              <p class="p-0 partido-nombre mb-0" :class="{ 'text-light': isPresidentialPlaceholder(c) }">
+            <div class="ml-2 text-dark text-left ej2026-pres-copy">
+              <p
+                class="p-0 candidato-nombre mb-1 ej2026-pres-line"
+                :class="{ 'text-light ej2026-pres-line--placeholder': isPresidentialPlaceholder(c) }"
+              >{{ c.candidato }}</p>
+              <p
+                class="p-0 partido-nombre mb-0 ej2026-pres-line"
+                :class="{ 'text-light ej2026-pres-line--placeholder': isPresidentialPlaceholder(c) }"
+              >
                 <img
                   v-if="!isPresidentialPlaceholder(c)"
                   width="20"
@@ -37,9 +43,16 @@
                 {{ isPresidentialPlaceholder(c) ? c.partido : capitalizeWords(c.partido) }}
               </p>
             </div>
-            <div style="min-width: 65px; line-height: 0.5em" class="ml-2 text-light overflow-hidden justify-content-end mr-3">
+            <div
+              style="min-width: 65px; line-height: 0.5em"
+              class="ml-2 text-light overflow-hidden justify-content-end mr-3 ej2026-pres-stats"
+              :class="{ 'ej2026-pres-stats--placeholder': isPresidentialPlaceholder(c) }"
+            >
               <div class="d-block text-right align-items-baseline flex-wrap">
-                <span class="porcentaje-top d-block" :style="`font-size: 1.1rem; color: ${isPresidentialPlaceholder(c) ? WIDGET_PLACEHOLDER_COLOR : c.color}`">
+                <span
+                  class="porcentaje-top d-block ej2026-pres-pct"
+                  :style="`font-size: 1.1rem; color: ${isPresidentialPlaceholder(c) ? WIDGET_PLACEHOLDER_COLOR : c.color}`"
+                >
                   {{ c.validos.toFixed(1) }}%
                 </span>
                 <span style="font-size: 0.7rem;" class="votos-top m-1 p-0 d-block">

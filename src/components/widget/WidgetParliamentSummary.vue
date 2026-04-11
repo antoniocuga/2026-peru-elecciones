@@ -1,5 +1,5 @@
 <template>
-  <div class="widget-parliament-summary mt-3 px-0 px-sm-1">
+  <div class="widget-parliament-summary ej2026-parliament-widget mt-3 px-0 px-sm-1">
     <div class="widget-parliament-row">
       <div class="widget-parliament-label small text-light fw-semibold mb-1">
         Senadores <span class="text-light fw-normal">({{ widgetSenadoTotal }})</span>
@@ -83,7 +83,7 @@ import {
 } from '../../utils/presidencialWidget'
 
 const DEFAULT_CTA_HREF =
-  'https://dev.ojo-publico.com/6133/elecciones-presidenciales-y-legislativas-peru'
+  'https://ojo-publico.com/6202/especial-elecciones-2026?ref=home'
 
 export default {
   name: 'WidgetParliamentSummary',
@@ -143,12 +143,12 @@ export default {
         el.innerHTML = tooltipInformacionNoDisponibleHtml()
       } else {
         const chamberLabel =
-          chamber === 'senado' ? 'Senado' : 'Cámara de diputados'
+          chamber === 'senado' ? 'Senadores' : 'Diputados'
         const logoSrc = this.getImagePartido(p.partido_id)
         const partyEsc = escapeHtml(capitalizeWords(p.partido))
         const seats = Number(p.seats) || 0
         el.innerHTML = `
-        <h5 class="mb-2">${chamberLabel}</h5>
+        <h6 class="border-botom mb-2 small">${chamberLabel}</h6>
         <h3>${partyEsc}</h3>
         <h4><img width="35" src="${logoSrc}" alt="" /> ${seats} escaños</h4>
       `

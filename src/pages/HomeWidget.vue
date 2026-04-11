@@ -1,5 +1,5 @@
 <template>
-  <div class="elecciones-embed-widget container pb-3 pt-3 mb-3">
+  <div class="elecciones-embed-widget ej2026-embed-scope container pb-3 pt-3 mb-3">
     <div class="container">
       <div class="row">
         <div class="col-12">

@@ -1,6 +1,6 @@
 <template>
-  <div class="elecciones-embed-widget">
-    <div class="container py-2 pb-0" v-if="topCandidatos.length">
+  <div class="elecciones-embed-widget ej2026-embed-scope">
+    <div class="container py-2 pb-0">
       <div class="row">
         <div class="col-12">
           <div class="pb-1">
@@ -9,7 +9,7 @@
             </p>
           </div>
         </div>
-        <PresidencialTopThreeCards variant="new" :candidatos="topCandidatos" />
+        <PresidencialTopThreeCards variant="home" :candidatos="displayTopCandidatos" />
         <div class="col-12">
           <div class="text-right text-white mt-2 small">Fuente: ONPE</div>
         </div>
@@ -26,6 +26,7 @@ import {
   computeTopCandidatos,
   computeConteoFromTop,
   computeFechaHoraFromTop,
+  displayTopCandidatosWithPlaceholders,
 } from '../utils/presidencialWidget'
 
 export default {
@@ -50,6 +51,9 @@ export default {
     },
     topCandidatos() {
       return computeTopCandidatos(this.candidatos)
+    },
+    displayTopCandidatos() {
+      return displayTopCandidatosWithPlaceholders(this.topCandidatos)
     },
   },
 }

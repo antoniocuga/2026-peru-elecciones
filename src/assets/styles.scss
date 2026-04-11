@@ -499,6 +499,34 @@
         overflow-y: auto;
       }
     }
+
+    /* Party logo column: do not use `.img-candidato` on this cell — under `.candidate-info` global rules hide it <576px and shrink width */
+    .congreso-grafico__partido-col {
+      flex-shrink: 0;
+    }
+
+    .congreso-grafico__partido-img {
+      width: 65px;
+      height: 65px;
+      object-fit: contain;
+      display: block;
+      border-radius: 0;
+    }
+
+    /* Square slot like party logos (not candidate avatars) */
+    .congreso-grafico__party-placeholder {
+      width: 65px;
+      height: 65px;
+      min-width: 65px;
+      min-height: 65px;
+      max-width: 65px;
+      max-height: 65px;
+      box-sizing: border-box;
+      flex-shrink: 0;
+      border-radius: 0;
+      background-color: #adb5bd;
+      border-color: #adb5bd !important;
+    }
   }
 
   .tooltip_congresista {
@@ -783,7 +811,7 @@
       top: 0;
       right: 15px;
       width: 300px;
-      z-index: 999;
+      z-index: 99;
       pointer-events: none;
 
       button {
@@ -1992,6 +2020,213 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+/**
+ * WordPress / host isolation: namespaced hooks + !important on placeholders so theme
+ * rules (entry-content p, .card, img, etc.) do not break the embed.
+ */
+.elecciones-embed-widget.ej2026-embed-scope {
+  isolation: isolate;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /**
+   * Host themes often ship `.card { … }` / `.entry-content .card` with higher
+   * specificity than Bootstrap alone. This block re-asserts our layout + skin
+   * on the namespaced hook `.ej2026-embed-card` inside the embed only.
+   */
+  .ej2026-embed-card.card,
+  .ej2026-embed-card.card-candidate {
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #fff !important;
+    background-clip: border-box !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+    /* Per-corner defaults (same idea as .card-candidate); custom-rounded-* overrides below */
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    font-family: "Nunito Sans", sans-serif !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: #212529 !important;
+    text-align: left !important;
+    word-wrap: break-word !important;
+  }
+
+  /* Match .resultados2026 .custom-rounded-* (embed is outside that wrapper) */
+  .ej2026-embed-card.card.custom-rounded-left,
+  .ej2026-embed-card.card-candidate.custom-rounded-left {
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+  }
+
+  .ej2026-embed-card.card.custom-rounded-right,
+  .ej2026-embed-card.card-candidate.custom-rounded-right {
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+  }
+
+  @media screen and (max-width: 740px) {
+    .ej2026-embed-card.card.custom-rounded-left,
+    .ej2026-embed-card.card-candidate.custom-rounded-left {
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
+
+    .ej2026-embed-card.card.custom-rounded-right,
+    .ej2026-embed-card.card-candidate.custom-rounded-right {
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+  }
+
+  .ej2026-embed-card.card .card-body,
+  .ej2026-embed-card.card-candidate .card-body {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0.5rem !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: inherit !important;
+  }
+
+  .ej2026-embed-card .candidato-nombre:not(.ej2026-pres-line--placeholder) {
+    color: #212529 !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .ej2026-embed-card .partido-nombre:not(.ej2026-pres-line--placeholder) {
+    color: #666 !important;
+    font-size: 0.75rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .ej2026-embed-card img.img-candidato {
+    width: 75px !important;
+    height: 75px !important;
+    max-width: 75px !important;
+    object-fit: cover !important;
+    flex-shrink: 0 !important;
+    vertical-align: middle !important;
+  }
+
+  .ej2026-embed-card img.partido-icon {
+    width: 20px !important;
+    height: 20px !important;
+    max-width: 20px !important;
+    object-fit: cover !important;
+    flex-shrink: 0 !important;
+    margin-right: 5px !important;
+    vertical-align: middle !important;
+  }
+
+  .ej2026-embed-card.card.ej2026-pres-top-card--placeholder,
+  .ej2026-embed-card.card-candidate.ej2026-pres-top-card--placeholder {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.22) !important;
+    box-shadow: none !important;
+    color: rgba(255, 255, 255, 0.98) !important;
+  }
+
+  .ej2026-pres-avatar-ph,
+  .home-widget__avatar-placeholder.ej2026-pres-avatar-ph {
+    display: block !important;
+    width: 56px !important;
+    height: 56px !important;
+    min-width: 56px !important;
+    max-width: 56px !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #adb5bd !important;
+    background-image: none !important;
+    border: 2px solid rgba(255, 255, 255, 0.45) !important;
+    border-radius: 50% !important;
+    box-shadow: none !important;
+    object-fit: none !important;
+  }
+
+  p.ej2026-pres-line.ej2026-pres-line--placeholder,
+  .ej2026-pres-copy p.ej2026-pres-line--placeholder {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Nunito Sans", sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+  }
+
+  p.ej2026-pres-line.ej2026-pres-line--placeholder.candidato-nombre {
+    font-size: 1rem !important;
+  }
+
+  p.ej2026-pres-line.ej2026-pres-line--placeholder.partido-nombre {
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    margin-top: 0.25rem !important;
+    opacity: 1 !important;
+  }
+
+  .ej2026-pres-stats--placeholder .ej2026-pres-pct,
+  .ej2026-pres-stats--placeholder .porcentaje-top {
+    font-family: "Nunito Sans", sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+  }
+
+  .ej2026-pres-stats--placeholder .votos-top {
+    font-family: "Nunito Sans", sans-serif !important;
+    color: rgba(255, 255, 255, 0.88) !important;
+    opacity: 1 !important;
+  }
+
+  .ej2026-parliament-widget .widget-parliament-label {
+    font-family: "Nunito Sans", sans-serif !important;
+    color: rgba(255, 255, 255, 0.92) !important;
+  }
+
+  .ej2026-parliament-widget .stacked-bar--waiting {
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    opacity: 1 !important;
+  }
+
+  .ej2026-parliament-widget .stacked-bar--waiting .stacked-bar__seg {
+    min-height: 20px;
+  }
+
+  .ej2026-parliament-widget .stacked-bar__num {
+    font-family: "Nunito Sans", sans-serif !important;
+  }
+
+  .ej2026-parliament-widget .widget-parliament-cta .btn {
+    font-family: "Nunito Sans", sans-serif !important;
+    border-radius: 0.25rem !important;
+  }
+}
+
 /* Appended to document.body — must be global (embeds may omit .container_app_elecciones2026) */
 #tooltip-congresista.tooltip_congresista,
 #tooltip-congresista.ej2026-congreso-tooltip {
@@ -2029,6 +2264,29 @@
     font-size: 16px;
     font-weight: 400;
   }
+}
+
+/* SegundaVuelta.vue — Teleport to body; outside .resultados2026 so needs global + !important vs themes */
+.segunda-vuelta-nota-tooltip[role="tooltip"] {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 12px 14px !important;
+  background: rgba(255, 255, 255, 0.96) !important;
+  background-clip: padding-box !important;
+  color: #212529 !important;
+  font-family: "Nunito Sans", sans-serif !important;
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+  line-height: 1.45 !important;
+  text-align: left !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-radius: 6px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12) !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  pointer-events: none !important;
 }
 
 /* Floating tooltips (maps, senado sunburst, BS5): never steal hover from underlying targets */
@@ -2069,7 +2327,6 @@
 
 .contenido-especial-elecciones-2026 .nav-tabs {
   flex-wrap: nowrap;
-  overflow-x: auto;
 }  
 
 .especiales-elecciones-block {

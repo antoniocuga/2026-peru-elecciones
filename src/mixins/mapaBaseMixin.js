@@ -136,12 +136,13 @@ export const mapaBaseMixin = {
       return getPerugeo()
     },
     partidos() {
-      return orderBy(map(groupBy(this.candidatos, 'partido_id'), (item, partido_id) => ({
+      const rows = map(groupBy(this.candidatos, 'partido_id'), (item, partido_id) => ({
         partido_id,
         partido: uniq(map(item, 'partido')).join(''),
         color: uniq(map(item, 'color')).join(''),
         departamentos: groupBy(item, 'region'),
-      })), ['departamento'])
+      }))
+      return orderBy(rows, [(p) => String(p.partido || '').toLocaleLowerCase('es')], ['asc'])
     },
     distritos_parse() {
       let filtered = this.distritos
@@ -185,7 +186,7 @@ export const mapaBaseMixin = {
     },
     departamentos_parse() {
       const filtered = filter(this.lista_candidatos, c => c.partido_id === this.partidoSeleccionado.partido_id)
-      return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
+      const rows = map(groupBy(filtered, 'region'), (item, region) => {
         const _r = region.replace(/ /g, '-')
         return {
           region: _r,
@@ -195,11 +196,12 @@ export const mapaBaseMixin = {
           geodata: region !== 'total' ? getMapaData(_r) : {},
           winner: maxBy(item, 'validos'),
         }
-      }), ['departamento'])
+      })
+      return orderBy(rows, [(d) => String(d.departamento || '').toLocaleLowerCase('es')], ['asc'])
     },
     departamentos() {
       const filtered = filter(this.candidatos, c => c.candidato_id !== '' && c.region !== 'total')
-      return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
+      const rows = map(groupBy(filtered, 'region'), (item, region) => {
         const _r = region.replace(/ /g, '-')
         return {
           region: _r,
@@ -209,7 +211,8 @@ export const mapaBaseMixin = {
           geodata: getMapaData(_r),
           winner: maxBy(item, 'validos'),
         }
-      }), ['departamento'])
+      })
+      return orderBy(rows, [(d) => String(d.departamento || '').toLocaleLowerCase('es')], ['asc'])
     },
     projection() {
       return geoMercator()

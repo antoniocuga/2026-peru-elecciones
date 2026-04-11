@@ -132,7 +132,7 @@
         "color": "#ff484ccc"
     },
     {
-        "eleccion_tipo": "Segunda Vuelta",
+        "eleccion_tipo": "Segunda vuelta",
         "candidato": "Pedro Castillo",
         "candidato_id": "pedro-castillo",
         "partido": "Perú Libre",
@@ -146,7 +146,7 @@
         "ganador": true 
     },
     {
-        "eleccion_tipo": "Segunda Vuelta",
+        "eleccion_tipo": "Segunda vuelta",
         "candidato": "Keiko Fujimori",
         "candidato_id": "keiko-fujimori",
         "partido": "Fuerza Popular",
@@ -159,7 +159,7 @@
         
     },
     {
-        "eleccion_tipo": "Segunda Vuelta",
+        "eleccion_tipo": "Segunda vuelta",
         "candidato": "Pedro Pablo Kuczynski",
         "candidato_id" : "pedro-pablo-kucynski",
         "partido": "Peruanos por el Kambio",
@@ -174,7 +174,7 @@
 
     },
     {
-        "eleccion_tipo": "Segunda Vuelta",
+        "eleccion_tipo": "Segunda vuelta",
         "candidato": "Keiko Fujimori",
         "candidato_id": "keiko-fujimori",
         "partido": "Fuerza Popular",
@@ -186,7 +186,7 @@
         "color": "#fd6600cc"        
     },
     {
-        "eleccion_tipo": "Segunda Vuelta",
+        "eleccion_tipo": "Segunda vuelta",
         "candidato": "Ollanta Humala",
         "candidato_id": "ollanta-humala",
         "partido": "Gana Perú",
@@ -201,7 +201,7 @@
         
     },
     {
-        "eleccion_tipo": "Segunda Vuelta",
+        "eleccion_tipo": "Segunda vuelta",
         "candidato": "Keiko Fujimori",
         "candidato_id": "keiko-fujimori",
         "partido": "Fuerza 2011",
@@ -213,7 +213,7 @@
         "color": "#fd6600cc"
     },
     {
-        "eleccion_tipo": "Segunda Vuelta",
+        "eleccion_tipo": "Segunda vuelta",
         "candidato": "Alan García",
         "candidato_id": "alan-garcia",
         "partido": "Partido Aprista Peruano",
@@ -227,7 +227,7 @@
         "ganador": true
     },
     {
-        "eleccion_tipo": "Segunda Vuelta",
+        "eleccion_tipo": "Segunda vuelta",
         "candidato": "Ollanta Humala",
         "candidato_id": "ollanta-humala",
         "partido": "Unión por el Perú",
@@ -240,7 +240,7 @@
         "diferencia": "772400"
     },
     {
-        "eleccion_tipo": "Segunda Vuelta",
+        "eleccion_tipo": "Segunda vuelta",
         "candidato": "Alejandro Toledo",
         "candidato_id": "alejandro-toledo",
         "partido": "Perú Posible",
@@ -254,7 +254,7 @@
         "ganador": true
     },
     {
-        "eleccion_tipo": "Segunda Vuelta",
+        "eleccion_tipo": "Segunda vuelta",
         "candidato": "Alan García",
         "candidato_id": "alan-garcia",
         "partido": "Partido Aprista Peruano",
@@ -273,8 +273,8 @@
         "partido_id": "peru-2000",
         "eleccion": 2000,
         "puesto": "1",
-        "total_votos": "6041685",
-        "validos": "74.30",
+        "total_votos": "5525568",
+        "validos": "49.9",
         "color": "#eb1c24cc",
         "diferencia": "+1067673",
         "ganador": true
@@ -288,13 +288,34 @@
         "eleccion": 2000,
         "puesto": "2",
         "total_votos": "2086215",
-        "validos": "25.70",
+        "validos": "40.",
         "color": "#25b53d"
     },
     {
-        "eleccion_tipo": "Segunda Vuelta",
+        "eleccion_tipo": "Segunda vuelta",
+        "candidato": "Alberto Fujimori",
+        "candidato_id": "alberto-fujimori",
+        "partido": "Peru 2000",
+        "partido_id": "peru-2000",
         "eleccion": 2000,
+        "puesto": "1",
+        "total_votos": "6041685",
+        "validos": "74.30",
+        "color": "#eb1c24cc",
+        "diferencia": "+1067673",
+        "ganador": true,
         "nota": "La primera vuelta fue el 9 de abril del 2000 en medio de acusaciones por corrupción, violación de derechos humanos y amenazas desde las fuerzas de seguridad del régimen de Alberto Fujimori. El candidato Alejandro Toledo denunció que las elecciones de segunda vuelta no serían limpias y pidió a sus partidarios que impugnaran sus votos a modo de boicot, lo que llevó a que casi el 30% de los votos fueran votos nulos. Por ello, Fujimori obtuvo la victoria e inició su mandato en julio del 2000. Cuatro meses después renunció al cargo luego de la difusión de los llamados \"Vladivideos\". El gobierno de transición convocó a elecciones para el 2021."
-
+    },  
+    {
+        "eleccion_tipo": "Segunda vuelta",
+        "candidato": "Alejandro Toledo",
+        "candidato_id": "alejandro-toledo",
+        "partido": "Perú Posible",
+        "partido_id": "peru-posible",
+        "eleccion": 2000,
+        "puesto": "2",
+        "total_votos": "2086215",
+        "validos": "25.70",
+        "color": "#25b53d"
     }
 ]

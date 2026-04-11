@@ -12,14 +12,14 @@
             <div class="row pb-3">
               <div class="col-12" :key="c.partido_id" v-for="c in congresistasPartidoForList">
                 <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
-                  <div class="col-auto pr-1 img-candidato">
+                  <div class="col-auto pr-1 congreso-grafico__partido-col">
                     <div
                       v-if="isCongresoPartyListPlaceholder(c)"
-                      class="congreso-grafico__party-placeholder rounded-circle border border-3"
+                      class="congreso-grafico__party-placeholder border border-3"
                       role="img"
                       aria-hidden="true"
                     />
-                    <img v-else width="65px" :src="getImagePartido(c.partido_id)" />
+                    <img v-else class="congreso-grafico__partido-img" width="65" height="65" alt="" :src="getImagePartido(c.partido_id)" />
                   </div>
                   <div class="col-7 pl-0 pr-md-0 align-self-center" v-if="c.total_votos_partido >  0">              
                     <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
@@ -48,14 +48,14 @@
             <div class="row pb-3">
               <div class="col-12" :key="'s-' + c.partido_id" v-for="c in senadoresPartidoForList">
                 <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
-                  <div class="col-auto pr-1 img-candidato">
+                  <div class="col-auto pr-1 congreso-grafico__partido-col">
                     <div
                       v-if="isCongresoPartyListPlaceholder(c)"
-                      class="congreso-grafico__party-placeholder rounded-circle border border-3"
+                      class="congreso-grafico__party-placeholder border border-3"
                       role="img"
                       aria-hidden="true"
                     />
-                    <img v-else width="65px" :src="getImagePartido(c.partido_id)" />
+                    <img v-else class="congreso-grafico__partido-img" width="65" height="65" alt="" :src="getImagePartido(c.partido_id)" />
                   </div>
                   <div class="col-7 pl-0 pr-md-0 align-self-center" v-if="c.total_votos_partido >  0">              
                     <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
@@ -603,18 +603,3 @@
   }
 
 </script>
-
-<style scoped>
-.congreso-grafico__party-placeholder {
-  width: 65px;
-  height: 65px;
-  min-width: 65px;
-  min-height: 65px;
-  max-width: 65px;
-  max-height: 65px;
-  box-sizing: border-box;
-  flex-shrink: 0;
-  background-color: #adb5bd;
-  border-color: #adb5bd !important;
-}
-</style>

@@ -5,7 +5,7 @@
       <div class="col-12 text-right">
         
         <DropdownBs4
-          :text="partidoSeleccionado.partido"
+          :text="capitalizeWords(partidoSeleccionado.partido)"
           variant="warning"
           :wrapperClass="['d-inline-block', 'm-2', 'departamento-menu']"
         >
@@ -17,13 +17,13 @@
               v-for="p in partidos"
               @click="close(); show_partido(p)"
             >
-              {{ p.partido }}
+              {{ capitalizeWords(p.partido) }}
             </button>
           </template>
         </DropdownBs4>
 
         <DropdownBs4
-          :text="regionSeleccionada.departamento"
+          :text="capitalizeWords(regionSeleccionada.departamento)"
           variant="warning"
           :wrapperClass="['d-inline-block', 'm-2', 'departamento-menu']"
         >
@@ -35,7 +35,7 @@
               v-for="dep in departamentos"
               @click="close(); show_departamento(dep.region)"
             >
-              {{ dep.departamento }}
+              {{ capitalizeWords(dep.departamento) }}
             </button>
           </template>
         </DropdownBs4>
@@ -89,6 +89,7 @@
   import { storeToRefs } from 'pinia'
   import { useCandidatosStore } from '../stores/candidatos'
   import { mapaBaseMixin } from '../mixins/mapaBaseMixin'
+  import { capitalizeWords } from '../utils/formatText'
   import DropdownBs4 from './DropdownBs4.vue'
 
   export default {
@@ -120,6 +121,7 @@
       }
     },
     methods: {
+      capitalizeWords,
       _fetchDistritos(v) { return this.store.getAllDistritosSegunda(v) },
       _updateRegionSeleccionada(dep) { this.store.updateRegionSeleccionadaSegunda(dep) },
       _updatePartidoSeleccionado(p) { this.store.updatePartidoSeleccionadoSegunda(p) },
