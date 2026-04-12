@@ -1,6 +1,6 @@
 <template>
   <div class="">
-     <div class="pb-5">
+     <div>
         <div class="">
           <congresoGrafico />
         </div>

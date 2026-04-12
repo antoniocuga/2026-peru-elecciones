@@ -232,8 +232,8 @@ export const mapaBaseMixin = {
     _fetchDistritos(/* v */) { return Promise.resolve() },
     _updateRegionSeleccionada(/* dep */) {},
     _updatePartidoSeleccionado(/* partido */) {},
-    _getDefaultRegionLabel() { return 'VER REGIÓN' },
-    _getDefaultPartidoLabel() { return 'VER POR PARTIDO' },
+    _getDefaultRegionLabel() { return 'Ver región'},
+    _getDefaultPartidoLabel() { return 'Ver por partido' },
 
     // ── Public actions ────────────────────────────────────────────────────
     resetPartidos() {

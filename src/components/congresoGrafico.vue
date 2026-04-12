@@ -25,8 +25,8 @@
                     <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
                     <div class="text-secondary small light">Votos válidos: {{numeral(c.total_votos_partido).format('0,0')}}</div>
                   </div> 
-                  <div v-else class="col-7 pl-0 pr-md-0 align-self-center">              
-                    <div class="text-secondary small light">Información no disponible</div>
+                  <div v-else class="col-7 pl-0 pr-md-0 align-self-center text-center">              
+                    <div style="font-size: 10px;" class="text-secondary small partido-mapa light">INFORMACIÓN NO DISPONIBLE</div>
                   </div> 
                   <div class="col-auto align-self-center text-center pr-0">              
                       <h5 class="elegidos d-flex align-self-center">{{ c.seats }}</h5>
@@ -93,7 +93,7 @@
             <g id="parliament-senado-mobile"></g>
           </svg>
           <div class="col-12 mb-2 mt-3">
-            <h5>{{ headingCongresoSeats }} congresistas</h5>
+            <h5>{{ headingCongresoSeats }} diputados</h5>
           </div>
           <svg
             class="svg-congreso"
@@ -120,7 +120,7 @@
             <g id="parliament-labels"></g>
           </svg>
           <div class="col-12 mb-2">
-            <h5>{{ headingCongresoSeats }} congresistas</h5>
+            <h5>{{ headingCongresoSeats }} diputados</h5>
           </div>
         </div>
       </div>

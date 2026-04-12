@@ -1962,6 +1962,27 @@
       }
   }
 
+  /*
+   * TopCongreso.vue avatar placeholder: component scoped CSS is emitted to MapaWidget.css
+   * (shared chunk). The embed entry only ships embed.css + embed.js — MapaWidget.css is not
+   * linked on host pages — so duplicate minimal rules here for widget-historico / TopCongreso.
+   */
+  .top-congreso__avatar-placeholder {
+    display: block !important;
+    width: 75px !important;
+    height: 75px !important;
+    min-width: 75px !important;
+    min-height: 75px !important;
+    max-width: 75px !important;
+    max-height: 75px !important;
+    box-sizing: border-box !important;
+    flex-shrink: 0 !important;
+    margin: 3px auto !important;
+    background-color: #adb5bd !important;
+    border-color: #adb5bd !important;
+    background-image: none !important;
+  }
+
   /* Línea punteada inferior */
   .border-top.dotted {
       border-top: 2px dotted #28a745 !important;
@@ -2183,7 +2204,7 @@
   }
 
   p.ej2026-pres-line.ej2026-pres-line--placeholder.partido-nombre {
-    font-size: 0.875rem !important;
+    font-size: 10px !important;
     font-weight: 500 !important;
     margin-top: 0.25rem !important;
     opacity: 1 !important;
@@ -2321,6 +2342,11 @@
   padding: 0 15px;
 }
 
+.contenido-especial-elecciones-2026 p {
+  letter-spacing: 0;
+  padding: 0 15px;
+}
+
 .contenido-especial-elecciones-2026 .nav-tabs .nav-link {
   padding: 0.4rem 0.4rem !important;
 }
@@ -2334,10 +2360,10 @@
   margin: 0 auto;
 }
 .especiales-elecciones-block h1 {
-    font-family: var(--heading-3-dk-font);
-    font-size: var(--heading-3-dk-font-size);
-    font-weight: var(--heading-3-dk-font-weight);
-    line-height: var(--heading-3-dk-line-height);
+    font-family: var(--heading-2-dk-font);
+    font-size: var(--heading-2-dk-font-size);
+    font-weight: var(--heading-2-dk-font-weight);
+    line-height: var(--heading-2-dk-line-height);
     letter-spacing: 0;
     padding: 0 15px;
 }

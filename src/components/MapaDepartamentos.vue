@@ -119,8 +119,8 @@
       _fetchDistritos(v) { return this.store.getAllDistritos(v) },
       _updateRegionSeleccionada(dep) { this.store.updateRegionSeleccionada(dep) },
       _updatePartidoSeleccionado(p) { this.store.updatePartidoSeleccionado(p) },
-      _getDefaultRegionLabel() { return 'VER REGIÓN' },
-      _getDefaultPartidoLabel() { return 'VER POR PARTIDO' },
+      _getDefaultRegionLabel() { return 'Ver region' },
+      _getDefaultPartidoLabel() { return 'Ver por partido' },
     },
   }
 </script>

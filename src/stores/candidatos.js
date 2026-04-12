@@ -11,25 +11,25 @@ export const useCandidatosStore = defineStore('candidatos', {
   state: () => ({
     todos: [],
     todosSegunda: [],
-    congresistas: [],
+    congresistas: [], 
     senadores: [],
     distritos: [],
     distritosSegunda: [],
     regionSeleccionada: {
       region: 'NACIONAL',
-      departamento: 'EXPLORAR REGIÓN',
+      departamento: 'Explorar región',
     },
     regionSeleccionadaSegunda: {
       region: 'NACIONAL',
-      departamento: 'EXPLORAR REGIÓN',
+      departamento: 'Explorar región',
     },
     partidoSeleccionado: {
       partido_id: 'TODOS',
-      partido: 'EXPLORAR POR PARTIDO',
+      partido: 'Explorar por partido',
     },
     partidoSeleccionadoSegunda: {
       partido_id: 'TODOS',
-      partido: 'EXPLORAR POR PARTIDO',
+      partido: 'Explorar por partido',
     },
   }),
 

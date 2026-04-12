@@ -17,10 +17,10 @@
                         <div class="col-4 col-md-3 col-lg-3 text-center">
                           <div
                             v-if="isPlaceholderCandidate(candidato)"
-                            class="top-congreso__avatar-placeholder rounded-circle border border-3 flex-shrink-0 img-candidato"
-                            role="img"
-                            aria-hidden="true"
-                          />
+                            class="top-congreso__avatar-placeholder rounded-circle border border-3 flex-shrink-0 d-block mx-auto"
+                          >
+                            <span class="visually-hidden"></span>
+                          </div>
                           <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                               v-else
                               :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
@@ -48,10 +48,10 @@
                         <div class="col-4 col-md-3 col-lg-3 text-center">
                           <div
                             v-if="isPlaceholderCandidate(candidato)"
-                            class="top-congreso__avatar-placeholder rounded-circle border border-3 flex-shrink-0 img-candidato"
-                            role="img"
-                            aria-hidden="true"
-                          />
+                            class="top-congreso__avatar-placeholder rounded-circle border border-3 flex-shrink-0 d-block mx-auto"
+                          >
+                            <span class="visually-hidden">Foto no disponible</span>
+                          </div>
                           <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                               v-else
                               :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
@@ -170,8 +170,8 @@
         return parseFloat(uniq(map(this.congresistas_parse, 'conteo_general')).join(""))
       },
       conteo_senado() {
-        if (!this.senadores || this.senadores.length === 0) return '—'
-        return this.senadores[0]?.conteo_general ?? '—'
+        if (!this.senadores || this.senadores.length === 0) return '0'
+        return this.senadores[0]?.conteo_general ?? '0'
       },
       fecha_hora() {
         return uniq(map(this.congresistas_parse, 'hora')).join("")
@@ -194,10 +194,12 @@
         if (!this.senadores || this.senadores.length === 0) return []
         const nacional = this.senadores.filter(s => s.senado_tipo === 'nacional')
         const top = orderBy(nacional, ['voto_preferencial'], ['desc']).slice(0, 5)
+        if (!top.length) return []
         return [{ eleccion: '2026', items: top }]
       },
       candidatos_senado_real_view() {
-        if (this.candidatos_senado_real.length) return this.candidatos_senado_real
+        const real = this.candidatos_senado_real
+        if (real.length && real.some((g) => (g.items?.length ?? 0) > 0)) return real
         return [{
           eleccion: '2026',
           items: Array.from({ length: 5 }, (_, i) => ({
@@ -211,7 +213,8 @@
         }]
       },
       candidatos_congreso_real_view() {
-        if (this.candidatos_congreso_real.length) return this.candidatos_congreso_real
+        const real = this.candidatos_congreso_real
+        if (real.length && real.some((g) => (g.items?.length ?? 0) > 0)) return real
         return [{
           eleccion: '2026',
           items: Array.from({ length: 5 }, (_, i) => ({
@@ -238,16 +241,17 @@
 </script>
 
 <style scoped>
+/* Not :empty — host themes often hide div:empty; inner span breaks that. Match .card-candidate img.img-candidato (75px). */
 .top-congreso__avatar-placeholder {
-  width: 56px;
-  height: 56px;
-  min-width: 56px;
-  min-height: 56px;
-  max-width: 56px;
-  max-height: 56px;
+  width: 75px;
+  height: 75px;
+  min-width: 75px;
+  min-height: 75px;
+  max-width: 75px;
+  max-height: 75px;
   box-sizing: border-box;
   flex-shrink: 0;
-  background-color: #adb5bd;
+  background-color: #adb5bd !important;
   border-color: #adb5bd !important;
 }
 </style>

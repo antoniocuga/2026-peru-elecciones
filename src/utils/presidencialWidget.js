@@ -48,7 +48,7 @@ export function displayTopCandidatosWithPlaceholders(topCandidatos) {
     candidato_id: `${WIDGET_PRES_PLACEHOLDER_PREFIX}${i}`,
     candidato: '',
     partido_id: PARLIAMENT_PLACEHOLDER_PARTIDO_ID,
-    partido: 'Información no disponible',
+    partido: 'INFORMACIÓN NO DISPONIBLE',
     color: WIDGET_PLACEHOLDER_COLOR,
     votos: 0,
     validos: 0,

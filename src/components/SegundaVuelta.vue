@@ -38,7 +38,7 @@
 
                             <div class="col-4 col-md-3 col-lg-4 align-self-center text-right congreso-pasado">
                             <div class="tooltip-c" :style="`font-size:1rem; font-weight: 600;`">
-                            <span class="text-secondary text-right font-weight-light d-block badge">Validos</span>
+                            <span class="text-secondary text-right font-weight-light d-block badge">Válidos</span>
                             <span style="font-size: 1rem; font-weight: 600;">
                               {{ candidato.validos+"%" }}
                             </span>
@@ -104,7 +104,7 @@
                           </div>    
                           <div class="col-4 col-md-3 col-lg-4 align-self-center text-right congreso-pasado">
                             <div class="tooltip-c" :style="`font-size:1rem; font-weight: 600;`">
-                            <span class="text-secondary text-right font-weight-light d-block badge">Validos</span>
+                            <span class="text-secondary text-right font-weight-light d-block badge">Válidos</span>
                             <span style="font-size: 1rem; font-weight: 600;">
                               {{ candidato.validos+"%" }}
                             </span>
