@@ -34,7 +34,21 @@ export function computeConteoFromTop(topCandidatos) {
 }
 
 export function computeFechaHoraFromTop(topCandidatos) {
-  return uniq(map(topCandidatos, 'hora')).join('')
+  const s = uniq(map(topCandidatos, 'hora'))
+    .join('')
+    .trim()
+  if (s) return s
+  try {
+    return new Intl.DateTimeFormat('es-PE', {
+      day: 'numeric',
+      month: 'short',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    }).format(new Date())
+  } catch {
+    return ''
+  }
 }
 
 export function isPresidentialPlaceholder(c) {

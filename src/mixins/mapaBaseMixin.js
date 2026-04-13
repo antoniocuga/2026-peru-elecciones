@@ -6,6 +6,16 @@ import * as d3 from 'd3'
 import { feature } from 'topojson'
 import { find, filter, map, maxBy, minBy, orderBy, sumBy, groupBy, uniq } from 'lodash'
 import { TOOLTIP_INFORMACION_NO_DISPONIBLE } from '../utils/congresoTooltip'
+import { maxConteo } from '../utils/conteoAggregate'
+
+/** Sum votos válidos por candidato en una región / distrito (JSON puede traer total o total_votos). */
+function sumCandidatoVoteTotals(candidatos) {
+  if (!Array.isArray(candidatos) || !candidatos.length) return 0
+  return sumBy(candidatos, (c) => Number(c.total ?? c.total_votos ?? 0) || 0)
+}
+
+const MAPA_DEP_GRAY_PATH = 'fill:rgb(151, 151, 151);'
+const MAPA_DEP_GRAY_SPAN = 'background: #eaeaea;'
 
 export const mapaBaseMixin = {
   data() {
@@ -77,38 +87,24 @@ export const mapaBaseMixin = {
     },
     partidoSeleccionado(v) {
       this.zoomed = false
-      const base = d3.select(this.$refs['svgmap'])
-
       if (v.partido_id !== 'TODOS') {
-        const max = maxBy(this.departamentos_parse, 'total_departamento').total_departamento
-        const min = minBy(this.departamentos_parse, 'total_departamento').total_departamento
-        const color = d3.scaleLinear().domain([min, max]).range(['#eaeaea', `${v.color}ab`])
-        this.legendaValues.max = max.toFixed(1)
-        this.legendaValues.min = min.toFixed(1)
-
-        base.selectAll('path.departamento-path').attr('style', (f) => {
-          const dep = find(this.departamentos_parse, d => d.region === f.properties.dep_id)
-          if (dep) return `fill: ${color(dep.winner.validos)}`
-        })
-        d3.selectAll('span.departamento-path').attr('style', (f) => {
-          const dep = find(this.departamentos_parse, d => d.region === f)
-          if (dep) return `background: ${color(dep.winner.validos)}`
-        })
-      } else {
-        base.selectAll('path.departamento-path').attr('style', (f) => {
-          const dep = find(this.departamentos, d => d.region === f.properties.dep_id)
-          if (dep) return `fill: ${dep.winner.color}ab;`
-        })
-        d3.selectAll('span.departamento-path').attr('style', (f) => {
-          const dep = find(this.departamentos, d => d.region === f)
-          if (dep) return `background: ${dep.winner.color}ab;`
-        })
+        const depsConVotos = filter(this.departamentos_parse, (d) => this.mapDepartamentoHasVotes(d))
+        if (!depsConVotos.length) {
+          this.legendaValues.max = '0'
+          this.legendaValues.min = '0'
+        } else {
+          const max = maxBy(depsConVotos, 'total_departamento').total_departamento
+          const min = minBy(depsConVotos, 'total_departamento').total_departamento
+          this.legendaValues.max = max.toFixed(1)
+          this.legendaValues.min = min.toFixed(1)
+        }
       }
+      this.applyDepartamentoFills()
     },
     regionSeleccionada(v) {
       if (v.region !== 'NACIONAL') {
         d3.selectAll(`#${this._mapId} path.departamento-path`).classed('inactive', true)
-        d3.select(`#${this._mapId} path.${v.region}-path`).classed('inactive', true)
+        d3.select(`#${this._mapId} path.${v.region}-path`).classed('inactive', false)
         d3.selectAll('text.departamento-label').classed('active', false)
         d3.select(`text.${v.region}-label`).classed('active', true)
       }
@@ -123,10 +119,13 @@ export const mapaBaseMixin = {
 
       if (v.region === 'NACIONAL' && this.partidoSeleccionado.partido_id !== 'TODOS') {
         this.zoomed = false
-        const max = maxBy(this.departamentos_parse, 'total_departamento').total_departamento
-        const min = minBy(this.departamentos_parse, 'total_departamento').total_departamento
-        this.legendaValues.max = max.toFixed(1)
-        this.legendaValues.min = min.toFixed(1)
+        const depsConVotos = filter(this.departamentos_parse, (d) => this.mapDepartamentoHasVotes(d))
+        if (depsConVotos.length) {
+          const max = maxBy(depsConVotos, 'total_departamento').total_departamento
+          const min = minBy(depsConVotos, 'total_departamento').total_departamento
+          this.legendaValues.max = max.toFixed(1)
+          this.legendaValues.min = min.toFixed(1)
+        }
       }
     },
   },
@@ -175,7 +174,7 @@ export const mapaBaseMixin = {
             distrito: uniq(map(item, 'distrito')).join(''),
             provincia: uniq(map(item, 'provincia')).join(''),
             departamento: this.regionSeleccionada.departamento,
-            conteo: parseFloat(uniq(map(item, 'conteo')).join('')) || 0,
+            conteo: maxConteo(item),
             validos: parseFloat(uniq(map(item, 'validos')).join('')),
             total: sumBy(map(item, d => d.total != null ? d.total : d.total_votos)),
             candidatos: orderBy(item, ['validos'], ['desc']),
@@ -258,6 +257,111 @@ export const mapaBaseMixin = {
     getImageCandidate(c) { return getCandidatoImage(c) },
     getImagePartido(c) { return getPartidoImage(c) },
 
+    /** Mapa en gris si no hay votos en esa región (evita pintar “ganador” con 0%). */
+    mapDepartamentoHasVotes(dep) {
+      if (!dep) return false
+      if (sumCandidatoVoteTotals(dep.candidatos) > 0) return true
+      const td = Number(dep.total_departamento)
+      return !Number.isNaN(td) && td > 0
+    },
+
+    mapDistritoHasVotes(dep) {
+      if (!dep) return false
+      const t = Number(dep.total)
+      return !Number.isNaN(t) && t > 0
+    },
+
+    mapOpacityByConteo(dep) {
+      const raw = Number(maxConteo(dep?.candidatos || []))
+      if (Number.isNaN(raw) || raw <= 0) return 0.35
+      return Math.max(0.35, Math.min(1, raw / 100))
+    },
+
+    /** Estilo de relleno para un departamento (vista nacional, sin recorte por zoom). */
+    _fillStyleDepartamentoPathByRegionId(depId) {
+      if (this.partidoSeleccionado.partido_id !== 'TODOS') {
+        const dep = find(this.departamentos_parse, (d) => d.region === depId)
+        const depsConVotos = filter(this.departamentos_parse, (d) => this.mapDepartamentoHasVotes(d))
+        if (!depsConVotos.length) return MAPA_DEP_GRAY_PATH
+        const max = maxBy(depsConVotos, 'total_departamento').total_departamento
+        const min = minBy(depsConVotos, 'total_departamento').total_departamento
+        const color = d3
+          .scaleLinear()
+          .domain([min, max])
+          .range(['#eaeaea', `${this.partidoSeleccionado.color}ab`])
+        if (dep && this.mapDepartamentoHasVotes(dep)) {
+          return `fill: ${color(dep.winner.validos)}; opacity: ${this.mapOpacityByConteo(dep)};`
+        }
+        return MAPA_DEP_GRAY_PATH
+      }
+      const dep = find(this.departamentos, (d) => d.region === depId)
+      if (dep && this.mapDepartamentoHasVotes(dep) && dep.winner?.color) {
+        return `fill: ${dep.winner.color}ab; opacity: ${this.mapOpacityByConteo(dep)};`
+      }
+      return MAPA_DEP_GRAY_PATH
+    },
+
+    _fillStyleDepartamentoSpanByRegionId(rid) {
+      if (this.partidoSeleccionado.partido_id !== 'TODOS') {
+        const dep = find(this.departamentos_parse, (d) => d.region === rid)
+        const depsConVotos = filter(this.departamentos_parse, (d) => this.mapDepartamentoHasVotes(d))
+        if (!depsConVotos.length) return MAPA_DEP_GRAY_SPAN
+        const max = maxBy(depsConVotos, 'total_departamento').total_departamento
+        const min = minBy(depsConVotos, 'total_departamento').total_departamento
+        const color = d3
+          .scaleLinear()
+          .domain([min, max])
+          .range(['#eaeaea', `${this.partidoSeleccionado.color}ab`])
+        if (dep && this.mapDepartamentoHasVotes(dep)) {
+          return `background: ${color(dep.winner.validos)}; opacity: ${this.mapOpacityByConteo(dep)};`
+        }
+        return MAPA_DEP_GRAY_SPAN
+      }
+      const dep = find(this.departamentos, (d) => d.region === rid)
+      if (dep && this.mapDepartamentoHasVotes(dep) && dep.winner?.color) {
+        return `background: ${dep.winner.color}ab; opacity: ${this.mapOpacityByConteo(dep)};`
+      }
+      return MAPA_DEP_GRAY_SPAN
+    },
+
+    /**
+     * Con zoom a una región: gris en todos los departamentos salvo el seleccionado (ahí resultados).
+     * Vista nacional: colorea todos según datos.
+     */
+    applyDepartamentoFills() {
+      const base = d3.select(this.$refs['svgmap'])
+      if (base.empty()) return
+
+      const zoomed = this.zoomed === true
+      const reg = this.regionSeleccionada?.region
+      const selectedNorm =
+        zoomed && reg && reg !== 'NACIONAL' ? this.normalizeRegionId(reg) : null
+
+      base.selectAll('path.departamento-path').attr('style', (f) => {
+        const id = f.properties.dep_id
+        if (selectedNorm && this.normalizeRegionId(id) !== selectedNorm) {
+          return MAPA_DEP_GRAY_PATH
+        }
+        return this._fillStyleDepartamentoPathByRegionId(id)
+      })
+
+      const extra = d3.select(`#${this._regionesExtraId}`)
+      if (!extra.empty()) {
+        const ids = ['callao', 'lima', 'extranjero']
+        const self = this
+        extra.selectAll('span.departamento-path').each(function (_d, i) {
+          const rid = ids[i]
+          if (!rid) return
+          const el = d3.select(this)
+          if (selectedNorm && self.normalizeRegionId(rid) !== selectedNorm) {
+            el.attr('style', MAPA_DEP_GRAY_SPAN)
+          } else {
+            el.attr('style', self._fillStyleDepartamentoSpanByRegionId(rid))
+          }
+        })
+      }
+    },
+
     // ── Normalization ─────────────────────────────────────────────────────
     normalizeUbigeo(val) {
       if (val == null) return ''
@@ -314,6 +418,9 @@ export const mapaBaseMixin = {
       const r = d3.interpolate(this.center, center)
       const s = d3.interpolate(this.scale, scale)
 
+      // Avoid stacked transitions: interrupted ones may not run on('end'), leaving zoomed/distritos stale.
+      base.selectAll('path.departamento-path').interrupt()
+
       base.selectAll('path.departamento-path')
         .transition()
         .duration(1000)
@@ -338,13 +445,12 @@ export const mapaBaseMixin = {
             this.render_distritos()
             d3.select('.candidate-results-vivo').style('opacity', 1).classed('active', true)
             this.zoomed = true
+            this.applyDepartamentoFills()
           } else {
             this.zoomed = false
             base.selectAll('path.departamento-path').classed('inactive', false)
             d3.select('.candidate-results-vivo').style('opacity', 1).classed('active', true)
-            if (this.partidoSeleccionado.partido_id === 'TODOS') {
-              d3.selectAll('span.departamento-path').attr('style', () => false)
-            }
+            this.applyDepartamentoFills()
           }
         })
     },
@@ -381,10 +487,6 @@ export const mapaBaseMixin = {
         .attr('d', this.path)
         .attr('class', d => `departamento-path ${d.properties.dep_id}-path`)
         .attr('id', d => d.properties.dep_id)
-        .attr('style', (f) => {
-          const dep = find(this.departamentos, d => d.region === f.properties.dep_id)
-          if (dep) return `fill: ${dep.winner.color}ab;`
-        })
         .on('click', (event, f) => {
           const dep = find(this.departamentos, d => d.region === f.properties.dep_id)
           if (window.innerWidth > 798 && !this.zoomed && dep) {
@@ -404,7 +506,6 @@ export const mapaBaseMixin = {
 
       d3.selectAll(`#${this._regionesExtraId} span.departamento-path`)
         .data(['callao', 'lima', 'extranjero'])
-        .attr('style', () => false)
         .on('click', (event, f) => {
           const dep = find(this.departamentos, d => d.region === f)
           if (window.innerWidth > 798 && !this.zoomed && f !== 'extranjero' && dep) {
@@ -429,6 +530,8 @@ export const mapaBaseMixin = {
         .append('text')
         .attr('class', d => `departamento-label inactive ${d.properties.dep_id}-label`)
         .text(d => d.properties.NOMBDEP)
+
+      this.applyDepartamentoFills()
     },
 
     renderLabels() {
@@ -474,7 +577,7 @@ export const mapaBaseMixin = {
             distrito: uniq(map(item, 'distrito')).join(''),
             provincia: uniq(map(item, 'provincia')).join(''),
             departamento: this.regionSeleccionada.departamento,
-            conteo: parseFloat(uniq(map(item, 'conteo')).join('')) || 0,
+            conteo: maxConteo(item),
             validos: parseFloat(uniq(map(item, 'validos')).join('')),
             total: sumBy(map(item, d => d.total != null ? d.total : d.total_votos)),
             candidatos: orderBy(item, ['validos'], ['desc']),
@@ -498,12 +601,15 @@ export const mapaBaseMixin = {
       let color
 
       if (this.partidoSeleccionado.partido_id !== 'TODOS') {
-        const max = maxBy(parsed, 'validos')
-        const min = minBy(parsed, 'validos')
-        if (max && min) {
-          color = d3.scaleLinear().domain([min.validos, max.validos]).range(['#eaeaea', `${max.winner.color}ab`])
-          this.legendaValues.max = max.validos.toFixed(1)
-          this.legendaValues.min = min.validos.toFixed(1)
+        const conVotos = parsed.filter((d) => this.mapDistritoHasVotes(d))
+        if (conVotos.length) {
+          const max = maxBy(conVotos, 'validos')
+          const min = minBy(conVotos, 'validos')
+          if (max && min && max.winner) {
+            color = d3.scaleLinear().domain([min.validos, max.validos]).range(['#eaeaea', `${max.winner.color}ab`])
+            this.legendaValues.max = max.validos.toFixed(1)
+            this.legendaValues.min = min.validos.toFixed(1)
+          }
         }
       }
 
@@ -526,15 +632,18 @@ export const mapaBaseMixin = {
         .attr('style', (f) => {
           const rawId = f.properties.IDDIST ?? f.properties.ubigeo
           const dep = matchDep(this.normalizeUbigeo(rawId))
-          if (dep && this.partidoSeleccionado.partido_id !== 'TODOS' && color && dep.winner) {
-            return `fill: ${color(dep.winner.validos)};`
+          if (!dep || !this.mapDistritoHasVotes(dep)) {
+            return MAPA_DEP_GRAY_PATH
           }
-          if (dep && dep.winner && dep.winner.color) {
+          if (this.partidoSeleccionado.partido_id !== 'TODOS' && color && dep.winner) {
+            return `fill: ${color(dep.winner.validos)}; opacity: ${this.mapOpacityByConteo(dep)};`
+          }
+          if (dep.winner && dep.winner.color) {
             const c = String(dep.winner.color).trim()
             const hex = c.startsWith('#') ? c : '#' + c
-            return `fill: ${hex.length === 7 ? hex + 'ab' : hex};`
+            return `fill: ${hex.length === 7 ? hex + 'ab' : hex}; opacity: ${this.mapOpacityByConteo(dep)};`
           }
-          return 'fill: #eaeaea;'
+          return MAPA_DEP_GRAY_PATH
         })
         .on('mouseover', (event, f) => {
           if (window.innerWidth > 798) {
@@ -567,7 +676,7 @@ export const mapaBaseMixin = {
       const count = this._tooltipCandidatosCount || 4
       let candidatos = ''
       let table = ''
-      const conteo = parseFloat(uniq(map(dep.candidatos || [], 'conteo')).join('')) || 0
+      const conteo = maxConteo(dep.candidatos || [])
 
       if (!this.zoomed) {
         const name = f.properties ? (f.properties.NAME_1 || f.properties.DISTRITO || '') : dep.departamento

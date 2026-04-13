@@ -14,10 +14,34 @@
                   <div class="col-auto pr-1 img-candidato">
                     <img width="65px" :src="getImagePartido(c.partido_id)" />              
                   </div>
-                  <div class="col-7 pl-0 pr-md-0 align-self-center">              
+                  <div
+                    class="col-7 pl-0 pr-md-0 align-self-center"
+                    v-if="c.total_votos_nacional_lista > 0 || c.total_votos_regional_lista > 0"
+                  >
                     <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
-                    <div class="total-votos">Total de votos: {{numeral(c.total_votos_partido).format('0,0')}}</div>
-                  </div> 
+                    <template
+                      v-if="
+                        c.total_votos_nacional_lista > 0 &&
+                        c.total_votos_regional_lista > 0 &&
+                        !c.senado_votos_misma_base
+                      "
+                    >
+                      <div class="total-votos">
+                        Circ. nacional: {{ numeral(c.total_votos_nacional_lista).format('0,0') }}
+                      </div>
+                      <div class="total-votos">
+                        Circ. regional: {{ numeral(c.total_votos_regional_lista).format('0,0') }}
+                      </div>
+                    </template>
+                    <div v-else class="total-votos">
+                      Total de votos:
+                      {{
+                        numeral(
+                          Math.max(c.total_votos_nacional_lista, c.total_votos_regional_lista),
+                        ).format('0,0')
+                      }}
+                    </div>
+                  </div>
                   <div class="col-auto align-self-center text-center pr-0">              
                       <h5 class="elegidos d-flex align-self-center">{{ c.seats }}</h5>
                   </div>
@@ -125,10 +149,34 @@
                   <div class="col-auto pr-1 img-candidato">
                     <img width="65px" :src="getImagePartido(c.partido_id)" />              
                   </div>
-                  <div class="col-7 pl-0 pr-md-0 align-self-center">              
+                  <div
+                    class="col-7 pl-0 pr-md-0 align-self-center"
+                    v-if="c.total_votos_nacional_lista > 0 || c.total_votos_regional_lista > 0"
+                  >
                     <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
-                    <div class="total-votos">Total de votos: {{numeral(c.total_votos_partido).format('0,0')}}</div>
-                  </div> 
+                    <template
+                      v-if="
+                        c.total_votos_nacional_lista > 0 &&
+                        c.total_votos_regional_lista > 0 &&
+                        !c.senado_votos_misma_base
+                      "
+                    >
+                      <div class="total-votos">
+                        Circ. nacional: {{ numeral(c.total_votos_nacional_lista).format('0,0') }}
+                      </div>
+                      <div class="total-votos">
+                        Circ. regional: {{ numeral(c.total_votos_regional_lista).format('0,0') }}
+                      </div>
+                    </template>
+                    <div v-else class="total-votos">
+                      Total de votos:
+                      {{
+                        numeral(
+                          Math.max(c.total_votos_nacional_lista, c.total_votos_regional_lista),
+                        ).format('0,0')
+                      }}
+                    </div>
+                  </div>
                   <div class="col-auto align-self-center text-center pr-0">              
                       <h5 class="elegidos d-flex align-self-center">{{ c.seats }}</h5>
                   </div>
@@ -216,12 +264,15 @@
   import { getPartidoImage } from '../utils/assets'
   import { capitalizeWords } from '../utils/formatText'
   import * as d3 from 'd3'
-  import { filter, groupBy, map, orderBy, uniq, sum } from 'lodash'
+  import { filter, groupBy, map, orderBy, uniq } from 'lodash'
   import DropdownBs4 from './DropdownBs4.vue'
   import {
     isParliamentPlaceholderSeat,
+    seatVotoPreferencial,
     tooltipInformacionNoDisponibleHtml,
   } from '../utils/congresoTooltip'
+  import { joinHoras, maxConteo } from '../utils/conteoAggregate'
+  import { senadoListaTotalsByTipo } from '../utils/senadoVotes'
 
   export default {
     name: 'SenadoGrafico',
@@ -264,21 +315,24 @@
         return orderBy(this.congresistas_parse, ['voto_preferencial'], ['desc']).slice(10, this.congresistas_parse.length)
       },
       departamentos_conteo() {
-        if(this.depSelected != "NACIONAL (130)" && this.depSelected != "NACIONAL (60)")
-          return parseFloat(uniq(map(filter(this.departamentos, ['region', this.depSelected]), 'conteo')).join(""))
-
-        return 0
+        const nacional = this.depSelected === 'NACIONAL (130)' || this.depSelected === 'NACIONAL (60)'
+        if (nacional) return 0
+        const row = this.departamentos.find((d) => d.region === this.depSelected)
+        return row ? Number(row.conteo) || 0 : 0
       },
       departamentos_hora() {
-        return uniq(map(filter(this.departamentos, ['region', this.depSelected]), 'hora')).join("")
+        const nacional = this.depSelected === 'NACIONAL (130)' || this.depSelected === 'NACIONAL (60)'
+        if (nacional) return ''
+        const row = this.departamentos.find((d) => d.region === this.depSelected)
+        return row ? row.hora : ''
       },
       departamentos() {
         return orderBy(map(groupBy(this.listSource, 'region'), (items, r) => {
           return {
             region: r,
             departamento: uniq(map(items, 'departamento')).join("") || r,
-            hora: uniq(map(items, 'hora')).join(""),
-            conteo: uniq(map(items, 'conteo')).join(""),
+            hora: joinHoras(items),
+            conteo: maxConteo(items),
             seats: items.length,
             congresistas: items
           }
@@ -289,14 +343,19 @@
       },
       congresistas_partido() {
         return orderBy(map(groupBy(this.listSource, 'partido_id'), (items, p) => {
-          let total_partido = sum(uniq(map(items, 'total_votos_partido'))) + sum(uniq(map(items, 'voto_fantasma'))) 
+          const { vn, vr, fantasma } = senadoListaTotalsByTipo(items)
+          const samePool = vn > 0 && vr > 0 && vn === vr
           return {
             partido_id: p,
             partido: uniq(map(items, 'partido')).join(""),
-            total_votos_partido: total_partido,
+            total_votos_nacional_lista: vn,
+            total_votos_regional_lista: vr,
+            senado_votos_misma_base: samePool,
+            total_votos_partido: Math.max(vn, vr),
+            fantasma,
             seats: items.length,
-            congresistas: items, 
-            color: uniq(map(items, 'color')).join("")
+            congresistas: items,
+            color: uniq(map(items, 'color')).join(""),
           }
         }), ['seats'], ['desc'])
       }
@@ -416,7 +475,7 @@
             const partidoId = dd.partido_id != null ? dd.partido_id : ''
             const partido = dd.partido != null ? dd.partido : ''
             const nro = dd.nro != null ? dd.nro : ''
-            const preferencial = numeral(dd.voto_preferencial != null ? dd.voto_preferencial : 0).format('0,0')
+            const preferencial = numeral(seatVotoPreferencial(dd)).format('0,0')
             const totalPartido = numeral(dd.total_votos_partido != null ? dd.total_votos_partido : 0).format('0,0')
             html = `<h5 class="mb-2">${region}</h5>`
             html += `<h3>${nombre}</h3>`

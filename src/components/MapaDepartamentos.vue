@@ -21,7 +21,7 @@
               </button>
             </template>
           </DropdownBs4>
-      
+
           <DropdownBs4
             :text="regionSeleccionada.departamento"
             variant="light"

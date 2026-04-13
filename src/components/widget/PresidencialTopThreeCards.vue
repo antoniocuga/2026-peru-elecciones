@@ -23,7 +23,7 @@
               :style="`border-color: ${c.color} !important;`"
               alt="Foto de candidato a la presidencia del Perú"
             />
-            <div class="ml-2 text-dark text-left ej2026-pres-copy">
+            <div class="ms-2 text-dark text-start flex-grow-1 min-w-0 ej2026-pres-copy">
               <p
                 class="p-0 candidato-nombre mb-1 ej2026-pres-line"
                 :class="{ 'text-light ej2026-pres-line--placeholder': isPresidentialPlaceholder(c) }"
@@ -44,8 +44,8 @@
               </p>
             </div>
             <div
-              style="min-width: 65px; line-height: 0.5em"
-              class="ml-2 text-light overflow-hidden justify-content-end mr-3 ej2026-pres-stats"
+              class="ms-2 flex-shrink-0 text-light overflow-hidden justify-content-end me-3 ej2026-pres-stats"
+              style="min-width: clamp(3.25rem, 18vw, 4.5rem); line-height: 0.5em"
               :class="{ 'ej2026-pres-stats--placeholder': isPresidentialPlaceholder(c) }"
             >
               <div class="d-block text-right align-items-baseline flex-wrap">
@@ -53,7 +53,7 @@
                   class="porcentaje-top d-block ej2026-pres-pct"
                   :style="`font-size: 1.1rem; color: ${isPresidentialPlaceholder(c) ? WIDGET_PLACEHOLDER_COLOR : c.color}`"
                 >
-                  {{ c.validos.toFixed(1) }}%
+                  {{ c.validos.toFixed(2) }}%
                 </span>
                 <span style="font-size: 0.7rem;" class="votos-top m-1 p-0 d-block">
                   {{ numeral(c.votos).format('0,0') }}
@@ -123,5 +123,23 @@ export default {
   min-width: 56px;
   background-color: #ADB5BD;
   border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Nombre/partido: ocupa el espacio flexible; en pantallas angostas no forzar 170px fijos */
+.ej2026-pres-copy {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 576px) {
+  .ej2026-pres-copy {
+    min-width: min(170px, 42vw);
+  }
+}
+
+@media (min-width: 768px) {
+  .ej2026-pres-copy {
+    min-width: 170px;
+  }
 }
 </style>

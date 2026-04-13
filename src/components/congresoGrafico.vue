@@ -1,7 +1,7 @@
 <template>
   <div class="row congreso-grafico">    
     <div class="col-12 col-sm-12 col-md-6 col-lg-5 order-md-0 order-1">       
-      <BTabs>
+      <BTabs v-model="partidoListTabIndex">
         <BTab>
           <template #title>
             <span class="d-inline-flex align-items-center gap-1">
@@ -19,7 +19,15 @@
                       role="img"
                       aria-hidden="true"
                     />
-                    <img v-else class="congreso-grafico__partido-img" width="65" height="65" alt="" :src="getImagePartido(c.partido_id)" />
+                    <img
+                      v-else
+                      class="congreso-grafico__partido-img"
+                      width="65"
+                      height="65"
+                      alt=""
+                      :src="getImagePartido(c.partido_id)"
+                      @error="onPartidoListImgError(c, $event)"
+                    />
                   </div>
                   <div class="col-7 pl-0 pr-md-0 align-self-center" v-if="c.total_votos_partido >  0">              
                     <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
@@ -41,7 +49,7 @@
         <BTab class="list-resultados-partidos" lazy>
           <template #title>
             <span class="d-inline-flex align-items-center gap-1">
-              Senados por partidos
+              Senadores por partido
             </span>
           </template>
           <div class="list-resultados-partidos p-3">
@@ -55,12 +63,44 @@
                       role="img"
                       aria-hidden="true"
                     />
-                    <img v-else class="congreso-grafico__partido-img" width="65" height="65" alt="" :src="getImagePartido(c.partido_id)" />
+                    <img
+                      v-else
+                      class="congreso-grafico__partido-img"
+                      width="65"
+                      height="65"
+                      alt=""
+                      :src="getImagePartido(c.partido_id)"
+                      @error="onPartidoListImgError(c, $event)"
+                    />
                   </div>
-                  <div class="col-7 pl-0 pr-md-0 align-self-center" v-if="c.total_votos_partido >  0">              
+                  <div
+                    class="col-7 pl-0 pr-md-0 align-self-center"
+                    v-if="c.total_votos_nacional_lista > 0 || c.total_votos_regional_lista > 0"
+                  >
                     <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
-                    <div class="text-secondary small light">Votos válidos: {{numeral(c.total_votos_partido).format('0,0')}}</div>
-                  </div> 
+                    <template
+                      v-if="
+                        c.total_votos_nacional_lista > 0 &&
+                        c.total_votos_regional_lista > 0 &&
+                        !c.senado_votos_misma_base
+                      "
+                    >
+                      <div class="text-secondary small light">
+                        Nacional: {{ numeral(c.total_votos_nacional_lista).format('0,0') }}
+                      </div>
+                      <div class="text-secondary small light">
+                        Regional: {{ numeral(c.total_votos_regional_lista).format('0,0') }}
+                      </div>
+                    </template>
+                    <div v-else class="text-secondary small light">
+                      Votos válidos:
+                      {{
+                        numeral(
+                          Math.max(c.total_votos_nacional_lista, c.total_votos_regional_lista),
+                        ).format('0,0')
+                      }}
+                    </div>
+                  </div>
                   <div v-else class="col-7 pl-0 pr-md-0 align-self-center">              
                     <div class="text-secondary small light">Información no disponible</div>
                    </div> 
@@ -72,6 +112,7 @@
             </div>
           </div>
         </BTab>
+        <BTab disabled :title="tituloConteoParlamento"></BTab>
       </BTabs>
     </div>
 
@@ -161,7 +202,7 @@
   import numeral from 'numeral'
   import { storeToRefs } from 'pinia'
   import { useCandidatosStore } from '../stores/candidatos'
-  import { getPartidoImage } from '../utils/assets'
+  import { getPartidoImage, getPartidoFallbackImageDataUrl } from '../utils/assets'
   import { capitalizeWords } from '../utils/formatText'
   import * as d3 from 'd3'
   import * as parliament from 'd3-parliament-chart'
@@ -182,6 +223,8 @@
     resolveSplitSenadoSvgLayout,
     resolveSplitCongresoSvgLayout,
   } from '../utils/congresoChartLayout'
+  import { joinHoras, maxConteo } from '../utils/conteoAggregate'
+  import { senadoListaTotalsByTipo } from '../utils/senadoVotes'
 
   /** Match Bootstrap `md` — below this, senado + congreso render as two SVGs */
   const PARLIAMENT_SPLIT_MAX_WIDTH_PX = 840
@@ -251,9 +294,35 @@
         svgSizeCongresoMobile: { width: 320, height: 220 },
         tabTooltipSenado:
           '',
+        /** 0 = Diputados por partido, 1 = Senadores por partido (tab conteo disabled). */
+        partidoListTabIndex: 0,
       }
     },
     computed: {
+      conteoSenadoNacionalLabel() {
+        return (
+          this.pctLabelFromRows(this.senadores, (s) => s.senado_tipo === 'nacional') ?? '0'
+        )
+      },
+      conteoDiputadosLabel() {
+        return this.pctLabelFromRows(this.congresistas, null) ?? '0'
+      },
+      conteoPresidencialLabel() {
+        const rows = (this.todos || []).filter(
+          (r) => r && r.region === 'total' && String(r.candidato_id || '').trim() !== '',
+        )
+        return this.pctLabelFromRows(rows, null) ?? '0'
+      },
+      tituloConteoParlamento() {
+        const idx = this.partidoListTabIndex
+        let specific = '0'
+        if (idx === 0) specific = this.conteoDiputadosLabel
+        else if (idx === 1) specific = this.conteoSenadoNacionalLabel
+        const fallback = this.conteoPresidencialLabel
+        const label = specific !== '0' ? specific : (fallback !== '0' ? fallback : '0')
+        if (label === '0') return 'Conteo —'
+        return `Conteo al ${label}%`
+      },
       headingCongresoSeats() {
         if (this.depSelected === REGION_NACIONAL) {
           return this.congresistas?.length ? this.congresistas.length : CONGRESO_TOTAL_SEATS
@@ -269,25 +338,51 @@
         return SENADO_TOTAL_SEATS
       },
       departamentos_conteo() {
-        if (this.depSelected !== REGION_NACIONAL)
-          return parseFloat(uniq(map(filter(this.departamentos, ['region', this.depSelected]), 'conteo')).join(""))
-
-        return 0
+        if (this.depSelected === REGION_NACIONAL) return 0
+        const row = this.departamentos.find((d) => d.region === this.depSelected)
+        return row ? Number(row.conteo) || 0 : 0
       },
       departamentos_hora() {
-        return uniq(map(filter(this.departamentos, ['region', this.depSelected]), 'hora')).join("")
+        if (this.depSelected === REGION_NACIONAL) return ''
+        const row = this.departamentos.find((d) => d.region === this.depSelected)
+        return row ? row.hora : ''
       },
+      /** Regiones que aparecen en el hemiciclo (diputados + senadores), no solo en congreso_total. */
       departamentos() {
-        return orderBy(map(groupBy(this.congresistas, 'region'), (items, r) => {
+        const cong = Array.isArray(this.congresistas) ? this.congresistas : []
+        const sen = Array.isArray(this.senadores) ? this.senadores : []
+        const normalizeRegionKey = (v) => {
+          const r = String(v || '').trim()
+          if (!r) return ''
+          if (r.toUpperCase() === 'NACIONAL' || r === REGION_NACIONAL) return REGION_NACIONAL
+          return r
+        }
+        const keys = new Set()
+        for (const row of cong) {
+          const r = normalizeRegionKey(row?.region)
+          if (r) keys.add(r)
+        }
+        for (const row of sen) {
+          const r = normalizeRegionKey(row?.region)
+          if (r) keys.add(r)
+        }
+        // "NACIONAL" es semánticamente "Todas las regiones"; ya existe botón explícito para eso.
+        const sorted = [...keys]
+          .filter((r) => r !== REGION_NACIONAL)
+          .sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }))
+        return sorted.map((r) => {
+          const itemsC = cong.filter((x) => normalizeRegionKey(x?.region) === r)
+          const itemsS = sen.filter((x) => normalizeRegionKey(x?.region) === r)
+          const metaRows = [...itemsC, ...itemsS]
           return {
             region: r,
-            departamento: uniq(map(items, 'departamento')).join(""),
-            hora: uniq(map(items, 'hora')).join(""),
-            conteo: uniq(map(items, 'conteo')).join(""),
-            seats: items.length,
-            congresistas: items
+            departamento: uniq(map(itemsC, 'departamento')).join(''),
+            hora: joinHoras(metaRows),
+            conteo: maxConteo(metaRows),
+            seats: itemsC.length,
+            congresistas: itemsC,
           }
-        }), ['region'], ['asc'])
+        })
       },
       congresistas_parse() {
         return orderBy(this.congresistas, ['partido_id'], ['desc'])
@@ -303,7 +398,7 @@
             congresistas: items, 
             color: uniq(map(items, 'color')).join("")
           }
-        }), ['seats'], ['desc'])
+        }), ['seats', 'total_votos_partido'], ['desc', 'desc'])
       },
       congresistasPartidoForList() {
         if (this.congresistas_partido.length) return this.congresistas_partido
@@ -318,16 +413,26 @@
       },
       senadores_partido() {
         if (!this.senadores || !this.senadores.length) return []
-        return orderBy(map(groupBy(this.senadores, 'partido_id'), (items, p) => {
-          const total_partido = sum(uniq(map(items, 'total_votos_partido'))) + sum(uniq(map(items, 'voto_fantasma')))
-          return {
-            partido_id: p,
-            partido: uniq(map(items, 'partido')).join(''),
-            total_votos_partido: total_partido,
-            seats: items.length,
-            color: uniq(map(items, 'color')).join('')
-          }
-        }), ['partido', 'partido_id'], ['asc', 'asc'])
+        return orderBy(
+          map(groupBy(this.senadores, 'partido_id'), (items, p) => {
+            const { vn, vr, fantasma } = senadoListaTotalsByTipo(items)
+            const samePool = vn > 0 && vr > 0 && vn === vr
+            const sortVotes = Math.max(vn, vr)
+            return {
+              partido_id: p,
+              partido: uniq(map(items, 'partido')).join(''),
+              total_votos_nacional_lista: vn,
+              total_votos_regional_lista: vr,
+              senado_votos_misma_base: samePool,
+              total_votos_partido: sortVotes,
+              fantasma,
+              seats: items.length,
+              color: uniq(map(items, 'color')).join(''),
+            }
+          }),
+          ['seats', 'total_votos_partido'],
+          ['desc', 'desc'],
+        )
       },
       senadoresPartidoForList() {
         if (this.senadores_partido.length) return this.senadores_partido
@@ -335,6 +440,9 @@
           partido_id: `${PARLIAMENT_PLACEHOLDER_PARTIDO_ID}-s-${i + 1}`,
           partido: '',
           total_votos_partido: 0,
+          total_votos_nacional_lista: 0,
+          total_votos_regional_lista: 0,
+          senado_votos_misma_base: false,
           seats: 0,
           color: EMPTY_PARLIAMENT_COLOR,
         }))
@@ -405,11 +513,52 @@
       },
       formatRegionLabel(region) {
         if (!region) return ''
-        if (region === REGION_NACIONAL) return 'Todas las regiones'
+        if (region === REGION_NACIONAL || String(region).trim().toUpperCase() === 'NACIONAL') return 'Todas las regiones'
         return capitalizeWords(String(region).replace(/-/g, ' ').toLowerCase())
+      },
+      _parseConteoNum(row) {
+        if (!row || typeof row !== 'object') return null
+        const n = row.conteo
+        if (typeof n === 'number' && !Number.isNaN(n)) return n
+        const g = row.conteo_general
+        if (g == null || String(g).trim() === '') return null
+        const p = parseFloat(
+          String(g)
+            .replace(/%/g, '')
+            .replace(/\s/g, '')
+            .replace(',', '.')
+            .trim(),
+        )
+        return Number.isNaN(p) ? null : p
+      },
+      _fmtPct(n) {
+        const r = Math.round(n * 100) / 100
+        return Number.isInteger(r) ? String(r) : r.toFixed(2)
+      },
+      pctLabelFromRows(rows, rowFilter) {
+        const list = Array.isArray(rows) ? (rowFilter ? rows.filter(rowFilter) : rows) : []
+        const nums = []
+        for (const r of list) {
+          const v = this._parseConteoNum(r)
+          if (v != null) nums.push(v)
+        }
+        if (!nums.length) return null
+        const rounded = nums.map((x) => Math.round(x * 100) / 100)
+        const uniqSet = [...new Set(rounded)]
+        if (uniqSet.length === 1) return this._fmtPct(uniqSet[0])
+        const lo = Math.min(...uniqSet)
+        const hi = Math.max(...uniqSet)
+        return `${this._fmtPct(lo)}–${this._fmtPct(hi)}`
       },
       getImagePartido(c) {
         return getPartidoImage(c)
+      },
+      /** Si el PNG del partido no existe en CDN, mostrar icono genérico con color de la lista. */
+      onPartidoListImgError(c, ev) {
+        const img = ev?.target
+        if (!(img instanceof HTMLImageElement) || img.dataset.partyFallback === '1') return
+        img.dataset.partyFallback = '1'
+        img.src = getPartidoFallbackImageDataUrl(c?.color)
       },
       isSplitParliamentCharts() {
         return typeof window !== 'undefined' && window.innerWidth < PARLIAMENT_SPLIT_MAX_WIDTH_PX
@@ -422,11 +571,26 @@
         d3.selectAll('.svg-congreso circle').classed('active', false)
         d3.selectAll(`.svg-congreso circle.${c.partido_id}`).classed('active', true)
       },
+      regionSlugForSeatClass(region) {
+        return String(region || '')
+          .trim()
+          .replace(/\s+/g, '-')
+          .toLowerCase()
+      },
       show_departamentos(d) {
-        this.depSelected = d.region
-        let _r = d.region.replace(" ","-").replace(" ","-").toLowerCase()
-        this.depObject=d
+        const selectedRegion =
+          String(d?.region || '').trim().toUpperCase() === 'NACIONAL' ? REGION_NACIONAL : d.region
+        this.depSelected = selectedRegion
+        this.depObject = {
+          ...(d || {}),
+          region: selectedRegion,
+        }
         d3.selectAll('.svg-congreso circle').classed('active', false)
+        if (selectedRegion === REGION_NACIONAL) {
+          d3.selectAll('.svg-congreso circle').classed('active', true)
+          return
+        }
+        const _r = this.regionSlugForSeatClass(selectedRegion)
         d3.selectAll(`.svg-congreso circle.${_r}`).classed('active', true)
       },
       reset_congreso() {
@@ -437,8 +601,22 @@
         }
         d3.selectAll('.svg-congreso circle').classed('active', true)
       },
+      /** ONPE suele mandar ``totalVotosValidos``; el JSON exportado usa ``voto_preferencial``. */
+      seatVotoPreferencial(d) {
+        if (!d || typeof d !== 'object') return 0
+        const raw =
+          d.voto_preferencial ??
+          d.totalVotosValidos ??
+          d.total_votos_validos ??
+          d.votoPreferencial ??
+          d.votosPreferenciales ??
+          d.totalVotosCandidato
+        const n = Number(raw)
+        return Number.isFinite(n) ? n : 0
+      },
       show_congresista(event, d) {
         const tooltip = d3.select(`#${CONGRESO_TOOLTIP_ID}`)
+        const pref = this.seatVotoPreferencial(d)
         let table = ''
         if (isParliamentPlaceholderSeat(d)) {
           table = tooltipInformacionNoDisponibleHtml()
@@ -446,12 +624,12 @@
           table = `<h5 class="mb-2 border-bottom pb-2">Senado (${this.formatRegionLabel(d.region || REGION_NACIONAL)})</h5>`
           table += `<h3>${d.nombre}</h3>`
           table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido}</h4>`
-          table += `<h4>Voto preferencial: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
+          table += `<h4>Voto preferencial: <span class="text-success">${numeral(pref).format('0,0')}</span></h4>`
         } else {
           table = `<h5 class="mb-2 border-bottom pb-2">${this.formatRegionLabel(d.region || REGION_NACIONAL)}</h5>`
           table += `<h3>${d.nombre}</h3>`
           table += `<h4 class="text-light"><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
-          table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
+          table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(pref).format('0,0')}</span></h4>`
           table += `<h4>Votos válidos de la agrupación: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
         }
         tooltip.interrupt()
@@ -567,14 +745,14 @@
         }
 
         // Classes and events for all circles (senado + congreso)
-        d3.selectAll('.svg-congreso circle')
-          .attr("class", function (d) {
-            if (d.senado_tipo) {
-              return `active seat-senado ${d.partido_id}`
-            }
-            const _r = (d.region || '').replace(/\s/g, '-').toLowerCase()
-            return `active seat-congreso ${_r} ${d.partido_id}`
-          })
+        d3.selectAll('.svg-congreso circle').attr('class', (d) => {
+          if (d.senado_tipo) {
+            const _r = this.regionSlugForSeatClass(d.region)
+            return `active seat-senado ${_r} ${d.partido_id}`
+          }
+          const _r = this.regionSlugForSeatClass(d.region)
+          return `active seat-congreso ${_r} ${d.partido_id}`
+        })
 
         d3.selectAll('.svg-congreso circle.active')
           .on("mouseover", (e, d) => {
@@ -582,11 +760,11 @@
               this.show_congresista(e, d)
               return
             }
-            const _r = (d.region || '').replace(/\s/g, '-').toLowerCase()
-            if (this.depSelected === REGION_NACIONAL)
+            if (this.depSelected === REGION_NACIONAL) {
               this.show_congresista(e, d)
-            else if (d.region === this.depSelected)
+            } else if (String(d.region) === String(this.depSelected)) {
               this.show_congresista(e, d)
+            }
           })
           .on('mouseout', () => {
             d3.select(`#${CONGRESO_TOOLTIP_ID}`)

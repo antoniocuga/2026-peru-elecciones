@@ -8,7 +8,7 @@
       
         <div class="row">
           <div class="col-12">
-            <BTabs >
+            <BTabs v-model="topParlamentoTabIndex">
               <BTab :title="`Senadores 2026`">
                 <div :key="eleccion.eleccion" v-for="(eleccion) in candidatos_senado_real_view">
                   <div class="card card-candidate align-self-center p-2 border-top-0">
@@ -23,11 +23,11 @@
                           </div>
                           <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                               v-else
-                              :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                              :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id, candidato.nombre)" />
                         </div>
                         <div class="col-4 col-md-4 col-lg-5 p-0 align-self-center">
                           <div class="tooltip-c">
-                            <h4 class="candidato-mapa candidato-partido mt-1">{{ candidato.nombre }}</h4>
+                            <h4 class="candidato-mapa candidato-partido mt-1">{{ formatNombreTitulo(candidato.nombre) }}</h4>
                             <h4 class="partido-mapa"><img v-if="!isPlaceholderCandidate(candidato)" width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
                           </div>
                         </div>
@@ -54,10 +54,10 @@
                           </div>
                           <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
                               v-else
-                              :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                              :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id,candidato.nombre)" />
                         </div>
                         <div class="col-4 col-md-4 col-lg-5 p-0 align-self-center">
-                          <h4 class="candidato-mapa mt-1 candidato-diputado">{{ candidato.nombre }}</h4>
+                          <h4 class="candidato-mapa mt-1 candidato-diputado">{{ formatNombreTitulo(candidato.nombre) }}</h4>
                           <h4 class="partido-mapa"><img v-if="!isPlaceholderCandidate(candidato)" width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
                         </div>
                         <div class="col-4 col-md-4 col-lg-4 align-self-center text-right">
@@ -70,7 +70,7 @@
                 </div>
               </BTab>
 
-              <BTab disabled :title="`Conteo al ${ conteo_senado }%`"></BTab>
+              <BTab disabled :title="tituloConteoParlamento"></BTab>
             </BTabs>
           </div>
         </div>
@@ -91,7 +91,7 @@
                     <div>
                       <div class="">
                         <img class="rounded-circle border border-3 flex-shrink-0 img-candidato"
-                        :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id)" />
+                        :style="`border-color: ${candidato.color} !important`" :src="getImageCandidate(candidato.candidato_id, candidato.candidato)" />
                       </div>
                     </div>
                   </div>
@@ -144,10 +144,16 @@
       const store = useCandidatosStore()
       return { ...storeToRefs(store), store }
     },
+    data() {
+      return {
+        /** 0 = Senadores, 1 = Diputados (tercer tab solo conteo, disabled). */
+        topParlamentoTabIndex: 0,
+      }
+    },
     methods: {
       numeral,
-      getImageCandidate(c) {
-        return getCandidatoImage(c)
+      getImageCandidate(id, nombre) {
+        return getCandidatoImage(id, nombre)
       },
       getImagePartido(c) {
         return getPartidoImage(c)
@@ -163,15 +169,89 @@
       },
       isPlaceholderCandidate(candidato) {
         return String(candidato?.candidato_id || '').startsWith(PLACEHOLDER_PREFIX)
-      }
+      },
+      /** ONPE suele mandar nombres en mayúsculas → título por palabra (y por segmento con guion). */
+      formatNombreTitulo(nombre) {
+        if (nombre == null) return ''
+        const s = String(nombre).trim()
+        if (!s) return ''
+        return s
+          .toLowerCase()
+          .split(/\s+/)
+          .map((tok) =>
+            tok
+              .split('-')
+              .map((w) => (w ? w.charAt(0).toUpperCase() + w.slice(1) : w))
+              .join('-'),
+          )
+          .join(' ')
+      },
+      _parseConteoNum(row) {
+        if (!row || typeof row !== 'object') return null
+        const n = row.conteo
+        if (typeof n === 'number' && !Number.isNaN(n)) return n
+        const g = row.conteo_general
+        if (g == null || String(g).trim() === '') return null
+        const p = parseFloat(
+          String(g)
+            .replace(/%/g, '')
+            .replace(/\s/g, '')
+            .replace(',', '.')
+            .trim(),
+        )
+        return Number.isNaN(p) ? null : p
+      },
+      _fmtPct(n) {
+        const r = Math.round(n * 100) / 100
+        return Number.isInteger(r) ? String(r) : r.toFixed(2)
+      },
+      pctLabelFromRows(rows, rowFilter) {
+        const list = Array.isArray(rows) ? (rowFilter ? rows.filter(rowFilter) : rows) : []
+        const nums = []
+        for (const r of list) {
+          const v = this._parseConteoNum(r)
+          if (v != null) nums.push(v)
+        }
+        if (!nums.length) return null
+        const rounded = nums.map((x) => Math.round(x * 100) / 100)
+        const uniq = [...new Set(rounded)]
+        if (uniq.length === 1) return this._fmtPct(uniq[0])
+        const lo = Math.min(...uniq)
+        const hi = Math.max(...uniq)
+        return `${this._fmtPct(lo)}–${this._fmtPct(hi)}`
+      },
     },
     computed: {
       conteo() {
-        return parseFloat(uniq(map(this.congresistas_parse, 'conteo_general')).join(""))
+        const label = this.pctLabelFromRows(this.congresistas, null)
+        if (!label) return 0
+        const first = String(label).split('–')[0]
+        return parseFloat(first.replace(',', '.')) || 0
       },
-      conteo_senado() {
-        if (!this.senadores || this.senadores.length === 0) return '0'
-        return this.senadores[0]?.conteo_general ?? '0'
+      conteoSenadoNacionalLabel() {
+        return (
+          this.pctLabelFromRows(this.senadores, (s) => s.senado_tipo === 'nacional') ?? '0'
+        )
+      },
+      conteoDiputadosLabel() {
+        return this.pctLabelFromRows(this.congresistas, null) ?? '0'
+      },
+      /** Mismo criterio que resultados presidenciales nacionales (`region === 'total'` en resultados_total). */
+      conteoPresidencialLabel() {
+        const rows = (this.todos || []).filter(
+          (r) => r && r.region === 'total' && String(r.candidato_id || '').trim() !== '',
+        )
+        return this.pctLabelFromRows(rows, null) ?? '0'
+      },
+      tituloConteoParlamento() {
+        const idx = this.topParlamentoTabIndex
+        let specific = '0'
+        if (idx === 0) specific = this.conteoSenadoNacionalLabel
+        else if (idx === 1) specific = this.conteoDiputadosLabel
+        const fallback = this.conteoPresidencialLabel
+        const label = specific !== '0' ? specific : (fallback !== '0' ? fallback : '0')
+        if (label === '0') return 'Conteo —'
+        return `Conteo al ${label}%`
       },
       fecha_hora() {
         return uniq(map(this.congresistas_parse, 'hora')).join("")

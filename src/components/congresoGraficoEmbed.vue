@@ -38,8 +38,10 @@
     CONGRESO_TOOLTIP_ID,
     clampCongresoTooltipToViewport,
     isParliamentPlaceholderSeat,
+    seatVotoPreferencial,
     tooltipInformacionNoDisponibleHtml,
   } from '../utils/congresoTooltip'
+  import { joinHoras, maxConteo } from '../utils/conteoAggregate'
 
   export default {
     name: 'congresoGraficoEmbed',
@@ -77,21 +79,26 @@
         return orderBy(this.congresistas_parse, ['voto_preferencial'], ['desc']).slice(10, this.congresistas_parse.length)
       },
       departamentos_conteo() {
-        if(this.depSelected != "NACIONAL (130)")
-          return parseFloat(uniq(map(filter(this.departamentos, ['region', this.depSelected]), 'conteo')).join(""))
-
+        if (this.depSelected !== 'NACIONAL (130)') {
+          const row = this.departamentos.find((d) => d.region === this.depSelected)
+          return row ? Number(row.conteo) || 0 : 0
+        }
         return 0
       },
       departamentos_hora() {
-        return uniq(map(filter(this.departamentos, ['region', this.depSelected]), 'hora')).join("")
+        if (this.depSelected !== 'NACIONAL (130)') {
+          const row = this.departamentos.find((d) => d.region === this.depSelected)
+          return row ? row.hora : ''
+        }
+        return ''
       },
       departamentos() {
         return orderBy(map(groupBy(this.congresistas, 'region'), (items, r) => {
           return {
             region: r,
             departamento: uniq(map(items, 'departamento')).join(""),
-            hora: uniq(map(items, 'hora')).join(""),
-            conteo: uniq(map(items, 'conteo')).join(""),
+            hora: joinHoras(items),
+            conteo: maxConteo(items),
             seats: items.length,
             congresistas: items
           }
@@ -170,7 +177,7 @@
           table = `<h5 class="mb-2">${reg}</h5>`
           table += `<h3>${d.nombre}</h3>`
           table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
-          table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(d.voto_preferencial).format('0,0')}</span></h4>`
+          table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(seatVotoPreferencial(d)).format('0,0')}</span></h4>`
           table += `<h4>Total de votos de la agrupación en ${reg}: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
         }
 

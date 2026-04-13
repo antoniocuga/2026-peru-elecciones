@@ -1,9 +1,12 @@
 /**
  * API client - returns Promises
  *
- * Data file and directory can be switched via env (e.g. 2026 vs 2021):
+ * Primera vuelta 2026 JSON under data-primera-vuelta/ is built by crawler/2026
+ * (export_frontend_data.py; optional live refresh per region during scrapy crawl).
+ *
+ * Env overrides (e.g. 2026 vs 2021):
  *   VITE_DATA_PRIMERA_DIR     - folder for primera vuelta (default: data-primera-vuelta)
- *   VITE_RESULTADOS_PRIMERA   - filename for candidatos (default: resultados_total.json)
+ *   VITE_RESULTADOS_PRIMERA   - filename for candidatos (default: resultados_total_2026.json)
  *   VITE_DATA_SEGUNDA_DIR     - folder for segunda vuelta (default: data)
  *   VITE_RESULTADOS_SEGUNDA   - filename for segunda (default: resultados_total.json)
  */
@@ -11,7 +14,7 @@ import axios from 'axios'
 
 const BASE = import.meta.env.VITE_API_BASE || '/especiales/resultados-onpe-elecciones-2026'
 const DATA_PRIMERA_DIR = import.meta.env.VITE_DATA_PRIMERA_DIR || 'data-primera-vuelta'
-const RESULTADOS_PRIMERA = import.meta.env.VITE_RESULTADOS_PRIMERA || 'resultados_total.json'
+const RESULTADOS_PRIMERA = import.meta.env.VITE_RESULTADOS_PRIMERA || 'resultados_total_2026.json'
 const DATA_SEGUNDA_DIR = import.meta.env.VITE_DATA_SEGUNDA_DIR || 'data'
 const RESULTADOS_SEGUNDA = import.meta.env.VITE_RESULTADOS_SEGUNDA || 'resultados_total.json'
 
@@ -54,7 +57,8 @@ export default {
     return data
   },
   async getAllCandidatos() {
-    const { data } = await requestWithTimestamp(`${BASE}/${DATA_PRIMERA_DIR}/${RESULTADOS_PRIMERA}`)
+    const url = getPrimeraUrl(RESULTADOS_PRIMERA)
+    const { data } = await requestWithTimestamp(url)
     return data
   },
   async getAllCandidatosSegunda() {

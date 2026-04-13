@@ -14,6 +14,20 @@ export function isParliamentPlaceholderSeat(d) {
   return typeof cid === 'string' && cid.startsWith('placeholder-')
 }
 
+/** Preferencial por curul: JSON exportado vs campos crudos ONPE (p. ej. totalVotosValidos). */
+export function seatVotoPreferencial(d) {
+  if (!d || typeof d !== 'object') return 0
+  const raw =
+    d.voto_preferencial ??
+    d.totalVotosValidos ??
+    d.total_votos_validos ??
+    d.votoPreferencial ??
+    d.votosPreferenciales ??
+    d.totalVotosCandidato
+  const n = Number(raw)
+  return Number.isFinite(n) ? n : 0
+}
+
 export function tooltipInformacionNoDisponibleHtml() {
   return `<p class="mb-0">${TOOLTIP_INFORMACION_NO_DISPONIBLE}</p>`
 }
