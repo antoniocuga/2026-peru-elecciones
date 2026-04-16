@@ -5,13 +5,25 @@ import { getPartidoImage, getCandidatoImage } from '../utils/assets'
 import * as d3 from 'd3'
 import { feature } from 'topojson'
 import { find, filter, map, maxBy, minBy, orderBy, sumBy, groupBy, uniq } from 'lodash'
-import { TOOLTIP_INFORMACION_NO_DISPONIBLE } from '../utils/congresoTooltip'
+import { TOOLTIP_INFORMACION_NO_DISPONIBLE, clampTooltipToViewport } from '../utils/congresoTooltip'
 import { maxConteo } from '../utils/conteoAggregate'
 
 /** Sum votos válidos por candidato en una región / distrito (JSON puede traer total o total_votos). */
 function sumCandidatoVoteTotals(candidatos) {
   if (!Array.isArray(candidatos) || !candidatos.length) return 0
   return sumBy(candidatos, (c) => Number(c.total ?? c.total_votos ?? 0) || 0)
+}
+
+function isMapGeoFeature(f) {
+  return f != null && typeof f === 'object' && f.properties != null
+}
+
+/** Callao / Lima metro / extranjero: en D3 el datum es un string, no un feature GeoJSON. */
+function mapExtraRegionSlugTitle(slug) {
+  if (slug === 'extranjero') return 'Extranjero'
+  if (slug === 'lima') return 'Lima Metropolitana'
+  if (slug === 'callao') return 'Callao'
+  return ''
 }
 
 const MAPA_DEP_GRAY_PATH = 'fill:rgb(151, 151, 151);'
@@ -207,6 +219,7 @@ export const mapaBaseMixin = {
           departamento: region !== 'extranjero' ? uniq(map(item, 'departamento')).join('') : 'EXTRANJERO',
           total_departamento: parseFloat(sumBy(map(item, 'total'))),
           candidatos: orderBy(item, ['validos'], ['desc']),
+          conteo: maxConteo(item),
           geodata: getMapaData(_r),
           winner: maxBy(item, 'validos'),
         }
@@ -325,8 +338,8 @@ export const mapaBaseMixin = {
     },
 
     /**
-     * Con zoom a una región: gris en todos los departamentos salvo el seleccionado (ahí resultados).
-     * Vista nacional: colorea todos según datos.
+     * Con zoom a distritos: todos los departamentos en gris (el color va en los distritos).
+     * Vista nacional: colorea departamentos según datos.
      */
     applyDepartamentoFills() {
       const base = d3.select(this.$refs['svgmap'])
@@ -334,14 +347,14 @@ export const mapaBaseMixin = {
 
       const zoomed = this.zoomed === true
       const reg = this.regionSeleccionada?.region
-      const selectedNorm =
-        zoomed && reg && reg !== 'NACIONAL' ? this.normalizeRegionId(reg) : null
+      const distritoView =
+        zoomed && reg && reg !== 'NACIONAL'
 
       base.selectAll('path.departamento-path').attr('style', (f) => {
-        const id = f.properties.dep_id
-        if (selectedNorm && this.normalizeRegionId(id) !== selectedNorm) {
+        if (distritoView) {
           return MAPA_DEP_GRAY_PATH
         }
+        const id = f.properties.dep_id
         return this._fillStyleDepartamentoPathByRegionId(id)
       })
 
@@ -353,7 +366,7 @@ export const mapaBaseMixin = {
           const rid = ids[i]
           if (!rid) return
           const el = d3.select(this)
-          if (selectedNorm && self.normalizeRegionId(rid) !== selectedNorm) {
+          if (distritoView) {
             el.attr('style', MAPA_DEP_GRAY_SPAN)
           } else {
             el.attr('style', self._fillStyleDepartamentoSpanByRegionId(rid))
@@ -448,7 +461,7 @@ export const mapaBaseMixin = {
             this.applyDepartamentoFills()
           } else {
             this.zoomed = false
-            base.selectAll('path.departamento-path').classed('inactive', false)
+            base.selectAll('path.departamento-path').classed('inactive', false).attr('style', MAPA_DEP_GRAY_PATH)
             d3.select('.candidate-results-vivo').style('opacity', 1).classed('active', true)
             this.applyDepartamentoFills()
           }
@@ -659,17 +672,33 @@ export const mapaBaseMixin = {
     _showTooltip(event, dep, f) {
       this.tooltip
         .html(this.load_tooltip(dep, f))
-        .style('left', event.pageX + 'px')
-        .style('top', (event.pageY - 28) + 'px')
-      this.tooltip.transition().duration(500).style('opacity', 0)
-      this.tooltip.transition().duration(200).style('opacity', 1)
+        .style('display', 'block')
+        .style('visibility', 'visible')
+        .style('opacity', 0)
+      this.$nextTick(() => {
+        const node = this.tooltip.node()
+        if (node) {
+          clampTooltipToViewport(node, event.clientX, event.clientY, {
+            offsetY: 28,
+            padding: 12,
+            gapBelowCursor: 10,
+          })
+        }
+        this.tooltip.transition().duration(180).style('opacity', 1)
+      })
     },
     _hideTooltip() {
-      this.tooltip.transition().duration(500).style('opacity', 0)
+      this.tooltip
+        .interrupt()
+        .transition()
+        .duration(200)
+        .style('opacity', 0)
     },
     load_tooltip(dep, f) {
       if (!dep) {
-        const name = f.properties?.DISTRITO || f.properties?.NAME_1 || 'Distrito'
+        const name = isMapGeoFeature(f)
+          ? (f.properties.DISTRITO || f.properties.NAME_1 || 'Distrito')
+          : (typeof f === 'string' && mapExtraRegionSlugTitle(f)) || 'Distrito'
         return `<div class="row border-bottom pb-2 mb-2"><div class="col-12 depa"><b>${name}</b></div><div class="col-12">${TOOLTIP_INFORMACION_NO_DISPONIBLE}</div></div>`
       }
 
@@ -679,14 +708,20 @@ export const mapaBaseMixin = {
       const conteo = maxConteo(dep.candidatos || [])
 
       if (!this.zoomed) {
-        const name = f.properties ? (f.properties.NAME_1 || f.properties.DISTRITO || '') : dep.departamento
+        const name = isMapGeoFeature(f)
+          ? (f.properties.NAME_1 || f.properties.DISTRITO || '')
+          : (typeof f === 'string' && mapExtraRegionSlugTitle(f)) || dep.departamento
         table = `
           <div class="row border-bottom pb-2 mb-2">
             <div class="col-6 depa"><b>${name}</b></div>
             <div class="col-6 text-right"><span class="badge badge-secondary">Conteo ONPE al ${conteo}%</span></div>
           </div>`
         if (dep.candidatos?.length) {
-          const top = orderBy(dep.candidatos, ['total_departamento'], ['desc']).slice(0, count)
+          const top = orderBy(
+            dep.candidatos,
+            [(c) => Number(c.total_departamento ?? c.total ?? c.total_votos ?? 0)],
+            ['desc'],
+          ).slice(0, count)
           map(top, dp => {
             const borderColor = dp.color || '#6c757d'
             candidatos += `
@@ -710,9 +745,12 @@ export const mapaBaseMixin = {
         }
         table += `<div>${candidatos}</div>`
       } else {
+        const zoomedHeader = isMapGeoFeature(f)
+          ? `<b>${f.properties.DISTRITO ?? ''}</b> - ${f.properties.PROVINCIA ?? ''}`
+          : `<b>${(typeof f === 'string' && mapExtraRegionSlugTitle(f)) || dep.departamento || ''}</b>`
         table = `
           <div class="row border-bottom pb-2 mb-2">
-            <div class="col-7 depa"><b>${f.properties.DISTRITO ?? ''}</b> - ${f.properties.PROVINCIA ?? ''}</div>
+            <div class="col-7 depa">${zoomedHeader}</div>
             <div class="col-5 text-right"><span class="badge badge-secondary">Conteo ONPE al ${dep.conteo ?? 0}%</span></div>
           </div>`
         if (dep.conteo > 0 && dep.candidatos?.length) {

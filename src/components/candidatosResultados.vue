@@ -1,11 +1,61 @@
 <template>
   <div class="candidate-results-vivo  pb-3 active">
-    <div>      
+    <div>
+      <!-- Mobile: región y distrito bajo el mapa (MapaEleciones coloca el mapa arriba en < md) -->
+      <div class="row filter-region-primera d-block d-md-none mb-3">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <button
+            v-if="regionSeleccionada.region != 'NACIONAL'"
+            type="button"
+            class="btn btn-light btn-sm mr-2 mb-2"
+            @click="resetMapa()"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+            </svg>
+          </button>
+          <DropdownBs4
+            :text="capitalizeWords(regionSeleccionada.departamento)"
+            variant="light"
+            :wrapperClass="['d-inline-block', 'mb-2', 'mr-2', 'departamento-menu', 'flex-grow-1']"
+          >
+            <template #default="{ close }">
+              <button
+                type="button"
+                class="dropdown-item"
+                :key="dep.region"
+                v-for="dep in departamentos_list"
+                @click="close(); show_departamento(dep)"
+              >
+                {{ capitalizeWords(dep.departamento) }}
+              </button>
+            </template>
+          </DropdownBs4>
+          <DropdownBs4
+            v-if="regionSeleccionada.region != 'NACIONAL'"
+            :text="distritoSeleccionado.distrito"
+            variant="light"
+            :wrapperClass="['d-inline-block', 'mb-2', 'departamento-menu', 'flex-grow-1']"
+          >
+            <template #default="{ close }">
+              <button
+                type="button"
+                class="dropdown-item"
+                :key="d.ubigeo"
+                v-for="d in distritos"
+                @click="close(); selectDistrito(d)"
+              >
+                {{ d.distrito }}
+              </button>
+            </template>
+          </DropdownBs4>
+        </div>
+      </div>
 
       <BTabs>
         <BTab :title="`Resulados nacionales`">
           <template #title>
-             <span class="title-resultados align-self-center" v-if="regionSeleccionada.region !='NACIONAL'"><span>{{regionSeleccionada.region}}</span></span>
+             <span class="title-resultados align-self-center" v-if="regionSeleccionada.region !='NACIONAL' && distritoSeleccionado.distrito =='Seleccionar distrito'"><span>{{regionSeleccionada.region}}</span></span>
 
               <span class="title-resultados align-self-center" v-if="regionSeleccionada.region =='NACIONAL'"><span>RESULTADOS</span></span>
               <span class="distrito-resultados align-self-center" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'"><span>{{ distritoSeleccionado.distrito }}</span></span>
@@ -40,6 +90,14 @@
                         <img v-if="!isPlaceholderCandidate(c)" width="25px" class="partido-icon mr-2" :src="getImagePartido(c.partido_id)" />
                         {{ c.partido || '\u00A0' }}
                       </h4>
+                      <h4 class=" mt-1">
+                         <span
+                          class="d-inline badge badge-light text-right diferencia text-dark"
+                          v-if="leadGapForCandidate(c) > 0"
+                        >
+                          Ganando por +{{ numeral(leadGapForCandidate(c)).format('0,0') }}
+                        </span>
+                      </h4>
                     </div> 
                     
                     <div class="col-4 col-md-4 col-lg-4 align-self-center text-right">
@@ -55,6 +113,7 @@
                           Votos
                         </span>
                         <span class="d-block text-right diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos || 0).format('0,0') }} votos</span>
+                       
                       </span>   
                       
                       </div>
@@ -67,7 +126,7 @@
             
             <BCollapse v-model="open" id="collapse-1" class="col-12">
 
-            <div class="card card-candidate align-self-center mt-2 " :key="c.candidato_id" v-for="c in displayCandidatosForView.slice(6, displayCandidatosForView.length)">
+              <div class="card card-candidate align-self-center mt-2 " :key="c.candidato_id" v-for="c in displayCandidatosForView.slice(6, displayCandidatosForView.length)">
                 <div class="row border-bottom">
                   <div class="col-4 col-md-3 col-lg-3 text-center">
                       <div
@@ -107,6 +166,12 @@
                           Votos válidos
                         </span>
                         <span class="d-block text-right diferencia" v-if="distritoSeleccionado.distrito !='Seleccionar distrito'">{{ numeral(c.total_votos || 0).format('0,0') }} votos</span>
+                        <span
+                          class="d-block text-right diferencia text-secondary"
+                          v-if="distritoSeleccionado.distrito !='Seleccionar distrito' && leadGapForCandidate(c) > 0"
+                        >
+                          +{{ numeral(leadGapForCandidate(c)).format('0,0') }} vs {{ leadGapLabelForCandidate(c) }}
+                        </span>
                       </span>    
                     
                     </div>
@@ -149,11 +214,14 @@
   import { useCandidatosStore } from '../stores/candidatos'
   import { getPartidoImage, getCandidatoImage } from '../utils/assets'
   import { getMapaData, getPerugeo } from '../utils/mapas'
+  import { capitalizeWords } from '../utils/formatText'
+  import DropdownBs4 from './DropdownBs4.vue'
   const PLACEHOLDER_PREFIX = 'placeholder-candidato-'
   const PLACEHOLDER_COLOR = '#ADB5BD'
 
   export default {
     name: 'candidatosResultados',
+    components: { DropdownBs4 },
     props: {
       candidatos: Array
     },    
@@ -181,7 +249,7 @@
       },
       departamentos_list() {
         if (!this.perugeo || !this.perugeo.features) return []
-        let filtered = filter(this.todosCandidatos, c => c.candidato_id != '' && c.region != 'total' && c.region != 'extranjero')
+        let filtered = filter(this.todosCandidatos, c => c.candidato_id != '' && c.region != 'total')
         return orderBy(map(groupBy(filtered, 'region'), (item, region) => {
           let dep = find(this.perugeo.features, d => d.properties.dep_id == region)
           let _r = region.replace(" ","-")
@@ -274,9 +342,13 @@
     watch: {
       regionSeleccionada() {
         this.open = false
-      }
+      },
+      'regionSeleccionada.region'() {
+        this.distritoSeleccionado = { distrito: 'Seleccionar distrito' }
+      },
     },
     methods: {
+      capitalizeWords,
       numeral,
       isPlaceholderCandidate(c) {
         return String(c?.candidato_id || '').startsWith(PLACEHOLDER_PREFIX)
@@ -300,9 +372,12 @@
         }), ['validos'], ['desc'])
       },
       resetMapa() {
-        this.store.updateRegionSeleccionada({region:'NACIONAL', departamento:'VER REGIÓN'})
+        this.store.updateRegionSeleccionada({
+          region: 'NACIONAL',
+          departamento: 'Explorar región',
+        })
         this.distritoSeleccionado = {
-          distrito: "Seleccionar distrito"
+          distrito: 'Seleccionar distrito',
         }
       },
       show_departamento(departamento) {
@@ -320,6 +395,28 @@
       },
       getImagePartido(c) {
         return getPartidoImage(c)
+      },
+      votoBaseForGap(c) {
+        if (!c) return 0
+        const current = this.distritoSeleccionado.distrito != 'Seleccionar distrito'
+          ? (c.total_votos ?? c.votos ?? 0)
+          : (c.votos ?? c.total_votos ?? 0)
+        return Number(current) || 0
+      },
+      leadGapForCandidate(c) {
+        const list = this.displayCandidatosForView || []
+        const idx = list.findIndex((x) => x.candidato_id === c?.candidato_id)
+        if (idx < 0 || idx > 1) return 0
+        const current = this.votoBaseForGap(list[idx])
+        const next = this.votoBaseForGap(list[idx + 1])
+        return Math.max(0, current - next)
+      },
+      leadGapLabelForCandidate(c) {
+        const list = this.displayCandidatosForView || []
+        const idx = list.findIndex((x) => x.candidato_id === c?.candidato_id)
+        if (idx === 0) return '2do'
+        if (idx === 1) return '3ro'
+        return ''
       }
     }
   }

@@ -51,6 +51,11 @@ export default {
     const { data } = await requestWithTimestamp(url)
     return data
   },
+  async getCongresoPartidoRegion() {
+    const url = getPrimeraUrl('congreso_partido_region.json')
+    const { data } = await requestWithTimestamp(url)
+    return data
+  },
   async getAllSenado() {
     const url = getPrimeraUrl('senado_total.json')
     const { data } = await requestWithTimestamp(url)

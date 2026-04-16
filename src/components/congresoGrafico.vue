@@ -10,6 +10,7 @@
           </template>
           <div class="list-resultados-partidos p-3">
             <div class="row pb-3">
+
               <div class="col-12" :key="c.partido_id" v-for="c in congresistasPartidoForList">
                 <div @mouseover="show_partidos(c)" @mouseout="reset_congreso()" class="row candidate-info align-self-center pt-2 pb-2 item-partido">
                   <div class="col-auto pr-1 congreso-grafico__partido-col">
@@ -86,7 +87,7 @@
                       "
                     >
                       <div class="text-secondary small light">
-                        Nacional: {{ numeral(c.total_votos_nacional_lista).format('0,0') }}
+                        Nacional: {{ numeral(c.total_votos_nacional_lista).format('0,0') }} 
                       </div>
                       <div class="text-secondary small light">
                         Regional: {{ numeral(c.total_votos_regional_lista).format('0,0') }}
@@ -200,6 +201,7 @@
 
 <script>
   import numeral from 'numeral'
+  import api from '../api/api'
   import { storeToRefs } from 'pinia'
   import { useCandidatosStore } from '../stores/candidatos'
   import { getPartidoImage, getPartidoFallbackImageDataUrl } from '../utils/assets'
@@ -230,6 +232,35 @@
   const PARLIAMENT_SPLIT_MAX_WIDTH_PX = 840
 
   const REGION_NACIONAL = 'TODAS LAS REGIONES'
+  const DIPUTADOS_ONPE_REGION_CODE = {
+    amazonas: '1',
+    ancash: '2',
+    apurimac: '3',
+    arequipa: '4',
+    ayacucho: '5',
+    cajamarca: '6',
+    callao: '7',
+    cusco: '8',
+    huancavelica: '9',
+    huanuco: '10',
+    ica: '11',
+    junin: '12',
+    'la-libertad': '13',
+    lambayeque: '14',
+    lima: '15',
+    'lima-provincias': '16',
+    loreto: '17',
+    'madre-de-dios': '18',
+    moquegua: '19',
+    pasco: '20',
+    piura: '21',
+    puno: '22',
+    'san-martin': '23',
+    tacna: '24',
+    tumbes: '25',
+    ucayali: '26',
+    extranjero: '27',
+  }
 
   const CONGRESO_TOTAL_SEATS = 130
   const SENADO_TOTAL_SEATS = 60
@@ -296,6 +327,10 @@
           '',
         /** 0 = Diputados por partido, 1 = Senadores por partido (tab conteo disabled). */
         partidoListTabIndex: 0,
+        /** Cache ONPE por región slug -> { byNormName: { [norm]: totalVotosValidos } } */
+        diputadosOnpeByRegion: {},
+        /** Local summary JSON: region -> partido_id -> total_votos_validos */
+        diputadosSummaryByRegion: {},
       }
     },
     computed: {
@@ -351,28 +386,19 @@
       departamentos() {
         const cong = Array.isArray(this.congresistas) ? this.congresistas : []
         const sen = Array.isArray(this.senadores) ? this.senadores : []
-        const normalizeRegionKey = (v) => {
-          const r = String(v || '').trim()
-          if (!r) return ''
-          if (r.toUpperCase() === 'NACIONAL' || r === REGION_NACIONAL) return REGION_NACIONAL
-          return r
-        }
         const keys = new Set()
         for (const row of cong) {
-          const r = normalizeRegionKey(row?.region)
-          if (r) keys.add(r)
+          const r = row?.region
+          if (r != null && String(r).trim() !== '') keys.add(String(r))
         }
         for (const row of sen) {
-          const r = normalizeRegionKey(row?.region)
-          if (r) keys.add(r)
+          const r = row?.region
+          if (r != null && String(r).trim() !== '') keys.add(String(r))
         }
-        // "NACIONAL" es semánticamente "Todas las regiones"; ya existe botón explícito para eso.
-        const sorted = [...keys]
-          .filter((r) => r !== REGION_NACIONAL)
-          .sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }))
+        const sorted = [...keys].sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }))
         return sorted.map((r) => {
-          const itemsC = cong.filter((x) => normalizeRegionKey(x?.region) === r)
-          const itemsS = sen.filter((x) => normalizeRegionKey(x?.region) === r)
+          const itemsC = cong.filter((x) => String(x?.region) === r)
+          const itemsS = sen.filter((x) => String(x?.region) === r)
           const metaRows = [...itemsC, ...itemsS]
           return {
             region: r,
@@ -387,9 +413,35 @@
       congresistas_parse() {
         return orderBy(this.congresistas, ['partido_id'], ['desc'])
       },
+      /** Scope for the left Diputados list: national or selected circunscripción. */
+      congresistas_scope() {
+        const all = Array.isArray(this.congresistas) ? this.congresistas : []
+        if (this.depSelected === REGION_NACIONAL) return all
+        return all.filter((r) => String(r?.region || '') === this.depSelected)
+      },
       congresistas_partido() {
-        return orderBy(map(groupBy(this.congresistas, 'partido_id'), (items, p) => {
-          let total_partido = sum(uniq(map(items, 'total_votos_partido'))) + sum(uniq(map(items, 'voto_fantasma'))) 
+        return orderBy(map(groupBy(this.congresistas_scope, 'partido_id'), (items, p) => {
+          // ONPE `total_votos_partido` is party total per circunscripción. A party can have
+          // multiple candidates/seats in the same region, so first keep one total per region
+          // and then sum regions. This avoids undercount from global `uniq(total)` collisions.
+          const porRegion = groupBy(items, (i) => String(i?.region || '').toLowerCase())
+          let total_partido = sum(
+            map(porRegion, (rows) => {
+              const totalLista = Math.max(...map(rows, (r) => Number(r.total_votos_partido) || 0))
+              return totalLista
+            }),
+          )
+          // If a specific región is selected and ONPE resumen exists, prefer official
+          // `totalVotosValidos` from `participantes-ubicacion-geografica-nombre`.
+          if (this.depSelected !== REGION_NACIONAL) {
+            const fromSummary =
+              this.diputadosSummaryByRegion?.[this.depSelected]?.[p]?.total_votos_validos
+            if (Number.isFinite(fromSummary)) total_partido = fromSummary
+            const byNormName = this.diputadosOnpeByRegion?.[this.depSelected]?.byNormName
+            const partidoNombre = uniq(map(items, 'partido')).join("")
+            const fromOnpe = this.lookupOnpePartyTotal(byNormName, partidoNombre)
+            if (Number.isFinite(fromOnpe)) total_partido = fromOnpe
+          }
           return {
             partido_id: p,
             partido: uniq(map(items, 'partido')).join(""),
@@ -485,10 +537,16 @@
       },
       senadores() {
         this.renderCongreso()
+      },
+      depSelected(nextRegion) {
+        if (nextRegion && nextRegion !== REGION_NACIONAL) {
+          this.loadDiputadosOnpeRegionTotals(nextRegion)
+        }
       }
     },
     mounted() {
       acquireCongresoBodyTooltip()
+      this.loadDiputadosSummaryTotals()
       this._onResizeParliament = () => this.renderCongreso()
       window.addEventListener('resize', this._onResizeParliament, { passive: true })
       this.renderCongreso()
@@ -513,8 +571,88 @@
       },
       formatRegionLabel(region) {
         if (!region) return ''
-        if (region === REGION_NACIONAL || String(region).trim().toUpperCase() === 'NACIONAL') return 'Todas las regiones'
+        if (region === REGION_NACIONAL) return 'Todas las regiones'
         return capitalizeWords(String(region).replace(/-/g, ' ').toLowerCase())
+      },
+      normalizePartyName(name) {
+        return String(name || '')
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, ' ')
+          .trim()
+      },
+      getDiputadosOnpeRegionUrl(code) {
+        const qs =
+          `idEleccion=13&tipoFiltro=distrito_electoral&idDistritoElectoral=${encodeURIComponent(code)}`
+        if (import.meta.env.DEV) {
+          return `/onpe-backend/eleccion-diputado/participantes-ubicacion-geografica-nombre?${qs}`
+        }
+        return (
+          `https://resultadoelectoral.onpe.gob.pe/presentacion-backend/eleccion-diputado/` +
+          `participantes-ubicacion-geografica-nombre?${qs}`
+        )
+      },
+      lookupOnpePartyTotal(byNormName, partidoNombre) {
+        if (!byNormName || !partidoNombre) return null
+        const norm = this.normalizePartyName(partidoNombre)
+        if (Object.prototype.hasOwnProperty.call(byNormName, norm)) return byNormName[norm]
+        // Fallback for naming variants (e.g. "Partido Cívico Obras" vs "Partido Obras").
+        for (const [k, v] of Object.entries(byNormName)) {
+          if (k.includes(norm) || norm.includes(k)) return v
+        }
+        return null
+      },
+      async loadDiputadosSummaryTotals() {
+        try {
+          const payload = await api.getCongresoPartidoRegion()
+          const regions = Array.isArray(payload?.regions) ? payload.regions : []
+          const byRegion = {}
+          for (const r of regions) {
+            const slug = String(r?.region || '').trim().toLowerCase()
+            if (!slug) continue
+            const partidos = Array.isArray(r?.partidos) ? r.partidos : []
+            const pMap = {}
+            for (const p of partidos) {
+              const pid = String(p?.partido_id || '').trim()
+              if (!pid) continue
+              const total = Number(p?.total_votos_validos)
+              if (!Number.isFinite(total)) continue
+              pMap[pid] = { total_votos_validos: total }
+            }
+            byRegion[slug] = pMap
+          }
+          this.diputadosSummaryByRegion = byRegion
+        } catch (_e) {
+          // Optional file; keep existing aggregation / ONPE live fallback.
+        }
+      },
+      async loadDiputadosOnpeRegionTotals(regionSlug) {
+        const slug = String(regionSlug || '').trim().toLowerCase()
+        if (!slug || slug === REGION_NACIONAL.toLowerCase()) return
+        if (this.diputadosOnpeByRegion?.[slug]) return
+        const code = DIPUTADOS_ONPE_REGION_CODE[slug]
+        if (!code) return
+        const url = this.getDiputadosOnpeRegionUrl(code)
+        try {
+          const res = await fetch(url)
+          if (!res.ok) return
+          const payload = await res.json()
+          const data = Array.isArray(payload?.data) ? payload.data : []
+          const byNormName = {}
+          for (const row of data) {
+            const n = this.normalizePartyName(row?.nombreAgrupacionPolitica)
+            const v = Number(row?.totalVotosValidos)
+            if (!n || !Number.isFinite(v)) continue
+            byNormName[n] = v
+          }
+          this.diputadosOnpeByRegion = {
+            ...this.diputadosOnpeByRegion,
+            [slug]: { byNormName },
+          }
+        } catch (_e) {
+          // Keep UI totals from local JSON when ONPE fetch is unavailable.
+        }
       },
       _parseConteoNum(row) {
         if (!row || typeof row !== 'object') return null
@@ -578,20 +716,12 @@
           .toLowerCase()
       },
       show_departamentos(d) {
-        const selectedRegion =
-          String(d?.region || '').trim().toUpperCase() === 'NACIONAL' ? REGION_NACIONAL : d.region
-        this.depSelected = selectedRegion
-        this.depObject = {
-          ...(d || {}),
-          region: selectedRegion,
-        }
+        this.depSelected = d.region
+        const _r = this.regionSlugForSeatClass(d.region)
+        this.depObject = d
+        this.loadDiputadosOnpeRegionTotals(d.region)
         d3.selectAll('.svg-congreso circle').classed('active', false)
-        if (selectedRegion === REGION_NACIONAL) {
-          d3.selectAll('.svg-congreso circle').classed('active', true)
-          return
-        }
-        const _r = this.regionSlugForSeatClass(selectedRegion)
-        d3.selectAll(`.svg-congreso circle.${_r}`).classed('active', true)
+        d3.selectAll(`.svg-congreso circle.${CSS.escape(_r)}`).classed('active', true)
       },
       reset_congreso() {
         this.depSelected = REGION_NACIONAL
@@ -614,9 +744,20 @@
         const n = Number(raw)
         return Number.isFinite(n) ? n : 0
       },
+      seatTotalVotosPartido(d) {
+        if (!d || typeof d !== 'object') return 0
+        const raw =
+          d.total_votos_partido ??
+          d.totalVotosPartido ??
+          d.totalVotosValidosAgrupacion ??
+          d.totalVotosValidos
+        const n = Number(raw)
+        return Number.isFinite(n) ? n : 0
+      },
       show_congresista(event, d) {
         const tooltip = d3.select(`#${CONGRESO_TOOLTIP_ID}`)
         const pref = this.seatVotoPreferencial(d)
+        const totalPartido = this.seatTotalVotosPartido(d)
         let table = ''
         if (isParliamentPlaceholderSeat(d)) {
           table = tooltipInformacionNoDisponibleHtml()
@@ -624,13 +765,14 @@
           table = `<h5 class="mb-2 border-bottom pb-2">Senado (${this.formatRegionLabel(d.region || REGION_NACIONAL)})</h5>`
           table += `<h3>${d.nombre}</h3>`
           table += `<h4><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido}</h4>`
+          table += `<h4>Votos válidos de la agrupación: <span class="text-success">${numeral(totalPartido).format('0,0')}</span></h4>`
           table += `<h4>Voto preferencial: <span class="text-success">${numeral(pref).format('0,0')}</span></h4>`
         } else {
           table = `<h5 class="mb-2 border-bottom pb-2">${this.formatRegionLabel(d.region || REGION_NACIONAL)}</h5>`
           table += `<h3>${d.nombre}</h3>`
           table += `<h4 class="text-light"><img width="35px" src="${this.getImagePartido(d.partido_id)}" /> ${d.partido} - Nro. ${d.nro}</h4>`
+          table += `<h4>Votos válidos de la agrupación: <span class="text-success">${numeral(totalPartido).format('0,0')}</span></h4>`
           table += `<h4>Voto preferencial del candidato: <span class="text-success">${numeral(pref).format('0,0')}</span></h4>`
-          table += `<h4>Votos válidos de la agrupación: <span class="text-success">${numeral(d.total_votos_partido).format('0,0')}</span></h4>`
         }
         tooltip.interrupt()
         tooltip.html(table)
@@ -745,14 +887,14 @@
         }
 
         // Classes and events for all circles (senado + congreso)
-        d3.selectAll('.svg-congreso circle').attr('class', (d) => {
-          if (d.senado_tipo) {
-            const _r = this.regionSlugForSeatClass(d.region)
-            return `active seat-senado ${_r} ${d.partido_id}`
-          }
-          const _r = this.regionSlugForSeatClass(d.region)
-          return `active seat-congreso ${_r} ${d.partido_id}`
-        })
+        d3.selectAll('.svg-congreso circle')
+          .attr("class", function (d) {
+            if (d.senado_tipo) {
+              return `active seat-senado ${d.partido_id}`
+            }
+            const _r = (d.region || '').replace(/\s/g, '-').toLowerCase()
+            return `active seat-congreso ${_r} ${d.partido_id}`
+          })
 
         d3.selectAll('.svg-congreso circle.active')
           .on("mouseover", (e, d) => {
@@ -760,11 +902,11 @@
               this.show_congresista(e, d)
               return
             }
-            if (this.depSelected === REGION_NACIONAL) {
+            const _r = (d.region || '').replace(/\s/g, '-').toLowerCase()
+            if (this.depSelected === REGION_NACIONAL)
               this.show_congresista(e, d)
-            } else if (String(d.region) === String(this.depSelected)) {
+            else if (d.region === this.depSelected)
               this.show_congresista(e, d)
-            }
           })
           .on('mouseout', () => {
             d3.select(`#${CONGRESO_TOOLTIP_ID}`)

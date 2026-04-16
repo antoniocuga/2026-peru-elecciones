@@ -648,6 +648,8 @@
     }
 
     .candidate-results-vivo {
+      position:  sticky;
+      top: 75px;
       z-index: 999;
       transition: left .15s ease-in-out;
 
@@ -810,9 +812,12 @@
       position: absolute;
       top: 0;
       right: 15px;
-      width: 300px;
       z-index: 99;
       pointer-events: none;
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      gap: 5px;
 
       button {
         pointer-events: all;
@@ -825,6 +830,15 @@
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
+      }
+    }
+
+    .map-view-toggle {
+      pointer-events: all;
+      .btn.active {
+        background: #253743;
+        border-color: #253743;
+        color: #fff;
       }
     }
 
@@ -923,6 +937,78 @@
       }
     }
 
+    .extranjero-panel {
+      z-index: 50;
+      max-width: 540px;
+      
+
+      .extranjero-svg-map {
+        width: 100%;
+      }
+
+      .ocean {
+        fill: #f6f9fb;
+      }
+
+      .continent {
+        fill: #d9e3e8;
+        stroke: #c5d1d8;
+        stroke-width: 1;
+      }
+
+      .country-dot {
+        fill: #333;
+        opacity: 0.95;
+      }
+
+      .country-label {
+        font-size: 11px;
+        fill: #3c4b57;
+      }
+
+      .globe-country-label {
+        font-size: 10px;
+        fill: #22313a;
+        paint-order: stroke;
+        stroke: #ffffff;
+        stroke-width: 2px;
+        pointer-events: none;
+      }
+
+      .globe-country {
+        transition: opacity .12s ease-in-out;
+      }
+
+      .globe-country:hover {
+        stroke: #2b3e4b;
+        stroke-width: 1.2;
+      }
+
+      .cartogram-continent-label {
+        font-size: 11px;
+        font-weight: 700;
+        fill: #41535f;
+      }
+
+      .cartogram-country-cell {
+        transition: transform .08s ease-in-out;
+      }
+
+      .cartogram-country-cell:hover {
+        stroke: #2a3f4e !important;
+        stroke-width: 1.2;
+      }
+
+      .cartogram-country-label {
+        font-size: 9px;
+        fill: #2b3e4b;
+        paint-order: stroke;
+        stroke: #fff;
+        stroke-width: 2px;
+        pointer-events: none;
+      }
+    }
+
     svg.plan-vector-map {
       background: #fff;
     }
@@ -961,7 +1047,7 @@
     }
 
     .distrito-selected {
-      fill: #b55353;
+      fill: #e3e3e3;
     }
 
     .departamento-map {
@@ -2323,8 +2409,38 @@
   pointer-events: none !important;
 }
 
+/* Map tooltips on document.body — fixed + intrinsic width so viewport clamp can measure correctly */
+body > #tooltip_primera.tooltip.tooltip-data,
+body > #tooltip_segunda.tooltip.tooltip-data,
+body > #tooltip.tooltip.tooltip-data {
+  position: fixed !important;
+  z-index: 1080;
+  width: auto !important;
+  max-width: min(360px, calc(100vw - 24px));
+}
+
+/* Senado sunburst tooltip — same fixed + width for clampTooltipToViewport */
+.tooltip_senado {
+  position: fixed !important;
+  z-index: 1080 !important;
+  width: auto !important;
+  max-width: min(320px, calc(100vw - 24px)) !important;
+}
+
 
 //  Header embed
+
+.candidate-results-vivo {
+  position:  sticky;
+  top: 75px;
+
+  @media (max-width: 722.98px) { 
+    position: relative !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    top: 0 !important;
+  }
+}
 
 .contenido-especial-elecciones-2026,
 .especial-container {

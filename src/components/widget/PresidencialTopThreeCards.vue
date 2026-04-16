@@ -42,6 +42,13 @@
                 />
                 {{ isPresidentialPlaceholder(c) ? c.partido : capitalizeWords(c.partido) }}
               </p>
+              <p
+                  v-if="!isPresidentialPlaceholder(c) && leadGap(i) > 0"
+                  style="font-size: 10px;"
+                  class="m-0 p-0  votos-top d-inline badge badge-light text-dark text-left"
+                >
+                  Ganando por +{{ numeral(leadGap(i)).format('0,0') }}
+                </p>
             </div>
             <div
               class="ms-2 flex-shrink-0 text-light overflow-hidden justify-content-end me-3 ej2026-pres-stats"
@@ -58,8 +65,8 @@
                 <span style="font-size: 0.7rem;" class="votos-top m-1 p-0 d-block">
                   {{ numeral(c.votos).format('0,0') }}
                 </span>
-                <span style="font-size: 10px;" class="m-0 votos-top d-block">
-                  Votos válidos
+                <span>
+                  Votos
                 </span>
               </div>
             </div>
@@ -106,6 +113,18 @@ export default {
     },
     isPresidentialPlaceholder(c) {
       return isPresPlaceholder(c)
+    },
+    votosOf(c) {
+      return Number(c?.votos ?? c?.total_votos ?? c?.total ?? 0) || 0
+    },
+    leadGap(i) {
+      if (i < 0 || i > 1) return 0
+      const current = this.votosOf(this.candidatos[i])
+      const next = this.votosOf(this.candidatos[i + 1])
+      return Math.max(0, current - next)
+    },
+    leadGapLabel(i) {
+      return i === 0 ? '2do' : '3ro'
     },
   },
 }

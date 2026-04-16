@@ -35,25 +35,68 @@ export function tooltipInformacionNoDisponibleHtml() {
 let refCount = 0
 
 /**
- * Keep fixed tooltip inside the viewport (embeds / small widths).
+ * Keep a fixed-position tooltip inside the viewport (embeds, map edges, mobile).
  * Call after inner HTML is set so size can be measured.
+ *
+ * @param {HTMLElement} tooltipEl
+ * @param {number} clientX
+ * @param {number} clientY
+ * @param {number | { offsetY?: number, padding?: number, gapBelowCursor?: number, position?: string }} [offsetYOrOpts]
  */
-export function clampCongresoTooltipToViewport(tooltipEl, clientX, clientY, offsetY = 28) {
+export function clampTooltipToViewport(tooltipEl, clientX, clientY, offsetYOrOpts = 28) {
   if (!tooltipEl || typeof window === 'undefined') return
-  const pad = 12
+  const opts = typeof offsetYOrOpts === 'number' ? { offsetY: offsetYOrOpts } : offsetYOrOpts || {}
+  const pad = opts.padding ?? 12
+  const offsetY = opts.offsetY ?? 28
+  const gapBelow = opts.gapBelowCursor ?? 10
   const vw = window.innerWidth
   const vh = window.innerHeight
-  let left = clientX
-  let top = clientY - offsetY
-  for (let i = 0; i < 2; i++) {
-    tooltipEl.style.left = `${left}px`
-    tooltipEl.style.top = `${top}px`
-    const rect = tooltipEl.getBoundingClientRect()
-    if (rect.right > vw - pad) left -= rect.right - (vw - pad)
-    if (rect.left < pad) left += pad - rect.left
-    if (rect.bottom > vh - pad) top -= rect.bottom - (vh - pad)
-    if (rect.top < pad) top += pad - rect.top
+
+  tooltipEl.style.position = opts.position ?? 'fixed'
+
+  const apply = (left, top) => {
+    tooltipEl.style.left = `${Math.round(left)}px`
+    tooltipEl.style.top = `${Math.round(top)}px`
   }
+
+  // Measure size off-screen (do not toggle visibility — host CSS may control it)
+  tooltipEl.style.left = '-10000px'
+  tooltipEl.style.top = '0px'
+  const w = tooltipEl.getBoundingClientRect().width
+
+  // Center horizontally on cursor; place above pointer (legacy: top ≈ clientY - offsetY)
+  let left = clientX - w / 2
+  let top = clientY - offsetY
+
+  apply(left, top)
+  let rect = tooltipEl.getBoundingClientRect()
+
+  // If not enough space above, show below cursor
+  if (rect.top < pad) {
+    top = clientY + gapBelow
+    apply(left, top)
+    rect = tooltipEl.getBoundingClientRect()
+  }
+
+  // Nudge until inside viewport (wide tooltips, bottom edge, small viewports)
+  for (let i = 0; i < 8; i++) {
+    rect = tooltipEl.getBoundingClientRect()
+    let dl = 0
+    let dt = 0
+    if (rect.right > vw - pad) dl -= rect.right - (vw - pad)
+    if (rect.left < pad) dl += pad - rect.left
+    if (rect.bottom > vh - pad) dt -= rect.bottom - (vh - pad)
+    if (rect.top < pad) dt += pad - rect.top
+    if (dl === 0 && dt === 0) break
+    left += dl
+    top += dt
+    apply(left, top)
+  }
+}
+
+/** Alias of {@link clampTooltipToViewport} for parliament / embed tooltips. */
+export function clampCongresoTooltipToViewport(tooltipEl, clientX, clientY, offsetYOrOpts = 28) {
+  return clampTooltipToViewport(tooltipEl, clientX, clientY, offsetYOrOpts)
 }
 
 export function acquireCongresoBodyTooltip() {

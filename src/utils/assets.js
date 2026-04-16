@@ -46,7 +46,7 @@ export function nombreACandidatoSlug(nombre) {
 export function getPartidoImage(id) {
   if (!id) return FALLBACK_IMAGE
   const sub = PARTIDOS_SUBPATH ? PARTIDOS_SUBPATH + '/' : ''
-  return `${IMAGES_BASE}/${sub}${id}.png`
+  return `${IMAGES_BASE}/${sub}${id}.png?2026`
 }
 
 /** SVG embebido (marco + bloque estilo logo) cuando no existe el PNG del partido; usa el color del partido si es hex válido. */
@@ -74,5 +74,5 @@ export function getCandidatoImage(id, nombre) {
   const fromId = id != null && String(id).trim() ? String(id).trim() : ''
   const base = fromNombre || fromId
   if (!base) return FALLBACK_IMAGE
-  return `${IMAGES_BASE}/${sub}${base}.png`
+  return `${IMAGES_BASE}/${sub}${base}.png?update_2026`
 }

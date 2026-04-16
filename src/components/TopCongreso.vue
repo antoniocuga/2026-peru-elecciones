@@ -10,6 +10,25 @@
           <div class="col-12">
             <BTabs v-model="topParlamentoTabIndex">
               <BTab :title="`Senadores 2026`">
+                <div class="d-flex flex-wrap align-items-center justify-content-between mb-2">
+                  <div class="d-flex align-items-center">
+                    <select v-model="senadoRegionFilter" class="form-control form-control-sm" style="min-width: 210px;">
+                      <option v-for="opt in senadoRegionOptions" :key="`senado-reg-${opt}`" :value="opt">{{ opt }}</option>
+                    </select>
+                  </div>
+                  <div class="small text-secondary">
+                                                        <div class="d-flex justify-content-end align-items-center mt-2" v-if="senadoTotalPages > 1">
+                                    <span class="small text-secondary mr-2"> {{ senadoPage }} / {{ senadoTotalPages }}</span>
+                  <button class="btn btn-sm btn-light mr-2" :disabled="senadoPage <= 1" @click="senadoPage = Math.max(1, senadoPage - 1)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+</svg></button>
+                  
+                  <button class="btn btn-sm btn-light" :disabled="senadoPage >= senadoTotalPages" @click="senadoPage = Math.min(senadoTotalPages, senadoPage + 1)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+</svg></button>
+                </div>
+                  </div>
+                </div>
                 <div :key="eleccion.eleccion" v-for="(eleccion) in candidatos_senado_real_view">
                   <div class="card card-candidate align-self-center p-2 border-top-0">
                     <div class="border-bottom pt-2 pb-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
@@ -29,6 +48,12 @@
                           <div class="tooltip-c">
                             <h4 class="candidato-mapa candidato-partido mt-1">{{ formatNombreTitulo(candidato.nombre) }}</h4>
                             <h4 class="partido-mapa"><img v-if="!isPlaceholderCandidate(candidato)" width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
+                            <span
+                              v-if="!isPlaceholderCandidate(candidato) && candidato.senado_tipo"
+                              class="badge badge-light text-uppercase small"
+                            >
+                              {{ candidato.senado_tipo }}
+                            </span>
                           </div>
                         </div>
                         <div class="col-4 col-md-4 col-lg-4 align-self-center text-right">
@@ -39,8 +64,28 @@
                     </div>
                   </div>
                 </div>
+
               </BTab>
               <BTab title="Diputados 2026">
+                <div class="d-flex flex-wrap align-items-center justify-content-between mb-2">
+                  <div class="d-flex align-items-center">
+                    <select v-model="diputadoRegionFilter" class="form-control form-control-sm" style="min-width: 210px;">
+                      <option v-for="opt in diputadoRegionOptions" :key="`dip-reg-${opt}`" :value="opt">{{ opt }}</option>
+                    </select>
+                  </div>
+                  <div class="small text-secondary">
+                                    <div class="d-flex justify-content-end align-items-center mt-2" v-if="diputadoTotalPages > 1">
+                                    <span class="small text-secondary mr-2"> {{ diputadoPage }} / {{ diputadoTotalPages }}</span>
+                  <button class="btn btn-sm btn-light mr-2" :disabled="diputadoPage <= 1" @click="diputadoPage = Math.max(1, diputadoPage - 1)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+</svg></button>
+                  
+                  <button class="btn btn-sm btn-light" :disabled="diputadoPage >= diputadoTotalPages" @click="diputadoPage = Math.min(diputadoTotalPages, diputadoPage + 1)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+</svg></button>
+                </div>
+                  </div>
+                </div>
                 <div :key="eleccion.eleccion" v-for="(eleccion) in candidatos_congreso_real_view">
                   <div class="card card-candidate align-self-center border-top-0 p-2">
                     <div class="border-bottom pt-2 pb-2" :key="candidato.candidato_id" v-for="candidato in eleccion.items">
@@ -68,6 +113,7 @@
                     </div>
                   </div>
                 </div>
+
               </BTab>
 
               <BTab disabled :title="tituloConteoParlamento"></BTab>
@@ -148,7 +194,20 @@
       return {
         /** 0 = Senadores, 1 = Diputados (tercer tab solo conteo, disabled). */
         topParlamentoTabIndex: 0,
+        pageSize: 5,
+        senadoPage: 1,
+        diputadoPage: 1,
+        senadoRegionFilter: 'TODOS',
+        diputadoRegionFilter: 'TODOS',
       }
+    },
+    watch: {
+      senadoRegionFilter() {
+        this.senadoPage = 1
+      },
+      diputadoRegionFilter() {
+        this.diputadoPage = 1
+      },
     },
     methods: {
       numeral,
@@ -220,6 +279,26 @@
         const hi = Math.max(...uniq)
         return `${this._fmtPct(lo)}–${this._fmtPct(hi)}`
       },
+      rowRegionValue(row) {
+        return (
+          row?.region ||
+          row?.departamento ||
+          row?.distrito_electoral ||
+          row?.distrito ||
+          row?.provincia ||
+          'SIN REGIÓN'
+        )
+      },
+      toPagedByEleccion(list) {
+        return orderBy(
+          map(groupBy(list, 'eleccion'), (items, eleccion) => ({
+            eleccion,
+            items,
+          })),
+          ['eleccion'],
+          ['desc'],
+        )
+      },
     },
     computed: {
       conteo() {
@@ -229,9 +308,7 @@
         return parseFloat(first.replace(',', '.')) || 0
       },
       conteoSenadoNacionalLabel() {
-        return (
-          this.pctLabelFromRows(this.senadores, (s) => s.senado_tipo === 'nacional') ?? '0'
-        )
+        return this.pctLabelFromRows(this.senadores, null) ?? '0'
       },
       conteoDiputadosLabel() {
         return this.pctLabelFromRows(this.congresistas, null) ?? '0'
@@ -262,18 +339,67 @@
       votos_congreso() {
         return votosCongresoData
       },
+      senadoRegionOptions() {
+        const base = (this.senadores || []).map((s) => this.rowRegionValue(s))
+        return ['TODOS', ...orderBy(uniq(base), [(v) => String(v).toLocaleLowerCase('es')], ['asc'])]
+      },
+      diputadoRegionOptions() {
+        const base = (this.congresistas || []).map((c) => this.rowRegionValue(c))
+        return ['TODOS', ...orderBy(uniq(base), [(v) => String(v).toLocaleLowerCase('es')], ['asc'])]
+      },
+      senadoFiltered() {
+        const allSenado = this.senadores || []
+        const filtered = this.senadoRegionFilter === 'TODOS'
+          ? allSenado
+          : allSenado.filter((s) => this.rowRegionValue(s) === this.senadoRegionFilter)
+        return orderBy(filtered, ['voto_preferencial'], ['desc'])
+      },
+      diputadosFiltered() {
+        const base = this.congresistas || []
+        const filtered = this.diputadoRegionFilter === 'TODOS'
+          ? base
+          : base.filter((c) => this.rowRegionValue(c) === this.diputadoRegionFilter)
+        return orderBy(filtered, ['voto_preferencial'], ['desc'])
+      },
+      senadoTotal() {
+        return this.senadoFiltered.length
+      },
+      diputadoTotal() {
+        return this.diputadosFiltered.length
+      },
+      senadoTotalPages() {
+        return Math.max(1, Math.ceil(this.senadoTotal / this.pageSize))
+      },
+      diputadoTotalPages() {
+        return Math.max(1, Math.ceil(this.diputadoTotal / this.pageSize))
+      },
+      senadoCurrentPage() {
+        return Math.min(this.senadoPage, this.senadoTotalPages)
+      },
+      diputadoCurrentPage() {
+        return Math.min(this.diputadoPage, this.diputadoTotalPages)
+      },
+      senadoRangeLabel() {
+        if (!this.senadoTotal) return '0 resultados'
+        const start = (this.senadoCurrentPage - 1) * this.pageSize + 1
+        const end = Math.min(this.senadoCurrentPage * this.pageSize, this.senadoTotal)
+        return `${start}-${end} de ${this.senadoTotal}`
+      },
+      diputadoRangeLabel() {
+        if (!this.diputadoTotal) return '0 resultados'
+        const start = (this.diputadoCurrentPage - 1) * this.pageSize + 1
+        const end = Math.min(this.diputadoCurrentPage * this.pageSize, this.diputadoTotal)
+        return `${start}-${end} de ${this.diputadoTotal}`
+      },
       candidatos_congreso_real() {
-        return orderBy(map(groupBy(this.congresistas_parse.slice(0, 5), 'eleccion'), (items, eleccion) => {
-          return {
-            eleccion: eleccion,
-            items: items
-          }
-        }), ['eleccion'], ['desc'])
+        const start = (this.diputadoCurrentPage - 1) * this.pageSize
+        const items = this.diputadosFiltered.slice(start, start + this.pageSize)
+        return this.toPagedByEleccion(items)
       },
       candidatos_senado_real() {
         if (!this.senadores || this.senadores.length === 0) return []
-        const nacional = this.senadores.filter(s => s.senado_tipo === 'nacional')
-        const top = orderBy(nacional, ['voto_preferencial'], ['desc']).slice(0, 5)
+        const start = (this.senadoCurrentPage - 1) * this.pageSize
+        const top = this.senadoFiltered.slice(start, start + this.pageSize)
         if (!top.length) return []
         return [{ eleccion: '2026', items: top }]
       },

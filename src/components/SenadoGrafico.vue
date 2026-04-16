@@ -267,6 +267,7 @@
   import { filter, groupBy, map, orderBy, uniq } from 'lodash'
   import DropdownBs4 from './DropdownBs4.vue'
   import {
+    clampTooltipToViewport,
     isParliamentPlaceholderSeat,
     seatVotoPreferencial,
     tooltipInformacionNoDisponibleHtml,
@@ -490,13 +491,18 @@
           html = `<strong>${dd.name || ''}</strong>`
           if (dd.tipo) html += `<br>Tipo: ${dd.tipo}<br>Región: ${dd.region || '-'}<br>Partido: ${dd.partido || '-'}`
         }
-        tooltip.html(html)
-          .style('left', (event.pageX) + 'px')
-          .style('top', (event.pageY - 28) + 'px')
-        tooltip.transition()
-          .duration(200)
-          .style('opacity', 1)
-          .style('visibility', 'visible')
+        tooltip.html(html).style('opacity', 0).style('visibility', 'visible')
+        this.$nextTick(() => {
+          const node = tooltip.node()
+          if (node) {
+            clampTooltipToViewport(node, event.clientX, event.clientY, {
+              offsetY: 28,
+              padding: 12,
+              gapBelowCursor: 10,
+            })
+          }
+          tooltip.transition().duration(200).style('opacity', 1)
+        })
       },
       hideSunburstTooltip() {
         const tooltip = d3.select('.tooltip_senado')
