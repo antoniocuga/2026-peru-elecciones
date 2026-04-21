@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-16T15:35:24.029526+00:00",
+  "updated_at": "2026-04-20T15:15:03.486844+00:00",
   "source": "onpe-presentacion-backend/presidencial-ubigeo_nivel_02",
   "idEleccion": "10",
   "countries": [
@@ -62,7 +62,7 @@
       "ubigeoNivel2": "911200",
       "totalVotes": 0,
       "totalValidos": 0,
-      "actasContabilizadas": 0.0,
+      "actasContabilizadas": 100.0,
       "details": [],
       "country_id": "ghana",
       "lat": 8.0,
@@ -524,261 +524,261 @@
       "country": "ARGENTINA",
       "ubigeoNivel1": "920000",
       "ubigeoNivel2": "920200",
-      "totalVotes": 8434,
-      "totalValidos": 8434,
-      "actasContabilizadas": 22.408,
+      "totalVotes": 22809,
+      "totalValidos": 22809,
+      "actasContabilizadas": 64.883,
       "details": [
         {
           "partido": "FUERZA POPULAR",
           "partido_id": "fuerza-popular",
           "color": "#fd6600",
-          "votos": 1974,
-          "porcentaje_valido": 23.405264405975814
+          "votos": 5295,
+          "porcentaje_valido": 23.214520583980008
         },
         {
           "partido": "PARTIDO PAÍS PARA TODOS",
           "partido_id": "pais-para-todos",
           "color": "#ffcd00",
-          "votos": 1256,
-          "porcentaje_valido": 14.892103391036281
+          "votos": 3403,
+          "porcentaje_valido": 14.91954930071463
         },
         {
           "partido": "RENOVACIÓN POPULAR",
           "partido_id": "renovacion-popular",
           "color": "#00aede",
-          "votos": 1178,
-          "porcentaje_valido": 13.96727531420441
+          "votos": 3225,
+          "porcentaje_valido": 14.139155596475076
         },
         {
           "partido": "PARTIDO CÍVICO OBRAS",
           "partido_id": "partido-obras",
           "color": "#005e00",
-          "votos": 829,
-          "porcentaje_valido": 9.829262508892578
+          "votos": 2325,
+          "porcentaje_valido": 10.193344732342496
         },
         {
           "partido": "PARTIDO DEL BUEN GOBIERNO",
           "partido_id": "partido-del-buen-gobierno",
           "color": "#ac0707",
-          "votos": 558,
-          "porcentaje_valido": 6.616077780412615
+          "votos": 1595,
+          "porcentaje_valido": 6.9928536981016265
         },
         {
           "partido": "AHORA NACIÓN - AN",
           "partido_id": "ahora-nacion",
           "color": "#e90305",
-          "votos": 432,
-          "porcentaje_valido": 5.1221247332226705
+          "votos": 1232,
+          "porcentaje_valido": 5.401376649568153
         },
         {
           "partido": "JUNTOS POR EL PERÚ",
           "partido_id": "juntos-por-el-peru",
           "color": "#20a73c",
-          "votos": 358,
-          "porcentaje_valido": 4.244723737253972
-        },
-        {
-          "partido": "UN CAMINO DIFERENTE",
-          "partido_id": "un-camino-diferente",
-          "color": "#f52300",
-          "votos": 249,
-          "porcentaje_valido": 2.952335783732511
+          "votos": 975,
+          "porcentaje_valido": 4.274628436143628
         },
         {
           "partido": "PRIMERO LA GENTE – COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO",
           "partido_id": "primero-la-gente",
           "color": "#0d32c6",
-          "votos": 214,
-          "porcentaje_valido": 2.5373488261797488
+          "votos": 576,
+          "porcentaje_valido": 2.5253189530448505
+        },
+        {
+          "partido": "UN CAMINO DIFERENTE",
+          "partido_id": "un-camino-diferente",
+          "color": "#f52300",
+          "votos": 571,
+          "porcentaje_valido": 2.5033977815774473
         },
         {
           "partido": "PARTIDO APRISTA PERUANO",
           "partido_id": "partido-aprista-peruano",
           "color": "#b22222",
-          "votos": 190,
-          "porcentaje_valido": 2.2527863410007116
+          "votos": 420,
+          "porcentaje_valido": 1.8413784032618703
         },
         {
           "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
           "partido_id": "frente-de-la-esperanza-2021",
           "color": "#52b439",
-          "votos": 111,
-          "porcentaje_valido": 1.316101493953047
-        },
-        {
-          "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
-          "partido_id": "peru-libre",
-          "color": "#e70000",
-          "votos": 96,
-          "porcentaje_valido": 1.1382499407161488
-        },
-        {
-          "partido": "ALIANZA ELECTORAL VENCEREMOS",
-          "partido_id": "alianza-venceremos",
-          "color": "#498b34",
-          "votos": 94,
-          "porcentaje_valido": 1.1145364002845626
+          "votos": 328,
+          "porcentaje_valido": 1.438028848261651
         },
         {
           "partido": "PARTIDO SICREO",
           "partido_id": "partido-si-creo",
           "color": "#000000",
-          "votos": 89,
-          "porcentaje_valido": 1.0552525492055964
+          "votos": 261,
+          "porcentaje_valido": 1.144285150598448
         },
         {
-          "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
-          "partido_id": "partido-patriotico-del-peru",
-          "color": "#201e1f",
-          "votos": 86,
-          "porcentaje_valido": 1.0196822385582167
-        },
-        {
-          "partido": "PARTIDO DEMÓCRATA VERDE",
-          "partido_id": "partido-democrata-verde",
-          "color": "#0aa150",
-          "votos": 74,
-          "porcentaje_valido": 0.8774009959686981
-        },
-        {
-          "partido": "PODEMOS PERÚ",
-          "partido_id": "podemos-peru",
-          "color": "#0055a2",
-          "votos": 74,
-          "porcentaje_valido": 0.8774009959686981
+          "partido": "ALIANZA ELECTORAL VENCEREMOS",
+          "partido_id": "alianza-venceremos",
+          "color": "#498b34",
+          "votos": 254,
+          "porcentaje_valido": 1.1135955105440836
         },
         {
           "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
           "partido_id": "partido-democrata-unido-peru",
           "color": "#00a545",
-          "votos": 65,
-          "porcentaje_valido": 0.7706900640265592
+          "votos": 234,
+          "porcentaje_valido": 1.0259108246744706
+        },
+        {
+          "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
+          "partido_id": "peru-libre",
+          "color": "#e70000",
+          "votos": 216,
+          "porcentaje_valido": 0.9469946073918191
+        },
+        {
+          "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
+          "partido_id": "partido-patriotico-del-peru",
+          "color": "#201e1f",
+          "votos": 201,
+          "porcentaje_valido": 0.8812310929896093
+        },
+        {
+          "partido": "PODEMOS PERÚ",
+          "partido_id": "podemos-peru",
+          "color": "#0055a2",
+          "votos": 198,
+          "porcentaje_valido": 0.8680783901091674
         },
         {
           "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
           "partido_id": "somos-peru",
           "color": "#1022b9",
-          "votos": 62,
-          "porcentaje_valido": 0.7351197533791796
+          "votos": 163,
+          "porcentaje_valido": 0.7146301898373449
+        },
+        {
+          "partido": "PARTIDO DEMÓCRATA VERDE",
+          "partido_id": "partido-democrata-verde",
+          "color": "#0aa150",
+          "votos": 153,
+          "porcentaje_valido": 0.6707878469025385
         },
         {
           "partido": "ALIANZA PARA EL PROGRESO",
           "partido_id": "alianza-para-el-progreso",
           "color": "#344fa1",
-          "votos": 58,
-          "porcentaje_valido": 0.6876926725160066
+          "votos": 145,
+          "porcentaje_valido": 0.6357139725546933
         },
         {
           "partido": "PARTIDO POLÍTICO COOPERACIÓN POPULAR",
           "partido_id": "cooperacion-popular",
           "color": "#52b439",
-          "votos": 55,
-          "porcentaje_valido": 0.6521223618686269
-        },
-        {
-          "partido": "PROGRESEMOS",
-          "partido_id": "progresemos",
-          "color": "#29b828",
-          "votos": 44,
-          "porcentaje_valido": 0.5216978894949016
+          "votos": 127,
+          "porcentaje_valido": 0.5567977552720418
         },
         {
           "partido": "PARTIDO MORADO",
           "partido_id": "partido-morado",
           "color": "#4e1a7e",
-          "votos": 41,
-          "porcentaje_valido": 0.48612757884752195
+          "votos": 106,
+          "porcentaje_valido": 0.46472883510894825
         },
         {
-          "partido": "FUERZA Y LIBERTAD",
-          "partido_id": "alianza-fuerza-y-libertad",
-          "color": "#0c01ff",
-          "votos": 40,
-          "porcentaje_valido": 0.4742708086317287
+          "partido": "PROGRESEMOS",
+          "partido_id": "progresemos",
+          "color": "#29b828",
+          "votos": 101,
+          "porcentaje_valido": 0.442807663641545
         },
         {
           "partido": "LIBERTAD POPULAR",
           "partido_id": "libertad-popular",
           "color": "#ffff01",
-          "votos": 33,
-          "porcentaje_valido": 0.3912734171211762
-        },
-        {
-          "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
-          "partido_id": "peru-accion",
-          "color": "#020974",
-          "votos": 28,
-          "porcentaje_valido": 0.3319895660422101
-        },
-        {
-          "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
-          "partido_id": "peru-primero",
-          "color": "#f40201",
-          "votos": 26,
-          "porcentaje_valido": 0.30827602561062367
+          "votos": 99,
+          "porcentaje_valido": 0.4340391950545837
         },
         {
           "partido": "UNIDAD NACIONAL",
           "partido_id": "alianza-unidad-nacional",
           "color": "#326d06",
-          "votos": 23,
-          "porcentaje_valido": 0.27270571496324403
+          "votos": 92,
+          "porcentaje_valido": 0.4033495550002192
         },
         {
-          "partido": "PARTIDO POLÍTICO PRIN",
-          "partido_id": "partido-regionalista-de-integracion-nacional---prin",
-          "color": "#e10803",
-          "votos": 17,
-          "porcentaje_valido": 0.2015650936684847
+          "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
+          "partido_id": "peru-accion",
+          "color": "#020974",
+          "votos": 86,
+          "porcentaje_valido": 0.3770441492393353
         },
         {
-          "partido": "FE EN EL PERÚ",
-          "partido_id": "partido-fe-en-el-peru",
-          "color": "#47af30",
-          "votos": 17,
-          "porcentaje_valido": 0.2015650936684847
+          "partido": "FUERZA Y LIBERTAD",
+          "partido_id": "alianza-fuerza-y-libertad",
+          "color": "#0c01ff",
+          "votos": 70,
+          "porcentaje_valido": 0.30689640054364503
+        },
+        {
+          "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+          "partido_id": "peru-primero",
+          "color": "#f40201",
+          "votos": 64,
+          "porcentaje_valido": 0.28059099478276117
         },
         {
           "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
           "partido_id": "integridad-democratica",
           "color": "#2d88ff",
-          "votos": 15,
-          "porcentaje_valido": 0.17785155323689827
+          "votos": 56,
+          "porcentaje_valido": 0.24551712043491605
+        },
+        {
+          "partido": "PARTIDO POLÍTICO PRIN",
+          "partido_id": "partido-regionalista-de-integracion-nacional---prin",
+          "color": "#e10803",
+          "votos": 51,
+          "porcentaje_valido": 0.22359594896751284
+        },
+        {
+          "partido": "FE EN EL PERÚ",
+          "partido_id": "partido-fe-en-el-peru",
+          "color": "#47af30",
+          "votos": 46,
+          "porcentaje_valido": 0.2016747775001096
         },
         {
           "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
           "partido_id": "avanza-pais",
           "color": "#e0047a",
-          "votos": 14,
-          "porcentaje_valido": 0.16599478302110504
+          "votos": 36,
+          "porcentaje_valido": 0.15783243456530316
         },
         {
           "partido": "PARTIDO DEMOCRATICO FEDERAL",
           "partido_id": "partido-democratico-federal",
           "color": "#01953f",
-          "votos": 10,
-          "porcentaje_valido": 0.11856770215793218
-        },
-        {
-          "partido": "SALVEMOS AL PERÚ",
-          "partido_id": "salvemos-al-peru",
-          "color": "#fe0000",
-          "votos": 10,
-          "porcentaje_valido": 0.11856770215793218
+          "votos": 31,
+          "porcentaje_valido": 0.13591126309789994
         },
         {
           "partido": "PARTIDO DE LOS TRABAJADORES Y EMPRENDEDORES PTE - PERÚ",
           "partido_id": "partido-de-los-trabajadores-y-emprendedores",
           "color": "#345091",
-          "votos": 9,
-          "porcentaje_valido": 0.10671093194213896
+          "votos": 27,
+          "porcentaje_valido": 0.11837432592397738
+        },
+        {
+          "partido": "SALVEMOS AL PERÚ",
+          "partido_id": "salvemos-al-peru",
+          "color": "#fe0000",
+          "votos": 26,
+          "porcentaje_valido": 0.11399009163049674
         },
         {
           "partido": "PERÚ MODERNO",
           "partido_id": "partido-peru-moderno",
           "color": "#e4007b",
-          "votos": 5,
-          "porcentaje_valido": 0.05928385107896609
+          "votos": 21,
+          "porcentaje_valido": 0.09206892016309351
         }
       ],
       "country_id": "argentina",
@@ -808,261 +808,261 @@
       "country": "BOLIVIA",
       "ubigeoNivel1": "920000",
       "ubigeoNivel2": "920400",
-      "totalVotes": 2920,
-      "totalValidos": 2920,
-      "actasContabilizadas": 72.727,
+      "totalVotes": 3456,
+      "totalValidos": 3456,
+      "actasContabilizadas": 81.818,
       "details": [
         {
           "partido": "RENOVACIÓN POPULAR",
           "partido_id": "renovacion-popular",
           "color": "#00aede",
-          "votos": 672,
-          "porcentaje_valido": 23.013698630136986
+          "votos": 741,
+          "porcentaje_valido": 21.44097222222222
         },
         {
           "partido": "PARTIDO DEL BUEN GOBIERNO",
           "partido_id": "partido-del-buen-gobierno",
           "color": "#ac0707",
-          "votos": 415,
-          "porcentaje_valido": 14.212328767123287
+          "votos": 510,
+          "porcentaje_valido": 14.756944444444445
         },
         {
           "partido": "FUERZA POPULAR",
           "partido_id": "fuerza-popular",
           "color": "#fd6600",
-          "votos": 415,
-          "porcentaje_valido": 14.212328767123287
+          "votos": 459,
+          "porcentaje_valido": 13.28125
         },
         {
           "partido": "PARTIDO CÍVICO OBRAS",
           "partido_id": "partido-obras",
           "color": "#005e00",
-          "votos": 239,
-          "porcentaje_valido": 8.184931506849315
+          "votos": 311,
+          "porcentaje_valido": 8.998842592592593
         },
         {
           "partido": "AHORA NACIÓN - AN",
           "partido_id": "ahora-nacion",
           "color": "#e90305",
-          "votos": 210,
-          "porcentaje_valido": 7.191780821917808
-        },
-        {
-          "partido": "JUNTOS POR EL PERÚ",
-          "partido_id": "juntos-por-el-peru",
-          "color": "#20a73c",
-          "votos": 162,
-          "porcentaje_valido": 5.5479452054794525
-        },
-        {
-          "partido": "PARTIDO PAÍS PARA TODOS",
-          "partido_id": "pais-para-todos",
-          "color": "#ffcd00",
-          "votos": 154,
-          "porcentaje_valido": 5.273972602739726
-        },
-        {
-          "partido": "PRIMERO LA GENTE – COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO",
-          "partido_id": "primero-la-gente",
-          "color": "#0d32c6",
-          "votos": 138,
-          "porcentaje_valido": 4.726027397260274
+          "votos": 264,
+          "porcentaje_valido": 7.638888888888889
         },
         {
           "partido": "PARTIDO SICREO",
           "partido_id": "partido-si-creo",
           "color": "#000000",
-          "votos": 135,
-          "porcentaje_valido": 4.623287671232877
+          "votos": 195,
+          "porcentaje_valido": 5.642361111111111
+        },
+        {
+          "partido": "JUNTOS POR EL PERÚ",
+          "partido_id": "juntos-por-el-peru",
+          "color": "#20a73c",
+          "votos": 193,
+          "porcentaje_valido": 5.5844907407407405
+        },
+        {
+          "partido": "PARTIDO PAÍS PARA TODOS",
+          "partido_id": "pais-para-todos",
+          "color": "#ffcd00",
+          "votos": 179,
+          "porcentaje_valido": 5.179398148148148
+        },
+        {
+          "partido": "PRIMERO LA GENTE – COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO",
+          "partido_id": "primero-la-gente",
+          "color": "#0d32c6",
+          "votos": 166,
+          "porcentaje_valido": 4.8032407407407405
         },
         {
           "partido": "ALIANZA ELECTORAL VENCEREMOS",
           "partido_id": "alianza-venceremos",
           "color": "#498b34",
-          "votos": 47,
-          "porcentaje_valido": 1.6095890410958904
-        },
-        {
-          "partido": "PARTIDO POLÍTICO COOPERACIÓN POPULAR",
-          "partido_id": "cooperacion-popular",
-          "color": "#52b439",
-          "votos": 43,
-          "porcentaje_valido": 1.4726027397260273
+          "votos": 49,
+          "porcentaje_valido": 1.4178240740740742
         },
         {
           "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
           "partido_id": "frente-de-la-esperanza-2021",
           "color": "#52b439",
-          "votos": 41,
-          "porcentaje_valido": 1.404109589041096
+          "votos": 47,
+          "porcentaje_valido": 1.3599537037037037
+        },
+        {
+          "partido": "PARTIDO POLÍTICO COOPERACIÓN POPULAR",
+          "partido_id": "cooperacion-popular",
+          "color": "#52b439",
+          "votos": 46,
+          "porcentaje_valido": 1.3310185185185186
         },
         {
           "partido": "PARTIDO APRISTA PERUANO",
           "partido_id": "partido-aprista-peruano",
           "color": "#b22222",
           "votos": 25,
-          "porcentaje_valido": 0.8561643835616438
+          "porcentaje_valido": 0.7233796296296297
         },
         {
           "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
           "partido_id": "somos-peru",
           "color": "#1022b9",
-          "votos": 20,
-          "porcentaje_valido": 0.684931506849315
+          "votos": 23,
+          "porcentaje_valido": 0.6655092592592593
         },
         {
           "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
           "partido_id": "partido-patriotico-del-peru",
           "color": "#201e1f",
-          "votos": 18,
-          "porcentaje_valido": 0.6164383561643836
-        },
-        {
-          "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
-          "partido_id": "peru-accion",
-          "color": "#020974",
-          "votos": 15,
-          "porcentaje_valido": 0.5136986301369864
+          "votos": 21,
+          "porcentaje_valido": 0.6076388888888888
         },
         {
           "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
           "partido_id": "integridad-democratica",
           "color": "#2d88ff",
-          "votos": 15,
-          "porcentaje_valido": 0.5136986301369864
+          "votos": 21,
+          "porcentaje_valido": 0.6076388888888888
         },
         {
           "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
           "partido_id": "peru-libre",
           "color": "#e70000",
-          "votos": 14,
-          "porcentaje_valido": 0.4794520547945205
-        },
-        {
-          "partido": "ALIANZA PARA EL PROGRESO",
-          "partido_id": "alianza-para-el-progreso",
-          "color": "#344fa1",
-          "votos": 14,
-          "porcentaje_valido": 0.4794520547945205
-        },
-        {
-          "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
-          "partido_id": "partido-democrata-unido-peru",
-          "color": "#00a545",
-          "votos": 14,
-          "porcentaje_valido": 0.4794520547945205
-        },
-        {
-          "partido": "PODEMOS PERÚ",
-          "partido_id": "podemos-peru",
-          "color": "#0055a2",
-          "votos": 13,
-          "porcentaje_valido": 0.4452054794520548
-        },
-        {
-          "partido": "PARTIDO MORADO",
-          "partido_id": "partido-morado",
-          "color": "#4e1a7e",
-          "votos": 13,
-          "porcentaje_valido": 0.4452054794520548
+          "votos": 20,
+          "porcentaje_valido": 0.5787037037037037
         },
         {
           "partido": "PARTIDO DEMÓCRATA VERDE",
           "partido_id": "partido-democrata-verde",
           "color": "#0aa150",
-          "votos": 12,
-          "porcentaje_valido": 0.410958904109589
+          "votos": 18,
+          "porcentaje_valido": 0.5208333333333334
+        },
+        {
+          "partido": "PODEMOS PERÚ",
+          "partido_id": "podemos-peru",
+          "color": "#0055a2",
+          "votos": 18,
+          "porcentaje_valido": 0.5208333333333334
+        },
+        {
+          "partido": "ALIANZA PARA EL PROGRESO",
+          "partido_id": "alianza-para-el-progreso",
+          "color": "#344fa1",
+          "votos": 17,
+          "porcentaje_valido": 0.49189814814814814
+        },
+        {
+          "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
+          "partido_id": "peru-accion",
+          "color": "#020974",
+          "votos": 16,
+          "porcentaje_valido": 0.46296296296296297
+        },
+        {
+          "partido": "PROGRESEMOS",
+          "partido_id": "progresemos",
+          "color": "#29b828",
+          "votos": 15,
+          "porcentaje_valido": 0.4340277777777778
+        },
+        {
+          "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
+          "partido_id": "partido-democrata-unido-peru",
+          "color": "#00a545",
+          "votos": 15,
+          "porcentaje_valido": 0.4340277777777778
+        },
+        {
+          "partido": "PARTIDO MORADO",
+          "partido_id": "partido-morado",
+          "color": "#4e1a7e",
+          "votos": 15,
+          "porcentaje_valido": 0.4340277777777778
         },
         {
           "partido": "LIBERTAD POPULAR",
           "partido_id": "libertad-popular",
           "color": "#ffff01",
           "votos": 12,
-          "porcentaje_valido": 0.410958904109589
-        },
-        {
-          "partido": "PROGRESEMOS",
-          "partido_id": "progresemos",
-          "color": "#29b828",
-          "votos": 11,
-          "porcentaje_valido": 0.3767123287671233
+          "porcentaje_valido": 0.3472222222222222
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
           "partido_id": "peru-primero",
           "color": "#f40201",
-          "votos": 10,
-          "porcentaje_valido": 0.3424657534246575
+          "votos": 11,
+          "porcentaje_valido": 0.31828703703703703
         },
         {
           "partido": "FUERZA Y LIBERTAD",
           "partido_id": "alianza-fuerza-y-libertad",
           "color": "#0c01ff",
           "votos": 9,
-          "porcentaje_valido": 0.3082191780821918
+          "porcentaje_valido": 0.2604166666666667
+        },
+        {
+          "partido": "UNIDAD NACIONAL",
+          "partido_id": "alianza-unidad-nacional",
+          "color": "#326d06",
+          "votos": 8,
+          "porcentaje_valido": 0.23148148148148148
         },
         {
           "partido": "UN CAMINO DIFERENTE",
           "partido_id": "un-camino-diferente",
           "color": "#f52300",
-          "votos": 6,
-          "porcentaje_valido": 0.2054794520547945
+          "votos": 7,
+          "porcentaje_valido": 0.2025462962962963
         },
         {
           "partido": "PERÚ MODERNO",
           "partido_id": "partido-peru-moderno",
           "color": "#e4007b",
           "votos": 6,
-          "porcentaje_valido": 0.2054794520547945
-        },
-        {
-          "partido": "UNIDAD NACIONAL",
-          "partido_id": "alianza-unidad-nacional",
-          "color": "#326d06",
-          "votos": 6,
-          "porcentaje_valido": 0.2054794520547945
+          "porcentaje_valido": 0.1736111111111111
         },
         {
           "partido": "PARTIDO POLÍTICO PRIN",
           "partido_id": "partido-regionalista-de-integracion-nacional---prin",
           "color": "#e10803",
-          "votos": 4,
-          "porcentaje_valido": 0.136986301369863
+          "votos": 5,
+          "porcentaje_valido": 0.14467592592592593
         },
         {
           "partido": "PARTIDO DE LOS TRABAJADORES Y EMPRENDEDORES PTE - PERÚ",
           "partido_id": "partido-de-los-trabajadores-y-emprendedores",
           "color": "#345091",
           "votos": 4,
-          "porcentaje_valido": 0.136986301369863
+          "porcentaje_valido": 0.11574074074074074
         },
         {
           "partido": "FE EN EL PERÚ",
           "partido_id": "partido-fe-en-el-peru",
           "color": "#47af30",
           "votos": 3,
-          "porcentaje_valido": 0.10273972602739725
+          "porcentaje_valido": 0.08680555555555555
+        },
+        {
+          "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
+          "partido_id": "avanza-pais",
+          "color": "#e0047a",
+          "votos": 3,
+          "porcentaje_valido": 0.08680555555555555
         },
         {
           "partido": "SALVEMOS AL PERÚ",
           "partido_id": "salvemos-al-peru",
           "color": "#fe0000",
           "votos": 3,
-          "porcentaje_valido": 0.10273972602739725
+          "porcentaje_valido": 0.08680555555555555
         },
         {
           "partido": "PARTIDO DEMOCRATICO FEDERAL",
           "partido_id": "partido-democratico-federal",
           "color": "#01953f",
           "votos": 1,
-          "porcentaje_valido": 0.03424657534246575
-        },
-        {
-          "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
-          "partido_id": "avanza-pais",
-          "color": "#e0047a",
-          "votos": 1,
-          "porcentaje_valido": 0.03424657534246575
+          "porcentaje_valido": 0.028935185185185185
         }
       ],
       "country_id": "bolivia",
@@ -1646,261 +1646,261 @@
       "country": "CHILE",
       "ubigeoNivel1": "920000",
       "ubigeoNivel2": "921000",
-      "totalVotes": 17934,
-      "totalValidos": 17934,
-      "actasContabilizadas": 43.06,
+      "totalVotes": 24324,
+      "totalValidos": 24324,
+      "actasContabilizadas": 58.007,
       "details": [
         {
           "partido": "FUERZA POPULAR",
           "partido_id": "fuerza-popular",
           "color": "#fd6600",
-          "votos": 4012,
-          "porcentaje_valido": 22.370915579346494
+          "votos": 5399,
+          "porcentaje_valido": 22.196184838020063
         },
         {
           "partido": "PARTIDO PAÍS PARA TODOS",
           "partido_id": "pais-para-todos",
           "color": "#ffcd00",
-          "votos": 2671,
-          "porcentaje_valido": 14.893498382959741
+          "votos": 3608,
+          "porcentaje_valido": 14.833086663377735
         },
         {
           "partido": "PARTIDO CÍVICO OBRAS",
           "partido_id": "partido-obras",
           "color": "#005e00",
-          "votos": 2562,
-          "porcentaje_valido": 14.285714285714286
+          "votos": 3546,
+          "porcentaje_valido": 14.578194375925012
         },
         {
           "partido": "RENOVACIÓN POPULAR",
           "partido_id": "renovacion-popular",
           "color": "#00aede",
-          "votos": 2172,
-          "porcentaje_valido": 12.11107393777183
+          "votos": 2945,
+          "porcentaje_valido": 12.107383654004275
         },
         {
           "partido": "PARTIDO DEL BUEN GOBIERNO",
           "partido_id": "partido-del-buen-gobierno",
           "color": "#ac0707",
-          "votos": 1228,
-          "porcentaje_valido": 6.847329095572655
-        },
-        {
-          "partido": "JUNTOS POR EL PERÚ",
-          "partido_id": "juntos-por-el-peru",
-          "color": "#20a73c",
-          "votos": 887,
-          "porcentaje_valido": 4.945912791346046
+          "votos": 1675,
+          "porcentaje_valido": 6.88620292715014
         },
         {
           "partido": "AHORA NACIÓN - AN",
           "partido_id": "ahora-nacion",
           "color": "#e90305",
-          "votos": 861,
-          "porcentaje_valido": 4.8009367681498825
+          "votos": 1175,
+          "porcentaje_valido": 4.83061996382174
         },
         {
-          "partido": "UN CAMINO DIFERENTE",
-          "partido_id": "un-camino-diferente",
-          "color": "#f52300",
-          "votos": 494,
-          "porcentaje_valido": 2.7545444407271105
+          "partido": "JUNTOS POR EL PERÚ",
+          "partido_id": "juntos-por-el-peru",
+          "color": "#20a73c",
+          "votos": 1168,
+          "porcentaje_valido": 4.801841802335142
         },
         {
           "partido": "PRIMERO LA GENTE – COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO",
           "partido_id": "primero-la-gente",
           "color": "#0d32c6",
-          "votos": 475,
-          "porcentaje_valido": 2.6486004237760676
+          "votos": 657,
+          "porcentaje_valido": 2.7010360138135177
+        },
+        {
+          "partido": "UN CAMINO DIFERENTE",
+          "partido_id": "un-camino-diferente",
+          "color": "#f52300",
+          "votos": 654,
+          "porcentaje_valido": 2.688702516033547
         },
         {
           "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
           "partido_id": "frente-de-la-esperanza-2021",
           "color": "#52b439",
-          "votos": 372,
-          "porcentaje_valido": 2.074272331883573
+          "votos": 488,
+          "porcentaje_valido": 2.0062489722085184
         },
         {
           "partido": "PARTIDO SICREO",
           "partido_id": "partido-si-creo",
           "color": "#000000",
-          "votos": 256,
-          "porcentaje_valido": 1.4274562283929966
+          "votos": 365,
+          "porcentaje_valido": 1.500575563229732
         },
         {
           "partido": "PARTIDO POLÍTICO COOPERACIÓN POPULAR",
           "partido_id": "cooperacion-popular",
           "color": "#52b439",
-          "votos": 189,
-          "porcentaje_valido": 1.053864168618267
+          "votos": 258,
+          "porcentaje_valido": 1.0606808090774544
         },
         {
           "partido": "PARTIDO APRISTA PERUANO",
           "partido_id": "partido-aprista-peruano",
           "color": "#b22222",
-          "votos": 187,
-          "porcentaje_valido": 1.0427121668339467
+          "votos": 239,
+          "porcentaje_valido": 0.9825686564709751
         },
         {
           "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
           "partido_id": "partido-patriotico-del-peru",
           "color": "#201e1f",
-          "votos": 160,
-          "porcentaje_valido": 0.8921601427456228
-        },
-        {
-          "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
-          "partido_id": "somos-peru",
-          "color": "#1022b9",
-          "votos": 136,
-          "porcentaje_valido": 0.7583361213337794
+          "votos": 221,
+          "porcentaje_valido": 0.9085676697911528
         },
         {
           "partido": "PODEMOS PERÚ",
           "partido_id": "podemos-peru",
           "color": "#0055a2",
-          "votos": 122,
-          "porcentaje_valido": 0.6802721088435374
+          "votos": 175,
+          "porcentaje_valido": 0.7194540371649399
+        },
+        {
+          "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+          "partido_id": "somos-peru",
+          "color": "#1022b9",
+          "votos": 174,
+          "porcentaje_valido": 0.7153428712382832
         },
         {
           "partido": "ALIANZA ELECTORAL VENCEREMOS",
           "partido_id": "alianza-venceremos",
           "color": "#498b34",
-          "votos": 116,
-          "porcentaje_valido": 0.6468161034905766
+          "votos": 169,
+          "porcentaje_valido": 0.6947870416049992
         },
         {
           "partido": "ALIANZA PARA EL PROGRESO",
           "partido_id": "alianza-para-el-progreso",
           "color": "#344fa1",
-          "votos": 115,
-          "porcentaje_valido": 0.6412401025984165
+          "votos": 154,
+          "porcentaje_valido": 0.6331195527051472
         },
         {
           "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
           "partido_id": "partido-democrata-unido-peru",
           "color": "#00a545",
-          "votos": 115,
-          "porcentaje_valido": 0.6412401025984165
-        },
-        {
-          "partido": "PARTIDO DEMÓCRATA VERDE",
-          "partido_id": "partido-democrata-verde",
-          "color": "#0aa150",
-          "votos": 97,
-          "porcentaje_valido": 0.5408720865395339
-        },
-        {
-          "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
-          "partido_id": "peru-libre",
-          "color": "#e70000",
-          "votos": 93,
-          "porcentaje_valido": 0.5185680829708933
+          "votos": 151,
+          "porcentaje_valido": 0.6207860549251768
         },
         {
           "partido": "PARTIDO MORADO",
           "partido_id": "partido-morado",
           "color": "#4e1a7e",
-          "votos": 93,
-          "porcentaje_valido": 0.5185680829708933
+          "votos": 132,
+          "porcentaje_valido": 0.5426739023186976
+        },
+        {
+          "partido": "PARTIDO DEMÓCRATA VERDE",
+          "partido_id": "partido-democrata-verde",
+          "color": "#0aa150",
+          "votos": 125,
+          "porcentaje_valido": 0.5138957408321
+        },
+        {
+          "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
+          "partido_id": "peru-libre",
+          "color": "#e70000",
+          "votos": 120,
+          "porcentaje_valido": 0.493339911198816
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
           "partido_id": "peru-accion",
           "color": "#020974",
-          "votos": 65,
-          "porcentaje_valido": 0.3624400579904093
+          "votos": 102,
+          "porcentaje_valido": 0.41933892451899357
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
           "partido_id": "peru-primero",
           "color": "#f40201",
-          "votos": 58,
-          "porcentaje_valido": 0.3234080517452883
-        },
-        {
-          "partido": "LIBERTAD POPULAR",
-          "partido_id": "libertad-popular",
-          "color": "#ffff01",
-          "votos": 57,
-          "porcentaje_valido": 0.31783205085312816
+          "votos": 80,
+          "porcentaje_valido": 0.328893274132544
         },
         {
           "partido": "UNIDAD NACIONAL",
           "partido_id": "alianza-unidad-nacional",
           "color": "#326d06",
-          "votos": 57,
-          "porcentaje_valido": 0.31783205085312816
+          "votos": 76,
+          "porcentaje_valido": 0.3124486104259168
         },
         {
           "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
           "partido_id": "integridad-democratica",
           "color": "#2d88ff",
-          "votos": 52,
-          "porcentaje_valido": 0.2899520463923274
+          "votos": 74,
+          "porcentaje_valido": 0.3042262785726032
         },
         {
           "partido": "PROGRESEMOS",
           "partido_id": "progresemos",
           "color": "#29b828",
-          "votos": 51,
-          "porcentaje_valido": 0.28437604550016726
+          "votos": 73,
+          "porcentaje_valido": 0.30011511264594637
         },
         {
-          "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
-          "partido_id": "avanza-pais",
-          "color": "#e0047a",
-          "votos": 30,
-          "porcentaje_valido": 0.16728002676480427
+          "partido": "LIBERTAD POPULAR",
+          "partido_id": "libertad-popular",
+          "color": "#ffff01",
+          "votos": 67,
+          "porcentaje_valido": 0.2754481170860056
         },
         {
           "partido": "FE EN EL PERÚ",
           "partido_id": "partido-fe-en-el-peru",
           "color": "#47af30",
-          "votos": 27,
-          "porcentaje_valido": 0.15055202408832385
+          "votos": 43,
+          "porcentaje_valido": 0.1767801348462424
         },
         {
           "partido": "FUERZA Y LIBERTAD",
           "partido_id": "alianza-fuerza-y-libertad",
           "color": "#0c01ff",
-          "votos": 27,
-          "porcentaje_valido": 0.15055202408832385
+          "votos": 41,
+          "porcentaje_valido": 0.1685578029929288
         },
         {
-          "partido": "PERÚ MODERNO",
-          "partido_id": "partido-peru-moderno",
-          "color": "#e4007b",
-          "votos": 23,
-          "porcentaje_valido": 0.1282480205196833
-        },
-        {
-          "partido": "SALVEMOS AL PERÚ",
-          "partido_id": "salvemos-al-peru",
-          "color": "#fe0000",
-          "votos": 22,
-          "porcentaje_valido": 0.12267201962752314
+          "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
+          "partido_id": "avanza-pais",
+          "color": "#e0047a",
+          "votos": 37,
+          "porcentaje_valido": 0.1521131392863016
         },
         {
           "partido": "PARTIDO POLÍTICO PRIN",
           "partido_id": "partido-regionalista-de-integracion-nacional---prin",
           "color": "#e10803",
-          "votos": 19,
-          "porcentaje_valido": 0.10594401695104272
+          "votos": 30,
+          "porcentaje_valido": 0.123334977799704
         },
         {
-          "partido": "PARTIDO DEMOCRATICO FEDERAL",
-          "partido_id": "partido-democratico-federal",
-          "color": "#01953f",
-          "votos": 17,
-          "porcentaje_valido": 0.09479201516672242
+          "partido": "PERÚ MODERNO",
+          "partido_id": "partido-peru-moderno",
+          "color": "#e4007b",
+          "votos": 28,
+          "porcentaje_valido": 0.1151126459463904
+        },
+        {
+          "partido": "SALVEMOS AL PERÚ",
+          "partido_id": "salvemos-al-peru",
+          "color": "#fe0000",
+          "votos": 27,
+          "porcentaje_valido": 0.1110014800197336
         },
         {
           "partido": "PARTIDO DE LOS TRABAJADORES Y EMPRENDEDORES PTE - PERÚ",
           "partido_id": "partido-de-los-trabajadores-y-emprendedores",
           "color": "#345091",
-          "votos": 16,
-          "porcentaje_valido": 0.08921601427456229
+          "votos": 25,
+          "porcentaje_valido": 0.10277914816642
+        },
+        {
+          "partido": "PARTIDO DEMOCRATICO FEDERAL",
+          "partido_id": "partido-democratico-federal",
+          "color": "#01953f",
+          "votos": 23,
+          "porcentaje_valido": 0.0945568163131064
         }
       ],
       "country_id": "chile",
@@ -1930,226 +1930,233 @@
       "country": "COLOMBIA",
       "ubigeoNivel1": "920000",
       "ubigeoNivel2": "920700",
-      "totalVotes": 1328,
-      "totalValidos": 1328,
-      "actasContabilizadas": 76.471,
+      "totalVotes": 1411,
+      "totalValidos": 1411,
+      "actasContabilizadas": 82.353,
       "details": [
         {
           "partido": "RENOVACIÓN POPULAR",
           "partido_id": "renovacion-popular",
           "color": "#00aede",
-          "votos": 481,
-          "porcentaje_valido": 36.21987951807229
+          "votos": 484,
+          "porcentaje_valido": 34.30191353649894
         },
         {
           "partido": "FUERZA POPULAR",
           "partido_id": "fuerza-popular",
           "color": "#fd6600",
-          "votos": 273,
-          "porcentaje_valido": 20.55722891566265
+          "votos": 313,
+          "porcentaje_valido": 22.18284904323175
         },
         {
           "partido": "PARTIDO DEL BUEN GOBIERNO",
           "partido_id": "partido-del-buen-gobierno",
           "color": "#ac0707",
-          "votos": 131,
-          "porcentaje_valido": 9.864457831325302
+          "votos": 134,
+          "porcentaje_valido": 9.496810772501771
         },
         {
           "partido": "PARTIDO PAÍS PARA TODOS",
           "partido_id": "pais-para-todos",
           "color": "#ffcd00",
-          "votos": 99,
-          "porcentaje_valido": 7.454819277108434
+          "votos": 107,
+          "porcentaje_valido": 7.5832742735648475
         },
         {
           "partido": "PARTIDO CÍVICO OBRAS",
           "partido_id": "partido-obras",
           "color": "#005e00",
           "votos": 77,
-          "porcentaje_valido": 5.798192771084337
+          "porcentaje_valido": 5.457122608079376
         },
         {
           "partido": "AHORA NACIÓN - AN",
           "partido_id": "ahora-nacion",
           "color": "#e90305",
-          "votos": 66,
-          "porcentaje_valido": 4.969879518072289
+          "votos": 67,
+          "porcentaje_valido": 4.7484053862508855
         },
         {
           "partido": "PRIMERO LA GENTE – COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO",
           "partido_id": "primero-la-gente",
           "color": "#0d32c6",
-          "votos": 53,
-          "porcentaje_valido": 3.9909638554216866
+          "votos": 57,
+          "porcentaje_valido": 4.039688164422396
         },
         {
           "partido": "JUNTOS POR EL PERÚ",
           "partido_id": "juntos-por-el-peru",
           "color": "#20a73c",
-          "votos": 28,
-          "porcentaje_valido": 2.108433734939759
+          "votos": 32,
+          "porcentaje_valido": 2.2678951098511693
         },
         {
           "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
           "partido_id": "partido-patriotico-del-peru",
           "color": "#201e1f",
-          "votos": 14,
-          "porcentaje_valido": 1.0542168674698795
+          "votos": 15,
+          "porcentaje_valido": 1.0630758327427356
         },
         {
           "partido": "ALIANZA ELECTORAL VENCEREMOS",
           "partido_id": "alianza-venceremos",
           "color": "#498b34",
-          "votos": 12,
-          "porcentaje_valido": 0.9036144578313253
+          "votos": 13,
+          "porcentaje_valido": 0.9213323883770376
+        },
+        {
+          "partido": "PARTIDO DEMÓCRATA VERDE",
+          "partido_id": "partido-democrata-verde",
+          "color": "#0aa150",
+          "votos": 10,
+          "porcentaje_valido": 0.7087172218284904
+        },
+        {
+          "partido": "PARTIDO SICREO",
+          "partido_id": "partido-si-creo",
+          "color": "#000000",
+          "votos": 10,
+          "porcentaje_valido": 0.7087172218284904
         },
         {
           "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
           "partido_id": "peru-libre",
           "color": "#e70000",
           "votos": 10,
-          "porcentaje_valido": 0.7530120481927711
+          "porcentaje_valido": 0.7087172218284904
         },
         {
           "partido": "PARTIDO APRISTA PERUANO",
           "partido_id": "partido-aprista-peruano",
           "color": "#b22222",
           "votos": 10,
-          "porcentaje_valido": 0.7530120481927711
-        },
-        {
-          "partido": "PARTIDO SICREO",
-          "partido_id": "partido-si-creo",
-          "color": "#000000",
-          "votos": 8,
-          "porcentaje_valido": 0.6024096385542169
-        },
-        {
-          "partido": "PARTIDO DEMÓCRATA VERDE",
-          "partido_id": "partido-democrata-verde",
-          "color": "#0aa150",
-          "votos": 7,
-          "porcentaje_valido": 0.5271084337349398
+          "porcentaje_valido": 0.7087172218284904
         },
         {
           "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
           "partido_id": "frente-de-la-esperanza-2021",
           "color": "#52b439",
           "votos": 7,
-          "porcentaje_valido": 0.5271084337349398
+          "porcentaje_valido": 0.4961020552799433
         },
         {
           "partido": "LIBERTAD POPULAR",
           "partido_id": "libertad-popular",
           "color": "#ffff01",
-          "votos": 6,
-          "porcentaje_valido": 0.45180722891566266
+          "votos": 7,
+          "porcentaje_valido": 0.4961020552799433
+        },
+        {
+          "partido": "UN CAMINO DIFERENTE",
+          "partido_id": "un-camino-diferente",
+          "color": "#f52300",
+          "votos": 7,
+          "porcentaje_valido": 0.4961020552799433
+        },
+        {
+          "partido": "UNIDAD NACIONAL",
+          "partido_id": "alianza-unidad-nacional",
+          "color": "#326d06",
+          "votos": 7,
+          "porcentaje_valido": 0.4961020552799433
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
           "partido_id": "peru-accion",
           "color": "#020974",
           "votos": 5,
-          "porcentaje_valido": 0.37650602409638556
+          "porcentaje_valido": 0.3543586109142452
         },
         {
-          "partido": "UN CAMINO DIFERENTE",
-          "partido_id": "un-camino-diferente",
-          "color": "#f52300",
+          "partido": "ALIANZA PARA EL PROGRESO",
+          "partido_id": "alianza-para-el-progreso",
+          "color": "#344fa1",
           "votos": 5,
-          "porcentaje_valido": 0.37650602409638556
-        },
-        {
-          "partido": "UNIDAD NACIONAL",
-          "partido_id": "alianza-unidad-nacional",
-          "color": "#326d06",
-          "votos": 5,
-          "porcentaje_valido": 0.37650602409638556
+          "porcentaje_valido": 0.3543586109142452
         },
         {
           "partido": "PARTIDO MORADO",
           "partido_id": "partido-morado",
           "color": "#4e1a7e",
-          "votos": 4,
-          "porcentaje_valido": 0.30120481927710846
+          "votos": 5,
+          "porcentaje_valido": 0.3543586109142452
+        },
+        {
+          "partido": "PARTIDO POLÍTICO PRIN",
+          "partido_id": "partido-regionalista-de-integracion-nacional---prin",
+          "color": "#e10803",
+          "votos": 3,
+          "porcentaje_valido": 0.21261516654854712
         },
         {
           "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
           "partido_id": "integridad-democratica",
           "color": "#2d88ff",
           "votos": 3,
-          "porcentaje_valido": 0.22590361445783133
-        },
-        {
-          "partido": "ALIANZA PARA EL PROGRESO",
-          "partido_id": "alianza-para-el-progreso",
-          "color": "#344fa1",
-          "votos": 3,
-          "porcentaje_valido": 0.22590361445783133
+          "porcentaje_valido": 0.21261516654854712
         },
         {
           "partido": "PARTIDO POLÍTICO COOPERACIÓN POPULAR",
           "partido_id": "cooperacion-popular",
           "color": "#52b439",
           "votos": 3,
-          "porcentaje_valido": 0.22590361445783133
+          "porcentaje_valido": 0.21261516654854712
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
           "partido_id": "peru-primero",
           "color": "#f40201",
           "votos": 3,
-          "porcentaje_valido": 0.22590361445783133
+          "porcentaje_valido": 0.21261516654854712
+        },
+        {
+          "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+          "partido_id": "somos-peru",
+          "color": "#1022b9",
+          "votos": 3,
+          "porcentaje_valido": 0.21261516654854712
+        },
+        {
+          "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
+          "partido_id": "partido-democrata-unido-peru",
+          "color": "#00a545",
+          "votos": 3,
+          "porcentaje_valido": 0.21261516654854712
         },
         {
           "partido": "FUERZA Y LIBERTAD",
           "partido_id": "alianza-fuerza-y-libertad",
           "color": "#0c01ff",
           "votos": 3,
-          "porcentaje_valido": 0.22590361445783133
-        },
-        {
-          "partido": "PARTIDO POLÍTICO PRIN",
-          "partido_id": "partido-regionalista-de-integracion-nacional---prin",
-          "color": "#e10803",
-          "votos": 2,
-          "porcentaje_valido": 0.15060240963855423
+          "porcentaje_valido": 0.21261516654854712
         },
         {
           "partido": "PODEMOS PERÚ",
           "partido_id": "podemos-peru",
           "color": "#0055a2",
           "votos": 2,
-          "porcentaje_valido": 0.15060240963855423
+          "porcentaje_valido": 0.14174344436569808
         },
         {
           "partido": "FE EN EL PERÚ",
           "partido_id": "partido-fe-en-el-peru",
           "color": "#47af30",
           "votos": 2,
-          "porcentaje_valido": 0.15060240963855423
+          "porcentaje_valido": 0.14174344436569808
         },
         {
           "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
           "partido_id": "avanza-pais",
           "color": "#e0047a",
           "votos": 2,
-          "porcentaje_valido": 0.15060240963855423
+          "porcentaje_valido": 0.14174344436569808
         },
         {
-          "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
-          "partido_id": "somos-peru",
-          "color": "#1022b9",
+          "partido": "PERÚ MODERNO",
+          "partido_id": "partido-peru-moderno",
+          "color": "#e4007b",
           "votos": 2,
-          "porcentaje_valido": 0.15060240963855423
-        },
-        {
-          "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
-          "partido_id": "partido-democrata-unido-peru",
-          "color": "#00a545",
-          "votos": 2,
-          "porcentaje_valido": 0.15060240963855423
+          "porcentaje_valido": 0.14174344436569808
         }
       ],
       "country_id": "colombia",
@@ -2509,254 +2516,254 @@
       "country": "ECUADOR",
       "ubigeoNivel1": "920000",
       "ubigeoNivel2": "921100",
-      "totalVotes": 1667,
-      "totalValidos": 1667,
-      "actasContabilizadas": 87.5,
+      "totalVotes": 1742,
+      "totalValidos": 1742,
+      "actasContabilizadas": 93.75,
       "details": [
         {
           "partido": "RENOVACIÓN POPULAR",
           "partido_id": "renovacion-popular",
           "color": "#00aede",
-          "votos": 485,
-          "porcentaje_valido": 29.094181163767246
+          "votos": 495,
+          "porcentaje_valido": 28.415614236509757
         },
         {
           "partido": "FUERZA POPULAR",
           "partido_id": "fuerza-popular",
           "color": "#fd6600",
-          "votos": 360,
-          "porcentaje_valido": 21.595680863827234
+          "votos": 377,
+          "porcentaje_valido": 21.64179104477612
         },
         {
           "partido": "PARTIDO PAÍS PARA TODOS",
           "partido_id": "pais-para-todos",
           "color": "#ffcd00",
-          "votos": 143,
-          "porcentaje_valido": 8.578284343131374
+          "votos": 152,
+          "porcentaje_valido": 8.725602755453501
         },
         {
           "partido": "PARTIDO CÍVICO OBRAS",
           "partido_id": "partido-obras",
           "color": "#005e00",
-          "votos": 124,
-          "porcentaje_valido": 7.438512297540492
+          "votos": 127,
+          "porcentaje_valido": 7.290470723306544
         },
         {
           "partido": "PARTIDO DEL BUEN GOBIERNO",
           "partido_id": "partido-del-buen-gobierno",
           "color": "#ac0707",
-          "votos": 115,
-          "porcentaje_valido": 6.898620275944811
+          "votos": 121,
+          "porcentaje_valido": 6.946039035591275
         },
         {
           "partido": "JUNTOS POR EL PERÚ",
           "partido_id": "juntos-por-el-peru",
           "color": "#20a73c",
-          "votos": 103,
-          "porcentaje_valido": 6.1787642471505695
+          "votos": 111,
+          "porcentaje_valido": 6.371986222732492
         },
         {
           "partido": "AHORA NACIÓN - AN",
           "partido_id": "ahora-nacion",
           "color": "#e90305",
-          "votos": 90,
-          "porcentaje_valido": 5.398920215956808
+          "votos": 94,
+          "porcentaje_valido": 5.396096440872561
         },
         {
           "partido": "PRIMERO LA GENTE – COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO",
           "partido_id": "primero-la-gente",
           "color": "#0d32c6",
-          "votos": 54,
-          "porcentaje_valido": 3.239352129574085
+          "votos": 58,
+          "porcentaje_valido": 3.3295063145809416
         },
         {
           "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
           "partido_id": "frente-de-la-esperanza-2021",
           "color": "#52b439",
           "votos": 29,
-          "porcentaje_valido": 1.7396520695860829
+          "porcentaje_valido": 1.6647531572904708
+        },
+        {
+          "partido": "PARTIDO SICREO",
+          "partido_id": "partido-si-creo",
+          "color": "#000000",
+          "votos": 18,
+          "porcentaje_valido": 1.0332950631458093
         },
         {
           "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
           "partido_id": "partido-patriotico-del-peru",
           "color": "#201e1f",
           "votos": 17,
-          "porcentaje_valido": 1.0197960407918416
+          "porcentaje_valido": 0.9758897818599311
         },
         {
-          "partido": "PARTIDO SICREO",
-          "partido_id": "partido-si-creo",
-          "color": "#000000",
-          "votos": 16,
-          "porcentaje_valido": 0.9598080383923215
+          "partido": "ALIANZA ELECTORAL VENCEREMOS",
+          "partido_id": "alianza-venceremos",
+          "color": "#498b34",
+          "votos": 15,
+          "porcentaje_valido": 0.8610792192881745
         },
         {
           "partido": "PARTIDO APRISTA PERUANO",
           "partido_id": "partido-aprista-peruano",
           "color": "#b22222",
           "votos": 15,
-          "porcentaje_valido": 0.8998200359928015
-        },
-        {
-          "partido": "ALIANZA ELECTORAL VENCEREMOS",
-          "partido_id": "alianza-venceremos",
-          "color": "#498b34",
-          "votos": 13,
-          "porcentaje_valido": 0.7798440311937612
+          "porcentaje_valido": 0.8610792192881745
         },
         {
           "partido": "UN CAMINO DIFERENTE",
           "partido_id": "un-camino-diferente",
           "color": "#f52300",
-          "votos": 12,
-          "porcentaje_valido": 0.7198560287942412
+          "votos": 13,
+          "porcentaje_valido": 0.746268656716418
+        },
+        {
+          "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
+          "partido_id": "peru-libre",
+          "color": "#e70000",
+          "votos": 11,
+          "porcentaje_valido": 0.6314580941446614
         },
         {
           "partido": "ALIANZA PARA EL PROGRESO",
           "partido_id": "alianza-para-el-progreso",
           "color": "#344fa1",
           "votos": 11,
-          "porcentaje_valido": 0.6598680263947211
-        },
-        {
-          "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
-          "partido_id": "peru-libre",
-          "color": "#e70000",
-          "votos": 10,
-          "porcentaje_valido": 0.5998800239952009
+          "porcentaje_valido": 0.6314580941446614
         },
         {
           "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
           "partido_id": "integridad-democratica",
           "color": "#2d88ff",
           "votos": 8,
-          "porcentaje_valido": 0.47990401919616077
+          "porcentaje_valido": 0.4592422502870264
+        },
+        {
+          "partido": "PARTIDO MORADO",
+          "partido_id": "partido-morado",
+          "color": "#4e1a7e",
+          "votos": 8,
+          "porcentaje_valido": 0.4592422502870264
+        },
+        {
+          "partido": "PROGRESEMOS",
+          "partido_id": "progresemos",
+          "color": "#29b828",
+          "votos": 7,
+          "porcentaje_valido": 0.4018369690011481
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
           "partido_id": "peru-primero",
           "color": "#f40201",
           "votos": 7,
-          "porcentaje_valido": 0.41991601679664065
+          "porcentaje_valido": 0.4018369690011481
         },
         {
           "partido": "UNIDAD NACIONAL",
           "partido_id": "alianza-unidad-nacional",
           "color": "#326d06",
           "votos": 7,
-          "porcentaje_valido": 0.41991601679664065
+          "porcentaje_valido": 0.4018369690011481
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
           "partido_id": "peru-accion",
           "color": "#020974",
           "votos": 6,
-          "porcentaje_valido": 0.3599280143971206
-        },
-        {
-          "partido": "PARTIDO MORADO",
-          "partido_id": "partido-morado",
-          "color": "#4e1a7e",
-          "votos": 6,
-          "porcentaje_valido": 0.3599280143971206
+          "porcentaje_valido": 0.34443168771526983
         },
         {
           "partido": "FUERZA Y LIBERTAD",
           "partido_id": "alianza-fuerza-y-libertad",
           "color": "#0c01ff",
-          "votos": 5,
-          "porcentaje_valido": 0.29994001199760045
+          "votos": 6,
+          "porcentaje_valido": 0.34443168771526983
         },
         {
-          "partido": "PROGRESEMOS",
-          "partido_id": "progresemos",
-          "color": "#29b828",
+          "partido": "PARTIDO DEMÓCRATA VERDE",
+          "partido_id": "partido-democrata-verde",
+          "color": "#0aa150",
           "votos": 4,
-          "porcentaje_valido": 0.23995200959808038
+          "porcentaje_valido": 0.2296211251435132
         },
         {
           "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
           "partido_id": "somos-peru",
           "color": "#1022b9",
           "votos": 4,
-          "porcentaje_valido": 0.23995200959808038
-        },
-        {
-          "partido": "PARTIDO DEMÓCRATA VERDE",
-          "partido_id": "partido-democrata-verde",
-          "color": "#0aa150",
-          "votos": 3,
-          "porcentaje_valido": 0.1799640071985603
+          "porcentaje_valido": 0.2296211251435132
         },
         {
           "partido": "FE EN EL PERÚ",
           "partido_id": "partido-fe-en-el-peru",
           "color": "#47af30",
           "votos": 3,
-          "porcentaje_valido": 0.1799640071985603
+          "porcentaje_valido": 0.17221584385763491
         },
         {
           "partido": "PARTIDO POLÍTICO COOPERACIÓN POPULAR",
           "partido_id": "cooperacion-popular",
           "color": "#52b439",
           "votos": 3,
-          "porcentaje_valido": 0.1799640071985603
+          "porcentaje_valido": 0.17221584385763491
         },
         {
           "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
           "partido_id": "avanza-pais",
           "color": "#e0047a",
           "votos": 3,
-          "porcentaje_valido": 0.1799640071985603
+          "porcentaje_valido": 0.17221584385763491
+        },
+        {
+          "partido": "PERÚ MODERNO",
+          "partido_id": "partido-peru-moderno",
+          "color": "#e4007b",
+          "votos": 3,
+          "porcentaje_valido": 0.17221584385763491
         },
         {
           "partido": "PARTIDO POLÍTICO PRIN",
           "partido_id": "partido-regionalista-de-integracion-nacional---prin",
           "color": "#e10803",
           "votos": 2,
-          "porcentaje_valido": 0.11997600479904019
+          "porcentaje_valido": 0.1148105625717566
         },
         {
           "partido": "PODEMOS PERÚ",
           "partido_id": "podemos-peru",
           "color": "#0055a2",
           "votos": 2,
-          "porcentaje_valido": 0.11997600479904019
-        },
-        {
-          "partido": "PERÚ MODERNO",
-          "partido_id": "partido-peru-moderno",
-          "color": "#e4007b",
-          "votos": 2,
-          "porcentaje_valido": 0.11997600479904019
+          "porcentaje_valido": 0.1148105625717566
         },
         {
           "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
           "partido_id": "partido-democrata-unido-peru",
           "color": "#00a545",
           "votos": 2,
-          "porcentaje_valido": 0.11997600479904019
+          "porcentaje_valido": 0.1148105625717566
         },
         {
           "partido": "LIBERTAD POPULAR",
           "partido_id": "libertad-popular",
           "color": "#ffff01",
           "votos": 1,
-          "porcentaje_valido": 0.059988002399520096
+          "porcentaje_valido": 0.0574052812858783
         },
         {
           "partido": "SALVEMOS AL PERÚ",
           "partido_id": "salvemos-al-peru",
           "color": "#fe0000",
           "votos": 1,
-          "porcentaje_valido": 0.059988002399520096
+          "porcentaje_valido": 0.0574052812858783
         },
         {
           "partido": "PARTIDO DE LOS TRABAJADORES Y EMPRENDEDORES PTE - PERÚ",
           "partido_id": "partido-de-los-trabajadores-y-emprendedores",
           "color": "#345091",
           "votos": 1,
-          "porcentaje_valido": 0.059988002399520096
+          "porcentaje_valido": 0.0574052812858783
         }
       ],
       "country_id": "ecuador",
@@ -2895,261 +2902,261 @@
       "country": "ESTADOS UNIDOS DE ÁMERICA",
       "ubigeoNivel1": "920000",
       "ubigeoNivel2": "921300",
-      "totalVotes": 36405,
-      "totalValidos": 36405,
-      "actasContabilizadas": 59.68,
+      "totalVotes": 44867,
+      "totalValidos": 44867,
+      "actasContabilizadas": 74.366,
       "details": [
         {
           "partido": "RENOVACIÓN POPULAR",
           "partido_id": "renovacion-popular",
           "color": "#00aede",
-          "votos": 16459,
-          "porcentaje_valido": 45.21082268919105
+          "votos": 19988,
+          "porcentaje_valido": 44.54944614081619
         },
         {
           "partido": "FUERZA POPULAR",
           "partido_id": "fuerza-popular",
           "color": "#fd6600",
-          "votos": 5352,
-          "porcentaje_valido": 14.701277297074578
+          "votos": 6773,
+          "porcentaje_valido": 15.095727372010609
         },
         {
           "partido": "PARTIDO DEL BUEN GOBIERNO",
           "partido_id": "partido-del-buen-gobierno",
           "color": "#ac0707",
-          "votos": 3250,
-          "porcentaje_valido": 8.927345144897679
+          "votos": 3941,
+          "porcentaje_valido": 8.783738605210957
         },
         {
           "partido": "PARTIDO PAÍS PARA TODOS",
           "partido_id": "pais-para-todos",
           "color": "#ffcd00",
-          "votos": 2732,
-          "porcentaje_valido": 7.504463672572449
+          "votos": 3401,
+          "porcentaje_valido": 7.580181425100854
         },
         {
           "partido": "PARTIDO CÍVICO OBRAS",
           "partido_id": "partido-obras",
           "color": "#005e00",
-          "votos": 2286,
-          "porcentaje_valido": 6.279357231149567
+          "votos": 2897,
+          "porcentaje_valido": 6.456861390331424
         },
         {
           "partido": "AHORA NACIÓN - AN",
           "partido_id": "ahora-nacion",
           "color": "#e90305",
-          "votos": 1996,
-          "porcentaje_valido": 5.482763356681774
+          "votos": 2453,
+          "porcentaje_valido": 5.467269931129784
         },
         {
           "partido": "PRIMERO LA GENTE – COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO",
           "partido_id": "primero-la-gente",
           "color": "#0d32c6",
-          "votos": 995,
-          "porcentaje_valido": 2.7331410520532895
+          "votos": 1210,
+          "porcentaje_valido": 2.69685960728375
         },
         {
           "partido": "JUNTOS POR EL PERÚ",
           "partido_id": "juntos-por-el-peru",
           "color": "#20a73c",
-          "votos": 450,
-          "porcentaje_valido": 1.2360939431396787
+          "votos": 601,
+          "porcentaje_valido": 1.339514565270689
         },
         {
           "partido": "PARTIDO APRISTA PERUANO",
           "partido_id": "partido-aprista-peruano",
           "color": "#b22222",
-          "votos": 420,
-          "porcentaje_valido": 1.1536876802637
+          "votos": 526,
+          "porcentaje_valido": 1.1723538458109524
         },
         {
           "partido": "UNIDAD NACIONAL",
           "partido_id": "alianza-unidad-nacional",
           "color": "#326d06",
-          "votos": 307,
-          "porcentaje_valido": 0.8432907567641807
+          "votos": 373,
+          "porcentaje_valido": 0.8313459781130897
         },
         {
           "partido": "PARTIDO SICREO",
           "partido_id": "partido-si-creo",
           "color": "#000000",
-          "votos": 278,
-          "porcentaje_valido": 0.7636313693174015
+          "votos": 344,
+          "porcentaje_valido": 0.7667104999219917
         },
         {
           "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
           "partido_id": "frente-de-la-esperanza-2021",
           "color": "#52b439",
-          "votos": 276,
-          "porcentaje_valido": 0.7581376184590028
+          "votos": 334,
+          "porcentaje_valido": 0.7444224039940268
         },
         {
           "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
           "partido_id": "somos-peru",
           "color": "#1022b9",
-          "votos": 158,
-          "porcentaje_valido": 0.43400631781348714
-        },
-        {
-          "partido": "PARTIDO MORADO",
-          "partido_id": "partido-morado",
-          "color": "#4e1a7e",
-          "votos": 152,
-          "porcentaje_valido": 0.41752506523829147
+          "votos": 193,
+          "porcentaje_valido": 0.4301602514097221
         },
         {
           "partido": "PARTIDO POLÍTICO COOPERACIÓN POPULAR",
           "partido_id": "cooperacion-popular",
           "color": "#52b439",
-          "votos": 143,
-          "porcentaje_valido": 0.3928031863754979
+          "votos": 188,
+          "porcentaje_valido": 0.41901620344573964
+        },
+        {
+          "partido": "PARTIDO MORADO",
+          "partido_id": "partido-morado",
+          "color": "#4e1a7e",
+          "votos": 187,
+          "porcentaje_valido": 0.41678739385294317
         },
         {
           "partido": "ALIANZA ELECTORAL VENCEREMOS",
           "partido_id": "alianza-venceremos",
           "color": "#498b34",
-          "votos": 116,
-          "porcentaje_valido": 0.31863754978711717
-        },
-        {
-          "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
-          "partido_id": "integridad-democratica",
-          "color": "#2d88ff",
-          "votos": 116,
-          "porcentaje_valido": 0.31863754978711717
+          "votos": 141,
+          "porcentaje_valido": 0.31426215258430473
         },
         {
           "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
           "partido_id": "partido-democrata-unido-peru",
           "color": "#00a545",
-          "votos": 107,
-          "porcentaje_valido": 0.2939156709243236
+          "votos": 139,
+          "porcentaje_valido": 0.3098045333987117
+        },
+        {
+          "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
+          "partido_id": "integridad-democratica",
+          "color": "#2d88ff",
+          "votos": 126,
+          "porcentaje_valido": 0.2808300086923574
         },
         {
           "partido": "LIBERTAD POPULAR",
           "partido_id": "libertad-popular",
           "color": "#ffff01",
-          "votos": 98,
-          "porcentaje_valido": 0.26919379206153
-        },
-        {
-          "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
-          "partido_id": "partido-patriotico-del-peru",
-          "color": "#201e1f",
-          "votos": 95,
-          "porcentaje_valido": 0.2609531657739321
+          "votos": 121,
+          "porcentaje_valido": 0.269685960728375
         },
         {
           "partido": "UN CAMINO DIFERENTE",
           "partido_id": "un-camino-diferente",
           "color": "#f52300",
-          "votos": 90,
-          "porcentaje_valido": 0.24721878862793573
+          "votos": 112,
+          "porcentaje_valido": 0.2496266743932066
         },
         {
-          "partido": "ALIANZA PARA EL PROGRESO",
-          "partido_id": "alianza-para-el-progreso",
-          "color": "#344fa1",
-          "votos": 80,
-          "porcentaje_valido": 0.21975003433594287
+          "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
+          "partido_id": "partido-patriotico-del-peru",
+          "color": "#201e1f",
+          "votos": 110,
+          "porcentaje_valido": 0.24516905520761362
         },
         {
           "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
           "partido_id": "peru-libre",
           "color": "#e70000",
-          "votos": 73,
-          "porcentaje_valido": 0.20052190633154787
+          "votos": 96,
+          "porcentaje_valido": 0.2139657209084628
+        },
+        {
+          "partido": "ALIANZA PARA EL PROGRESO",
+          "partido_id": "alianza-para-el-progreso",
+          "color": "#344fa1",
+          "votos": 87,
+          "porcentaje_valido": 0.1939064345732944
         },
         {
           "partido": "PARTIDO DEMÓCRATA VERDE",
           "partido_id": "partido-democrata-verde",
           "color": "#0aa150",
-          "votos": 72,
-          "porcentaje_valido": 0.19777503090234858
+          "votos": 86,
+          "porcentaje_valido": 0.19167762498049792
         },
         {
           "partido": "PODEMOS PERÚ",
           "partido_id": "podemos-peru",
           "color": "#0055a2",
-          "votos": 61,
-          "porcentaje_valido": 0.16755940118115645
+          "votos": 84,
+          "porcentaje_valido": 0.18722000579490494
         },
         {
           "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
           "partido_id": "avanza-pais",
           "color": "#e0047a",
-          "votos": 45,
-          "porcentaje_valido": 0.12360939431396786
+          "votos": 51,
+          "porcentaje_valido": 0.11366928923262086
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
           "partido_id": "peru-primero",
           "color": "#f40201",
-          "votos": 34,
-          "porcentaje_valido": 0.09339376459277572
+          "votos": 48,
+          "porcentaje_valido": 0.1069828604542314
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
           "partido_id": "peru-accion",
           "color": "#020974",
-          "votos": 33,
-          "porcentaje_valido": 0.09064688916357644
-        },
-        {
-          "partido": "PROGRESEMOS",
-          "partido_id": "progresemos",
-          "color": "#29b828",
-          "votos": 27,
-          "porcentaje_valido": 0.07416563658838071
-        },
-        {
-          "partido": "FUERZA Y LIBERTAD",
-          "partido_id": "alianza-fuerza-y-libertad",
-          "color": "#0c01ff",
-          "votos": 27,
-          "porcentaje_valido": 0.07416563658838071
-        },
-        {
-          "partido": "PERÚ MODERNO",
-          "partido_id": "partido-peru-moderno",
-          "color": "#e4007b",
-          "votos": 19,
-          "porcentaje_valido": 0.052190633154786434
-        },
-        {
-          "partido": "PARTIDO POLÍTICO PRIN",
-          "partido_id": "partido-regionalista-de-integracion-nacional---prin",
-          "color": "#e10803",
-          "votos": 18,
-          "porcentaje_valido": 0.049443757725587144
-        },
-        {
-          "partido": "PARTIDO DEMOCRATICO FEDERAL",
-          "partido_id": "partido-democratico-federal",
-          "color": "#01953f",
-          "votos": 12,
-          "porcentaje_valido": 0.03296250515039143
-        },
-        {
-          "partido": "FE EN EL PERÚ",
-          "partido_id": "partido-fe-en-el-peru",
-          "color": "#47af30",
-          "votos": 10,
-          "porcentaje_valido": 0.02746875429199286
-        },
-        {
-          "partido": "SALVEMOS AL PERÚ",
-          "partido_id": "salvemos-al-peru",
-          "color": "#fe0000",
-          "votos": 9,
-          "porcentaje_valido": 0.024721878862793572
+          "votos": 47,
+          "porcentaje_valido": 0.10475405086143491
         },
         {
           "partido": "PARTIDO DE LOS TRABAJADORES Y EMPRENDEDORES PTE - PERÚ",
           "partido_id": "partido-de-los-trabajadores-y-emprendedores",
           "color": "#345091",
-          "votos": 9,
-          "porcentaje_valido": 0.024721878862793572
+          "votos": 47,
+          "porcentaje_valido": 0.10475405086143491
+        },
+        {
+          "partido": "PROGRESEMOS",
+          "partido_id": "progresemos",
+          "color": "#29b828",
+          "votos": 36,
+          "porcentaje_valido": 0.08023714534067354
+        },
+        {
+          "partido": "FUERZA Y LIBERTAD",
+          "partido_id": "alianza-fuerza-y-libertad",
+          "color": "#0c01ff",
+          "votos": 32,
+          "porcentaje_valido": 0.07132190696948759
+        },
+        {
+          "partido": "PARTIDO POLÍTICO PRIN",
+          "partido_id": "partido-regionalista-de-integracion-nacional---prin",
+          "color": "#e10803",
+          "votos": 28,
+          "porcentaje_valido": 0.06240666859830165
+        },
+        {
+          "partido": "PERÚ MODERNO",
+          "partido_id": "partido-peru-moderno",
+          "color": "#e4007b",
+          "votos": 23,
+          "porcentaje_valido": 0.05126262063431921
+        },
+        {
+          "partido": "FE EN EL PERÚ",
+          "partido_id": "partido-fe-en-el-peru",
+          "color": "#47af30",
+          "votos": 18,
+          "porcentaje_valido": 0.04011857267033677
+        },
+        {
+          "partido": "PARTIDO DEMOCRATICO FEDERAL",
+          "partido_id": "partido-democratico-federal",
+          "color": "#01953f",
+          "votos": 14,
+          "porcentaje_valido": 0.031203334299150825
+        },
+        {
+          "partido": "SALVEMOS AL PERÚ",
+          "partido_id": "salvemos-al-peru",
+          "color": "#fe0000",
+          "votos": 12,
+          "porcentaje_valido": 0.02674571511355785
         }
       ],
       "country_id": "estados-unidos-de-america",
@@ -3562,205 +3569,219 @@
       "country": "MÉXICO",
       "ubigeoNivel1": "920000",
       "ubigeoNivel2": "921900",
-      "totalVotes": 1130,
-      "totalValidos": 1130,
-      "actasContabilizadas": 71.429,
+      "totalVotes": 1460,
+      "totalValidos": 1460,
+      "actasContabilizadas": 92.857,
       "details": [
         {
           "partido": "RENOVACIÓN POPULAR",
           "partido_id": "renovacion-popular",
           "color": "#00aede",
-          "votos": 485,
-          "porcentaje_valido": 42.92035398230089
+          "votos": 638,
+          "porcentaje_valido": 43.6986301369863
         },
         {
           "partido": "FUERZA POPULAR",
           "partido_id": "fuerza-popular",
           "color": "#fd6600",
-          "votos": 134,
-          "porcentaje_valido": 11.858407079646017
+          "votos": 166,
+          "porcentaje_valido": 11.36986301369863
         },
         {
           "partido": "PARTIDO DEL BUEN GOBIERNO",
           "partido_id": "partido-del-buen-gobierno",
           "color": "#ac0707",
-          "votos": 121,
-          "porcentaje_valido": 10.70796460176991
+          "votos": 162,
+          "porcentaje_valido": 11.095890410958905
         },
         {
           "partido": "AHORA NACIÓN - AN",
           "partido_id": "ahora-nacion",
           "color": "#e90305",
-          "votos": 102,
-          "porcentaje_valido": 9.026548672566372
+          "votos": 120,
+          "porcentaje_valido": 8.219178082191782
         },
         {
           "partido": "PARTIDO CÍVICO OBRAS",
           "partido_id": "partido-obras",
           "color": "#005e00",
-          "votos": 87,
-          "porcentaje_valido": 7.699115044247788
+          "votos": 110,
+          "porcentaje_valido": 7.534246575342466
         },
         {
           "partido": "PARTIDO PAÍS PARA TODOS",
           "partido_id": "pais-para-todos",
           "color": "#ffcd00",
-          "votos": 53,
-          "porcentaje_valido": 4.6902654867256635
+          "votos": 74,
+          "porcentaje_valido": 5.068493150684931
         },
         {
           "partido": "PRIMERO LA GENTE – COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO",
           "partido_id": "primero-la-gente",
           "color": "#0d32c6",
-          "votos": 39,
-          "porcentaje_valido": 3.4513274336283186
+          "votos": 51,
+          "porcentaje_valido": 3.493150684931507
         },
         {
           "partido": "JUNTOS POR EL PERÚ",
           "partido_id": "juntos-por-el-peru",
           "color": "#20a73c",
           "votos": 15,
-          "porcentaje_valido": 1.3274336283185841
+          "porcentaje_valido": 1.0273972602739727
+        },
+        {
+          "partido": "PARTIDO POLÍTICO COOPERACIÓN POPULAR",
+          "partido_id": "cooperacion-popular",
+          "color": "#52b439",
+          "votos": 13,
+          "porcentaje_valido": 0.8904109589041096
         },
         {
           "partido": "PARTIDO APRISTA PERUANO",
           "partido_id": "partido-aprista-peruano",
           "color": "#b22222",
           "votos": 13,
-          "porcentaje_valido": 1.1504424778761062
+          "porcentaje_valido": 0.8904109589041096
         },
         {
           "partido": "PARTIDO SICREO",
           "partido_id": "partido-si-creo",
           "color": "#000000",
-          "votos": 11,
-          "porcentaje_valido": 0.9734513274336283
+          "votos": 12,
+          "porcentaje_valido": 0.821917808219178
         },
         {
           "partido": "PARTIDO MORADO",
           "partido_id": "partido-morado",
           "color": "#4e1a7e",
-          "votos": 11,
-          "porcentaje_valido": 0.9734513274336283
+          "votos": 12,
+          "porcentaje_valido": 0.821917808219178
         },
         {
           "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
           "partido_id": "somos-peru",
           "color": "#1022b9",
-          "votos": 9,
-          "porcentaje_valido": 0.7964601769911505
+          "votos": 10,
+          "porcentaje_valido": 0.684931506849315
         },
         {
           "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
           "partido_id": "frente-de-la-esperanza-2021",
           "color": "#52b439",
+          "votos": 9,
+          "porcentaje_valido": 0.6164383561643836
+        },
+        {
+          "partido": "ALIANZA ELECTORAL VENCEREMOS",
+          "partido_id": "alianza-venceremos",
+          "color": "#498b34",
           "votos": 7,
-          "porcentaje_valido": 0.6194690265486725
+          "porcentaje_valido": 0.4794520547945205
+        },
+        {
+          "partido": "UNIDAD NACIONAL",
+          "partido_id": "alianza-unidad-nacional",
+          "color": "#326d06",
+          "votos": 7,
+          "porcentaje_valido": 0.4794520547945205
         },
         {
           "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
           "partido_id": "partido-patriotico-del-peru",
           "color": "#201e1f",
           "votos": 5,
-          "porcentaje_valido": 0.4424778761061947
+          "porcentaje_valido": 0.3424657534246575
         },
         {
-          "partido": "UNIDAD NACIONAL",
-          "partido_id": "alianza-unidad-nacional",
-          "color": "#326d06",
+          "partido": "PARTIDO DEMÓCRATA VERDE",
+          "partido_id": "partido-democrata-verde",
+          "color": "#0aa150",
           "votos": 5,
-          "porcentaje_valido": 0.4424778761061947
+          "porcentaje_valido": 0.3424657534246575
         },
         {
-          "partido": "ALIANZA ELECTORAL VENCEREMOS",
-          "partido_id": "alianza-venceremos",
-          "color": "#498b34",
+          "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
+          "partido_id": "peru-accion",
+          "color": "#020974",
           "votos": 4,
-          "porcentaje_valido": 0.35398230088495575
+          "porcentaje_valido": 0.273972602739726
         },
         {
           "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
           "partido_id": "peru-libre",
           "color": "#e70000",
           "votos": 4,
-          "porcentaje_valido": 0.35398230088495575
+          "porcentaje_valido": 0.273972602739726
         },
         {
-          "partido": "PARTIDO DEMÓCRATA VERDE",
-          "partido_id": "partido-democrata-verde",
-          "color": "#0aa150",
-          "votos": 3,
-          "porcentaje_valido": 0.26548672566371684
-        },
-        {
-          "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
-          "partido_id": "peru-accion",
-          "color": "#020974",
-          "votos": 3,
-          "porcentaje_valido": 0.26548672566371684
+          "partido": "PODEMOS PERÚ",
+          "partido_id": "podemos-peru",
+          "color": "#0055a2",
+          "votos": 4,
+          "porcentaje_valido": 0.273972602739726
         },
         {
           "partido": "PROGRESEMOS",
           "partido_id": "progresemos",
           "color": "#29b828",
           "votos": 3,
-          "porcentaje_valido": 0.26548672566371684
+          "porcentaje_valido": 0.2054794520547945
         },
         {
           "partido": "ALIANZA PARA EL PROGRESO",
           "partido_id": "alianza-para-el-progreso",
           "color": "#344fa1",
           "votos": 3,
-          "porcentaje_valido": 0.26548672566371684
+          "porcentaje_valido": 0.2054794520547945
         },
         {
           "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
           "partido_id": "avanza-pais",
           "color": "#e0047a",
           "votos": 3,
-          "porcentaje_valido": 0.26548672566371684
+          "porcentaje_valido": 0.2054794520547945
         },
         {
-          "partido": "PODEMOS PERÚ",
-          "partido_id": "podemos-peru",
-          "color": "#0055a2",
+          "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
+          "partido_id": "integridad-democratica",
+          "color": "#2d88ff",
           "votos": 2,
-          "porcentaje_valido": 0.17699115044247787
+          "porcentaje_valido": 0.136986301369863
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
           "partido_id": "peru-primero",
           "color": "#f40201",
           "votos": 2,
-          "porcentaje_valido": 0.17699115044247787
+          "porcentaje_valido": 0.136986301369863
         },
         {
           "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
           "partido_id": "partido-democrata-unido-peru",
           "color": "#00a545",
           "votos": 2,
-          "porcentaje_valido": 0.17699115044247787
+          "porcentaje_valido": 0.136986301369863
         },
         {
           "partido": "FUERZA Y LIBERTAD",
           "partido_id": "alianza-fuerza-y-libertad",
           "color": "#0c01ff",
           "votos": 2,
-          "porcentaje_valido": 0.17699115044247787
+          "porcentaje_valido": 0.136986301369863
         },
         {
-          "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
-          "partido_id": "integridad-democratica",
-          "color": "#2d88ff",
+          "partido": "LIBERTAD POPULAR",
+          "partido_id": "libertad-popular",
+          "color": "#ffff01",
           "votos": 1,
-          "porcentaje_valido": 0.08849557522123894
+          "porcentaje_valido": 0.0684931506849315
         },
         {
-          "partido": "PARTIDO POLÍTICO COOPERACIÓN POPULAR",
-          "partido_id": "cooperacion-popular",
-          "color": "#52b439",
+          "partido": "PARTIDO DE LOS TRABAJADORES Y EMPRENDEDORES PTE - PERÚ",
+          "partido_id": "partido-de-los-trabajadores-y-emprendedores",
+          "color": "#345091",
           "votos": 1,
-          "porcentaje_valido": 0.08849557522123894
+          "porcentaje_valido": 0.0684931506849315
         }
       ],
       "country_id": "mexico",
@@ -4982,7 +5003,7 @@
       "ubigeoNivel2": "922800",
       "totalVotes": 0,
       "totalValidos": 0,
-      "actasContabilizadas": 0.0,
+      "actasContabilizadas": 100.0,
       "details": [],
       "country_id": "venezuela",
       "lat": 8.0,
@@ -5013,7 +5034,7 @@
       "ubigeoNivel2": "931900",
       "totalVotes": 0,
       "totalValidos": 0,
-      "actasContabilizadas": 0.0,
+      "actasContabilizadas": 100.0,
       "details": [],
       "country_id": "arabia-saudita",
       "lat": 25.0,
@@ -5044,7 +5065,7 @@
       "ubigeoNivel2": "933800",
       "totalVotes": 0,
       "totalValidos": 0,
-      "actasContabilizadas": 0.0,
+      "actasContabilizadas": 100.0,
       "details": [],
       "country_id": "catar",
       "lat": 25.5,
@@ -5075,7 +5096,7 @@
       "ubigeoNivel2": "933700",
       "totalVotes": 0,
       "totalValidos": 0,
-      "actasContabilizadas": 0.0,
+      "actasContabilizadas": 100.0,
       "details": [],
       "country_id": "emiratos-arabes-unidos",
       "lat": 24.0,
@@ -5321,7 +5342,7 @@
       "ubigeoNivel2": "932400",
       "totalVotes": 0,
       "totalValidos": 0,
-      "actasContabilizadas": 0.0,
+      "actasContabilizadas": 100.0,
       "details": [],
       "country_id": "iran",
       "lat": 32.0,
@@ -5352,7 +5373,7 @@
       "ubigeoNivel2": "930600",
       "totalVotes": 0,
       "totalValidos": 0,
-      "actasContabilizadas": 0.0,
+      "actasContabilizadas": 100.0,
       "details": [],
       "country_id": "israel",
       "lat": 31.47,
@@ -5381,254 +5402,254 @@
       "country": "JAPÓN",
       "ubigeoNivel1": "930000",
       "ubigeoNivel2": "930700",
-      "totalVotes": 3779,
-      "totalValidos": 3779,
-      "actasContabilizadas": 44.444,
+      "totalVotes": 5610,
+      "totalValidos": 5610,
+      "actasContabilizadas": 72.84,
       "details": [
         {
           "partido": "FUERZA POPULAR",
           "partido_id": "fuerza-popular",
           "color": "#fd6600",
-          "votos": 1505,
-          "porcentaje_valido": 39.82535062185764
+          "votos": 2175,
+          "porcentaje_valido": 38.77005347593583
         },
         {
           "partido": "RENOVACIÓN POPULAR",
           "partido_id": "renovacion-popular",
           "color": "#00aede",
-          "votos": 1387,
-          "porcentaje_valido": 36.70283143688807
+          "votos": 2109,
+          "porcentaje_valido": 37.593582887700535
         },
         {
           "partido": "PARTIDO PAÍS PARA TODOS",
           "partido_id": "pais-para-todos",
           "color": "#ffcd00",
-          "votos": 220,
-          "porcentaje_valido": 5.8216459380788566
-        },
-        {
-          "partido": "PARTIDO CÍVICO OBRAS",
-          "partido_id": "partido-obras",
-          "color": "#005e00",
-          "votos": 111,
-          "porcentaje_valido": 2.937284996030696
+          "votos": 302,
+          "porcentaje_valido": 5.383244206773618
         },
         {
           "partido": "PARTIDO DEL BUEN GOBIERNO",
           "partido_id": "partido-del-buen-gobierno",
           "color": "#ac0707",
-          "votos": 107,
-          "porcentaje_valido": 2.831436888065626
+          "votos": 188,
+          "porcentaje_valido": 3.3511586452762923
         },
         {
           "partido": "AHORA NACIÓN - AN",
           "partido_id": "ahora-nacion",
           "color": "#e90305",
-          "votos": 103,
-          "porcentaje_valido": 2.725588780100556
+          "votos": 166,
+          "porcentaje_valido": 2.9590017825311943
+        },
+        {
+          "partido": "PARTIDO CÍVICO OBRAS",
+          "partido_id": "partido-obras",
+          "color": "#005e00",
+          "votos": 163,
+          "porcentaje_valido": 2.9055258467023175
         },
         {
           "partido": "PRIMERO LA GENTE – COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO",
           "partido_id": "primero-la-gente",
           "color": "#0d32c6",
-          "votos": 89,
-          "porcentaje_valido": 2.35512040222281
-        },
-        {
-          "partido": "PARTIDO APRISTA PERUANO",
-          "partido_id": "partido-aprista-peruano",
-          "color": "#b22222",
-          "votos": 41,
-          "porcentaje_valido": 1.0849431066419688
+          "votos": 127,
+          "porcentaje_valido": 2.263814616755793
         },
         {
           "partido": "UNIDAD NACIONAL",
           "partido_id": "alianza-unidad-nacional",
           "color": "#326d06",
-          "votos": 37,
-          "porcentaje_valido": 0.9790949986768986
+          "votos": 59,
+          "porcentaje_valido": 1.0516934046345812
+        },
+        {
+          "partido": "PARTIDO APRISTA PERUANO",
+          "partido_id": "partido-aprista-peruano",
+          "color": "#b22222",
+          "votos": 54,
+          "porcentaje_valido": 0.9625668449197861
         },
         {
           "partido": "PARTIDO SICREO",
           "partido_id": "partido-si-creo",
           "color": "#000000",
-          "votos": 34,
-          "porcentaje_valido": 0.899708917703096
+          "votos": 50,
+          "porcentaje_valido": 0.8912655971479501
         },
         {
           "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
           "partido_id": "frente-de-la-esperanza-2021",
           "color": "#52b439",
-          "votos": 19,
-          "porcentaje_valido": 0.502778512834083
+          "votos": 29,
+          "porcentaje_valido": 0.5169340463458111
         },
         {
           "partido": "JUNTOS POR EL PERÚ",
           "partido_id": "juntos-por-el-peru",
           "color": "#20a73c",
-          "votos": 16,
-          "porcentaje_valido": 0.42339243186028047
-        },
-        {
-          "partido": "UN CAMINO DIFERENTE",
-          "partido_id": "un-camino-diferente",
-          "color": "#f52300",
-          "votos": 11,
-          "porcentaje_valido": 0.2910822969039428
-        },
-        {
-          "partido": "ALIANZA ELECTORAL VENCEREMOS",
-          "partido_id": "alianza-venceremos",
-          "color": "#498b34",
-          "votos": 8,
-          "porcentaje_valido": 0.21169621593014024
-        },
-        {
-          "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
-          "partido_id": "partido-patriotico-del-peru",
-          "color": "#201e1f",
-          "votos": 8,
-          "porcentaje_valido": 0.21169621593014024
-        },
-        {
-          "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
-          "partido_id": "partido-democrata-unido-peru",
-          "color": "#00a545",
-          "votos": 8,
-          "porcentaje_valido": 0.21169621593014024
-        },
-        {
-          "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
-          "partido_id": "integridad-democratica",
-          "color": "#2d88ff",
-          "votos": 7,
-          "porcentaje_valido": 0.18523418893887272
-        },
-        {
-          "partido": "LIBERTAD POPULAR",
-          "partido_id": "libertad-popular",
-          "color": "#ffff01",
-          "votos": 7,
-          "porcentaje_valido": 0.18523418893887272
-        },
-        {
-          "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
-          "partido_id": "avanza-pais",
-          "color": "#e0047a",
-          "votos": 7,
-          "porcentaje_valido": 0.18523418893887272
-        },
-        {
-          "partido": "PARTIDO MORADO",
-          "partido_id": "partido-morado",
-          "color": "#4e1a7e",
-          "votos": 7,
-          "porcentaje_valido": 0.18523418893887272
+          "votos": 24,
+          "porcentaje_valido": 0.42780748663101603
         },
         {
           "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
           "partido_id": "somos-peru",
           "color": "#1022b9",
-          "votos": 5,
-          "porcentaje_valido": 0.13231013495633764
+          "votos": 15,
+          "porcentaje_valido": 0.26737967914438504
+        },
+        {
+          "partido": "ALIANZA ELECTORAL VENCEREMOS",
+          "partido_id": "alianza-venceremos",
+          "color": "#498b34",
+          "votos": 14,
+          "porcentaje_valido": 0.24955436720142601
+        },
+        {
+          "partido": "UN CAMINO DIFERENTE",
+          "partido_id": "un-camino-diferente",
+          "color": "#f52300",
+          "votos": 14,
+          "porcentaje_valido": 0.24955436720142601
+        },
+        {
+          "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
+          "partido_id": "integridad-democratica",
+          "color": "#2d88ff",
+          "votos": 12,
+          "porcentaje_valido": 0.21390374331550802
+        },
+        {
+          "partido": "LIBERTAD POPULAR",
+          "partido_id": "libertad-popular",
+          "color": "#ffff01",
+          "votos": 12,
+          "porcentaje_valido": 0.21390374331550802
+        },
+        {
+          "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
+          "partido_id": "partido-democrata-unido-peru",
+          "color": "#00a545",
+          "votos": 12,
+          "porcentaje_valido": 0.21390374331550802
+        },
+        {
+          "partido": "PARTIDO MORADO",
+          "partido_id": "partido-morado",
+          "color": "#4e1a7e",
+          "votos": 11,
+          "porcentaje_valido": 0.19607843137254902
+        },
+        {
+          "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
+          "partido_id": "avanza-pais",
+          "color": "#e0047a",
+          "votos": 10,
+          "porcentaje_valido": 0.17825311942959002
+        },
+        {
+          "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
+          "partido_id": "partido-patriotico-del-peru",
+          "color": "#201e1f",
+          "votos": 9,
+          "porcentaje_valido": 0.16042780748663102
+        },
+        {
+          "partido": "ALIANZA PARA EL PROGRESO",
+          "partido_id": "alianza-para-el-progreso",
+          "color": "#344fa1",
+          "votos": 6,
+          "porcentaje_valido": 0.10695187165775401
+        },
+        {
+          "partido": "PARTIDO POLÍTICO COOPERACIÓN POPULAR",
+          "partido_id": "cooperacion-popular",
+          "color": "#52b439",
+          "votos": 6,
+          "porcentaje_valido": 0.10695187165775401
         },
         {
           "partido": "FUERZA Y LIBERTAD",
           "partido_id": "alianza-fuerza-y-libertad",
           "color": "#0c01ff",
+          "votos": 6,
+          "porcentaje_valido": 0.10695187165775401
+        },
+        {
+          "partido": "PROGRESEMOS",
+          "partido_id": "progresemos",
+          "color": "#29b828",
           "votos": 5,
-          "porcentaje_valido": 0.13231013495633764
+          "porcentaje_valido": 0.08912655971479501
+        },
+        {
+          "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
+          "partido_id": "peru-libre",
+          "color": "#e70000",
+          "votos": 5,
+          "porcentaje_valido": 0.08912655971479501
+        },
+        {
+          "partido": "PODEMOS PERÚ",
+          "partido_id": "podemos-peru",
+          "color": "#0055a2",
+          "votos": 5,
+          "porcentaje_valido": 0.08912655971479501
         },
         {
           "partido": "PARTIDO DEMÓCRATA VERDE",
           "partido_id": "partido-democrata-verde",
           "color": "#0aa150",
           "votos": 4,
-          "porcentaje_valido": 0.10584810796507012
-        },
-        {
-          "partido": "PROGRESEMOS",
-          "partido_id": "progresemos",
-          "color": "#29b828",
-          "votos": 4,
-          "porcentaje_valido": 0.10584810796507012
-        },
-        {
-          "partido": "PODEMOS PERÚ",
-          "partido_id": "podemos-peru",
-          "color": "#0055a2",
-          "votos": 4,
-          "porcentaje_valido": 0.10584810796507012
+          "porcentaje_valido": 0.07130124777183601
         },
         {
           "partido": "PARTIDO DEMOCRATICO FEDERAL",
           "partido_id": "partido-democratico-federal",
           "color": "#01953f",
           "votos": 4,
-          "porcentaje_valido": 0.10584810796507012
+          "porcentaje_valido": 0.07130124777183601
         },
         {
-          "partido": "ALIANZA PARA EL PROGRESO",
-          "partido_id": "alianza-para-el-progreso",
-          "color": "#344fa1",
-          "votos": 4,
-          "porcentaje_valido": 0.10584810796507012
-        },
-        {
-          "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
-          "partido_id": "peru-libre",
-          "color": "#e70000",
+          "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
+          "partido_id": "peru-accion",
+          "color": "#020974",
           "votos": 3,
-          "porcentaje_valido": 0.07938608097380259
-        },
-        {
-          "partido": "PARTIDO POLÍTICO COOPERACIÓN POPULAR",
-          "partido_id": "cooperacion-popular",
-          "color": "#52b439",
-          "votos": 3,
-          "porcentaje_valido": 0.07938608097380259
+          "porcentaje_valido": 0.053475935828877004
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
           "partido_id": "peru-primero",
           "color": "#f40201",
           "votos": 3,
-          "porcentaje_valido": 0.07938608097380259
+          "porcentaje_valido": 0.053475935828877004
         },
         {
-          "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
-          "partido_id": "peru-accion",
-          "color": "#020974",
-          "votos": 2,
-          "porcentaje_valido": 0.05292405398253506
+          "partido": "PARTIDO DE LOS TRABAJADORES Y EMPRENDEDORES PTE - PERÚ",
+          "partido_id": "partido-de-los-trabajadores-y-emprendedores",
+          "color": "#345091",
+          "votos": 3,
+          "porcentaje_valido": 0.053475935828877004
         },
         {
           "partido": "PARTIDO POLÍTICO PRIN",
           "partido_id": "partido-regionalista-de-integracion-nacional---prin",
           "color": "#e10803",
           "votos": 2,
-          "porcentaje_valido": 0.05292405398253506
+          "porcentaje_valido": 0.035650623885918005
         },
         {
-          "partido": "PARTIDO DE LOS TRABAJADORES Y EMPRENDEDORES PTE - PERÚ",
-          "partido_id": "partido-de-los-trabajadores-y-emprendedores",
-          "color": "#345091",
+          "partido": "SALVEMOS AL PERÚ",
+          "partido_id": "salvemos-al-peru",
+          "color": "#fe0000",
           "votos": 2,
-          "porcentaje_valido": 0.05292405398253506
+          "porcentaje_valido": 0.035650623885918005
         },
         {
           "partido": "PERÚ MODERNO",
           "partido_id": "partido-peru-moderno",
           "color": "#e4007b",
           "votos": 1,
-          "porcentaje_valido": 0.02646202699126753
-        },
-        {
-          "partido": "SALVEMOS AL PERÚ",
-          "partido_id": "salvemos-al-peru",
-          "color": "#fe0000",
-          "votos": 1,
-          "porcentaje_valido": 0.02646202699126753
+          "porcentaje_valido": 0.017825311942959002
         }
       ],
       "country_id": "japon",
@@ -5660,7 +5681,7 @@
       "ubigeoNivel2": "931300",
       "totalVotes": 0,
       "totalValidos": 0,
-      "actasContabilizadas": 0.0,
+      "actasContabilizadas": 100.0,
       "details": [],
       "country_id": "jordania",
       "lat": 31.0,
@@ -5691,7 +5712,7 @@
       "ubigeoNivel2": "932800",
       "totalVotes": 0,
       "totalValidos": 0,
-      "actasContabilizadas": 0.0,
+      "actasContabilizadas": 100.0,
       "details": [],
       "country_id": "kuwait",
       "lat": 29.5,
@@ -5722,7 +5743,7 @@
       "ubigeoNivel2": "930800",
       "totalVotes": 0,
       "totalValidos": 0,
-      "actasContabilizadas": 0.0,
+      "actasContabilizadas": 100.0,
       "details": [],
       "country_id": "libano",
       "lat": 33.83333333,
@@ -7395,261 +7416,261 @@
       "country": "ESPAÑA",
       "ubigeoNivel1": "940000",
       "ubigeoNivel2": "940900",
-      "totalVotes": 33608,
-      "totalValidos": 33608,
-      "actasContabilizadas": 47.534,
+      "totalVotes": 48363,
+      "totalValidos": 48363,
+      "actasContabilizadas": 68.834,
       "details": [
         {
           "partido": "RENOVACIÓN POPULAR",
           "partido_id": "renovacion-popular",
           "color": "#00aede",
-          "votos": 6948,
-          "porcentaje_valido": 20.673649131159248
-        },
-        {
-          "partido": "PARTIDO PAÍS PARA TODOS",
-          "partido_id": "pais-para-todos",
-          "color": "#ffcd00",
-          "votos": 5234,
-          "porcentaje_valido": 15.573672935015473
+          "votos": 9978,
+          "porcentaje_valido": 20.631474474288197
         },
         {
           "partido": "FUERZA POPULAR",
           "partido_id": "fuerza-popular",
           "color": "#fd6600",
-          "votos": 5126,
-          "porcentaje_valido": 15.252320875981908
+          "votos": 7409,
+          "porcentaje_valido": 15.319562475446105
+        },
+        {
+          "partido": "PARTIDO PAÍS PARA TODOS",
+          "partido_id": "pais-para-todos",
+          "color": "#ffcd00",
+          "votos": 7390,
+          "porcentaje_valido": 15.280276244236296
         },
         {
           "partido": "PARTIDO DEL BUEN GOBIERNO",
           "partido_id": "partido-del-buen-gobierno",
           "color": "#ac0707",
-          "votos": 4194,
-          "porcentaje_valido": 12.47917162580338
+          "votos": 6129,
+          "porcentaje_valido": 12.672911109732647
         },
         {
           "partido": "PARTIDO CÍVICO OBRAS",
           "partido_id": "partido-obras",
           "color": "#005e00",
-          "votos": 3359,
-          "porcentaje_valido": 9.99464413234944
+          "votos": 4763,
+          "porcentaje_valido": 9.848437855385315
         },
         {
           "partido": "AHORA NACIÓN - AN",
           "partido_id": "ahora-nacion",
           "color": "#e90305",
-          "votos": 2522,
-          "porcentaje_valido": 7.504165674839324
+          "votos": 3684,
+          "porcentaje_valido": 7.617393461944048
         },
         {
           "partido": "PRIMERO LA GENTE – COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO",
           "partido_id": "primero-la-gente",
           "color": "#0d32c6",
-          "votos": 1490,
-          "porcentaje_valido": 4.43346822185194
+          "votos": 2141,
+          "porcentaje_valido": 4.426937948431652
         },
         {
           "partido": "JUNTOS POR EL PERÚ",
           "partido_id": "juntos-por-el-peru",
           "color": "#20a73c",
-          "votos": 713,
-          "porcentaje_valido": 2.1215186860271364
+          "votos": 1004,
+          "porcentaje_valido": 2.075967164981494
         },
         {
           "partido": "PARTIDO SICREO",
           "partido_id": "partido-si-creo",
           "color": "#000000",
-          "votos": 510,
-          "porcentaje_valido": 1.5174958343251608
+          "votos": 751,
+          "porcentaje_valido": 1.5528399809771933
         },
         {
           "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
           "partido_id": "frente-de-la-esperanza-2021",
           "color": "#52b439",
-          "votos": 416,
-          "porcentaje_valido": 1.2378005236848368
-        },
-        {
-          "partido": "PARTIDO APRISTA PERUANO",
-          "partido_id": "partido-aprista-peruano",
-          "color": "#b22222",
-          "votos": 358,
-          "porcentaje_valido": 1.065222566055701
+          "votos": 604,
+          "porcentaje_valido": 1.2488886131960384
         },
         {
           "partido": "UN CAMINO DIFERENTE",
           "partido_id": "un-camino-diferente",
           "color": "#f52300",
-          "votos": 316,
-          "porcentaje_valido": 0.9402523208759819
+          "votos": 587,
+          "porcentaje_valido": 1.2137377747451563
+        },
+        {
+          "partido": "PARTIDO APRISTA PERUANO",
+          "partido_id": "partido-aprista-peruano",
+          "color": "#b22222",
+          "votos": 530,
+          "porcentaje_valido": 1.095879081115729
         },
         {
           "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
           "partido_id": "somos-peru",
           "color": "#1022b9",
-          "votos": 228,
-          "porcentaje_valido": 0.6784099024041895
+          "votos": 320,
+          "porcentaje_valido": 0.6616628414283646
         },
         {
           "partido": "UNIDAD NACIONAL",
           "partido_id": "alianza-unidad-nacional",
           "color": "#326d06",
-          "votos": 197,
-          "porcentaje_valido": 0.5861699595334444
+          "votos": 272,
+          "porcentaje_valido": 0.5624134152141099
         },
         {
           "partido": "ALIANZA ELECTORAL VENCEREMOS",
           "partido_id": "alianza-venceremos",
           "color": "#498b34",
-          "votos": 191,
-          "porcentaje_valido": 0.5683170673649132
-        },
-        {
-          "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
-          "partido_id": "partido-patriotico-del-peru",
-          "color": "#201e1f",
-          "votos": 180,
-          "porcentaje_valido": 0.535586765055939
+          "votos": 251,
+          "porcentaje_valido": 0.5189917912453735
         },
         {
           "partido": "PARTIDO MORADO",
           "partido_id": "partido-morado",
           "color": "#4e1a7e",
-          "votos": 171,
-          "porcentaje_valido": 0.5088074268031421
+          "votos": 244,
+          "porcentaje_valido": 0.504517916589128
+        },
+        {
+          "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
+          "partido_id": "partido-patriotico-del-peru",
+          "color": "#201e1f",
+          "votos": 240,
+          "porcentaje_valido": 0.4962471310712735
         },
         {
           "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
           "partido_id": "partido-democrata-unido-peru",
           "color": "#00a545",
-          "votos": 149,
-          "porcentaje_valido": 0.443346822185194
+          "votos": 204,
+          "porcentaje_valido": 0.42181006141058247
         },
         {
           "partido": "ALIANZA PARA EL PROGRESO",
           "partido_id": "alianza-para-el-progreso",
           "color": "#344fa1",
-          "votos": 143,
-          "porcentaje_valido": 0.4254939300166627
+          "votos": 201,
+          "porcentaje_valido": 0.41560697227219157
         },
         {
           "partido": "PARTIDO POLÍTICO COOPERACIÓN POPULAR",
           "partido_id": "cooperacion-popular",
           "color": "#52b439",
-          "votos": 140,
-          "porcentaje_valido": 0.41656748393239706
+          "votos": 201,
+          "porcentaje_valido": 0.41560697227219157
         },
         {
           "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
           "partido_id": "peru-libre",
           "color": "#e70000",
-          "votos": 126,
-          "porcentaje_valido": 0.3749107355391573
+          "votos": 171,
+          "porcentaje_valido": 0.35357608088828235
         },
         {
           "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
           "partido_id": "integridad-democratica",
           "color": "#2d88ff",
-          "votos": 120,
-          "porcentaje_valido": 0.357057843370626
-        },
-        {
-          "partido": "PARTIDO DEMÓCRATA VERDE",
-          "partido_id": "partido-democrata-verde",
-          "color": "#0aa150",
-          "votos": 114,
-          "porcentaje_valido": 0.33920495120209476
+          "votos": 170,
+          "porcentaje_valido": 0.3515083845088187
         },
         {
           "partido": "PODEMOS PERÚ",
           "partido_id": "podemos-peru",
           "color": "#0055a2",
-          "votos": 114,
-          "porcentaje_valido": 0.33920495120209476
+          "votos": 162,
+          "porcentaje_valido": 0.3349668134731096
+        },
+        {
+          "partido": "PARTIDO DEMÓCRATA VERDE",
+          "partido_id": "partido-democrata-verde",
+          "color": "#0aa150",
+          "votos": 146,
+          "porcentaje_valido": 0.30188367140169137
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
           "partido_id": "peru-accion",
           "color": "#020974",
-          "votos": 87,
-          "porcentaje_valido": 0.2588669364437039
+          "votos": 133,
+          "porcentaje_valido": 0.27500361846866406
         },
         {
           "partido": "LIBERTAD POPULAR",
           "partido_id": "libertad-popular",
           "color": "#ffff01",
-          "votos": 76,
-          "porcentaje_valido": 0.2261366341347298
+          "votos": 114,
+          "porcentaje_valido": 0.2357173872588549
         },
         {
           "partido": "PROGRESEMOS",
           "partido_id": "progresemos",
           "color": "#29b828",
-          "votos": 72,
-          "porcentaje_valido": 0.21423470602237563
+          "votos": 100,
+          "porcentaje_valido": 0.20676963794636397
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
           "partido_id": "peru-primero",
           "color": "#f40201",
-          "votos": 65,
-          "porcentaje_valido": 0.19340633182575578
-        },
-        {
-          "partido": "FUERZA Y LIBERTAD",
-          "partido_id": "alianza-fuerza-y-libertad",
-          "color": "#0c01ff",
-          "votos": 56,
-          "porcentaje_valido": 0.16662699357295882
+          "votos": 100,
+          "porcentaje_valido": 0.20676963794636397
         },
         {
           "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
           "partido_id": "avanza-pais",
           "color": "#e0047a",
-          "votos": 55,
-          "porcentaje_valido": 0.16365151154487026
+          "votos": 83,
+          "porcentaje_valido": 0.1716187994954821
+        },
+        {
+          "partido": "FUERZA Y LIBERTAD",
+          "partido_id": "alianza-fuerza-y-libertad",
+          "color": "#0c01ff",
+          "votos": 76,
+          "porcentaje_valido": 0.15714492483923662
         },
         {
           "partido": "PARTIDO POLÍTICO PRIN",
           "partido_id": "partido-regionalista-de-integracion-nacional---prin",
           "color": "#e10803",
-          "votos": 30,
-          "porcentaje_valido": 0.0892644608426565
+          "votos": 46,
+          "porcentaje_valido": 0.09511403345532742
         },
         {
           "partido": "FE EN EL PERÚ",
           "partido_id": "partido-fe-en-el-peru",
           "color": "#47af30",
-          "votos": 27,
-          "porcentaje_valido": 0.08033801475839086
+          "votos": 41,
+          "porcentaje_valido": 0.08477555155800923
         },
         {
           "partido": "PARTIDO DE LOS TRABAJADORES Y EMPRENDEDORES PTE - PERÚ",
           "partido_id": "partido-de-los-trabajadores-y-emprendedores",
           "color": "#345091",
-          "votos": 24,
-          "porcentaje_valido": 0.07141156867412521
-        },
-        {
-          "partido": "PERÚ MODERNO",
-          "partido_id": "partido-peru-moderno",
-          "color": "#e4007b",
-          "votos": 22,
-          "porcentaje_valido": 0.0654606046179481
+          "votos": 40,
+          "porcentaje_valido": 0.08270785517854558
         },
         {
           "partido": "PARTIDO DEMOCRATICO FEDERAL",
           "partido_id": "partido-democratico-federal",
           "color": "#01953f",
-          "votos": 19,
-          "porcentaje_valido": 0.05653415853368245
+          "votos": 26,
+          "porcentaje_valido": 0.053760105866054626
+        },
+        {
+          "partido": "PERÚ MODERNO",
+          "partido_id": "partido-peru-moderno",
+          "color": "#e4007b",
+          "votos": 26,
+          "porcentaje_valido": 0.053760105866054626
         },
         {
           "partido": "SALVEMOS AL PERÚ",
           "partido_id": "salvemos-al-peru",
           "color": "#fe0000",
-          "votos": 16,
-          "porcentaje_valido": 0.047607712449416806
+          "votos": 26,
+          "porcentaje_valido": 0.053760105866054626
         }
       ],
       "country_id": "espana",
@@ -7781,233 +7802,261 @@
       "country": "FRANCIA",
       "ubigeoNivel1": "940000",
       "ubigeoNivel2": "941100",
-      "totalVotes": 1959,
-      "totalValidos": 1959,
-      "actasContabilizadas": 41.935,
+      "totalVotes": 3205,
+      "totalValidos": 3205,
+      "actasContabilizadas": 74.194,
       "details": [
         {
           "partido": "RENOVACIÓN POPULAR",
           "partido_id": "renovacion-popular",
           "color": "#00aede",
-          "votos": 431,
-          "porcentaje_valido": 22.00102092904543
+          "votos": 730,
+          "porcentaje_valido": 22.776911076443056
         },
         {
           "partido": "PARTIDO DEL BUEN GOBIERNO",
           "partido_id": "partido-del-buen-gobierno",
           "color": "#ac0707",
-          "votos": 363,
-          "porcentaje_valido": 18.529862174578867
+          "votos": 626,
+          "porcentaje_valido": 19.53198127925117
         },
         {
           "partido": "AHORA NACIÓN - AN",
           "partido_id": "ahora-nacion",
           "color": "#e90305",
-          "votos": 220,
-          "porcentaje_valido": 11.230219499744768
-        },
-        {
-          "partido": "PARTIDO CÍVICO OBRAS",
-          "partido_id": "partido-obras",
-          "color": "#005e00",
-          "votos": 201,
-          "porcentaje_valido": 10.260336906584993
+          "votos": 390,
+          "porcentaje_valido": 12.168486739469579
         },
         {
           "partido": "FUERZA POPULAR",
           "partido_id": "fuerza-popular",
           "color": "#fd6600",
-          "votos": 197,
-          "porcentaje_valido": 10.056151097498724
+          "votos": 305,
+          "porcentaje_valido": 9.51638065522621
+        },
+        {
+          "partido": "PARTIDO CÍVICO OBRAS",
+          "partido_id": "partido-obras",
+          "color": "#005e00",
+          "votos": 299,
+          "porcentaje_valido": 9.329173166926678
         },
         {
           "partido": "PARTIDO PAÍS PARA TODOS",
           "partido_id": "pais-para-todos",
           "color": "#ffcd00",
-          "votos": 175,
-          "porcentaje_valido": 8.933129147524246
+          "votos": 270,
+          "porcentaje_valido": 8.424336973478939
         },
         {
           "partido": "PRIMERO LA GENTE – COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO",
           "partido_id": "primero-la-gente",
           "color": "#0d32c6",
-          "votos": 132,
-          "porcentaje_valido": 6.738131699846861
+          "votos": 209,
+          "porcentaje_valido": 6.521060842433697
         },
         {
           "partido": "JUNTOS POR EL PERÚ",
           "partido_id": "juntos-por-el-peru",
           "color": "#20a73c",
-          "votos": 29,
-          "porcentaje_valido": 1.4803471158754467
+          "votos": 50,
+          "porcentaje_valido": 1.5600624024960998
         },
         {
           "partido": "PARTIDO SICREO",
           "partido_id": "partido-si-creo",
           "color": "#000000",
-          "votos": 26,
-          "porcentaje_valido": 1.3272077590607452
+          "votos": 47,
+          "porcentaje_valido": 1.466458658346334
         },
         {
           "partido": "ALIANZA ELECTORAL VENCEREMOS",
           "partido_id": "alianza-venceremos",
           "color": "#498b34",
-          "votos": 19,
-          "porcentaje_valido": 0.9698825931597754
+          "votos": 34,
+          "porcentaje_valido": 1.0608424336973479
         },
         {
           "partido": "PARTIDO MORADO",
           "partido_id": "partido-morado",
           "color": "#4e1a7e",
-          "votos": 19,
-          "porcentaje_valido": 0.9698825931597754
-        },
-        {
-          "partido": "UNIDAD NACIONAL",
-          "partido_id": "alianza-unidad-nacional",
-          "color": "#326d06",
-          "votos": 15,
-          "porcentaje_valido": 0.7656967840735069
-        },
-        {
-          "partido": "UN CAMINO DIFERENTE",
-          "partido_id": "un-camino-diferente",
-          "color": "#f52300",
-          "votos": 14,
-          "porcentaje_valido": 0.7146503318019398
-        },
-        {
-          "partido": "PARTIDO APRISTA PERUANO",
-          "partido_id": "partido-aprista-peruano",
-          "color": "#b22222",
-          "votos": 14,
-          "porcentaje_valido": 0.7146503318019398
+          "votos": 26,
+          "porcentaje_valido": 0.8112324492979719
         },
         {
           "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
           "partido_id": "frente-de-la-esperanza-2021",
           "color": "#52b439",
-          "votos": 12,
-          "porcentaje_valido": 0.6125574272588055
+          "votos": 22,
+          "porcentaje_valido": 0.6864274570982839
         },
         {
-          "partido": "LIBERTAD POPULAR",
-          "partido_id": "libertad-popular",
-          "color": "#ffff01",
-          "votos": 11,
-          "porcentaje_valido": 0.5615109749872383
+          "partido": "PARTIDO APRISTA PERUANO",
+          "partido_id": "partido-aprista-peruano",
+          "color": "#b22222",
+          "votos": 21,
+          "porcentaje_valido": 0.6552262090483619
+        },
+        {
+          "partido": "UNIDAD NACIONAL",
+          "partido_id": "alianza-unidad-nacional",
+          "color": "#326d06",
+          "votos": 21,
+          "porcentaje_valido": 0.6552262090483619
+        },
+        {
+          "partido": "UN CAMINO DIFERENTE",
+          "partido_id": "un-camino-diferente",
+          "color": "#f52300",
+          "votos": 19,
+          "porcentaje_valido": 0.592823712948518
         },
         {
           "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
           "partido_id": "partido-democrata-unido-peru",
           "color": "#00a545",
-          "votos": 10,
-          "porcentaje_valido": 0.5104645227156712
-        },
-        {
-          "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
-          "partido_id": "partido-patriotico-del-peru",
-          "color": "#201e1f",
-          "votos": 8,
-          "porcentaje_valido": 0.40837161817253703
+          "votos": 16,
+          "porcentaje_valido": 0.49921996879875197
         },
         {
           "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
           "partido_id": "peru-libre",
           "color": "#e70000",
-          "votos": 8,
-          "porcentaje_valido": 0.40837161817253703
+          "votos": 14,
+          "porcentaje_valido": 0.43681747269890797
         },
         {
-          "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
-          "partido_id": "integridad-democratica",
-          "color": "#2d88ff",
-          "votos": 7,
-          "porcentaje_valido": 0.3573251659009699
-        },
-        {
-          "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
-          "partido_id": "somos-peru",
-          "color": "#1022b9",
-          "votos": 7,
-          "porcentaje_valido": 0.3573251659009699
-        },
-        {
-          "partido": "PODEMOS PERÚ",
-          "partido_id": "podemos-peru",
-          "color": "#0055a2",
-          "votos": 6,
-          "porcentaje_valido": 0.30627871362940273
+          "partido": "LIBERTAD POPULAR",
+          "partido_id": "libertad-popular",
+          "color": "#ffff01",
+          "votos": 14,
+          "porcentaje_valido": 0.43681747269890797
         },
         {
           "partido": "PARTIDO POLÍTICO COOPERACIÓN POPULAR",
           "partido_id": "cooperacion-popular",
           "color": "#52b439",
-          "votos": 6,
-          "porcentaje_valido": 0.30627871362940273
+          "votos": 12,
+          "porcentaje_valido": 0.374414976599064
+        },
+        {
+          "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+          "partido_id": "somos-peru",
+          "color": "#1022b9",
+          "votos": 11,
+          "porcentaje_valido": 0.34321372854914195
+        },
+        {
+          "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
+          "partido_id": "partido-patriotico-del-peru",
+          "color": "#201e1f",
+          "votos": 10,
+          "porcentaje_valido": 0.31201248049922
+        },
+        {
+          "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
+          "partido_id": "integridad-democratica",
+          "color": "#2d88ff",
+          "votos": 10,
+          "porcentaje_valido": 0.31201248049922
+        },
+        {
+          "partido": "PODEMOS PERÚ",
+          "partido_id": "podemos-peru",
+          "color": "#0055a2",
+          "votos": 7,
+          "porcentaje_valido": 0.21840873634945399
         },
         {
           "partido": "PARTIDO DEMÓCRATA VERDE",
           "partido_id": "partido-democrata-verde",
           "color": "#0aa150",
+          "votos": 6,
+          "porcentaje_valido": 0.187207488299532
+        },
+        {
+          "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
+          "partido_id": "peru-accion",
+          "color": "#020974",
           "votos": 5,
-          "porcentaje_valido": 0.2552322613578356
+          "porcentaje_valido": 0.15600624024961
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
           "partido_id": "peru-primero",
           "color": "#f40201",
           "votos": 5,
-          "porcentaje_valido": 0.2552322613578356
+          "porcentaje_valido": 0.15600624024961
         },
         {
-          "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
-          "partido_id": "peru-accion",
-          "color": "#020974",
+          "partido": "PROGRESEMOS",
+          "partido_id": "progresemos",
+          "color": "#29b828",
           "votos": 4,
-          "porcentaje_valido": 0.20418580908626852
+          "porcentaje_valido": 0.12480499219968799
+        },
+        {
+          "partido": "ALIANZA PARA EL PROGRESO",
+          "partido_id": "alianza-para-el-progreso",
+          "color": "#344fa1",
+          "votos": 4,
+          "porcentaje_valido": 0.12480499219968799
+        },
+        {
+          "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
+          "partido_id": "avanza-pais",
+          "color": "#e0047a",
+          "votos": 4,
+          "porcentaje_valido": 0.12480499219968799
         },
         {
           "partido": "SALVEMOS AL PERÚ",
           "partido_id": "salvemos-al-peru",
           "color": "#fe0000",
           "votos": 4,
-          "porcentaje_valido": 0.20418580908626852
-        },
-        {
-          "partido": "ALIANZA PARA EL PROGRESO",
-          "partido_id": "alianza-para-el-progreso",
-          "color": "#344fa1",
-          "votos": 3,
-          "porcentaje_valido": 0.15313935681470137
+          "porcentaje_valido": 0.12480499219968799
         },
         {
           "partido": "PARTIDO POLÍTICO PRIN",
           "partido_id": "partido-regionalista-de-integracion-nacional---prin",
           "color": "#e10803",
           "votos": 2,
-          "porcentaje_valido": 0.10209290454313426
+          "porcentaje_valido": 0.062402496099843996
         },
         {
-          "partido": "PROGRESEMOS",
-          "partido_id": "progresemos",
-          "color": "#29b828",
+          "partido": "FE EN EL PERÚ",
+          "partido_id": "partido-fe-en-el-peru",
+          "color": "#47af30",
           "votos": 2,
-          "porcentaje_valido": 0.10209290454313426
+          "porcentaje_valido": 0.062402496099843996
         },
         {
-          "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
-          "partido_id": "avanza-pais",
-          "color": "#e0047a",
+          "partido": "PERÚ MODERNO",
+          "partido_id": "partido-peru-moderno",
+          "color": "#e4007b",
           "votos": 2,
-          "porcentaje_valido": 0.10209290454313426
+          "porcentaje_valido": 0.062402496099843996
         },
         {
           "partido": "PARTIDO DE LOS TRABAJADORES Y EMPRENDEDORES PTE - PERÚ",
           "partido_id": "partido-de-los-trabajadores-y-emprendedores",
           "color": "#345091",
           "votos": 2,
-          "porcentaje_valido": 0.10209290454313426
+          "porcentaje_valido": 0.062402496099843996
+        },
+        {
+          "partido": "PARTIDO DEMOCRATICO FEDERAL",
+          "partido_id": "partido-democratico-federal",
+          "color": "#01953f",
+          "votos": 1,
+          "porcentaje_valido": 0.031201248049921998
+        },
+        {
+          "partido": "FUERZA Y LIBERTAD",
+          "partido_id": "alianza-fuerza-y-libertad",
+          "color": "#0c01ff",
+          "votos": 1,
+          "porcentaje_valido": 0.031201248049921998
         }
       ],
       "country_id": "francia",
@@ -8921,261 +8970,261 @@
       "country": "ITALIA",
       "ubigeoNivel1": "940000",
       "ubigeoNivel2": "941700",
-      "totalVotes": 35085,
-      "totalValidos": 35085,
-      "actasContabilizadas": 72.908,
+      "totalVotes": 35258,
+      "totalValidos": 35258,
+      "actasContabilizadas": 73.307,
       "details": [
         {
           "partido": "PARTIDO CÍVICO OBRAS",
           "partido_id": "partido-obras",
           "color": "#005e00",
-          "votos": 5996,
-          "porcentaje_valido": 17.089924469146357
+          "votos": 6013,
+          "porcentaje_valido": 17.0542855522151
         },
         {
           "partido": "RENOVACIÓN POPULAR",
           "partido_id": "renovacion-popular",
           "color": "#00aede",
-          "votos": 5773,
-          "porcentaje_valido": 16.45432521020379
+          "votos": 5803,
+          "porcentaje_valido": 16.458676045152874
         },
         {
           "partido": "FUERZA POPULAR",
           "partido_id": "fuerza-popular",
           "color": "#fd6600",
-          "votos": 4957,
-          "porcentaje_valido": 14.128544962234573
+          "votos": 4982,
+          "porcentaje_valido": 14.130126496114357
         },
         {
           "partido": "PARTIDO PAÍS PARA TODOS",
           "partido_id": "pais-para-todos",
           "color": "#ffcd00",
-          "votos": 4695,
-          "porcentaje_valido": 13.381787088499358
+          "votos": 4713,
+          "porcentaje_valido": 13.367179079925123
         },
         {
           "partido": "PARTIDO DEL BUEN GOBIERNO",
           "partido_id": "partido-del-buen-gobierno",
           "color": "#ac0707",
-          "votos": 3343,
-          "porcentaje_valido": 9.528288442354283
+          "votos": 3367,
+          "porcentaje_valido": 9.549605763231039
         },
         {
           "partido": "AHORA NACIÓN - AN",
           "partido_id": "ahora-nacion",
           "color": "#e90305",
-          "votos": 3099,
-          "porcentaje_valido": 8.832834544677212
+          "votos": 3113,
+          "porcentaje_valido": 8.829201883260536
         },
         {
           "partido": "PRIMERO LA GENTE – COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO",
           "partido_id": "primero-la-gente",
           "color": "#0d32c6",
-          "votos": 1459,
-          "porcentaje_valido": 4.158472281601824
+          "votos": 1476,
+          "porcentaje_valido": 4.186283963923081
         },
         {
           "partido": "JUNTOS POR EL PERÚ",
           "partido_id": "juntos-por-el-peru",
           "color": "#20a73c",
-          "votos": 1012,
-          "porcentaje_valido": 2.884423542824569
+          "votos": 1017,
+          "porcentaje_valido": 2.884451755629928
         },
         {
           "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
           "partido_id": "frente-de-la-esperanza-2021",
           "color": "#52b439",
           "votos": 596,
-          "porcentaje_valido": 1.6987316517030069
+          "porcentaje_valido": 1.6903965057575585
         },
         {
           "partido": "PARTIDO SICREO",
           "partido_id": "partido-si-creo",
           "color": "#000000",
-          "votos": 528,
-          "porcentaje_valido": 1.5049166310389055
+          "votos": 529,
+          "porcentaje_valido": 1.500368710647229
         },
         {
           "partido": "UN CAMINO DIFERENTE",
           "partido_id": "un-camino-diferente",
           "color": "#f52300",
-          "votos": 344,
-          "porcentaje_valido": 0.9804759868889839
+          "votos": 347,
+          "porcentaje_valido": 0.9841738045266323
         },
         {
           "partido": "PARTIDO APRISTA PERUANO",
           "partido_id": "partido-aprista-peruano",
           "color": "#b22222",
-          "votos": 304,
-          "porcentaje_valido": 0.8664671512042184
+          "votos": 305,
+          "porcentaje_valido": 0.8650519031141869
         },
         {
           "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
           "partido_id": "partido-democrata-unido-peru",
           "color": "#00a545",
-          "votos": 291,
-          "porcentaje_valido": 0.8294142796066695
+          "votos": 293,
+          "porcentaje_valido": 0.8310170741392024
         },
         {
           "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
           "partido_id": "somos-peru",
           "color": "#1022b9",
-          "votos": 250,
-          "porcentaje_valido": 0.7125552230297848
+          "votos": 251,
+          "porcentaje_valido": 0.7118951727267571
         },
         {
           "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
           "partido_id": "partido-patriotico-del-peru",
           "color": "#201e1f",
           "votos": 243,
-          "porcentaje_valido": 0.6926036767849508
+          "porcentaje_valido": 0.6892052867434341
         },
         {
           "partido": "UNIDAD NACIONAL",
           "partido_id": "alianza-unidad-nacional",
           "color": "#326d06",
-          "votos": 220,
-          "porcentaje_valido": 0.6270485962662107
+          "votos": 221,
+          "porcentaje_valido": 0.626808100289296
         },
         {
           "partido": "ALIANZA ELECTORAL VENCEREMOS",
           "partido_id": "alianza-venceremos",
           "color": "#498b34",
-          "votos": 217,
-          "porcentaje_valido": 0.6184979335898532
+          "votos": 218,
+          "porcentaje_valido": 0.6182993930455499
         },
         {
           "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
           "partido_id": "peru-libre",
           "color": "#e70000",
-          "votos": 204,
-          "porcentaje_valido": 0.5814450619923044
+          "votos": 205,
+          "porcentaje_valido": 0.5814283283226502
         },
         {
           "partido": "PARTIDO POLÍTICO COOPERACIÓN POPULAR",
           "partido_id": "cooperacion-popular",
           "color": "#52b439",
-          "votos": 204,
-          "porcentaje_valido": 0.5814450619923044
+          "votos": 205,
+          "porcentaje_valido": 0.5814283283226502
         },
         {
           "partido": "PARTIDO MORADO",
           "partido_id": "partido-morado",
           "color": "#4e1a7e",
-          "votos": 181,
-          "porcentaje_valido": 0.5158899814735642
+          "votos": 183,
+          "porcentaje_valido": 0.5190311418685121
         },
         {
           "partido": "PARTIDO DEMÓCRATA VERDE",
           "partido_id": "partido-democrata-verde",
           "color": "#0aa150",
-          "votos": 131,
-          "porcentaje_valido": 0.37337893686760726
+          "votos": 133,
+          "porcentaje_valido": 0.3772193544727438
         },
         {
           "partido": "PODEMOS PERÚ",
           "partido_id": "podemos-peru",
           "color": "#0055a2",
-          "votos": 125,
-          "porcentaje_valido": 0.3562776115148924
+          "votos": 127,
+          "porcentaje_valido": 0.3602019399852516
         },
         {
           "partido": "PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA",
           "partido_id": "integridad-democratica",
           "color": "#2d88ff",
-          "votos": 123,
-          "porcentaje_valido": 0.3505771697306541
+          "votos": 125,
+          "porcentaje_valido": 0.35452946848942085
         },
         {
           "partido": "LIBERTAD POPULAR",
           "partido_id": "libertad-popular",
           "color": "#ffff01",
           "votos": 102,
-          "porcentaje_valido": 0.2907225309961522
+          "porcentaje_valido": 0.2892960462873674
         },
         {
           "partido": "ALIANZA PARA EL PROGRESO",
           "partido_id": "alianza-para-el-progreso",
           "color": "#344fa1",
-          "votos": 94,
-          "porcentaje_valido": 0.2679207638591991
+          "votos": 95,
+          "porcentaje_valido": 0.26944239605195985
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ ACCIÓN",
           "partido_id": "peru-accion",
           "color": "#020974",
           "votos": 86,
-          "porcentaje_valido": 0.24511899672224596
+          "porcentaje_valido": 0.24391627432072155
         },
         {
           "partido": "PROGRESEMOS",
           "partido_id": "progresemos",
           "color": "#29b828",
-          "votos": 81,
-          "porcentaje_valido": 0.23086789226165028
+          "votos": 82,
+          "porcentaje_valido": 0.23257133132906008
         },
         {
           "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
           "partido_id": "peru-primero",
           "color": "#f40201",
-          "votos": 67,
-          "porcentaje_valido": 0.19096479977198233
+          "votos": 68,
+          "porcentaje_valido": 0.19286403085824494
         },
         {
           "partido": "FUERZA Y LIBERTAD",
           "partido_id": "alianza-fuerza-y-libertad",
           "color": "#0c01ff",
           "votos": 64,
-          "porcentaje_valido": 0.1824141370956249
+          "porcentaje_valido": 0.18151908786658347
         },
         {
           "partido": "PERÚ MODERNO",
           "partido_id": "partido-peru-moderno",
           "color": "#e4007b",
           "votos": 61,
-          "porcentaje_valido": 0.1738634744192675
+          "porcentaje_valido": 0.17301038062283736
         },
         {
           "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
           "partido_id": "avanza-pais",
           "color": "#e0047a",
           "votos": 54,
-          "porcentaje_valido": 0.15391192817443353
+          "porcentaje_valido": 0.1531567303874298
         },
         {
           "partido": "FE EN EL PERÚ",
           "partido_id": "partido-fe-en-el-peru",
           "color": "#47af30",
           "votos": 47,
-          "porcentaje_valido": 0.13396038192959955
+          "porcentaje_valido": 0.13330308015202225
         },
         {
           "partido": "PARTIDO POLÍTICO PRIN",
           "partido_id": "partido-regionalista-de-integracion-nacional---prin",
           "color": "#e10803",
           "votos": 43,
-          "porcentaje_valido": 0.12255949836112298
+          "porcentaje_valido": 0.12195813716036077
         },
         {
           "partido": "PARTIDO DE LOS TRABAJADORES Y EMPRENDEDORES PTE - PERÚ",
           "partido_id": "partido-de-los-trabajadores-y-emprendedores",
           "color": "#345091",
           "votos": 37,
-          "porcentaje_valido": 0.10545817300840815
+          "porcentaje_valido": 0.10494072267286857
         },
         {
           "partido": "SALVEMOS AL PERÚ",
           "partido_id": "salvemos-al-peru",
           "color": "#fe0000",
           "votos": 28,
-          "porcentaje_valido": 0.07980618497933589
+          "porcentaje_valido": 0.07941460094163026
         },
         {
           "partido": "PARTIDO DEMOCRATICO FEDERAL",
           "partido_id": "partido-democratico-federal",
           "color": "#01953f",
           "votos": 26,
-          "porcentaje_valido": 0.07410574319509762
+          "porcentaje_valido": 0.07374212944579954
         }
       ],
       "country_id": "italia",
@@ -9207,7 +9256,7 @@
       "ubigeoNivel2": "943700",
       "totalVotes": 0,
       "totalValidos": 0,
-      "actasContabilizadas": 0.0,
+      "actasContabilizadas": 100.0,
       "details": [],
       "country_id": "macedonia",
       "lat": null,

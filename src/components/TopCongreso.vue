@@ -180,6 +180,10 @@
   import numeral from 'numeral'
   import * as d3 from 'd3'
   import { groupBy, map, orderBy, maxBy, uniq } from 'lodash'
+  import {
+    ONPE_ID_ELECCION_DIPUTADOS,
+    ONPE_ID_ELECCION_SENADO_NACIONAL,
+  } from '../utils/onpeEleccionesConteo.js'
   import votosCongresoData from '../data/top_congresistas.json'
   const PLACEHOLDER_PREFIX = 'placeholder-top-'
   const PLACEHOLDER_COLOR = '#ADB5BD'
@@ -308,9 +312,13 @@
         return parseFloat(first.replace(',', '.')) || 0
       },
       conteoSenadoNacionalLabel() {
-        return this.pctLabelFromRows(this.senadores, null) ?? '0'
+        const onpe = this.onpeEleccionConteoById?.[ONPE_ID_ELECCION_SENADO_NACIONAL]
+        if (onpe != null && String(onpe).trim() !== '') return String(onpe).trim()
+        return this.pctLabelFromRows(this.senadores, (s) => s.senado_tipo === 'nacional') ?? '0'
       },
       conteoDiputadosLabel() {
+        const onpe = this.onpeEleccionConteoById?.[ONPE_ID_ELECCION_DIPUTADOS]
+        if (onpe != null && String(onpe).trim() !== '') return String(onpe).trim()
         return this.pctLabelFromRows(this.congresistas, null) ?? '0'
       },
       /** Mismo criterio que resultados presidenciales nacionales (`region === 'total'` en resultados_total). */

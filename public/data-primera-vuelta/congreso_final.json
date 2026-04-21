@@ -1,0 +1,75 @@
+{
+  "id_eleccion": "13",
+  "generated_at": "21/04/2026 11:24 h",
+  "seats_total": 130,
+  "rules": {
+    "threshold_congressional_pct": 5.0,
+    "min_seats_nacional_total": 7,
+    "bypass_single_constituency_min_seats": 7
+  },
+  "bypass_pids": [
+    "renovacion-popular"
+  ],
+  "partidos": [
+    {
+      "partido_id": "fuerza-popular",
+      "partido": "Fuerza Popular",
+      "color": "#fd6600",
+      "nro": 1,
+      "curules": 40,
+      "voto_preferencial_total": 374254,
+      "total_votos_nacional_lista": 1619529,
+      "qualified_via_bypass": false
+    },
+    {
+      "partido_id": "juntos-por-el-peru",
+      "partido": "Juntos por el Perú",
+      "color": "#20a73c",
+      "nro": 1,
+      "curules": 31,
+      "voto_preferencial_total": 315816,
+      "total_votos_nacional_lista": 1210341,
+      "qualified_via_bypass": false
+    },
+    {
+      "partido_id": "partido-del-buen-gobierno",
+      "partido": "Partido del Buen Gobierno",
+      "color": "#ac0707",
+      "nro": 1,
+      "curules": 18,
+      "voto_preferencial_total": 235609,
+      "total_votos_nacional_lista": 1145340,
+      "qualified_via_bypass": false
+    },
+    {
+      "partido_id": "renovacion-popular",
+      "partido": "Renovación Popular",
+      "color": "#00aede",
+      "nro": 1,
+      "curules": 16,
+      "voto_preferencial_total": 467239,
+      "total_votos_nacional_lista": 1134953,
+      "qualified_via_bypass": true
+    },
+    {
+      "partido_id": "partido-obras",
+      "partido": "Partido Obras",
+      "color": "#005e00",
+      "nro": 1,
+      "curules": 15,
+      "voto_preferencial_total": 90662,
+      "total_votos_nacional_lista": 816083,
+      "qualified_via_bypass": false
+    },
+    {
+      "partido_id": "ahora-nacion",
+      "partido": "Ahora Nación",
+      "color": "#e90305",
+      "nro": 1,
+      "curules": 10,
+      "voto_preferencial_total": 345929,
+      "total_votos_nacional_lista": 743420,
+      "qualified_via_bypass": false
+    }
+  ]
+}

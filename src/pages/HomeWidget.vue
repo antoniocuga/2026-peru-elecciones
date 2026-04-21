@@ -5,7 +5,7 @@
         <div class="col-12">
           <div class="p-0">
             <p class="small text-light mt-0 mb-0 text-center" style="font-size: 0.75rem; opacity: 0.9">
-              Conteo al {{ (Number(conteo) || 0).toFixed(2) }}%. Última actualización: {{ fechaHora }}
+              Conteo al {{ (Number(conteo) || 0).toFixed(3) }}%. Última actualización: {{ fechaHora }}
             </p>
           </div>
         </div>

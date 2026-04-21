@@ -32,7 +32,9 @@
                   </div>
                   <div class="col-7 pl-0 pr-md-0 align-self-center" v-if="c.total_votos_partido >  0">              
                     <h4 class="candidato-mapa m-md-0">{{ capitalizeWords(c.partido) }}</h4>
-                    <div class="text-secondary small light">Votos válidos: {{numeral(c.total_votos_partido).format('0,0')}}</div>
+                    <div class="text-secondary small light">
+                      Votos válidos: {{ numeral(c.total_votos_partido).format('0,0') }}
+                    </div>
                   </div> 
                   <div v-else class="col-7 pl-0 pr-md-0 align-self-center text-center">              
                     <div style="font-size: 10px;" class="text-secondary small partido-mapa light">INFORMACIÓN NO DISPONIBLE</div>
@@ -208,7 +210,7 @@
   import { capitalizeWords } from '../utils/formatText'
   import * as d3 from 'd3'
   import * as parliament from 'd3-parliament-chart'
-  import { filter, groupBy, map, orderBy, uniq, sum } from 'lodash'
+  import { filter, groupBy, map, orderBy, uniq, sum, sumBy } from 'lodash'
   import CongresoLista from './CongresoLista.vue'
   import DropdownBs4 from './DropdownBs4.vue'
   import {
@@ -227,6 +229,10 @@
   } from '../utils/congresoChartLayout'
   import { joinHoras, maxConteo } from '../utils/conteoAggregate'
   import { senadoListaTotalsByTipo } from '../utils/senadoVotes'
+  import {
+    ONPE_ID_ELECCION_DIPUTADOS,
+    ONPE_ID_ELECCION_SENADO_NACIONAL,
+  } from '../utils/onpeEleccionesConteo.js'
 
   /** Match Bootstrap `md` — below this, senado + congreso render as two SVGs */
   const PARLIAMENT_SPLIT_MAX_WIDTH_PX = 840
@@ -335,11 +341,15 @@
     },
     computed: {
       conteoSenadoNacionalLabel() {
+        const onpe = this.onpeEleccionConteoById?.[ONPE_ID_ELECCION_SENADO_NACIONAL]
+        if (onpe != null && String(onpe).trim() !== '') return String(onpe).trim()
         return (
           this.pctLabelFromRows(this.senadores, (s) => s.senado_tipo === 'nacional') ?? '0'
         )
       },
       conteoDiputadosLabel() {
+        const onpe = this.onpeEleccionConteoById?.[ONPE_ID_ELECCION_DIPUTADOS]
+        if (onpe != null && String(onpe).trim() !== '') return String(onpe).trim()
         return this.pctLabelFromRows(this.congresistas, null) ?? '0'
       },
       conteoPresidencialLabel() {
@@ -453,7 +463,34 @@
         }), ['seats', 'total_votos_partido'], ['desc', 'desc'])
       },
       congresistasPartidoForList() {
-        if (this.congresistas_partido.length) return this.congresistas_partido
+        const fromRows = this.congresistas_partido
+        const final = this.congresoFinal
+        const partidosFinal = final?.partidos
+        const allCong = Array.isArray(this.congresistas) ? this.congresistas : []
+        if (
+          this.depSelected === REGION_NACIONAL &&
+          Array.isArray(partidosFinal) &&
+          partidosFinal.length
+        ) {
+          return orderBy(
+            map(partidosFinal, (p) => {
+              const pid = String(p?.partido_id || '').trim()
+              const items = allCong.filter((r) => String(r?.partido_id || '').trim() === pid)
+              const first = items[0]
+              return {
+                partido_id: pid,
+                partido: String(p?.partido || '').trim() || String(first?.partido || '').trim(),
+                total_votos_partido: Number(p?.total_votos_nacional_lista) || 0,
+                seats: Number(p?.curules) || 0,
+                congresistas: items,
+                color: String(p?.color || '').trim() || String(first?.color || '').trim(),
+              }
+            }),
+            ['seats', 'total_votos_partido'],
+            ['desc', 'desc'],
+          )
+        }
+        if (fromRows.length) return fromRows
         return Array.from({ length: PLACEHOLDER_LIST_ROWS }, (_, i) => ({
           partido_id: `${PARLIAMENT_PLACEHOLDER_PARTIDO_ID}-${i + 1}`,
           partido: '',
@@ -560,6 +597,7 @@
     methods: {
       numeral,
       capitalizeWords,
+      sumBy,
       isParliamentPlaceholderSeat(d) {
         return isParliamentPlaceholderSeat(d)
       },

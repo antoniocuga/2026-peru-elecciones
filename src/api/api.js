@@ -3,6 +3,7 @@
  *
  * Primera vuelta 2026 JSON under data-primera-vuelta/ is built by crawler/2026
  * (export_frontend_data.py; optional live refresh per region during scrapy crawl).
+ * Conteo titular parlamento: ``genera_elecciones.json`` (snapshot ONPE resumen-general/elecciones).
  *
  * Env overrides (e.g. 2026 vs 2021):
  *   VITE_DATA_PRIMERA_DIR     - folder for primera vuelta (default: data-primera-vuelta)
@@ -11,6 +12,8 @@
  *   VITE_RESULTADOS_SEGUNDA   - filename for segunda (default: resultados_total.json)
  */
 import axios from 'axios'
+import { buildNacionalValidosPctMapFromResultados } from '../utils/nacionalUmbralCongreso.js'
+import { parseConteoPctByIdEleccion } from '../utils/onpeEleccionesConteo.js'
 
 const BASE = import.meta.env.VITE_API_BASE || '/especiales/resultados-onpe-elecciones-2026'
 const DATA_PRIMERA_DIR = import.meta.env.VITE_DATA_PRIMERA_DIR || 'data-primera-vuelta'
@@ -51,8 +54,20 @@ export default {
     const { data } = await requestWithTimestamp(url)
     return data
   },
+  /** ``partido_id`` → ``validos`` (%) nacional (``resultados_total_*.json``, ``region: total``). */
+  async getResultadosNacionalPctMap() {
+    const url = getPrimeraUrl(RESULTADOS_PRIMERA)
+    const { data } = await requestWithTimestamp(url)
+    return buildNacionalValidosPctMapFromResultados(data)
+  },
   async getCongresoPartidoRegion() {
     const url = getPrimeraUrl('congreso_partido_region.json')
+    const { data } = await requestWithTimestamp(url)
+    return data
+  },
+  /** Resumen nacional curules + ``total_votos_nacional_lista`` (``congreso_final.json``). */
+  async getCongresoFinal() {
+    const url = getPrimeraUrl('congreso_final.json')
     const { data } = await requestWithTimestamp(url)
     return data
   },
@@ -60,6 +75,15 @@ export default {
     const url = getPrimeraUrl('senado_total.json')
     const { data } = await requestWithTimestamp(url)
     return data
+  },
+  /**
+   * Conteo nacional por ``idEleccion`` desde ``genera_elecciones.json``
+   * (snapshot ONPE ``resumen-general/elecciones``; actualizar el JSON al republicar datos).
+   */
+  async getOnpeResumenGeneralElecciones() {
+    const url = getPrimeraUrl('genera_elecciones.json')
+    const { data } = await requestWithTimestamp(url)
+    return parseConteoPctByIdEleccion(data)
   },
   async getAllCandidatos() {
     const url = getPrimeraUrl(RESULTADOS_PRIMERA)

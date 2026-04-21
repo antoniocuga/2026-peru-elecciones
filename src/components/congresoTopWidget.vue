@@ -98,10 +98,17 @@
       },
       congresistas_partido() {
         return orderBy(map(groupBy(this.congresistas, 'partido_id'), (items, p) => {
+          const nacionalLista = items
+            .map((i) => Number(i?.total_votos_nacional_lista))
+            .find((x) => Number.isFinite(x) && x > 0)
+          const total_votos_partido =
+            nacionalLista != null && nacionalLista > 0
+              ? nacionalLista
+              : sum(uniq(map(items, 'total_votos_partido')))
           return {
             partido_id: p,
             partido: uniq(map(items, 'partido')).join(""),
-            total_votos_partido: sum(uniq(map(items, 'total_votos_partido'))),
+            total_votos_partido,
             seats: items.length,
             congresistas: items, 
             color: uniq(map(items, 'color')).join("")

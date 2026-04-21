@@ -197,10 +197,12 @@ export default {
         'emiratos arabes unidos': 'united arab emirates',
         'principado de andorra': 'spain',
         'gran ducado de luxemburgo': 'luxembourg',
-        turquia: 'turkey',
-        argelia: 'algeria',
+        'turquia': 'turkey',
+        'argelia': 'algeria',
         kenia: 'kenya',
         marruecos: 'morocco',
+        // GeoJSON splits Somaliland; ONPE extranjero uses Somalia only (see ``getWorldCountries`` filter).
+        somalilandia: 'somaliland',
         sudafrica: 'south africa',
         brasil: 'brazil',
         'guayana francesa': 'france',
@@ -558,8 +560,20 @@ export default {
       if (worldRaw?.default?.type === 'FeatureCollection' && Array.isArray(worldRaw?.default?.features)) return worldRaw.default
       return null
     },
+    /**
+     * Natural Earth includes Somaliland (brk_a3 ``SOL``) as its own polygon; ONPE
+     * extranjero does not list it as a país. Omit that feature so it never draws
+     * (neutral gray “extra” horn of Africa).
+     */
+    isSomalilandMapFeature(feature) {
+      const p = feature?.properties || {}
+      if (String(p.brk_a3 || '').toUpperCase() === 'SOL') return true
+      const bits = [p.name_es, p.name, p.admin, p.brk_name, p.geounit].map((x) => this.normalizeName(x))
+      return bits.some((b) => b === 'somaliland' || b === 'somalilandia')
+    },
     getWorldCountries(worldGeoJson) {
-      return Array.isArray(worldGeoJson?.features) ? worldGeoJson.features : []
+      const all = Array.isArray(worldGeoJson?.features) ? worldGeoJson.features : []
+      return all.filter((f) => !this.isSomalilandMapFeature(f))
     },
     renderWorldMap() {
       const svgEl = this.$refs.worldMap
@@ -594,6 +608,7 @@ export default {
       }
 
       const featureRowMap = this.buildFeatureRowMap(countries)
+      const noDataFill = '#f0f0f0'
 
       svg.append('g')
         .selectAll('path.country')
@@ -602,14 +617,23 @@ export default {
         .attr('class', 'country')
         .attr('d', geoPath)
         .attr('fill', (d) => {
-          const row = featureRowMap.get(this.featureRowKey(d))
+          const key = this.featureRowKey(d)
+          const row = key ? featureRowMap.get(key) : undefined
+          if (!row) return noDataFill
           return this.leaderColor(row)
+        })
+        .attr('pointer-events', (d) => {
+          const key = this.featureRowKey(d)
+          return key && featureRowMap.has(key) ? 'all' : 'none'
         })
         .attr('stroke', '#e3e3e3')
         .attr('stroke-width', 0.5)
         .on('mouseenter', (event, d) => {
-          const name = d?.properties?.name_es || d?.properties?.name || 'Pais'
-          const row = featureRowMap.get(this.featureRowKey(d)) || { details: [] }
+          const key = this.featureRowKey(d)
+          if (!key || !featureRowMap.has(key)) return
+          const row = featureRowMap.get(key)
+          const geo = d?.properties?.name_es || d?.properties?.name || 'Pais'
+          const name = row?.country ? String(row.country) : geo
           this.showTooltip(event, this.buildCountryTooltipHtml(row, name))
         })
         .on('mousemove', (event) => this.positionTooltip(event))
