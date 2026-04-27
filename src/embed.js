@@ -11,6 +11,7 @@ import SenadoWidget from './pages/SenadoWidget.vue'
 import ConteoWidget from './pages/ConteoWidget.vue'
 import HistoricoWidget from './pages/HistoricoWidget.vue'
 import MapaWidget from './pages/MapaWidget.vue'
+import MapaSegundaWidget from './pages/MapaSegundaWidget.vue'
 
 import './assets/styles.scss'
 
@@ -26,6 +27,7 @@ const widgets = {
   'widget-conteo':     ConteoWidget,
   'widget-historico':  HistoricoWidget,
   'widget-mapa':       MapaWidget,
+  'widget-mapa-segunda': MapaSegundaWidget,
 }
 
 Object.entries(widgets).forEach(([id, Component]) => {

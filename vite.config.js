@@ -6,6 +6,7 @@ import vue from '@vitejs/plugin-vue'
 
 const rootDir = path.dirname(fileURLToPath(import.meta.url))
 const dataDir = path.join(rootDir, 'public', 'data-primera-vuelta')
+const dataSegundaDir = path.join(rootDir, 'public', 'data-segunda-vuelta')
 
 export default defineConfig({
   plugins: [
@@ -18,6 +19,23 @@ export default defineConfig({
           const name = (req.url || '/').replace(/^\//, '').replace(/[?#].*$/, '') || 'index.json'
           if (!name || name.includes('..')) return next()
           const file = path.join(dataDir, name)
+          if (fs.existsSync(file) && fs.statSync(file).isFile()) {
+            res.setHeader('Content-Type', 'application/json')
+            res.end(fs.readFileSync(file))
+          } else {
+            next()
+          }
+        })
+      },
+    },
+    // Serve public/data-segunda-vuelta at /data-segunda-vuelta in dev.
+    {
+      name: 'serve-data-segunda',
+      configureServer(server) {
+        server.middlewares.use('/data-segunda-vuelta', (req, res, next) => {
+          const name = (req.url || '/').replace(/^\//, '').replace(/[?#].*$/, '') || 'index.json'
+          if (!name || name.includes('..')) return next()
+          const file = path.join(dataSegundaDir, name)
           if (fs.existsSync(file) && fs.statSync(file).isFile()) {
             res.setHeader('Content-Type', 'application/json')
             res.end(fs.readFileSync(file))
@@ -43,6 +61,21 @@ export default defineConfig({
   },
   server: {
     port: 5173,
+    proxy: {
+      // Dev-only proxy for ONPE backend to avoid browser CORS issues.
+      '/onpe-backend': {
+        target: 'https://resultadoelectoral.onpe.gob.pe',
+        changeOrigin: true,
+        secure: true,
+        rewrite: (p) => p.replace(/^\/onpe-backend/, '/presentacion-backend'),
+        configure(proxy) {
+          proxy.on('proxyReq', (proxyReq) => {
+            proxyReq.setHeader('Referer', 'https://resultadoelectoral.onpe.gob.pe/main/resumen')
+            proxyReq.setHeader('Origin', 'https://resultadoelectoral.onpe.gob.pe')
+          })
+        },
+      },
+    },
   },
   build: {
     rollupOptions: {

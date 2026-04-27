@@ -4,21 +4,24 @@
  * Primera vuelta 2026 JSON under data-primera-vuelta/ is built by crawler/2026
  * (export_frontend_data.py; optional live refresh per region during scrapy crawl).
  * Conteo titular parlamento: ``genera_elecciones.json`` (snapshot ONPE resumen-general/elecciones).
+ * Participación / ausentismo nacional: ``participacion_ciudadana_totales.json`` (snapshot ONPE
+ * participacion-ciudadana/totales?tipoFiltro=total); en dev también se puede pedir en vivo vía ``/onpe-backend``.
  *
  * Env overrides (e.g. 2026 vs 2021):
  *   VITE_DATA_PRIMERA_DIR     - folder for primera vuelta (default: data-primera-vuelta)
  *   VITE_RESULTADOS_PRIMERA   - filename for candidatos (default: resultados_total_2026.json)
- *   VITE_DATA_SEGUNDA_DIR     - folder for segunda vuelta (default: data)
+ *   VITE_DATA_SEGUNDA_DIR     - folder for segunda vuelta (default: data-segunda-vuelta)
  *   VITE_RESULTADOS_SEGUNDA   - filename for segunda (default: resultados_total.json)
  */
 import axios from 'axios'
 import { buildNacionalValidosPctMapFromResultados } from '../utils/nacionalUmbralCongreso.js'
 import { parseConteoPctByIdEleccion } from '../utils/onpeEleccionesConteo.js'
+import { buildParticipacionCiudadanaTotalesUrl } from '../utils/onpeParticipacionCiudadana.js'
 
 const BASE = import.meta.env.VITE_API_BASE || '/especiales/resultados-onpe-elecciones-2026'
 const DATA_PRIMERA_DIR = import.meta.env.VITE_DATA_PRIMERA_DIR || 'data-primera-vuelta'
 const RESULTADOS_PRIMERA = import.meta.env.VITE_RESULTADOS_PRIMERA || 'resultados_total_2026.json'
-const DATA_SEGUNDA_DIR = import.meta.env.VITE_DATA_SEGUNDA_DIR || 'data'
+const DATA_SEGUNDA_DIR = import.meta.env.VITE_DATA_SEGUNDA_DIR || 'data-segunda-vuelta'
 const RESULTADOS_SEGUNDA = import.meta.env.VITE_RESULTADOS_SEGUNDA || 'resultados_total.json'
 
 // In dev, use full URL to current origin so requests hit the Vite dev server.
@@ -85,13 +88,20 @@ export default {
     const { data } = await requestWithTimestamp(url)
     return parseConteoPctByIdEleccion(data)
   },
+  /** Cuerpo JSON ONPE participación ciudadana (``tipoFiltro=total``) o snapshot local en prod. */
+  async getParticipacionCiudadanaTotales() {
+    const url = buildParticipacionCiudadanaTotalesUrl()
+    const { data } = await requestWithTimestamp(url)
+    return data
+  },
   async getAllCandidatos() {
     const url = getPrimeraUrl(RESULTADOS_PRIMERA)
     const { data } = await requestWithTimestamp(url)
     return data
   },
   async getAllCandidatosSegunda() {
-    const { data } = await requestWithTimestamp(`${BASE}/${DATA_SEGUNDA_DIR}/${RESULTADOS_SEGUNDA}`)
+    const url = getSegundaUrl(RESULTADOS_SEGUNDA)
+    const { data } = await requestWithTimestamp(url)
     return data
   },
   async getAllDistritos({ dep_id }) {
@@ -101,7 +111,8 @@ export default {
   },
   async getAllDistritosSegunda({ dep_id }) {
     if (!dep_id) return []
-    const { data } = await requestWithTimestamp(`${BASE}/${DATA_SEGUNDA_DIR}/${dep_id}.json`)
+    const url = getSegundaUrl(`${dep_id}.json`)
+    const { data } = await requestWithTimestamp(url)
     return data
   },
 }

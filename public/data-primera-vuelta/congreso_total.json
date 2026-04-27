@@ -7,13 +7,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 18455,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 80.67,
-    "voto_preferencial": 3842,
+    "total_votos_partido": 18594,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 81.3,
+    "voto_preferencial": 3874,
     "voto_fantasma": 0,
-    "conteo_general": "80.67",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "81.30",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "amazonas",
@@ -23,13 +23,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 18455,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 80.67,
-    "voto_preferencial": 1169,
+    "total_votos_partido": 18594,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 81.3,
+    "voto_preferencial": 1181,
     "voto_fantasma": 0,
-    "conteo_general": "80.67",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "81.30",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "ancash",
@@ -39,13 +39,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 57119,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 79.35,
-    "voto_preferencial": 9393,
+    "total_votos_partido": 57208,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 79.46,
+    "voto_preferencial": 9409,
     "voto_fantasma": 0,
-    "conteo_general": "79.35",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "79.46",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "ancash",
@@ -55,13 +55,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 57119,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 79.35,
-    "voto_preferencial": 3058,
+    "total_votos_partido": 57208,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 79.46,
+    "voto_preferencial": 3064,
     "voto_fantasma": 0,
-    "conteo_general": "79.35",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "79.46",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "ancash",
@@ -71,13 +71,13 @@
     "partido_id": "ahora-nacion",
     "nro": 1,
     "color": "#e90305",
-    "total_votos_partido": 31310,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 79.35,
+    "total_votos_partido": 31326,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 79.46,
     "voto_preferencial": 5501,
     "voto_fantasma": 0,
-    "conteo_general": "79.35",
-    "total_votos_nacional_lista": 743420
+    "conteo_general": "79.46",
+    "total_votos_nacional_lista": 746857
   },
   {
     "region": "ancash",
@@ -87,13 +87,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 52962,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 79.35,
-    "voto_preferencial": 6375,
+    "total_votos_partido": 53069,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 79.46,
+    "voto_preferencial": 6389,
     "voto_fantasma": 0,
-    "conteo_general": "79.35",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "79.46",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "ancash",
@@ -103,13 +103,13 @@
     "partido_id": "partido-obras",
     "nro": 1,
     "color": "#005e00",
-    "total_votos_partido": 30474,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 79.35,
-    "voto_preferencial": 3787,
+    "total_votos_partido": 30493,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 79.46,
+    "voto_preferencial": 3790,
     "voto_fantasma": 0,
-    "conteo_general": "79.35",
-    "total_votos_nacional_lista": 816083
+    "conteo_general": "79.46",
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "apurimac",
@@ -120,12 +120,12 @@
     "nro": 1,
     "color": "#20a73c",
     "total_votos_partido": 60142,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 87.55,
     "voto_preferencial": 12177,
     "voto_fantasma": 0,
     "conteo_general": "87.55",
-    "total_votos_nacional_lista": 1210341
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "apurimac",
@@ -136,12 +136,12 @@
     "nro": 1,
     "color": "#20a73c",
     "total_votos_partido": 60142,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 87.55,
     "voto_preferencial": 5513,
     "voto_fantasma": 0,
     "conteo_general": "87.55",
-    "total_votos_nacional_lista": 1210341
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "arequipa",
@@ -151,13 +151,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 126653,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 89.13,
-    "voto_preferencial": 17879,
+    "total_votos_partido": 127883,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 90.11,
+    "voto_preferencial": 18065,
     "voto_fantasma": 0,
-    "conteo_general": "89.13",
-    "total_votos_nacional_lista": 1145340
+    "conteo_general": "90.11",
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "arequipa",
@@ -167,13 +167,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 126653,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 89.13,
-    "voto_preferencial": 8711,
+    "total_votos_partido": 127883,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 90.11,
+    "voto_preferencial": 8793,
     "voto_fantasma": 0,
-    "conteo_general": "89.13",
-    "total_votos_nacional_lista": 1145340
+    "conteo_general": "90.11",
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "arequipa",
@@ -183,13 +183,13 @@
     "partido_id": "ahora-nacion",
     "nro": 1,
     "color": "#e90305",
-    "total_votos_partido": 68868,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 89.13,
-    "voto_preferencial": 14015,
+    "total_votos_partido": 69608,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 90.11,
+    "voto_preferencial": 14147,
     "voto_fantasma": 0,
-    "conteo_general": "89.13",
-    "total_votos_nacional_lista": 743420
+    "conteo_general": "90.11",
+    "total_votos_nacional_lista": 746857
   },
   {
     "region": "arequipa",
@@ -199,13 +199,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 70991,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 89.13,
-    "voto_preferencial": 10610,
+    "total_votos_partido": 71928,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 90.11,
+    "voto_preferencial": 10735,
     "voto_fantasma": 0,
-    "conteo_general": "89.13",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "90.11",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "arequipa",
@@ -215,13 +215,13 @@
     "partido_id": "partido-obras",
     "nro": 1,
     "color": "#005e00",
-    "total_votos_partido": 65849,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 89.13,
-    "voto_preferencial": 7933,
+    "total_votos_partido": 66647,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 90.11,
+    "voto_preferencial": 8024,
     "voto_fantasma": 0,
-    "conteo_general": "89.13",
-    "total_votos_nacional_lista": 816083
+    "conteo_general": "90.11",
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "arequipa",
@@ -231,13 +231,13 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 67558,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 89.13,
-    "voto_preferencial": 14508,
+    "total_votos_partido": 68143,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 90.11,
+    "voto_preferencial": 14629,
     "voto_fantasma": 0,
-    "conteo_general": "89.13",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "90.11",
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "ayacucho",
@@ -247,13 +247,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 64236,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 87.89,
-    "voto_preferencial": 11019,
+    "total_votos_partido": 64380,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 88.0,
+    "voto_preferencial": 11029,
     "voto_fantasma": 0,
-    "conteo_general": "87.89",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "88.00",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "ayacucho",
@@ -263,13 +263,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 64236,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 87.89,
-    "voto_preferencial": 1915,
+    "total_votos_partido": 64380,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 88.0,
+    "voto_preferencial": 1922,
     "voto_fantasma": 0,
-    "conteo_general": "87.89",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "88.00",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "ayacucho",
@@ -279,13 +279,13 @@
     "partido_id": "ahora-nacion",
     "nro": 1,
     "color": "#e90305",
-    "total_votos_partido": 36150,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 87.89,
-    "voto_preferencial": 8584,
+    "total_votos_partido": 36180,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 88.0,
+    "voto_preferencial": 8587,
     "voto_fantasma": 0,
-    "conteo_general": "87.89",
-    "total_votos_nacional_lista": 743420
+    "conteo_general": "88.00",
+    "total_votos_nacional_lista": 746857
   },
   {
     "region": "cajamarca",
@@ -295,13 +295,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 173638,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 78.42,
-    "voto_preferencial": 57084,
+    "total_votos_partido": 173503,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 78.37,
+    "voto_preferencial": 57058,
     "voto_fantasma": 0,
-    "conteo_general": "78.42",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "78.37",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "cajamarca",
@@ -311,13 +311,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 173638,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 78.42,
-    "voto_preferencial": 20545,
+    "total_votos_partido": 173503,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 78.37,
+    "voto_preferencial": 20540,
     "voto_fantasma": 0,
-    "conteo_general": "78.42",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "78.37",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "cajamarca",
@@ -327,13 +327,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 173638,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 78.42,
-    "voto_preferencial": 4376,
+    "total_votos_partido": 173503,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 78.37,
+    "voto_preferencial": 4366,
     "voto_fantasma": 0,
-    "conteo_general": "78.42",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "78.37",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "cajamarca",
@@ -343,13 +343,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 173638,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 78.42,
-    "voto_preferencial": 3263,
+    "total_votos_partido": 173503,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 78.37,
+    "voto_preferencial": 3264,
     "voto_fantasma": 0,
-    "conteo_general": "78.42",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "78.37",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "cajamarca",
@@ -359,13 +359,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 51222,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 78.42,
-    "voto_preferencial": 6026,
+    "total_votos_partido": 51201,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 78.37,
+    "voto_preferencial": 6021,
     "voto_fantasma": 0,
-    "conteo_general": "78.42",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "78.37",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "cajamarca",
@@ -375,13 +375,13 @@
     "partido_id": "partido-obras",
     "nro": 1,
     "color": "#005e00",
-    "total_votos_partido": 34833,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 78.42,
-    "voto_preferencial": 3926,
+    "total_votos_partido": 34816,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 78.37,
+    "voto_preferencial": 3925,
     "voto_fantasma": 0,
-    "conteo_general": "78.42",
-    "total_votos_nacional_lista": 816083
+    "conteo_general": "78.37",
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "callao",
@@ -391,13 +391,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 80458,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 90.92,
-    "voto_preferencial": 10083,
+    "total_votos_partido": 81014,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 91.44,
+    "voto_preferencial": 10137,
     "voto_fantasma": 0,
-    "conteo_general": "90.92",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "91.44",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "callao",
@@ -407,13 +407,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 80458,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 90.92,
-    "voto_preferencial": 4232,
+    "total_votos_partido": 81014,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 91.44,
+    "voto_preferencial": 4257,
     "voto_fantasma": 0,
-    "conteo_general": "90.92",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "91.44",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "callao",
@@ -423,13 +423,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 68180,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 90.92,
-    "voto_preferencial": 6044,
+    "total_votos_partido": 68480,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 91.44,
+    "voto_preferencial": 6072,
     "voto_fantasma": 0,
-    "conteo_general": "90.92",
-    "total_votos_nacional_lista": 1145340
+    "conteo_general": "91.44",
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "callao",
@@ -439,13 +439,13 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 65988,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 90.92,
-    "voto_preferencial": 11602,
+    "total_votos_partido": 66457,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 91.44,
+    "voto_preferencial": 11657,
     "voto_fantasma": 0,
-    "conteo_general": "90.92",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "91.44",
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "cusco",
@@ -455,13 +455,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 115292,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 85.36,
-    "voto_preferencial": 16963,
+    "total_votos_partido": 115178,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 85.19,
+    "voto_preferencial": 16945,
     "voto_fantasma": 0,
-    "conteo_general": "85.36",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "85.19",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "cusco",
@@ -471,13 +471,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 115292,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 85.36,
-    "voto_preferencial": 13078,
+    "total_votos_partido": 115178,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 85.19,
+    "voto_preferencial": 13065,
     "voto_fantasma": 0,
-    "conteo_general": "85.36",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "85.19",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "cusco",
@@ -487,13 +487,13 @@
     "partido_id": "ahora-nacion",
     "nro": 1,
     "color": "#e90305",
-    "total_votos_partido": 82602,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 85.36,
-    "voto_preferencial": 23673,
+    "total_votos_partido": 82369,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 85.19,
+    "voto_preferencial": 23587,
     "voto_fantasma": 0,
-    "conteo_general": "85.36",
-    "total_votos_nacional_lista": 743420
+    "conteo_general": "85.19",
+    "total_votos_nacional_lista": 746857
   },
   {
     "region": "cusco",
@@ -503,13 +503,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 45713,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 85.36,
-    "voto_preferencial": 8339,
+    "total_votos_partido": 45554,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 85.19,
+    "voto_preferencial": 8314,
     "voto_fantasma": 0,
-    "conteo_general": "85.36",
-    "total_votos_nacional_lista": 1145340
+    "conteo_general": "85.19",
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "cusco",
@@ -519,13 +519,13 @@
     "partido_id": "partido-obras",
     "nro": 1,
     "color": "#005e00",
-    "total_votos_partido": 64405,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 85.36,
-    "voto_preferencial": 7552,
+    "total_votos_partido": 64279,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 85.19,
+    "voto_preferencial": 7540,
     "voto_fantasma": 0,
-    "conteo_general": "85.36",
-    "total_votos_nacional_lista": 816083
+    "conteo_general": "85.19",
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "huancavelica",
@@ -536,12 +536,12 @@
     "nro": 1,
     "color": "#20a73c",
     "total_votos_partido": 55203,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:30 h",
     "conteo": 87.27,
     "voto_preferencial": 11881,
     "voto_fantasma": 0,
     "conteo_general": "87.27",
-    "total_votos_nacional_lista": 1210341
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "huancavelica",
@@ -552,12 +552,12 @@
     "nro": 1,
     "color": "#20a73c",
     "total_votos_partido": 55203,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:30 h",
     "conteo": 87.27,
     "voto_preferencial": 6328,
     "voto_fantasma": 0,
     "conteo_general": "87.27",
-    "total_votos_nacional_lista": 1210341
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "huanuco",
@@ -567,13 +567,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 64261,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 76.46,
-    "voto_preferencial": 7103,
+    "total_votos_partido": 65480,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 78.04,
+    "voto_preferencial": 7219,
     "voto_fantasma": 0,
-    "conteo_general": "76.46",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "78.04",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "huanuco",
@@ -583,13 +583,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 64261,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 76.46,
-    "voto_preferencial": 2831,
+    "total_votos_partido": 65480,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 78.04,
+    "voto_preferencial": 2877,
     "voto_fantasma": 0,
-    "conteo_general": "76.46",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "78.04",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "huanuco",
@@ -599,13 +599,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 30439,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 76.46,
-    "voto_preferencial": 5876,
+    "total_votos_partido": 30984,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 78.04,
+    "voto_preferencial": 5973,
     "voto_fantasma": 0,
-    "conteo_general": "76.46",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "78.04",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "ica",
@@ -615,13 +615,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 49014,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 69.83,
-    "voto_preferencial": 6286,
+    "total_votos_partido": 48888,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 69.63,
+    "voto_preferencial": 6265,
     "voto_fantasma": 0,
-    "conteo_general": "69.83",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "69.63",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "ica",
@@ -631,13 +631,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 27652,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 69.83,
-    "voto_preferencial": 3132,
+    "total_votos_partido": 27580,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 69.63,
+    "voto_preferencial": 3119,
     "voto_fantasma": 0,
-    "conteo_general": "69.83",
-    "total_votos_nacional_lista": 1145340
+    "conteo_general": "69.63",
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "ica",
@@ -647,13 +647,13 @@
     "partido_id": "partido-obras",
     "nro": 1,
     "color": "#005e00",
-    "total_votos_partido": 27738,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 69.83,
-    "voto_preferencial": 4274,
+    "total_votos_partido": 27648,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 69.63,
+    "voto_preferencial": 4264,
     "voto_fantasma": 0,
-    "conteo_general": "69.83",
-    "total_votos_nacional_lista": 816083
+    "conteo_general": "69.63",
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "ica",
@@ -663,13 +663,13 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 26257,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 69.83,
-    "voto_preferencial": 6295,
+    "total_votos_partido": 26161,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 69.63,
+    "voto_preferencial": 6269,
     "voto_fantasma": 0,
-    "conteo_general": "69.83",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "69.63",
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "junin",
@@ -679,13 +679,13 @@
     "partido_id": "ahora-nacion",
     "nro": 1,
     "color": "#e90305",
-    "total_votos_partido": 58154,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 83.99,
+    "total_votos_partido": 58150,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 83.96,
     "voto_preferencial": 15939,
     "voto_fantasma": 0,
-    "conteo_general": "83.99",
-    "total_votos_nacional_lista": 743420
+    "conteo_general": "83.96",
+    "total_votos_nacional_lista": 746857
   },
   {
     "region": "junin",
@@ -695,13 +695,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 65357,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 83.99,
-    "voto_preferencial": 8718,
+    "total_votos_partido": 65332,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 83.96,
+    "voto_preferencial": 8715,
     "voto_fantasma": 0,
-    "conteo_general": "83.99",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "83.96",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "junin",
@@ -711,13 +711,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 55994,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 83.99,
-    "voto_preferencial": 8759,
+    "total_votos_partido": 55966,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 83.96,
+    "voto_preferencial": 8755,
     "voto_fantasma": 0,
-    "conteo_general": "83.99",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "83.96",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "junin",
@@ -727,13 +727,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 38843,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 83.99,
-    "voto_preferencial": 5657,
+    "total_votos_partido": 38838,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 83.96,
+    "voto_preferencial": 5656,
     "voto_fantasma": 0,
-    "conteo_general": "83.99",
-    "total_votos_nacional_lista": 1145340
+    "conteo_general": "83.96",
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "junin",
@@ -743,13 +743,13 @@
     "partido_id": "partido-obras",
     "nro": 1,
     "color": "#005e00",
-    "total_votos_partido": 44679,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 83.99,
-    "voto_preferencial": 5778,
+    "total_votos_partido": 44658,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 83.96,
+    "voto_preferencial": 5775,
     "voto_fantasma": 0,
-    "conteo_general": "83.99",
-    "total_votos_nacional_lista": 816083
+    "conteo_general": "83.96",
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "la-libertad",
@@ -759,13 +759,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 110107,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 76.58,
-    "voto_preferencial": 11566,
+    "total_votos_partido": 110974,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 77.16,
+    "voto_preferencial": 11661,
     "voto_fantasma": 0,
-    "conteo_general": "76.58",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "77.16",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "la-libertad",
@@ -775,13 +775,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 110107,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 76.58,
-    "voto_preferencial": 4259,
+    "total_votos_partido": 110974,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 77.16,
+    "voto_preferencial": 4275,
     "voto_fantasma": 0,
-    "conteo_general": "76.58",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "77.16",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "la-libertad",
@@ -791,13 +791,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 110107,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 76.58,
-    "voto_preferencial": 3121,
+    "total_votos_partido": 110974,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 77.16,
+    "voto_preferencial": 3127,
     "voto_fantasma": 0,
-    "conteo_general": "76.58",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "77.16",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "la-libertad",
@@ -807,13 +807,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 59360,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 76.58,
-    "voto_preferencial": 7814,
+    "total_votos_partido": 60621,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 77.16,
+    "voto_preferencial": 7996,
     "voto_fantasma": 0,
-    "conteo_general": "76.58",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "77.16",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "la-libertad",
@@ -823,13 +823,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 58271,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 76.58,
-    "voto_preferencial": 6822,
+    "total_votos_partido": 58323,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 77.16,
+    "voto_preferencial": 6810,
     "voto_fantasma": 0,
-    "conteo_general": "76.58",
-    "total_votos_nacional_lista": 1145340
+    "conteo_general": "77.16",
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "la-libertad",
@@ -839,13 +839,13 @@
     "partido_id": "partido-obras",
     "nro": 1,
     "color": "#005e00",
-    "total_votos_partido": 38498,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 76.58,
-    "voto_preferencial": 4069,
+    "total_votos_partido": 38859,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 77.16,
+    "voto_preferencial": 4098,
     "voto_fantasma": 0,
-    "conteo_general": "76.58",
-    "total_votos_nacional_lista": 816083
+    "conteo_general": "77.16",
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "la-libertad",
@@ -855,13 +855,13 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 47755,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 76.58,
-    "voto_preferencial": 10733,
+    "total_votos_partido": 47775,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 77.16,
+    "voto_preferencial": 10731,
     "voto_fantasma": 0,
-    "conteo_general": "76.58",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "77.16",
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "lambayeque",
@@ -871,13 +871,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 110869,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 81.48,
-    "voto_preferencial": 23293,
+    "total_votos_partido": 110751,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 81.39,
+    "voto_preferencial": 23270,
     "voto_fantasma": 0,
-    "conteo_general": "81.48",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "81.39",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "lambayeque",
@@ -887,13 +887,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 110869,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 81.48,
-    "voto_preferencial": 6841,
+    "total_votos_partido": 110751,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 81.39,
+    "voto_preferencial": 6834,
     "voto_fantasma": 0,
-    "conteo_general": "81.48",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "81.39",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "lambayeque",
@@ -903,13 +903,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 48991,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 81.48,
-    "voto_preferencial": 9157,
+    "total_votos_partido": 48939,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 81.39,
+    "voto_preferencial": 9152,
     "voto_fantasma": 0,
-    "conteo_general": "81.48",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "81.39",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "lambayeque",
@@ -919,13 +919,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 47532,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 81.48,
-    "voto_preferencial": 6454,
+    "total_votos_partido": 47501,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 81.39,
+    "voto_preferencial": 6443,
     "voto_fantasma": 0,
-    "conteo_general": "81.48",
-    "total_votos_nacional_lista": 1145340
+    "conteo_general": "81.39",
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "lambayeque",
@@ -935,13 +935,13 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 37357,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 81.48,
-    "voto_preferencial": 7536,
+    "total_votos_partido": 37337,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 81.39,
+    "voto_preferencial": 7535,
     "voto_fantasma": 0,
-    "conteo_general": "81.48",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "81.39",
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "lima",
@@ -951,13 +951,13 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 814481,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 114934,
+    "total_votos_partido": 819567,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 115531,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "lima",
@@ -967,13 +967,13 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 814481,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 69734,
+    "total_votos_partido": 819567,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 70118,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "lima",
@@ -983,13 +983,13 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 814481,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 49096,
+    "total_votos_partido": 819567,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 49357,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "lima",
@@ -999,13 +999,13 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 814481,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 36639,
+    "total_votos_partido": 819567,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 36807,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "lima",
@@ -1015,13 +1015,13 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 814481,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 36075,
+    "total_votos_partido": 819567,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 36298,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "lima",
@@ -1031,13 +1031,13 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 814481,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 32084,
+    "total_votos_partido": 819567,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 32262,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "lima",
@@ -1047,13 +1047,13 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 814481,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 22528,
+    "total_votos_partido": 819567,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 22668,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "lima",
@@ -1063,13 +1063,13 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 814481,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 20874,
+    "total_votos_partido": 819567,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 20986,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "lima",
@@ -1079,13 +1079,13 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 814481,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 18922,
+    "total_votos_partido": 819567,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 19034,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "lima",
@@ -1095,13 +1095,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 634714,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 73605,
+    "total_votos_partido": 639143,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 74065,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "lima",
@@ -1111,13 +1111,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 634714,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 30997,
+    "total_votos_partido": 639143,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 31209,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "lima",
@@ -1127,13 +1127,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 634714,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 25655,
+    "total_votos_partido": 639143,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 25783,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "lima",
@@ -1143,13 +1143,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 634714,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 15980,
+    "total_votos_partido": 639143,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 16094,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "lima",
@@ -1159,13 +1159,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 634714,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 12740,
+    "total_votos_partido": 639143,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 12818,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "lima",
@@ -1175,29 +1175,29 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 634714,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 11281,
+    "total_votos_partido": 639143,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 11342,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "lima",
-    "nombre": "Diputado — Fuerza Popular (7/7)",
-    "candidato_id": "dip-fuerza-popular-lima-7",
+    "nombre": "FLOR DE JESUS MEZA RIVERA",
+    "candidato_id": "dip-fuerza-popular-flor-de-jesus-meza-rivera",
     "partido": "Fuerza Popular",
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 634714,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 0,
+    "total_votos_partido": 639143,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 6913,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "lima",
@@ -1207,13 +1207,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 645045,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 49146,
+    "total_votos_partido": 649373,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 49486,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1145340
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "lima",
@@ -1223,13 +1223,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 645045,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 27556,
+    "total_votos_partido": 649373,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 27720,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1145340
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "lima",
@@ -1239,13 +1239,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 645045,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 26910,
+    "total_votos_partido": 649373,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 27111,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1145340
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "lima",
@@ -1255,29 +1255,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 645045,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 24555,
+    "total_votos_partido": 649373,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 24713,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1145340
-  },
-  {
-    "region": "lima",
-    "nombre": "ROSSANA HERMINIA ALAYZA MACCERA",
-    "candidato_id": "dip-partido-del-buen-gobierno-rossana-herminia-alayza-maccera",
-    "partido": "Partido del Buen Gobierno",
-    "partido_id": "partido-del-buen-gobierno",
-    "nro": 1,
-    "color": "#ac0707",
-    "total_votos_partido": 645045,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 12635,
-    "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1145340
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "lima",
@@ -1287,13 +1271,29 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 645045,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 12634,
+    "total_votos_partido": 649373,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 12739,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1145340
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1150955
+  },
+  {
+    "region": "lima",
+    "nombre": "ROSSANA HERMINIA ALAYZA MACCERA",
+    "candidato_id": "dip-partido-del-buen-gobierno-rossana-herminia-alayza-maccera",
+    "partido": "Partido del Buen Gobierno",
+    "partido_id": "partido-del-buen-gobierno",
+    "nro": 1,
+    "color": "#ac0707",
+    "total_votos_partido": 649373,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 12711,
+    "voto_fantasma": 0,
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "lima",
@@ -1303,13 +1303,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 645045,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 11144,
+    "total_votos_partido": 649373,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 11219,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1145340
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "lima",
@@ -1319,13 +1319,13 @@
     "partido_id": "ahora-nacion",
     "nro": 1,
     "color": "#e90305",
-    "total_votos_partido": 403967,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 130975,
+    "total_votos_partido": 406822,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 131869,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 743420
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 746857
   },
   {
     "region": "lima",
@@ -1335,13 +1335,13 @@
     "partido_id": "ahora-nacion",
     "nro": 1,
     "color": "#e90305",
-    "total_votos_partido": 403967,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 85121,
+    "total_votos_partido": 406822,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 85689,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 743420
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 746857
   },
   {
     "region": "lima",
@@ -1351,13 +1351,13 @@
     "partido_id": "ahora-nacion",
     "nro": 1,
     "color": "#e90305",
-    "total_votos_partido": 403967,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 35986,
+    "total_votos_partido": 406822,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 36205,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 743420
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 746857
   },
   {
     "region": "lima",
@@ -1367,13 +1367,13 @@
     "partido_id": "ahora-nacion",
     "nro": 1,
     "color": "#e90305",
-    "total_votos_partido": 403967,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 13014,
+    "total_votos_partido": 406822,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 13103,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 743420
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 746857
   },
   {
     "region": "lima",
@@ -1383,13 +1383,13 @@
     "partido_id": "partido-obras",
     "nro": 1,
     "color": "#005e00",
-    "total_votos_partido": 340708,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 17873,
+    "total_votos_partido": 343154,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 17991,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 816083
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "lima",
@@ -1399,45 +1399,45 @@
     "partido_id": "partido-obras",
     "nro": 1,
     "color": "#005e00",
-    "total_votos_partido": 340708,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 13325,
+    "total_votos_partido": 343154,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 13444,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 816083
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "lima",
-    "nombre": "Diputado — Partido Obras (3/4)",
-    "candidato_id": "dip-partido-obras-lima-3",
+    "nombre": "ANDREA DAYNA MEDINA STEIN",
+    "candidato_id": "dip-partido-obras-andrea-dayna-medina-stein",
     "partido": "Partido Obras",
     "partido_id": "partido-obras",
     "nro": 1,
     "color": "#005e00",
-    "total_votos_partido": 340708,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 0,
+    "total_votos_partido": 343154,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 7686,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 816083
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "lima",
-    "nombre": "Diputado — Partido Obras (4/4)",
-    "candidato_id": "dip-partido-obras-lima-4",
+    "nombre": "RAUL JESUS CAMARGO PORTA",
+    "candidato_id": "dip-partido-obras-raul-jesus-camargo-porta",
     "partido": "Partido Obras",
     "partido_id": "partido-obras",
     "nro": 1,
     "color": "#005e00",
-    "total_votos_partido": 340708,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 0,
+    "total_votos_partido": 343154,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 6889,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 816083
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "lima",
@@ -1447,13 +1447,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 129878,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.36,
-    "voto_preferencial": 20386,
+    "total_votos_partido": 130782,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.97,
+    "voto_preferencial": 20540,
     "voto_fantasma": 0,
-    "conteo_general": "88.36",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "88.97",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "lima-provincias",
@@ -1463,13 +1463,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 81196,
-    "hora": "21/04/2026 10:00 h",
+    "total_votos_partido": 81192,
+    "hora": "27/04/2026 14:45 h",
     "conteo": 83.67,
-    "voto_preferencial": 8115,
+    "voto_preferencial": 8116,
     "voto_fantasma": 0,
     "conteo_general": "83.67",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "lima-provincias",
@@ -1479,13 +1479,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 81196,
-    "hora": "21/04/2026 10:00 h",
+    "total_votos_partido": 81192,
+    "hora": "27/04/2026 14:45 h",
     "conteo": 83.67,
     "voto_preferencial": 4137,
     "voto_fantasma": 0,
     "conteo_general": "83.67",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "lima-provincias",
@@ -1495,13 +1495,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 34491,
-    "hora": "21/04/2026 10:00 h",
+    "total_votos_partido": 34477,
+    "hora": "27/04/2026 14:45 h",
     "conteo": 83.67,
-    "voto_preferencial": 2707,
+    "voto_preferencial": 2708,
     "voto_fantasma": 0,
     "conteo_general": "83.67",
-    "total_votos_nacional_lista": 1145340
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "lima-provincias",
@@ -1511,13 +1511,13 @@
     "partido_id": "partido-obras",
     "nro": 1,
     "color": "#005e00",
-    "total_votos_partido": 38609,
-    "hora": "21/04/2026 10:00 h",
+    "total_votos_partido": 38599,
+    "hora": "27/04/2026 14:45 h",
     "conteo": 83.67,
-    "voto_preferencial": 3453,
+    "voto_preferencial": 3454,
     "voto_fantasma": 0,
     "conteo_general": "83.67",
-    "total_votos_nacional_lista": 816083
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "loreto",
@@ -1528,12 +1528,12 @@
     "nro": 1,
     "color": "#fd6600",
     "total_votos_partido": 45264,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 65.0,
     "voto_preferencial": 3807,
     "voto_fantasma": 0,
     "conteo_general": "65.00",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "loreto",
@@ -1544,12 +1544,12 @@
     "nro": 1,
     "color": "#fd6600",
     "total_votos_partido": 45264,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 65.0,
     "voto_preferencial": 3565,
     "voto_fantasma": 0,
     "conteo_general": "65.00",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "loreto",
@@ -1560,12 +1560,12 @@
     "nro": 1,
     "color": "#fd6600",
     "total_votos_partido": 45264,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 65.0,
     "voto_preferencial": 890,
     "voto_fantasma": 0,
     "conteo_general": "65.00",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "loreto",
@@ -1576,12 +1576,12 @@
     "nro": 1,
     "color": "#20a73c",
     "total_votos_partido": 16272,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 65.0,
     "voto_preferencial": 2264,
     "voto_fantasma": 0,
     "conteo_general": "65.00",
-    "total_votos_nacional_lista": 1210341
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "madre-de-dios",
@@ -1591,13 +1591,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 12209,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 75.15,
-    "voto_preferencial": 2135,
+    "total_votos_partido": 12161,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 74.95,
+    "voto_preferencial": 2130,
     "voto_fantasma": 0,
-    "conteo_general": "75.15",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "74.95",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "madre-de-dios",
@@ -1607,13 +1607,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 12209,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 75.15,
-    "voto_preferencial": 1524,
+    "total_votos_partido": 12161,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 74.95,
+    "voto_preferencial": 1522,
     "voto_fantasma": 0,
-    "conteo_general": "75.15",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "74.95",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "moquegua",
@@ -1623,13 +1623,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 12108,
-    "hora": "21/04/2026 10:00 h",
+    "total_votos_partido": 12120,
+    "hora": "27/04/2026 14:45 h",
     "conteo": 85.29,
-    "voto_preferencial": 2305,
+    "voto_preferencial": 2313,
     "voto_fantasma": 0,
     "conteo_general": "85.29",
-    "total_votos_nacional_lista": 1210341
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "moquegua",
@@ -1639,13 +1639,13 @@
     "partido_id": "partido-del-buen-gobierno",
     "nro": 1,
     "color": "#ac0707",
-    "total_votos_partido": 8963,
-    "hora": "21/04/2026 10:00 h",
+    "total_votos_partido": 8949,
+    "hora": "27/04/2026 14:45 h",
     "conteo": 85.29,
-    "voto_preferencial": 1382,
+    "voto_preferencial": 1379,
     "voto_fantasma": 0,
     "conteo_general": "85.29",
-    "total_votos_nacional_lista": 1145340
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "pasco",
@@ -1655,13 +1655,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 13889,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 84.29,
-    "voto_preferencial": 2366,
+    "total_votos_partido": 13971,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 85.16,
+    "voto_preferencial": 2379,
     "voto_fantasma": 0,
-    "conteo_general": "84.29",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "85.16",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "pasco",
@@ -1671,13 +1671,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 13889,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 84.29,
-    "voto_preferencial": 1679,
+    "total_votos_partido": 13971,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 85.16,
+    "voto_preferencial": 1688,
     "voto_fantasma": 0,
-    "conteo_general": "84.29",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "85.16",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "piura",
@@ -1688,12 +1688,12 @@
     "nro": 1,
     "color": "#fd6600",
     "total_votos_partido": 144829,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 74.06,
     "voto_preferencial": 17630,
     "voto_fantasma": 0,
     "conteo_general": "74.06",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "piura",
@@ -1704,12 +1704,12 @@
     "nro": 1,
     "color": "#fd6600",
     "total_votos_partido": 144829,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 74.06,
     "voto_preferencial": 15760,
     "voto_fantasma": 0,
     "conteo_general": "74.06",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "piura",
@@ -1720,12 +1720,12 @@
     "nro": 1,
     "color": "#fd6600",
     "total_votos_partido": 144829,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 74.06,
     "voto_preferencial": 5788,
     "voto_fantasma": 0,
     "conteo_general": "74.06",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "piura",
@@ -1736,12 +1736,12 @@
     "nro": 1,
     "color": "#fd6600",
     "total_votos_partido": 144829,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 74.06,
     "voto_preferencial": 3853,
     "voto_fantasma": 0,
     "conteo_general": "74.06",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "piura",
@@ -1752,12 +1752,12 @@
     "nro": 1,
     "color": "#ac0707",
     "total_votos_partido": 43997,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 74.06,
     "voto_preferencial": 3902,
     "voto_fantasma": 0,
     "conteo_general": "74.06",
-    "total_votos_nacional_lista": 1145340
+    "total_votos_nacional_lista": 1150955
   },
   {
     "region": "piura",
@@ -1768,12 +1768,12 @@
     "nro": 1,
     "color": "#005e00",
     "total_votos_partido": 33765,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 74.06,
     "voto_preferencial": 3799,
     "voto_fantasma": 0,
     "conteo_general": "74.06",
-    "total_votos_nacional_lista": 816083
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "piura",
@@ -1784,12 +1784,12 @@
     "nro": 1,
     "color": "#00aede",
     "total_votos_partido": 37865,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 74.06,
     "voto_preferencial": 10562,
     "voto_fantasma": 0,
     "conteo_general": "74.06",
-    "total_votos_nacional_lista": 1134953
+    "total_votos_nacional_lista": 1141025
   },
   {
     "region": "puno",
@@ -1799,13 +1799,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 128657,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.37,
-    "voto_preferencial": 18796,
+    "total_votos_partido": 128776,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.43,
+    "voto_preferencial": 18816,
     "voto_fantasma": 0,
-    "conteo_general": "88.37",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "88.43",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "puno",
@@ -1815,13 +1815,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 128657,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.37,
-    "voto_preferencial": 17442,
+    "total_votos_partido": 128776,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.43,
+    "voto_preferencial": 17451,
     "voto_fantasma": 0,
-    "conteo_general": "88.37",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "88.43",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "puno",
@@ -1831,13 +1831,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 128657,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.37,
-    "voto_preferencial": 15395,
+    "total_votos_partido": 128776,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.43,
+    "voto_preferencial": 15410,
     "voto_fantasma": 0,
-    "conteo_general": "88.37",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "88.43",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "puno",
@@ -1847,13 +1847,13 @@
     "partido_id": "ahora-nacion",
     "nro": 1,
     "color": "#e90305",
-    "total_votos_partido": 62369,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.37,
-    "voto_preferencial": 13121,
+    "total_votos_partido": 62402,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.43,
+    "voto_preferencial": 13134,
     "voto_fantasma": 0,
-    "conteo_general": "88.37",
-    "total_votos_nacional_lista": 743420
+    "conteo_general": "88.43",
+    "total_votos_nacional_lista": 746857
   },
   {
     "region": "puno",
@@ -1863,13 +1863,13 @@
     "partido_id": "partido-obras",
     "nro": 1,
     "color": "#005e00",
-    "total_votos_partido": 74948,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 88.37,
-    "voto_preferencial": 11690,
+    "total_votos_partido": 75019,
+    "hora": "27/04/2026 14:30 h",
+    "conteo": 88.43,
+    "voto_preferencial": 11704,
     "voto_fantasma": 0,
-    "conteo_general": "88.37",
-    "total_votos_nacional_lista": 816083
+    "conteo_general": "88.43",
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "san-martin",
@@ -1880,12 +1880,12 @@
     "nro": 1,
     "color": "#fd6600",
     "total_votos_partido": 48456,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 74.74,
     "voto_preferencial": 7372,
     "voto_fantasma": 0,
     "conteo_general": "74.74",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "san-martin",
@@ -1896,12 +1896,12 @@
     "nro": 1,
     "color": "#fd6600",
     "total_votos_partido": 48456,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 74.74,
     "voto_preferencial": 3608,
     "voto_fantasma": 0,
     "conteo_general": "74.74",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "san-martin",
@@ -1912,12 +1912,12 @@
     "nro": 1,
     "color": "#20a73c",
     "total_votos_partido": 52589,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 74.74,
     "voto_preferencial": 7786,
     "voto_fantasma": 0,
     "conteo_general": "74.74",
-    "total_votos_nacional_lista": 1210341
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "san-martin",
@@ -1928,12 +1928,12 @@
     "nro": 1,
     "color": "#20a73c",
     "total_votos_partido": 52589,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 74.74,
     "voto_preferencial": 5129,
     "voto_fantasma": 0,
     "conteo_general": "74.74",
-    "total_votos_nacional_lista": 1210341
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "tacna",
@@ -1943,13 +1943,13 @@
     "partido_id": "juntos-por-el-peru",
     "nro": 1,
     "color": "#20a73c",
-    "total_votos_partido": 21576,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 89.05,
-    "voto_preferencial": 3269,
+    "total_votos_partido": 21605,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 89.24,
+    "voto_preferencial": 3273,
     "voto_fantasma": 0,
-    "conteo_general": "89.05",
-    "total_votos_nacional_lista": 1210341
+    "conteo_general": "89.24",
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "tacna",
@@ -1959,13 +1959,13 @@
     "partido_id": "partido-obras",
     "nro": 1,
     "color": "#005e00",
-    "total_votos_partido": 21577,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 89.05,
-    "voto_preferencial": 3203,
+    "total_votos_partido": 21594,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 89.24,
+    "voto_preferencial": 3205,
     "voto_fantasma": 0,
-    "conteo_general": "89.05",
-    "total_votos_nacional_lista": 816083
+    "conteo_general": "89.24",
+    "total_votos_nacional_lista": 819531
   },
   {
     "region": "tumbes",
@@ -1976,12 +1976,12 @@
     "nro": 1,
     "color": "#fd6600",
     "total_votos_partido": 16691,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 77.53,
     "voto_preferencial": 2621,
     "voto_fantasma": 0,
     "conteo_general": "77.53",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "tumbes",
@@ -1992,12 +1992,12 @@
     "nro": 1,
     "color": "#fd6600",
     "total_votos_partido": 16691,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 77.53,
     "voto_preferencial": 1006,
     "voto_fantasma": 0,
     "conteo_general": "77.53",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "ucayali",
@@ -2008,12 +2008,12 @@
     "nro": 1,
     "color": "#fd6600",
     "total_votos_partido": 38606,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 73.53,
     "voto_preferencial": 8748,
     "voto_fantasma": 0,
     "conteo_general": "73.53",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "ucayali",
@@ -2024,12 +2024,12 @@
     "nro": 1,
     "color": "#fd6600",
     "total_votos_partido": 38606,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 73.53,
     "voto_preferencial": 2952,
     "voto_fantasma": 0,
     "conteo_general": "73.53",
-    "total_votos_nacional_lista": 1619529
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "ucayali",
@@ -2040,12 +2040,12 @@
     "nro": 1,
     "color": "#20a73c",
     "total_votos_partido": 15982,
-    "hora": "21/04/2026 10:00 h",
+    "hora": "27/04/2026 14:45 h",
     "conteo": 73.53,
     "voto_preferencial": 2594,
     "voto_fantasma": 0,
     "conteo_general": "73.53",
-    "total_votos_nacional_lista": 1210341
+    "total_votos_nacional_lista": 1214696
   },
   {
     "region": "extranjero",
@@ -2055,13 +2055,13 @@
     "partido_id": "fuerza-popular",
     "nro": 1,
     "color": "#fd6600",
-    "total_votos_partido": 22844,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 60.28,
-    "voto_preferencial": 2336,
+    "total_votos_partido": 22871,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 60.32,
+    "voto_preferencial": 2337,
     "voto_fantasma": 0,
-    "conteo_general": "60.28",
-    "total_votos_nacional_lista": 1619529
+    "conteo_general": "60.32",
+    "total_votos_nacional_lista": 1625969
   },
   {
     "region": "extranjero",
@@ -2071,12 +2071,12 @@
     "partido_id": "renovacion-popular",
     "nro": 1,
     "color": "#00aede",
-    "total_votos_partido": 37692,
-    "hora": "21/04/2026 10:00 h",
-    "conteo": 60.28,
-    "voto_preferencial": 5117,
+    "total_votos_partido": 37720,
+    "hora": "27/04/2026 14:45 h",
+    "conteo": 60.32,
+    "voto_preferencial": 5118,
     "voto_fantasma": 0,
-    "conteo_general": "60.28",
-    "total_votos_nacional_lista": 1134953
+    "conteo_general": "60.32",
+    "total_votos_nacional_lista": 1141025
   }
 ]

@@ -74,5 +74,5 @@ export function getCandidatoImage(id, nombre) {
   const fromId = id != null && String(id).trim() ? String(id).trim() : ''
   const base = fromNombre || fromId
   if (!base) return FALLBACK_IMAGE
-  return `${IMAGES_BASE}/${sub}${base}.png?actualizado`
+  return `${IMAGES_BASE}/${sub}${base}.png?v0.01`
 }

@@ -1,0 +1,17 @@
+{
+  "source": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/participacion-ciudadana/totales?tipoFiltro=total",
+  "fetched_at": "2026-04-27T22:30:00+00:00",
+  "success": true,
+  "message": "Se ejecutó correctamente la operación",
+  "data": {
+    "totalElectoresHabiles": 27325432,
+    "totalAsistentes": 19414492,
+    "totalAusentes": 6833669,
+    "porcentajeAsistentes": 71.049,
+    "porcentajeAusentes": 25.008,
+    "ubigeoNivel01": null,
+    "ubigeoNivel02": null,
+    "ubigeoNivel03": null,
+    "idLocalVotacion": null
+  }
+}

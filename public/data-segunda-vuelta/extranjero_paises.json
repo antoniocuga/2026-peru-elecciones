@@ -1,0 +1,33 @@
+{
+  "countries": [
+    {
+      "country": "Argentina",
+      "totalValidos": 4800,
+      "actasContabilizadas": 95.0,
+      "winner": {
+        "partido": "Juntos por el Perú",
+        "partido_id": "juntos-por-el-peru",
+        "color": "#20a73c",
+        "votos": 2900
+      },
+      "details": [],
+      "continent": "América",
+      "polygon": []
+    },
+    {
+      "country": "España",
+      "totalValidos": 7200,
+      "actasContabilizadas": 92.0,
+      "winner": {
+        "partido": "Fuerza Popular",
+        "partido_id": "fuerza-popular",
+        "color": "#fd6600",
+        "votos": 4100
+      },
+      "details": [],
+      "continent": "Europa",
+      "polygon": []
+    }
+  ],
+  "layout": null
+}

@@ -62,10 +62,10 @@
                 >
                   {{ c.validos.toFixed(2) }}%
                 </span>
-                <span style="font-size: 0.7rem;" class="votos-top m-1 p-0 d-block">
+                <span style="font-size: 0.7rem;" class="small text-secondary votos-top m-1 p-0 d-block">
                   {{ numeral(c.votos).format('0,0') }}
                 </span>
-                <span>
+                <span class="small text-secondary m-1">
                   Votos
                 </span>
               </div>

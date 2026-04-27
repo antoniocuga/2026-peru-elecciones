@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import api from '../api/api'
 import { filterCongresoRowsByNacionalUmbral } from '../utils/nacionalUmbralCongreso.js'
+import { parseParticipacionCiudadanaTotales } from '../utils/onpeParticipacionCiudadana.js'
 
 /** ONPE JSON lists must be arrays for groupBy / charts; avoid runtime errors on bad payloads */
 function asCandidateArray(data) {
@@ -14,6 +15,7 @@ const inflightDistritos = {}
 const inflightDistritosSegunda = {}
 
 let inflightOnpeEleccionesConteo = null
+let inflightParticipacionCiudadana = null
 
 export const useCandidatosStore = defineStore('candidatos', {
   state: () => ({
@@ -45,6 +47,9 @@ export const useCandidatosStore = defineStore('candidatos', {
     onpeEleccionConteoFetchDone: false,
     /** Payload ``congreso_final.json`` (lista partidos nacional curules + votos lista). */
     congresoFinal: null,
+    /** ONPE ``participacion-ciudadana/totales`` (``tipoFiltro=total``) parseado, o null. */
+    participacionCiudadana: null,
+    participacionCiudadanaFetchDone: false,
   }),
 
   actions: {
@@ -60,6 +65,24 @@ export const useCandidatosStore = defineStore('candidatos', {
       } finally {
         inflightOnpeEleccionesConteo = null
         this.onpeEleccionConteoFetchDone = true
+      }
+    },
+    async ensureParticipacionCiudadanaTotales() {
+      if (this.participacionCiudadanaFetchDone) return
+      if (!inflightParticipacionCiudadana) {
+        inflightParticipacionCiudadana = api
+          .getParticipacionCiudadanaTotales()
+          .then((raw) => parseParticipacionCiudadanaTotales(raw))
+          .catch(() => null)
+          .finally(() => {
+            inflightParticipacionCiudadana = null
+          })
+      }
+      const pending = inflightParticipacionCiudadana
+      try {
+        this.participacionCiudadana = await pending
+      } finally {
+        this.participacionCiudadanaFetchDone = true
       }
     },
     async getAllCandidatos() {

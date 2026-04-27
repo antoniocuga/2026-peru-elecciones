@@ -48,7 +48,7 @@
                           <div class="tooltip-c">
                             <h4 class="candidato-mapa candidato-partido mt-1">{{ formatNombreTitulo(candidato.nombre) }}</h4>
                             <h4 class="partido-mapa"><img v-if="!isPlaceholderCandidate(candidato)" width="25px" class="partido-icon" :src="getImagePartido(candidato.partido_id)" />{{ candidato.partido }}</h4>
-                            <span class="badge badge-light text-uppercase small"<>
+                            <span class="badge badge-light text-uppercase small">
                               {{ candidato.region }}
                             </span>
                           </div>

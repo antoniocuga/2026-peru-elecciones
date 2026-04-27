@@ -1,6 +1,6 @@
 {
   "id_eleccion": "13",
-  "generated_at": "21/04/2026 11:24 h",
+  "generated_at": "27/04/2026 15:54 h",
   "seats_total": 130,
   "rules": {
     "threshold_congressional_pct": 5.0,
@@ -17,8 +17,8 @@
       "color": "#fd6600",
       "nro": 1,
       "curules": 40,
-      "voto_preferencial_total": 374254,
-      "total_votos_nacional_lista": 1619529,
+      "voto_preferencial_total": 382544,
+      "total_votos_nacional_lista": 1625969,
       "qualified_via_bypass": false
     },
     {
@@ -27,8 +27,8 @@
       "color": "#20a73c",
       "nro": 1,
       "curules": 31,
-      "voto_preferencial_total": 315816,
-      "total_votos_nacional_lista": 1210341,
+      "voto_preferencial_total": 316439,
+      "total_votos_nacional_lista": 1214696,
       "qualified_via_bypass": false
     },
     {
@@ -37,8 +37,8 @@
       "color": "#ac0707",
       "nro": 1,
       "curules": 18,
-      "voto_preferencial_total": 235609,
-      "total_votos_nacional_lista": 1145340,
+      "voto_preferencial_total": 236960,
+      "total_votos_nacional_lista": 1150955,
       "qualified_via_bypass": false
     },
     {
@@ -47,8 +47,8 @@
       "color": "#00aede",
       "nro": 1,
       "curules": 16,
-      "voto_preferencial_total": 467239,
-      "total_votos_nacional_lista": 1134953,
+      "voto_preferencial_total": 469562,
+      "total_votos_nacional_lista": 1141025,
       "qualified_via_bypass": true
     },
     {
@@ -57,8 +57,8 @@
       "color": "#005e00",
       "nro": 1,
       "curules": 15,
-      "voto_preferencial_total": 90662,
-      "total_votos_nacional_lista": 816083,
+      "voto_preferencial_total": 105588,
+      "total_votos_nacional_lista": 819531,
       "qualified_via_bypass": false
     },
     {
@@ -67,8 +67,8 @@
       "color": "#e90305",
       "nro": 1,
       "curules": 10,
-      "voto_preferencial_total": 345929,
-      "total_votos_nacional_lista": 743420,
+      "voto_preferencial_total": 347761,
+      "total_votos_nacional_lista": 746857,
       "qualified_via_bypass": false
     }
   ]
