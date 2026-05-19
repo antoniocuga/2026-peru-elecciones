@@ -3,14 +3,6 @@
     <div class="font-weight-bold mb-2">Datos sobre la segunda vuelta</div>
 
     <div class="d-flex justify-content-between">
-      <span>Participación</span>
-      <span>{{ formatPct(contexto.participacion) }}</span>
-    </div>
-    <div class="d-flex justify-content-between">
-      <span>Ausentismo</span>
-      <span>{{ formatPct(contexto.ausentismo) }}</span>
-    </div>
-    <div class="d-flex justify-content-between">
       <span>Blanco</span>
       <span>{{ formatPct(contexto.blanco) }}</span>
     </div>
@@ -26,6 +18,21 @@
     <hr class="my-2" />
 
     <div class="d-flex justify-content-between">
+      <span>Electores hábiles</span>
+      <span>{{ formatNumber(contexto.habiles) }}</span>
+    </div>
+
+     <div class="d-flex justify-content-between">
+      <span>Participación</span>
+      <span>{{ formatPct(contexto.participacion) }}</span>
+    </div>
+
+    <div class="d-flex justify-content-between">
+      <span>Ausentismo</span>
+      <span>{{ formatPct(contexto.ausentismo) }}</span>
+    </div>
+
+    <div class="d-flex justify-content-between">
       <span>Actas contabilizadas</span>
       <span>{{ formatPct(contexto.actasContabilizadas) }}</span>
     </div>
@@ -33,10 +40,7 @@
       <span>Votos emitidos</span>
       <span>{{ formatNumber(contexto.emitidos) }}</span>
     </div>
-    <div class="d-flex justify-content-between">
-      <span>Electores hábiles</span>
-      <span>{{ formatNumber(contexto.habiles) }}</span>
-    </div>
+
 
     <div class="text-muted mt-2">
       *Porcentaje de candidatos calculado sobre votos válidos.

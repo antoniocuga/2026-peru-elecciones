@@ -1,6 +1,6 @@
 {
   "id_eleccion": "13",
-  "generated_at": "27/04/2026 15:54 h",
+  "generated_at": "18/05/2026 09:26 h",
   "seats_total": 130,
   "rules": {
     "threshold_congressional_pct": 5.0,
@@ -16,9 +16,9 @@
       "partido": "Fuerza Popular",
       "color": "#fd6600",
       "nro": 1,
-      "curules": 40,
-      "voto_preferencial_total": 382544,
-      "total_votos_nacional_lista": 1625969,
+      "curules": 41,
+      "voto_preferencial_total": 427651,
+      "total_votos_nacional_lista": 1804637,
       "qualified_via_bypass": false
     },
     {
@@ -26,9 +26,9 @@
       "partido": "Juntos por el Perú",
       "color": "#20a73c",
       "nro": 1,
-      "curules": 31,
-      "voto_preferencial_total": 316439,
-      "total_votos_nacional_lista": 1214696,
+      "curules": 32,
+      "voto_preferencial_total": 364252,
+      "total_votos_nacional_lista": 1377592,
       "qualified_via_bypass": false
     },
     {
@@ -37,8 +37,8 @@
       "color": "#ac0707",
       "nro": 1,
       "curules": 18,
-      "voto_preferencial_total": 236960,
-      "total_votos_nacional_lista": 1150955,
+      "voto_preferencial_total": 252566,
+      "total_votos_nacional_lista": 1237883,
       "qualified_via_bypass": false
     },
     {
@@ -46,9 +46,9 @@
       "partido": "Renovación Popular",
       "color": "#00aede",
       "nro": 1,
-      "curules": 16,
-      "voto_preferencial_total": 469562,
-      "total_votos_nacional_lista": 1141025,
+      "curules": 15,
+      "voto_preferencial_total": 489698,
+      "total_votos_nacional_lista": 1176733,
       "qualified_via_bypass": true
     },
     {
@@ -56,9 +56,9 @@
       "partido": "Partido Obras",
       "color": "#005e00",
       "nro": 1,
-      "curules": 15,
-      "voto_preferencial_total": 105588,
-      "total_votos_nacional_lista": 819531,
+      "curules": 14,
+      "voto_preferencial_total": 110171,
+      "total_votos_nacional_lista": 852995,
       "qualified_via_bypass": false
     },
     {
@@ -67,8 +67,8 @@
       "color": "#e90305",
       "nro": 1,
       "curules": 10,
-      "voto_preferencial_total": 347761,
-      "total_votos_nacional_lista": 746857,
+      "voto_preferencial_total": 367897,
+      "total_votos_nacional_lista": 802251,
       "qualified_via_bypass": false
     }
   ]

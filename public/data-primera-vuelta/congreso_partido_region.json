@@ -1,20 +1,20 @@
 {
   "id_eleccion": "13",
-  "generated_at": "27/04/2026 15:54 h",
+  "generated_at": "18/05/2026 09:26 h",
   "regions": [
     {
       "region": "amazonas",
       "id_distrito_electoral": "1",
       "seats_total": 2,
-      "conteo": 81.3,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 85.6,
+      "hora": "18/05/2026 01:00 h",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 18594,
+          "total_votos_validos": 19475,
           "seats_estimados": 2
         }
       ]
@@ -23,15 +23,15 @@
       "region": "ancash",
       "id_distrito_electoral": "2",
       "seats_total": 5,
-      "conteo": 79.46,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 94.58,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 57208,
+          "total_votos_validos": 66986,
           "seats_estimados": 2
         },
         {
@@ -39,7 +39,7 @@
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 53069,
+          "total_votos_validos": 61904,
           "seats_estimados": 1
         },
         {
@@ -47,7 +47,7 @@
           "partido": "Ahora Nación",
           "color": "#e90305",
           "nro": 1,
-          "total_votos_validos": 31326,
+          "total_votos_validos": 37071,
           "seats_estimados": 1
         },
         {
@@ -55,7 +55,7 @@
           "partido": "Partido Obras",
           "color": "#005e00",
           "nro": 1,
-          "total_votos_validos": 30493,
+          "total_votos_validos": 35855,
           "seats_estimados": 1
         }
       ]
@@ -64,15 +64,15 @@
       "region": "apurimac",
       "id_distrito_electoral": "3",
       "seats_total": 2,
-      "conteo": 87.55,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 97.11,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "juntos-por-el-peru",
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 60142,
+          "total_votos_validos": 67572,
           "seats_estimados": 2
         }
       ]
@@ -81,15 +81,15 @@
       "region": "arequipa",
       "id_distrito_electoral": "4",
       "seats_total": 6,
-      "conteo": 90.11,
-      "hora": "27/04/2026 14:30 h",
+      "conteo": 99.76,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "partido-del-buen-gobierno",
           "partido": "Partido del Buen Gobierno",
           "color": "#ac0707",
           "nro": 1,
-          "total_votos_validos": 127883,
+          "total_votos_validos": 140324,
           "seats_estimados": 2
         },
         {
@@ -97,7 +97,7 @@
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 71928,
+          "total_votos_validos": 80364,
           "seats_estimados": 1
         },
         {
@@ -105,7 +105,7 @@
           "partido": "Ahora Nación",
           "color": "#e90305",
           "nro": 1,
-          "total_votos_validos": 69608,
+          "total_votos_validos": 76565,
           "seats_estimados": 1
         },
         {
@@ -113,7 +113,7 @@
           "partido": "Renovación Popular",
           "color": "#00aede",
           "nro": 1,
-          "total_votos_validos": 68143,
+          "total_votos_validos": 74527,
           "seats_estimados": 1
         },
         {
@@ -121,7 +121,7 @@
           "partido": "Partido Obras",
           "color": "#005e00",
           "nro": 1,
-          "total_votos_validos": 66647,
+          "total_votos_validos": 73889,
           "seats_estimados": 1
         }
       ]
@@ -130,15 +130,15 @@
       "region": "ayacucho",
       "id_distrito_electoral": "5",
       "seats_total": 3,
-      "conteo": 88.0,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 99.42,
+      "hora": "18/05/2026 01:00 h",
       "partidos": [
         {
           "partido_id": "juntos-por-el-peru",
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 64380,
+          "total_votos_validos": 72811,
           "seats_estimados": 2
         },
         {
@@ -146,7 +146,7 @@
           "partido": "Ahora Nación",
           "color": "#e90305",
           "nro": 1,
-          "total_votos_validos": 36180,
+          "total_votos_validos": 40649,
           "seats_estimados": 1
         }
       ]
@@ -155,31 +155,23 @@
       "region": "cajamarca",
       "id_distrito_electoral": "6",
       "seats_total": 6,
-      "conteo": 78.37,
-      "hora": "27/04/2026 14:30 h",
+      "conteo": 94.17,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "juntos-por-el-peru",
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 173503,
-          "seats_estimados": 4
+          "total_votos_validos": 209071,
+          "seats_estimados": 5
         },
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 51201,
-          "seats_estimados": 1
-        },
-        {
-          "partido_id": "partido-obras",
-          "partido": "Partido Obras",
-          "color": "#005e00",
-          "nro": 1,
-          "total_votos_validos": 34816,
+          "total_votos_validos": 60659,
           "seats_estimados": 1
         }
       ]
@@ -188,15 +180,15 @@
       "region": "callao",
       "id_distrito_electoral": "7",
       "seats_total": 4,
-      "conteo": 91.44,
-      "hora": "27/04/2026 14:30 h",
+      "conteo": 93.58,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 81014,
+          "total_votos_validos": 82783,
           "seats_estimados": 2
         },
         {
@@ -204,7 +196,7 @@
           "partido": "Partido del Buen Gobierno",
           "color": "#ac0707",
           "nro": 1,
-          "total_votos_validos": 68480,
+          "total_votos_validos": 69864,
           "seats_estimados": 1
         },
         {
@@ -212,7 +204,7 @@
           "partido": "Renovación Popular",
           "color": "#00aede",
           "nro": 1,
-          "total_votos_validos": 66457,
+          "total_votos_validos": 67766,
           "seats_estimados": 1
         }
       ]
@@ -221,15 +213,15 @@
       "region": "cusco",
       "id_distrito_electoral": "8",
       "seats_total": 5,
-      "conteo": 85.19,
-      "hora": "27/04/2026 14:30 h",
+      "conteo": 89.15,
+      "hora": "18/05/2026 01:00 h",
       "partidos": [
         {
           "partido_id": "juntos-por-el-peru",
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 115178,
+          "total_votos_validos": 121871,
           "seats_estimados": 2
         },
         {
@@ -237,7 +229,7 @@
           "partido": "Ahora Nación",
           "color": "#e90305",
           "nro": 1,
-          "total_votos_validos": 82369,
+          "total_votos_validos": 85305,
           "seats_estimados": 1
         },
         {
@@ -245,7 +237,7 @@
           "partido": "Partido Obras",
           "color": "#005e00",
           "nro": 1,
-          "total_votos_validos": 64279,
+          "total_votos_validos": 67465,
           "seats_estimados": 1
         },
         {
@@ -253,7 +245,7 @@
           "partido": "Partido del Buen Gobierno",
           "color": "#ac0707",
           "nro": 1,
-          "total_votos_validos": 45554,
+          "total_votos_validos": 46806,
           "seats_estimados": 1
         }
       ]
@@ -262,15 +254,15 @@
       "region": "extranjero",
       "id_distrito_electoral": "27",
       "seats_total": 2,
-      "conteo": 60.32,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 68.46,
+      "hora": "18/05/2026 01:00 h",
       "partidos": [
         {
           "partido_id": "renovacion-popular",
           "partido": "Renovación Popular",
           "color": "#00aede",
           "nro": 1,
-          "total_votos_validos": 37720,
+          "total_votos_validos": 41990,
           "seats_estimados": 1
         },
         {
@@ -278,7 +270,7 @@
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 22871,
+          "total_votos_validos": 25732,
           "seats_estimados": 1
         }
       ]
@@ -287,15 +279,15 @@
       "region": "huancavelica",
       "id_distrito_electoral": "9",
       "seats_total": 2,
-      "conteo": 87.27,
-      "hora": "27/04/2026 14:30 h",
+      "conteo": 88.61,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "juntos-por-el-peru",
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 55203,
+          "total_votos_validos": 55997,
           "seats_estimados": 2
         }
       ]
@@ -304,15 +296,15 @@
       "region": "huanuco",
       "id_distrito_electoral": "10",
       "seats_total": 3,
-      "conteo": 78.04,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 95.0,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "juntos-por-el-peru",
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 65480,
+          "total_votos_validos": 81069,
           "seats_estimados": 2
         },
         {
@@ -320,7 +312,7 @@
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 30984,
+          "total_votos_validos": 36939,
           "seats_estimados": 1
         }
       ]
@@ -329,15 +321,15 @@
       "region": "ica",
       "id_distrito_electoral": "11",
       "seats_total": 4,
-      "conteo": 69.63,
-      "hora": "27/04/2026 14:30 h",
+      "conteo": 74.74,
+      "hora": "18/05/2026 01:00 h",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 48888,
+          "total_votos_validos": 52128,
           "seats_estimados": 1
         },
         {
@@ -345,7 +337,7 @@
           "partido": "Partido Obras",
           "color": "#005e00",
           "nro": 1,
-          "total_votos_validos": 27648,
+          "total_votos_validos": 29572,
           "seats_estimados": 1
         },
         {
@@ -353,7 +345,7 @@
           "partido": "Partido del Buen Gobierno",
           "color": "#ac0707",
           "nro": 1,
-          "total_votos_validos": 27580,
+          "total_votos_validos": 29519,
           "seats_estimados": 1
         },
         {
@@ -361,7 +353,7 @@
           "partido": "Renovación Popular",
           "color": "#00aede",
           "nro": 1,
-          "total_votos_validos": 26161,
+          "total_votos_validos": 28170,
           "seats_estimados": 1
         }
       ]
@@ -370,15 +362,15 @@
       "region": "junin",
       "id_distrito_electoral": "12",
       "seats_total": 5,
-      "conteo": 83.96,
-      "hora": "27/04/2026 14:30 h",
+      "conteo": 99.03,
+      "hora": "18/05/2026 01:00 h",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 65332,
+          "total_votos_validos": 76657,
           "seats_estimados": 1
         },
         {
@@ -386,7 +378,7 @@
           "partido": "Ahora Nación",
           "color": "#e90305",
           "nro": 1,
-          "total_votos_validos": 58150,
+          "total_votos_validos": 68182,
           "seats_estimados": 1
         },
         {
@@ -394,7 +386,7 @@
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 55966,
+          "total_votos_validos": 66193,
           "seats_estimados": 1
         },
         {
@@ -402,7 +394,7 @@
           "partido": "Partido Obras",
           "color": "#005e00",
           "nro": 1,
-          "total_votos_validos": 44658,
+          "total_votos_validos": 52155,
           "seats_estimados": 1
         },
         {
@@ -410,7 +402,7 @@
           "partido": "Partido del Buen Gobierno",
           "color": "#ac0707",
           "nro": 1,
-          "total_votos_validos": 38838,
+          "total_votos_validos": 45414,
           "seats_estimados": 1
         }
       ]
@@ -419,15 +411,15 @@
       "region": "la-libertad",
       "id_distrito_electoral": "13",
       "seats_total": 7,
-      "conteo": 77.16,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 93.76,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 110974,
+          "total_votos_validos": 134242,
           "seats_estimados": 3
         },
         {
@@ -435,7 +427,7 @@
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 60621,
+          "total_votos_validos": 71766,
           "seats_estimados": 1
         },
         {
@@ -443,7 +435,7 @@
           "partido": "Partido del Buen Gobierno",
           "color": "#ac0707",
           "nro": 1,
-          "total_votos_validos": 58323,
+          "total_votos_validos": 71588,
           "seats_estimados": 1
         },
         {
@@ -451,7 +443,7 @@
           "partido": "Renovación Popular",
           "color": "#00aede",
           "nro": 1,
-          "total_votos_validos": 47775,
+          "total_votos_validos": 59717,
           "seats_estimados": 1
         },
         {
@@ -459,7 +451,7 @@
           "partido": "Partido Obras",
           "color": "#005e00",
           "nro": 1,
-          "total_votos_validos": 38859,
+          "total_votos_validos": 47192,
           "seats_estimados": 1
         }
       ]
@@ -468,23 +460,23 @@
       "region": "lambayeque",
       "id_distrito_electoral": "14",
       "seats_total": 5,
-      "conteo": 81.39,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 98.27,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 110751,
-          "seats_estimados": 2
+          "total_votos_validos": 133353,
+          "seats_estimados": 3
         },
         {
           "partido_id": "juntos-por-el-peru",
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 48939,
+          "total_votos_validos": 59475,
           "seats_estimados": 1
         },
         {
@@ -492,15 +484,7 @@
           "partido": "Partido del Buen Gobierno",
           "color": "#ac0707",
           "nro": 1,
-          "total_votos_validos": 47501,
-          "seats_estimados": 1
-        },
-        {
-          "partido_id": "renovacion-popular",
-          "partido": "Renovación Popular",
-          "color": "#00aede",
-          "nro": 1,
-          "total_votos_validos": 37337,
+          "total_votos_validos": 56543,
           "seats_estimados": 1
         }
       ]
@@ -509,15 +493,15 @@
       "region": "lima",
       "id_distrito_electoral": "15",
       "seats_total": 32,
-      "conteo": 88.97,
-      "hora": "27/04/2026 14:30 h",
+      "conteo": 93.73,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "renovacion-popular",
           "partido": "Renovación Popular",
           "color": "#00aede",
           "nro": 1,
-          "total_votos_validos": 819567,
+          "total_votos_validos": 864954,
           "seats_estimados": 9
         },
         {
@@ -525,7 +509,7 @@
           "partido": "Partido del Buen Gobierno",
           "color": "#ac0707",
           "nro": 1,
-          "total_votos_validos": 649373,
+          "total_votos_validos": 681419,
           "seats_estimados": 7
         },
         {
@@ -533,7 +517,7 @@
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 639143,
+          "total_votos_validos": 668750,
           "seats_estimados": 7
         },
         {
@@ -541,7 +525,7 @@
           "partido": "Ahora Nación",
           "color": "#e90305",
           "nro": 1,
-          "total_votos_validos": 406822,
+          "total_votos_validos": 424910,
           "seats_estimados": 4
         },
         {
@@ -549,7 +533,7 @@
           "partido": "Partido Obras",
           "color": "#005e00",
           "nro": 1,
-          "total_votos_validos": 343154,
+          "total_votos_validos": 357715,
           "seats_estimados": 4
         },
         {
@@ -557,7 +541,7 @@
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 130782,
+          "total_votos_validos": 136051,
           "seats_estimados": 1
         }
       ]
@@ -566,15 +550,15 @@
       "region": "lima-provincias",
       "id_distrito_electoral": "16",
       "seats_total": 4,
-      "conteo": 83.67,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 97.81,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 81192,
+          "total_votos_validos": 94963,
           "seats_estimados": 2
         },
         {
@@ -582,7 +566,7 @@
           "partido": "Partido Obras",
           "color": "#005e00",
           "nro": 1,
-          "total_votos_validos": 38599,
+          "total_votos_validos": 44975,
           "seats_estimados": 1
         },
         {
@@ -590,7 +574,7 @@
           "partido": "Partido del Buen Gobierno",
           "color": "#ac0707",
           "nro": 1,
-          "total_votos_validos": 34477,
+          "total_votos_validos": 39761,
           "seats_estimados": 1
         }
       ]
@@ -599,15 +583,15 @@
       "region": "loreto",
       "id_distrito_electoral": "17",
       "seats_total": 4,
-      "conteo": 65.0,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 97.26,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 45264,
+          "total_votos_validos": 68173,
           "seats_estimados": 3
         },
         {
@@ -615,7 +599,7 @@
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 16272,
+          "total_votos_validos": 23142,
           "seats_estimados": 1
         }
       ]
@@ -624,15 +608,15 @@
       "region": "madre-de-dios",
       "id_distrito_electoral": "18",
       "seats_total": 2,
-      "conteo": 74.95,
-      "hora": "27/04/2026 14:30 h",
+      "conteo": 98.82,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "juntos-por-el-peru",
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 12161,
+          "total_votos_validos": 16118,
           "seats_estimados": 2
         }
       ]
@@ -641,15 +625,15 @@
       "region": "moquegua",
       "id_distrito_electoral": "19",
       "seats_total": 2,
-      "conteo": 85.29,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 100.0,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "juntos-por-el-peru",
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 12120,
+          "total_votos_validos": 14195,
           "seats_estimados": 1
         },
         {
@@ -657,7 +641,7 @@
           "partido": "Partido del Buen Gobierno",
           "color": "#ac0707",
           "nro": 1,
-          "total_votos_validos": 8949,
+          "total_votos_validos": 10477,
           "seats_estimados": 1
         }
       ]
@@ -666,15 +650,15 @@
       "region": "pasco",
       "id_distrito_electoral": "20",
       "seats_total": 2,
-      "conteo": 85.16,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 98.38,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 13971,
+          "total_votos_validos": 16077,
           "seats_estimados": 2
         }
       ]
@@ -683,15 +667,15 @@
       "region": "piura",
       "id_distrito_electoral": "21",
       "seats_total": 7,
-      "conteo": 74.06,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 79.25,
+      "hora": "18/05/2026 01:00 h",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 144829,
+          "total_votos_validos": 155964,
           "seats_estimados": 4
         },
         {
@@ -699,7 +683,7 @@
           "partido": "Partido del Buen Gobierno",
           "color": "#ac0707",
           "nro": 1,
-          "total_votos_validos": 43997,
+          "total_votos_validos": 46168,
           "seats_estimados": 1
         },
         {
@@ -707,7 +691,7 @@
           "partido": "Renovación Popular",
           "color": "#00aede",
           "nro": 1,
-          "total_votos_validos": 37865,
+          "total_votos_validos": 39609,
           "seats_estimados": 1
         },
         {
@@ -715,7 +699,7 @@
           "partido": "Partido Obras",
           "color": "#005e00",
           "nro": 1,
-          "total_votos_validos": 33765,
+          "total_votos_validos": 35750,
           "seats_estimados": 1
         }
       ]
@@ -724,15 +708,15 @@
       "region": "puno",
       "id_distrito_electoral": "22",
       "seats_total": 5,
-      "conteo": 88.43,
-      "hora": "27/04/2026 14:30 h",
+      "conteo": 99.65,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "juntos-por-el-peru",
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 128776,
+          "total_votos_validos": 145572,
           "seats_estimados": 3
         },
         {
@@ -740,7 +724,7 @@
           "partido": "Partido Obras",
           "color": "#005e00",
           "nro": 1,
-          "total_votos_validos": 75019,
+          "total_votos_validos": 84419,
           "seats_estimados": 1
         },
         {
@@ -748,7 +732,7 @@
           "partido": "Ahora Nación",
           "color": "#e90305",
           "nro": 1,
-          "total_votos_validos": 62402,
+          "total_votos_validos": 69569,
           "seats_estimados": 1
         }
       ]
@@ -758,7 +742,7 @@
       "id_distrito_electoral": "23",
       "seats_total": 4,
       "conteo": 74.74,
-      "hora": "27/04/2026 14:45 h",
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "juntos-por-el-peru",
@@ -782,15 +766,15 @@
       "region": "tacna",
       "id_distrito_electoral": "24",
       "seats_total": 2,
-      "conteo": 89.24,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 99.42,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "juntos-por-el-peru",
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 21605,
+          "total_votos_validos": 24328,
           "seats_estimados": 1
         },
         {
@@ -798,7 +782,7 @@
           "partido": "Partido Obras",
           "color": "#005e00",
           "nro": 1,
-          "total_votos_validos": 21594,
+          "total_votos_validos": 24008,
           "seats_estimados": 1
         }
       ]
@@ -807,15 +791,15 @@
       "region": "tumbes",
       "id_distrito_electoral": "25",
       "seats_total": 2,
-      "conteo": 77.53,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 99.05,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 16691,
+          "total_votos_validos": 20949,
           "seats_estimados": 2
         }
       ]
@@ -824,15 +808,15 @@
       "region": "ucayali",
       "id_distrito_electoral": "26",
       "seats_total": 3,
-      "conteo": 73.53,
-      "hora": "27/04/2026 14:45 h",
+      "conteo": 80.82,
+      "hora": "18/05/2026 08:15 h",
       "partidos": [
         {
           "partido_id": "fuerza-popular",
           "partido": "Fuerza Popular",
           "color": "#fd6600",
           "nro": 1,
-          "total_votos_validos": 38606,
+          "total_votos_validos": 42351,
           "seats_estimados": 2
         },
         {
@@ -840,7 +824,7 @@
           "partido": "Juntos por el Perú",
           "color": "#20a73c",
           "nro": 1,
-          "total_votos_validos": 15982,
+          "total_votos_validos": 17504,
           "seats_estimados": 1
         }
       ]
@@ -852,23 +836,23 @@
       "partido": "Fuerza Popular",
       "color": "#fd6600",
       "nro": 1,
-      "total_votos_validos": 1625969,
-      "seats_estimados": 40
+      "total_votos_validos": 1804637,
+      "seats_estimados": 41
     },
     {
       "partido_id": "juntos-por-el-peru",
       "partido": "Juntos por el Perú",
       "color": "#20a73c",
       "nro": 1,
-      "total_votos_validos": 1214696,
-      "seats_estimados": 31
+      "total_votos_validos": 1377592,
+      "seats_estimados": 32
     },
     {
       "partido_id": "partido-del-buen-gobierno",
       "partido": "Partido del Buen Gobierno",
       "color": "#ac0707",
       "nro": 1,
-      "total_votos_validos": 1150955,
+      "total_votos_validos": 1237883,
       "seats_estimados": 18
     },
     {
@@ -876,23 +860,23 @@
       "partido": "Renovación Popular",
       "color": "#00aede",
       "nro": 1,
-      "total_votos_validos": 1141025,
-      "seats_estimados": 16
+      "total_votos_validos": 1176733,
+      "seats_estimados": 15
     },
     {
       "partido_id": "partido-obras",
       "partido": "Partido Obras",
       "color": "#005e00",
       "nro": 1,
-      "total_votos_validos": 819531,
-      "seats_estimados": 15
+      "total_votos_validos": 852995,
+      "seats_estimados": 14
     },
     {
       "partido_id": "ahora-nacion",
       "partido": "Ahora Nación",
       "color": "#e90305",
       "nro": 1,
-      "total_votos_validos": 746857,
+      "total_votos_validos": 802251,
       "seats_estimados": 10
     }
   ]
