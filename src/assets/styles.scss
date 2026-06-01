@@ -2217,6 +2217,11 @@
     color: inherit !important;
   }
 
+  .ej2026-embed-card.card .ej2026-pres-card-body.ej2026-pres-card-body--reverse,
+  .ej2026-embed-card.card-candidate .ej2026-pres-card-body.ej2026-pres-card-body--reverse {
+    flex-direction: row-reverse !important;
+  }
+
   .ej2026-embed-card .candidato-nombre:not(.ej2026-pres-line--placeholder) {
     color: #212529 !important;
     font-weight: 700 !important;

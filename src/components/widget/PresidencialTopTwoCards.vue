@@ -1,6 +1,6 @@
 <template>
   <template v-for="(c, i) in displayCandidatos" :key="c.candidato_id">
-    <div class="col-12 col-md-6 p-1 ej2026-pres-top-card-wrap">
+    <div class="col-12 col-md-6 col-lg-5 p-1 ej2026-pres-top-card-wrap">
       
         <div
           class="ej2026-embed-card card card-candidate border-1 ej2026-pres-top-card"
@@ -9,7 +9,10 @@
             { 'home-widget__card--waiting ej2026-pres-top-card--placeholder': isPresidentialPlaceholder(c) },
           ]"
         >
-          <div class="card-body d-flex align-items-center justify-content-between p-2 ej2026-pres-card-body">
+          <div
+            class="card-body d-flex align-items-center justify-content-between p-2 ej2026-pres-card-body"
+            :class="{ 'ej2026-pres-card-body--reverse': i === 1 }"
+          >
             <div
               v-if="isPresidentialPlaceholder(c)"
               class="home-widget__avatar-placeholder ej2026-pres-avatar-ph rounded-circle border border-2 flex-shrink-0"
@@ -24,10 +27,9 @@
               alt="Foto de candidato a la presidencia del Perú"
             />
             <div
-              class="ms-2 text-dark flex-grow-1 min-w-0 ej2026-pres-copy"
-              :class="i === 0 ? 'text-left' : i === 1 ? 'text-right'"
+              class="text-dark flex-grow-1 min-w-0 ej2026-pres-copy"
+              :class="i === 1 ? 'me-2 text-right' : 'ms-2 text-left'"
             >
-      
               <p
                 class="p-0 candidato-nombre mb-1 ej2026-pres-line"
                 :class="{ 'text-light ej2026-pres-line--placeholder': isPresidentialPlaceholder(c) }"
@@ -55,11 +57,17 @@
                 </p>
             </div>
             <div
-              class="ms-2 flex-shrink-0 text-light overflow-hidden justify-content-end me-3 ej2026-pres-stats"
+              class="flex-shrink-0 text-light overflow-hidden ej2026-pres-stats"
+              :class="[
+                i === 1 ? 'ms-3 me-0 text-start' : 'ms-2 me-3 text-end',
+                { 'ej2026-pres-stats--placeholder': isPresidentialPlaceholder(c) },
+              ]"
               style="min-width: clamp(3.25rem, 18vw, 4.5rem); line-height: 0.5em"
-              :class="{ 'ej2026-pres-stats--placeholder': isPresidentialPlaceholder(c) }"
             >
-              <div class="d-block text-right align-items-baseline flex-wrap">
+              <div
+                class="d-block align-items-baseline flex-wrap"
+                :class="i === 1 ? 'text-left' : 'text-right'"
+              >
                 <span
                   class="porcentaje-top d-block ej2026-pres-pct"
                   :style="`font-size: 1.1rem; color: ${isPresidentialPlaceholder(c) ? WIDGET_PLACEHOLDER_COLOR : c.color}`"

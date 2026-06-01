@@ -3,6 +3,7 @@ import { PARLIAMENT_PLACEHOLDER_PARTIDO_ID } from './congresoTooltip'
 
 export const WIDGET_PLACEHOLDER_COLOR = '#ADB5BD'
 export const WIDGET_PRES_PLACEHOLDER_PREFIX = 'widget-pres-placeholder-'
+export const WIDGET_PRES_TOP_COUNT = 2
 export const WIDGET_SENADO_TOTAL = 60
 export const WIDGET_CONGRESO_TOTAL = 130
 
@@ -10,7 +11,8 @@ export function computeTopCandidatos(candidatos) {
   const filtered = filter(candidatos, (d) =>
     d.region === 'total' &&
     d.candidato_id !== 'blanco' &&
-    d.candidato_id !== 'nulos'
+    d.candidato_id !== 'nulos' &&
+    d.candidato_id !== 'nulo'
   )
   return orderBy(
     map(groupBy(filtered, 'candidato_id'), (d, id) => ({
@@ -26,7 +28,7 @@ export function computeTopCandidatos(candidatos) {
     })),
     ['validos'],
     ['desc']
-  ).slice(0, 3)
+  ).slice(0, WIDGET_PRES_TOP_COUNT)
 }
 
 export function computeConteoFromTop(topCandidatos) {
@@ -57,8 +59,8 @@ export function isPresidentialPlaceholder(c) {
 }
 
 export function displayTopCandidatosWithPlaceholders(topCandidatos) {
-  if (topCandidatos.length) return topCandidatos
-  return [0, 1, 2].map((i) => ({
+  if (topCandidatos.length) return topCandidatos.slice(0, WIDGET_PRES_TOP_COUNT)
+  return Array.from({ length: WIDGET_PRES_TOP_COUNT }, (_, i) => ({
     candidato_id: `${WIDGET_PRES_PLACEHOLDER_PREFIX}${i}`,
     candidato: '',
     partido_id: PARLIAMENT_PLACEHOLDER_PARTIDO_ID,

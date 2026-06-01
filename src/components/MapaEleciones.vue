@@ -3,7 +3,6 @@
       <div class="row pt-3">
         <div class="col-12 col-sm-12 col-md-6 col-lg-5 d-md-block d-none">
           <candidatosResultados :candidatos="filteredData" />
-          <ContextoElectoralPanel :contexto="contextoElectoral" />
           
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-7   mapa-resultados-wrapper">
@@ -23,7 +22,6 @@ import { useCandidatosStore } from '../stores/candidatos'
 import { getPartidoImage, getCandidatoImage } from '../utils/assets'
 import candidatosResultados from './candidatosResultados.vue'
 import MapaDepartamentos from './MapaDepartamentos.vue'
-import ContextoElectoralPanel from './ContextoElectoralPanel.vue'
 import { mergeContextoParticipacionCiudadana } from '../utils/onpeParticipacionCiudadana.js'
 import { filter } from 'lodash'
 
@@ -35,7 +33,6 @@ export default {
   components: {
     MapaDepartamentos,
     candidatosResultados,
-    ContextoElectoralPanel,
   },
   setup() {
     const store = useCandidatosStore()

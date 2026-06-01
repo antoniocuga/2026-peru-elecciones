@@ -1,0 +1,62 @@
+<template>
+  <div class="widget-blanco-nulo row justify-content-center p-3">
+    <div class="col-6 col-md-4 small mb-1 align-self-center text-center">
+      <span>Votos en blanco</span>
+      <div>
+        <span class="large">{{ formatPct(datos.blanco?.pct) }}</span> ({{ formatVotos(datos.blanco?.votos) }})
+      </div>
+    </div>
+    <div class="col-6 col-md-4 small mb-1 align-self-center text-center">
+      <span>Votos viciados</span>
+      <div>
+        <span class="large">{{ formatPct(datos.nulo?.pct) }}</span> (
+      {{ formatVotos(datos.nulo?.votos) }})
+      </div>
+      <div class="opacity-75 ms-1"></div>
+    </div>
+    <div class="col-12 col-md-4 small mb-1 align-self-center text-center">
+      <a class="btn btn-light text-dark small bold">Ver resultados</a>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'WidgetBlancoNuloSegunda',
+  props: {
+    datos: {
+      type: Object,
+      default: () => ({}),
+    },
+  },
+  methods: {
+    formatPct(value) {
+      if (value == null) return '—'
+      return `${Number(value).toFixed(2)}%`
+    },
+    formatVotos(value) {
+      if (value == null) return '—'
+      return new Intl.NumberFormat('es-PE').format(value)
+    },
+  },
+}
+</script>
+
+<style lang="scss">
+  .widget-blanco-nulo {
+    border-radius: 45px;
+    max-width: 620px;
+    margin: 0 auto;
+    background-color: #293c48 !important;
+    color: #fff;
+
+    @media (max-width: 768px) {
+      border-radius: 0;
+    }
+  }
+  .widget-blanco-nulo .large {
+    font-size: 16px;
+    font-weight:  700;
+    color: #fff;
+  }
+</style>
