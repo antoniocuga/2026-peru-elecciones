@@ -1,5 +1,8 @@
 <template>
   <div class="resultados2026">
+      <div class="row ml-3">
+        <span class="">Elecciones 2026: 1era vuelta</span>
+      </div>
       <div class="row pt-3">
         <div class="col-12 col-sm-12 col-md-6 col-lg-5 d-md-block d-none">
           <candidatosResultados :candidatos="filteredData" />

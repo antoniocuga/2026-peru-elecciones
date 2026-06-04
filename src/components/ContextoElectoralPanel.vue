@@ -1,18 +1,7 @@
 <template>
   <div>
-    <div class="p-3 border rounded bg-light small ">
-     <div class="d-flex justify-content-between pb-2">
-        <span>Votos en blanco</span>
-        <span style="font-size:16px;font-weight: 600;">{{ formatPct(contexto.blanco) }}</span>
-      </div>
-      <div class="d-flex justify-content-between border-top pt-2">
-        <span>Votos nulo</span>
-        <span  style="font-size:16px;font-weight: 600;">{{ formatPct(contexto.nulo) }}</span>
-      </div>
-    </div>
-
     <div class="mt-3 p-3 border rounded bg-light small">
-      <div class="font-weight-bold mb-2">Datos sobre la segunda vuelta</div>
+      <div class="font-weight-bold mb-2">Participación ciudadana</div>
 
      
       <div class="d-flex justify-content-between">
@@ -32,6 +21,26 @@
 
 
     </div>
+    <div class="p-3 border rounded bg-light small ">
+     <div class="d-flex justify-content-between pb-2">
+        <span>Total votos emitidos</span>
+        <span style="font-size:16px;font-weight: 600;">{{ formatNumber(contexto.blanco) }}</span>
+      </div>
+      <div class="d-flex justify-content-between pb-2">
+        <span>Votos validos</span>
+        <span style="font-size:16px;font-weight: 600;">{{ formatPct(contexto.blanco) }}</span>
+      </div>
+      <div class="d-flex justify-content-between pb-2">
+        <span>Votos en blanco</span>
+        <span style="font-size:16px;font-weight: 600;">{{ formatPct(contexto.blanco) }}</span>
+      </div>
+      <div class="d-flex justify-content-between border-top pt-2">
+        <span>Votos nulo</span>
+        <span  style="font-size:16px;font-weight: 600;">{{ formatPct(contexto.nulo) }}</span>
+      </div>
+    </div>
+
+    
   </div>
 </template>
 
