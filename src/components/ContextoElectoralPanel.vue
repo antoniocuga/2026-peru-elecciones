@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mt-3 p-3 border rounded bg-light small">
+    <div class="p-3 border rounded bg-light small">
       <div class="font-weight-bold mb-2">Participación ciudadana</div>
 
      
@@ -21,16 +21,18 @@
 
 
     </div>
-    <div class="p-3 border rounded bg-light small ">
-     <div class="d-flex justify-content-between pb-2">
+    <div class="p-3 border rounded bg-light small mt-3">
+      <div class="font-weight-bold mb-2">Cantidad de votos
+      </div>
+     <div class="d-flex justify-content-between border-top pt-2">
         <span>Total votos emitidos</span>
         <span style="font-size:16px;font-weight: 600;">{{ formatNumber(contexto.blanco) }}</span>
       </div>
-      <div class="d-flex justify-content-between pb-2">
+      <div class="d-flex justify-content-between border-top pt-2">
         <span>Votos validos</span>
         <span style="font-size:16px;font-weight: 600;">{{ formatPct(contexto.blanco) }}</span>
       </div>
-      <div class="d-flex justify-content-between pb-2">
+      <div class="d-flex justify-content-between border-top pt-2">
         <span>Votos en blanco</span>
         <span style="font-size:16px;font-weight: 600;">{{ formatPct(contexto.blanco) }}</span>
       </div>
