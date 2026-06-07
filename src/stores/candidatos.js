@@ -16,6 +16,7 @@ const inflightDistritosSegunda = {}
 
 let inflightOnpeEleccionesConteo = null
 let inflightParticipacionCiudadana = null
+let inflightParticipacionCiudadanaSegunda = null
 
 export const useCandidatosStore = defineStore('candidatos', {
   state: () => ({
@@ -47,9 +48,12 @@ export const useCandidatosStore = defineStore('candidatos', {
     onpeEleccionConteoFetchDone: false,
     /** Payload ``congreso_final.json`` (lista partidos nacional curules + votos lista). */
     congresoFinal: null,
-    /** ONPE ``participacion-ciudadana/totales`` (``tipoFiltro=total``) parseado, o null. */
+    /** ONPE ``participacion-ciudadana/totales`` (primera vuelta). */
     participacionCiudadana: null,
     participacionCiudadanaFetchDone: false,
+    /** ONPE participación + totales elección (segunda vuelta). */
+    participacionCiudadanaSegunda: null,
+    participacionCiudadanaSegundaFetchDone: false,
   }),
 
   actions: {
@@ -67,20 +71,50 @@ export const useCandidatosStore = defineStore('candidatos', {
         this.onpeEleccionConteoFetchDone = true
       }
     },
-    async ensureParticipacionCiudadanaTotales() {
-      if (this.participacionCiudadanaFetchDone) return
+    async refreshParticipacionCiudadanaTotales(profile = 'primera') {
+      const isSegunda = profile === 'segunda'
+      if (isSegunda) {
+        this.participacionCiudadanaSegundaFetchDone = false
+        inflightParticipacionCiudadanaSegunda = null
+      } else {
+        this.participacionCiudadanaFetchDone = false
+        inflightParticipacionCiudadana = null
+      }
+      await this.ensureParticipacionCiudadanaTotales(profile)
+    },
+    async ensureParticipacionCiudadanaTotales(profile = 'primera') {
+      const isSegunda = profile === 'segunda'
+      if (isSegunda ? this.participacionCiudadanaSegundaFetchDone : this.participacionCiudadanaFetchDone) {
+        return
+      }
+      if (isSegunda) {
+        if (!inflightParticipacionCiudadanaSegunda) {
+          inflightParticipacionCiudadanaSegunda = api
+            .getParticipacionCiudadanaTotales({ profile: 'segunda' })
+            .then((raw) => parseParticipacionCiudadanaTotales(raw))
+            .catch(() => null)
+            .finally(() => {
+              inflightParticipacionCiudadanaSegunda = null
+            })
+        }
+        try {
+          this.participacionCiudadanaSegunda = await inflightParticipacionCiudadanaSegunda
+        } finally {
+          this.participacionCiudadanaSegundaFetchDone = true
+        }
+        return
+      }
       if (!inflightParticipacionCiudadana) {
         inflightParticipacionCiudadana = api
-          .getParticipacionCiudadanaTotales()
+          .getParticipacionCiudadanaTotales({ profile: 'primera' })
           .then((raw) => parseParticipacionCiudadanaTotales(raw))
           .catch(() => null)
           .finally(() => {
             inflightParticipacionCiudadana = null
           })
       }
-      const pending = inflightParticipacionCiudadana
       try {
-        this.participacionCiudadana = await pending
+        this.participacionCiudadana = await inflightParticipacionCiudadana
       } finally {
         this.participacionCiudadanaFetchDone = true
       }

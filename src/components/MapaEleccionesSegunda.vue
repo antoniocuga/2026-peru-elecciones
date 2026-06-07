@@ -43,7 +43,18 @@ export default {
   },
   created() {
     this.store.getAllCandidatosSegunda()
-    this.store.ensureParticipacionCiudadanaTotales()
+    this.store.ensureParticipacionCiudadanaTotales('segunda')
+  },
+  mounted() {
+    this._participacionPoll = window.setInterval(() => {
+      this.store.refreshParticipacionCiudadanaTotales('segunda')
+    }, 60000)
+  },
+  beforeUnmount() {
+    if (this._participacionPoll) {
+      window.clearInterval(this._participacionPoll)
+      this._participacionPoll = null
+    }
   },
   methods: {
     toNumber(value) {
@@ -60,8 +71,17 @@ export default {
     }
   },
   computed: {
+    contextoRows() {
+      const isNacional = this.regionSeleccionadaSegunda.region === 'NACIONAL'
+      if (isNacional) {
+        const todos = Array.isArray(this.todosSegunda) ? this.todosSegunda : []
+        const totalRows = todos.filter((r) => String(r.region || '').toLowerCase() === 'total')
+        if (totalRows.length) return totalRows
+      }
+      return Array.isArray(this.filteredData) ? this.filteredData : []
+    },
     contextoElectoral() {
-      const rows = Array.isArray(this.filteredData) ? this.filteredData : []
+      const rows = this.contextoRows
       const byCandidate = (ids) =>
         rows.find((r) => ids.includes(String(r.candidato_id || '').toLowerCase()))
 
@@ -84,31 +104,17 @@ export default {
       }, 0)
       const emitidos = emitidosFromRows > 0 ? emitidosFromRows : null
 
-      const habiles = rows.reduce((max, row) => {
-        const v = this.toNumber(row?.habiles)
-        if (v == null) return max
-        return max == null ? v : Math.max(max, v)
-      }, null)
-
-      const participacion =
-        emitidos != null && habiles != null && habiles > 0
-          ? (emitidos / habiles) * 100
-          : null
-
-      const ausentismo =
-        participacion != null ? 100 - participacion : null
-
       const base = {
-        participacion,
-        ausentismo,
+        participacion: null,
+        ausentismo: null,
         blanco,
         nulo,
         blancoNulo,
         actasContabilizadas,
         emitidos,
-        habiles,
+        habiles: null,
       }
-      return mergeContextoParticipacionCiudadana(base, this.participacionCiudadana)
+      return mergeContextoParticipacionCiudadana(base, this.participacionCiudadanaSegunda)
     },
     filteredData() {
       const isRegion = this.regionSeleccionadaSegunda.region != 'NACIONAL'
@@ -130,4 +136,3 @@ export default {
   }
 }
 </script>
-

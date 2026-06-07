@@ -1,0 +1,52 @@
+{
+  "entries": [
+    {
+      "id": "20260607T180937",
+      "file": "20260607T180937.json",
+      "captured_at": "2026-06-07T18:09:37-05:00",
+      "conteo": 0.0,
+      "hora": "07/06/2026 19:09 h",
+      "fingerprint": "3919726042530a47",
+      "source": "nivel_01_snapshot"
+    },
+    {
+      "id": "20260607T181158",
+      "file": "20260607T181158.json",
+      "captured_at": "2026-06-07T18:11:58-05:00",
+      "conteo": 0.0,
+      "hora": "07/06/2026 18:05 h",
+      "fingerprint": "42328363ac3d8e44",
+      "source": "nivel_01_snapshot"
+    },
+    {
+      "id": "20260607T181707",
+      "file": "20260607T181707.json",
+      "captured_at": "2026-06-07T18:17:07-05:00",
+      "conteo": 0.02,
+      "hora": "07/06/2026 18:12 h",
+      "fingerprint": "7307e139901e9018",
+      "source": "nivel_01_snapshot"
+    },
+    {
+      "id": "20260607T182957",
+      "file": "20260607T182957.json",
+      "captured_at": "2026-06-07T18:29:57-05:00",
+      "conteo": 0.07,
+      "hora": "07/06/2026 18:26 h",
+      "fingerprint": "a61e7f1d710d1481",
+      "source": "nivel_01_snapshot"
+    },
+    {
+      "id": "20260607T183411",
+      "file": "20260607T183411.json",
+      "captured_at": "2026-06-07T18:34:11-05:00",
+      "conteo": 0.12,
+      "hora": "07/06/2026 18:32 h",
+      "fingerprint": "0fe4876752b958da",
+      "source": "live_export"
+    }
+  ],
+  "profile": "segunda",
+  "id_eleccion": "10",
+  "updated_at": "2026-06-07T18:34:11-05:00"
+}

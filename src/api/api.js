@@ -38,6 +38,10 @@ function getPrimeraUrl(filename) {
 }
 
 function getSegundaUrl(filename) {
+  if (import.meta.env.DEV && typeof window !== 'undefined') {
+    const path = `/${DATA_SEGUNDA_DIR}/${filename}`
+    return new URL(path, window.location.origin).href
+  }
   if (import.meta.env.DEV) {
     return `/${DATA_SEGUNDA_DIR}/${filename}`
   }
@@ -88,9 +92,15 @@ export default {
     const { data } = await requestWithTimestamp(url)
     return parseConteoPctByIdEleccion(data)
   },
-  /** Cuerpo JSON ONPE participación ciudadana (``tipoFiltro=total``) o snapshot local en prod. */
-  async getParticipacionCiudadanaTotales() {
-    const url = buildParticipacionCiudadanaTotalesUrl()
+  /** Cuerpo JSON participación ciudadana (snapshot local o ONPE en vivo si ``VITE_ONPE_LIVE_PARTICIPACION=1``). */
+  async getParticipacionCiudadanaTotales({ profile = 'primera' } = {}) {
+    const live = import.meta.env.VITE_ONPE_LIVE_PARTICIPACION === '1' && import.meta.env.DEV
+    const url =
+      profile === 'segunda'
+        ? getSegundaUrl('participacion_ciudadana_totales.json')
+        : live
+          ? buildParticipacionCiudadanaTotalesUrl({ profile })
+          : getPrimeraUrl('participacion_ciudadana_totales.json')
     const { data } = await requestWithTimestamp(url)
     return data
   },

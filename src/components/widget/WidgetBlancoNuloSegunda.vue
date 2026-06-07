@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="col-12 col-md-4 small mb-1 align-self-center text-center mt-2 mt-md-0">
-      <a class="btn btn-light text-dark small bold">Ver resultados</a>
+      <a href="https://ojo-publico.com/6202/resultados-presidenciales-elecciones-2026-onpe?ref=home" class="btn btn-light text-dark small bold">Ver resultados</a>
     </div>
   </div>
 </template>

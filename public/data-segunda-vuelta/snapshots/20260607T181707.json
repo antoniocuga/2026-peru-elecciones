@@ -1,0 +1,52 @@
+{
+  "id": "20260607T181707",
+  "captured_at": "2026-06-07T18:17:07-05:00",
+  "source": "nivel_01_snapshot",
+  "profile": "segunda",
+  "id_eleccion": "10",
+  "conteo": 0.02,
+  "hora": "07/06/2026 18:12 h",
+  "fingerprint": "7307e139901e9018",
+  "national": [
+    {
+      "partido_id": "blanco",
+      "candidato_id": "blanco",
+      "candidato": "Voto en blanco",
+      "partido": "",
+      "total": 0,
+      "validos": 0.0,
+      "conteo": 0.02,
+      "hora": "07/06/2026 18:12 h"
+    },
+    {
+      "partido_id": "fuerza-popular",
+      "candidato_id": "keiko-fujimori",
+      "candidato": "Keiko Fujimori",
+      "partido": "Fuerza Popular",
+      "total": 1779,
+      "validos": 45.67,
+      "conteo": 0.02,
+      "hora": "07/06/2026 18:12 h"
+    },
+    {
+      "partido_id": "juntos-por-el-peru",
+      "candidato_id": "roberto-sanchez",
+      "candidato": "Roberto Sánchez",
+      "partido": "Juntos por el Perú",
+      "total": 2116,
+      "validos": 54.33,
+      "conteo": 0.02,
+      "hora": "07/06/2026 18:12 h"
+    },
+    {
+      "partido_id": "nulo",
+      "candidato_id": "nulo",
+      "candidato": "Voto nulo",
+      "partido": "",
+      "total": 0,
+      "validos": 0.0,
+      "conteo": 0.02,
+      "hora": "07/06/2026 18:12 h"
+    }
+  ]
+}

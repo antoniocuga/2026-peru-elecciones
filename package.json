@@ -26,6 +26,7 @@
     "export:segunda": "cd ../crawler-onpe-2026 && npm run export:segunda",
     "export:segunda:sync": "cd ../crawler-onpe-2026 && npm run export:segunda:sync",
     "fetch:extranjero:segunda": "cd ../crawler-onpe-2026 && npm run fetch:extranjero:segunda",
+    "fetch:participacion:segunda": "cd ../crawler-onpe-2026 && npm run fetch:participacion:segunda",
     "paths:crawler": "cd ../crawler-onpe-2026 && npm run paths:show",
     "verify:snapshots": "cd ../crawler-onpe-2026 && npm run verify:snapshots",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix"
