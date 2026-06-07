@@ -1,9 +1,9 @@
 [
   {
-    "total_votos": 565,
-    "validos": 7.289,
+    "total_votos": 0,
+    "validos": 0,
     "total_actas": 0,
-    "conteo": 98.5,
+    "conteo": 0,
     "hora": "27/04/2026 18:00 h",
     "candidato_id": "roberto-sanchez",
     "candidato": "Roberto Sánchez",
@@ -21,10 +21,10 @@
     "distrito_id": "aguas verdes"
   },
   {
-    "total_votos": 3995,
-    "validos": 51.542,
+    "total_votos": 0,
+    "validos": 0,
     "total_actas": 0,
-    "conteo": 98.5,
+    "conteo": 0,
     "hora": "27/04/2026 18:00 h",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",

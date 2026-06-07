@@ -10,7 +10,7 @@
           </div>
         </div>
         <PresidencialTopTwoCards variant="home" :candidatos="displayTopCandidatos" />
-        <div class="col-12 col-md-8 p-0">
+        <div class="col-12 col-md-9 p-0">
           <WidgetBlancoNuloSegunda :datos="blancoNulo" />
         </div>
       </div>

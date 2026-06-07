@@ -5,7 +5,7 @@
         <div class="col-12">
           <div class="pb-1">
             <p class="small text-light mt-0 mb-0 text-center" style="font-size: 0.75rem; opacity: 0.9">
-              Conteo al {{ (Number(conteo)) }}%. Última actualización: {{ fechaHora }}
+              Conteo al {{ (Number(conteo) || 0) }}%. <span v-if="Number(conteo) > 0">Última actualización: {{ fechaHora }}</span>
             </p>
           </div>
         </div>
@@ -37,10 +37,10 @@ export default {
   setup() {
     const store = useCandidatosStore()
     const refs = storeToRefs(store)
-    return { ...refs, store, candidatos: refs.todos }
+    return { ...refs, store, candidatos: refs.todosSegunda }
   },
   mounted() {
-    this.store.getAllCandidatos()
+    this.store.getAllCandidatosSegunda()
   },
   computed: {
     conteo() {

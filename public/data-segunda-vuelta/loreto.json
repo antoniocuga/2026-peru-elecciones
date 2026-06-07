@@ -1,9 +1,9 @@
 [
   {
-    "total_votos": 4,
-    "validos": 2.778,
+    "total_votos": 0,
+    "validos": 0,
     "total_actas": 0,
-    "conteo": 98.5,
+    "conteo": 0,
     "hora": "27/04/2026 18:00 h",
     "candidato_id": "roberto-sanchez",
     "candidato": "Roberto Sánchez",
@@ -21,10 +21,10 @@
     "distrito_id": "yaguas"
   },
   {
-    "total_votos": 99,
-    "validos": 68.75,
+    "total_votos": 0,
+    "validos": 0,
     "total_actas": 0,
-    "conteo": 98.5,
+    "conteo": 0,
     "hora": "27/04/2026 18:00 h",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",

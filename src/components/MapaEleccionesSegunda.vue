@@ -10,6 +10,7 @@
       </div>
       <div class="col-12 col-sm-12 d-block d-md-none mapa-resultados-wrapper">
         <candidatosResultadosSegunda :candidatos="filteredData" />
+        <ContextoElectoralPanel :contexto="contextoElectoral" />
       </div>
     </div>
   </div>

@@ -2217,9 +2217,13 @@
     color: inherit !important;
   }
 
-  .ej2026-embed-card.card .ej2026-pres-card-body.ej2026-pres-card-body--reverse,
-  .ej2026-embed-card.card-candidate .ej2026-pres-card-body.ej2026-pres-card-body--reverse {
-    flex-direction: row-reverse !important;
+  /* Segunda vuelta: 2.ª tarjeta espejada solo en móvil (< sm / 576px) */
+  @media (min-width: 768.98px) {
+    .ej2026-embed-card.card .ej2026-pres-card-body.ej2026-pres-card-body--reverse,
+    .ej2026-embed-card.card-candidate .ej2026-pres-card-body.ej2026-pres-card-body--reverse {
+      flex-direction: row-reverse !important;
+      text-align: right !important;
+    }
   }
 
   .ej2026-embed-card .candidato-nombre:not(.ej2026-pres-line--placeholder) {
@@ -2498,4 +2502,13 @@ body > #tooltip.tooltip.tooltip-data {
     font-weight: var(--heading-2-dk-font-weight);
     line-height: var(--heading-2-dk-line-height);
     letter-spacing: 0;
+
+    @media screen and (max-width: 768px) {
+      font-family: var(--garamond);
+      font-size: 1.92em;
+      line-height: 30px;
+      margin-left: var(--side-padding);
+      font-weight: 600;
+      letter-spacing: .16px;
+    }
 }

@@ -1,9 +1,9 @@
 [
   {
-    "total_votos": 39,
-    "validos": 2.487,
+    "total_votos": 0,
+    "validos": 0,
     "total_actas": 0,
-    "conteo": 98.5,
+    "conteo": 0,
     "hora": "27/04/2026 18:00 h",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
@@ -21,10 +21,10 @@
     "distrito_id": "huayrapata"
   },
   {
-    "total_votos": 687,
-    "validos": 43.814,
+    "total_votos": 0,
+    "validos": 0,
     "total_actas": 0,
-    "conteo": 98.5,
+    "conteo": 0,
     "hora": "27/04/2026 18:00 h",
     "candidato_id": "roberto-sanchez",
     "candidato": "Roberto Sánchez",

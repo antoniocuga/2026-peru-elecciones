@@ -1,9 +1,9 @@
 [
   {
-    "total_votos": 124,
-    "validos": 6.54,
+    "total_votos": 0,
+    "validos": 0,
     "total_actas": 0,
-    "conteo": 98.5,
+    "conteo": 0,
     "hora": "27/04/2026 18:00 h",
     "candidato_id": "keiko-fujimori",
     "candidato": "Keiko Fujimori",
@@ -21,10 +21,10 @@
     "distrito_id": "yucay"
   },
   {
-    "total_votos": 180,
-    "validos": 9.494,
+    "total_votos": 0,
+    "validos": 0,
     "total_actas": 0,
-    "conteo": 98.5,
+    "conteo": 0,
     "hora": "27/04/2026 18:00 h",
     "candidato_id": "roberto-sanchez",
     "candidato": "Roberto Sánchez",

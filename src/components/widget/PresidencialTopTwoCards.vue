@@ -12,6 +12,7 @@
           <div
             class="card-body d-flex align-items-center justify-content-between p-2 ej2026-pres-card-body"
             :class="{ 'ej2026-pres-card-body--reverse': i === 1 }"
+       
           >
             <div
               v-if="isPresidentialPlaceholder(c)"
@@ -28,7 +29,7 @@
             />
             <div
               class="text-dark flex-grow-1 min-w-0 ej2026-pres-copy"
-              :class="i === 1 ? 'me-2 text-right' : 'ms-2 text-left'"
+              :class="i === 1 ? 'me-2 ' : 'ms-2 text-left'"
             >
               <p
                 class="p-0 candidato-nombre mb-1 ej2026-pres-line"
