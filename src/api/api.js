@@ -1,8 +1,8 @@
 /**
  * API client - returns Promises
  *
- * Primera vuelta 2026 JSON under data-primera-vuelta/ is built by crawler/2026
- * (export_frontend_data.py; optional live refresh per region during scrapy crawl).
+ * Primera vuelta JSON under data-primera-vuelta/ and segunda under data-segunda-vuelta/
+ * are built by ../crawler-onpe-2026 (export_frontend_data.py; live refresh during scrapy crawl).
  * Conteo titular parlamento: ``genera_elecciones.json`` (snapshot ONPE resumen-general/elecciones).
  * Participación / ausentismo nacional: ``participacion_ciudadana_totales.json`` (snapshot ONPE
  * participacion-ciudadana/totales?tipoFiltro=total); en dev también se puede pedir en vivo vía ``/onpe-backend``.

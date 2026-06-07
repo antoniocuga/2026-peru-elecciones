@@ -7,7 +7,7 @@
     </div>
 
     <div v-if="!rows.length" class="small text-muted">
-      No hay data de paises en extranjero_paises.json
+      Información no disponible
     </div>
 
     <svg
@@ -56,7 +56,7 @@
                     style="object-fit: contain;"
                   />
                 </th>
-                <th class="text-right">Otros</th>
+                <th v-if="showOtrosColumn" class="text-right">Otros</th>
               </tr>
             </thead>
             <tbody>
@@ -71,7 +71,7 @@
                 >
                   {{ formatVotes(partyVotesForRow(row, party.partido_id)) }}
                 </td>
-                <td class="text-right">{{ formatVotes(otherVotesForRow(row)) }}</td>
+                <td v-if="showOtrosColumn" class="text-right">{{ formatVotes(otherVotesForRow(row)) }}</td>
               </tr>
             </tbody>
           </table>
@@ -88,6 +88,19 @@ import worldData from '../data/mapas/world.json'
 import { clampTooltipToViewport, TOOLTIP_INFORMACION_NO_DISPONIBLE } from '../utils/congresoTooltip'
 import { getPartidoImage as getPartidoImageSrc, getCandidatoImage } from '../utils/assets'
 
+const ESPECIAL_CANDIDATO_IDS = new Set(['blanco', 'nulo', 'nulos', ''])
+const SEGUNDA_PARTY_DEFAULTS = [
+  { partido_id: 'fuerza-popular', partido: 'Fuerza Popular', color: '#fd6600' },
+  { partido_id: 'juntos-por-el-peru', partido: 'Juntos por el Perú', color: '#20a73c' },
+]
+const PRIMERA_PARTY_ALIASES = [
+  ['Fuerza Popular'],
+  ['Juntos Por el Peru', 'Juntos Por el Perú'],
+  ['Renovacion Popular', 'Renovación Popular'],
+  ['Partido del Buen Gobierno'],
+  ['Partido Obras', 'Partido Civico Obras', 'Partido Cívico Obras'],
+]
+
 export default {
   name: 'ExtranjeroCartogram',
   props: {
@@ -97,6 +110,8 @@ export default {
     loading: { type: Boolean, default: false },
     candidateRows: { type: Array, default: () => [] },
     tooltipId: { type: String, default: '#tooltip_primera' },
+    /** ``primera`` (5 columnas) | ``segunda`` (2 candidatos presidenciales) */
+    partyPreset: { type: String, default: 'primera' },
   },
   watch: {
     rows: {
@@ -107,42 +122,21 @@ export default {
     },
   },
   computed: {
+    showOtrosColumn() {
+      return this.partyPreset !== 'segunda'
+    },
     topPartyColumns() {
-      const targetParties = [
-        ['Fuerza Popular'],
-        ['Juntos Por el Peru', 'Juntos Por el Perú'],
-        ['Renovacion Popular', 'Renovación Popular'],
-        ['Partido del Buen Gobierno'],
-        ['Partido Obras', 'Partido Civico Obras', 'Partido Cívico Obras'],
-      ]
-      const rows = Array.isArray(this.rows) ? this.rows : []
-      const totals = new Map()
-      rows.forEach((row) => {
-        const details = Array.isArray(row?.details) ? row.details : []
-        details.forEach((d) => {
-          const id = String(d?.partido_id || '').trim()
-          const name = String(d?.partido || '').trim() || 'Sin partido'
-          const votos = Number(d?.votos || 0) || 0
-          const key = this.normalizeName(name)
-          if (!totals.has(key)) totals.set(key, { partido_id: id, partido: name, votos: 0 })
-          const current = totals.get(key)
-          current.votos += votos
-          if (!current.partido_id && id) current.partido_id = id
-          if (!current.partido && name) current.partido = name
-        })
-      })
-      return targetParties
-        .map((aliases) => {
-          for (const alias of aliases) {
-            const match = totals.get(this.normalizeName(alias))
-            if (match) return match
-          }
-          return {
-            partido_id: '',
-            partido: aliases[0],
-            votos: 0,
-          }
-        })
+      const fromCandidates = this.partyColumnsFromCandidateRows()
+      if (fromCandidates.length) return fromCandidates
+
+      const fromDetails = this.partyColumnsFromDetails()
+      if (fromDetails.length) return fromDetails
+
+      if (this.partyPreset === 'segunda') {
+        return SEGUNDA_PARTY_DEFAULTS.map((p) => ({ ...p, votos: 0 }))
+      }
+
+      return this.partyColumnsFromPrimeraAliases()
     },
     continentGroups() {
       const rows = Array.isArray(this.rows) ? this.rows : []
@@ -166,6 +160,79 @@ export default {
     this.$nextTick(() => this.renderWorldMap())
   },
   methods: {
+    partyColumnsFromCandidateRows() {
+      const rows = Array.isArray(this.candidateRows) ? this.candidateRows : []
+      const seen = new Set()
+      const out = []
+      for (const row of rows) {
+        const cid = String(row?.candidato_id || '').toLowerCase()
+        const pid = String(row?.partido_id || '').trim()
+        if (!pid || ESPECIAL_CANDIDATO_IDS.has(cid) || seen.has(pid)) continue
+        seen.add(pid)
+        out.push({
+          partido_id: pid,
+          partido: String(row?.partido || '').trim() || pid,
+          color: row?.color || '',
+          votos: Number(row?.total_votos || row?.total || 0) || 0,
+          sortKey: Number(row?.validos || 0) || 0,
+        })
+      }
+      return out.sort((a, b) => b.sortKey - a.sortKey || b.votos - a.votos)
+    },
+    partyColumnsFromDetails() {
+      const totals = new Map()
+      const rows = Array.isArray(this.rows) ? this.rows : []
+      rows.forEach((row) => {
+        const details = Array.isArray(row?.details) ? row.details : []
+        details.forEach((d) => {
+          const id = String(d?.partido_id || '').trim()
+          const name = String(d?.partido || '').trim() || 'Sin partido'
+          const key = id || this.normalizeName(name)
+          if (!key) return
+          const votos = Number(d?.votos || 0) || 0
+          if (!totals.has(key)) {
+            totals.set(key, { partido_id: id, partido: name, color: d?.color || '', votos: 0 })
+          }
+          const current = totals.get(key)
+          current.votos += votos
+          if (!current.partido_id && id) current.partido_id = id
+          if (!current.partido && name) current.partido = name
+          if (!current.color && d?.color) current.color = d.color
+        })
+      })
+      return [...totals.values()].sort((a, b) => b.votos - a.votos)
+    },
+    partyColumnsFromPrimeraAliases() {
+      const totals = new Map()
+      const rows = Array.isArray(this.rows) ? this.rows : []
+      rows.forEach((row) => {
+        const details = Array.isArray(row?.details) ? row.details : []
+        details.forEach((d) => {
+          const id = String(d?.partido_id || '').trim()
+          const name = String(d?.partido || '').trim() || 'Sin partido'
+          const votos = Number(d?.votos || 0) || 0
+          const key = this.normalizeName(name)
+          if (!totals.has(key)) totals.set(key, { partido_id: id, partido: name, votos: 0 })
+          const current = totals.get(key)
+          current.votos += votos
+          if (!current.partido_id && id) current.partido_id = id
+          if (!current.partido && name) current.partido = name
+        })
+      })
+      return PRIMERA_PARTY_ALIASES.map((aliases) => {
+        for (const alias of aliases) {
+          const match = totals.get(this.normalizeName(alias))
+          if (match) return match
+        }
+        return { partido_id: '', partido: aliases[0], votos: 0 }
+      })
+    },
+    rowHasVotes(row) {
+      const total = Number(row?.totalValidos || row?.totalVotes || row?.total_votos || 0) || 0
+      if (total > 0) return true
+      const details = Array.isArray(row?.details) ? row.details : []
+      return details.some((d) => Number(d?.votos || 0) > 0)
+    },
     getPartidoImage(id) {
       return getPartidoImageSrc(id)
     },
@@ -353,13 +420,22 @@ export default {
     },
     topDetail(countryRow) {
       const details = Array.isArray(countryRow?.details) ? countryRow.details : []
-      if (details.length) return details[0]
+      if (details.length) {
+        const sorted = [...details].sort(
+          (a, b) => (Number(b?.votos || 0) || 0) - (Number(a?.votos || 0) || 0),
+        )
+        const top = sorted[0]
+        if (Number(top?.votos || 0) > 0) return top
+        return null
+      }
       if (countryRow?.winner && typeof countryRow.winner === 'object') {
+        const votos = Number(countryRow.winner.votos || 0) || 0
+        if (votos <= 0) return null
         return {
           partido: countryRow.winner.partido || 'Sin data',
           partido_id: countryRow.winner.partido_id || '',
           color: countryRow.winner.color || '#e3e3e3',
-          votos: Number(countryRow.winner.votos || 0) || 0,
+          votos,
           porcentaje_valido: Number(countryRow.winner.porcentaje_valido || 0) || 0,
         }
       }
@@ -434,6 +510,9 @@ export default {
       return String(leader?.partido_id || '')
     },
     leadingPartyCellStyle(row, partidoId) {
+      if (!this.rowHasVotes(row)) return ''
+      const votes = this.partyVotesForRow(row, partidoId)
+      if (votes <= 0) return ''
       const leadingId = this.leadingPartyIdForRow(row)
       if (!leadingId || String(partidoId || '') !== leadingId) return ''
       const details = Array.isArray(row?.details) ? row.details : []
@@ -547,12 +626,10 @@ export default {
       `
     },
     leaderColor(countryRow) {
+      if (!this.rowHasVotes(countryRow)) return '#e3e3e3'
       const leader = this.topDetail(countryRow)
-      if (leader?.color) return leader.color
-      const hasVotes = Number(countryRow?.totalValidos || countryRow?.totalVotes || 0) > 0
-      // Keep countries with valid votes visible even when ONPE details are empty.
-      if (hasVotes) return '#333'
-      return '#e3e3e3'
+      if (leader?.color && Number(leader.votos || 0) > 0) return leader.color
+      return '#333'
     },
     getWorldGeoJson() {
       const worldRaw = getMapaData('world') || worldData

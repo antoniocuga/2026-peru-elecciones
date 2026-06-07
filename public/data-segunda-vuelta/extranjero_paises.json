@@ -1,33 +1,7 @@
 {
-  "countries": [
-    {
-      "country": "Argentina",
-      "totalValidos": 0,
-      "actasContabilizadas": 0,
-      "winner": {
-        "partido": "Juntos por el Perú",
-        "partido_id": "juntos-por-el-peru",
-        "color": "#20a73c",
-        "votos": 0
-      },
-      "details": [],
-      "continent": "América",
-      "polygon": []
-    },
-    {
-      "country": "España",
-      "totalValidos": 0,
-      "actasContabilizadas": 0,
-      "winner": {
-        "partido": "Fuerza Popular",
-        "partido_id": "fuerza-popular",
-        "color": "#fd6600",
-        "votos": 0
-      },
-      "details": [],
-      "continent": "Europa",
-      "polygon": []
-    }
-  ],
+  "updated_at": "2026-04-27T00:00:00+00:00",
+  "source": "onpe-segunda-vuelta",
+  "idEleccion": "11",
+  "countries": [],
   "layout": null
 }

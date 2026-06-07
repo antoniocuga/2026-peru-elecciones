@@ -106,7 +106,8 @@
           :layout="extranjeroLayout"
           :summary="extranjeroSummary"
           :loading="extranjeroLoading"
-          :candidate-rows="candidatos"
+          :candidate-rows="extranjeroCandidateRows"
+          party-preset="segunda"
           :tooltip-id="_tooltipId"
         />
       </div>
@@ -168,6 +169,19 @@
           ? this.candidatos.filter((r) => String(r.region || '').toLowerCase() === 'extranjero')
           : []
         return rows
+      },
+      extranjeroCandidateRows() {
+        const special = new Set(['blanco', 'nulo', 'nulos', ''])
+        const fromExtranjero = this.extranjeroRows.filter(
+          (r) => r.candidato_id && !special.has(String(r.candidato_id).toLowerCase()),
+        )
+        if (fromExtranjero.length) return fromExtranjero
+        return (Array.isArray(this.candidatos) ? this.candidatos : []).filter(
+          (r) =>
+            String(r.region || '').toLowerCase() === 'total'
+            && r.candidato_id
+            && !special.has(String(r.candidato_id).toLowerCase()),
+        )
       },
       extranjeroSummary() {
         const fromCountries = Array.isArray(this.extranjeroCountryRows) && this.extranjeroCountryRows.length
