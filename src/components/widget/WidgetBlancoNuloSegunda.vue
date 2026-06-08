@@ -1,27 +1,38 @@
 <template>
   <div class="widget-blanco-nulo row justify-content-center p-3 mt-1">
-    <div class="col-6 col-md-2 p-0 small mb-1 align-self-center text-center">
+    <div class="col-6 col-md-2 p-0 small mb-1 text-center">
       <span>Votos emitidos</span>
-      <div>
-        <span class="large">{{ formatVotos(datos.emitidos?.votos) }}</span>
-      </div>
+      <div class="large">{{ formatVotos(datos.emitidos?.votos) }}</div>
+      <div></div>
     </div>
     <div class="col-6 col-md-2 small p-0 mb-1 align-self-center text-center">
       <span>Válidos</span>
-      <div>
-        <span class="large">{{ formatValidosLine() }}</span>
+      <div class="large">
+        <template v-if="datos.validos">
+          <div v-if="datos.validos.votos != null">{{ formatVotos(datos.validos.votos) }}</div>
+          <div v-if="datos.validos.pct != null" class="widget-votos-pct">{{ formatPct(datos.validos.pct) }}</div>
+        </template>
+        <div v-else>—</div>
       </div>
     </div>
     <div class="col-6 col-md-2 small p-0 mb-1 align-self-center text-center">
       <span>En blanco</span>
-      <div>
-        <span class="large">{{ formatBlancoNuloLine(datos.blanco) }}</span>
+      <div class="large">
+        <template v-if="datos.blanco">
+          <div v-if="datos.blanco.votos != null">{{ formatVotos(datos.blanco.votos) }}</div>
+          <div v-if="datos.blanco.pct != null" class="widget-votos-pct">{{ formatPct(datos.blanco.pct) }}</div>
+        </template>
+        <div v-else>—</div>
       </div>
     </div>
     <div class="col-6 col-md-2 small p-0 mb-1 align-self-center text-center">
       <span>Nulos</span>
-      <div>
-        <span class="large">{{ formatBlancoNuloLine(datos.nulo) }}</span>
+      <div class="large">
+        <template v-if="datos.nulo">
+          <div v-if="datos.nulo.votos != null">{{ formatVotos(datos.nulo.votos) }}</div>
+          <div v-if="datos.nulo.pct != null" class="widget-votos-pct">{{ formatPct(datos.nulo.pct) }}</div>
+        </template>
+        <div v-else>—</div>
       </div>
     </div>
     <div class="col-12 col-md-4 small mb-1 align-self-center text-center mt-2 mt-md-0">
@@ -31,7 +42,7 @@
 </template>
 
 <script>
-import { formatVotos, formatVotosConPct } from '../../utils/formatText'
+import { formatValidosPct, formatVotos } from '../../utils/formatText'
 
 export default {
   name: 'WidgetBlancoNuloSegunda',
@@ -43,14 +54,8 @@ export default {
   },
   methods: {
     formatVotos,
-    formatValidosLine() {
-      const v = this.datos.validos
-      if (!v) return '—'
-      return formatVotosConPct(v.votos, v.pct)
-    },
-    formatBlancoNuloLine(entry) {
-      if (!entry) return '—'
-      return formatVotosConPct(entry.votos, entry.pct)
+    formatPct(value) {
+      return formatValidosPct(value)
     },
   },
 }
@@ -70,8 +75,14 @@ export default {
 }
 
 .widget-blanco-nulo .large {
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
   color: #fff;
+}
+
+.widget-blanco-nulo .widget-votos-pct {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.95;
 }
 </style>

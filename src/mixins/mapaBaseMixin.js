@@ -156,7 +156,11 @@ export const mapaBaseMixin = {
       return orderBy(rows, [(p) => String(p.partido || '').toLocaleLowerCase('es')], ['asc'])
     },
     distritos_parse() {
-      let filtered = this.distritos
+      let filtered = this.distritos.filter(
+        (d) =>
+          String(d.distrito || '').trim().toLowerCase() !== 'total' &&
+          String(d.ubigeo_inei || d.ubigeo || '').replace(/\D/g, '').padStart(6, '0') !== '000000'
+      )
       const rNorm = this.normalizeRegionId(this.regionSeleccionada.region)
 
       if (this.partidoSeleccionado.partido_id !== 'TODOS' && this.regionSeleccionada.region === 'NACIONAL') {
@@ -569,7 +573,11 @@ export const mapaBaseMixin = {
       if (!objectKey) return
 
       const _raw = this.store[this._rawDistritosKey]
-      const rawDistritos = Array.isArray(_raw) ? _raw : []
+      const rawDistritos = (Array.isArray(_raw) ? _raw : []).filter(
+        (d) =>
+          String(d.distrito || '').trim().toLowerCase() !== 'total' &&
+          String(d.ubigeo_inei || d.ubigeo || '').replace(/\D/g, '').padStart(6, '0') !== '000000'
+      )
       let parsed = this.distritos_parse
 
       if (!parsed.length && rawDistritos.length) {
@@ -599,6 +607,37 @@ export const mapaBaseMixin = {
         }), ['departamento'])
       }
 
+      const rNorm = this.normalizeRegionId(this.regionSeleccionada.region)
+      const _rawAll = Array.isArray(_raw) ? _raw : []
+      const features_distrito = feature(geo, geo.objects[objectKey])
+
+      if (!parsed.length && features_distrito?.features?.length) {
+        const totalRows = _rawAll.filter((d) =>
+          this.normalizeRegionId(d.departamento_id || d.region) === rNorm &&
+          String(d.distrito || '').trim().toLowerCase() === 'total'
+        )
+        if (totalRows.length) {
+          const winner = maxBy(totalRows, 'validos')
+          const depConteo = maxConteo(totalRows)
+          parsed = features_distrito.features.map((f) => {
+            const ubigeoNorm = this.normalizeUbigeo(f.properties.IDDIST ?? f.properties.ubigeo ?? '')
+            return {
+              ubigeo_inei: ubigeoNorm,
+              ubigeo: ubigeoNorm,
+              region: this.regionSeleccionada.region,
+              distrito: f.properties.NOMBDIST || f.properties.NOMBRE || '',
+              departamento: this.regionSeleccionada.departamento,
+              conteo: depConteo,
+              validos: winner?.validos,
+              total: sumBy(totalRows, (d) => Number(d.total_votos || 0)),
+              candidatos: orderBy(totalRows, ['validos'], ['desc']),
+              winner,
+              _deptTotalFallback: true,
+            }
+          })
+        }
+      }
+
       if (!parsed.length) return
 
       const matchDep = (idDist) => {
@@ -625,9 +664,6 @@ export const mapaBaseMixin = {
           }
         }
       }
-
-      const features_distrito = feature(geo, geo.objects[objectKey])
-      if (!features_distrito || !Array.isArray(features_distrito.features)) return
 
       const zoomedProjection = geoMercator()
         .translate(this.center_device)

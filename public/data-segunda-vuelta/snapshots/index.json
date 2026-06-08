@@ -152,9 +152,72 @@
       "hora": "07/06/2026 20:12 h",
       "fingerprint": "eba358e78a1c3089",
       "source": "nivel_01_snapshot"
+    },
+    {
+      "id": "20260607T224208",
+      "file": "20260607T224208.json",
+      "captured_at": "2026-06-07T22:42:08-05:00",
+      "conteo": 61.35,
+      "hora": "07/06/2026 22:36 h",
+      "fingerprint": "e27f6e3f0d06d2b3",
+      "source": "nivel_01_snapshot"
+    },
+    {
+      "id": "20260607T225440",
+      "file": "20260607T225440.json",
+      "captured_at": "2026-06-07T22:54:40-05:00",
+      "conteo": 63.86,
+      "hora": "07/06/2026 22:52 h",
+      "fingerprint": "513fc1df3d4b5ad7",
+      "source": "nivel_01_live"
+    },
+    {
+      "id": "20260607T230159",
+      "file": "20260607T230159.json",
+      "captured_at": "2026-06-07T23:01:59-05:00",
+      "conteo": 64.67,
+      "hora": "07/06/2026 22:56 h",
+      "fingerprint": "ea48aec0e77f8e89",
+      "source": "nivel_01_live"
+    },
+    {
+      "id": "20260607T230456",
+      "file": "20260607T230456.json",
+      "captured_at": "2026-06-07T23:04:56-05:00",
+      "conteo": 65.43,
+      "hora": "07/06/2026 23:02 h",
+      "fingerprint": "235705ad4944ec52",
+      "source": "live_export"
+    },
+    {
+      "id": "20260607T231049",
+      "file": "20260607T231049.json",
+      "captured_at": "2026-06-07T23:10:49-05:00",
+      "conteo": 66.14,
+      "hora": "07/06/2026 23:06 h",
+      "fingerprint": "6c28d349251b9433",
+      "source": "nivel_01_live"
+    },
+    {
+      "id": "20260607T231629",
+      "file": "20260607T231629.json",
+      "captured_at": "2026-06-07T23:16:29-05:00",
+      "conteo": 66.83,
+      "hora": "07/06/2026 23:12 h",
+      "fingerprint": "4b2ca681119d1fcd",
+      "source": "live_export"
+    },
+    {
+      "id": "20260607T231853",
+      "file": "20260607T231853.json",
+      "captured_at": "2026-06-07T23:18:53-05:00",
+      "conteo": 67.6,
+      "hora": "07/06/2026 23:16 h",
+      "fingerprint": "18ac4ce0a43e47aa",
+      "source": "nivel_01_live"
     }
   ],
   "profile": "segunda",
   "id_eleccion": "10",
-  "updated_at": "2026-06-07T20:17:07-05:00"
+  "updated_at": "2026-06-07T23:18:53-05:00"
 }
