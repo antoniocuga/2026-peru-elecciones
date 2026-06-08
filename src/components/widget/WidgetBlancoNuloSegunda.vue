@@ -9,19 +9,19 @@
     <div class="col-6 col-md-2 small p-0 mb-1 align-self-center text-center">
       <span>Válidos</span>
       <div>
-        <span class="large">{{ formatPct(datos.validos?.pct) }}</span>
+        <span class="large">{{ formatValidosLine() }}</span>
       </div>
     </div>
     <div class="col-6 col-md-2 small p-0 mb-1 align-self-center text-center">
       <span>En blanco</span>
       <div>
-        <span class="large">{{ formatPct(datos.blanco?.pct) }}</span>
+        <span class="large">{{ formatBlancoNuloLine(datos.blanco) }}</span>
       </div>
     </div>
     <div class="col-6 col-md-2 small p-0 mb-1 align-self-center text-center">
       <span>Nulos</span>
       <div>
-        <span class="large">{{ formatPct(datos.nulo?.pct) }}</span>
+        <span class="large">{{ formatBlancoNuloLine(datos.nulo) }}</span>
       </div>
     </div>
     <div class="col-12 col-md-4 small mb-1 align-self-center text-center mt-2 mt-md-0">
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import { formatValidosPct } from '../../utils/formatText'
+import { formatVotos, formatVotosConPct } from '../../utils/formatText'
 
 export default {
   name: 'WidgetBlancoNuloSegunda',
@@ -42,12 +42,15 @@ export default {
     },
   },
   methods: {
-    formatPct(value) {
-      return formatValidosPct(value)
+    formatVotos,
+    formatValidosLine() {
+      const v = this.datos.validos
+      if (!v) return '—'
+      return formatVotosConPct(v.votos, v.pct)
     },
-    formatVotos(value) {
-      if (value == null) return '—'
-      return new Intl.NumberFormat('es-PE').format(value)
+    formatBlancoNuloLine(entry) {
+      if (!entry) return '—'
+      return formatVotosConPct(entry.votos, entry.pct)
     },
   },
 }

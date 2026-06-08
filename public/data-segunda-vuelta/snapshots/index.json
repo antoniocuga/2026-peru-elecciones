@@ -134,9 +134,27 @@
       "hora": "07/06/2026 19:50 h",
       "fingerprint": "cebd7cae7f673ad7",
       "source": "nivel_01_snapshot"
+    },
+    {
+      "id": "20260607T201242",
+      "file": "20260607T201242.json",
+      "captured_at": "2026-06-07T20:12:42-05:00",
+      "conteo": 0.0,
+      "hora": "07/06/2026 21:12 h",
+      "fingerprint": "8714de32b5f4dd4b",
+      "source": "export"
+    },
+    {
+      "id": "20260607T201707",
+      "file": "20260607T201707.json",
+      "captured_at": "2026-06-07T20:17:07-05:00",
+      "conteo": 21.14,
+      "hora": "07/06/2026 20:12 h",
+      "fingerprint": "eba358e78a1c3089",
+      "source": "nivel_01_snapshot"
     }
   ],
   "profile": "segunda",
   "id_eleccion": "10",
-  "updated_at": "2026-06-07T20:04:04-05:00"
+  "updated_at": "2026-06-07T20:17:07-05:00"
 }

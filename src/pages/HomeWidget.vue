@@ -44,6 +44,7 @@ export default {
   },
   mounted() {
     this.store.getAllCandidatosSegunda()
+    this.store.ensureParticipacionCiudadanaTotales('segunda')
   },
   computed: {
     conteo() {
@@ -59,7 +60,7 @@ export default {
       return displayTopCandidatosWithPlaceholders(this.topCandidatos)
     },
     blancoNulo() {
-      return computeBlancoNuloSegunda(this.candidatos)
+      return computeBlancoNuloSegunda(this.candidatos, this.participacionCiudadanaSegunda)
     },
   },
 }

@@ -24,30 +24,75 @@ function mapEspecial(row) {
   }
 }
 
-export function computeBlancoNuloSegunda(candidatos) {
+function roundPct3(n) {
+  return Math.round(Number(n) * 1000) / 1000
+}
+
+/**
+ * Suma emitidos / válidos desde filas de una región (no requiere ``region: total``).
+ */
+export function computeEmitidosValidosFromRows(rows) {
+  const list = Array.isArray(rows) ? rows : []
+  let emitidos = 0
+  let validos = 0
+  for (const row of list) {
+    const v = Number(row.total) || 0
+    emitidos += v
+    if (!isEspecialRow(row)) {
+      validos += v
+    }
+  }
+  let validosPct = null
+  if (emitidos > 0) {
+    validosPct = roundPct3((validos / emitidos) * 100)
+  }
+  return {
+    emitidos: emitidos > 0 ? emitidos : null,
+    validosVotos: validos > 0 ? validos : null,
+    validosPct,
+  }
+}
+
+/**
+ * @param {Array} candidatos - filas ``resultados_total`` (incl. ``region: total``)
+ * @param {object|null} [onpeParticipacion] - parseParticipacionCiudadanaTotales
+ */
+export function computeBlancoNuloSegunda(candidatos, onpeParticipacion = null) {
   const rows = nacionalTotalRows(candidatos)
   const blanco = mapEspecial(findRow(rows, ['blanco']))
   const nulo = mapEspecial(findRow(rows, ['nulo', 'nulos']))
 
-  let emitidosVotos = 0
-  let validosVotos = 0
+  let emitidosFromRows = 0
+  let validosFromRows = 0
   for (const row of rows) {
     const v = Number(row.total) || 0
-    emitidosVotos += v
+    emitidosFromRows += v
     if (!isEspecialRow(row)) {
-      validosVotos += v
+      validosFromRows += v
     }
   }
 
+  const emitidosVotos =
+    onpeParticipacion?.emitidos != null && onpeParticipacion.emitidos > 0
+      ? onpeParticipacion.emitidos
+      : emitidosFromRows
+
+  const validosVotos =
+    onpeParticipacion?.totalVotosValidos != null && onpeParticipacion.totalVotosValidos >= 0
+      ? onpeParticipacion.totalVotosValidos
+      : validosFromRows
+
   let validosPct = null
-  if (blanco?.pct != null && nulo?.pct != null) {
-    validosPct = Math.max(0, 100 - blanco.pct - nulo.pct)
-  } else if (emitidosVotos > 0) {
-    validosPct = (validosVotos / emitidosVotos) * 100
+  if (onpeParticipacion?.validos != null) {
+    validosPct = onpeParticipacion.validos
+  } else if (blanco?.pct != null && nulo?.pct != null) {
+    validosPct = roundPct3(Math.max(0, 100 - blanco.pct - nulo.pct))
+  } else if (emitidosVotos > 0 && validosVotos >= 0) {
+    validosPct = roundPct3((validosVotos / emitidosVotos) * 100)
   }
 
   const blancoNulo =
-    blanco?.pct != null && nulo?.pct != null ? blanco.pct + nulo.pct : null
+    blanco?.pct != null && nulo?.pct != null ? roundPct3(blanco.pct + nulo.pct) : null
   const conteo = rows.reduce((m, r) => Math.max(m, Number(r.conteo) || 0), 0)
   const hora = rows.find((r) => r.hora)?.hora || ''
 

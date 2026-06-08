@@ -25,6 +25,7 @@ import candidatosResultadosSegunda from './candidatosResultadosSegunda.vue'
 import MapaDepartamentosSegunda from './MapaDepartamentosSegunda.vue'
 import ContextoElectoralPanel from './ContextoElectoralPanel.vue'
 import { mergeContextoParticipacionCiudadana } from '../utils/onpeParticipacionCiudadana.js'
+import { computeBlancoNuloSegunda, computeEmitidosValidosFromRows } from '../utils/segundaVotosEspeciales.js'
 import { filter } from 'lodash'
 
 export default {
@@ -82,15 +83,30 @@ export default {
     },
     contextoElectoral() {
       const rows = this.contextoRows
+      const isNacional = this.regionSeleccionadaSegunda.region === 'NACIONAL'
       const byCandidate = (ids) =>
         rows.find((r) => ids.includes(String(r.candidato_id || '').toLowerCase()))
 
-      const blancoRow = byCandidate(['blanco'])
-      const nuloRow = byCandidate(['nulo', 'nulos'])
+      const bn = computeBlancoNuloSegunda(
+        isNacional ? this.todosSegunda : [],
+        isNacional ? this.participacionCiudadanaSegunda : null,
+      )
 
-      const blanco = this.toNumber(blancoRow?.validos)
-      const nulo = this.toNumber(nuloRow?.validos)
+      let blanco = bn.blanco?.pct ?? null
+      let nulo = bn.nulo?.pct ?? null
+      let blancoVotos = bn.blanco?.votos ?? null
+      let nuloVotos = bn.nulo?.votos ?? null
+      if (!isNacional) {
+        blanco = this.toNumber(byCandidate(['blanco'])?.validos)
+        nulo = this.toNumber(byCandidate(['nulo', 'nulos'])?.validos)
+        blancoVotos = this.toNumber(byCandidate(['blanco'])?.total)
+        nuloVotos = this.toNumber(byCandidate(['nulo', 'nulos'])?.total)
+      }
       const blancoNulo = blanco != null && nulo != null ? blanco + nulo : null
+
+      const bnEmitValid = isNacional
+        ? bn
+        : computeEmitidosValidosFromRows(rows)
 
       const actasContabilizadas = rows.reduce((max, row) => {
         const v = this.toNumber(row?.actasContabilizadas ?? row?.conteo)
@@ -98,20 +114,26 @@ export default {
         return max == null ? v : Math.max(max, v)
       }, null)
 
-      const emitidosFromRows = rows.reduce((acc, row) => {
-        const v = this.toNumber(row?.emitidos ?? row?.total_votos ?? row?.votos ?? row?.total)
-        return v == null ? acc : acc + v
-      }, 0)
-      const emitidos = emitidosFromRows > 0 ? emitidosFromRows : null
+      const emitidos = isNacional
+        ? bnEmitValid.emitidos?.votos ?? null
+        : bnEmitValid.emitidos
 
       const base = {
         participacion: null,
         ausentismo: null,
         blanco,
         nulo,
+        blancoVotos,
+        nuloVotos,
         blancoNulo,
         actasContabilizadas,
         emitidos,
+        validos: isNacional
+          ? bnEmitValid.validos?.pct ?? null
+          : bnEmitValid.validosPct,
+        validosVotos: isNacional
+          ? bnEmitValid.validos?.votos ?? null
+          : bnEmitValid.validosVotos,
         habiles: null,
       }
       return mergeContextoParticipacionCiudadana(base, this.participacionCiudadanaSegunda)

@@ -5,7 +5,7 @@
 
       <div class="d-flex justify-content-between">
         <span>Electores hábiles</span>
-        <span style="font-size:14px;font-weight: 600;">{{ formatNumber(contexto.habiles) }}</span>
+        <span style="font-size:14px;font-weight: 600;">{{ formatVotos(contexto.habiles) }}</span>
       </div>
 
       <div class="d-flex justify-content-between border-top pt-2">
@@ -23,30 +23,30 @@
       <div class="font-weight-bold mb-2">Cantidad de votos</div>
 
       <div class="d-flex justify-content-between border-top pt-2">
-        <span>Total votos emitidos</span>
-        <span style="font-size:14px;font-weight: 600;">{{ formatNumber(contexto.emitidos) }}</span>
+        <span>Votos emitidos</span>
+        <span style="font-size:14px;font-weight: 600;">{{ formatVotos(contexto.emitidos) }}</span>
       </div>
 
       <div class="d-flex justify-content-between border-top pt-2">
         <span>Votos válidos</span>
-        <span style="font-size:14px;font-weight: 600;">{{ formatPct(validosPct) }}</span>
+        <span style="font-size:14px;font-weight: 600;">{{ formatValidosLine() }}</span>
       </div>
 
       <div class="d-flex justify-content-between border-top pt-2">
         <span>Votos en blanco</span>
-        <span style="font-size:14px;font-weight: 600;">{{ formatPct(contexto.blanco) }}</span>
+        <span style="font-size:14px;font-weight: 600;">{{ formatBlancoNuloLine(contexto.blancoVotos, contexto.blanco) }}</span>
       </div>
 
       <div class="d-flex justify-content-between border-top pt-2">
         <span>Votos nulos</span>
-        <span style="font-size:14px;font-weight: 600;">{{ formatPct(contexto.nulo) }}</span>
+        <span style="font-size:14px;font-weight: 600;">{{ formatBlancoNuloLine(contexto.nuloVotos, contexto.nulo) }}</span>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { formatValidosPct } from '../utils/formatText'
+import { formatValidosPct, formatVotos, formatVotosConPct } from '../utils/formatText'
 
 export default {
   name: 'ContextoElectoralPanel',
@@ -59,18 +59,24 @@ export default {
   computed: {
     validosPct() {
       if (this.contexto.validos != null) return this.contexto.validos
-      const { blanco, nulo } = this.contexto
+      const { blanco, nulo, validosVotos, emitidos } = this.contexto
+      if (validosVotos != null && emitidos > 0) {
+        return Math.round((validosVotos / emitidos) * 100000) / 1000
+      }
       if (blanco == null || nulo == null) return null
-      return Math.max(0, 100 - blanco - nulo)
+      return Math.max(0, Math.round((100 - blanco - nulo) * 1000) / 1000)
     },
   },
   methods: {
+    formatVotos,
     formatPct(value) {
       return formatValidosPct(value)
     },
-    formatNumber(value) {
-      if (value == null) return '—'
-      return new Intl.NumberFormat('es-PE').format(Math.round(Number(value)))
+    formatValidosLine() {
+      return formatVotosConPct(this.contexto.validosVotos, this.validosPct)
+    },
+    formatBlancoNuloLine(votos, pct) {
+      return formatVotosConPct(votos, pct)
     },
   },
 }

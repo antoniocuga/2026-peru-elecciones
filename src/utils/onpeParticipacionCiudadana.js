@@ -48,7 +48,7 @@ export function parseParticipacionCiudadanaTotales(payload) {
 
   let validos = toNumber(d.porcentajeVotosValidos ?? d.porcentaje_votos_validos)
   if (emitidos != null && emitidos > 0 && totalVotosValidos != null) {
-    const computed = Math.round((totalVotosValidos / emitidos) * 10000) / 100
+    const computed = Math.round((totalVotosValidos / emitidos) * 100000) / 1000
     if (validos == null || validos >= 99.99) {
       validos = computed
     }
@@ -81,6 +81,7 @@ export function mergeContextoParticipacionCiudadana(contextoFromRows, onpe) {
     ...(onpe.emitidos != null ? { emitidos: onpe.emitidos } : {}),
     ...(onpe.habiles != null ? { habiles: onpe.habiles } : {}),
     ...(onpe.validos != null ? { validos: onpe.validos } : {}),
+    ...(onpe.totalVotosValidos != null ? { validosVotos: onpe.totalVotosValidos } : {}),
     ...(onpe.actasContabilizadas != null ? { actasContabilizadas: onpe.actasContabilizadas } : {}),
   }
 }
