@@ -223,7 +223,7 @@
         return res.json()
       },
       async ensureExtranjeroCountryResults() {
-        if (this._extranjeroCountryResultsLoaded || this.extranjeroLoading) return
+        if (this.extranjeroLoading) return
         this.extranjeroLoading = true
         try {
           const payload = await this.fetchJson(this.getExtranjeroCountriesFileUrl())
@@ -248,10 +248,11 @@
             polygon: Array.isArray(c.polygon) ? c.polygon : [],
           }))
           this.extranjeroLayout = payload?.layout || null
-          this._extranjeroCountryResultsLoaded = true
+          this._extranjeroCountryResultsLoaded = this.extranjeroCountryRows.length > 0
         } catch (_) {
           this.extranjeroCountryRows = []
           this.extranjeroLayout = null
+          this._extranjeroCountryResultsLoaded = false
         } finally {
           this.extranjeroLoading = false
         }

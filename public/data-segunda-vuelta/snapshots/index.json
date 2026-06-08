@@ -215,9 +215,27 @@
       "hora": "07/06/2026 23:16 h",
       "fingerprint": "18ac4ce0a43e47aa",
       "source": "nivel_01_live"
+    },
+    {
+      "id": "20260607T232355",
+      "file": "20260607T232355.json",
+      "captured_at": "2026-06-07T23:23:55-05:00",
+      "conteo": 68.23,
+      "hora": "07/06/2026 23:22 h",
+      "fingerprint": "f5b31e3ba43f6121",
+      "source": "live_export"
+    },
+    {
+      "id": "20260607T232938",
+      "file": "20260607T232938.json",
+      "captured_at": "2026-06-07T23:29:38-05:00",
+      "conteo": 68.87,
+      "hora": "07/06/2026 23:26 h",
+      "fingerprint": "7c13319337e8964d",
+      "source": "live_export"
     }
   ],
   "profile": "segunda",
   "id_eleccion": "10",
-  "updated_at": "2026-06-07T23:18:53-05:00"
+  "updated_at": "2026-06-07T23:29:38-05:00"
 }

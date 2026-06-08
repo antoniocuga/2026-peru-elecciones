@@ -1,25 +1,25 @@
 {
   "source": "https://resultadosegundavuelta.onpe.gob.pe/presentacion-backend/participacion-ciudadana/totales?tipoFiltro=total",
   "totales_source": "https://resultadosegundavuelta.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=10&tipoFiltro=eleccion",
-  "fetched_at": "2026-06-08T04:19:55.171247+00:00",
+  "fetched_at": "2026-06-08T04:32:39.439779+00:00",
   "success": true,
   "message": "Se ejecutó correctamente la operación",
   "data": {
     "totalElectoresHabiles": 27325432,
-    "totalAsistentes": 14105238,
-    "totalAusentes": 4223471,
-    "porcentajeAsistentes": 51.619,
-    "porcentajeAusentes": 15.456,
+    "totalAsistentes": 14353501,
+    "totalAusentes": 4312831,
+    "porcentajeAsistentes": 52.528,
+    "porcentajeAusentes": 15.783,
     "ubigeoNivel01": null,
     "ubigeoNivel02": null,
     "ubigeoNivel03": null,
     "idLocalVotacion": null,
-    "totalVotosEmitidos": 14104135,
-    "totalVotosValidos": 13184997,
+    "totalVotosEmitidos": 14352446,
+    "totalVotosValidos": 13416727,
     "porcentajeVotosEmitidos": 100,
     "porcentajeVotosValidos": 100,
-    "actasContabilizadas": 67.602,
-    "participacionCiudadana": 51.615,
-    "fechaActualizacion": 1780892161740
+    "actasContabilizadas": 68.869,
+    "participacionCiudadana": 52.524,
+    "fechaActualizacion": 1780892761509
   }
 }

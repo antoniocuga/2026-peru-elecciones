@@ -1,7 +1,2532 @@
 {
-  "updated_at": "2026-04-27T00:00:00+00:00",
-  "source": "onpe-segunda-vuelta",
-  "idEleccion": "11",
-  "countries": [],
-  "layout": null
+  "updated_at": "2026-06-08T17:49:00.885431+00:00",
+  "source": "onpe-presentacion-backend/presidencial-ubigeo_nivel_02",
+  "idEleccion": "10",
+  "countries": [
+    {
+      "country": "ARGELIA",
+      "ubigeoNivel1": "910000",
+      "ubigeoNivel2": "910100",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "argelia",
+      "lat": 28.0,
+      "lon": 3.0,
+      "continent": "Africa",
+      "polygon": [
+        [
+          18,
+          40
+        ],
+        [
+          38,
+          40
+        ],
+        [
+          38,
+          54
+        ],
+        [
+          18,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "GHANA",
+      "ubigeoNivel1": "910000",
+      "ubigeoNivel2": "911200",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "ghana",
+      "lat": 8.0,
+      "lon": -2.0,
+      "continent": "Africa",
+      "polygon": [
+        [
+          42,
+          40
+        ],
+        [
+          62,
+          40
+        ],
+        [
+          62,
+          54
+        ],
+        [
+          42,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "KENIA",
+      "ubigeoNivel1": "910000",
+      "ubigeoNivel2": "910400",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "kenia",
+      "lat": 1.0,
+      "lon": 38.0,
+      "continent": "Africa",
+      "polygon": [
+        [
+          66,
+          40
+        ],
+        [
+          86,
+          40
+        ],
+        [
+          86,
+          54
+        ],
+        [
+          66,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "MARRUECOS",
+      "ubigeoNivel1": "910000",
+      "ubigeoNivel2": "910500",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "marruecos",
+      "lat": 32.0,
+      "lon": -5.0,
+      "continent": "Africa",
+      "polygon": [
+        [
+          90,
+          40
+        ],
+        [
+          110,
+          40
+        ],
+        [
+          110,
+          54
+        ],
+        [
+          90,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "REPÚBLICA ÁRABE DE EGIPTO",
+      "ubigeoNivel1": "910000",
+      "ubigeoNivel2": "910300",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "republica-arabe-de-egipto",
+      "lat": 27.0,
+      "lon": 30.0,
+      "continent": "Africa",
+      "polygon": [
+        [
+          114,
+          40
+        ],
+        [
+          134,
+          40
+        ],
+        [
+          134,
+          54
+        ],
+        [
+          114,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "SUDÁFRICA",
+      "ubigeoNivel1": "910000",
+      "ubigeoNivel2": "910600",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "sudafrica",
+      "lat": -29.0,
+      "lon": 24.0,
+      "continent": "Africa",
+      "polygon": [
+        [
+          138,
+          40
+        ],
+        [
+          158,
+          40
+        ],
+        [
+          158,
+          54
+        ],
+        [
+          138,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "ANTILLAS HOLANDESAS",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "920100",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "antillas-holandesas",
+      "lat": 12.116667,
+      "lon": -68.933333,
+      "continent": "America",
+      "polygon": [
+        [
+          18,
+          130
+        ],
+        [
+          38,
+          130
+        ],
+        [
+          38,
+          144
+        ],
+        [
+          18,
+          144
+        ]
+      ]
+    },
+    {
+      "country": "ARGENTINA",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "920200",
+      "totalVotes": 2045,
+      "totalValidos": 2045,
+      "actasContabilizadas": 4.013,
+      "details": [
+        {
+          "partido": "FUERZA POPULAR",
+          "partido_id": "fuerza-popular",
+          "color": "#fd6600",
+          "votos": 1164,
+          "porcentaje_valido": 56.919315403422985
+        },
+        {
+          "partido": "JUNTOS POR EL PERÚ",
+          "partido_id": "juntos-por-el-peru",
+          "color": "#20a73c",
+          "votos": 881,
+          "porcentaje_valido": 43.080684596577015
+        }
+      ],
+      "winner": {
+        "partido": "FUERZA POPULAR",
+        "partido_id": "fuerza-popular",
+        "color": "#fd6600",
+        "votos": 1164,
+        "porcentaje_valido": 56.919315403422985
+      },
+      "country_id": "argentina",
+      "lat": -34.0,
+      "lon": -64.0,
+      "continent": "America",
+      "polygon": [
+        [
+          42,
+          130
+        ],
+        [
+          62,
+          130
+        ],
+        [
+          62,
+          144
+        ],
+        [
+          42,
+          144
+        ]
+      ]
+    },
+    {
+      "country": "BOLIVIA",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "920400",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "bolivia",
+      "lat": -17.0,
+      "lon": -65.0,
+      "continent": "America",
+      "polygon": [
+        [
+          66,
+          130
+        ],
+        [
+          86,
+          130
+        ],
+        [
+          86,
+          144
+        ],
+        [
+          66,
+          144
+        ]
+      ]
+    },
+    {
+      "country": "BRASIL",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "920500",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "brasil",
+      "lat": -10.0,
+      "lon": -55.0,
+      "continent": "America",
+      "polygon": [
+        [
+          90,
+          130
+        ],
+        [
+          110,
+          130
+        ],
+        [
+          110,
+          144
+        ],
+        [
+          90,
+          144
+        ]
+      ]
+    },
+    {
+      "country": "CANADÁ",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "920600",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "canada",
+      "lat": 60.0,
+      "lon": -95.0,
+      "continent": "America",
+      "polygon": [
+        [
+          114,
+          130
+        ],
+        [
+          134,
+          130
+        ],
+        [
+          134,
+          144
+        ],
+        [
+          114,
+          144
+        ]
+      ]
+    },
+    {
+      "country": "CHILE",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "921000",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "chile",
+      "lat": -30.0,
+      "lon": -71.0,
+      "continent": "America",
+      "polygon": [
+        [
+          138,
+          130
+        ],
+        [
+          158,
+          130
+        ],
+        [
+          158,
+          144
+        ],
+        [
+          138,
+          144
+        ]
+      ]
+    },
+    {
+      "country": "COLOMBIA",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "920700",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "colombia",
+      "lat": 4.0,
+      "lon": -72.0,
+      "continent": "America",
+      "polygon": [
+        [
+          162,
+          130
+        ],
+        [
+          182,
+          130
+        ],
+        [
+          182,
+          144
+        ],
+        [
+          162,
+          144
+        ]
+      ]
+    },
+    {
+      "country": "COSTA RICA",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "920800",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "costa-rica",
+      "lat": 10.0,
+      "lon": -84.0,
+      "continent": "America",
+      "polygon": [
+        [
+          186,
+          130
+        ],
+        [
+          206,
+          130
+        ],
+        [
+          206,
+          144
+        ],
+        [
+          186,
+          144
+        ]
+      ]
+    },
+    {
+      "country": "CUBA",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "920900",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "cuba",
+      "lat": 21.5,
+      "lon": -80.0,
+      "continent": "America",
+      "polygon": [
+        [
+          210,
+          130
+        ],
+        [
+          230,
+          130
+        ],
+        [
+          230,
+          144
+        ],
+        [
+          210,
+          144
+        ]
+      ]
+    },
+    {
+      "country": "ECUADOR",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "921100",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "ecuador",
+      "lat": -2.0,
+      "lon": -77.5,
+      "continent": "America",
+      "polygon": [
+        [
+          18,
+          148
+        ],
+        [
+          38,
+          148
+        ],
+        [
+          38,
+          162
+        ],
+        [
+          18,
+          162
+        ]
+      ]
+    },
+    {
+      "country": "EL SALVADOR",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "921200",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "el-salvador",
+      "lat": 13.83333333,
+      "lon": -88.91666666,
+      "continent": "America",
+      "polygon": [
+        [
+          42,
+          148
+        ],
+        [
+          62,
+          148
+        ],
+        [
+          62,
+          162
+        ],
+        [
+          42,
+          162
+        ]
+      ]
+    },
+    {
+      "country": "ESTADOS UNIDOS DE ÁMERICA",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "921300",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "estados-unidos-de-america",
+      "lat": 38.0,
+      "lon": -97.0,
+      "continent": "America",
+      "polygon": [
+        [
+          66,
+          148
+        ],
+        [
+          86,
+          148
+        ],
+        [
+          86,
+          162
+        ],
+        [
+          66,
+          162
+        ]
+      ]
+    },
+    {
+      "country": "GUATEMALA",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "921500",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "guatemala",
+      "lat": 15.5,
+      "lon": -90.25,
+      "continent": "America",
+      "polygon": [
+        [
+          90,
+          148
+        ],
+        [
+          110,
+          148
+        ],
+        [
+          110,
+          162
+        ],
+        [
+          90,
+          162
+        ]
+      ]
+    },
+    {
+      "country": "GUAYANA FRANCESA",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "923000",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "guayana-francesa",
+      "lat": 4.0,
+      "lon": -53.0,
+      "continent": "America",
+      "polygon": [
+        [
+          114,
+          148
+        ],
+        [
+          134,
+          148
+        ],
+        [
+          134,
+          162
+        ],
+        [
+          114,
+          162
+        ]
+      ]
+    },
+    {
+      "country": "HONDURAS",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "921700",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "honduras",
+      "lat": 15.0,
+      "lon": -86.5,
+      "continent": "America",
+      "polygon": [
+        [
+          138,
+          148
+        ],
+        [
+          158,
+          148
+        ],
+        [
+          158,
+          162
+        ],
+        [
+          138,
+          162
+        ]
+      ]
+    },
+    {
+      "country": "MÉXICO",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "921900",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "mexico",
+      "lat": 23.0,
+      "lon": -102.0,
+      "continent": "America",
+      "polygon": [
+        [
+          162,
+          148
+        ],
+        [
+          182,
+          148
+        ],
+        [
+          182,
+          162
+        ],
+        [
+          162,
+          162
+        ]
+      ]
+    },
+    {
+      "country": "NICARAGUA",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "922000",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "nicaragua",
+      "lat": 13.0,
+      "lon": -85.0,
+      "continent": "America",
+      "polygon": [
+        [
+          186,
+          148
+        ],
+        [
+          206,
+          148
+        ],
+        [
+          206,
+          162
+        ],
+        [
+          186,
+          162
+        ]
+      ]
+    },
+    {
+      "country": "PANAMÁ",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "922100",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "panama",
+      "lat": 9.0,
+      "lon": -80.0,
+      "continent": "America",
+      "polygon": [
+        [
+          210,
+          148
+        ],
+        [
+          230,
+          148
+        ],
+        [
+          230,
+          162
+        ],
+        [
+          210,
+          162
+        ]
+      ]
+    },
+    {
+      "country": "PARAGUAY",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "922200",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "paraguay",
+      "lat": -23.0,
+      "lon": -58.0,
+      "continent": "America",
+      "polygon": [
+        [
+          18,
+          166
+        ],
+        [
+          38,
+          166
+        ],
+        [
+          38,
+          180
+        ],
+        [
+          18,
+          180
+        ]
+      ]
+    },
+    {
+      "country": "PUERTO RICO",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "922300",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "puerto-rico",
+      "lat": 18.25,
+      "lon": -66.5,
+      "continent": "America",
+      "polygon": [
+        [
+          42,
+          166
+        ],
+        [
+          62,
+          166
+        ],
+        [
+          62,
+          180
+        ],
+        [
+          42,
+          180
+        ]
+      ]
+    },
+    {
+      "country": "REPÚBLICA DOMINICANA",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "922400",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "republica-dominicana",
+      "lat": 19.0,
+      "lon": -70.66666666,
+      "continent": "America",
+      "polygon": [
+        [
+          66,
+          166
+        ],
+        [
+          86,
+          166
+        ],
+        [
+          86,
+          180
+        ],
+        [
+          66,
+          180
+        ]
+      ]
+    },
+    {
+      "country": "TRINIDAD Y TOBAGO",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "922600",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "trinidad-y-tobago",
+      "lat": 10.6918,
+      "lon": -61.2225,
+      "continent": "America",
+      "polygon": [
+        [
+          90,
+          166
+        ],
+        [
+          110,
+          166
+        ],
+        [
+          110,
+          180
+        ],
+        [
+          90,
+          180
+        ]
+      ]
+    },
+    {
+      "country": "URUGUAY",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "922700",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "uruguay",
+      "lat": -33.0,
+      "lon": -56.0,
+      "continent": "America",
+      "polygon": [
+        [
+          114,
+          166
+        ],
+        [
+          134,
+          166
+        ],
+        [
+          134,
+          180
+        ],
+        [
+          114,
+          180
+        ]
+      ]
+    },
+    {
+      "country": "VENEZUELA",
+      "ubigeoNivel1": "920000",
+      "ubigeoNivel2": "922800",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "venezuela",
+      "lat": 8.0,
+      "lon": -66.0,
+      "continent": "America",
+      "polygon": [
+        [
+          138,
+          166
+        ],
+        [
+          158,
+          166
+        ],
+        [
+          158,
+          180
+        ],
+        [
+          138,
+          180
+        ]
+      ]
+    },
+    {
+      "country": "ARABIA SAUDITA",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "931900",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "arabia-saudita",
+      "lat": 25.0,
+      "lon": 45.0,
+      "continent": "Asia",
+      "polygon": [
+        [
+          320,
+          40
+        ],
+        [
+          340,
+          40
+        ],
+        [
+          340,
+          54
+        ],
+        [
+          320,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "CATAR",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "933800",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "catar",
+      "lat": 25.5,
+      "lon": 51.25,
+      "continent": "Asia",
+      "polygon": [
+        [
+          344,
+          40
+        ],
+        [
+          364,
+          40
+        ],
+        [
+          364,
+          54
+        ],
+        [
+          344,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "EMIRATOS ÁRABES UNIDOS",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "933700",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "emiratos-arabes-unidos",
+      "lat": 24.0,
+      "lon": 54.0,
+      "continent": "Asia",
+      "polygon": [
+        [
+          368,
+          40
+        ],
+        [
+          388,
+          40
+        ],
+        [
+          388,
+          54
+        ],
+        [
+          368,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "FILIPINAS",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "933200",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "filipinas",
+      "lat": 13.0,
+      "lon": 122.0,
+      "continent": "Asia",
+      "polygon": [
+        [
+          392,
+          40
+        ],
+        [
+          412,
+          40
+        ],
+        [
+          412,
+          54
+        ],
+        [
+          392,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "INDIA",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "930400",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "india",
+      "lat": 20.0,
+      "lon": 77.0,
+      "continent": "Asia",
+      "polygon": [
+        [
+          416,
+          40
+        ],
+        [
+          436,
+          40
+        ],
+        [
+          436,
+          54
+        ],
+        [
+          416,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "INDONESIA",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "931100",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "indonesia",
+      "lat": -5.0,
+      "lon": 120.0,
+      "continent": "Asia",
+      "polygon": [
+        [
+          440,
+          40
+        ],
+        [
+          460,
+          40
+        ],
+        [
+          460,
+          54
+        ],
+        [
+          440,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "IRÁN",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "932400",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "iran",
+      "lat": 32.0,
+      "lon": 53.0,
+      "continent": "Asia",
+      "polygon": [
+        [
+          464,
+          40
+        ],
+        [
+          484,
+          40
+        ],
+        [
+          484,
+          54
+        ],
+        [
+          464,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "ISRAEL",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "930600",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "israel",
+      "lat": 31.47,
+      "lon": 35.13,
+      "continent": "Asia",
+      "polygon": [
+        [
+          488,
+          40
+        ],
+        [
+          508,
+          40
+        ],
+        [
+          508,
+          54
+        ],
+        [
+          488,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "JAPÓN",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "930700",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "japon",
+      "lat": 36.0,
+      "lon": 138.0,
+      "continent": "Asia",
+      "polygon": [
+        [
+          512,
+          40
+        ],
+        [
+          532,
+          40
+        ],
+        [
+          532,
+          54
+        ],
+        [
+          512,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "JORDANIA",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "931300",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "jordania",
+      "lat": 31.0,
+      "lon": 36.0,
+      "continent": "Asia",
+      "polygon": [
+        [
+          320,
+          58
+        ],
+        [
+          340,
+          58
+        ],
+        [
+          340,
+          72
+        ],
+        [
+          320,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "KUWAIT",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "932800",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "kuwait",
+      "lat": 29.5,
+      "lon": 45.75,
+      "continent": "Asia",
+      "polygon": [
+        [
+          344,
+          58
+        ],
+        [
+          364,
+          58
+        ],
+        [
+          364,
+          72
+        ],
+        [
+          344,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "LÍBANO",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "930800",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "libano",
+      "lat": 33.83333333,
+      "lon": 35.83333333,
+      "continent": "Asia",
+      "polygon": [
+        [
+          368,
+          58
+        ],
+        [
+          388,
+          58
+        ],
+        [
+          388,
+          72
+        ],
+        [
+          368,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "MALASIA",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "933000",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "malasia",
+      "lat": 2.5,
+      "lon": 112.5,
+      "continent": "Asia",
+      "polygon": [
+        [
+          392,
+          58
+        ],
+        [
+          412,
+          58
+        ],
+        [
+          412,
+          72
+        ],
+        [
+          392,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "REPUBLICA DE COREA",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "930100",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "republica-de-corea",
+      "lat": 37.0,
+      "lon": 127.5,
+      "continent": "Asia",
+      "polygon": [
+        [
+          416,
+          58
+        ],
+        [
+          436,
+          58
+        ],
+        [
+          436,
+          72
+        ],
+        [
+          416,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "REPÚBLICA POPULAR CHINA",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "930200",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "republica-popular-china",
+      "lat": 35.0,
+      "lon": 105.0,
+      "continent": "Asia",
+      "polygon": [
+        [
+          440,
+          58
+        ],
+        [
+          460,
+          58
+        ],
+        [
+          460,
+          72
+        ],
+        [
+          440,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "SINGAPUR",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "932500",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "singapur",
+      "lat": 1.36666666,
+      "lon": 103.8,
+      "continent": "Asia",
+      "polygon": [
+        [
+          464,
+          58
+        ],
+        [
+          484,
+          58
+        ],
+        [
+          484,
+          72
+        ],
+        [
+          464,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "TAILANDIA",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "931000",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "tailandia",
+      "lat": 15.0,
+      "lon": 100.0,
+      "continent": "Asia",
+      "polygon": [
+        [
+          488,
+          58
+        ],
+        [
+          508,
+          58
+        ],
+        [
+          508,
+          72
+        ],
+        [
+          488,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "TURQUÍA",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "931500",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "turquia",
+      "lat": 39.0,
+      "lon": 35.0,
+      "continent": "Asia",
+      "polygon": [
+        [
+          512,
+          58
+        ],
+        [
+          532,
+          58
+        ],
+        [
+          532,
+          72
+        ],
+        [
+          512,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "VIETNAM",
+      "ubigeoNivel1": "930000",
+      "ubigeoNivel2": "932000",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "vietnam",
+      "lat": 16.16666666,
+      "lon": 107.83333333,
+      "continent": "Asia",
+      "polygon": [
+        [
+          320,
+          76
+        ],
+        [
+          340,
+          76
+        ],
+        [
+          340,
+          90
+        ],
+        [
+          320,
+          90
+        ]
+      ]
+    },
+    {
+      "country": "ALEMANIA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "940200",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "alemania",
+      "lat": 51.0,
+      "lon": 9.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          590,
+          40
+        ],
+        [
+          610,
+          40
+        ],
+        [
+          610,
+          54
+        ],
+        [
+          590,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "AUSTRIA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "940300",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "austria",
+      "lat": 47.33333333,
+      "lon": 13.33333333,
+      "continent": "Europa",
+      "polygon": [
+        [
+          614,
+          40
+        ],
+        [
+          634,
+          40
+        ],
+        [
+          634,
+          54
+        ],
+        [
+          614,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "BIELORRUSIA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "943600",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "bielorrusia",
+      "lat": 53.0,
+      "lon": 28.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          638,
+          40
+        ],
+        [
+          658,
+          40
+        ],
+        [
+          658,
+          54
+        ],
+        [
+          638,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "BÉLGICA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "940400",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "belgica",
+      "lat": 50.83333333,
+      "lon": 4.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          662,
+          40
+        ],
+        [
+          682,
+          40
+        ],
+        [
+          682,
+          54
+        ],
+        [
+          662,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "DINAMARCA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "940800",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "dinamarca",
+      "lat": 56.0,
+      "lon": 10.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          686,
+          40
+        ],
+        [
+          706,
+          40
+        ],
+        [
+          706,
+          54
+        ],
+        [
+          686,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "ESPAÑA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "940900",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "espana",
+      "lat": 40.0,
+      "lon": -4.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          710,
+          40
+        ],
+        [
+          730,
+          40
+        ],
+        [
+          730,
+          54
+        ],
+        [
+          710,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "FINLANDIA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "941000",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "finlandia",
+      "lat": 64.0,
+      "lon": 26.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          734,
+          40
+        ],
+        [
+          754,
+          40
+        ],
+        [
+          754,
+          54
+        ],
+        [
+          734,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "FRANCIA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "941100",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "francia",
+      "lat": 46.0,
+      "lon": 2.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          758,
+          40
+        ],
+        [
+          778,
+          40
+        ],
+        [
+          778,
+          54
+        ],
+        [
+          758,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "GRAN BRETAÑA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "941200",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "gran-bretana",
+      "lat": 54.0,
+      "lon": -2.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          782,
+          40
+        ],
+        [
+          802,
+          40
+        ],
+        [
+          802,
+          54
+        ],
+        [
+          782,
+          54
+        ]
+      ]
+    },
+    {
+      "country": "GRAN DUCADO DE LUXEMBURGO",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "942000",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "gran-ducado-de-luxemburgo",
+      "lat": 49.75,
+      "lon": 6.16666666,
+      "continent": "Europa",
+      "polygon": [
+        [
+          590,
+          58
+        ],
+        [
+          610,
+          58
+        ],
+        [
+          610,
+          72
+        ],
+        [
+          590,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "GRECIA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "941300",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "grecia",
+      "lat": 39.0,
+      "lon": 22.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          614,
+          58
+        ],
+        [
+          634,
+          58
+        ],
+        [
+          634,
+          72
+        ],
+        [
+          614,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "HOLANDA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "941400",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "holanda",
+      "lat": 52.5,
+      "lon": 5.75,
+      "continent": "Europa",
+      "polygon": [
+        [
+          638,
+          58
+        ],
+        [
+          658,
+          58
+        ],
+        [
+          658,
+          72
+        ],
+        [
+          638,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "HUNGRÍA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "941500",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "hungria",
+      "lat": 47.0,
+      "lon": 20.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          662,
+          58
+        ],
+        [
+          682,
+          58
+        ],
+        [
+          682,
+          72
+        ],
+        [
+          662,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "IRLANDA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "941800",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "irlanda",
+      "lat": 53.0,
+      "lon": -8.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          686,
+          58
+        ],
+        [
+          706,
+          58
+        ],
+        [
+          706,
+          72
+        ],
+        [
+          686,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "ITALIA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "941700",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "italia",
+      "lat": 42.83333333,
+      "lon": 12.83333333,
+      "continent": "Europa",
+      "polygon": [
+        [
+          710,
+          58
+        ],
+        [
+          730,
+          58
+        ],
+        [
+          730,
+          72
+        ],
+        [
+          710,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "MACEDONIA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "943700",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "macedonia",
+      "lat": null,
+      "lon": null,
+      "continent": "Europa",
+      "polygon": [
+        [
+          734,
+          58
+        ],
+        [
+          754,
+          58
+        ],
+        [
+          754,
+          72
+        ],
+        [
+          734,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "MALTA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "942100",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "malta",
+      "lat": 35.9375,
+      "lon": 14.3754,
+      "continent": "Europa",
+      "polygon": [
+        [
+          758,
+          58
+        ],
+        [
+          778,
+          58
+        ],
+        [
+          778,
+          72
+        ],
+        [
+          758,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "NORUEGA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "942300",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "noruega",
+      "lat": 62.0,
+      "lon": 10.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          782,
+          58
+        ],
+        [
+          802,
+          58
+        ],
+        [
+          802,
+          72
+        ],
+        [
+          782,
+          72
+        ]
+      ]
+    },
+    {
+      "country": "POLONIA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "942400",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "polonia",
+      "lat": 52.0,
+      "lon": 20.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          590,
+          76
+        ],
+        [
+          610,
+          76
+        ],
+        [
+          610,
+          90
+        ],
+        [
+          590,
+          90
+        ]
+      ]
+    },
+    {
+      "country": "PORTUGAL",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "942500",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "portugal",
+      "lat": 39.5,
+      "lon": -8.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          614,
+          76
+        ],
+        [
+          634,
+          76
+        ],
+        [
+          634,
+          90
+        ],
+        [
+          614,
+          90
+        ]
+      ]
+    },
+    {
+      "country": "PRINCIPADO DE ANDORRA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "944200",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "principado-de-andorra",
+      "lat": 42.5,
+      "lon": 1.5,
+      "continent": "Europa",
+      "polygon": [
+        [
+          638,
+          76
+        ],
+        [
+          658,
+          76
+        ],
+        [
+          658,
+          90
+        ],
+        [
+          638,
+          90
+        ]
+      ]
+    },
+    {
+      "country": "REPÚBLICA CHECA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "940600",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "republica-checa",
+      "lat": 49.75,
+      "lon": 15.5,
+      "continent": "Europa",
+      "polygon": [
+        [
+          662,
+          76
+        ],
+        [
+          682,
+          76
+        ],
+        [
+          682,
+          90
+        ],
+        [
+          662,
+          90
+        ]
+      ]
+    },
+    {
+      "country": "RUMANÍA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "942600",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "rumania",
+      "lat": 46.0,
+      "lon": 25.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          686,
+          76
+        ],
+        [
+          706,
+          76
+        ],
+        [
+          706,
+          90
+        ],
+        [
+          686,
+          90
+        ]
+      ]
+    },
+    {
+      "country": "RUSIA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "942900",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "rusia",
+      "lat": 60.0,
+      "lon": 100.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          710,
+          76
+        ],
+        [
+          730,
+          76
+        ],
+        [
+          730,
+          90
+        ],
+        [
+          710,
+          90
+        ]
+      ]
+    },
+    {
+      "country": "SUECIA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "942700",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "suecia",
+      "lat": 62.0,
+      "lon": 15.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          734,
+          76
+        ],
+        [
+          754,
+          76
+        ],
+        [
+          754,
+          90
+        ],
+        [
+          734,
+          90
+        ]
+      ]
+    },
+    {
+      "country": "SUIZA",
+      "ubigeoNivel1": "940000",
+      "ubigeoNivel2": "942800",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "suiza",
+      "lat": 47.0,
+      "lon": 8.0,
+      "continent": "Europa",
+      "polygon": [
+        [
+          758,
+          76
+        ],
+        [
+          778,
+          76
+        ],
+        [
+          778,
+          90
+        ],
+        [
+          758,
+          90
+        ]
+      ]
+    },
+    {
+      "country": "AUSTRALIA",
+      "ubigeoNivel1": "950000",
+      "ubigeoNivel2": "950100",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "australia",
+      "lat": -27.0,
+      "lon": 133.0,
+      "continent": "Oceania",
+      "polygon": [
+        [
+          320,
+          225
+        ],
+        [
+          340,
+          225
+        ],
+        [
+          340,
+          239
+        ],
+        [
+          320,
+          239
+        ]
+      ]
+    },
+    {
+      "country": "NUEVA ZELANDA",
+      "ubigeoNivel1": "950000",
+      "ubigeoNivel2": "950200",
+      "totalVotes": 0,
+      "totalValidos": 0,
+      "actasContabilizadas": 0.0,
+      "details": [],
+      "winner": null,
+      "country_id": "nueva-zelanda",
+      "lat": -41.0,
+      "lon": 174.0,
+      "continent": "Oceania",
+      "polygon": [
+        [
+          344,
+          225
+        ],
+        [
+          364,
+          225
+        ],
+        [
+          364,
+          239
+        ],
+        [
+          344,
+          239
+        ]
+      ]
+    }
+  ],
+  "layout": {
+    "type": "cartogram-polygons",
+    "cellWidth": 20,
+    "cellHeight": 14,
+    "gapX": 4,
+    "gapY": 4,
+    "columns": 9,
+    "blocks": {
+      "910000": {
+        "x": 18,
+        "y": 40,
+        "name": "Africa"
+      },
+      "920000": {
+        "x": 18,
+        "y": 130,
+        "name": "America"
+      },
+      "930000": {
+        "x": 320,
+        "y": 40,
+        "name": "Asia"
+      },
+      "940000": {
+        "x": 590,
+        "y": 40,
+        "name": "Europa"
+      },
+      "950000": {
+        "x": 320,
+        "y": 225,
+        "name": "Oceania"
+      },
+      "960000": {
+        "x": 590,
+        "y": 225,
+        "name": "Otros"
+      }
+    }
+  }
 }
