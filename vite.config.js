@@ -75,6 +75,18 @@ export default defineConfig({
           })
         },
       },
+      '/onpe-backend-segunda': {
+        target: 'https://resultadosegundavuelta.onpe.gob.pe',
+        changeOrigin: true,
+        secure: true,
+        rewrite: (p) => p.replace(/^\/onpe-backend-segunda/, '/presentacion-backend'),
+        configure(proxy) {
+          proxy.on('proxyReq', (proxyReq) => {
+            proxyReq.setHeader('Referer', 'https://resultadosegundavuelta.onpe.gob.pe/')
+            proxyReq.setHeader('Origin', 'https://resultadosegundavuelta.onpe.gob.pe')
+          })
+        },
+      },
     },
   },
   build: {

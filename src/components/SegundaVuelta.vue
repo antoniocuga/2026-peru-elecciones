@@ -40,7 +40,7 @@
                             <div class="tooltip-c" :style="`font-size:1rem; font-weight: 600;`">
                             <span class="text-secondary text-right font-weight-light d-block badge">Válidos</span>
                             <span style="font-size: 1rem; font-weight: 600;">
-                              {{ candidato.validos+"%" }}
+                              {{ formatValidosPct(candidato.validos) }}
                             </span>
                             </div>       
 
@@ -106,7 +106,7 @@
                             <div class="tooltip-c" :style="`font-size:1rem; font-weight: 600;`">
                             <span class="text-secondary text-right font-weight-light d-block badge">Válidos</span>
                             <span style="font-size: 1rem; font-weight: 600;">
-                              {{ candidato.validos+"%" }}
+                              {{ formatValidosPct(candidato.validos) }}
                             </span>
                             </div>       
 
@@ -155,6 +155,7 @@
   import { storeToRefs } from 'pinia'
   import { useCandidatosStore } from '../stores/candidatos'
   import { getPartidoImage, getCandidatoImage } from '../utils/assets'
+  import { formatValidosPct } from '../utils/formatText'
   import numeral from 'numeral'
   import { groupBy, filter, map, orderBy, uniq } from 'lodash'
   import segundaVueltaData from '../data/segunda_vuelta.json'
@@ -193,6 +194,7 @@
     },
     methods: {
       numeral,
+      formatValidosPct,
       positionNotaTip(triggerEl) {
         const r = triggerEl.getBoundingClientRect()
         const maxW = 320

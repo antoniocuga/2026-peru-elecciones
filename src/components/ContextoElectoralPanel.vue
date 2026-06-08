@@ -46,6 +46,8 @@
 </template>
 
 <script>
+import { formatValidosPct } from '../utils/formatText'
+
 export default {
   name: 'ContextoElectoralPanel',
   props: {
@@ -64,8 +66,7 @@ export default {
   },
   methods: {
     formatPct(value) {
-      if (value == null) return '—'
-      return `${Number(value).toFixed(2)}%`
+      return formatValidosPct(value)
     },
     formatNumber(value) {
       if (value == null) return '—'

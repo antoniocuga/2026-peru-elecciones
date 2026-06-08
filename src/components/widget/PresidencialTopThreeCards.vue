@@ -64,7 +64,7 @@
                   class="porcentaje-top d-block ej2026-pres-pct"
                   :style="`font-size: 1.1rem; color: ${isPresidentialPlaceholder(c) ? WIDGET_PLACEHOLDER_COLOR : c.color}`"
                 >
-                  {{ c.validos.toFixed(2) }}%
+                  {{ formatValidosPct(c.validos) }}
                 </span>
                 <span style="font-size: 0.7rem;" class="small text-secondary votos-top m-1 p-0 d-block">
                   {{ numeral(c.votos).format('0,0') }}
@@ -84,7 +84,7 @@
 <script>
 import numeral from 'numeral'
 import { getPartidoImage, getCandidatoImage } from '../../utils/assets'
-import { capitalizeWords } from '../../utils/formatText'
+import { capitalizeWords, formatValidosPct } from '../../utils/formatText'
 import {
   WIDGET_PLACEHOLDER_COLOR,
   WIDGET_PRES_TOP_COUNT,
@@ -115,6 +115,7 @@ export default {
   methods: {
     numeral,
     capitalizeWords,
+    formatValidosPct,
     getImageCandidate(id) {
       return getCandidatoImage(id)
     },

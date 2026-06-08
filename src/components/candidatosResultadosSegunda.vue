@@ -92,7 +92,7 @@
                       </div>
                       <div class="col-4 col-md-4 col-lg-4 align-self-center text-right">
                         <div>
-                          <span class="text-right" :style="`font-size:1rem; font-weight: 600;`">{{ Number(c.validos || 0).toFixed(2) }}%</span>
+                          <span class="text-right" :style="`font-size:1rem; font-weight: 600;`">{{ formatValidosPct(c.validos) }}</span>
                           <span style="font-size: 0.8rem;" class="align-self-end text-right">
                             <span style="font-size: 0.8rem;" class="d-block text-right text-secondary" v-if="distritoSeleccionado.distrito =='Seleccionar distrito'">
                               {{ numeral(c.votos || 0).format('0,0') }}
@@ -123,6 +123,7 @@
   import { storeToRefs } from 'pinia'
   import { useCandidatosStore } from '../stores/candidatos'
   import { getPartidoImage, getCandidatoImage } from '../utils/assets'
+  import { formatValidosPct } from '../utils/formatText'
   import { getMapaData, getPerugeo } from '../utils/mapas'
   import DropdownBs4 from './DropdownBs4.vue'
   const PLACEHOLDER_PREFIX = 'placeholder-candidato-segunda-'
@@ -248,6 +249,7 @@
     },
     methods: {
       numeral,
+      formatValidosPct,
       isPlaceholderCandidate(c) {
         return String(c?.candidato_id || '').startsWith(PLACEHOLDER_PREFIX)
       },

@@ -8,6 +8,16 @@ export function escapeHtml(text) {
 }
 
 /**
+ * ONPE-style vote share (3 decimals), e.g. 52.497%.
+ */
+export function formatValidosPct(value) {
+  if (value == null || value === '') return '—'
+  const n = Number(value)
+  if (Number.isNaN(n)) return '—'
+  return `${n.toFixed(3)}%`
+}
+
+/**
  * Title-case each whitespace-separated word (first letter upper, rest lower per word).
  */
 export function capitalizeWords(value) {

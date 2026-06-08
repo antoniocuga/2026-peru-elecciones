@@ -31,6 +31,8 @@
 </template>
 
 <script>
+import { formatValidosPct } from '../../utils/formatText'
+
 export default {
   name: 'WidgetBlancoNuloSegunda',
   props: {
@@ -41,8 +43,7 @@ export default {
   },
   methods: {
     formatPct(value) {
-      if (value == null) return '—'
-      return `${Number(value).toFixed(2)}%`
+      return formatValidosPct(value)
     },
     formatVotos(value) {
       if (value == null) return '—'

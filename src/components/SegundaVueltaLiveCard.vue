@@ -37,7 +37,7 @@
                         Validos
                       </span>
                       <span :style="`font-size:1rem; font-weight: 600;`">
-                        {{ candidato.validos.toFixed(3) + "%" }}
+                        {{ formatValidosPct(candidato.validos) }}
                       </span>
                       <span :style="`font-weight: 600;`" class="d-block badge text-secondary small text-right d-block">
                         {{ numeral(candidato.votos).format('0,0') }}
@@ -61,6 +61,7 @@
 <script>
 import numeral from 'numeral'
 import { getPartidoImage, getCandidatoImage } from '../utils/assets'
+import { formatValidosPct } from '../utils/formatText'
 
 export default {
   name: 'SegundaVueltaLiveCard',
@@ -86,6 +87,7 @@ export default {
   },
   methods: {
     numeral,
+    formatValidosPct,
     getImageCandidate(id) {
       return getCandidatoImage(id)
     },

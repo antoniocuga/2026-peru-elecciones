@@ -87,6 +87,7 @@ import { getMapaData } from '../utils/mapas'
 import worldData from '../data/mapas/world.json'
 import { clampTooltipToViewport, TOOLTIP_INFORMACION_NO_DISPONIBLE } from '../utils/congresoTooltip'
 import { getPartidoImage as getPartidoImageSrc, getCandidatoImage } from '../utils/assets'
+import { formatValidosPct } from '../utils/formatText'
 
 const ESPECIAL_CANDIDATO_IDS = new Set(['blanco', 'nulo', 'nulos', ''])
 const SEGUNDA_PARTY_DEFAULTS = [
@@ -442,7 +443,7 @@ export default {
       return null
     },
     formatPct(value) {
-      return `${Number(value || 0).toFixed(2)}%`
+      return formatValidosPct(value)
     },
     continentKey(row) {
       const c = String(row?.continent || '').trim()
