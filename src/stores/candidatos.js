@@ -17,6 +17,7 @@ const inflightDistritosSegunda = {}
 let inflightOnpeEleccionesConteo = null
 let inflightParticipacionCiudadana = null
 let inflightParticipacionCiudadanaSegunda = null
+let inflightExtranjeroSegunda = null
 
 export const useCandidatosStore = defineStore('candidatos', {
   state: () => ({
@@ -54,6 +55,7 @@ export const useCandidatosStore = defineStore('candidatos', {
     /** ONPE participación + totales elección (segunda vuelta). */
     participacionCiudadanaSegunda: null,
     participacionCiudadanaSegundaFetchDone: false,
+    extranjeroSegunda: [],
   }),
 
   actions: {
@@ -134,6 +136,18 @@ export const useCandidatosStore = defineStore('candidatos', {
       }
       const raw = await inflight.todosSegunda
       this.todosSegunda = asCandidateArray(raw)
+    },
+    async ensureExtranjeroSegunda() {
+      if (!inflightExtranjeroSegunda) {
+        inflightExtranjeroSegunda = api
+          .getExtranjeroSegunda()
+          .then((raw) => asCandidateArray(raw))
+          .catch(() => [])
+          .finally(() => {
+            inflightExtranjeroSegunda = null
+          })
+      }
+      this.extranjeroSegunda = await inflightExtranjeroSegunda
     },
     async getAllCongreso() {
       await this.ensureOnpeEleccionConteoMap()

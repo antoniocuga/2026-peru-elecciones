@@ -1,11 +1,11 @@
 <template>
   <div class="widget-blanco-nulo row justify-content-center p-3 mt-1">
-    <div class="col-6 col-md-2 p-0 small mb-1 text-center">
+    <div class="col-3 col-md-2 p-0 small mb-1 text-center">
       <span>Votos emitidos</span>
       <div class="large">{{ formatVotos(datos.emitidos?.votos) }}</div>
       <div></div>
     </div>
-    <div class="col-6 col-md-2 small p-0 mb-1 align-self-center text-center">
+    <div class="col-3 col-md-2 small p-0 mb-1 align-self-center text-center">
       <span>Válidos</span>
       <div class="large">
         <template v-if="datos.validos">
@@ -15,7 +15,7 @@
         <div v-else>—</div>
       </div>
     </div>
-    <div class="col-6 col-md-2 small p-0 mb-1 align-self-center text-center">
+    <div class="col-3 col-md-2 small p-0 mb-1 align-self-center text-center">
       <span>En blanco</span>
       <div class="large">
         <template v-if="datos.blanco">
@@ -25,7 +25,7 @@
         <div v-else>—</div>
       </div>
     </div>
-    <div class="col-6 col-md-2 small p-0 mb-1 align-self-center text-center">
+    <div class="col-3 col-md-2 small p-0 mb-1 align-self-center text-center">
       <span>Nulos</span>
       <div class="large">
         <template v-if="datos.nulo">
@@ -63,11 +63,12 @@ export default {
 
 <style lang="scss">
 .widget-blanco-nulo {
+  font-size: 12px;
   border-radius: 45px;
   max-width: 820px;
   margin: 0 auto;
   background-color: #293c48 !important;
-  color: #fff;
+  color: #e3e3e3;
 
   @media (max-width: 768px) {
     border-radius: 0;
@@ -75,8 +76,8 @@ export default {
 }
 
 .widget-blanco-nulo .large {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 700;
   color: #fff;
 }
 

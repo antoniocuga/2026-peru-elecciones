@@ -9,7 +9,12 @@
             </p>
           </div>
         </div>
-        <PresidencialTopTwoCards variant="home" :candidatos="displayTopCandidatos" />
+        <PresidencialTopTwoCards
+          variant="home"
+          :candidatos="displayTopCandidatos"
+          :candidatos-full="candidatos"
+          :extranjero-rows="extranjeroSegunda"
+        />
         <div class="col-12">
           <div class="text-right text-white mt-2 small">Fuente: ONPE</div>
         </div>
@@ -41,6 +46,7 @@ export default {
   },
   mounted() {
     this.store.getAllCandidatosSegunda()
+    this.store.ensureExtranjeroSegunda()
   },
   computed: {
     conteo() {

@@ -109,10 +109,14 @@ export default {
     const { data } = await requestWithTimestamp(url)
     return data
   },
-  async getAllCandidatosSegunda() {
+    async getAllCandidatosSegunda() {
     const url = getSegundaUrl(RESULTADOS_SEGUNDA)
     const { data } = await requestWithTimestamp(url)
     return data
+  },
+  async getExtranjeroSegunda() {
+    const { data } = await requestWithTimestamp(getSegundaUrl('extranjero.json'))
+    return Array.isArray(data) ? data : []
   },
   async getAllDistritos({ dep_id }) {
     if (!dep_id) return []

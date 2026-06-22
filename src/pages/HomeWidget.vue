@@ -9,7 +9,12 @@
             </p>
           </div>
         </div>
-        <PresidencialTopTwoCards variant="home" :candidatos="displayTopCandidatos" />
+        <PresidencialTopTwoCards
+          variant="home"
+          :candidatos="displayTopCandidatos"
+          :candidatos-full="candidatos"
+          :extranjero-rows="extranjeroSegunda"
+        />
         <div class="col-12 col-md-9 p-0">
           <WidgetBlancoNuloSegunda :datos="blancoNulo" />
         </div>
@@ -44,6 +49,7 @@ export default {
   },
   mounted() {
     this.store.getAllCandidatosSegunda()
+    this.store.ensureExtranjeroSegunda()
     this.store.ensureParticipacionCiudadanaTotales('segunda')
   },
   computed: {
